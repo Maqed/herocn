@@ -1,33 +1,35 @@
 import { FileIcon } from "lucide-react";
 
-type IconProps = React.HTMLAttributes<SVGElement>;
+type IconProps = React.SVGProps<SVGSVGElement>;
 
 export const Icons = {
-  logo: (props: IconProps) => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" {...props}>
-      <title>Logo</title>
+  logo: ({ width = 32, height = 32, ...props }: IconProps) => (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 256 256"
+      width={width}
+      height={height}
+    >
+      <title>Maqed/ui Logo</title>
       <rect width="256" height="256" fill="none" />
-      <line
-        x1="208"
-        y1="128"
-        x2="128"
-        y2="208"
+
+      <path
+        d="M 128 40 L 208 86 V 170 L 128 216 L 48 170 V 86 Z"
         fill="none"
         stroke="currentColor"
-        strokeLinecap="round"
+        strokeWidth="24"
         strokeLinejoin="round"
-        strokeWidth="32"
+        strokeLinecap="round"
       />
-      <line
-        x1="192"
-        y1="40"
-        x2="40"
-        y2="192"
+
+      <path
+        d="M 128 40 V 128 L 208 170"
         fill="none"
         stroke="currentColor"
-        strokeLinecap="round"
+        strokeWidth="24"
         strokeLinejoin="round"
-        strokeWidth="32"
+        strokeLinecap="round"
       />
     </svg>
   ),

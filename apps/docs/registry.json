@@ -162,7 +162,13 @@
           "path": "src/registry/new-york-v4/ui/dropdown-menu.tsx",
           "type": "registry:ui"
         }
-      ]
+      ],
+      "css": {
+        "@utility focus-ring": {
+          "@apply ring-2 ring-ring ring-offset-0 ring-offset-background outline-none": {},
+          "--tw-ring-offset-width": "var(--ring-offset-width)"
+        }
+      }
     },
     {
       "name": "button-demo",

@@ -50,6 +50,21 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "dropdown-menu": {
+    name: "dropdown-menu",
+    type: "registry:ui",
+    registryDependencies: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/ui/dropdown-menu.tsx",
+      type: "registry:ui",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/dropdown-menu.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "button-demo": {
     name: "button-demo",
     type: "registry:example",
@@ -110,21 +125,6 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
-  "button-demo": {
-    name: "button-demo",
-    type: "registry:example",
-    registryDependencies: ["button"],
-    files: [{
-      path: "src/registry/new-york-v4/examples/button-demo.tsx",
-      type: "registry:example",
-      target: ""
-    }],
-    component: React.lazy(async () => {
-      const mod = await import("@/registry/new-york-v4/examples/button-demo.tsx")
-      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
-      return { default: mod.default || mod[exportName] }
-    }),
-  },
   "collapsible-demo": {
     name: "collapsible-demo",
     type: "registry:example",
@@ -181,6 +181,186 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/collapsible-file-tree.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "dropdown-menu-demo": {
+    name: "dropdown-menu-demo",
+    type: "registry:example",
+    registryDependencies: ["button","dropdown-menu"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/dropdown-menu-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "dropdown-menu-basic": {
+    name: "dropdown-menu-basic",
+    type: "registry:example",
+    registryDependencies: ["button","dropdown-menu"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/dropdown-menu-basic.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-basic.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "dropdown-menu-submenu": {
+    name: "dropdown-menu-submenu",
+    type: "registry:example",
+    registryDependencies: ["button","dropdown-menu"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/dropdown-menu-submenu.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-submenu.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "dropdown-menu-shortcuts": {
+    name: "dropdown-menu-shortcuts",
+    type: "registry:example",
+    registryDependencies: ["button","dropdown-menu"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/dropdown-menu-shortcuts.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-shortcuts.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "dropdown-menu-icons": {
+    name: "dropdown-menu-icons",
+    type: "registry:example",
+    registryDependencies: ["button","dropdown-menu"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/dropdown-menu-icons.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-icons.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "dropdown-menu-checkboxes": {
+    name: "dropdown-menu-checkboxes",
+    type: "registry:example",
+    registryDependencies: ["button","dropdown-menu"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/dropdown-menu-checkboxes.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-checkboxes.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "dropdown-menu-checkboxes-icons": {
+    name: "dropdown-menu-checkboxes-icons",
+    type: "registry:example",
+    registryDependencies: ["button","dropdown-menu"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/dropdown-menu-checkboxes-icons.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-checkboxes-icons.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "dropdown-menu-radio-group": {
+    name: "dropdown-menu-radio-group",
+    type: "registry:example",
+    registryDependencies: ["button","dropdown-menu"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/dropdown-menu-radio-group.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-radio-group.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "dropdown-menu-radio-icons": {
+    name: "dropdown-menu-radio-icons",
+    type: "registry:example",
+    registryDependencies: ["button","dropdown-menu"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/dropdown-menu-radio-icons.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-radio-icons.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "dropdown-menu-destructive": {
+    name: "dropdown-menu-destructive",
+    type: "registry:example",
+    registryDependencies: ["button","dropdown-menu"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/dropdown-menu-destructive.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-destructive.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "dropdown-menu-avatar": {
+    name: "dropdown-menu-avatar",
+    type: "registry:example",
+    registryDependencies: ["avatar","button","dropdown-menu"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/dropdown-menu-avatar.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-avatar.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "dropdown-menu-complex": {
+    name: "dropdown-menu-complex",
+    type: "registry:example",
+    registryDependencies: ["button","dropdown-menu"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/dropdown-menu-complex.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-complex.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

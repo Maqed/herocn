@@ -26,4 +26,15 @@ export const ui: Registry["items"] = [
       },
     ],
   },
+  {
+    name: "dropdown-menu",
+    type: "registry:ui",
+    dependencies: ["@base-ui/react"],
+    files: [
+      {
+        path: "ui/dropdown-menu.tsx",
+        type: "registry:ui",
+      },
+    ],
+  },
 ];

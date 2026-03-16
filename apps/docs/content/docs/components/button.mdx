@@ -1,0 +1,89 @@
+---
+title: Button
+description: Displays a button or a component that looks like a button.
+---
+
+<ComponentPreview name="button-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+
+<CodeBlockCommand command="npx shadcn@latest add https://maqedui.pages.dev/r/button.json" />
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+<CodeBlockCommand command="npm install @base-ui/react" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource
+  name="button"
+  title="components/ui/button.tsx"
+  styleName="base-nova"
+/>
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+
+## Usage
+
+```tsx
+import { Button } from "@/components/ui/button"
+```
+
+```tsx
+<Button>Click me</Button>
+```
+
+## Variants
+
+<ComponentPreview name="button-variants" />
+
+## Sizes
+
+<ComponentPreview name="button-sizes" />
+
+## With icons
+
+<ComponentPreview name="button-icons" />
+
+## Reference
+
+### Props
+
+The `Button` component accepts all props from [`@base-ui-components/react` Button](https://base-ui.com/react/components/button) plus the following:
+
+<ApiRefTable
+  props={[
+    {
+      name: "variant",
+      type: '"default" | "outline" | "secondary" | "tertiary" | "ghost" | "destructive" | "destructive-soft"',
+      defaultValue: '"default"',
+    },
+    {
+      name: "size",
+      type: '"default" | "sm" | "lg" | "icon" | "icon-sm" | "icon-lg"',
+      defaultValue: '"default"',
+    },
+  ]}
+/>

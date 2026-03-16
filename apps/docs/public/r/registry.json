@@ -1,0 +1,272 @@
+{
+  "name": "maqedui/ui",
+  "homepage": "https://maqedui.pages.dev/",
+  "items": [
+    {
+      "name": "index",
+      "type": "registry:style",
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "devDependencies": [
+        "tw-animate-css"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "cssVars": {
+        "light": {
+          "--white": "oklch(100% 0 0)",
+          "--black": "oklch(0% 0 0)",
+          "--snow": "oklch(0.9911 0 0)",
+          "--eclipse": "oklch(0.2103 0.0059 285.89)",
+          "--default": "oklch(94% 0.001 286.375)",
+          "--default-foreground": "oklch(0.2103 0.0059 285.89)",
+          "--destructive-foreground": "oklch(0.9911 0 0)"
+        },
+        "dark": {
+          "--default": "oklch(27.4% 0.006 286.033)",
+          "--default-foreground": "oklch(0.9911 0 0)",
+          "--destructive-foreground": "oklch(0.9911 0 0)"
+        },
+        "theme": {
+          "--color-default": "var(--default)",
+          "--color-default-foreground": "var(--default-foreground)",
+          "--color-destructive-foreground": "var(--destructive-foreground)"
+        }
+      },
+      "css": {
+        "@utility pressible": {
+          "transition": "transform 250ms var(--ease-smooth), background-color 100ms var(--ease-out), box-shadow 100ms var(--ease-out)",
+          "@apply transform-gpu motion-reduce:transition-none active:scale-[0.97]": {}
+        },
+        "@utility focus-ring": {
+          "@apply ring-2 ring-ring ring-offset-0 ring-offset-background outline-none": {},
+          "--tw-ring-offset-width": "var(--ring-offset-width)"
+        }
+      },
+      "files": []
+    },
+    {
+      "name": "style",
+      "type": "registry:style",
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "devDependencies": [
+        "tw-animate-css"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "cssVars": {
+        "light": {
+          "--white": "oklch(100% 0 0)",
+          "--black": "oklch(0% 0 0)",
+          "--snow": "oklch(0.9911 0 0)",
+          "--eclipse": "oklch(0.2103 0.0059 285.89)",
+          "--default": "oklch(94% 0.001 286.375)",
+          "--default-foreground": "oklch(0.2103 0.0059 285.89)",
+          "--destructive-foreground": "oklch(0.9911 0 0)"
+        },
+        "dark": {
+          "--default": "oklch(27.4% 0.006 286.033)",
+          "--default-foreground": "oklch(0.9911 0 0)",
+          "--destructive-foreground": "oklch(0.9911 0 0)"
+        },
+        "theme": {
+          "--color-default": "var(--default)",
+          "--color-default-foreground": "var(--default-foreground)",
+          "--color-destructive-foreground": "var(--destructive-foreground)"
+        }
+      },
+      "css": {
+        "@utility pressible": {
+          "transition": "transform 250ms var(--ease-smooth), background-color 100ms var(--ease-out), box-shadow 100ms var(--ease-out)",
+          "@apply transform-gpu motion-reduce:transition-none active:scale-[0.97]": {}
+        },
+        "@utility focus-ring": {
+          "@apply ring-2 ring-ring ring-offset-0 ring-offset-background outline-none": {},
+          "--tw-ring-offset-width": "var(--ring-offset-width)"
+        }
+      },
+      "files": []
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/button.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "--white": "oklch(100% 0 0)",
+          "--black": "oklch(0% 0 0)",
+          "--snow": "oklch(0.9911 0 0)",
+          "--eclipse": "oklch(0.2103 0.0059 285.89)",
+          "--default": "oklch(94% 0.001 286.375)",
+          "--default-foreground": "oklch(0.2103 0.0059 285.89)",
+          "--destructive-foreground": "oklch(0.9911 0 0)"
+        },
+        "dark": {
+          "--default": "oklch(27.4% 0.006 286.033)",
+          "--default-foreground": "oklch(0.9911 0 0)",
+          "--destructive-foreground": "oklch(0.9911 0 0)"
+        },
+        "theme": {
+          "--color-default": "var(--default)",
+          "--color-default-foreground": "var(--default-foreground)",
+          "--color-destructive-foreground": "var(--destructive-foreground)"
+        }
+      },
+      "css": {
+        "@utility pressible": {
+          "transition": "transform 250ms var(--ease-smooth), background-color 100ms var(--ease-out), box-shadow 100ms var(--ease-out)",
+          "@apply transform-gpu motion-reduce:transition-none active:scale-[0.97]": {}
+        },
+        "@utility focus-ring": {
+          "@apply ring-2 ring-ring ring-offset-0 ring-offset-background outline-none": {},
+          "--tw-ring-offset-width": "var(--ring-offset-width)"
+        }
+      }
+    },
+    {
+      "name": "collapsible",
+      "type": "registry:ui",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/collapsible.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "button-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/button-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "button-variants",
+      "type": "registry:example",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/button-variants.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "button-sizes",
+      "type": "registry:example",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/button-sizes.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "button-icons",
+      "type": "registry:example",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/button-icons.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "button-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/button-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "collapsible-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "collapsible"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/collapsible-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "collapsible-basic",
+      "type": "registry:example",
+      "registryDependencies": [
+        "collapsible"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/collapsible-basic.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "collapsible-settings",
+      "type": "registry:example",
+      "registryDependencies": [
+        "collapsible"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/collapsible-settings.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "collapsible-file-tree",
+      "type": "registry:example",
+      "registryDependencies": [
+        "collapsible"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/collapsible-file-tree.tsx",
+          "type": "registry:example"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button",
+  "dependencies": [
+    "@base-ui/react"
+  ],
+  "files": [
+    {
+      "path": "components/ui/button.tsx",
+      "content": "\"use client\";\n\nimport { Button as ButtonPrimitive } from \"@base-ui/react/button\";\nimport { cva, type VariantProps } from \"class-variance-authority\";\n\nimport { cn } from \"@/lib/utils\";\n\nconst buttonVariants = cva(\n  \"pressible relative isolate inline-flex w-fit origin-center items-center cursor-pointer justify-center gap-2 rounded-3xl px-4 text-sm font-medium whitespace-nowrap outline-none select-none no-highlight focus-visible:ring-focus focus-visible:ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-70 aria-disabled:pointer-events-none aria-disabled:cursor-not-allowed aria-disabled:opacity-70 [&_svg:not([class*='size-'])]:size-4 group/button inline-flex shrink-0 items-center justify-center whitespace-nowrap transition-all outline-none select-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0\",\n  {\n    variants: {\n      variant: {\n        default:\n          \"bg-primary text-primary-foreground hover:bg-primary/80 active:bg-primary/80\",\n        outline:\n          \"border-border border-1 bg-background hover:bg-muted hover:text-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 aria-expanded:bg-muted aria-expanded:text-foreground\",\n        secondary:\n          \"bg-default text-primary hover:bg-default/80 active:bg-default/80\",\n        tertiary:\n          \"bg-default text-foreground hover:bg-default/80 active:bg-default/80\",\n        ghost:\n          \"hover:bg-muted hover:text-foreground dark:hover:bg-muted/50 aria-expanded:bg-muted aria-expanded:text-foreground\",\n        destructive:\n          \"bg-destructive text-destructive-foreground hover:bg-destructive/90 focus-visible:ring-destructive\",\n        \"destructive-soft\":\n          \"bg-destructive/10 hover:bg-destructive/20 text-destructive focus-visible:ring-destructive/20 focus-visible:border-destructive/40\",\n      },\n      size: {\n        default:\n          \"h-10 w-fit md:h-9 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2\",\n        sm: \"h-9 px-3 md:h-8 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 [&_svg:not([class*='size-'])]:size-3.5\",\n        lg: \"h-11 text-base md:h-10 has-data-[icon=inline-end]:pr-3 has-data-[icon=inline-start]:pl-3\",\n        icon: \"size-10 md:size-9\",\n        \"icon-sm\": \"size-9 md:size-8\",\n        \"icon-lg\": \"size-11 md:size-10\",\n      },\n    },\n    defaultVariants: {\n      variant: \"default\",\n      size: \"default\",\n    },\n  },\n);\n\nfunction Button({\n  className,\n  variant = \"default\",\n  size = \"default\",\n  ...props\n}: ButtonPrimitive.Props & VariantProps<typeof buttonVariants>) {\n  return (\n    <ButtonPrimitive\n      data-slot=\"button\"\n      className={cn(buttonVariants({ variant, size, className }))}\n      {...props}\n    />\n  );\n}\n\nexport { Button, buttonVariants };\n",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "theme": {
+      "--color-default": "var(--default)",
+      "--color-default-foreground": "var(--default-foreground)",
+      "--color-destructive-foreground": "var(--destructive-foreground)"
+    },
+    "light": {
+      "--white": "oklch(100% 0 0)",
+      "--black": "oklch(0% 0 0)",
+      "--snow": "oklch(0.9911 0 0)",
+      "--eclipse": "oklch(0.2103 0.0059 285.89)",
+      "--default": "oklch(94% 0.001 286.375)",
+      "--default-foreground": "oklch(0.2103 0.0059 285.89)",
+      "--destructive-foreground": "oklch(0.9911 0 0)"
+    },
+    "dark": {
+      "--default": "oklch(27.4% 0.006 286.033)",
+      "--default-foreground": "oklch(0.9911 0 0)",
+      "--destructive-foreground": "oklch(0.9911 0 0)"
+    }
+  },
+  "css": {
+    "@utility pressible": {
+      "transition": "transform 250ms var(--ease-smooth), background-color 100ms var(--ease-out), box-shadow 100ms var(--ease-out)",
+      "@apply transform-gpu motion-reduce:transition-none active:scale-[0.97]": {}
+    },
+    "@utility focus-ring": {
+      "@apply ring-2 ring-ring ring-offset-0 ring-offset-background outline-none": {},
+      "--tw-ring-offset-width": "var(--ring-offset-width)"
+    }
+  },
+  "type": "registry:ui"
+}

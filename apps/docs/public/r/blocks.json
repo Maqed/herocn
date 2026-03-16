@@ -1,0 +1,9 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "blocks",
+  "type": "registry:block",
+  "description": "All blocks from @brand-name/blocks",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": []
+}

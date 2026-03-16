@@ -1,0 +1,16 @@
+import Link from "next/link";
+
+export default function HomePage() {
+  return (
+    <div className="flex flex-col justify-center text-center flex-1">
+      <h1 className="text-4xl font-bold mb-4">
+        Build your next styled shadcn/ui components
+      </h1>
+      <p>
+        <Link href="/docs" className="font-medium text-xl underline">
+          /docs
+        </Link>
+      </p>
+    </div>
+  );
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "style",
+  "dependencies": [
+    "class-variance-authority",
+    "lucide-react"
+  ],
+  "devDependencies": [
+    "tw-animate-css"
+  ],
+  "registryDependencies": [
+    "utils"
+  ],
+  "files": [],
+  "cssVars": {
+    "theme": {
+      "--color-default": "var(--default)",
+      "--color-default-foreground": "var(--default-foreground)",
+      "--color-destructive-foreground": "var(--destructive-foreground)"
+    },
+    "light": {
+      "--white": "oklch(100% 0 0)",
+      "--black": "oklch(0% 0 0)",
+      "--snow": "oklch(0.9911 0 0)",
+      "--eclipse": "oklch(0.2103 0.0059 285.89)",
+      "--default": "oklch(94% 0.001 286.375)",
+      "--default-foreground": "oklch(0.2103 0.0059 285.89)",
+      "--destructive-foreground": "oklch(0.9911 0 0)"
+    },
+    "dark": {
+      "--default": "oklch(27.4% 0.006 286.033)",
+      "--default-foreground": "oklch(0.9911 0 0)",
+      "--destructive-foreground": "oklch(0.9911 0 0)"
+    }
+  },
+  "css": {
+    "@utility pressible": {
+      "transition": "transform 250ms var(--ease-smooth), background-color 100ms var(--ease-out), box-shadow 100ms var(--ease-out)",
+      "@apply transform-gpu motion-reduce:transition-none active:scale-[0.97]": {}
+    },
+    "@utility focus-ring": {
+      "@apply ring-2 ring-ring ring-offset-0 ring-offset-background outline-none": {},
+      "--tw-ring-offset-width": "var(--ring-offset-width)"
+    }
+  },
+  "type": "registry:style"
+}

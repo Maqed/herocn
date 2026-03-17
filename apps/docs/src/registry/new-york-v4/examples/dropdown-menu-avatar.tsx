@@ -27,9 +27,9 @@ export default function DropdownMenuAvatar() {
       <DropdownMenuTrigger
         render={<Button variant="ghost" size="icon" className="rounded-full" />}
       >
-        <Avatar className="size-8">
-          <AvatarImage src="https://github.com/shadcn.png" alt="shadcn" />
-          <AvatarFallback>LR</AvatarFallback>
+        <Avatar>
+          <AvatarImage src="https://github.com/maqed.png" alt="Maqed" />
+          <AvatarFallback>Mqd</AvatarFallback>
         </Avatar>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">

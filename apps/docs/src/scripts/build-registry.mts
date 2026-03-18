@@ -274,12 +274,11 @@ async function buildPackageJson(
 
   // Aggregate all dependencies and registryDependencies
   const allDependencies = new Set<string>();
-  const allRegistryDependencies = new Set<string>();
-  const allFiles: RegistryFileEntry[] = [];
-
-  // Build path mappings for import rewriting
-  const pathMappings = new Map<string, string>();
-
+  // For package registries (ui.json/blocks.json/etc), we want registryDependencies
+  // to reference the component *packages* (e.g. @herocn/button), not registry item names.
+  const allRegistryDependencies = new Set<string>(
+    components.map((component) => `@herocn/${component.name}`),
+  );
   for (const component of components) {
     // Collect dependencies
     if (component.dependencies) {
@@ -288,66 +287,26 @@ async function buildPackageJson(
       }
     }
 
-    // Collect registryDependencies
+    // Collect registryDependencies (if provided by registry items) and normalize to package names.
     if (component.registryDependencies) {
       for (const dep of component.registryDependencies) {
-        allRegistryDependencies.add(dep);
-      }
-    }
-
-    // Collect files and read their content
-    if (component.files) {
-      for (const file of component.files) {
-        const filePath = `src/registry/new-york-v4/${file.path}`;
-        const absolutePath = path.join(process.cwd(), filePath);
-
-        // Read file content
-        let content = "";
-        if (existsSync(absolutePath)) {
-          content = await fs.readFile(absolutePath, "utf-8");
-        }
-
-        // Clean path - remove registry/new-york-v4/ prefix for UI components
-        let cleanPath = file.path;
-        if (packageType === "ui") {
-          if (cleanPath.startsWith("ui/")) {
-            cleanPath = `components/${cleanPath}`;
-          } else if (cleanPath.startsWith("examples/")) {
-            cleanPath = `components/${cleanPath}`;
-          }
-        }
-
-        // Build path mapping
-        if (file.target) {
-          pathMappings.set(file.path, file.target);
-        }
-
-        allFiles.push({
-          path: cleanPath,
-          type: file.type,
-          target: file.target ?? "",
-          content: content,
-        });
+        // If it's already a scoped package, keep as-is.
+        // Otherwise, map registry item names (e.g. "button") to "@herocn/button".
+        allRegistryDependencies.add(
+          dep.startsWith("@") ? dep : `@herocn/${dep}`,
+        );
       }
     }
   }
 
-  // Rewrite imports in all file contents
-  allFiles.forEach((file) => {
-    if (file.content) {
-      file.content = rewriteImports(file.content, pathMappings);
-    }
-  });
-
   // Create the JSON structure
-  const packageJson = {
+  const packageJson: Record<string, unknown> = {
     $schema: "https://ui.shadcn.com/schema/registry-item.json",
     name: fileName.replace(".json", ""),
     type: typeMap[packageType],
     description: description,
     dependencies: Array.from(allDependencies).sort(),
     registryDependencies: Array.from(allRegistryDependencies).sort(),
-    files: allFiles,
   };
 
   // Write the JSON file

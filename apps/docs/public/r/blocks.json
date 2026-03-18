@@ -4,6 +4,5 @@
   "type": "registry:block",
   "description": "All blocks from @herocn/blocks",
   "dependencies": [],
-  "registryDependencies": [],
-  "files": []
+  "registryDependencies": []
 }

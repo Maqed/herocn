@@ -96,7 +96,7 @@ function ApiRefRow({ prop }: { prop: ApiProp }) {
 
 export function ApiRefTable({ props, className }: ApiRefTableProps) {
   return (
-    <Table className={className}>
+    <Table className={cn('not-prose',className)}>
       <TableHeader>
         <TableRow>
           <TableHead>Prop</TableHead>

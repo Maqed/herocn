@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "components/examples/badge-icon.tsx",
-      "content": "import { BellIcon, CheckCheckIcon } from \"lucide-react\";\n\nimport { Badge } from \"@/components/ui/badge\";\n\nexport default function BadgeIcon() {\n  return (\n    <div className=\"flex flex-wrap items-center gap-2\">\n      <Badge>\n        <BellIcon data-icon=\"inline-start\" />\n        Notifications\n      </Badge>\n      <Badge variant=\"success\">\n        <CheckCheckIcon data-icon=\"inline-end\" />\n        New\n      </Badge>\n    </div>\n  );\n}\n\n",
+      "content": "import { BellIcon, CheckCheckIcon } from \"lucide-react\";\n\nimport { Badge } from \"@/components/ui/badge\";\n\nexport default function BadgeIcon() {\n  return (\n    <div className=\"flex flex-wrap items-center gap-2\">\n      <Badge>\n        <BellIcon data-icon=\"inline-start\" />\n        Notifications\n      </Badge>\n      <Badge variant=\"success\">\n        <CheckCheckIcon data-icon=\"inline-end\" />\n        New\n      </Badge>\n    </div>\n  );\n}\n",
       "type": "registry:example"
     }
   ],

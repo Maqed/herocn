@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "components/examples/badge-sizes.tsx",
-      "content": "import { Badge } from \"@/components/ui/badge\";\n\nexport default function BadgeSizes() {\n  return (\n    <div className=\"flex flex-wrap items-center gap-2\">\n      <Badge size=\"sm\">Small</Badge>\n      <Badge>Default</Badge>\n      <Badge size=\"lg\">Large</Badge>\n    </div>\n  );\n}\n\n",
+      "content": "import { Badge } from \"@/components/ui/badge\";\n\nexport default function BadgeSizes() {\n  return (\n    <div className=\"flex flex-wrap items-center gap-2\">\n      <Badge size=\"sm\">Small</Badge>\n      <Badge>Default</Badge>\n      <Badge size=\"lg\">Large</Badge>\n    </div>\n  );\n}\n",
       "type": "registry:example"
     }
   ],

@@ -423,9 +423,8 @@ async function buildAllJson() {
     $schema: "https://ui.shadcn.com/schema/registry-item.json",
     name: "all",
     type: "registry:all",
-    // TODO: add brand name
     description:
-      "All components from [brand-name] (UI components, blocks, and agents)",
+      "All components from herocn (UI components, blocks, and agents)",
     dependencies: Array.from(allDependencies).sort(),
     registryDependencies: Array.from(allRegistryDependencies).sort(),
     files: allFiles,
@@ -444,19 +443,17 @@ async function buildPackageRegistries() {
   console.log("📦 Building package-specific registries...");
 
   // Build UI components registry
-  // TODO: add brand-name
   await buildPackageJson(
     "ui",
     "ui.json",
-    "All UI components from @brand-name/ui",
+    "All UI components from @herocn/ui",
   );
 
   // Build blocks registry
   await buildPackageJson(
     "blocks",
     "blocks.json",
-    // TODO: add brand-name
-    "All blocks from @brand-name/blocks",
+    "All blocks from @herocn/blocks",
   );
 }
 

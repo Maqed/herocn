@@ -77,10 +77,7 @@ export function MobileNav({
               </MobileLink>
               {items.map((item, index) => (
                 <MobileLink
-                  key={`mobile-link-${
-                    // biome-ignore lint/suspicious/noArrayIndexKey: <not a problem>
-                    index
-                  }`}
+                  key={`mobile-link-${index}`}
                   href={item.href}
                   onOpenChange={setOpen}
                 >
@@ -105,10 +102,7 @@ export function MobileNav({
                       {pages.map((item) => {
                         return (
                           <MobileLink
-                            key={`${item.url}-${
-                              // biome-ignore lint/suspicious/noArrayIndexKey: <not a problem>
-                              index
-                            }`}
+                            key={`${item.url}-${index}`}
                             href={item.url}
                             onOpenChange={setOpen}
                             className="flex items-center gap-2"

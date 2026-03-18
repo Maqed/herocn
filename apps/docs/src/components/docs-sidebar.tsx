@@ -1,5 +1,6 @@
 "use client";
 
+import { ExternalLinkIcon } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { getPagesFromFolder } from "@/lib/page-tree";
@@ -17,6 +18,10 @@ import {
   SidebarMenuSubItem,
 } from "@/registry/new-york-v4/ui/sidebar";
 
+const EXTERNALS = [
+  { name: "Roadmap", href: "https://herocn.featurebase.app/" },
+];
+
 export function DocsSidebar({
   tree,
   ...props
@@ -30,6 +35,26 @@ export function DocsSidebar({
       {...props}
     >
       <SidebarContent className="mx-auto no-scrollbar w-(--sidebar-menu-width) overflow-x-hidden px-2">
+        <SidebarGroup className="py-0 mb-5">
+          <SidebarGroupLabel>Externals</SidebarGroupLabel>
+          <SidebarGroupContent>
+            {EXTERNALS.map((externalLink) => (
+              <SidebarMenuButton
+                render={
+                  <Link
+                    href={externalLink.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {externalLink.name}
+                    <ExternalLinkIcon />
+                  </Link>
+                }
+                key={`external-link-${externalLink.name}`}
+              />
+            ))}
+          </SidebarGroupContent>
+        </SidebarGroup>
         {tree.children.map((item) => {
           const hasLink =
             item.type === "page" ||

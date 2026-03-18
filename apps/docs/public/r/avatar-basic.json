@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "components/examples/avatar-basic.tsx",
-      "content": "import { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\n\nexport default function AvatarBasic() {\n  return (\n    <Avatar>\n      <AvatarImage\n        src=\"https://github.com/shadcn.png\"\n        alt=\"@shadcn\"\n        className=\"grayscale\"\n      />\n      <AvatarFallback>CN</AvatarFallback>\n    </Avatar>\n  );\n}\n\n",
+      "content": "import {\n  Avatar,\n  AvatarFallback,\n  AvatarImage,\n} from \"@/components/ui/avatar\";\n\nexport default function AvatarBasic() {\n  return (\n    <Avatar>\n      <AvatarImage\n        src=\"https://github.com/Maqed.png\"\n        alt=\"@0xMaqed\"\n        className=\"grayscale\"\n      />\n      <AvatarFallback>Mqd</AvatarFallback>\n    </Avatar>\n  );\n}\n",
       "type": "registry:example"
     }
   ],

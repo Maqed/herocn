@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "components/examples/avatar-group.tsx",
-      "content": "import {\n  Avatar,\n  AvatarFallback,\n  AvatarGroup,\n  AvatarImage,\n} from \"@/components/ui/avatar\";\n\nexport default function AvatarGroupExample() {\n  return (\n    <AvatarGroup className=\"grayscale\">\n      <Avatar>\n        <AvatarImage src=\"https://github.com/shadcn.png\" alt=\"@shadcn\" />\n        <AvatarFallback>CN</AvatarFallback>\n      </Avatar>\n      <Avatar>\n        <AvatarImage src=\"https://github.com/maxleiter.png\" alt=\"@maxleiter\" />\n        <AvatarFallback>LR</AvatarFallback>\n      </Avatar>\n      <Avatar>\n        <AvatarImage\n          src=\"https://github.com/evilrabbit.png\"\n          alt=\"@evilrabbit\"\n        />\n        <AvatarFallback>ER</AvatarFallback>\n      </Avatar>\n    </AvatarGroup>\n  );\n}\n\n",
+      "content": "import {\n  Avatar,\n  AvatarFallback,\n  AvatarGroup,\n  AvatarImage,\n} from \"@/components/ui/avatar\";\n\nexport default function AvatarGroupExample() {\n  return (\n    <AvatarGroup className=\"grayscale\">\n      <Avatar>\n        <AvatarImage src=\"https://github.com/shadcn.png\" alt=\"@shadcn\" />\n        <AvatarFallback>CN</AvatarFallback>\n      </Avatar>\n      <Avatar>\n        <AvatarImage src=\"https://github.com/maxleiter.png\" alt=\"@maxleiter\" />\n        <AvatarFallback>LR</AvatarFallback>\n      </Avatar>\n      <Avatar>\n        <AvatarImage src=\"https://github.com/Maqed.png\" alt=\"@0xMaqed\" />\n        <AvatarFallback>Mqd</AvatarFallback>\n      </Avatar>\n    </AvatarGroup>\n  );\n}\n",
       "type": "registry:example"
     }
   ],

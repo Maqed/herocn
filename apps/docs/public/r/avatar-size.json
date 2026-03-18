@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "components/examples/avatar-size.tsx",
-      "content": "import { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\n\nexport default function AvatarSizeExample() {\n  return (\n    <div className=\"flex flex-wrap items-center gap-2 grayscale\">\n      <Avatar size=\"sm\">\n        <AvatarImage src=\"https://github.com/shadcn.png\" alt=\"@shadcn\" />\n        <AvatarFallback>CN</AvatarFallback>\n      </Avatar>\n      <Avatar>\n        <AvatarImage src=\"https://github.com/shadcn.png\" alt=\"@shadcn\" />\n        <AvatarFallback>CN</AvatarFallback>\n      </Avatar>\n      <Avatar size=\"lg\">\n        <AvatarImage src=\"https://github.com/shadcn.png\" alt=\"@shadcn\" />\n        <AvatarFallback>CN</AvatarFallback>\n      </Avatar>\n    </div>\n  );\n}\n\n",
+      "content": "import {\n  Avatar,\n  AvatarFallback,\n  AvatarImage,\n} from \"@/components/ui/avatar\";\n\nexport default function AvatarSizeExample() {\n  return (\n    <div className=\"flex flex-wrap items-center gap-2 grayscale\">\n      <Avatar size=\"sm\">\n        <AvatarImage src=\"https://github.com/Maqed.png\" alt=\"@0xMaqed\" />\n        <AvatarFallback>Mqd</AvatarFallback>\n      </Avatar>\n      <Avatar>\n        <AvatarImage src=\"https://github.com/Maqed.png\" alt=\"@0xMaqed\" />\n        <AvatarFallback>Mqd</AvatarFallback>\n      </Avatar>\n      <Avatar size=\"lg\">\n        <AvatarImage src=\"https://github.com/Maqed.png\" alt=\"@0xMaqed\" />\n        <AvatarFallback>Mqd</AvatarFallback>\n      </Avatar>\n    </div>\n  );\n}\n",
       "type": "registry:example"
     }
   ],

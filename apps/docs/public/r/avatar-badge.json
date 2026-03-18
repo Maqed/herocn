@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "components/examples/avatar-badge.tsx",
-      "content": "import {\n  Avatar,\n  AvatarBadge,\n  AvatarFallback,\n  AvatarImage,\n} from \"@/components/ui/avatar\";\n\nexport default function AvatarWithBadge() {\n  return (\n    <Avatar>\n      <AvatarImage src=\"https://github.com/Maqed.png\" alt=\"@0xMaqed\" />\n      <AvatarFallback>Mqd</AvatarFallback>\n      <AvatarBadge className=\"bg-green-600 dark:bg-green-800\" />\n    </Avatar>\n  );\n}\n\n",
+      "content": "import {\n  Avatar,\n  AvatarBadge,\n  AvatarFallback,\n  AvatarImage,\n} from \"@/components/ui/avatar\";\n\nexport default function AvatarWithBadge() {\n  return (\n    <Avatar>\n      <AvatarImage src=\"https://github.com/Maqed.png\" alt=\"@0xMaqed\" />\n      <AvatarFallback>Mqd</AvatarFallback>\n      <AvatarBadge className=\"bg-green-600 dark:bg-green-800\" />\n    </Avatar>\n  );\n}\n",
       "type": "registry:example"
     }
   ],

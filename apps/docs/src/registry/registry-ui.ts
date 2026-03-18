@@ -23,8 +23,31 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
-    cssVars,
-    css,
+    cssVars: {
+      light: {
+        "--eclipse": cssVars.light["--eclipse"],
+        "--snow": cssVars.light["--snow"],
+        "--default": cssVars.light["--default"],
+        "--default-foreground": cssVars.light["--default-foreground"],
+        "--destructive-foreground": cssVars.light["--destructive-foreground"],
+      },
+      dark: {
+        "--default": cssVars.dark["--default"],
+        "--default-foreground": cssVars.dark["--default-foreground"],
+        "--destructive-foreground": cssVars.dark["--destructive-foreground"],
+      },
+      theme: {
+        "--color-default": cssVars.theme["--color-default"],
+        "--color-default-foreground":
+          cssVars.theme["--color-default-foreground"],
+        "--color-destructive-foreground":
+          cssVars.theme["--color-destructive-foreground"],
+      },
+    },
+    css: {
+      "@utility pressible": css["@utility pressible"],
+      "@utility focus-ring": css["@utility focus-ring"],
+    },
   },
   {
     name: "collapsible",

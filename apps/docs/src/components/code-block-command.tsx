@@ -118,9 +118,9 @@ export function CodeBlockCommandWrapper({
           render={
             <Button
               data-slot="copy-button"
-              size="icon"
+              size="icon-sm"
               variant="ghost"
-              className="absolute right-2 top-2 z-10 size-7 opacity-70 hover:opacity-100 focus-visible:opacity-100"
+              className="absolute right-2 top-2 z-10 opacity-70 hover:opacity-100 focus-visible:opacity-100"
               onClick={copyCommand}
             >
               <span className="sr-only">Copy</span>

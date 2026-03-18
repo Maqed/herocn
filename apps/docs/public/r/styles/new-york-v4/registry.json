@@ -6,6 +6,7 @@
       "name": "index",
       "type": "registry:style",
       "dependencies": [
+        "@base-ui/react",
         "class-variance-authority",
         "lucide-react"
       ],
@@ -13,7 +14,8 @@
         "tw-animate-css"
       ],
       "registryDependencies": [
-        "utils"
+        "utils",
+        "@herocn/ui"
       ],
       "cssVars": {
         "light": {
@@ -156,6 +158,7 @@
       "name": "style",
       "type": "registry:style",
       "dependencies": [
+        "@base-ui/react",
         "class-variance-authority",
         "lucide-react"
       ],
@@ -163,7 +166,8 @@
         "tw-animate-css"
       ],
       "registryDependencies": [
-        "utils"
+        "utils",
+        "@herocn/ui"
       ],
       "cssVars": {
         "light": {

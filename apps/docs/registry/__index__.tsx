@@ -9,14 +9,14 @@ export const Index: Record<string, any> = {
   "index": {
     name: "index",
     type: "registry:style",
-    registryDependencies: ["utils"],
+    registryDependencies: ["utils","@herocn/ui"],
     files: [],
     component: null,
   },
   "style": {
     name: "style",
     type: "registry:style",
-    registryDependencies: ["utils"],
+    registryDependencies: ["utils","@herocn/ui"],
     files: [],
     component: null,
   },

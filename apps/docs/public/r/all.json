@@ -2,13 +2,14 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "all",
   "type": "registry:all",
-  "description": "All components from [brand-name] (UI components, blocks, and agents)",
+  "description": "All components from herocn (UI components, blocks, and agents)",
   "dependencies": [
     "@base-ui/react",
     "class-variance-authority",
     "lucide-react"
   ],
   "registryDependencies": [
+    "@herocn/ui",
     "avatar",
     "badge",
     "button",

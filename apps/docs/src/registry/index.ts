@@ -7,9 +7,9 @@ import { css, cssVars } from "./shared";
 // Shared between index and style for backward compatibility.
 const HEROCN_STYLE = {
   type: "registry:style" as const,
-  dependencies: ["class-variance-authority", "lucide-react"],
+  dependencies: ["@base-ui/react", "class-variance-authority", "lucide-react"],
   devDependencies: ["tw-animate-css"],
-  registryDependencies: ["utils"],
+  registryDependencies: ["utils", "@herocn/ui"],
   cssVars,
   css,
   files: [],

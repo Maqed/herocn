@@ -39,7 +39,7 @@ export function CommandMenu({
   ...props
 }: ComponentProps<typeof CommandDialog> & {
   tree: typeof source.pageTree;
-  navItems?: { href: string; label: string }[];
+  navItems?: { href: string; label: string; isExternal?: boolean }[];
 }) {
   const [open, setOpen] = React.useState(false);
 

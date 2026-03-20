@@ -112,6 +112,40 @@ Dependency install command:
 
 ---
 
+## `<RenderCSSShared />` — ALWAYS Use for Shared CSS Colors & Utilities
+
+Use `<RenderCSSShared />` inside your docs (typically in the **Installation** manual steps) to render the required shared CSS variables and utilities from `@/registry/shared` as a syntax-highlighted, collapsible `globals.css` code block.
+
+### What It Renders
+
+- `light` generates `:root { ... }`
+- `dark` generates `.dark { ... }`
+- `theme` generates `@theme inline { ... }`
+- `css` generates one CSS block per key (e.g. `@utility ...`) with the declarations defined in `@/registry/shared`
+
+### Props
+
+```ts
+light?: (keyof typeof sharedCssVars.light)[];
+dark?: (keyof typeof sharedCssVars.dark)[];
+theme?: (keyof typeof sharedCssVars.theme)[];
+css?: (keyof typeof sharedCss)[];
+title?: string; // defaults to "globals.css"
+```
+
+### Example (matches `button.mdx`)
+
+```mdx
+<RenderCSSShared
+  light={["--eclipse", "--snow", "--default", "--default-foreground", "--destructive-foreground"]}
+  dark={["--default", "--default-foreground", "--destructive-foreground"]}
+  theme={["--color-default", "--color-default-foreground", "--color-destructive-foreground"]}
+  css={["@utility pressible", "@utility focus-ring"]}
+/>
+```
+
+---
+
 ## `<ApiRefTable />` — ALWAYS Use for API Reference
 
 **Never use markdown tables for API reference.** Always use the `<ApiRefTable />` component. It renders a styled, interactive table with collapsible rows for descriptions.

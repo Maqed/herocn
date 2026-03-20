@@ -375,4 +375,26 @@ export const examples: Registry["items"] = [
       },
     ],
   },
+  {
+    name: "surface-demo",
+    type: "registry:example",
+    registryDependencies: ["surface"],
+    files: [
+      {
+        path: "examples/surface-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "surface-variants",
+    type: "registry:example",
+    registryDependencies: ["surface"],
+    files: [
+      {
+        path: "examples/surface-variants.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
 ];

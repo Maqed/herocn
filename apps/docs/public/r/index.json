@@ -53,7 +53,10 @@
       "--color-success": "var(--success)",
       "--color-success-foreground": "var(--success-foreground)",
       "--color-warning": "var(--warning)",
-      "--color-warning-foreground": "var(--warning-foreground)"
+      "--color-warning-foreground": "var(--warning-foreground)",
+      "--color-surface": "var(--surface)",
+      "--color-surface-secondary": "var(--surface-secondary)",
+      "--color-surface-tertiary": "var(--surface-tertiary)"
     },
     "light": {
       "--snow": "oklch(0.9911 0 0)",
@@ -61,9 +64,9 @@
       "--radius": "0.5rem",
       "--background": "oklch(0.9702 0 0)",
       "--foreground": "oklch(0.141 0.005 285.823)",
-      "--card": "oklch(1 0 0)",
+      "--card": "var(--color-surface)",
       "--card-foreground": "oklch(0.141 0.005 285.823)",
-      "--popover": "oklch(1 0 0)",
+      "--popover": "var(--color-surface)",
       "--popover-foreground": "oklch(0.141 0.005 285.823)",
       "--primary": "oklch(0.6204 0.195 253.83)",
       "--primary-foreground": "oklch(0.97 0.014 254.604)",
@@ -83,7 +86,7 @@
       "--chart-3": "oklch(0.546 0.245 262.881)",
       "--chart-4": "oklch(0.488 0.243 264.376)",
       "--chart-5": "oklch(0.424 0.199 265.638)",
-      "--sidebar": "oklch(0.985 0 0)",
+      "--sidebar": "var(--color-surface)",
       "--sidebar-foreground": "oklch(0.141 0.005 285.823)",
       "--sidebar-primary": "oklch(0.6204 0.195 253.83)",
       "--sidebar-primary-foreground": "oklch(0.97 0.014 254.604)",
@@ -96,14 +99,17 @@
       "--success": "oklch(0.7329 0.1935 150.81)",
       "--success-foreground": "var(--eclipse)",
       "--warning": "oklch(0.7819 0.1585 72.33)",
-      "--warning-foreground": "var(--eclipse)"
+      "--warning-foreground": "var(--eclipse)",
+      "--surface": "white",
+      "--surface-secondary": "oklch(0.9524 0.0013 286.37)",
+      "--surface-tertiary": "oklch(0.9373 0.0013 286.37)"
     },
     "dark": {
       "--background": "oklch(0.1228 0.0029 285.97)",
       "--foreground": "oklch(0.985 0 0)",
-      "--card": "oklch(0.21 0.006 285.885)",
+      "--card": "var(--color-surface)",
       "--card-foreground": "oklch(0.985 0 0)",
-      "--popover": "oklch(0.21 0.006 285.885)",
+      "--popover": "var(--color-surface)",
       "--popover-foreground": "oklch(0.985 0 0)",
       "--primary": "oklch(0.6204 0.195 253.83)",
       "--primary-foreground": "oklch(0.97 0.014 254.604)",
@@ -123,7 +129,7 @@
       "--chart-3": "oklch(0.546 0.245 262.881)",
       "--chart-4": "oklch(0.488 0.243 264.376)",
       "--chart-5": "oklch(0.424 0.199 265.638)",
-      "--sidebar": "oklch(0.21 0.006 285.885)",
+      "--sidebar": "var(--color-surface)",
       "--sidebar-foreground": "oklch(0.985 0 0)",
       "--sidebar-primary": "oklch(0.6204 0.195 253.83)",
       "--sidebar-primary-foreground": "oklch(0.97 0.014 254.604)",
@@ -134,7 +140,10 @@
       "--default": "oklch(27.4% 0.006 286.033)",
       "--default-foreground": "var(--snow)",
       "--warning": "oklch(0.8203 0.1388 76.34)",
-      "--warning-foreground": "var(--eclipse)"
+      "--warning-foreground": "var(--eclipse)",
+      "--surface": "oklch(0.2103 0.0059 285.89)",
+      "--surface-secondary": "oklch(0.257 0.0037 286.14)",
+      "--surface-tertiary": "oklch(0.2721 0.0024 247.91)"
     }
   },
   "css": {

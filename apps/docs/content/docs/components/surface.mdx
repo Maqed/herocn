@@ -1,0 +1,83 @@
+---
+title: Surface
+description: A simple container that applies surface background variants.
+---
+
+<ComponentPreview name="surface-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+<CodeBlockCommand command="npx shadcn@latest add @herocn/surface" />
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+<CodeBlockCommand command="npm install class-variance-authority" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="surface" title="components/ui/surface.tsx" />
+
+<Step>Add the following css colors.</Step>
+
+<RenderCSSShared
+  light={["--surface", "--surface-secondary", "--surface-tertiary"]}
+  dark={["--surface", "--surface-secondary", "--surface-tertiary"]}
+  theme={["--color-surface", "--color-surface-secondary", "--color-surface-tertiary"]}
+/>
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { Surface } from "@/components/ui/surface"
+```
+
+```tsx
+<Surface className="rounded-lg p-4">
+  Content
+</Surface>
+```
+
+## Variants
+
+Use the `variant` prop to change the background style.
+
+<ComponentPreview name="surface-variants" />
+
+## API Reference
+
+### Surface
+
+The `Surface` component accepts all native `div` props plus the following:
+
+<ApiRefTable
+  props={[
+    {
+      name: "variant",
+      type: '"default" | "secondary" | "tertiary" | "transparent"',
+      defaultValue: '"default"',
+      description: "Controls the background style of the surface container.",
+    },
+  ]}
+/>

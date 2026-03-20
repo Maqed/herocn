@@ -11,6 +11,7 @@
     "@herocn/badge",
     "@herocn/button",
     "@herocn/collapsible",
-    "@herocn/dropdown-menu"
+    "@herocn/dropdown-menu",
+    "@herocn/surface"
   ]
 }

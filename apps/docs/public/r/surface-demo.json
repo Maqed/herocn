@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "surface-demo",
+  "registryDependencies": [
+    "surface"
+  ],
+  "files": [
+    {
+      "path": "components/examples/surface-demo.tsx",
+      "content": "import { Surface } from \"@/components/ui/surface\";\n\nexport default function SurfaceDemo() {\n  return (\n    <div className=\"grid w-full gap-3 md:grid-cols-2\">\n      <Surface className=\"rounded-lg border p-4\">\n        <h4 className=\"text-sm font-medium\">Default Surface</h4>\n        <p className=\"mt-1 text-sm text-muted-foreground\">\n          Use for cards, panels, and grouped content.\n        </p>\n      </Surface>\n      <Surface variant=\"secondary\" className=\"rounded-lg border p-4\">\n        <h4 className=\"text-sm font-medium\">Secondary Surface</h4>\n        <p className=\"mt-1 text-sm text-muted-foreground\">\n          Great for nested sections and subtle emphasis.\n        </p>\n      </Surface>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

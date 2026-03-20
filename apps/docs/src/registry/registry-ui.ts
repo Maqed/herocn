@@ -137,4 +137,31 @@ export const ui: Registry["items"] = [
       "@utility focus-ring": css["@utility focus-ring"],
     },
   },
+  {
+    name: "surface",
+    type: "registry:ui",
+    files: [
+      {
+        path: "ui/surface.tsx",
+        type: "registry:ui",
+      },
+    ],
+    cssVars: {
+      light: {
+        "--surface": cssVars.light["--surface"],
+        "--surface-secondary": cssVars.light["--surface-secondary"],
+        "--surface-tertiary": cssVars.light["--surface-tertiary"],
+      },
+      dark: {
+        "--surface": cssVars.dark["--surface"],
+        "--surface-secondary": cssVars.dark["--surface-secondary"],
+        "--surface-tertiary": cssVars.dark["--surface-tertiary"],
+      },
+      theme: {
+        "--color-surface": cssVars.theme["--color-surface"],
+        "--color-surface-secondary": cssVars.theme["--color-surface-secondary"],
+        "--color-surface-tertiary": cssVars.theme["--color-surface-tertiary"],
+      },
+    },
+  },
 ];

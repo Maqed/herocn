@@ -1,7 +1,5 @@
 export const cssVars = {
   light: {
-    "--white": "oklch(100% 0 0)",
-    "--black": "oklch(0% 0 0)",
     "--snow": "oklch(0.9911 0 0)",
     "--eclipse": "oklch(0.2103 0.0059 285.89)",
     "--radius": "0.5rem",

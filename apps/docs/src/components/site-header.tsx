@@ -34,7 +34,10 @@ export function SiteHeader() {
               </Link>
             }
           />
-          <MainNav items={siteConfig.navItems} className="hidden lg:flex" />
+          <MainNav
+            items={siteConfig.navItems.filter((item) => !item.isExternal)}
+            className="hidden lg:flex"
+          />
           <div className="ml-auto flex items-center gap-2 md:flex-1 md:justify-end">
             <CommandMenu
               tree={pageTree}

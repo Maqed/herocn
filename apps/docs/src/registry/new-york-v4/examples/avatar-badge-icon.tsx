@@ -8,10 +8,10 @@ import {
 
 export default function AvatarBadgeIconExample() {
   return (
-    <Avatar className="grayscale">
+    <Avatar>
       <AvatarImage src="https://github.com/Maqed.png" alt="@0xMaqed" />
       <AvatarFallback>Mqd</AvatarFallback>
-      <AvatarBadge>
+      <AvatarBadge variant="primary">
         <PlusIcon />
       </AvatarBadge>
     </Avatar>

@@ -12,6 +12,32 @@ export const ui: Registry["items"] = [
         type: "registry:ui",
       },
     ],
+    cssVars: {
+      light: {
+        "--eclipse": cssVars.light["--eclipse"],
+        "--snow": cssVars.light["--snow"],
+        "--default": cssVars.light["--default"],
+        "--default-foreground": cssVars.light["--default-foreground"],
+        "--destructive-foreground": cssVars.light["--destructive-foreground"],
+        "--success": cssVars.light["--success"],
+        "--warning": cssVars.light["--warning"],
+      },
+      dark: {
+        "--default": cssVars.dark["--default"],
+        "--default-foreground": cssVars.dark["--default-foreground"],
+        "--destructive-foreground": cssVars.dark["--destructive-foreground"],
+        "--warning": cssVars.dark["--warning"],
+      },
+      theme: {
+        "--color-default": cssVars.theme["--color-default"],
+        "--color-default-foreground":
+          cssVars.theme["--color-default-foreground"],
+        "--color-destructive-foreground":
+          cssVars.theme["--color-destructive-foreground"],
+        "--color-success": cssVars.theme["--color-success"],
+        "--color-warning": cssVars.theme["--color-warning"],
+      },
+    },
   },
   {
     name: "button",

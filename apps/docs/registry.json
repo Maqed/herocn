@@ -317,7 +317,31 @@
           "path": "src/registry/new-york-v4/ui/avatar.tsx",
           "type": "registry:ui"
         }
-      ]
+      ],
+      "cssVars": {
+        "light": {
+          "--eclipse": "oklch(0.2103 0.0059 285.89)",
+          "--snow": "oklch(0.9911 0 0)",
+          "--default": "oklch(94% 0.001 286.375)",
+          "--default-foreground": "var(--eclipse)",
+          "--destructive-foreground": "var(--snow)",
+          "--success": "oklch(0.7329 0.1935 150.81)",
+          "--warning": "oklch(0.7819 0.1585 72.33)"
+        },
+        "dark": {
+          "--default": "oklch(27.4% 0.006 286.033)",
+          "--default-foreground": "var(--snow)",
+          "--destructive-foreground": "var(--snow)",
+          "--warning": "oklch(0.8203 0.1388 76.34)"
+        },
+        "theme": {
+          "--color-default": "var(--default)",
+          "--color-default-foreground": "var(--default-foreground)",
+          "--color-destructive-foreground": "var(--destructive-foreground)",
+          "--color-success": "var(--success)",
+          "--color-warning": "var(--warning)"
+        }
+      }
     },
     {
       "name": "button",

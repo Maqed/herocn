@@ -70,7 +70,7 @@ A basic avatar component with an image and a fallback.
 
 ### Badge
 
-Use the `AvatarBadge` component to add a badge to the avatar. The badge is positioned at the bottom right of the avatar.
+Use the `AvatarBadge` component to add a badge to the avatar. Serves the same purpose as [HeroUI v3 badge](https://v3.heroui.com/docs/react/components/badge)
 
 <ComponentPreview  name="avatar-badge" />
 
@@ -132,6 +132,27 @@ The `Avatar` component is the root component that wraps the avatar image and fal
       name: "size",
       type: '"default" | "sm" | "lg"',
       defaultValue: '"default"',
+    }
+  ]}
+/>
+
+### AvatarBadge
+
+The `AvatarBadge` component displays a badge indicator on the avatar.
+
+<ApiRefTable
+  props={[
+    {
+      name: "variant",
+      type: '"default" | "primary" | "success" | "warning" | "destructive"',
+      defaultValue: '"default"',
+      description: "Sets the color of the badge"
+    },
+    {
+      name: "position",
+      type: '"bottom-end" | "bottom-start" | "top-end" | "top-start"',
+      defaultValue: '"bottom-end"',
+      description: "Sets the position of the badge"
     }
   ]}
 />

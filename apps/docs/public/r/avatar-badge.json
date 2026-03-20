@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "components/examples/avatar-badge.tsx",
-      "content": "import {\n  Avatar,\n  AvatarBadge,\n  AvatarFallback,\n  AvatarImage,\n} from \"@/components/ui/avatar\";\n\nexport default function AvatarWithBadge() {\n  return (\n    <Avatar>\n      <AvatarImage src=\"https://github.com/Maqed.png\" alt=\"@0xMaqed\" />\n      <AvatarFallback>Mqd</AvatarFallback>\n      <AvatarBadge className=\"bg-green-600 dark:bg-green-800\" />\n    </Avatar>\n  );\n}\n",
+      "content": "import {\n  Avatar,\n  AvatarBadge,\n  AvatarFallback,\n  AvatarImage,\n} from \"@/components/ui/avatar\";\n\n\nexport default function AvatarWithBadge() {\n  const positions = [\"bottom-end\", \"bottom-start\", \"top-end\", \"top-start\"] as const\n  const variants = [\n    \"default\",\n    \"primary\",\n    \"success\",\n    \"warning\",\n    \"destructive\",\n  ] as const;\n  return (\n    <div className=\"flex justify-center items-center gap-2 flex-wrap\">\n      {variants.map((variant,index) => (\n        <Avatar key={`avatar-badge-variant-${variant}`}>\n          <AvatarImage src=\"https://github.com/Maqed.png\" alt=\"@0xMaqed\" />\n          <AvatarFallback>Mqd</AvatarFallback>\n          <AvatarBadge position={positions[index % 4]} variant={variant} >\n            {index+1}\n          </AvatarBadge>\n        </Avatar>\n      ))}\n    </div>\n  );\n}\n",
       "type": "registry:example"
     }
   ],

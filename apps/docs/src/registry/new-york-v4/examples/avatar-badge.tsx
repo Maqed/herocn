@@ -6,11 +6,30 @@ import {
 } from "@/registry/new-york-v4/ui/avatar";
 
 export default function AvatarWithBadge() {
+  const positions = [
+    "bottom-end",
+    "bottom-start",
+    "top-end",
+    "top-start",
+  ] as const;
+  const variants = [
+    "default",
+    "primary",
+    "success",
+    "warning",
+    "destructive",
+  ] as const;
   return (
-    <Avatar>
-      <AvatarImage src="https://github.com/Maqed.png" alt="@0xMaqed" />
-      <AvatarFallback>Mqd</AvatarFallback>
-      <AvatarBadge className="bg-green-600 dark:bg-green-800" />
-    </Avatar>
+    <div className="flex justify-center items-center gap-2 flex-wrap">
+      {variants.map((variant, index) => (
+        <Avatar key={`avatar-badge-variant-${variant}`}>
+          <AvatarImage src="https://github.com/Maqed.png" alt="@0xMaqed" />
+          <AvatarFallback>Mqd</AvatarFallback>
+          <AvatarBadge position={positions[index % 4]} variant={variant}>
+            {index + 1}
+          </AvatarBadge>
+        </Avatar>
+      ))}
+    </div>
   );
 }

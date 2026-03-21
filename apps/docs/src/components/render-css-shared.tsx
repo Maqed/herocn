@@ -12,6 +12,41 @@ interface RenderCSSSharedProps {
   title?: string;
 }
 
+function isEmptyObject(value: unknown): value is Record<string, never> {
+  return (
+    typeof value === "object" &&
+    value !== null &&
+    !Array.isArray(value) &&
+    Object.keys(value).length === 0
+  );
+}
+
+function emitUtilityDeclarations(
+  lines: string[],
+  declarations: Record<string, unknown>,
+  indent: string,
+) {
+  for (const [prop, value] of Object.entries(declarations)) {
+    if (typeof value === "string") {
+      lines.push(`${indent}${prop}: ${value};`);
+    } else if (isEmptyObject(value)) {
+      lines.push(`${indent}${prop};`);
+    } else if (
+      typeof value === "object" &&
+      value !== null &&
+      !Array.isArray(value)
+    ) {
+      lines.push(`${indent}${prop} {`);
+      emitUtilityDeclarations(
+        lines,
+        value as Record<string, unknown>,
+        `${indent}  `,
+      );
+      lines.push(`${indent}}`);
+    }
+  }
+}
+
 function generateCSSString({
   light,
   dark,
@@ -53,15 +88,9 @@ function generateCSSString({
 
   if (css && css.length > 0) {
     for (const key of css) {
-      const declarations = sharedCss[key];
+      const declarations = sharedCss[key] as Record<string, unknown>;
       const utilityLines: string[] = [`${key} {`];
-      for (const [prop, value] of Object.entries(declarations)) {
-        if (typeof value === "string") {
-          utilityLines.push(`  ${prop}: ${value};`);
-        } else {
-          utilityLines.push(`  ${prop};`);
-        }
-      }
+      emitUtilityDeclarations(utilityLines, declarations, "  ");
       utilityLines.push("}");
       sections.push(utilityLines.join("\n"));
     }

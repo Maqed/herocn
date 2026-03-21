@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-button-group",
+  "registryDependencies": [
+    "button",
+    "button-group",
+    "field",
+    "input"
+  ],
+  "files": [
+    {
+      "path": "components/examples/input-button-group.tsx",
+      "content": "import { Button } from \"@/components/ui/button\";\nimport { ButtonGroup } from \"@/components/ui/button-group\";\nimport { Field, FieldLabel } from \"@/components/ui/field\";\nimport { Input } from \"@/components/ui/input\";\n\nexport default function InputButtonGroup() {\n  return (\n    <div className=\"w-full max-w-sm\">\n      <Field>\n        <FieldLabel htmlFor=\"input-button-group\">Search</FieldLabel>\n        <ButtonGroup>\n          <Input id=\"input-button-group\" variant=\"secondary\" placeholder=\"Type to search...\" />\n          <Button variant=\"tertiary\">Search</Button>\n        </ButtonGroup>\n      </Field>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

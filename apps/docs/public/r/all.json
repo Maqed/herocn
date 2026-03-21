@@ -13,8 +13,12 @@
     "avatar",
     "badge",
     "button",
+    "button-group",
     "collapsible",
     "dropdown-menu",
+    "field",
+    "input",
+    "input-group",
     "surface",
     "utils"
   ],
@@ -54,6 +58,12 @@
       "type": "registry:ui",
       "target": "",
       "content": "import { cva, type VariantProps } from \"class-variance-authority\";\nimport { cn } from \"@/lib/utils\";\n\nexport const surfaceVariants = cva(\"relative text-foreground\", {\n  variants: {\n    variant: {\n      default: \"bg-surface\",\n      secondary: \"bg-surface-secondary\",\n      tertiary: \"bg-surface-tertiary\",\n      transparent: \"bg-transparent\",\n    },\n  },\n  defaultVariants: {\n    variant: \"default\",\n  },\n});\n\nfunction Surface({\n  className,\n  variant,\n  ...props\n}: React.ComponentProps<\"div\"> & VariantProps<typeof surfaceVariants>) {\n  return (\n    <div className={cn(surfaceVariants({ variant }), className)} {...props} />\n  );\n}\n\nexport { Surface };\n"
+    },
+    {
+      "path": "components/ui/input.tsx",
+      "type": "registry:ui",
+      "target": "",
+      "content": "import { Input as InputPrimitive } from \"@base-ui/react/input\";\nimport type * as React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nfunction Input({\n  className,\n  variant = \"default\",\n  type,\n  ...props\n}: React.ComponentProps<\"input\"> & { variant?: \"default\" | \"secondary\" }) {\n  return (\n    <InputPrimitive\n      type={type}\n      data-slot=\"input\"\n      data-variant={variant}\n      className={cn(\n        \"bg-input data-[variant=secondary]:bg-surface-secondary px-3 py-2 text-base outline-none shadow-xs aria-invalid:invalid-field-ring sm:text-sm rounded-xl transition-colors md:text-sm w-full min-w-0 placeholder:text-muted-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50\",\n        \"focus-visible:focus-field-ring focus-visible:ring-primary\",\n        \"hover:not-focus-visible:bg-input/90 hover:not-focus-visible:data-[variant=secondary]:bg-surface-secondary/90\",\n        className,\n      )}\n      {...props}\n    />\n  );\n}\n\nexport { Input };\n"
     },
     {
       "path": "examples/button-demo.tsx",
@@ -270,6 +280,54 @@
       "type": "registry:example",
       "target": "",
       "content": "import { Surface } from \"@/components/ui/surface\";\n\nexport default function SurfaceVariants() {\n  return (\n    <div className=\"grid w-full gap-3 md:grid-cols-2\">\n      <Surface variant=\"default\" className=\"rounded-lg border p-4\">\n        Default\n      </Surface>\n      <Surface variant=\"secondary\" className=\"rounded-lg border p-4\">\n        Secondary\n      </Surface>\n      <Surface variant=\"tertiary\" className=\"rounded-lg border p-4\">\n        Tertiary\n      </Surface>\n      <Surface variant=\"transparent\" className=\"rounded-lg border p-4\">\n        Transparent\n      </Surface>\n    </div>\n  );\n}\n"
+    },
+    {
+      "path": "examples/input-demo.tsx",
+      "type": "registry:example",
+      "target": "",
+      "content": "import { Input } from \"@/components/ui/input\";\n\nexport default function InputDemo() {\n  return (\n    <div className=\"w-full max-w-sm\">\n      <Input type=\"email\" placeholder=\"Email\" />\n    </div>\n  );\n}\n"
+    },
+    {
+      "path": "examples/input-variants.tsx",
+      "type": "registry:example",
+      "target": "",
+      "content": "import { Input } from \"@/components/ui/input\";\n\nexport default function InputVariants() {\n  return (\n    <div className=\"flex w-full max-w-sm flex-col gap-3\">\n      <Input placeholder=\"Default\" />\n      <Input variant=\"secondary\" placeholder=\"Secondary\" />\n    </div>\n  );\n}\n"
+    },
+    {
+      "path": "examples/input-states.tsx",
+      "type": "registry:example",
+      "target": "",
+      "content": "import { Input } from \"@/components/ui/input\";\n\nexport default function InputStates() {\n  return (\n    <div className=\"flex w-full max-w-sm flex-col gap-3\">\n      <Input disabled placeholder=\"Disabled\" />\n      <Input aria-invalid placeholder=\"Invalid\" defaultValue=\"Invalid value\" />\n    </div>\n  );\n}\n"
+    },
+    {
+      "path": "examples/input-field.tsx",
+      "type": "registry:example",
+      "target": "",
+      "content": "import {\n  Field,\n  FieldDescription,\n  FieldLabel,\n} from \"@/components/ui/field\";\nimport { Input } from \"@/components/ui/input\";\n\nexport default function InputField() {\n  return (\n    <div className=\"w-full max-w-sm\">\n      <Field>\n        <FieldLabel htmlFor=\"input-field-username\">Username</FieldLabel>\n        <Input\n          id=\"input-field-username\"\n          type=\"text\"\n          placeholder=\"Enter your username\"\n        />\n        <FieldDescription>\n          Choose a unique username for your account.\n        </FieldDescription>\n      </Field>\n    </div>\n  );\n}\n"
+    },
+    {
+      "path": "examples/input-fieldgroup.tsx",
+      "type": "registry:example",
+      "target": "",
+      "content": "import { Button } from \"@/components/ui/button\";\nimport {\n  Field,\n  FieldDescription,\n  FieldGroup,\n  FieldLabel,\n} from \"@/components/ui/field\";\nimport { Input } from \"@/components/ui/input\";\n\nexport default function InputFieldgroup() {\n  return (\n    <div className=\"w-full max-w-sm\">\n      <FieldGroup>\n        <Field>\n          <FieldLabel htmlFor=\"fieldgroup-name\">Name</FieldLabel>\n          <Input id=\"fieldgroup-name\" placeholder=\"Jordan Lee\" />\n        </Field>\n        <Field>\n          <FieldLabel htmlFor=\"fieldgroup-email\">Email</FieldLabel>\n          <Input\n            id=\"fieldgroup-email\"\n            type=\"email\"\n            placeholder=\"name@example.com\"\n          />\n          <FieldDescription>\n            We&apos;ll send updates to this address.\n          </FieldDescription>\n        </Field>\n        <Field orientation=\"horizontal\">\n          <Button type=\"reset\" variant=\"outline\">\n            Reset\n          </Button>\n          <Button type=\"submit\">Submit</Button>\n        </Field>\n      </FieldGroup>\n    </div>\n  );\n}\n"
+    },
+    {
+      "path": "examples/input-badge.tsx",
+      "type": "registry:example",
+      "target": "",
+      "content": "import { Badge } from \"@/components/ui/badge\";\nimport { Field, FieldLabel } from \"@/components/ui/field\";\nimport { Input } from \"@/components/ui/input\";\n\nexport default function InputBadge() {\n  return (\n    <div className=\"w-full max-w-sm\">\n      <Field>\n        <FieldLabel\n          htmlFor=\"input-badge\"\n          className=\"flex w-full items-center gap-2\"\n        >\n          Webhook URL\n          <Badge variant=\"default\" className=\"ml-auto\">\n            Beta\n          </Badge>\n        </FieldLabel>\n        <Input\n          id=\"input-badge\"\n          type=\"url\"\n          placeholder=\"https://api.example.com/webhook\"\n        />\n      </Field>\n    </div>\n  );\n}\n"
+    },
+    {
+      "path": "examples/input-input-group.tsx",
+      "type": "registry:example",
+      "target": "",
+      "content": "import { Field, FieldLabel } from \"@/components/ui/field\";\nimport {\n  InputGroup,\n  InputGroupAddon,\n  InputGroupInput,\n  InputGroupText,\n} from \"@/components/ui/input-group\";\nimport { InfoIcon } from \"lucide-react\";\n\nexport default function InputInputGroup() {\n  return (\n    <div className=\"w-full max-w-sm\">\n      <Field>\n        <FieldLabel htmlFor=\"input-group-url\">Website URL</FieldLabel>\n        <InputGroup>\n          <InputGroupInput id=\"input-group-url\" placeholder=\"example.com\" />\n          <InputGroupAddon>\n            <InputGroupText>https://</InputGroupText>\n          </InputGroupAddon>\n          <InputGroupAddon align=\"inline-end\">\n            <InfoIcon />\n          </InputGroupAddon>\n        </InputGroup>\n      </Field>\n    </div>\n  );\n}\n"
+    },
+    {
+      "path": "examples/input-button-group.tsx",
+      "type": "registry:example",
+      "target": "",
+      "content": "import { Button } from \"@/components/ui/button\";\nimport { ButtonGroup } from \"@/components/ui/button-group\";\nimport { Field, FieldLabel } from \"@/components/ui/field\";\nimport { Input } from \"@/components/ui/input\";\n\nexport default function InputButtonGroup() {\n  return (\n    <div className=\"w-full max-w-sm\">\n      <Field>\n        <FieldLabel htmlFor=\"input-button-group\">Search</FieldLabel>\n        <ButtonGroup>\n          <Input id=\"input-button-group\" variant=\"secondary\" placeholder=\"Type to search...\" />\n          <Button variant=\"tertiary\">Search</Button>\n        </ButtonGroup>\n      </Field>\n    </div>\n  );\n}\n"
     }
   ]
 }

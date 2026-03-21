@@ -39,7 +39,7 @@
           "--destructive": "oklch(0.6532 0.2328 25.74)",
           "--destructive-foreground": "var(--snow)",
           "--border": "oklch(0.92 0.004 286.32)",
-          "--input": "oklch(0.92 0.004 286.32)",
+          "--input": "white",
           "--ring": "oklch(0.708 0 0)",
           "--chart-1": "oklch(0.809 0.105 251.813)",
           "--chart-2": "oklch(0.623 0.214 259.815)",
@@ -82,7 +82,7 @@
           "--destructive": "oklch(0.594 0.1967 24.63)",
           "--destructive-foreground": "var(--snow)",
           "--border": "oklch(1 0 0 / 10%)",
-          "--input": "oklch(1 0 0 / 15%)",
+          "--input": "oklch(0.2103 0.0059 285.89)",
           "--ring": "oklch(0.556 0 0)",
           "--chart-1": "oklch(0.809 0.105 251.813)",
           "--chart-2": "oklch(0.623 0.214 259.815)",
@@ -157,6 +157,18 @@
         "@utility focus-ring": {
           "@apply ring-2 ring-ring ring-offset-0 ring-offset-background outline-none": {},
           "--tw-ring-offset-width": "var(--ring-offset-width)"
+        },
+        "@utility focus-field-ring": {
+          "@apply ring-2 ring-ring ring-offset-0 outline-none": {},
+          "--tw-ring-offset-width": "0px"
+        },
+        "@utility invalid-field-ring": {
+          "@apply outline-1 outline-destructive outline-solid": {},
+          "--tw-ring-offset-width": "3px",
+          "&:focus-visible": {
+            "@apply ring-2 outline-destructive ring-offset-0": {},
+            "--tw-ring-offset-width": "0px"
+          }
         }
       },
       "files": []
@@ -198,7 +210,7 @@
           "--destructive": "oklch(0.6532 0.2328 25.74)",
           "--destructive-foreground": "var(--snow)",
           "--border": "oklch(0.92 0.004 286.32)",
-          "--input": "oklch(0.92 0.004 286.32)",
+          "--input": "white",
           "--ring": "oklch(0.708 0 0)",
           "--chart-1": "oklch(0.809 0.105 251.813)",
           "--chart-2": "oklch(0.623 0.214 259.815)",
@@ -241,7 +253,7 @@
           "--destructive": "oklch(0.594 0.1967 24.63)",
           "--destructive-foreground": "var(--snow)",
           "--border": "oklch(1 0 0 / 10%)",
-          "--input": "oklch(1 0 0 / 15%)",
+          "--input": "oklch(0.2103 0.0059 285.89)",
           "--ring": "oklch(0.556 0 0)",
           "--chart-1": "oklch(0.809 0.105 251.813)",
           "--chart-2": "oklch(0.623 0.214 259.815)",
@@ -316,6 +328,18 @@
         "@utility focus-ring": {
           "@apply ring-2 ring-ring ring-offset-0 ring-offset-background outline-none": {},
           "--tw-ring-offset-width": "var(--ring-offset-width)"
+        },
+        "@utility focus-field-ring": {
+          "@apply ring-2 ring-ring ring-offset-0 outline-none": {},
+          "--tw-ring-offset-width": "0px"
+        },
+        "@utility invalid-field-ring": {
+          "@apply outline-1 outline-destructive outline-solid": {},
+          "--tw-ring-offset-width": "3px",
+          "&:focus-visible": {
+            "@apply ring-2 outline-destructive ring-offset-0": {},
+            "--tw-ring-offset-width": "0px"
+          }
         }
       },
       "files": []
@@ -492,6 +516,58 @@
           "--color-surface": "var(--surface)",
           "--color-surface-secondary": "var(--surface-secondary)",
           "--color-surface-tertiary": "var(--surface-tertiary)"
+        }
+      }
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/input.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "--eclipse": "oklch(0.2103 0.0059 285.89)",
+          "--snow": "oklch(0.9911 0 0)",
+          "--default": "oklch(94% 0.001 286.375)",
+          "--default-foreground": "var(--eclipse)",
+          "--destructive-foreground": "var(--snow)",
+          "--surface-secondary": "oklch(0.9524 0.0013 286.37)",
+          "--surface-tertiary": "oklch(0.9373 0.0013 286.37)"
+        },
+        "dark": {
+          "--default": "oklch(27.4% 0.006 286.033)",
+          "--default-foreground": "var(--snow)",
+          "--destructive-foreground": "var(--snow)",
+          "--surface-secondary": "oklch(0.257 0.0037 286.14)",
+          "--surface-tertiary": "oklch(0.2721 0.0024 247.91)"
+        },
+        "theme": {
+          "--color-default": "var(--default)",
+          "--color-default-foreground": "var(--default-foreground)",
+          "--color-destructive-foreground": "var(--destructive-foreground)",
+          "--color-surface-secondary": "var(--surface-secondary)",
+          "--color-surface-tertiary": "var(--surface-tertiary)"
+        }
+      },
+      "css": {
+        "@utility focus-field-ring": {
+          "@apply ring-2 ring-ring ring-offset-0 outline-none": {},
+          "--tw-ring-offset-width": "0px"
+        },
+        "@utility invalid-field-ring": {
+          "@apply outline-1 outline-destructive outline-solid": {},
+          "--tw-ring-offset-width": "3px",
+          "&:focus-visible": {
+            "@apply ring-2 outline-destructive ring-offset-0": {},
+            "--tw-ring-offset-width": "0px"
+          }
         }
       }
     },
@@ -974,6 +1050,120 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/surface-variants.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "input-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "input"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/input-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "input-variants",
+      "type": "registry:example",
+      "registryDependencies": [
+        "input"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/input-variants.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "input-states",
+      "type": "registry:example",
+      "registryDependencies": [
+        "input"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/input-states.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "input-field",
+      "type": "registry:example",
+      "registryDependencies": [
+        "field",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/input-field.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "input-fieldgroup",
+      "type": "registry:example",
+      "registryDependencies": [
+        "button",
+        "field",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/input-fieldgroup.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "input-badge",
+      "type": "registry:example",
+      "registryDependencies": [
+        "badge",
+        "field",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/input-badge.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "input-input-group",
+      "type": "registry:example",
+      "registryDependencies": [
+        "field",
+        "input",
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/input-input-group.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "input-button-group",
+      "type": "registry:example",
+      "registryDependencies": [
+        "button",
+        "button-group",
+        "field",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/input-button-group.tsx",
           "type": "registry:example"
         }
       ]

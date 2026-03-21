@@ -1,0 +1,139 @@
+---
+title: Input
+description: A text input component for forms and user data entry with built-in styling and accessibility features.
+---
+
+<ComponentPreview previewClassName="*:max-w-xs" name="input-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+<CodeBlockCommand command="npx shadcn@latest add @herocn/input" />
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+<CodeBlockCommand command="npm install @base-ui/react" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="input" title="components/ui/input.tsx" />
+
+<Step>Add the following css colors & utilities</Step>
+
+<RenderCSSShared
+  light={[
+    "--eclipse",
+    "--snow",
+    "--default",
+    "--default-foreground",
+    "--destructive-foreground",
+    "--surface-secondary",
+    "--surface-tertiary",
+  ]}
+  dark={[
+    "--default",
+    "--default-foreground",
+    "--destructive-foreground",
+    "--surface-secondary",
+    "--surface-tertiary",
+  ]}
+  theme={[
+    "--color-default",
+    "--color-default-foreground",
+    "--color-destructive-foreground",
+    "--color-surface-secondary",
+    "--color-surface-tertiary",
+  ]}
+  css={["@utility focus-field-ring", "@utility invalid-field-ring"]}
+/>
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { Input } from "@/components/ui/input"
+```
+
+```tsx
+<Input placeholder="Email" type="email" />
+```
+
+## Examples
+
+### Variants
+
+Use the `variant` prop for a softer background on the secondary style.
+
+<ComponentPreview previewClassName="*:max-w-xs" name="input-variants" />
+
+### States
+
+Disabled inputs are non-interactive. Set `aria-invalid` for error styling (for example when validation fails).
+
+<ComponentPreview previewClassName="*:max-w-xs" name="input-states" />
+
+### With field
+
+Pair `Input` with `Field`, `FieldLabel`, and `FieldDescription` for accessible labels and helper text.
+
+<ComponentPreview previewClassName="*:max-w-xs" name="input-field" />
+
+### Field group
+
+Stack multiple fields and actions with `FieldGroup`.
+
+<ComponentPreview previewClassName="*:max-w-xs" name="input-fieldgroup" />
+
+### Label with badge
+
+Use a badge in the label row for status or metadata (for example a feature flag).
+
+<ComponentPreview previewClassName="*:max-w-xs" name="input-badge" />
+
+### Input group
+
+Prefix or suffix text and icons with `InputGroup`, `InputGroupAddon`, and `InputGroupInput`.
+
+<ComponentPreview previewClassName="*:max-w-xs" name="input-input-group" />
+
+### Button group
+
+Place the input beside actions using `ButtonGroup`.
+
+<ComponentPreview previewClassName="*:max-w-xs" name="input-button-group" />
+
+## API Reference
+
+### Input
+
+The `Input` component accepts all props from a native `<input>` and [`@base-ui/react` Input](https://base-ui.com/react/components/input) plus the following:
+
+<ApiRefTable
+  props={[
+    {
+      name: "variant",
+      type: '"default" | "secondary"',
+      defaultValue: '"default"',
+    },
+  ]}
+/>

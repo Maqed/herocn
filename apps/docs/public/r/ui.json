@@ -12,6 +12,7 @@
     "@herocn/button",
     "@herocn/collapsible",
     "@herocn/dropdown-menu",
+    "@herocn/input",
     "@herocn/surface"
   ]
 }

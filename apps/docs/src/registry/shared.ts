@@ -20,7 +20,7 @@ export const cssVars = {
     "--destructive": "oklch(0.6532 0.2328 25.74)",
     "--destructive-foreground": "var(--snow)",
     "--border": "oklch(0.92 0.004 286.32)",
-    "--input": "oklch(0.92 0.004 286.32)",
+    "--input": "white",
     "--ring": "oklch(0.708 0 0)",
     "--chart-1": "oklch(0.809 0.105 251.813)",
     "--chart-2": "oklch(0.623 0.214 259.815)",
@@ -63,7 +63,7 @@ export const cssVars = {
     "--destructive": "oklch(0.594 0.1967 24.63)",
     "--destructive-foreground": "var(--snow)",
     "--border": "oklch(1 0 0 / 10%)",
-    "--input": "oklch(1 0 0 / 15%)",
+    "--input": "oklch(0.2103 0.0059 285.89)",
     "--ring": "oklch(0.556 0 0)",
     "--chart-1": "oklch(0.809 0.105 251.813)",
     "--chart-2": "oklch(0.623 0.214 259.815)",
@@ -141,5 +141,17 @@ export const css = {
     "@apply ring-2 ring-ring ring-offset-0 ring-offset-background outline-none":
       {},
     "--tw-ring-offset-width": "var(--ring-offset-width)",
+  },
+  "@utility focus-field-ring": {
+    "@apply ring-2 ring-ring ring-offset-0 outline-none": {},
+    "--tw-ring-offset-width": "0px",
+  },
+  "@utility invalid-field-ring": {
+    "@apply outline-1 outline-destructive outline-solid": {},
+    "--tw-ring-offset-width": "3px",
+    "&:focus-visible": {
+      "@apply ring-2 outline-destructive ring-offset-0": {},
+      "--tw-ring-offset-width": "0px",
+    },
   },
 };

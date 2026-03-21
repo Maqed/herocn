@@ -164,4 +164,46 @@ export const ui: Registry["items"] = [
       },
     },
   },
+  {
+    name: "input",
+    type: "registry:ui",
+    dependencies: ["@base-ui/react"],
+    files: [
+      {
+        path: "ui/input.tsx",
+        type: "registry:ui",
+      },
+    ],
+    cssVars: {
+      light: {
+        "--eclipse": cssVars.light["--eclipse"],
+        "--snow": cssVars.light["--snow"],
+        "--default": cssVars.light["--default"],
+        "--default-foreground": cssVars.light["--default-foreground"],
+        "--destructive-foreground": cssVars.light["--destructive-foreground"],
+        "--surface-secondary": cssVars.light["--surface-secondary"],
+        "--surface-tertiary": cssVars.light["--surface-tertiary"],
+      },
+      dark: {
+        "--default": cssVars.dark["--default"],
+        "--default-foreground": cssVars.dark["--default-foreground"],
+        "--destructive-foreground": cssVars.dark["--destructive-foreground"],
+        "--surface-secondary": cssVars.dark["--surface-secondary"],
+        "--surface-tertiary": cssVars.dark["--surface-tertiary"],
+      },
+      theme: {
+        "--color-default": cssVars.theme["--color-default"],
+        "--color-default-foreground":
+          cssVars.theme["--color-default-foreground"],
+        "--color-destructive-foreground":
+          cssVars.theme["--color-destructive-foreground"],
+        "--color-surface-secondary": cssVars.theme["--color-surface-secondary"],
+        "--color-surface-tertiary": cssVars.theme["--color-surface-tertiary"],
+      },
+    },
+    css: {
+      "@utility focus-field-ring": css["@utility focus-field-ring"],
+      "@utility invalid-field-ring": css["@utility invalid-field-ring"],
+    },
+  },
 ];

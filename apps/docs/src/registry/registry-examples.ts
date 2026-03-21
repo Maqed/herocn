@@ -397,4 +397,92 @@ export const examples: Registry["items"] = [
       },
     ],
   },
+  {
+    name: "input-demo",
+    type: "registry:example",
+    registryDependencies: ["input"],
+    files: [
+      {
+        path: "examples/input-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "input-variants",
+    type: "registry:example",
+    registryDependencies: ["input"],
+    files: [
+      {
+        path: "examples/input-variants.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "input-states",
+    type: "registry:example",
+    registryDependencies: ["input"],
+    files: [
+      {
+        path: "examples/input-states.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "input-field",
+    type: "registry:example",
+    registryDependencies: ["field", "input"],
+    files: [
+      {
+        path: "examples/input-field.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "input-fieldgroup",
+    type: "registry:example",
+    registryDependencies: ["button", "field", "input"],
+    files: [
+      {
+        path: "examples/input-fieldgroup.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "input-badge",
+    type: "registry:example",
+    registryDependencies: ["badge", "field", "input"],
+    files: [
+      {
+        path: "examples/input-badge.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "input-input-group",
+    type: "registry:example",
+    registryDependencies: ["field", "input", "input-group"],
+    files: [
+      {
+        path: "examples/input-input-group.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "input-button-group",
+    type: "registry:example",
+    registryDependencies: ["button", "button-group", "field", "input"],
+    files: [
+      {
+        path: "examples/input-button-group.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
 ];

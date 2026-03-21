@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input",
+  "dependencies": [
+    "@base-ui/react"
+  ],
+  "files": [
+    {
+      "path": "components/ui/input.tsx",
+      "content": "import { Input as InputPrimitive } from \"@base-ui/react/input\";\nimport type * as React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nfunction Input({\n  className,\n  variant = \"default\",\n  type,\n  ...props\n}: React.ComponentProps<\"input\"> & { variant?: \"default\" | \"secondary\" }) {\n  return (\n    <InputPrimitive\n      type={type}\n      data-slot=\"input\"\n      data-variant={variant}\n      className={cn(\n        \"bg-input data-[variant=secondary]:bg-surface-secondary px-3 py-2 text-base outline-none shadow-xs aria-invalid:invalid-field-ring sm:text-sm rounded-xl transition-colors md:text-sm w-full min-w-0 placeholder:text-muted-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50\",\n        \"focus-visible:focus-field-ring focus-visible:ring-primary\",\n        \"hover:not-focus-visible:bg-input/90 hover:not-focus-visible:data-[variant=secondary]:bg-surface-secondary/90\",\n        className,\n      )}\n      {...props}\n    />\n  );\n}\n\nexport { Input };\n",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "theme": {
+      "--color-default": "var(--default)",
+      "--color-default-foreground": "var(--default-foreground)",
+      "--color-destructive-foreground": "var(--destructive-foreground)",
+      "--color-surface-secondary": "var(--surface-secondary)",
+      "--color-surface-tertiary": "var(--surface-tertiary)"
+    },
+    "light": {
+      "--eclipse": "oklch(0.2103 0.0059 285.89)",
+      "--snow": "oklch(0.9911 0 0)",
+      "--default": "oklch(94% 0.001 286.375)",
+      "--default-foreground": "var(--eclipse)",
+      "--destructive-foreground": "var(--snow)",
+      "--surface-secondary": "oklch(0.9524 0.0013 286.37)",
+      "--surface-tertiary": "oklch(0.9373 0.0013 286.37)"
+    },
+    "dark": {
+      "--default": "oklch(27.4% 0.006 286.033)",
+      "--default-foreground": "var(--snow)",
+      "--destructive-foreground": "var(--snow)",
+      "--surface-secondary": "oklch(0.257 0.0037 286.14)",
+      "--surface-tertiary": "oklch(0.2721 0.0024 247.91)"
+    }
+  },
+  "css": {
+    "@utility focus-field-ring": {
+      "@apply ring-2 ring-ring ring-offset-0 outline-none": {},
+      "--tw-ring-offset-width": "0px"
+    },
+    "@utility invalid-field-ring": {
+      "@apply outline-1 outline-destructive outline-solid": {},
+      "--tw-ring-offset-width": "3px",
+      "&:focus-visible": {
+        "@apply ring-2 outline-destructive ring-offset-0": {},
+        "--tw-ring-offset-width": "0px"
+      }
+    }
+  },
+  "type": "registry:ui"
+}

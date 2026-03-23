@@ -149,9 +149,9 @@ export const css = {
   "@utility invalid-field-ring": {
     "@apply outline-1 outline-destructive outline-solid": {},
     "--tw-ring-offset-width": "3px",
-    "&:focus-visible": {
-      "@apply ring-2 outline-destructive ring-offset-0": {},
-      "--tw-ring-offset-width": "0px",
-    },
+  },
+  "@utility invalid-field-ring-focus": {
+    "@apply ring-2 outline-none ring-destructive ring-offset-0": {},
+    "--tw-ring-offset-width": "0px",
   },
 };

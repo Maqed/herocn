@@ -183,15 +183,13 @@
 }
 
 @utility invalid-field-ring {
-  /* Unfocused: show 1px outline */
   @apply outline-1 outline-destructive outline-solid;
   --tw-ring-offset-width: 3px;
+}
 
-  /* Focused: show 2px ring in destructive color, remove outline */
-  &:focus-visible {
-    @apply ring-2 outline-destructive ring-offset-0;
-    --tw-ring-offset-width: 0px;
-  }
+@utility invalid-field-ring-focus {
+  @apply ring-2 outline-none ring-destructive ring-offset-0;
+  --tw-ring-offset-width: 0px;
 }
 
 @utility pressible {

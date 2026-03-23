@@ -204,6 +204,8 @@ export const ui: Registry["items"] = [
     css: {
       "@utility focus-field-ring": css["@utility focus-field-ring"],
       "@utility invalid-field-ring": css["@utility invalid-field-ring"],
+      "@utility invalid-field-ring-focus":
+        css["@utility invalid-field-ring-focus"],
     },
   },
 ];

@@ -33,3 +33,13 @@ export const siteConfig: SiteConfigType = {
     },
   ],
 };
+
+export const PAGES_METADATA = new Map([
+  [
+    "/",
+    {
+      title: "herocn",
+      description: "shadcn's abstraction. HeroUI's design system.",
+    },
+  ],
+]);

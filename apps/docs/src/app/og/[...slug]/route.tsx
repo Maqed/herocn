@@ -2,26 +2,32 @@ import { ImageResponse } from "@takumi-rs/image-response";
 import { generate as DefaultImage } from "fumadocs-ui/og/takumi";
 import { notFound } from "next/navigation";
 import { Icons } from "@/components/icons";
-import { siteConfig } from "@/lib/config";
-import { getPageImage, source } from "@/lib/source";
+import { PAGES_METADATA, siteConfig } from "@/lib/config";
 import { cssVars } from "@/registry/shared";
 
 export const revalidate = false;
 
+function slugToHref(slug: string[]) {
+  const path = slug.slice(0, -1);
+  if (path.length === 0) return "/";
+  return `/${path.join("/")}`;
+}
+
 export async function GET(
   _req: Request,
-  { params }: RouteContext<"/og/docs/[...slug]">,
+  { params }: RouteContext<"/og/[...slug]">,
 ) {
   const { slug } = await params;
-  const page = source.getPage(slug?.slice(0, -1));
+  const page = PAGES_METADATA.get(slugToHref(slug));
+
   if (!page) notFound();
 
   return new ImageResponse(
     <DefaultImage
-      title={page.data.title}
+      title={page.title}
       primaryColor={cssVars.dark["--background"]}
       primaryTextColor={cssVars.dark["--foreground"]}
-      description={page.data.description}
+      description={page.description}
       site={siteConfig.name}
       icon={<Icons.logo tw="size-16" />}
     />,
@@ -34,7 +40,7 @@ export async function GET(
 }
 
 export function generateStaticParams() {
-  return source.getPages().map((page) => ({
-    slug: getPageImage(page).segments,
+  return [...PAGES_METADATA.keys()].map((href) => ({
+    slug: [...(href === "/" ? [] : href.slice(1).split("/")), "image.webp"],
   }));
 }

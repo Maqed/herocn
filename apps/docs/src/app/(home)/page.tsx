@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { PAGES_METADATA } from "@/lib/config";
+import { absoluteUrl } from "@/lib/utils";
 import { Button } from "@/registry/new-york-v4/ui/button";
 
 export const metadata: Metadata = {
-  title: "herocn",
-  description: "shadcn's abstraction. HeroUI's design system.",
+  title: PAGES_METADATA.get("/")?.title,
+  description: PAGES_METADATA.get("/")?.description,
+  openGraph: {
+    title: PAGES_METADATA.get("/")?.title,
+    description: PAGES_METADATA.get("/")?.description,
+    images: absoluteUrl("/og/image.webp"),
+  },
 };
 
 export default function HomePage() {

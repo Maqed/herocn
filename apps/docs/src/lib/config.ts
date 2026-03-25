@@ -27,7 +27,7 @@ export const siteConfig: SiteConfigType = {
       label: "Components",
     },
     {
-      href: "https://herocn.featurebase.app/",
+      href: "https://herocn.featurebase.app/roadmap",
       label: "Roadmap",
       isExternal: true,
     },

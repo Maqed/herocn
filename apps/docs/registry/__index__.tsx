@@ -200,6 +200,96 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "badge-rtl": {
+    name: "badge-rtl",
+    type: "registry:example",
+    registryDependencies: ["badge"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/badge-rtl.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/badge-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "input-rtl": {
+    name: "input-rtl",
+    type: "registry:example",
+    registryDependencies: ["field","input"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/input-rtl.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/input-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "avatar-rtl": {
+    name: "avatar-rtl",
+    type: "registry:example",
+    registryDependencies: ["avatar"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/avatar-rtl.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/avatar-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "collapsible-rtl": {
+    name: "collapsible-rtl",
+    type: "registry:example",
+    registryDependencies: ["button","card","collapsible"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/collapsible-rtl.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/collapsible-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "dropdown-menu-rtl": {
+    name: "dropdown-menu-rtl",
+    type: "registry:example",
+    registryDependencies: ["button","dropdown-menu"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/dropdown-menu-rtl.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "surface-rtl": {
+    name: "surface-rtl",
+    type: "registry:example",
+    registryDependencies: ["surface"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/surface-rtl.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/surface-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "collapsible-demo": {
     name: "collapsible-demo",
     type: "registry:example",

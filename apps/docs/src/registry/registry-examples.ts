@@ -57,6 +57,72 @@ export const examples: Registry["items"] = [
     ],
   },
   {
+    name: "badge-rtl",
+    type: "registry:example",
+    registryDependencies: ["badge"],
+    files: [
+      {
+        path: "examples/badge-rtl.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "input-rtl",
+    type: "registry:example",
+    registryDependencies: ["field", "input"],
+    files: [
+      {
+        path: "examples/input-rtl.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "avatar-rtl",
+    type: "registry:example",
+    registryDependencies: ["avatar"],
+    files: [
+      {
+        path: "examples/avatar-rtl.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "collapsible-rtl",
+    type: "registry:example",
+    registryDependencies: ["button", "card", "collapsible"],
+    files: [
+      {
+        path: "examples/collapsible-rtl.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "dropdown-menu-rtl",
+    type: "registry:example",
+    registryDependencies: ["button", "dropdown-menu"],
+    files: [
+      {
+        path: "examples/dropdown-menu-rtl.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "surface-rtl",
+    type: "registry:example",
+    registryDependencies: ["surface"],
+    files: [
+      {
+        path: "examples/surface-rtl.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "collapsible-demo",
     type: "registry:example",
     registryDependencies: ["collapsible"],

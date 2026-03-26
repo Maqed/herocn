@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-rtl",
+  "registryDependencies": [
+    "field",
+    "input"
+  ],
+  "files": [
+    {
+      "path": "components/examples/input-rtl.tsx",
+      "content": "\"use client\"\n\nimport { useTranslation, type Translations } from \"@/components/language-selector\"\nimport { Field, FieldDescription, FieldLabel } from \"@/components/ui/field\"\nimport { Input } from \"@/components/ui/input\"\n\nconst translations: Translations = {\n  en: {\n    dir: \"ltr\",\n    values: {\n      nameLabel: \"Full name\",\n      namePlaceholder: \"John Doe\",\n      emailLabel: \"Email address\",\n      emailPlaceholder: \"you@example.com\",\n      emailDescription: \"We'll never share your email with anyone.\",\n    },\n  },\n  ar: {\n    dir: \"rtl\",\n    values: {\n      nameLabel: \"الاسم الكامل\",\n      namePlaceholder: \"محمد علي\",\n      emailLabel: \"البريد الإلكتروني\",\n      emailPlaceholder: \"you@example.com\",\n      emailDescription: \"لن نشارك بريدك الإلكتروني مع أي شخص.\",\n    },\n  },\n  he: {\n    dir: \"rtl\",\n    values: {\n      nameLabel: \"שם מלא\",\n      namePlaceholder: \"ישראל ישראלי\",\n      emailLabel: \"כתובת דוא״ל\",\n      emailPlaceholder: \"you@example.com\",\n      emailDescription: \"לעולם לא נשתף את הדוא״ל שלך עם אחרים.\",\n    },\n  },\n}\n\nexport function InputRtl() {\n  const { dir, language, t } = useTranslation(translations, \"ar\")\n\n  return (\n    <div className=\"flex w-full max-w-sm flex-col gap-4\" lang={language} dir={dir}>\n      <Field>\n        <FieldLabel htmlFor=\"form-input-rtl-name\">{t.nameLabel}</FieldLabel>\n        <Input type=\"text\" id=\"form-input-rtl-name\" placeholder={t.namePlaceholder} />\n      </Field>\n      <Field>\n        <FieldLabel htmlFor=\"form-input-rtl-email\">{t.emailLabel}</FieldLabel>\n        <Input type=\"email\" id=\"form-input-rtl-email\" placeholder={t.emailPlaceholder} />\n        <FieldDescription>{t.emailDescription}</FieldDescription>\n      </Field>\n    </div>\n  )\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

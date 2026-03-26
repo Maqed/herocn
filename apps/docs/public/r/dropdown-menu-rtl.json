@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dropdown-menu-rtl",
+  "registryDependencies": [
+    "button",
+    "dropdown-menu"
+  ],
+  "files": [
+    {
+      "path": "components/examples/dropdown-menu-rtl.tsx",
+      "content": "\"use client\"\n\nimport { CreditCardIcon, LogOutIcon, SettingsIcon, UserIcon } from \"lucide-react\"\n\nimport { useTranslation, type Translations } from \"@/components/language-selector\"\nimport { Button } from \"@/components/ui/button\"\nimport {\n  DropdownMenu,\n  DropdownMenuContent,\n  DropdownMenuGroup,\n  DropdownMenuItem,\n  DropdownMenuLabel,\n  DropdownMenuSeparator,\n  DropdownMenuTrigger,\n} from \"@/components/ui/dropdown-menu\"\n\nconst translations: Translations = {\n  en: {\n    dir: \"ltr\",\n    values: {\n      open: \"Open\",\n      myAccount: \"My Account\",\n      profile: \"Profile\",\n      billing: \"Billing\",\n      settings: \"Settings\",\n      logOut: \"Log out\",\n    },\n  },\n  ar: {\n    dir: \"rtl\",\n    values: {\n      open: \"افتح\",\n      myAccount: \"حسابي\",\n      profile: \"الملف الشخصي\",\n      billing: \"الفواتير\",\n      settings: \"الإعدادات\",\n      logOut: \"تسجيل الخروج\",\n    },\n  },\n  he: {\n    dir: \"rtl\",\n    values: {\n      open: \"פתח\",\n      myAccount: \"החשבון שלי\",\n      profile: \"פרופיל\",\n      billing: \"חיוב\",\n      settings: \"הגדרות\",\n      logOut: \"התנתק\",\n    },\n  },\n}\n\nexport function DropdownMenuRtl() {\n  const { dir, language, t } = useTranslation(translations, \"ar\")\n\n  return (\n    <div lang={language} dir={dir}>\n      <DropdownMenu>\n        <DropdownMenuTrigger render={<Button variant=\"tertiary\" />}>\n          {t.open}\n        </DropdownMenuTrigger>\n        <DropdownMenuContent>\n          <DropdownMenuGroup>\n            <DropdownMenuLabel>{t.myAccount}</DropdownMenuLabel>\n            <DropdownMenuItem>\n              <UserIcon />\n              {t.profile}\n            </DropdownMenuItem>\n            <DropdownMenuItem>\n              <CreditCardIcon />\n              {t.billing}\n            </DropdownMenuItem>\n            <DropdownMenuItem>\n              <SettingsIcon />\n              {t.settings}\n            </DropdownMenuItem>\n          </DropdownMenuGroup>\n          <DropdownMenuSeparator />\n          <DropdownMenuGroup>\n            <DropdownMenuItem variant=\"destructive\">\n              <LogOutIcon />\n              {t.logOut}\n            </DropdownMenuItem>\n          </DropdownMenuGroup>\n        </DropdownMenuContent>\n      </DropdownMenu>\n    </div>\n  )\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

@@ -1,5 +1,6 @@
 import defaultMdxComponents from "fumadocs-ui/mdx";
 import type { MDXComponents } from "mdx/types";
+import Link from "next/link";
 import { ApiRefTable } from "@/components/api-ref-table";
 import { CodeBlockCommand } from "@/components/code-block-command";
 import { CodeTabs } from "@/components/code-tabs";
@@ -32,6 +33,18 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
     ApiRefTable,
     RenderCSSShared,
     TabsTrigger,
+    LinkedCard: ({
+      className,
+      ...props
+    }: React.ComponentProps<typeof Link>) => (
+      <Link
+        className={cn(
+          "flex w-full flex-col items-center rounded-xl bg-surface p-6 text-surface-foreground transition-colors hover:bg-surface/80 sm:p-10",
+          className,
+        )}
+        {...props}
+      />
+    ),
     Step: ({ className, ...props }: React.ComponentProps<"h3">) => (
       <h3
         className={cn(

@@ -1,0 +1,71 @@
+---
+title: Vite
+description: Create a new Vite project with RTL support.
+---
+
+<Steps>
+
+### Add DirectionProvider
+
+Add the `dir="rtl"` and `lang="ar"` attributes to the `html` tag in your `index.html`. Update `lang="ar"` to your target language.
+
+```html title="index.html"
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+```
+
+Then wrap your app with the `DirectionProvider` component with the `direction="rtl"` prop in your `main.tsx`:
+
+```tsx title="src/main.tsx"
+import { StrictMode } from "react"
+import { createRoot } from "react-dom/client"
+
+import { DirectionProvider } from "@/components/ui/direction"
+
+import App from "./App"
+
+import "./index.css"
+
+createRoot(document.getElementById("root")!).render(
+  <StrictMode>
+    <DirectionProvider direction="rtl">
+      <App />
+    </DirectionProvider>
+  </StrictMode>
+)
+```
+
+### Add Font
+
+For the best RTL experience, we recommend using fonts that have proper support for your target language. [Noto](https://fonts.google.com/noto) is a great font family for this and it pairs well with Inter and Geist.
+
+Install the font using [Fontsource](https://fontsource.org/fonts/noto-sans-arabic):
+
+<CodeBlockCommand command="npm install @fontsource-variable/noto-sans-arabic" />
+
+Import the font in your `index.css`:
+
+```css title="src/index.css"
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/noto-sans-arabic";
+
+@theme inline {
+  --font-sans: "Noto Sans Arabic Variable", sans-serif;
+}
+```
+
+For other languages, eg. Hebrew, you can use `@fontsource-variable/noto-sans-hebrew`.
+
+</Steps>

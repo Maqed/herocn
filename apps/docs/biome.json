@@ -32,7 +32,8 @@
       "a11y": {
         "useSemanticElements": "off",
         "noLabelWithoutControl": "off",
-        "useKeyWithClickEvents": "off"
+        "useKeyWithClickEvents": "off",
+        "useValidAnchor": "off"
       },
       "suspicious": {
         "noArrayIndexKey": "off",

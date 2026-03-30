@@ -5,14 +5,20 @@ import { cn } from "@/lib/utils";
 function Card({
   className,
   size = "default",
+  variant = "default",
   ...props
-}: React.ComponentProps<"div"> & { size?: "default" | "sm" }) {
+}: React.ComponentProps<"div"> & { size?: "default" | "sm" } & {
+  variant?: "default" | "transparent" | "secondary" | "tertiary";
+}) {
   return (
     <div
       data-slot="card"
       data-size={size}
       className={cn(
-        "ring-foreground/10 bg-card text-card-foreground gap-4 overflow-hidden rounded-xl py-4 text-sm ring-1 has-data-[slot=card-footer]:pb-0 has-[>img:first-child]:pt-0 data-[size=sm]:gap-3 data-[size=sm]:py-3 data-[size=sm]:has-data-[slot=card-footer]:pb-0 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl group/card flex flex-col",
+        "ring-foreground/10 relative gap-3 overflow-hidden p-4 bg-surface text-card-foreground rounded-3xl py-4 text-sm ring-1 has-data-[slot=card-footer]:pb-0 has-[>img:first-child]:pt-0 data-[size=sm]:gap-3 data-[size=sm]:py-3 data-[size=sm]:has-data-[slot=card-footer]:pb-0 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl group/card flex flex-col",
+        variant === "transparent" && "border-none bg-transparent shadow-none",
+        variant === "secondary" && "bg-surface-secondary",
+        variant === "tertiary" && "bg-surface-tertiary",
         className,
       )}
       {...props}
@@ -38,7 +44,7 @@ function CardTitle({ className, ...props }: React.ComponentProps<"div">) {
     <div
       data-slot="card-title"
       className={cn(
-        "text-base leading-snug font-medium group-data-[size=sm]/card:text-sm",
+        "text-sm leading-6 font-medium text-foreground group-data-[size=sm]/card:text-xs",
         className,
       )}
       {...props}
@@ -50,7 +56,7 @@ function CardDescription({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="card-description"
-      className={cn("text-muted-foreground text-sm", className)}
+      className={cn("text-sm leading-5 text-muted-foreground", className)}
       {...props}
     />
   );
@@ -84,7 +90,7 @@ function CardFooter({ className, ...props }: React.ComponentProps<"div">) {
     <div
       data-slot="card-footer"
       className={cn(
-        "bg-muted/50 rounded-b-xl border-t p-4 group-data-[size=sm]/card:p-3 flex items-center",
+        "rounded-b-xl border-t p-4 group-data-[size=sm]/card:p-3 flex items-center",
         className,
       )}
       {...props}

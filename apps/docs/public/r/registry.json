@@ -461,6 +461,33 @@
       }
     },
     {
+      "name": "card",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/card.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "--surface": "white",
+          "--surface-secondary": "oklch(0.9524 0.0013 286.37)",
+          "--surface-tertiary": "oklch(0.9373 0.0013 286.37)"
+        },
+        "dark": {
+          "--surface": "oklch(0.2103 0.0059 285.89)",
+          "--surface-secondary": "oklch(0.257 0.0037 286.14)",
+          "--surface-tertiary": "oklch(0.2721 0.0024 247.91)"
+        },
+        "theme": {
+          "--color-surface": "var(--surface)",
+          "--color-surface-secondary": "var(--surface-secondary)",
+          "--color-surface-tertiary": "var(--surface-tertiary)"
+        }
+      }
+    },
+    {
       "name": "collapsible",
       "type": "registry:ui",
       "dependencies": [
@@ -570,6 +597,79 @@
           "--tw-ring-offset-width": "0px"
         }
       }
+    },
+    {
+      "name": "card-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "button",
+        "card",
+        "input",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/card-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "card-variants",
+      "type": "registry:example",
+      "registryDependencies": [
+        "card"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/card-variants.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "card-small",
+      "type": "registry:example",
+      "registryDependencies": [
+        "card"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/card-small.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "card-image",
+      "type": "registry:example",
+      "registryDependencies": [
+        "badge",
+        "button",
+        "card"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/card-image.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "card-rtl",
+      "type": "registry:example",
+      "registryDependencies": [
+        "button",
+        "card",
+        "input",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/card-rtl.tsx",
+          "type": "registry:example"
+        }
+      ]
     },
     {
       "name": "button-demo",

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-image",
+  "registryDependencies": [
+    "badge",
+    "button",
+    "card"
+  ],
+  "files": [
+    {
+      "path": "components/examples/card-image.tsx",
+      "content": "import { Badge } from \"@/components/ui/badge\";\nimport { Button } from \"@/components/ui/button\";\nimport {\n  Card,\n  CardAction,\n  CardDescription,\n  CardFooter,\n  CardHeader,\n  CardTitle,\n} from \"@/components/ui/card\";\n\nexport default function CardImage() {\n  return (\n    <Card className=\"relative mx-auto w-full max-w-sm pt-0\">\n      <div className=\"absolute inset-0 z-30 aspect-video bg-black/35\" />\n      <img\n        src=\"https://avatar.vercel.sh/shadcn1\"\n        alt=\"Event cover\"\n        className=\"relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40\"\n      />\n      <CardHeader>\n        <CardAction>\n          <Badge>Featured</Badge>\n        </CardAction>\n        <CardTitle>Design systems meetup</CardTitle>\n        <CardDescription>\n          A practical talk on component APIs, accessibility, and shipping\n          faster.\n        </CardDescription>\n      </CardHeader>\n      <CardFooter>\n        <Button className=\"w-full\">View Event</Button>\n      </CardFooter>\n    </Card>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

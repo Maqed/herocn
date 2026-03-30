@@ -2,6 +2,61 @@ import type { Registry } from "shadcn/schema";
 
 export const examples: Registry["items"] = [
   {
+    name: "card-demo",
+    type: "registry:example",
+    registryDependencies: ["button", "card", "input", "label"],
+    files: [
+      {
+        path: "examples/card-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "card-variants",
+    type: "registry:example",
+    registryDependencies: ["card"],
+    files: [
+      {
+        path: "examples/card-variants.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "card-small",
+    type: "registry:example",
+    registryDependencies: ["card"],
+    files: [
+      {
+        path: "examples/card-small.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "card-image",
+    type: "registry:example",
+    registryDependencies: ["badge", "button", "card"],
+    files: [
+      {
+        path: "examples/card-image.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "card-rtl",
+    type: "registry:example",
+    registryDependencies: ["button", "card", "input", "label"],
+    files: [
+      {
+        path: "examples/card-rtl.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "button-demo",
     type: "registry:example",
     registryDependencies: ["button"],

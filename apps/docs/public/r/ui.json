@@ -10,6 +10,7 @@
     "@herocn/avatar",
     "@herocn/badge",
     "@herocn/button",
+    "@herocn/card",
     "@herocn/collapsible",
     "@herocn/dropdown-menu",
     "@herocn/input",

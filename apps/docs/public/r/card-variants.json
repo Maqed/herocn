@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-variants",
+  "registryDependencies": [
+    "card"
+  ],
+  "files": [
+    {
+      "path": "components/examples/card-variants.tsx",
+      "content": "import {\n  Card,\n  CardContent,\n  CardDescription,\n  CardHeader,\n  CardTitle,\n} from \"@/components/ui/card\";\n\nexport default function CardVariants() {\n  return (\n    <div className=\"grid grid-cols-1 lg:grid-cols-2 gap-4\">\n      <Card className=\"w-[320px]\" variant=\"transparent\">\n        <CardHeader>\n          <CardTitle>Transparent</CardTitle>\n          <CardDescription>\n            Minimal prominence with transparent background\n          </CardDescription>\n        </CardHeader>\n        <CardContent>\n          <p>Use for less important content or nested cards</p>\n        </CardContent>\n      </Card>\n\n      <Card className=\"w-[320px]\" variant=\"default\">\n        <CardHeader>\n          <CardTitle>Default</CardTitle>\n          <CardDescription>\n            Standard card appearance (bg-surface)\n          </CardDescription>\n        </CardHeader>\n        <CardContent>\n          <p>The default card variant for most use cases</p>\n        </CardContent>\n      </Card>\n\n      <Card className=\"w-[320px]\" variant=\"secondary\">\n        <CardHeader>\n          <CardTitle>Secondary</CardTitle>\n          <CardDescription>\n            Medium prominence (bg-surface-secondary)\n          </CardDescription>\n        </CardHeader>\n        <CardContent>\n          <p>Use to draw moderate attention</p>\n        </CardContent>\n      </Card>\n\n      <Card className=\"w-[320px]\" variant=\"tertiary\">\n        <CardHeader>\n          <CardTitle>Tertiary</CardTitle>\n          <CardDescription>\n            Higher prominence (bg-surface-tertiary)\n          </CardDescription>\n        </CardHeader>\n        <CardContent>\n          <p>Use for primary or featured content</p>\n        </CardContent>\n      </Card>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

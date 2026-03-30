@@ -1,0 +1,201 @@
+---
+title: Card
+description: Displays a card with header, content, and footer.
+---
+
+<ComponentPreview name="card-demo" previewClassName="h-[30rem]" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+<CodeBlockCommand command="npx shadcn@latest add @herocn/card" />
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="card" title="components/ui/card.tsx" />
+
+<Step>Add the following css colors</Step>
+<RenderCSSShared
+  light={["--surface", "--surface-secondary", "--surface-tertiary"]}
+  dark={["--surface", "--surface-secondary", "--surface-tertiary"]}
+  theme={["--color-surface", "--color-surface-secondary", "--color-surface-tertiary"]}
+/>
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import {
+  Card,
+  CardAction,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+```
+
+```tsx
+<Card>
+  <CardHeader>
+    <CardTitle>Card Title</CardTitle>
+    <CardDescription>Card Description</CardDescription>
+    <CardAction>Card Action</CardAction>
+  </CardHeader>
+  <CardContent>
+    <p>Card Content</p>
+  </CardContent>
+  <CardFooter>
+    <p>Card Footer</p>
+  </CardFooter>
+</Card>
+```
+
+## Examples
+
+### Variants
+
+Use the `variant` prop to control the visual prominence of the card.
+
+<ComponentPreview name="card-variants" previewClassName="overflow-auto h-[40rem] lg:h-[25rem]" />
+
+### Size
+Use the `size="sm"` prop to set the size of the card to small. The small size variant uses smaller spacing.
+
+<ComponentPreview
+  name="card-small"
+  previewClassName="h-96"
+/>
+
+### Image
+
+Add an image before the card header to create a card with an image.
+
+<ComponentPreview name="card-image" previewClassName="h-[32rem]" />
+
+## RTL
+
+<ComponentPreview name="card-rtl" direction="rtl" previewClassName="h-[30rem]" />
+
+## API Reference
+
+### Card
+
+<ApiRefTable
+  props={[
+    {
+      name: "variant",
+      type: '"default" | "transparent" | "secondary" | "tertiary"',
+      defaultValue: '"default"',
+      description: "Controls the visual style of the card.",
+    },
+    {
+      name: "size",
+      type: '"default" | "sm"',
+      defaultValue: '"default"',
+    },
+    {
+      name: "className",
+      type: "string",
+    },
+  ]}
+/>
+
+### CardHeader
+
+The `CardHeader` component is used for a title, description, and optional action.
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+    },
+  ]}
+/>
+
+### CardTitle
+
+The `CardTitle` component is used for the card title.
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+    },
+  ]}
+/>
+
+### CardDescription
+
+The `CardDescription` component is used for helper text under the title.
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+    },
+  ]}
+/>
+
+### CardAction
+
+The `CardAction` component places content in the top-right of the header (for example, a button or a badge).
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+    },
+  ]}
+/>
+
+### CardContent
+
+The `CardContent` component is used for the main card body.
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+    },
+  ]}
+/>
+
+### CardFooter
+
+The `CardFooter` component is used for actions and secondary content at the bottom of the card.
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+    },
+  ]}
+/>

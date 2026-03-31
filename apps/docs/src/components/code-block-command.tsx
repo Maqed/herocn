@@ -80,14 +80,10 @@ export function CodeBlockCommandWrapper({
           <div className="flex size-4 items-center justify-center rounded-[1px] bg-foreground opacity-70">
             <Terminal className="size-3 text-background" />
           </div>
-          <TabsList className="rounded-none bg-transparent p-0">
+          <TabsList variant="line">
             {Object.entries(tabs).map(([key]) => {
               return (
-                <TabsTrigger
-                  key={key}
-                  value={key}
-                  className="h-7 border border-transparent pt-0.5 shadow-none! data-[state=active]:border-input data-[state=active]:bg-background!"
-                >
+                <TabsTrigger key={key} value={key}>
                   {key}
                 </TabsTrigger>
               );

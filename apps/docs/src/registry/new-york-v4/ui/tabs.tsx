@@ -103,7 +103,7 @@ function TabsIndicator({ className, ...props }: TabsPrimitive.Indicator.Props) {
       data-slot="tabs-indicator"
       className={cn(
         // Base positioning – tracks the active tab via CSS variables
-        "absolute top-0 start-0 -z-1",
+        "absolute top-0 left-0 -z-1",
         "translate-x-(--active-tab-left) translate-y-(--active-tab-top)",
         "w-(--active-tab-width) h-(--active-tab-height)",
         "transition-[translate,width,height] duration-200 ease-out motion-reduce:transition-none",

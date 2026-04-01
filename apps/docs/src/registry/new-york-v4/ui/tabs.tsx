@@ -122,6 +122,7 @@ function TabsIndicator({ className, ...props }: TabsPrimitive.Indicator.Props) {
         // Line + vertical: collapse to a start-side 2px rule
         "group-data-[variant=line]/tabs-list:group-data-[orientation=vertical]/tabs:translate-x-0",
         "group-data-[variant=line]/tabs-list:group-data-[orientation=vertical]/tabs:w-0.5",
+        "group-data-[variant=line]/tabs-list:group-data-[orientation=vertical]/tabs:start-0",
         className,
       )}
       {...props}

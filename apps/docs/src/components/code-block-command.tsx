@@ -70,7 +70,7 @@ export function CodeBlockCommandWrapper({
           });
         }}
       >
-        <div className="flex items-center gap-2 border-b border-border/50 px-3 py-1">
+        <div className="flex items-center gap-2 px-3">
           <div className="flex size-4 items-center justify-center rounded-[1px] bg-foreground opacity-70">
             <Terminal className="size-3 text-background" />
           </div>
@@ -87,8 +87,8 @@ export function CodeBlockCommandWrapper({
         <div className="no-scrollbar overflow-x-auto">
           {Object.entries(tabs).map(([key, value]) => {
             return (
-              <TabsContent key={key} value={key} className="mt-0 px-4 py-3.5">
-                <CodeBlock className="my-0 rounded-sm px-3">
+              <TabsContent key={key} value={key} className="p-0 m-0 px-3">
+                <CodeBlock className="rounded-sm px-3">
                   <Pre className="text-sm max-h-96">
                     <code
                       className="relative font-mono leading-none"

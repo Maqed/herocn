@@ -1,8 +1,8 @@
 "use client";
 
 import * as React from "react";
+
 import {
-  type Language,
   type Translations,
   useTranslation,
 } from "@/components/language-selector";
@@ -93,35 +93,38 @@ export function SelectRtl() {
   ];
 
   return (
-    <div lang={language as Language} dir={dir} className="w-full max-w-xs">
-      <Select
-        items={allItems}
-        value={selectedFruit}
-        onValueChange={setSelectedFruit}
+    <Select
+      items={allItems}
+      value={selectedFruit}
+      data-lang={language}
+      onValueChange={setSelectedFruit}
+    >
+      <SelectTrigger
+        data-lang={dir === "rtl" ? language : undefined}
+        className="w-32"
+        dir={dir}
       >
-        <SelectTrigger className="w-32">
-          <SelectValue />
-        </SelectTrigger>
-        <SelectContent>
-          <SelectGroup>
-            <SelectLabel>{t.fruits}</SelectLabel>
-            {fruits.map((item) => (
-              <SelectItem key={item.value} value={item.value}>
-                {item.label}
-              </SelectItem>
-            ))}
-          </SelectGroup>
-          <SelectSeparator />
-          <SelectGroup>
-            <SelectLabel>{t.vegetables}</SelectLabel>
-            {vegetables.map((item) => (
-              <SelectItem key={item.value} value={item.value}>
-                {item.label}
-              </SelectItem>
-            ))}
-          </SelectGroup>
-        </SelectContent>
-      </Select>
-    </div>
+        <SelectValue />
+      </SelectTrigger>
+      <SelectContent dir={dir} data-lang={dir === "rtl" ? language : undefined}>
+        <SelectGroup>
+          <SelectLabel>{t.fruits}</SelectLabel>
+          {fruits.map((item) => (
+            <SelectItem key={item.value} value={item.value}>
+              {item.label}
+            </SelectItem>
+          ))}
+        </SelectGroup>
+        <SelectSeparator />
+        <SelectGroup>
+          <SelectLabel>{t.vegetables}</SelectLabel>
+          {vegetables.map((item) => (
+            <SelectItem key={item.value} value={item.value}>
+              {item.label}
+            </SelectItem>
+          ))}
+        </SelectGroup>
+      </SelectContent>
+    </Select>
   );
 }

@@ -56,7 +56,7 @@ function SelectTrigger({
     <SelectPrimitive.Trigger
       data-slot="select-trigger"
       className={cn(
-        "pressible relative isolate inline-flex min-h-9 border px-3 py-2 text-sm outline-none select-none no-highlight bg-surface text-foreground hover:bg-input/80 active:bg-input/80 h-10 md:h-9 has-data-[icon=inline-end]:pe-3 has-data-[icon=inline-start]:ps-3 w-fit origin-center items-center cursor-pointer justify-center gap-2 rounded-3xl font-medium whitespace-nowrap no-highlight focus-visible:ring-focus focus-visible:ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed aria-invalid:invalid-field-ring aria-invalid:focus-visible:invalid-field-ring-focus aria-disabled:pointer-events-none aria-disabled:cursor-not-allowed aria-disabled:opacity-70 [&_svg:not([class*='size-'])]:size-4 group/button shrink-0 transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0",
+        "pressible relative isolate inline-flex min-h-9 border px-3 py-2 text-sm outline-none select-none no-highlight bg-surface text-foreground hover:bg-input/80 active:bg-input/80 h-10 md:h-9 has-data-[icon=inline-end]:pe-3 has-data-[icon=inline-start]:ps-3 w-fit origin-center items-center cursor-pointer justify-center gap-2 rounded-3xl font-medium whitespace-nowrap no-highlight focus-visible:focus-ring disabled:cursor-not-allowed aria-invalid:invalid-field-ring aria-invalid:focus-visible:invalid-field-ring-focus aria-disabled:pointer-events-none aria-disabled:cursor-not-allowed aria-disabled:opacity-70 [&_svg:not([class*='size-'])]:size-4 group/button shrink-0 transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0",
         variant === "secondary" &&
           "bg-surface-secondary hover:bg-surface-secondary/90 active:bg-surface-secondary/90",
         className,
@@ -101,7 +101,7 @@ function SelectContent({
           data-slot="select-content"
           data-align-trigger={alignItemWithTrigger}
           className={cn(
-            "relative isolate z-50 border-input max-h-(--available-height) w-(--anchor-width) min-w-36 origin-(--transform-origin) overflow-x-hidden overflow-y-auto rounded-3xl bg-popover text-popover-foreground shadow-2xl ring-1 ring-foreground/5 duration-150 data-[align-trigger=true]:animate-none data-[side=bottom]:slide-in-from-top-2 data-[side=inline-end]:slide-in-from-start-2 data-[side=inline-start]:slide-in-from-end-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95",
+            "relative isolate z-50 border-input max-h-(--available-height) w-(--anchor-width) min-w-36 origin-(--transform-origin) overflow-x-hidden overflow-y-auto rounded-3xl bg-popover text-popover-foreground shadow-2xl duration-150 data-[align-trigger=true]:animate-none data-[side=bottom]:slide-in-from-top-2 data-[side=inline-end]:slide-in-from-start-2 data-[side=inline-start]:slide-in-from-end-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95",
             className,
           )}
           {...props}

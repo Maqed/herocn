@@ -41,14 +41,14 @@ export function SurfaceRtl() {
 
   return (
     <div className="grid w-full gap-3 md:grid-cols-2" lang={language} dir={dir}>
-      <Surface className="rounded-lg border p-4">
-        <h4 className="text-sm font-medium">{t.cardTitle}</h4>
+      <Surface className="rounded-3xl border p-6">
+        <h4 className="font-medium">{t.cardTitle}</h4>
         <p className="mt-1 text-sm text-muted-foreground">
           {t.cardDescription}
         </p>
       </Surface>
-      <Surface variant="secondary" className="rounded-lg border p-4">
-        <h4 className="text-sm font-medium">{t.nestedTitle}</h4>
+      <Surface variant="secondary" className="rounded-3xl border p-6">
+        <h4 className="font-medium">{t.nestedTitle}</h4>
         <p className="mt-1 text-sm text-muted-foreground">
           {t.nestedDescription}
         </p>

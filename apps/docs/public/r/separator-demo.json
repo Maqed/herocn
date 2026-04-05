@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "components/examples/separator-demo.tsx",
-      "content": "import { Separator } from \"@/components/ui/separator\";\n\nexport default function SeparatorDemo() {\n  return (\n    <div className=\"flex max-w-sm flex-col gap-4 text-sm\">\n      <div className=\"flex flex-col gap-1.5\">\n        <div className=\"leading-none font-medium\">herocn</div>\n        <div className=\"text-muted-foreground\">\n          HeroUI design system, shadcn/ui abstraction\n        </div>\n      </div>\n      <Separator />\n      <div>\n        Beautifully designed components for your next application. \n      </div>\n    </div>\n  );\n}\n",
+      "content": "import { Separator } from \"@/components/ui/separator\";\n\nexport default function SeparatorDemo() {\n  return (\n    <div className=\"flex max-w-sm flex-col gap-4 text-sm\">\n      <div className=\"flex flex-col gap-1.5\">\n        <div className=\"leading-none font-medium\">herocn</div>\n        <div className=\"text-muted-foreground\">\n          HeroUI design system, shadcn/ui abstraction\n        </div>\n      </div>\n      <Separator />\n      <div>Beautifully designed components for your next application.</div>\n    </div>\n  );\n}\n",
       "type": "registry:example"
     }
   ],

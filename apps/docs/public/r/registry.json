@@ -520,7 +520,8 @@
       "name": "popover",
       "type": "registry:ui",
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "lucide-react"
       ],
       "files": [
         {
@@ -533,7 +534,8 @@
       "name": "dropdown-menu",
       "type": "registry:ui",
       "dependencies": [
-        "@base-ui/react"
+        "@base-ui/react",
+        "lucide-react"
       ],
       "files": [
         {

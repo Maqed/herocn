@@ -165,7 +165,7 @@ export const ui: Registry["items"] = [
   {
     name: "popover",
     type: "registry:ui",
-    dependencies: ["@base-ui/react"],
+    dependencies: ["@base-ui/react", "lucide-react"],
     files: [
       {
         path: "ui/popover.tsx",
@@ -176,7 +176,7 @@ export const ui: Registry["items"] = [
   {
     name: "dropdown-menu",
     type: "registry:ui",
-    dependencies: ["@base-ui/react"],
+    dependencies: ["@base-ui/react", "lucide-react"],
     files: [
       {
         path: "ui/dropdown-menu.tsx",

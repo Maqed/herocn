@@ -793,4 +793,70 @@ export const examples: Registry["items"] = [
       },
     ],
   },
+  {
+    name: "popover-demo",
+    type: "registry:example",
+    registryDependencies: ["button", "input", "label", "popover"],
+    files: [
+      {
+        path: "examples/popover-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "popover-basic",
+    type: "registry:example",
+    registryDependencies: ["button", "popover"],
+    files: [
+      {
+        path: "examples/popover-basic.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "popover-align",
+    type: "registry:example",
+    registryDependencies: ["button", "popover"],
+    files: [
+      {
+        path: "examples/popover-align.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "popover-form",
+    type: "registry:example",
+    registryDependencies: ["button", "field", "input", "popover"],
+    files: [
+      {
+        path: "examples/popover-form.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "popover-with-arrow",
+    type: "registry:example",
+    registryDependencies: ["button", "popover"],
+    files: [
+      {
+        path: "examples/popover-with-arrow.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "popover-rtl",
+    type: "registry:example",
+    registryDependencies: ["button", "popover"],
+    files: [
+      {
+        path: "examples/popover-rtl.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
 ];

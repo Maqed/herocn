@@ -501,6 +501,19 @@
       ]
     },
     {
+      "name": "popover",
+      "type": "registry:ui",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/popover.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "dropdown-menu",
       "type": "registry:ui",
       "dependencies": [
@@ -1641,6 +1654,94 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/select-rtl.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "popover-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "button",
+        "input",
+        "label",
+        "popover"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/popover-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "popover-basic",
+      "type": "registry:example",
+      "registryDependencies": [
+        "button",
+        "popover"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/popover-basic.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "popover-align",
+      "type": "registry:example",
+      "registryDependencies": [
+        "button",
+        "popover"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/popover-align.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "popover-form",
+      "type": "registry:example",
+      "registryDependencies": [
+        "button",
+        "field",
+        "input",
+        "popover"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/popover-form.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "popover-with-arrow",
+      "type": "registry:example",
+      "registryDependencies": [
+        "button",
+        "popover"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/popover-with-arrow.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "popover-rtl",
+      "type": "registry:example",
+      "registryDependencies": [
+        "button",
+        "popover"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/popover-rtl.tsx",
           "type": "registry:example"
         }
       ]

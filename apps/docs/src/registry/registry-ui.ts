@@ -151,6 +151,17 @@ export const ui: Registry["items"] = [
     ],
   },
   {
+    name: "popover",
+    type: "registry:ui",
+    dependencies: ["@base-ui/react"],
+    files: [
+      {
+        path: "ui/popover.tsx",
+        type: "registry:ui",
+      },
+    ],
+  },
+  {
     name: "dropdown-menu",
     type: "registry:ui",
     dependencies: ["@base-ui/react"],

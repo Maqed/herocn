@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "popover-rtl",
+  "registryDependencies": [
+    "button",
+    "popover"
+  ],
+  "files": [
+    {
+      "path": "components/examples/popover-rtl.tsx",
+      "content": "\"use client\";\n\nimport {\n  type Translations,\n  useTranslation,\n} from \"@/components/language-selector\";\nimport { Button } from \"@/components/ui/button\";\nimport {\n  Popover,\n  PopoverContent,\n  PopoverDescription,\n  PopoverHeader,\n  PopoverTitle,\n  PopoverTrigger,\n} from \"@/components/ui/popover\";\n\nconst translations: Translations = {\n  en: {\n    dir: \"ltr\",\n    values: {\n      title: \"Dimensions\",\n      description: \"Set the dimensions for the layer.\",\n      \"inline-start\": \"Inline Start\",\n      left: \"Left\",\n      top: \"Top\",\n      bottom: \"Bottom\",\n      right: \"Right\",\n      \"inline-end\": \"Inline End\",\n    },\n  },\n  ar: {\n    dir: \"rtl\",\n    values: {\n      title: \"الأبعاد\",\n      description: \"تعيين الأبعاد للطبقة.\",\n      \"inline-start\": \"بداية السطر\",\n      left: \"يسار\",\n      top: \"أعلى\",\n      bottom: \"أسفل\",\n      right: \"يمين\",\n      \"inline-end\": \"نهاية السطر\",\n    },\n  },\n  he: {\n    dir: \"rtl\",\n    values: {\n      title: \"מימדים\",\n      description: \"הגדר את המימדים לשכבה.\",\n      \"inline-start\": \"תחילת השורה\",\n      left: \"שמאל\",\n      top: \"למעלה\",\n      bottom: \"למטה\",\n      right: \"ימין\",\n      \"inline-end\": \"סוף השורה\",\n    },\n  },\n};\n\nconst physicalSides = [\"left\", \"top\", \"bottom\", \"right\"] as const;\nconst logicalSides = [\"inline-start\", \"inline-end\"] as const;\n\nexport default function PopoverRtl() {\n  const { dir, language, t } = useTranslation(translations, \"ar\");\n\n  return (\n    <div lang={language} dir={dir} className=\"grid max-w-lg gap-4\">\n      <div className=\"flex flex-wrap justify-center gap-2\">\n        {physicalSides.map((side) => (\n          <Popover key={side}>\n            <PopoverTrigger render={<Button variant=\"tertiary\" size=\"sm\" />}>\n              {t[side]}\n            </PopoverTrigger>\n            <PopoverContent side={side} dir={dir}>\n              <PopoverHeader>\n                <PopoverTitle>{t.title}</PopoverTitle>\n                <PopoverDescription>{t.description}</PopoverDescription>\n              </PopoverHeader>\n            </PopoverContent>\n          </Popover>\n        ))}\n      </div>\n      <div className=\"flex flex-wrap justify-center gap-2\">\n        {logicalSides.map((side) => (\n          <Popover key={side}>\n            <PopoverTrigger render={<Button variant=\"tertiary\" size=\"sm\" />}>\n              {t[side]}\n            </PopoverTrigger>\n            <PopoverContent side={side} dir={dir}>\n              <PopoverHeader>\n                <PopoverTitle>{t.title}</PopoverTitle>\n                <PopoverDescription>{t.description}</PopoverDescription>\n              </PopoverHeader>\n            </PopoverContent>\n          </Popover>\n        ))}\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

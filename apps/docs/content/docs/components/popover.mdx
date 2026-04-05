@@ -1,0 +1,145 @@
+---
+title: Popover
+description: Displays rich content in a portal, triggered by a button.
+---
+
+<ComponentPreview name="popover-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+<CodeBlockCommand command="npx shadcn@latest add @herocn/popover" />
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+<CodeBlockCommand command="npm install @base-ui/react" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="popover" title="components/ui/popover.tsx" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { Button } from "@/components/ui/button"
+import {
+  Popover,
+  PopoverContent,
+  PopoverDescription,
+  PopoverHeader,
+  PopoverTitle,
+  PopoverTrigger,
+} from "@/components/ui/popover"
+```
+
+```tsx
+<Popover>
+  <PopoverTrigger render={<Button variant="outline" />}>
+    Open Popover
+  </PopoverTrigger>
+  <PopoverContent>
+    <PopoverHeader>
+      <PopoverTitle>Title</PopoverTitle>
+      <PopoverDescription>Description text here.</PopoverDescription>
+    </PopoverHeader>
+  </PopoverContent>
+</Popover>
+```
+
+## Examples
+
+### Basic
+
+A simple popover with a header, title, and description.
+
+<ComponentPreview name="popover-basic" />
+
+### Align
+
+Use the `align` prop on `PopoverContent` to control the horizontal alignment relative to the trigger.
+
+<ComponentPreview name="popover-align" />
+
+### With form
+
+A popover with form fields inside.
+
+<ComponentPreview name="popover-form" />
+
+### With arrow
+
+Use the `withArrow` prop on `PopoverContent` to show an arrow pointing at the trigger.
+
+<ComponentPreview name="popover-with-arrow" />
+
+## RTL
+
+To enable RTL support in shadcn/ui, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview name="popover-rtl" direction="rtl" />
+
+## API Reference
+
+The popover is built on [Base UI Popover](https://base-ui.com/react/components/popover). `PopoverContent` sets default positioning and passes the remaining props to the popup.
+
+### PopoverContent
+
+<ApiRefTable
+  props={[
+    {
+      name: "align",
+      type: '"start" | "center" | "end"',
+      defaultValue: '"center"',
+      description:
+        "Horizontal alignment of the popup relative to the anchor.",
+    },
+    {
+      name: "alignOffset",
+      type: "number",
+      defaultValue: "0",
+      description: "Offset along the alignment axis.",
+    },
+    {
+      name: "side",
+      type: '"top" | "bottom" | "left" | "right" | "inline-start" | "inline-end"',
+      defaultValue: '"bottom"',
+      description:
+        "Which side of the anchor to place the popup on. Logical sides follow the document direction when used with `dir`.",
+    },
+    {
+      name: "sideOffset",
+      type: "number",
+      defaultValue: "8",
+      description: "Distance between the anchor and the popup.",
+    },
+    {
+      name: "withArrow",
+      type: "boolean",
+      defaultValue: "false",
+      description: "Adds an arrow to the Popover content",
+    },
+  ]}
+/>
+
+See the [Base UI Popover API reference](https://base-ui.com/react/components/popover#api-reference) for root, trigger, title, description, and other props.

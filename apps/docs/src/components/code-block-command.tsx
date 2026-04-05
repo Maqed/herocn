@@ -3,7 +3,6 @@
 import { CodeBlock, Pre } from "fumadocs-ui/components/codeblock";
 import { Terminal } from "lucide-react";
 import * as React from "react";
-import { copyToClipboard } from "@/components/copy-button";
 import { useConfig } from "@/hooks/use-config";
 import {
   Tabs,
@@ -46,17 +45,6 @@ export function CodeBlockCommandWrapper({
     }),
     [__npm__, __pnpm__, __yarn__, __bun__],
   );
-
-  const copyCommand = React.useCallback(() => {
-    const command = tabs[packageManager];
-
-    if (!command) {
-      return;
-    }
-
-    copyToClipboard(command);
-    setHasCopied(true);
-  }, [packageManager, tabs]);
 
   return (
     <div className="relative overflow-x-auto">

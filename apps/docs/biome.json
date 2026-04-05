@@ -38,6 +38,9 @@
       "suspicious": {
         "noArrayIndexKey": "off",
         "noDocumentCookie": "off"
+      },
+      "performance": {
+        "noImgElement": "off"
       }
     },
     "domains": {

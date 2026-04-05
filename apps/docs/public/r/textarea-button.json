@@ -8,7 +8,7 @@
   "files": [
     {
       "path": "components/examples/textarea-button.tsx",
-      "content": "import { Button } from \"@/components/ui/button\";\nimport { Textarea } from \"@/components/ui/textarea\";\n\nexport default function TextareaButton() {\n  return (\n    <div className=\"grid w-full max-w-sm gap-2\">\n      <Textarea placeholder=\"Type your message here.\" rows={4} />\n      <Button className='w-full'>Send message</Button>\n    </div>\n  );\n}\n",
+      "content": "import { Button } from \"@/components/ui/button\";\nimport { Textarea } from \"@/components/ui/textarea\";\n\nexport default function TextareaButton() {\n  return (\n    <div className=\"grid w-full max-w-sm gap-2\">\n      <Textarea placeholder=\"Type your message here.\" rows={4} />\n      <Button className=\"w-full\">Send message</Button>\n    </div>\n  );\n}\n",
       "type": "registry:example"
     }
   ],

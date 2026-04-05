@@ -134,7 +134,7 @@ export const css = {
   "@utility pressible": {
     transition:
       "transform 250ms var(--ease-smooth), background-color 100ms var(--ease-out), box-shadow 100ms var(--ease-out)",
-    "@apply transform-gpu motion-reduce:transition-none active:scale-[0.97]":
+    "@apply transform-gpu motion-reduce:transition-none active:scale-[0.97] aria-expanded:scale-[0.97]":
       {},
   },
   "@utility focus-ring": {

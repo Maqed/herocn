@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "separator-rtl",
+  "registryDependencies": [
+    "separator"
+  ],
+  "files": [
+    {
+      "path": "components/examples/separator-rtl.tsx",
+      "content": "\"use client\";\n\nimport {\n  type Translations,\n  useTranslation,\n} from \"@/components/language-selector\";\nimport { Separator } from \"@/components/ui/separator\";\n\nconst translations: Translations = {\n  en: {\n    dir: \"ltr\",\n    values: {\n      title: \"herocn\",\n      subtitle: \"HeroUI design system, shadcn/ui abstraction\",\n      description: \"Beautifully designed components for your next application.\",\n    },\n  },\n  ar: {\n    dir: \"rtl\",\n    values: {\n      title: \"herocn\",\n      subtitle: \"نظام تصميم HeroUI، تجريد shadcn/ui\",\n      description: \"مكونات مصممة بشكل جميل لتطبيقك القادم.\",\n    },\n  },\n  he: {\n    dir: \"rtl\",\n    values: {\n      title: \"herocn\",\n      subtitle: \"מערכת עיצוב HeroUI, הפשטה של shadcn/ui\",\n      description: \"רכיבים מעוצבים בצורה יפה לאפליקציה הבאה שלך.\",\n    },\n  },\n};\n\nexport default function SeparatorRtl() {\n  const { dir, t } = useTranslation(translations, \"ar\");\n\n  return (\n    <div className=\"flex max-w-sm flex-col gap-4 text-sm\" dir={dir}>\n      <div className=\"flex flex-col gap-1.5\">\n        <div className=\"leading-none font-medium\">{t.title}</div>\n        <div className=\"text-muted-foreground\">{t.subtitle}</div>\n      </div>\n      <Separator />\n      <div>{t.description}</div>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

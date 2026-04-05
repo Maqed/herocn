@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "separator-menu",
+  "registryDependencies": [
+    "separator"
+  ],
+  "files": [
+    {
+      "path": "components/examples/separator-menu.tsx",
+      "content": "import { Separator } from \"@/components/ui/separator\";\n\nexport default function SeparatorMenu() {\n  return (\n    <div className=\"flex items-center gap-2 text-sm md:gap-4\">\n      <div className=\"flex flex-col gap-1\">\n        <span className=\"font-medium\">Settings</span>\n        <span className=\"text-xs text-muted-foreground\">\n          Manage preferences\n        </span>\n      </div>\n      <Separator orientation=\"vertical\" />\n      <div className=\"flex flex-col gap-1\">\n        <span className=\"font-medium\">Account</span>\n        <span className=\"text-xs text-muted-foreground\">\n          Profile & security\n        </span>\n      </div>\n      <Separator orientation=\"vertical\" className=\"hidden md:block\" />\n      <div className=\"hidden flex-col gap-1 md:flex\">\n        <span className=\"font-medium\">Help</span>\n        <span className=\"text-xs text-muted-foreground\">Support & docs</span>\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

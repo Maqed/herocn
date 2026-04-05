@@ -998,6 +998,72 @@ export const examples: Registry["items"] = [
     ],
   },
   {
+    name: "separator-demo",
+    type: "registry:example",
+    registryDependencies: ["separator"],
+    files: [
+      {
+        path: "examples/separator-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "separator-vertical",
+    type: "registry:example",
+    registryDependencies: ["separator"],
+    files: [
+      {
+        path: "examples/separator-vertical.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "separator-menu",
+    type: "registry:example",
+    registryDependencies: ["separator"],
+    files: [
+      {
+        path: "examples/separator-menu.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "separator-list",
+    type: "registry:example",
+    registryDependencies: ["separator"],
+    files: [
+      {
+        path: "examples/separator-list.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "separator-surface",
+    type: "registry:example",
+    registryDependencies: ["separator", "surface"],
+    files: [
+      {
+        path: "examples/separator-surface.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "separator-rtl",
+    type: "registry:example",
+    registryDependencies: ["separator"],
+    files: [
+      {
+        path: "examples/separator-rtl.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "popover-demo",
     type: "registry:example",
     registryDependencies: ["button", "input", "label", "popover"],

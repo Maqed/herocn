@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "separator-surface",
+  "registryDependencies": [
+    "separator",
+    "surface"
+  ],
+  "files": [
+    {
+      "path": "components/examples/separator-surface.tsx",
+      "content": "import { Separator } from \"@/components/ui/separator\";\nimport { Surface } from \"@/components/ui/surface\";\n\nexport default function SeparatorSurface() {\n  return (\n    <div className=\"grid w-full gap-3 md:grid-cols-2\">\n      <Surface variant=\"default\" className=\"rounded-lg border p-4\">\n        <div className=\"flex flex-col gap-3 text-sm\">\n          <div className=\"font-medium\">Default</div>\n          <Separator />\n          <div className=\"text-muted-foreground\">\n            Separator on the default surface background.\n          </div>\n        </div>\n      </Surface>\n      <Surface variant=\"secondary\" className=\"rounded-lg border p-4\">\n        <div className=\"flex flex-col gap-3 text-sm\">\n          <div className=\"font-medium\">Secondary</div>\n          <Separator />\n          <div className=\"text-muted-foreground\">\n            Separator on the secondary surface background.\n          </div>\n        </div>\n      </Surface>\n      <Surface variant=\"tertiary\" className=\"rounded-lg border p-4\">\n        <div className=\"flex flex-col gap-3 text-sm\">\n          <div className=\"font-medium\">Tertiary</div>\n          <Separator />\n          <div className=\"text-muted-foreground\">\n            Separator on the tertiary surface background.\n          </div>\n        </div>\n      </Surface>\n      <Surface variant=\"transparent\" className=\"rounded-lg border p-4\">\n        <div className=\"flex flex-col gap-3 text-sm\">\n          <div className=\"font-medium\">Transparent</div>\n          <Separator />\n          <div className=\"text-muted-foreground\">\n            Separator on a transparent surface (inherits parent).\n          </div>\n        </div>\n      </Surface>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

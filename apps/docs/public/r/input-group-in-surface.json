@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-group-in-surface",
+  "registryDependencies": [
+    "card",
+    "input-group"
+  ],
+  "files": [
+    {
+      "path": "components/examples/input-group-in-surface.tsx",
+      "content": "import { SearchIcon } from \"lucide-react\";\n\nimport {\n  Card,\n  CardContent,\n  CardHeader,\n  CardTitle,\n} from \"@/components/ui/card\";\nimport {\n  InputGroup,\n  InputGroupAddon,\n  InputGroupButton,\n  InputGroupInput,\n} from \"@/components/ui/input-group\";\n\nexport default function InputGroupInSurface() {\n  return (\n    <Card className=\"w-full max-w-sm\">\n      <CardHeader>\n        <CardTitle>Find a member</CardTitle>\n      </CardHeader>\n      <CardContent>\n        <InputGroup variant=\"secondary\">\n          <InputGroupInput placeholder=\"Search by name or email...\" />\n          <InputGroupAddon align=\"inline-end\">\n            <InputGroupButton size=\"icon-sm\">\n              <SearchIcon />\n            </InputGroupButton>\n          </InputGroupAddon>\n        </InputGroup>\n      </CardContent>\n    </Card>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

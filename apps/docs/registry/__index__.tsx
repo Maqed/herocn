@@ -515,6 +515,21 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "textarea-in-surface": {
+    name: "textarea-in-surface",
+    type: "registry:example",
+    registryDependencies: ["button","card","field","textarea"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/textarea-in-surface.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/textarea-in-surface.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "avatar-rtl": {
     name: "avatar-rtl",
     type: "registry:example",
@@ -1981,6 +1996,21 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "input-group-in-surface": {
+    name: "input-group-in-surface",
+    type: "registry:example",
+    registryDependencies: ["card","input-group"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/input-group-in-surface.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/input-group-in-surface.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

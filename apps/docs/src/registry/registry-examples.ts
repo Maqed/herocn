@@ -200,6 +200,17 @@ export const examples: Registry["items"] = [
     ],
   },
   {
+    name: "textarea-in-surface",
+    type: "registry:example",
+    registryDependencies: ["button", "card", "field", "textarea"],
+    files: [
+      {
+        path: "examples/textarea-in-surface.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "avatar-rtl",
     type: "registry:example",
     registryDependencies: ["avatar"],
@@ -1279,6 +1290,17 @@ export const examples: Registry["items"] = [
     files: [
       {
         path: "examples/input-group-rtl.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "input-group-in-surface",
+    type: "registry:example",
+    registryDependencies: ["card", "input-group"],
+    files: [
+      {
+        path: "examples/input-group-in-surface.tsx",
         type: "registry:example",
       },
     ],

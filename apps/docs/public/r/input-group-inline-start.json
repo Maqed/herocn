@@ -8,7 +8,7 @@
   "files": [
     {
       "path": "components/examples/input-group-inline-start.tsx",
-      "content": "import { SearchIcon } from \"lucide-react\";\r\n\r\nimport {\r\n  Field,\r\n  FieldDescription,\r\n  FieldLabel,\r\n} from \"@/components/ui/field\";\r\nimport {\r\n  InputGroup,\r\n  InputGroupAddon,\r\n  InputGroupInput,\r\n} from \"@/components/ui/input-group\";\r\n\r\nexport default function InputGroupInlineStart() {\r\n  return (\r\n    <Field className=\"max-w-sm\">\r\n      <FieldLabel htmlFor=\"inline-start-input\">Input</FieldLabel>\r\n      <InputGroup>\r\n        <InputGroupInput id=\"inline-start-input\" placeholder=\"Search...\" />\r\n        <InputGroupAddon align=\"inline-start\">\r\n          <SearchIcon className=\"text-muted-foreground\" />\r\n        </InputGroupAddon>\r\n      </InputGroup>\r\n      <FieldDescription>Icon positioned at the start.</FieldDescription>\r\n    </Field>\r\n  );\r\n}\r\n",
+      "content": "import { SearchIcon } from \"lucide-react\";\n\nimport {\n  Field,\n  FieldDescription,\n  FieldLabel,\n} from \"@/components/ui/field\";\nimport {\n  InputGroup,\n  InputGroupAddon,\n  InputGroupInput,\n} from \"@/components/ui/input-group\";\n\nexport default function InputGroupInlineStart() {\n  return (\n    <Field className=\"max-w-sm\">\n      <FieldLabel htmlFor=\"inline-start-input\">Input</FieldLabel>\n      <InputGroup>\n        <InputGroupInput id=\"inline-start-input\" placeholder=\"Search...\" />\n        <InputGroupAddon align=\"inline-start\">\n          <SearchIcon className=\"text-muted-foreground\" />\n        </InputGroupAddon>\n      </InputGroup>\n      <FieldDescription>Icon positioned at the start.</FieldDescription>\n    </Field>\n  );\n}\n",
       "type": "registry:example"
     }
   ],

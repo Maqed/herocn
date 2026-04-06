@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-group-button",
+  "registryDependencies": [
+    "input-group"
+  ],
+  "files": [
+    {
+      "path": "components/examples/input-group-button.tsx",
+      "content": "\"use client\";\r\n\r\nimport * as React from \"react\";\r\nimport { CheckIcon, CopyIcon, StarIcon } from \"lucide-react\";\r\n\r\nimport {\r\n  InputGroup,\r\n  InputGroupAddon,\r\n  InputGroupButton,\r\n  InputGroupInput,\r\n} from \"@/components/ui/input-group\";\r\n\r\nexport default function InputGroupButtonExample() {\r\n  const [isCopied, setIsCopied] = React.useState(false);\r\n  const [isFavorite, setIsFavorite] = React.useState(false);\r\n\r\n  const handleCopy = () => {\r\n    navigator.clipboard.writeText(\"https://x.com/0xMaqed\");\r\n    setIsCopied(true);\r\n    setTimeout(() => setIsCopied(false), 2000);\r\n  };\r\n\r\n  return (\r\n    <div className=\"grid w-full max-w-sm gap-6\">\r\n      <InputGroup>\r\n        <InputGroupInput placeholder=\"https://x.com/0xMaqed\" readOnly />\r\n        <InputGroupAddon align=\"inline-end\">\r\n          <InputGroupButton\r\n            aria-label=\"Copy\"\r\n            title=\"Copy\"\r\n            size=\"icon-sm\"\r\n            onClick={handleCopy}\r\n          >\r\n            {isCopied ? <CheckIcon /> : <CopyIcon />}\r\n          </InputGroupButton>\r\n        </InputGroupAddon>\r\n      </InputGroup>\r\n      <InputGroup>\r\n        <InputGroupInput placeholder=\"Type to search...\" />\r\n        <InputGroupAddon align=\"inline-end\">\r\n          <InputGroupButton variant=\"secondary\">Search</InputGroupButton>\r\n        </InputGroupAddon>\r\n      </InputGroup>\r\n      <InputGroup>\r\n        <InputGroupInput placeholder=\"Add to favorites...\" />\r\n        <InputGroupAddon align=\"inline-end\">\r\n          <InputGroupButton\r\n            onClick={() => setIsFavorite(!isFavorite)}\r\n            size=\"icon-sm\"\r\n          >\r\n            <StarIcon\r\n              data-favorite={isFavorite}\r\n              className=\"data-[favorite=true]:fill-blue-600 data-[favorite=true]:stroke-blue-600\"\r\n            />\r\n          </InputGroupButton>\r\n        </InputGroupAddon>\r\n      </InputGroup>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

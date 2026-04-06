@@ -630,6 +630,46 @@
       }
     },
     {
+      "name": "input-group",
+      "type": "registry:ui",
+      "registryDependencies": [
+        "@herocn/button",
+        "@herocn/input",
+        "@herocn/textarea"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/input-group.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "--default": "oklch(94% 0.001 286.375)"
+        },
+        "dark": {
+          "--default": "oklch(27.4% 0.006 286.033)"
+        },
+        "theme": {
+          "--color-default": "var(--default)"
+        }
+      },
+      "css": {
+        "@utility focus-field-ring": {
+          "@apply ring-2 ring-ring ring-offset-0 outline-none": {},
+          "--tw-ring-offset-width": "0px"
+        },
+        "@utility invalid-field-ring": {
+          "@apply outline-1 outline-destructive outline-solid": {},
+          "--tw-ring-offset-width": "3px"
+        },
+        "@utility invalid-field-ring-focus": {
+          "@apply ring-2 outline-none ring-destructive ring-offset-0": {},
+          "--tw-ring-offset-width": "0px"
+        }
+      }
+    },
+    {
       "name": "select",
       "type": "registry:ui",
       "dependencies": [
@@ -2156,6 +2196,197 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/popover-rtl.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "input-group-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/input-group-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "input-group-variants",
+      "type": "registry:example",
+      "registryDependencies": [
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/input-group-variants.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "input-group-invalid",
+      "type": "registry:example",
+      "registryDependencies": [
+        "field",
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/input-group-invalid.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "input-group-inline-start",
+      "type": "registry:example",
+      "registryDependencies": [
+        "field",
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/input-group-inline-start.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "input-group-inline-end",
+      "type": "registry:example",
+      "registryDependencies": [
+        "field",
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/input-group-inline-end.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "input-group-block-start",
+      "type": "registry:example",
+      "registryDependencies": [
+        "field",
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/input-group-block-start.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "input-group-block-end",
+      "type": "registry:example",
+      "registryDependencies": [
+        "field",
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/input-group-block-end.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "input-group-icon",
+      "type": "registry:example",
+      "registryDependencies": [
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/input-group-icon.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "input-group-text",
+      "type": "registry:example",
+      "registryDependencies": [
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/input-group-text.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "input-group-button",
+      "type": "registry:example",
+      "registryDependencies": [
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/input-group-button.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "input-group-spinner",
+      "type": "registry:example",
+      "registryDependencies": [
+        "input-group",
+        "spinner"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/input-group-spinner.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "input-group-textarea",
+      "type": "registry:example",
+      "registryDependencies": [
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/input-group-textarea.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "input-group-dropdown",
+      "type": "registry:example",
+      "registryDependencies": [
+        "dropdown-menu",
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/input-group-dropdown.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "input-group-rtl",
+      "type": "registry:example",
+      "registryDependencies": [
+        "field",
+        "input-group",
+        "spinner"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/input-group-rtl.tsx",
           "type": "registry:example"
         }
       ]

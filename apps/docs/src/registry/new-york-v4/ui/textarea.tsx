@@ -21,6 +21,7 @@ function Textarea({
         "hover:not-focus-visible:bg-input/40 dark:hover:not-focus-visible:bg-input hover:not-focus-visible:data-[variant=secondary]:bg-default",
         "data-[variant=secondary]:bg-default/80 data-[variant=secondary]:shadow-none",
         "disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50",
+        className,
       )}
       {...props}
     />

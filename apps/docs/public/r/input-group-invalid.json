@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-group-invalid",
+  "registryDependencies": [
+    "field",
+    "input-group"
+  ],
+  "files": [
+    {
+      "path": "components/examples/input-group-invalid.tsx",
+      "content": "import { SearchIcon } from \"lucide-react\";\r\n\r\nimport {\r\n  Field,\r\n  FieldError,\r\n  FieldLabel,\r\n} from \"@/components/ui/field\";\r\nimport {\r\n  InputGroup,\r\n  InputGroupAddon,\r\n  InputGroupInput,\r\n  InputGroupTextarea,\r\n} from \"@/components/ui/input-group\";\r\n\r\nexport default function InputGroupInvalid() {\r\n  return (\r\n    <div className=\"grid w-full max-w-sm gap-6\">\r\n      <Field data-invalid>\r\n        <FieldLabel htmlFor=\"invalid-input\">Search</FieldLabel>\r\n        <InputGroup>\r\n          <InputGroupInput\r\n            id=\"invalid-input\"\r\n            aria-invalid\r\n            placeholder=\"Search...\"\r\n          />\r\n          <InputGroupAddon>\r\n            <SearchIcon />\r\n          </InputGroupAddon>\r\n        </InputGroup>\r\n        <FieldError>Please enter a valid search term.</FieldError>\r\n      </Field>\r\n      <Field data-invalid>\r\n        <FieldLabel htmlFor=\"invalid-textarea\">Message</FieldLabel>\r\n        <InputGroup>\r\n          <InputGroupTextarea\r\n            id=\"invalid-textarea\"\r\n            aria-invalid\r\n            placeholder=\"Enter your message...\"\r\n          />\r\n        </InputGroup>\r\n        <FieldError>Message cannot be empty.</FieldError>\r\n      </Field>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

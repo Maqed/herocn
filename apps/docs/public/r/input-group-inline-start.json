@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-group-inline-start",
+  "registryDependencies": [
+    "field",
+    "input-group"
+  ],
+  "files": [
+    {
+      "path": "components/examples/input-group-inline-start.tsx",
+      "content": "import { SearchIcon } from \"lucide-react\";\r\n\r\nimport {\r\n  Field,\r\n  FieldDescription,\r\n  FieldLabel,\r\n} from \"@/components/ui/field\";\r\nimport {\r\n  InputGroup,\r\n  InputGroupAddon,\r\n  InputGroupInput,\r\n} from \"@/components/ui/input-group\";\r\n\r\nexport default function InputGroupInlineStart() {\r\n  return (\r\n    <Field className=\"max-w-sm\">\r\n      <FieldLabel htmlFor=\"inline-start-input\">Input</FieldLabel>\r\n      <InputGroup>\r\n        <InputGroupInput id=\"inline-start-input\" placeholder=\"Search...\" />\r\n        <InputGroupAddon align=\"inline-start\">\r\n          <SearchIcon className=\"text-muted-foreground\" />\r\n        </InputGroupAddon>\r\n      </InputGroup>\r\n      <FieldDescription>Icon positioned at the start.</FieldDescription>\r\n    </Field>\r\n  );\r\n}\r\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

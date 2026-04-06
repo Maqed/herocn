@@ -259,6 +259,38 @@ export const ui: Registry["items"] = [
     },
   },
   {
+    name: "input-group",
+    type: "registry:ui",
+    registryDependencies: [
+      "@herocn/button",
+      "@herocn/input",
+      "@herocn/textarea",
+    ],
+    files: [
+      {
+        path: "ui/input-group.tsx",
+        type: "registry:ui",
+      },
+    ],
+    cssVars: {
+      light: {
+        "--default": cssVars.light["--default"],
+      },
+      dark: {
+        "--default": cssVars.dark["--default"],
+      },
+      theme: {
+        "--color-default": cssVars.theme["--color-default"],
+      },
+    },
+    css: {
+      "@utility focus-field-ring": css["@utility focus-field-ring"],
+      "@utility invalid-field-ring": css["@utility invalid-field-ring"],
+      "@utility invalid-field-ring-focus":
+        css["@utility invalid-field-ring-focus"],
+    },
+  },
+  {
     name: "select",
     type: "registry:ui",
     dependencies: ["@base-ui/react", "lucide-react"],

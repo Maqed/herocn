@@ -16,6 +16,7 @@
     "@herocn/collapsible",
     "@herocn/dropdown-menu",
     "@herocn/input",
+    "@herocn/input-group",
     "@herocn/popover",
     "@herocn/select",
     "@herocn/separator",

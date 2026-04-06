@@ -1129,4 +1129,158 @@ export const examples: Registry["items"] = [
       },
     ],
   },
+  {
+    name: "input-group-demo",
+    type: "registry:example",
+    registryDependencies: ["input-group"],
+    files: [
+      {
+        path: "examples/input-group-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "input-group-variants",
+    type: "registry:example",
+    registryDependencies: ["input-group"],
+    files: [
+      {
+        path: "examples/input-group-variants.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "input-group-invalid",
+    type: "registry:example",
+    registryDependencies: ["field", "input-group"],
+    files: [
+      {
+        path: "examples/input-group-invalid.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "input-group-inline-start",
+    type: "registry:example",
+    registryDependencies: ["field", "input-group"],
+    files: [
+      {
+        path: "examples/input-group-inline-start.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "input-group-inline-end",
+    type: "registry:example",
+    registryDependencies: ["field", "input-group"],
+    files: [
+      {
+        path: "examples/input-group-inline-end.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "input-group-block-start",
+    type: "registry:example",
+    registryDependencies: ["field", "input-group"],
+    files: [
+      {
+        path: "examples/input-group-block-start.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "input-group-block-end",
+    type: "registry:example",
+    registryDependencies: ["field", "input-group"],
+    files: [
+      {
+        path: "examples/input-group-block-end.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "input-group-icon",
+    type: "registry:example",
+    registryDependencies: ["input-group"],
+    files: [
+      {
+        path: "examples/input-group-icon.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "input-group-text",
+    type: "registry:example",
+    registryDependencies: ["input-group"],
+    files: [
+      {
+        path: "examples/input-group-text.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "input-group-button",
+    type: "registry:example",
+    registryDependencies: ["input-group"],
+    files: [
+      {
+        path: "examples/input-group-button.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "input-group-spinner",
+    type: "registry:example",
+    registryDependencies: ["input-group", "spinner"],
+    files: [
+      {
+        path: "examples/input-group-spinner.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "input-group-textarea",
+    type: "registry:example",
+    registryDependencies: ["input-group"],
+    files: [
+      {
+        path: "examples/input-group-textarea.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "input-group-dropdown",
+    type: "registry:example",
+    registryDependencies: ["dropdown-menu", "input-group"],
+    files: [
+      {
+        path: "examples/input-group-dropdown.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "input-group-rtl",
+    type: "registry:example",
+    registryDependencies: ["field", "input-group", "spinner"],
+    files: [
+      {
+        path: "examples/input-group-rtl.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
 ];

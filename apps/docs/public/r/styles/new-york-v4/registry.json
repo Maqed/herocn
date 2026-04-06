@@ -753,6 +753,25 @@
       }
     },
     {
+      "name": "slider",
+      "type": "registry:ui",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/slider.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "css": {
+        "@utility focus-ring": {
+          "@apply ring-2 ring-ring ring-offset-0 ring-offset-background outline-none": {},
+          "--tw-ring-offset-width": "var(--ring-offset-width)"
+        }
+      }
+    },
+    {
       "name": "tabs",
       "type": "registry:ui",
       "dependencies": [
@@ -2754,6 +2773,98 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/switch-rtl.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "slider-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/slider"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/slider-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "slider-range",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/slider"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/slider-range.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "slider-multiple",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/slider"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/slider-multiple.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "slider-vertical",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/slider"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/slider-vertical.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "slider-controlled",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/label",
+        "@herocn/slider"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/slider-controlled.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "slider-disabled",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/slider"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/slider-disabled.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "slider-rtl",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/slider"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/slider-rtl.tsx",
           "type": "registry:example"
         }
       ]

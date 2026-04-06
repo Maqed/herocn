@@ -348,6 +348,20 @@ export const ui: Registry["items"] = [
     },
   },
   {
+    name: "slider",
+    type: "registry:ui",
+    dependencies: ["@base-ui/react"],
+    files: [
+      {
+        path: "ui/slider.tsx",
+        type: "registry:ui",
+      },
+    ],
+    css: {
+      "@utility focus-ring": css["@utility focus-ring"],
+    },
+  },
+  {
     name: "tabs",
     type: "registry:ui",
     dependencies: ["@base-ui/react"],

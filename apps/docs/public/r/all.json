@@ -11,7 +11,9 @@
   "registryDependencies": [
     "@herocn/button",
     "@herocn/input",
+    "@herocn/label",
     "@herocn/separator",
+    "@herocn/slider",
     "@herocn/textarea",
     "@herocn/toggle",
     "@herocn/ui",
@@ -123,6 +125,12 @@
       "type": "registry:ui",
       "target": "",
       "content": "\"use client\";\n\nimport { Switch as SwitchPrimitive } from \"@base-ui/react/switch\";\n\nimport { cn } from \"@/lib/utils\";\n\nfunction Switch({\n  className,\n  size = \"default\",\n  ...props\n}: SwitchPrimitive.Root.Props & {\n  size?: \"sm\" | \"default\" | \"lg\";\n}) {\n  return (\n    <SwitchPrimitive.Root\n      data-slot=\"switch\"\n      data-size={size}\n      className={cn(\n        \"peer group/switch relative inline-flex shrink-0 items-center rounded-full border border-transparent transition-colors outline-none after:absolute after:-inset-x-3 after:-inset-y-2 focus-visible:focus-ring focus-visible:ring-offset-2 aria-invalid:not-focus-visible:invalid-field-ring aria-invalid:focus-visible:invalid-field-ring-focus data-checked:bg-primary data-unchecked:bg-input dark:data-unchecked:bg-input/80 data-disabled:cursor-not-allowed data-disabled:opacity-50\",\n        \"data-[size=sm]:h-4 data-[size=sm]:w-8\",\n        \"data-[size=default]:h-5 data-[size=default]:w-10\",\n        \"data-[size=lg]:h-6 data-[size=lg]:w-12\",\n        className,\n      )}\n      {...props}\n    >\n      <SwitchPrimitive.Thumb\n        data-slot=\"switch-thumb\"\n        className={cn(\n          \"pointer-events-none ms-0.5 block rounded-full bg-background ring-0 shadow-sm transition-[margin] dark:data-checked:bg-primary-foreground dark:data-unchecked:bg-foreground\",\n          \"group-data-[size=sm]/switch:h-3 group-data-[size=sm]/switch:w-[1.03125rem] group-data-[size=sm]/switch:data-checked:ms-[calc(100%-1.15625rem)]\",\n          \"group-data-[size=default]/switch:h-4 group-data-[size=default]/switch:w-[1.375rem] group-data-[size=default]/switch:data-checked:ms-[calc(100%-1.5rem)]\",\n          \"group-data-[size=lg]/switch:h-5 group-data-[size=lg]/switch:w-[1.71875rem] group-data-[size=lg]/switch:data-checked:ms-[calc(100%-1.84375rem)]\",\n        )}\n      />\n    </SwitchPrimitive.Root>\n  );\n}\n\nexport { Switch };\n"
+    },
+    {
+      "path": "components/ui/slider.tsx",
+      "type": "registry:ui",
+      "target": "",
+      "content": "\"use client\";\r\n\r\nimport { Slider as SliderPrimitive } from \"@base-ui/react/slider\"\r\n\r\nimport { cn } from \"@/lib/utils\"\r\n\r\nfunction Slider({\r\n  className,\r\n  defaultValue,\r\n  value,\r\n  min = 0,\r\n  max = 100,\r\n  ...props\r\n}: SliderPrimitive.Root.Props) {\r\n  const _values = Array.isArray(value)\r\n    ? value\r\n    : Array.isArray(defaultValue)\r\n      ? defaultValue\r\n      : [min, max]\r\n\r\n  return (\r\n    <SliderPrimitive.Root\r\n      className={cn(\"data-[orientation=horizontal]:w-full data-[orientation=vertical]:h-full\", className)}\r\n      data-slot=\"slider\"\r\n      defaultValue={defaultValue}\r\n      value={value}\r\n      min={min}\r\n      max={max}\r\n      thumbAlignment=\"edge\"\r\n      thumbCollisionBehavior=\"swap\"\r\n      {...props}\r\n    >\r\n      <SliderPrimitive.Control className=\"relative flex w-full touch-none items-center select-none data-disabled:opacity-50 data-dragging:cursor-grabbing data-[orientation=vertical]:h-full data-[orientation=vertical]:min-h-40 data-[orientation=vertical]:w-auto data-[orientation=vertical]:flex-col\">\r\n        <SliderPrimitive.Track\r\n          data-slot=\"slider-track\"\r\n          className=\"relative grow overflow-hidden rounded-full bg-muted select-none data-[orientation=horizontal]:h-4.5 data-[orientation=horizontal]:w-full data-[orientation=vertical]:h-full data-[orientation=vertical]:w-4.5\"\r\n        >\r\n          <SliderPrimitive.Indicator\r\n            data-slot=\"slider-range\"\r\n            className=\"bg-primary select-none data-[orientation=horizontal]:h-full data-[orientation=vertical]:w-full\"\r\n          />\r\n        </SliderPrimitive.Track>\r\n        {Array.from({ length: _values.length }, (_, index) => (\r\n          <SliderPrimitive.Thumb\r\n            data-slot=\"slider-thumb\"\r\n            key={index}\r\n            className=\"block data-[orientation=horizontal]:h-4 data-[orientation=horizontal]:w-5.5 data-[orientation=vertical]:h-5.5 data-[orientation=vertical]:w-4 shrink-0 rounded-full bg-background shadow-sm transition-colors select-none cursor-grab data-dragging:cursor-grabbing has-focus:data-dragging:scale-90 has-focus-visible:focus-ring has-focus-visible:ring-offset-2 outline-hidden disabled:pointer-events-none disabled:opacity-50 dark:bg-foreground\"\r\n          />\r\n        ))}\r\n      </SliderPrimitive.Control>\r\n    </SliderPrimitive.Root>\r\n  )\r\n}\r\n\r\nexport { Slider }\r\n"
     },
     {
       "path": "components/ui/tabs.tsx",
@@ -969,6 +977,48 @@
       "type": "registry:example",
       "target": "",
       "content": "\"use client\";\n\nimport {\n  type Translations,\n  useTranslation,\n} from \"@/components/language-selector\";\nimport {\n  Field,\n  FieldContent,\n  FieldDescription,\n  FieldLabel,\n} from \"@/components/ui/field\";\nimport { Switch } from \"@/components/ui/switch\";\n\nconst translations: Translations = {\n  en: {\n    dir: \"ltr\",\n    values: {\n      label: \"Share across devices\",\n      description:\n        \"Focus is shared across devices, and turns off when you leave the app.\",\n    },\n  },\n  ar: {\n    dir: \"rtl\",\n    values: {\n      label: \"المشاركة عبر الأجهزة\",\n      description:\n        \"يتم مشاركة التركيز عبر الأجهزة، ويتم إيقاف تشغيله عند مغادرة التطبيق.\",\n    },\n  },\n  he: {\n    dir: \"rtl\",\n    values: {\n      label: \"שיתוף בין מכשירים\",\n      description: \"המיקוד משותף בין מכשירים, וכבה כשאתה עוזב את האפליקציה.\",\n    },\n  },\n};\n\nexport function SwitchRtl() {\n  const { dir, language, t } = useTranslation(translations, \"ar\");\n\n  return (\n    <div lang={language} dir={dir}>\n      <Field orientation=\"horizontal\" className=\"max-w-sm\">\n        <FieldContent>\n          <FieldLabel htmlFor=\"switch-focus-mode-rtl\">{t.label}</FieldLabel>\n          <FieldDescription>{t.description}</FieldDescription>\n        </FieldContent>\n        <Switch id=\"switch-focus-mode-rtl\" />\n      </Field>\n    </div>\n  );\n}\n"
+    },
+    {
+      "path": "examples/slider-demo.tsx",
+      "type": "registry:example",
+      "target": "",
+      "content": "import { Slider } from \"@/components/ui/slider\";\n\nexport default function SliderDemo() {\n  return (\n    <Slider\n      defaultValue={[75]}\n      max={100}\n      step={1}\n      className=\"mx-auto w-full max-w-xs\"\n    />\n  );\n}\n"
+    },
+    {
+      "path": "examples/slider-range.tsx",
+      "type": "registry:example",
+      "target": "",
+      "content": "import { Slider } from \"@/components/ui/slider\";\n\nexport default function SliderRange() {\n  return (\n    <Slider\n      defaultValue={[25, 75]}\n      max={100}\n      step={5}\n      className=\"mx-auto w-full max-w-xs\"\n    />\n  );\n}\n"
+    },
+    {
+      "path": "examples/slider-multiple.tsx",
+      "type": "registry:example",
+      "target": "",
+      "content": "import { Slider } from \"@/components/ui/slider\";\n\nexport default function SliderMultiple() {\n  return (\n    <Slider\n      defaultValue={[10, 40, 70]}\n      max={100}\n      step={10}\n      className=\"mx-auto w-full max-w-xs\"\n    />\n  );\n}\n"
+    },
+    {
+      "path": "examples/slider-vertical.tsx",
+      "type": "registry:example",
+      "target": "",
+      "content": "import { Slider } from \"@/components/ui/slider\";\n\nexport default function SliderVertical() {\n  return (\n    <div className=\"mx-auto flex w-full max-w-xs items-center justify-center gap-6\">\n      <Slider\n        defaultValue={[50]}\n        max={100}\n        step={1}\n        orientation=\"vertical\"\n        className=\"h-40\"\n      />\n      <Slider\n        defaultValue={[25]}\n        max={100}\n        step={1}\n        orientation=\"vertical\"\n        className=\"h-40\"\n      />\n    </div>\n  );\n}\n"
+    },
+    {
+      "path": "examples/slider-controlled.tsx",
+      "type": "registry:example",
+      "target": "",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\n\nimport { Label } from \"@/components/ui/label\";\nimport { Slider } from \"@/components/ui/slider\";\n\nexport default function SliderControlled() {\n  const [value, setValue] = React.useState([0.3, 0.7]);\n\n  return (\n    <div className=\"mx-auto grid w-full max-w-xs gap-3\">\n      <div className=\"flex items-center justify-between gap-2\">\n        <Label htmlFor=\"slider-controlled-temperature\">Temperature</Label>\n        <span className=\"text-muted-foreground text-sm\">\n          {value.join(\", \")}\n        </span>\n      </div>\n      <Slider\n        id=\"slider-controlled-temperature\"\n        value={value}\n        onValueChange={(val) => setValue(val as number[])}\n        min={0}\n        max={1}\n        step={0.1}\n      />\n    </div>\n  );\n}\n"
+    },
+    {
+      "path": "examples/slider-disabled.tsx",
+      "type": "registry:example",
+      "target": "",
+      "content": "import { Slider } from \"@/components/ui/slider\";\n\nexport default function SliderDisabled() {\n  return (\n    <Slider\n      defaultValue={[50]}\n      max={100}\n      step={1}\n      disabled\n      className=\"mx-auto w-full max-w-xs\"\n    />\n  );\n}\n"
+    },
+    {
+      "path": "examples/slider-rtl.tsx",
+      "type": "registry:example",
+      "target": "",
+      "content": "\"use client\";\n\nimport {\n  type Translations,\n  useTranslation,\n} from \"@/components/language-selector\";\nimport { Slider } from \"@/components/ui/slider\";\n\nconst translations: Translations = {\n  en: {\n    dir: \"ltr\",\n    values: {},\n  },\n  ar: {\n    dir: \"rtl\",\n    values: {},\n  },\n  he: {\n    dir: \"rtl\",\n    values: {},\n  },\n};\n\nexport default function SliderRtl() {\n  const { dir } = useTranslation(translations, \"ar\");\n\n  return (\n    <Slider\n      defaultValue={[75]}\n      max={100}\n      step={1}\n      className=\"mx-auto w-full max-w-xs\"\n      dir={dir}\n    />\n  );\n}\n"
     }
   ]
 }

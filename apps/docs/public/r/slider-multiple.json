@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "slider-multiple",
+  "registryDependencies": [
+    "@herocn/slider"
+  ],
+  "files": [
+    {
+      "path": "components/examples/slider-multiple.tsx",
+      "content": "import { Slider } from \"@/components/ui/slider\";\n\nexport default function SliderMultiple() {\n  return (\n    <Slider\n      defaultValue={[10, 40, 70]}\n      max={100}\n      step={10}\n      className=\"mx-auto w-full max-w-xs\"\n    />\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

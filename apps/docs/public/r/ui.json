@@ -20,6 +20,7 @@
     "@herocn/popover",
     "@herocn/select",
     "@herocn/separator",
+    "@herocn/slider",
     "@herocn/surface",
     "@herocn/switch",
     "@herocn/tabs",

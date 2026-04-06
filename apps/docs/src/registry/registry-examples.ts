@@ -1514,4 +1514,81 @@ export const examples: Registry["items"] = [
       },
     ],
   },
+  {
+    name: "slider-demo",
+    type: "registry:example",
+    registryDependencies: ["@herocn/slider"],
+    files: [
+      {
+        path: "examples/slider-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "slider-range",
+    type: "registry:example",
+    registryDependencies: ["@herocn/slider"],
+    files: [
+      {
+        path: "examples/slider-range.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "slider-multiple",
+    type: "registry:example",
+    registryDependencies: ["@herocn/slider"],
+    files: [
+      {
+        path: "examples/slider-multiple.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "slider-vertical",
+    type: "registry:example",
+    registryDependencies: ["@herocn/slider"],
+    files: [
+      {
+        path: "examples/slider-vertical.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "slider-controlled",
+    type: "registry:example",
+    registryDependencies: ["@herocn/label", "@herocn/slider"],
+    files: [
+      {
+        path: "examples/slider-controlled.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "slider-disabled",
+    type: "registry:example",
+    registryDependencies: ["@herocn/slider"],
+    files: [
+      {
+        path: "examples/slider-disabled.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "slider-rtl",
+    type: "registry:example",
+    registryDependencies: ["@herocn/slider"],
+    files: [
+      {
+        path: "examples/slider-rtl.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
 ];

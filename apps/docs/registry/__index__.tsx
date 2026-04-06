@@ -230,6 +230,21 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "slider": {
+    name: "slider",
+    type: "registry:ui",
+    registryDependencies: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/ui/slider.tsx",
+      type: "registry:ui",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/slider.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "tabs": {
     name: "tabs",
     type: "registry:ui",
@@ -2341,6 +2356,111 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/switch-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "slider-demo": {
+    name: "slider-demo",
+    type: "registry:example",
+    registryDependencies: ["@herocn/slider"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/slider-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/slider-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "slider-range": {
+    name: "slider-range",
+    type: "registry:example",
+    registryDependencies: ["@herocn/slider"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/slider-range.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/slider-range.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "slider-multiple": {
+    name: "slider-multiple",
+    type: "registry:example",
+    registryDependencies: ["@herocn/slider"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/slider-multiple.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/slider-multiple.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "slider-vertical": {
+    name: "slider-vertical",
+    type: "registry:example",
+    registryDependencies: ["@herocn/slider"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/slider-vertical.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/slider-vertical.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "slider-controlled": {
+    name: "slider-controlled",
+    type: "registry:example",
+    registryDependencies: ["@herocn/label","@herocn/slider"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/slider-controlled.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/slider-controlled.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "slider-disabled": {
+    name: "slider-disabled",
+    type: "registry:example",
+    registryDependencies: ["@herocn/slider"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/slider-disabled.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/slider-disabled.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "slider-rtl": {
+    name: "slider-rtl",
+    type: "registry:example",
+    registryDependencies: ["@herocn/slider"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/slider-rtl.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/slider-rtl.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

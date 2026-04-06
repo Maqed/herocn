@@ -1,0 +1,151 @@
+---
+title: Slider
+description: An input where the user selects a value from within a given range.
+---
+
+<ComponentPreview name="slider-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+<CodeBlockCommand command="npx shadcn@latest add @herocn/slider" />
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+<CodeBlockCommand command="npm install @base-ui/react" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="slider" title="components/ui/slider.tsx" />
+
+<Step>Add the following css colors & utilities</Step>
+
+<RenderCSSShared
+  css={["@utility focus-ring"]}
+/>
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { Slider } from "@/components/ui/slider"
+```
+
+```tsx
+<Slider defaultValue={[33]} max={100} step={1} />
+```
+
+## Examples
+
+### Range
+
+Use an array with two values for a range slider.
+
+<ComponentPreview name="slider-range" />
+
+### Multiple Thumbs
+
+Use an array with multiple values for multiple thumbs.
+
+<ComponentPreview name="slider-multiple" />
+
+### Vertical
+
+Use `orientation="vertical"` for a vertical slider.
+
+<ComponentPreview name="slider-vertical" />
+
+### Controlled
+
+<ComponentPreview name="slider-controlled" />
+
+### Disabled
+
+Use the `disabled` prop to disable the slider.
+
+<ComponentPreview name="slider-disabled" />
+
+## RTL
+
+<ComponentPreview name="slider-rtl" direction="rtl" />
+
+## API Reference
+
+### Slider
+
+<ApiRefTable
+  props={[
+    {
+      name: "defaultValue",
+      type: "number[]",
+      description: "The initial value of the slider (uncontrolled mode). Use an array with two values for a range slider.",
+    },
+    {
+      name: "value",
+      type: "number[]",
+      description: "The controlled value of the slider. Must be used with `onValueChange`.",
+    },
+    {
+      name: "onValueChange",
+      type: "(value: number[]) => void",
+      description: "Callback fired when the slider value changes.",
+    },
+    {
+      name: "min",
+      type: "number",
+      defaultValue: "0",
+      description: "The minimum allowed value.",
+    },
+    {
+      name: "max",
+      type: "number",
+      defaultValue: "100",
+      description: "The maximum allowed value.",
+    },
+    {
+      name: "step",
+      type: "number",
+      defaultValue: "1",
+      description: "The stepping interval between values.",
+    },
+    {
+      name: "orientation",
+      type: '"horizontal" | "vertical"',
+      defaultValue: '"horizontal"',
+      description: "The orientation of the slider.",
+    },
+    {
+      name: "disabled",
+      type: "boolean",
+      defaultValue: "false",
+      description: "Prevents user interaction with the slider.",
+    },
+    {
+      name: "dir",
+      type: '"ltr" | "rtl"',
+      description: "The reading direction of the slider for RTL support.",
+    },
+  ]}
+/>
+
+See the [Base UI Slider](https://base-ui.com/react/components/slider#api-reference) documentation for the full API reference.

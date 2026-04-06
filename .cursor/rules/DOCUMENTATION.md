@@ -48,7 +48,7 @@ Always wrap the installation in a `<CodeTabs>` with two tabs: **Command** (CLI) 
 </TabsList>
 <TabsContent value="cli">
 
-<CodeBlockCommand command="npx shadcn@latest add @herocn/{name}.json" />
+<CodeBlockCommand command="npx shadcn@latest add @herocn/{name}" />
 
 </TabsContent>
 
@@ -84,7 +84,7 @@ Replace `{name}` with the registry component name (e.g. `button`, `dropdown-menu
 ### Syntax
 
 ```mdx
-<CodeBlockCommand command="npx shadcn@latest add @herocn/{name}.json" />
+<CodeBlockCommand command="npx shadcn@latest add @herocn/{name}" />
 ```
 
 ### How It Works

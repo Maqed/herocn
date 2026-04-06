@@ -16,7 +16,7 @@ export default function PopoverBasic() {
       <PopoverTrigger render={<Button variant="tertiary" className="w-fit" />}>
         Open Popover
       </PopoverTrigger>
-      <PopoverContent align="start">
+      <PopoverContent>
         <PopoverHeader>
           <PopoverTitle>Dimensions</PopoverTitle>
           <PopoverDescription>

@@ -16,7 +16,7 @@ export default function PopoverWithArrow() {
       <PopoverTrigger render={<Button variant="tertiary" className="w-fit" />}>
         Open Popover
       </PopoverTrigger>
-      <PopoverContent align="start" withArrow>
+      <PopoverContent withArrow>
         <PopoverHeader>
           <PopoverTitle>With Arrow</PopoverTitle>
           <PopoverDescription>

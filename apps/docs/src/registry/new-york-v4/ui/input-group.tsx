@@ -128,7 +128,7 @@ function InputGroupInput({
       data-slot="input-group-control"
       className={cn(
         "flex-1 rounded-none bg-transparent shadow-none aria-invalid:not-focus-visible:outline-0 focus-visible:ring-0! aria-invalid:outline-none dark:bg-transparent",
-        "hover:not-focus-visible:bg-transparent hover:not-focus-visible:data-[variant=secondary]:bg-transparent",
+        "hover:not-focus-visible:bg-transparent dark:hover:not-focus-visible:bg-transparent hover:not-focus-visible:data-[variant=secondary]:bg-transparent",
         className,
       )}
       {...props}

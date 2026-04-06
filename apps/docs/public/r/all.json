@@ -31,6 +31,7 @@
     "separator",
     "spinner",
     "surface",
+    "switch",
     "tabs",
     "textarea",
     "toggle",
@@ -116,6 +117,12 @@
       "type": "registry:ui",
       "target": "",
       "content": "\"use client\";\n\nimport { Separator as SeparatorPrimitive } from \"@base-ui/react/separator\";\n\nimport { cn } from \"@/lib/utils\";\n\nfunction Separator({\n  className,\n  orientation = \"horizontal\",\n  ...props\n}: SeparatorPrimitive.Props) {\n  return (\n    <SeparatorPrimitive\n      data-slot=\"separator\"\n      orientation={orientation}\n      className={cn(\n        \"shrink-0 bg-border data-[orientation=horizontal]:h-px data-[orientation=horizontal]:w-full data-[orientation=vertical]:w-px data-[orientation=vertical]:self-stretch\",\n        className,\n      )}\n      {...props}\n    />\n  );\n}\n\nexport { Separator };\n"
+    },
+    {
+      "path": "components/ui/switch.tsx",
+      "type": "registry:ui",
+      "target": "",
+      "content": "\"use client\"\n\nimport { Switch as SwitchPrimitive } from \"@base-ui/react/switch\"\n\nimport { cn } from \"@/lib/utils\"\n\nfunction Switch({\n  className,\n  size = \"default\",\n  ...props\n}: SwitchPrimitive.Root.Props & {\n  size?: \"sm\" | \"default\" | \"lg\"\n}) {\n  return (\n    <SwitchPrimitive.Root\n      data-slot=\"switch\"\n      data-size={size}\n      className={cn(\n        \"peer group/switch relative inline-flex shrink-0 items-center rounded-full border border-transparent transition-colors outline-none after:absolute after:-inset-x-3 after:-inset-y-2 focus-visible:focus-ring focus-visible:ring-offset-2 aria-invalid:not-focus-visible:invalid-field-ring aria-invalid:focus-visible:invalid-field-ring-focus data-checked:bg-primary data-unchecked:bg-input dark:data-unchecked:bg-input/80 data-disabled:cursor-not-allowed data-disabled:opacity-50\",\n        \"data-[size=sm]:h-4 data-[size=sm]:w-8\",\n        \"data-[size=default]:h-5 data-[size=default]:w-10\",\n        \"data-[size=lg]:h-6 data-[size=lg]:w-12\",\n        className\n      )}\n      {...props}\n    >\n      <SwitchPrimitive.Thumb\n        data-slot=\"switch-thumb\"\n        className={cn(\n          \"pointer-events-none ms-0.5 block rounded-full bg-background ring-0 shadow-sm transition-[margin] dark:data-checked:bg-primary-foreground dark:data-unchecked:bg-foreground\",\n          \"group-data-[size=sm]/switch:h-3 group-data-[size=sm]/switch:w-[1.03125rem] group-data-[size=sm]/switch:data-checked:ms-[calc(100%-1.15625rem)]\",\n          \"group-data-[size=default]/switch:h-4 group-data-[size=default]/switch:w-[1.375rem] group-data-[size=default]/switch:data-checked:ms-[calc(100%-1.5rem)]\",\n          \"group-data-[size=lg]/switch:h-5 group-data-[size=lg]/switch:w-[1.71875rem] group-data-[size=lg]/switch:data-checked:ms-[calc(100%-1.84375rem)]\"\n        )}\n      />\n    </SwitchPrimitive.Root>\n  )\n}\n\nexport { Switch }\n"
     },
     {
       "path": "components/ui/tabs.tsx",
@@ -920,6 +927,48 @@
       "type": "registry:example",
       "target": "",
       "content": "\"use client\";\n\nimport {\n  type Translations,\n  useTranslation,\n} from \"@/components/language-selector\";\nimport {\n  ToggleGroup,\n  ToggleGroupItem,\n} from \"@/components/ui/toggle-group\";\n\nconst translations: Translations = {\n  en: {\n    dir: \"ltr\",\n    values: {\n      list: \"List\",\n      grid: \"Grid\",\n      cards: \"Cards\",\n    },\n  },\n  ar: {\n    dir: \"rtl\",\n    values: {\n      list: \"قائمة\",\n      grid: \"شبكة\",\n      cards: \"بطاقات\",\n    },\n  },\n  he: {\n    dir: \"rtl\",\n    values: {\n      list: \"רשימה\",\n      grid: \"רשת\",\n      cards: \"כרטיסים\",\n    },\n  },\n};\n\nexport function ToggleGroupRtl() {\n  const { dir, language, t } = useTranslation(translations, \"ar\");\n\n  return (\n    <div lang={language} dir={dir}>\n      <ToggleGroup defaultValue={[\"list\"]} dir={dir}>\n        <ToggleGroupItem value=\"list\" aria-label={t.list}>\n          {t.list}\n        </ToggleGroupItem>\n        <ToggleGroupItem value=\"grid\" aria-label={t.grid}>\n          {t.grid}\n        </ToggleGroupItem>\n        <ToggleGroupItem value=\"cards\" aria-label={t.cards}>\n          {t.cards}\n        </ToggleGroupItem>\n      </ToggleGroup>\n    </div>\n  );\n}\n"
+    },
+    {
+      "path": "examples/switch-demo.tsx",
+      "type": "registry:example",
+      "target": "",
+      "content": "import { Label } from \"@/components/ui/label\";\nimport { Switch } from \"@/components/ui/switch\";\n\nexport default function SwitchDemo() {\n  return (\n    <div className=\"flex items-center space-x-2\">\n      <Switch id=\"airplane-mode\" />\n      <Label htmlFor=\"airplane-mode\">Airplane Mode</Label>\n    </div>\n  );\n}\n"
+    },
+    {
+      "path": "examples/switch-description.tsx",
+      "type": "registry:example",
+      "target": "",
+      "content": "import {\n  Field,\n  FieldContent,\n  FieldDescription,\n  FieldLabel,\n} from \"@/components/ui/field\";\nimport { Switch } from \"@/components/ui/switch\";\n\nexport default function SwitchDescription() {\n  return (\n    <Field orientation=\"horizontal\" className=\"max-w-sm\">\n      <FieldContent>\n        <FieldLabel htmlFor=\"switch-focus-mode\">Share across devices</FieldLabel>\n        <FieldDescription>\n          Focus is shared across devices, and turns off when you leave the app.\n        </FieldDescription>\n      </FieldContent>\n      <Switch id=\"switch-focus-mode\" />\n    </Field>\n  );\n}\n"
+    },
+    {
+      "path": "examples/switch-choice-card.tsx",
+      "type": "registry:example",
+      "target": "",
+      "content": "import {\n  Field,\n  FieldContent,\n  FieldDescription,\n  FieldGroup,\n  FieldLabel,\n  FieldTitle,\n} from \"@/components/ui/field\";\nimport { Switch } from \"@/components/ui/switch\";\n\nexport default function SwitchChoiceCard() {\n  return (\n    <FieldGroup className=\"w-full max-w-sm\">\n      <FieldLabel htmlFor=\"switch-share\">\n        <Field orientation=\"horizontal\">\n          <FieldContent>\n            <FieldTitle>Share across devices</FieldTitle>\n            <FieldDescription>\n              Focus is shared across devices, and turns off when you leave the\n              app.\n            </FieldDescription>\n          </FieldContent>\n          <Switch id=\"switch-share\" />\n        </Field>\n      </FieldLabel>\n      <FieldLabel htmlFor=\"switch-notifications\">\n        <Field orientation=\"horizontal\">\n          <FieldContent>\n            <FieldTitle>Enable notifications</FieldTitle>\n            <FieldDescription>\n              Receive notifications when focus mode is enabled or disabled.\n            </FieldDescription>\n          </FieldContent>\n          <Switch id=\"switch-notifications\" defaultChecked />\n        </Field>\n      </FieldLabel>\n    </FieldGroup>\n  );\n}\n"
+    },
+    {
+      "path": "examples/switch-disabled.tsx",
+      "type": "registry:example",
+      "target": "",
+      "content": "import { Field, FieldLabel } from \"@/components/ui/field\";\nimport { Switch } from \"@/components/ui/switch\";\n\nexport default function SwitchDisabled() {\n  return (\n    <Field orientation=\"horizontal\" data-disabled className=\"w-fit\">\n      <Switch id=\"switch-disabled-unchecked\" disabled />\n      <FieldLabel htmlFor=\"switch-disabled-unchecked\">Disabled</FieldLabel>\n    </Field>\n  );\n}\n"
+    },
+    {
+      "path": "examples/switch-invalid.tsx",
+      "type": "registry:example",
+      "target": "",
+      "content": "import {\n  Field,\n  FieldContent,\n  FieldDescription,\n  FieldLabel,\n} from \"@/components/ui/field\";\nimport { Switch } from \"@/components/ui/switch\";\n\nexport default function SwitchInvalid() {\n  return (\n    <Field orientation=\"horizontal\" className=\"max-w-sm\" data-invalid>\n      <FieldContent>\n        <FieldLabel htmlFor=\"switch-terms\">\n          Accept terms and conditions\n        </FieldLabel>\n        <FieldDescription>\n          You must accept the terms and conditions to continue.\n        </FieldDescription>\n      </FieldContent>\n      <Switch id=\"switch-terms\" aria-invalid />\n    </Field>\n  );\n}\n"
+    },
+    {
+      "path": "examples/switch-sizes.tsx",
+      "type": "registry:example",
+      "target": "",
+      "content": "import { Field, FieldGroup, FieldLabel } from \"@/components/ui/field\";\nimport { Switch } from \"@/components/ui/switch\";\n\nexport default function SwitchSizes() {\n  return (\n    <FieldGroup className=\"w-full max-w-[10rem]\">\n      <Field orientation=\"horizontal\">\n        <Switch id=\"switch-size-sm\" size=\"sm\" />\n        <FieldLabel htmlFor=\"switch-size-sm\">Small</FieldLabel>\n      </Field>\n      <Field orientation=\"horizontal\">\n        <Switch id=\"switch-size-default\" size=\"default\" />\n        <FieldLabel htmlFor=\"switch-size-default\">Default</FieldLabel>\n      </Field>\n      <Field orientation=\"horizontal\">\n        <Switch id=\"switch-size-large\" size=\"lg\" />\n        <FieldLabel htmlFor=\"switch-size-large\">Large</FieldLabel>\n      </Field>\n    </FieldGroup>\n  );\n}\n"
+    },
+    {
+      "path": "examples/switch-rtl.tsx",
+      "type": "registry:example",
+      "target": "",
+      "content": "\"use client\";\n\nimport {\n  type Translations,\n  useTranslation,\n} from \"@/components/language-selector\";\nimport {\n  Field,\n  FieldContent,\n  FieldDescription,\n  FieldLabel,\n} from \"@/components/ui/field\";\nimport { Switch } from \"@/components/ui/switch\";\n\nconst translations: Translations = {\n  en: {\n    dir: \"ltr\",\n    values: {\n      label: \"Share across devices\",\n      description:\n        \"Focus is shared across devices, and turns off when you leave the app.\",\n    },\n  },\n  ar: {\n    dir: \"rtl\",\n    values: {\n      label: \"المشاركة عبر الأجهزة\",\n      description:\n        \"يتم مشاركة التركيز عبر الأجهزة، ويتم إيقاف تشغيله عند مغادرة التطبيق.\",\n    },\n  },\n  he: {\n    dir: \"rtl\",\n    values: {\n      label: \"שיתוף בין מכשירים\",\n      description: \"המיקוד משותף בין מכשירים, וכבה כשאתה עוזב את האפליקציה.\",\n    },\n  },\n};\n\nexport function SwitchRtl() {\n  const { dir, language, t } = useTranslation(translations, \"ar\");\n\n  return (\n    <div lang={language} dir={dir}>\n      <Field orientation=\"horizontal\" className=\"max-w-sm\">\n        <FieldContent>\n          <FieldLabel htmlFor=\"switch-focus-mode-rtl\">{t.label}</FieldLabel>\n          <FieldDescription>{t.description}</FieldDescription>\n        </FieldContent>\n        <Switch id=\"switch-focus-mode-rtl\" />\n      </Field>\n    </div>\n  );\n}\n"
     }
   ]
 }

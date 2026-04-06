@@ -21,6 +21,7 @@
     "@herocn/select",
     "@herocn/separator",
     "@herocn/surface",
+    "@herocn/switch",
     "@herocn/tabs",
     "@herocn/textarea",
     "@herocn/toggle",

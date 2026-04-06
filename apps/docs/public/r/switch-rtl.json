@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "switch-rtl",
+  "registryDependencies": [
+    "field",
+    "switch"
+  ],
+  "files": [
+    {
+      "path": "components/examples/switch-rtl.tsx",
+      "content": "\"use client\";\n\nimport {\n  type Translations,\n  useTranslation,\n} from \"@/components/language-selector\";\nimport {\n  Field,\n  FieldContent,\n  FieldDescription,\n  FieldLabel,\n} from \"@/components/ui/field\";\nimport { Switch } from \"@/components/ui/switch\";\n\nconst translations: Translations = {\n  en: {\n    dir: \"ltr\",\n    values: {\n      label: \"Share across devices\",\n      description:\n        \"Focus is shared across devices, and turns off when you leave the app.\",\n    },\n  },\n  ar: {\n    dir: \"rtl\",\n    values: {\n      label: \"المشاركة عبر الأجهزة\",\n      description:\n        \"يتم مشاركة التركيز عبر الأجهزة، ويتم إيقاف تشغيله عند مغادرة التطبيق.\",\n    },\n  },\n  he: {\n    dir: \"rtl\",\n    values: {\n      label: \"שיתוף בין מכשירים\",\n      description: \"המיקוד משותף בין מכשירים, וכבה כשאתה עוזב את האפליקציה.\",\n    },\n  },\n};\n\nexport function SwitchRtl() {\n  const { dir, language, t } = useTranslation(translations, \"ar\");\n\n  return (\n    <div lang={language} dir={dir}>\n      <Field orientation=\"horizontal\" className=\"max-w-sm\">\n        <FieldContent>\n          <FieldLabel htmlFor=\"switch-focus-mode-rtl\">{t.label}</FieldLabel>\n          <FieldDescription>{t.description}</FieldDescription>\n        </FieldContent>\n        <Switch id=\"switch-focus-mode-rtl\" />\n      </Field>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

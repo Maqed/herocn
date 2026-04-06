@@ -726,6 +726,19 @@
       ]
     },
     {
+      "name": "switch",
+      "type": "registry:ui",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/switch.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "tabs",
       "type": "registry:ui",
       "dependencies": [
@@ -2629,6 +2642,104 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/toggle-group-rtl.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "switch-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "label",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/switch-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "switch-description",
+      "type": "registry:example",
+      "registryDependencies": [
+        "field",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/switch-description.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "switch-choice-card",
+      "type": "registry:example",
+      "registryDependencies": [
+        "field",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/switch-choice-card.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "switch-disabled",
+      "type": "registry:example",
+      "registryDependencies": [
+        "field",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/switch-disabled.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "switch-invalid",
+      "type": "registry:example",
+      "registryDependencies": [
+        "field",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/switch-invalid.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "switch-sizes",
+      "type": "registry:example",
+      "registryDependencies": [
+        "field",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/switch-sizes.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "switch-rtl",
+      "type": "registry:example",
+      "registryDependencies": [
+        "field",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/switch-rtl.tsx",
           "type": "registry:example"
         }
       ]

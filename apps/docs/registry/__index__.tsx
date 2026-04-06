@@ -215,6 +215,21 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "switch": {
+    name: "switch",
+    type: "registry:ui",
+    registryDependencies: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/ui/switch.tsx",
+      type: "registry:ui",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/switch.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "tabs": {
     name: "tabs",
     type: "registry:ui",
@@ -2221,6 +2236,111 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toggle-group-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "switch-demo": {
+    name: "switch-demo",
+    type: "registry:example",
+    registryDependencies: ["label","switch"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/switch-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/switch-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "switch-description": {
+    name: "switch-description",
+    type: "registry:example",
+    registryDependencies: ["field","switch"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/switch-description.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/switch-description.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "switch-choice-card": {
+    name: "switch-choice-card",
+    type: "registry:example",
+    registryDependencies: ["field","switch"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/switch-choice-card.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/switch-choice-card.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "switch-disabled": {
+    name: "switch-disabled",
+    type: "registry:example",
+    registryDependencies: ["field","switch"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/switch-disabled.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/switch-disabled.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "switch-invalid": {
+    name: "switch-invalid",
+    type: "registry:example",
+    registryDependencies: ["field","switch"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/switch-invalid.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/switch-invalid.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "switch-sizes": {
+    name: "switch-sizes",
+    type: "registry:example",
+    registryDependencies: ["field","switch"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/switch-sizes.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/switch-sizes.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "switch-rtl": {
+    name: "switch-rtl",
+    type: "registry:example",
+    registryDependencies: ["field","switch"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/switch-rtl.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/switch-rtl.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

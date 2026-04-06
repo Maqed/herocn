@@ -1437,4 +1437,81 @@ export const examples: Registry["items"] = [
       },
     ],
   },
+  {
+    name: "switch-demo",
+    type: "registry:example",
+    registryDependencies: ["label", "switch"],
+    files: [
+      {
+        path: "examples/switch-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "switch-description",
+    type: "registry:example",
+    registryDependencies: ["field", "switch"],
+    files: [
+      {
+        path: "examples/switch-description.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "switch-choice-card",
+    type: "registry:example",
+    registryDependencies: ["field", "switch"],
+    files: [
+      {
+        path: "examples/switch-choice-card.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "switch-disabled",
+    type: "registry:example",
+    registryDependencies: ["field", "switch"],
+    files: [
+      {
+        path: "examples/switch-disabled.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "switch-invalid",
+    type: "registry:example",
+    registryDependencies: ["field", "switch"],
+    files: [
+      {
+        path: "examples/switch-invalid.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "switch-sizes",
+    type: "registry:example",
+    registryDependencies: ["field", "switch"],
+    files: [
+      {
+        path: "examples/switch-sizes.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "switch-rtl",
+    type: "registry:example",
+    registryDependencies: ["field", "switch"],
+    files: [
+      {
+        path: "examples/switch-rtl.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
 ];

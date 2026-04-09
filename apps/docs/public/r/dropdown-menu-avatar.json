@@ -2,9 +2,9 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "dropdown-menu-avatar",
   "registryDependencies": [
-    "avatar",
-    "button",
-    "dropdown-menu"
+    "@herocn/avatar",
+    "@herocn/button",
+    "@herocn/dropdown-menu"
   ],
   "files": [
     {

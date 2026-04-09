@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "input-group-dropdown",
   "registryDependencies": [
-    "dropdown-menu",
-    "input-group"
+    "@herocn/dropdown-menu",
+    "@herocn/input-group"
   ],
   "files": [
     {

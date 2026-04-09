@@ -2,9 +2,9 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "button-group-text",
   "registryDependencies": [
-    "button-group",
-    "input",
-    "label"
+    "@herocn/button-group",
+    "@herocn/input",
+    "@herocn/label"
   ],
   "files": [
     {

@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "toggle-rtl",
   "registryDependencies": [
-    "toggle"
+    "@herocn/toggle"
   ],
   "files": [
     {

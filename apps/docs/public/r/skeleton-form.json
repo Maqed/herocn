@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "skeleton-form",
   "registryDependencies": [
-    "skeleton"
+    "@herocn/skeleton"
   ],
   "files": [
     {

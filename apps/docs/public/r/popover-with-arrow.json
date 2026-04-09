@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "popover-with-arrow",
   "registryDependencies": [
-    "button",
-    "popover"
+    "@herocn/button",
+    "@herocn/popover"
   ],
   "files": [
     {

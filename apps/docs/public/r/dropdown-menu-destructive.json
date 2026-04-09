@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "dropdown-menu-destructive",
   "registryDependencies": [
-    "button",
-    "dropdown-menu"
+    "@herocn/button",
+    "@herocn/dropdown-menu"
   ],
   "files": [
     {

@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "toggle-group-vertical",
   "registryDependencies": [
-    "toggle-group"
+    "@herocn/toggle-group"
   ],
   "files": [
     {

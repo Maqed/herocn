@@ -2,10 +2,10 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "popover-demo",
   "registryDependencies": [
-    "button",
-    "input",
-    "label",
-    "popover"
+    "@herocn/button",
+    "@herocn/input",
+    "@herocn/label",
+    "@herocn/popover"
   ],
   "files": [
     {

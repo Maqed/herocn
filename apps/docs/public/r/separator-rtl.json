@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "separator-rtl",
   "registryDependencies": [
-    "separator"
+    "@herocn/separator"
   ],
   "files": [
     {

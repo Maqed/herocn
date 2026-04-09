@@ -2,10 +2,10 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "textarea-in-surface",
   "registryDependencies": [
-    "button",
-    "card",
-    "field",
-    "textarea"
+    "@herocn/button",
+    "@herocn/card",
+    "@herocn/field",
+    "@herocn/textarea"
   ],
   "files": [
     {

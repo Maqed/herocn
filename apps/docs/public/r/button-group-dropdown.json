@@ -2,9 +2,9 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "button-group-dropdown",
   "registryDependencies": [
-    "button",
-    "button-group",
-    "dropdown-menu"
+    "@herocn/button",
+    "@herocn/button-group",
+    "@herocn/dropdown-menu"
   ],
   "files": [
     {

@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "switch-demo",
   "registryDependencies": [
-    "label",
-    "switch"
+    "@herocn/label",
+    "@herocn/switch"
   ],
   "files": [
     {

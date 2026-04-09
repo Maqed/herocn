@@ -2,11 +2,11 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "button-group-popover",
   "registryDependencies": [
-    "button",
-    "button-group",
-    "field",
-    "popover",
-    "textarea"
+    "@herocn/button",
+    "@herocn/button-group",
+    "@herocn/field",
+    "@herocn/popover",
+    "@herocn/textarea"
   ],
   "files": [
     {

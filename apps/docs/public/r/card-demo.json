@@ -2,10 +2,10 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "card-demo",
   "registryDependencies": [
-    "button",
-    "card",
-    "input",
-    "label"
+    "@herocn/button",
+    "@herocn/card",
+    "@herocn/input",
+    "@herocn/label"
   ],
   "files": [
     {

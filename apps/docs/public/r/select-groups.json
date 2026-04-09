@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "select-groups",
   "registryDependencies": [
-    "select"
+    "@herocn/select"
   ],
   "files": [
     {

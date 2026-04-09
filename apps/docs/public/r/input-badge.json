@@ -2,9 +2,9 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "input-badge",
   "registryDependencies": [
-    "badge",
-    "field",
-    "input"
+    "@herocn/badge",
+    "@herocn/field",
+    "@herocn/input"
   ],
   "files": [
     {

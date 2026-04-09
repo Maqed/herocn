@@ -2,9 +2,9 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "collapsible-rtl",
   "registryDependencies": [
-    "button",
-    "card",
-    "collapsible"
+    "@herocn/button",
+    "@herocn/card",
+    "@herocn/collapsible"
   ],
   "files": [
     {

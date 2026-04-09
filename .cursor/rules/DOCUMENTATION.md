@@ -224,7 +224,7 @@ Add an entry to the `examples` array in `apps/docs/src/registry/registry-example
 {
   name: "{component-name}-{example-name}",
   type: "registry:example",
-  registryDependencies: ["{component-name}"],
+  registryDependencies: ["@herocn/{component-name}"],
   files: [
     {
       path: "examples/{component-name}-{example-name}.tsx",
@@ -235,7 +235,7 @@ Add an entry to the `examples` array in `apps/docs/src/registry/registry-example
 ```
 
 - `name` must match the `name` prop passed to `<ComponentPreview name="..." />` in the `.mdx` file.
-- `registryDependencies` should list all registry components the example depends on (e.g. `["button", "avatar"]`).
+- `registryDependencies` should list all registry components the example depends on (e.g. `["@herocn/button", "@herocn/avatar"]`).
 - The `path` is relative to `apps/docs/src/registry/new-york-v4/`.
 
 ---
@@ -317,7 +317,7 @@ Add an entry to `apps/docs/src/registry/registry-examples.ts` with `registryDepe
 {
   name: "{component-name}-rtl",
   type: "registry:example",
-  registryDependencies: ["{component-name}"],
+  registryDependencies: ["@herocn/{component-name}"],
   files: [
     {
       path: "examples/{component-name}-rtl.tsx",

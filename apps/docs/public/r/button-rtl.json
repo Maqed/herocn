@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "button-rtl",
   "registryDependencies": [
-    "button"
+    "@herocn/button"
   ],
   "files": [
     {

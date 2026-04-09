@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "switch-choice-card",
   "registryDependencies": [
-    "field",
-    "switch"
+    "@herocn/field",
+    "@herocn/switch"
   ],
   "files": [
     {

@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "collapsible-settings",
   "registryDependencies": [
-    "collapsible"
+    "@herocn/collapsible"
   ],
   "files": [
     {

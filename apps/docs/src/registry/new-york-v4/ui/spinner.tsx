@@ -82,6 +82,7 @@ function Spinner({
     <SpinnerIcon
       role="status"
       aria-label="Loading"
+      data-slot="spinner"
       className={cn(spinnerVariants({ variant, size, className }))}
       {...props}
     />

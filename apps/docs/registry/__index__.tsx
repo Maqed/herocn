@@ -2060,6 +2060,21 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "input-group-disabled": {
+    name: "input-group-disabled",
+    type: "registry:example",
+    registryDependencies: ["@herocn/field","@herocn/input-group"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/input-group-disabled.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/input-group-disabled.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "input-group-inline-start": {
     name: "input-group-inline-start",
     type: "registry:example",

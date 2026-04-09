@@ -1349,6 +1349,17 @@ export const examples: Registry["items"] = [
     ],
   },
   {
+    name: "input-group-disabled",
+    type: "registry:example",
+    registryDependencies: ["@herocn/field", "@herocn/input-group"],
+    files: [
+      {
+        path: "examples/input-group-disabled.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "input-group-inline-start",
     type: "registry:example",
     registryDependencies: ["@herocn/field", "@herocn/input-group"],

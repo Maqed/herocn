@@ -22,7 +22,7 @@ export default function SpinnerInputGroup() {
         <InputGroupTextarea placeholder="Send a message..." disabled />
         <InputGroupAddon align="block-end">
           <Spinner size="sm" /> Validating...
-          <InputGroupButton className="ml-auto" variant="default">
+          <InputGroupButton disabled className="ml-auto" variant="default">
             <ArrowUpIcon />
             <span className="sr-only">Send</span>
           </InputGroupButton>

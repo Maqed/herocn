@@ -385,6 +385,9 @@ export const ui: Registry["items"] = [
         "--color-surface": cssVars.theme["--color-surface"],
       },
     },
+    css: {
+      "@utility focus-ring": css["@utility focus-ring"],
+    },
   },
   {
     name: "toggle",

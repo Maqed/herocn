@@ -138,20 +138,16 @@ export const css = {
       {},
   },
   "@utility focus-ring": {
-    "@apply ring-2 ring-ring ring-offset-0 ring-offset-background outline-none":
+    "@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none":
       {},
-    "--tw-ring-offset-width": "var(--ring-offset-width)",
   },
   "@utility focus-field-ring": {
     "@apply ring-2 ring-ring ring-offset-0 outline-none": {},
-    "--tw-ring-offset-width": "0px",
   },
   "@utility invalid-field-ring": {
     "@apply outline-1 outline-destructive outline-solid": {},
-    "--tw-ring-offset-width": "3px",
   },
   "@utility invalid-field-ring-focus": {
     "@apply ring-2 outline-none ring-destructive ring-offset-0": {},
-    "--tw-ring-offset-width": "0px",
   },
 };

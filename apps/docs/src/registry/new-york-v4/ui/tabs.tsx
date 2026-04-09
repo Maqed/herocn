@@ -90,7 +90,7 @@ function TabsTrigger({ className, ...props }: TabsPrimitive.Tab.Props) {
         // Disabled
         "disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50",
         // Focus visible
-        "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
+        "focus-visible:focus-ring",
         className,
       )}
       {...props}

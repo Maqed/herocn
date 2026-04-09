@@ -38,16 +38,13 @@
   },
   "css": {
     "@utility focus-field-ring": {
-      "@apply ring-2 ring-ring ring-offset-0 outline-none": {},
-      "--tw-ring-offset-width": "0px"
+      "@apply ring-2 ring-ring ring-offset-0 outline-none": {}
     },
     "@utility invalid-field-ring": {
-      "@apply outline-1 outline-destructive outline-solid": {},
-      "--tw-ring-offset-width": "3px"
+      "@apply outline-1 outline-destructive outline-solid": {}
     },
     "@utility invalid-field-ring-focus": {
-      "@apply ring-2 outline-none ring-destructive ring-offset-0": {},
-      "--tw-ring-offset-width": "0px"
+      "@apply ring-2 outline-none ring-destructive ring-offset-0": {}
     }
   },
   "type": "registry:ui"

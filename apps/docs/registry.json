@@ -155,20 +155,16 @@
           "@apply transform-gpu motion-reduce:transition-none active:scale-[0.97] aria-expanded:scale-[0.97]": {}
         },
         "@utility focus-ring": {
-          "@apply ring-2 ring-ring ring-offset-0 ring-offset-background outline-none": {},
-          "--tw-ring-offset-width": "var(--ring-offset-width)"
+          "@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none": {}
         },
         "@utility focus-field-ring": {
-          "@apply ring-2 ring-ring ring-offset-0 outline-none": {},
-          "--tw-ring-offset-width": "0px"
+          "@apply ring-2 ring-ring ring-offset-0 outline-none": {}
         },
         "@utility invalid-field-ring": {
-          "@apply outline-1 outline-destructive outline-solid": {},
-          "--tw-ring-offset-width": "3px"
+          "@apply outline-1 outline-destructive outline-solid": {}
         },
         "@utility invalid-field-ring-focus": {
-          "@apply ring-2 outline-none ring-destructive ring-offset-0": {},
-          "--tw-ring-offset-width": "0px"
+          "@apply ring-2 outline-none ring-destructive ring-offset-0": {}
         }
       },
       "files": []
@@ -326,20 +322,16 @@
           "@apply transform-gpu motion-reduce:transition-none active:scale-[0.97] aria-expanded:scale-[0.97]": {}
         },
         "@utility focus-ring": {
-          "@apply ring-2 ring-ring ring-offset-0 ring-offset-background outline-none": {},
-          "--tw-ring-offset-width": "var(--ring-offset-width)"
+          "@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none": {}
         },
         "@utility focus-field-ring": {
-          "@apply ring-2 ring-ring ring-offset-0 outline-none": {},
-          "--tw-ring-offset-width": "0px"
+          "@apply ring-2 ring-ring ring-offset-0 outline-none": {}
         },
         "@utility invalid-field-ring": {
-          "@apply outline-1 outline-destructive outline-solid": {},
-          "--tw-ring-offset-width": "3px"
+          "@apply outline-1 outline-destructive outline-solid": {}
         },
         "@utility invalid-field-ring-focus": {
-          "@apply ring-2 outline-none ring-destructive ring-offset-0": {},
-          "--tw-ring-offset-width": "0px"
+          "@apply ring-2 outline-none ring-destructive ring-offset-0": {}
         }
       },
       "files": []
@@ -418,8 +410,7 @@
           "@apply transform-gpu motion-reduce:transition-none active:scale-[0.97] aria-expanded:scale-[0.97]": {}
         },
         "@utility focus-ring": {
-          "@apply ring-2 ring-ring ring-offset-0 ring-offset-background outline-none": {},
-          "--tw-ring-offset-width": "var(--ring-offset-width)"
+          "@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none": {}
         }
       }
     },
@@ -545,8 +536,7 @@
       ],
       "css": {
         "@utility focus-ring": {
-          "@apply ring-2 ring-ring ring-offset-0 ring-offset-background outline-none": {},
-          "--tw-ring-offset-width": "var(--ring-offset-width)"
+          "@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none": {}
         }
       }
     },
@@ -616,16 +606,13 @@
       },
       "css": {
         "@utility focus-field-ring": {
-          "@apply ring-2 ring-ring ring-offset-0 outline-none": {},
-          "--tw-ring-offset-width": "0px"
+          "@apply ring-2 ring-ring ring-offset-0 outline-none": {}
         },
         "@utility invalid-field-ring": {
-          "@apply outline-1 outline-destructive outline-solid": {},
-          "--tw-ring-offset-width": "3px"
+          "@apply outline-1 outline-destructive outline-solid": {}
         },
         "@utility invalid-field-ring-focus": {
-          "@apply ring-2 outline-none ring-destructive ring-offset-0": {},
-          "--tw-ring-offset-width": "0px"
+          "@apply ring-2 outline-none ring-destructive ring-offset-0": {}
         }
       }
     },
@@ -656,16 +643,13 @@
       },
       "css": {
         "@utility focus-field-ring": {
-          "@apply ring-2 ring-ring ring-offset-0 outline-none": {},
-          "--tw-ring-offset-width": "0px"
+          "@apply ring-2 ring-ring ring-offset-0 outline-none": {}
         },
         "@utility invalid-field-ring": {
-          "@apply outline-1 outline-destructive outline-solid": {},
-          "--tw-ring-offset-width": "3px"
+          "@apply outline-1 outline-destructive outline-solid": {}
         },
         "@utility invalid-field-ring-focus": {
-          "@apply ring-2 outline-none ring-destructive ring-offset-0": {},
-          "--tw-ring-offset-width": "0px"
+          "@apply ring-2 outline-none ring-destructive ring-offset-0": {}
         }
       }
     },
@@ -699,16 +683,13 @@
           "@apply transform-gpu motion-reduce:transition-none active:scale-[0.97] aria-expanded:scale-[0.97]": {}
         },
         "@utility focus-ring": {
-          "@apply ring-2 ring-ring ring-offset-0 ring-offset-background outline-none": {},
-          "--tw-ring-offset-width": "var(--ring-offset-width)"
+          "@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none": {}
         },
         "@utility invalid-field-ring": {
-          "@apply outline-1 outline-destructive outline-solid": {},
-          "--tw-ring-offset-width": "3px"
+          "@apply outline-1 outline-destructive outline-solid": {}
         },
         "@utility invalid-field-ring-focus": {
-          "@apply ring-2 outline-none ring-destructive ring-offset-0": {},
-          "--tw-ring-offset-width": "0px"
+          "@apply ring-2 outline-none ring-destructive ring-offset-0": {}
         }
       }
     },
@@ -739,16 +720,13 @@
       ],
       "css": {
         "@utility focus-ring": {
-          "@apply ring-2 ring-ring ring-offset-0 ring-offset-background outline-none": {},
-          "--tw-ring-offset-width": "var(--ring-offset-width)"
+          "@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none": {}
         },
         "@utility invalid-field-ring": {
-          "@apply outline-1 outline-destructive outline-solid": {},
-          "--tw-ring-offset-width": "3px"
+          "@apply outline-1 outline-destructive outline-solid": {}
         },
         "@utility invalid-field-ring-focus": {
-          "@apply ring-2 outline-none ring-destructive ring-offset-0": {},
-          "--tw-ring-offset-width": "0px"
+          "@apply ring-2 outline-none ring-destructive ring-offset-0": {}
         }
       }
     },
@@ -766,8 +744,7 @@
       ],
       "css": {
         "@utility focus-ring": {
-          "@apply ring-2 ring-ring ring-offset-0 ring-offset-background outline-none": {},
-          "--tw-ring-offset-width": "var(--ring-offset-width)"
+          "@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none": {}
         }
       }
     },
@@ -795,6 +772,11 @@
         "theme": {
           "--color-default": "var(--default)",
           "--color-surface": "var(--surface)"
+        }
+      },
+      "css": {
+        "@utility focus-ring": {
+          "@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none": {}
         }
       }
     },
@@ -832,8 +814,7 @@
           "@apply transform-gpu motion-reduce:transition-none active:scale-[0.97] aria-expanded:scale-[0.97]": {}
         },
         "@utility focus-field-ring": {
-          "@apply ring-2 ring-ring ring-offset-0 outline-none": {},
-          "--tw-ring-offset-width": "0px"
+          "@apply ring-2 ring-ring ring-offset-0 outline-none": {}
         }
       }
     },
@@ -883,16 +864,13 @@
       },
       "css": {
         "@utility focus-field-ring": {
-          "@apply ring-2 ring-ring ring-offset-0 outline-none": {},
-          "--tw-ring-offset-width": "0px"
+          "@apply ring-2 ring-ring ring-offset-0 outline-none": {}
         },
         "@utility invalid-field-ring": {
-          "@apply outline-1 outline-destructive outline-solid": {},
-          "--tw-ring-offset-width": "3px"
+          "@apply outline-1 outline-destructive outline-solid": {}
         },
         "@utility invalid-field-ring-focus": {
-          "@apply ring-2 outline-none ring-destructive ring-offset-0": {},
-          "--tw-ring-offset-width": "0px"
+          "@apply ring-2 outline-none ring-destructive ring-offset-0": {}
         }
       }
     },

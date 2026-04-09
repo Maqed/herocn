@@ -16,7 +16,7 @@ export function SiteHeader() {
   return (
     <header className="sticky py-2 top-0 z-50 w-full bg-background">
       <div className="container-wrapper px-6 3xl:fixed:px-0">
-        <div className="flex h-(--header-height) items-center **:data-[slot=separator]:h-4! 3xl:fixed:container">
+        <div className="flex h-(--header-height) items-center **:data-[slot=separator]:h-4! **:data-[slot=separator]:data-[orientation=vertical]:self-auto 3xl:fixed:container">
           <MobileNav
             tree={pageTree}
             items={siteConfig.navItems}
@@ -43,12 +43,9 @@ export function SiteHeader() {
               tree={pageTree}
               navItems={siteConfig.navItems.filter((item) => !item.isExternal)}
             />
-            <Separator
-              orientation="vertical"
-              className="ml-2 hidden lg:block"
-            />
+            <Separator orientation="vertical" className="hidden lg:block" />
             <GitHubLink />
-            <Separator orientation="vertical" className="hidden 3xl:flex" />
+            <Separator orientation="vertical" className="hidden lg:block" />
             <ModeSwitcher />
           </div>
         </div>

@@ -98,7 +98,7 @@ export function LanguageSelector({
       onValueChange={(value) => onValueChange(value as Language)}
     >
       <SelectTrigger
-        className={cn("w-38", className)}
+        className={cn("w-40", className)}
         dir="ltr"
         data-name="language-selector"
       >

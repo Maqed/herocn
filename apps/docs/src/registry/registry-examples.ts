@@ -254,6 +254,182 @@ export const examples: Registry["items"] = [
     ],
   },
   {
+    name: "field-demo",
+    type: "registry:example",
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("checkbox"),
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("input"),
+      getRegistryItemInstallationAlias("select"),
+      getRegistryItemInstallationAlias("textarea"),
+    ],
+    files: [
+      {
+        path: "examples/field-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "field-input",
+    type: "registry:example",
+    registryDependencies: [
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("input"),
+    ],
+    files: [
+      {
+        path: "examples/field-input.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "field-textarea",
+    type: "registry:example",
+    registryDependencies: [
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("textarea"),
+    ],
+    files: [
+      {
+        path: "examples/field-textarea.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "field-select",
+    type: "registry:example",
+    registryDependencies: [
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("select"),
+    ],
+    files: [
+      {
+        path: "examples/field-select.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "field-slider",
+    type: "registry:example",
+    registryDependencies: [
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("slider"),
+    ],
+    files: [
+      {
+        path: "examples/field-slider.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "field-fieldset",
+    type: "registry:example",
+    registryDependencies: [
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("input"),
+    ],
+    files: [
+      {
+        path: "examples/field-fieldset.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "field-checkbox",
+    type: "registry:example",
+    registryDependencies: [
+      getRegistryItemInstallationAlias("checkbox"),
+      getRegistryItemInstallationAlias("field"),
+    ],
+    files: [
+      {
+        path: "examples/field-checkbox.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "field-radio",
+    type: "registry:example",
+    registryDependencies: [
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("radio-group"),
+    ],
+    files: [
+      {
+        path: "examples/field-radio.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "field-switch",
+    type: "registry:example",
+    registryDependencies: [
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("switch"),
+    ],
+    files: [
+      {
+        path: "examples/field-switch.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "field-choice-card",
+    type: "registry:example",
+    registryDependencies: [
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("radio-group"),
+    ],
+    files: [
+      {
+        path: "examples/field-choice-card.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "field-group",
+    type: "registry:example",
+    registryDependencies: [
+      getRegistryItemInstallationAlias("checkbox"),
+      getRegistryItemInstallationAlias("field"),
+    ],
+    files: [
+      {
+        path: "examples/field-group.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "field-rtl",
+    type: "registry:example",
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("checkbox"),
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("input"),
+      getRegistryItemInstallationAlias("select"),
+      getRegistryItemInstallationAlias("textarea"),
+    ],
+    files: [
+      {
+        path: "examples/field-rtl.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "textarea-demo",
     type: "registry:example",
     registryDependencies: [getRegistryItemInstallationAlias("textarea")],

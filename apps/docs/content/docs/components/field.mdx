@@ -1,0 +1,364 @@
+---
+title: Field
+description: Combine labels, controls, and helper text to compose accessible form fields and grouped inputs.
+---
+
+<ComponentPreview name="field-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+<CodeBlockCommand command="npx shadcn@latest add https://herocn.dev/r/field.json" />
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+<CodeBlockCommand command="npm install class-variance-authority" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="field" title="components/ui/field.tsx" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import {
+  Field,
+  FieldContent,
+  FieldDescription,
+  FieldError,
+  FieldGroup,
+  FieldLabel,
+  FieldLegend,
+  FieldSeparator,
+  FieldSet,
+  FieldTitle,
+} from "@/components/ui/field"
+```
+
+```tsx
+<FieldSet>
+  <FieldLegend>Profile</FieldLegend>
+  <FieldDescription>This appears on invoices and emails.</FieldDescription>
+  <FieldGroup>
+    <Field>
+      <FieldLabel htmlFor="name">Full name</FieldLabel>
+      <Input id="name" autoComplete="off" placeholder="Evil Rabbit" />
+      <FieldDescription>This appears on invoices and emails.</FieldDescription>
+    </Field>
+    <Field>
+      <FieldLabel htmlFor="username">Username</FieldLabel>
+      <Input id="username" autoComplete="off" aria-invalid />
+      <FieldError>Choose another username.</FieldError>
+    </Field>
+    <Field orientation="horizontal">
+      <Switch id="newsletter" />
+      <FieldLabel htmlFor="newsletter">Subscribe to the newsletter</FieldLabel>
+    </Field>
+  </FieldGroup>
+</FieldSet>
+```
+
+## Composition
+
+Use the following composition to build `Field` layouts:
+
+```text
+FieldSet
+├── FieldLegend
+├── FieldDescription
+└── FieldGroup
+    ├── Field
+    │   ├── FieldLabel
+    │   ├── Input / Textarea / Switch / Select
+    │   ├── FieldDescription
+    │   └── FieldError
+    ├── FieldSeparator
+    └── Field (orientation="horizontal" | "responsive")
+```
+
+## Anatomy
+
+The `Field` family is designed for composing accessible forms:
+
+```tsx
+<Field>
+  <FieldLabel htmlFor="input-id">Label</FieldLabel>
+  {/* Input, Select, Switch, etc. */}
+  <FieldDescription>Optional helper text.</FieldDescription>
+  <FieldError>Validation message.</FieldError>
+</Field>
+```
+
+- `Field` is the core wrapper for a single field.
+- `FieldContent` groups title/label + description in horizontal/responsive layouts.
+- `FieldGroup` stacks related fields and supports `FieldSeparator` between sections.
+- `FieldSet` + `FieldLegend` provide semantic grouping for assistive technologies.
+
+## Form
+
+See the [Form](/docs/forms) docs for integrating `Field` with validation libraries such as React Hook Form and TanStack Form.
+
+## Examples
+
+### Input
+
+<ComponentPreview name="field-input" />
+
+### Textarea
+
+<ComponentPreview name="field-textarea" />
+
+### Select
+
+<ComponentPreview name="field-select" />
+
+### Slider
+
+<ComponentPreview name="field-slider" />
+
+### Fieldset
+
+<ComponentPreview name="field-fieldset" />
+
+### Checkbox
+
+<ComponentPreview name="field-checkbox" />
+
+### Radio
+
+<ComponentPreview name="field-radio" />
+
+### Switch
+
+<ComponentPreview name="field-switch" />
+
+### Choice Card
+
+Wrap `Field` components inside `FieldLabel` to create selectable field groups. This works with `RadioItem`, `Checkbox` and `Switch` components.
+
+<ComponentPreview name="field-choice-card" />
+
+### Field Group
+
+Stack `Field` components with `FieldGroup`. Add `FieldSeparator` to divide them.
+
+<ComponentPreview name="field-group" />
+
+## Responsive Layout
+
+- **Vertical:** Default orientation stacks label, control, and helper text.
+- **Horizontal:** Use `orientation="horizontal"` to place controls inline with labels.
+- **Responsive:** Use `orientation="responsive"` with `FieldGroup` container queries.
+
+```tsx
+<FieldGroup className="@container/field-group flex flex-col gap-6">
+  <Field orientation="responsive">
+    <FieldContent>
+      <FieldLabel htmlFor="name">Name</FieldLabel>
+      <FieldDescription>Provide your full name.</FieldDescription>
+    </FieldContent>
+    <Input id="name" placeholder="Evil Rabbit" required />
+  </Field>
+</FieldGroup>
+```
+
+## Validation and Errors
+
+- Add `data-invalid` on `Field` to style the full block as invalid.
+- Add `aria-invalid` on the control for assistive technologies.
+- Place `FieldError` after the control (or in `FieldContent`) for clear feedback.
+
+```tsx
+<Field data-invalid>
+  <FieldLabel htmlFor="email">Email</FieldLabel>
+  <Input id="email" type="email" aria-invalid />
+  <FieldError>Enter a valid email address.</FieldError>
+</Field>
+```
+
+## Accessibility
+
+- `FieldSet` and `FieldLegend` preserve semantic groupings for keyboard and screen reader users.
+- `Field` uses `role="group"` so labels/descriptions apply consistently to grouped controls.
+- Use `FieldSeparator` between larger sections to keep form structure clear.
+
+## RTL
+
+<ComponentPreview name="field-rtl" direction="rtl" />
+
+## API Reference
+
+### FieldSet
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+      description: "Optional class names for spacing and layout overrides.",
+    },
+  ]}
+/>
+
+### FieldLegend
+
+<ApiRefTable
+  props={[
+    {
+      name: "variant",
+      type: '"legend" | "label"',
+      defaultValue: '"legend"',
+      description: "Use `label` when legend text should align with label sizing.",
+    },
+    {
+      name: "className",
+      type: "string",
+    },
+  ]}
+/>
+
+### FieldGroup
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+      description: "Controls stack spacing and container-query behavior.",
+    },
+  ]}
+/>
+
+### Field
+
+<ApiRefTable
+  props={[
+    {
+      name: "orientation",
+      type: '"vertical" | "horizontal" | "responsive"',
+      defaultValue: '"vertical"',
+      description: "Controls field alignment strategy.",
+    },
+    {
+      name: "className",
+      type: "string",
+    },
+    {
+      name: "data-invalid",
+      type: "boolean",
+      description: "Marks the field and descendants with invalid styling hooks.",
+    },
+  ]}
+/>
+
+### FieldContent
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+      description: "Wraps title/label and descriptions in a vertical stack.",
+    },
+  ]}
+/>
+
+### FieldLabel
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+    },
+    {
+      name: "asChild",
+      type: "boolean",
+      defaultValue: "false",
+      description: "Render label styles on a custom child element.",
+    },
+  ]}
+/>
+
+### FieldTitle
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+      description: "Title slot with label-like typography inside `FieldContent`.",
+    },
+  ]}
+/>
+
+### FieldDescription
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+      description: "Helper text slot for contextual hints.",
+    },
+  ]}
+/>
+
+### FieldSeparator
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+      description: "Styles the divider between field sections.",
+    },
+    {
+      name: "children",
+      type: "ReactNode",
+      description: "Optional inline content centered over the separator.",
+    },
+  ]}
+/>
+
+### FieldError
+
+<ApiRefTable
+  props={[
+    {
+      name: "errors",
+      type: "Array<{ message?: string } | undefined>",
+      description: "Array of error objects (duplicates are deduplicated by message).",
+    },
+    {
+      name: "className",
+      type: "string",
+    },
+    {
+      name: "children",
+      type: "ReactNode",
+      description: "Manual error content. Takes precedence over `errors`.",
+    },
+  ]}
+/>

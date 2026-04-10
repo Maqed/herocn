@@ -189,6 +189,21 @@ export const ui: Registry["items"] = [
     },
   },
   {
+    name: "field",
+    type: "registry:ui",
+    dependencies: ["class-variance-authority"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("label"),
+      getRegistryItemInstallationAlias("separator"),
+    ],
+    files: [
+      {
+        path: "ui/field.tsx",
+        type: "registry:ui",
+      },
+    ],
+  },
+  {
     name: "surface",
     type: "registry:ui",
     files: [

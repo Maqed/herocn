@@ -585,6 +585,23 @@
       }
     },
     {
+      "name": "field",
+      "type": "registry:ui",
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "https://herocn.dev/r/label.json",
+        "https://herocn.dev/r/separator.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/field.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "surface",
       "type": "registry:ui",
       "files": [
@@ -1281,6 +1298,182 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/input-rtl.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "field-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/checkbox.json",
+        "https://herocn.dev/r/field.json",
+        "https://herocn.dev/r/input.json",
+        "https://herocn.dev/r/select.json",
+        "https://herocn.dev/r/textarea.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/field-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "field-input",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/field.json",
+        "https://herocn.dev/r/input.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/field-input.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "field-textarea",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/field.json",
+        "https://herocn.dev/r/textarea.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/field-textarea.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "field-select",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/field.json",
+        "https://herocn.dev/r/select.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/field-select.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "field-slider",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/field.json",
+        "https://herocn.dev/r/slider.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/field-slider.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "field-fieldset",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/field.json",
+        "https://herocn.dev/r/input.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/field-fieldset.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "field-checkbox",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/checkbox.json",
+        "https://herocn.dev/r/field.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/field-checkbox.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "field-radio",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/field.json",
+        "https://herocn.dev/r/radio-group.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/field-radio.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "field-switch",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/field.json",
+        "https://herocn.dev/r/switch.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/field-switch.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "field-choice-card",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/field.json",
+        "https://herocn.dev/r/radio-group.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/field-choice-card.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "field-group",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/checkbox.json",
+        "https://herocn.dev/r/field.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/field-group.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "field-rtl",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/checkbox.json",
+        "https://herocn.dev/r/field.json",
+        "https://herocn.dev/r/input.json",
+        "https://herocn.dev/r/select.json",
+        "https://herocn.dev/r/textarea.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/field-rtl.tsx",
           "type": "registry:example"
         }
       ]

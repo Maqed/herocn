@@ -140,6 +140,21 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "field": {
+    name: "field",
+    type: "registry:ui",
+    registryDependencies: ["https://herocn.dev/r/label.json","https://herocn.dev/r/separator.json"],
+    files: [{
+      path: "src/registry/new-york-v4/ui/field.tsx",
+      type: "registry:ui",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/field.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "surface": {
     name: "surface",
     type: "registry:ui",
@@ -661,6 +676,186 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "field-demo": {
+    name: "field-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/select.json","https://herocn.dev/r/textarea.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/field-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/field-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "field-input": {
+    name: "field-input",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/field-input.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/field-input.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "field-textarea": {
+    name: "field-textarea",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/textarea.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/field-textarea.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/field-textarea.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "field-select": {
+    name: "field-select",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/select.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/field-select.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/field-select.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "field-slider": {
+    name: "field-slider",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/slider.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/field-slider.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/field-slider.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "field-fieldset": {
+    name: "field-fieldset",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/field-fieldset.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/field-fieldset.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "field-checkbox": {
+    name: "field-checkbox",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/field-checkbox.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/field-checkbox.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "field-radio": {
+    name: "field-radio",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/radio-group.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/field-radio.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/field-radio.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "field-switch": {
+    name: "field-switch",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/field-switch.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/field-switch.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "field-choice-card": {
+    name: "field-choice-card",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/radio-group.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/field-choice-card.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/field-choice-card.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "field-group": {
+    name: "field-group",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/field-group.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/field-group.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "field-rtl": {
+    name: "field-rtl",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/select.json","https://herocn.dev/r/textarea.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/field-rtl.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/field-rtl.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

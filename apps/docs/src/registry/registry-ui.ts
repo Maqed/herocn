@@ -189,6 +189,18 @@ export const ui: Registry["items"] = [
     },
   },
   {
+    name: "dialog",
+    type: "registry:ui",
+    dependencies: ["@base-ui/react", "lucide-react"],
+    registryDependencies: [getRegistryItemInstallationAlias("button")],
+    files: [
+      {
+        path: "ui/dialog.tsx",
+        type: "registry:ui",
+      },
+    ],
+  },
+  {
     name: "field",
     type: "registry:ui",
     dependencies: ["class-variance-authority"],

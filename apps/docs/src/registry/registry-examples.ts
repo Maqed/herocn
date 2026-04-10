@@ -2262,6 +2262,112 @@ export const examples: Registry["items"] = [
     ],
   },
   {
+    name: "dialog-demo",
+    type: "registry:example",
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("dialog"),
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("input"),
+      getRegistryItemInstallationAlias("label"),
+    ],
+    files: [
+      {
+        path: "examples/dialog-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "dialog-close-button",
+    type: "registry:example",
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("dialog"),
+      getRegistryItemInstallationAlias("input"),
+      getRegistryItemInstallationAlias("label"),
+    ],
+    files: [
+      {
+        path: "examples/dialog-close-button.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "dialog-no-close-button",
+    type: "registry:example",
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("dialog"),
+    ],
+    files: [
+      {
+        path: "examples/dialog-no-close-button.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "dialog-sticky-footer",
+    type: "registry:example",
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("dialog"),
+    ],
+    files: [
+      {
+        path: "examples/dialog-sticky-footer.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "dialog-scrollable-content",
+    type: "registry:example",
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("dialog"),
+    ],
+    files: [
+      {
+        path: "examples/dialog-scrollable-content.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "dialog-overlay-variant",
+    type: "registry:example",
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("dialog"),
+    ],
+    files: [
+      {
+        path: "examples/dialog-overlay-variant.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "dialog-rtl",
+    type: "registry:example",
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("dialog"),
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("input"),
+      getRegistryItemInstallationAlias("label"),
+    ],
+    files: [
+      {
+        path: "examples/dialog-rtl.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "sonner-demo",
     type: "registry:example",
     registryDependencies: [

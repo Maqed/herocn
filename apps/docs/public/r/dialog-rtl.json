@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dialog-rtl",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/dialog.json",
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/input.json",
+    "https://herocn.dev/r/label.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/dialog-rtl.tsx",
+      "content": "\"use client\";\n\nimport {\n  type Translations,\n  useTranslation,\n} from \"@/components/language-selector\";\nimport { Button } from \"@/components/ui/button\";\nimport {\n  Dialog,\n  DialogClose,\n  DialogContent,\n  DialogDescription,\n  DialogFooter,\n  DialogHeader,\n  DialogTitle,\n  DialogTrigger,\n} from \"@/components/ui/dialog\";\nimport { Field, FieldGroup } from \"@/components/ui/field\";\nimport { Input } from \"@/components/ui/input\";\nimport { Label } from \"@/components/ui/label\";\n\nconst translations: Translations = {\n  en: {\n    dir: \"ltr\",\n    values: {\n      openDialog: \"Open Dialog\",\n      editProfile: \"Edit profile\",\n      description: \"Make changes to your profile here. Click save when you're done.\",\n      name: \"Name\",\n      username: \"Username\",\n      cancel: \"Cancel\",\n      saveChanges: \"Save changes\",\n    },\n  },\n  ar: {\n    dir: \"rtl\",\n    values: {\n      openDialog: \"فتح الحوار\",\n      editProfile: \"تعديل الملف الشخصي\",\n      description: \"قم بإجراء تغييرات على ملفك الشخصي هنا. انقر فوق حفظ عند الانتهاء.\",\n      name: \"الاسم\",\n      username: \"اسم المستخدم\",\n      cancel: \"إلغاء\",\n      saveChanges: \"حفظ التغييرات\",\n    },\n  },\n  he: {\n    dir: \"rtl\",\n    values: {\n      openDialog: \"פתח דיאלוג\",\n      editProfile: \"ערוך פרופיל\",\n      description: \"בצע שינויים בפרופיל שלך כאן. לחץ על שמור כשתסיים.\",\n      name: \"שם\",\n      username: \"שם משתמש\",\n      cancel: \"בטל\",\n      saveChanges: \"שמור שינויים\",\n    },\n  },\n};\n\nexport default function DialogRtl() {\n  const { dir, language, t } = useTranslation(translations, \"ar\");\n\n  return (\n    <div lang={language} dir={dir}>\n      <Dialog>\n        <form>\n          <DialogTrigger render={<Button variant=\"tertiary\" />}>\n            {t.openDialog}\n          </DialogTrigger>\n          <DialogContent className=\"sm:max-w-sm\">\n            <DialogHeader>\n              <DialogTitle>{t.editProfile}</DialogTitle>\n              <DialogDescription>{t.description}</DialogDescription>\n            </DialogHeader>\n            <FieldGroup>\n              <Field>\n                <Label htmlFor=\"name-rtl\">{t.name}</Label>\n                <Input variant=\"secondary\" id=\"name-rtl\" name=\"name\" defaultValue=\"Pedro Duarte\" />\n              </Field>\n              <Field>\n                <Label htmlFor=\"username-rtl\">{t.username}</Label>\n                <Input variant=\"secondary\"\n                  id=\"username-rtl\"\n                  name=\"username\"\n                  defaultValue=\"@peduarte\"\n                />\n              </Field>\n            </FieldGroup>\n            <DialogFooter>\n              <DialogClose render={<Button variant=\"tertiary\" />}>\n                {t.cancel}\n              </DialogClose>\n              <Button type=\"submit\">{t.saveChanges}</Button>\n            </DialogFooter>\n          </DialogContent>\n        </form>\n      </Dialog>\n    </div>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

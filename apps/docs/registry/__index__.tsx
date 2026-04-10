@@ -140,6 +140,21 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "dialog": {
+    name: "dialog",
+    type: "registry:ui",
+    registryDependencies: ["https://herocn.dev/r/button.json"],
+    files: [{
+      path: "src/registry/new-york-v4/ui/dialog.tsx",
+      type: "registry:ui",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/dialog.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "field": {
     name: "field",
     type: "registry:ui",
@@ -3046,6 +3061,111 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/slider-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "dialog-demo": {
+    name: "dialog-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/dialog-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/dialog-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "dialog-close-button": {
+    name: "dialog-close-button",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/dialog-close-button.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/dialog-close-button.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "dialog-no-close-button": {
+    name: "dialog-no-close-button",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/dialog-no-close-button.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/dialog-no-close-button.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "dialog-sticky-footer": {
+    name: "dialog-sticky-footer",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/dialog-sticky-footer.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/dialog-sticky-footer.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "dialog-scrollable-content": {
+    name: "dialog-scrollable-content",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/dialog-scrollable-content.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/dialog-scrollable-content.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "dialog-overlay-variant": {
+    name: "dialog-overlay-variant",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/dialog-overlay-variant.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/dialog-overlay-variant.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "dialog-rtl": {
+    name: "dialog-rtl",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/dialog-rtl.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/dialog-rtl.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

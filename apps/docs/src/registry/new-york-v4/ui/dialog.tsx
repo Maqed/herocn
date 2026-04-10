@@ -24,13 +24,17 @@ function DialogClose({ ...props }: DialogPrimitive.Close.Props) {
 
 function DialogOverlay({
   className,
+  variant = "opaque",
   ...props
-}: DialogPrimitive.Backdrop.Props) {
+}: DialogPrimitive.Backdrop.Props & {
+  variant?: "opaque" | "blur" | "transparent";
+}) {
   return (
     <DialogPrimitive.Backdrop
       data-slot="dialog-overlay"
+      data-variant={variant}
       className={cn(
-        "fixed inset-0 isolate z-50 bg-black/80 duration-100 supports-backdrop-filter:backdrop-blur-xs data-open:animate-in data-open:fade-in-0 data-closed:animate-out data-closed:fade-out-0",
+        "fixed inset-0 isolate z-50 data-[variant=opaque]:bg-black/50 dark:data-[variant=opaque]:bg-black/60 data-[variant=blur]:bg-black/50 dark:data-[variant=blur]:bg-black/60 data-[variant=blur]:backdrop-blur-md duration-100 data-open:animate-in data-open:fade-in-0 data-closed:animate-out data-closed:fade-out-0",
         className,
       )}
       {...props}
@@ -41,14 +45,16 @@ function DialogOverlay({
 function DialogContent({
   className,
   children,
+  overlayVariant = "opaque",
   showCloseButton = true,
   ...props
 }: DialogPrimitive.Popup.Props & {
   showCloseButton?: boolean;
+  overlayVariant?: "opaque" | "blur" | "transparent";
 }) {
   return (
     <DialogPortal>
-      <DialogOverlay />
+      <DialogOverlay variant={overlayVariant} />
       <DialogPrimitive.Popup
         data-slot="dialog-content"
         className={cn(
@@ -63,7 +69,7 @@ function DialogContent({
             data-slot="dialog-close"
             render={
               <Button
-                variant="ghost"
+                variant="tertiary"
                 className="absolute top-4 end-4"
                 size="icon-sm"
               />

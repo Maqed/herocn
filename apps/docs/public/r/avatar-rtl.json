@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "avatar-rtl",
   "registryDependencies": [
-    "@herocn/avatar"
+    "https://herocn.dev/r/avatar.json"
   ],
   "files": [
     {

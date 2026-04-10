@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "skeleton-card",
   "registryDependencies": [
-    "@herocn/card",
-    "@herocn/skeleton"
+    "https://herocn.dev/r/card.json",
+    "https://herocn.dev/r/skeleton.json"
   ],
   "files": [
     {

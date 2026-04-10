@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "textarea-variants",
   "registryDependencies": [
-    "@herocn/textarea"
+    "https://herocn.dev/r/textarea.json"
   ],
   "files": [
     {

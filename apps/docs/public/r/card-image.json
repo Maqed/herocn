@@ -2,9 +2,9 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "card-image",
   "registryDependencies": [
-    "@herocn/badge",
-    "@herocn/button",
-    "@herocn/card"
+    "https://herocn.dev/r/badge.json",
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/card.json"
   ],
   "files": [
     {

@@ -11,7 +11,7 @@
   ],
   "registryDependencies": [
     "utils",
-    "@herocn/ui"
+    "https://herocn.dev/r/ui.json"
   ],
   "files": [],
   "cssVars": {

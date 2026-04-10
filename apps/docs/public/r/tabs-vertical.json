@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "tabs-vertical",
   "registryDependencies": [
-    "@herocn/tabs"
+    "https://herocn.dev/r/tabs.json"
   ],
   "files": [
     {

@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "spinner-input-group",
   "registryDependencies": [
-    "@herocn/input-group",
-    "@herocn/spinner"
+    "https://herocn.dev/r/input-group.json",
+    "https://herocn.dev/r/spinner.json"
   ],
   "files": [
     {

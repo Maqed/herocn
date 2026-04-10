@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "popover-align",
   "registryDependencies": [
-    "@herocn/button",
-    "@herocn/popover"
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/popover.json"
   ],
   "files": [
     {

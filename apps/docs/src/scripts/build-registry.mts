@@ -2,6 +2,7 @@ import { exec } from "node:child_process";
 import { existsSync, promises as fs } from "node:fs";
 import path from "node:path";
 import { rimraf } from "rimraf";
+import { getRegistryItemInstallationAlias } from "@/lib/utils";
 import { registry } from "../registry";
 
 interface JsonRegistryFile {
@@ -277,7 +278,9 @@ async function buildPackageJson(
   // For package registries (ui.json/blocks.json/etc), we want registryDependencies
   // to reference the component *packages* (e.g. @herocn/button), not registry item names.
   const allRegistryDependencies = new Set<string>(
-    components.map((component) => `@herocn/${component.name}`),
+    components.map((component) =>
+      getRegistryItemInstallationAlias(component.name),
+    ),
   );
   for (const component of components) {
     // Collect dependencies
@@ -292,9 +295,7 @@ async function buildPackageJson(
       for (const dep of component.registryDependencies) {
         // If it's already a scoped package, keep as-is.
         // Otherwise, map registry item names (e.g. "button") to "@herocn/button".
-        allRegistryDependencies.add(
-          dep.startsWith("@") ? dep : `@herocn/${dep}`,
-        );
+        allRegistryDependencies.add(dep.startsWith("@") ? dep : dep);
       }
     }
   }

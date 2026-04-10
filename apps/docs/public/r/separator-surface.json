@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "separator-surface",
   "registryDependencies": [
-    "@herocn/separator",
-    "@herocn/surface"
+    "https://herocn.dev/r/separator.json",
+    "https://herocn.dev/r/surface.json"
   ],
   "files": [
     {

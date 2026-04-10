@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "select-scrollable",
   "registryDependencies": [
-    "@herocn/select"
+    "https://herocn.dev/r/select.json"
   ],
   "files": [
     {

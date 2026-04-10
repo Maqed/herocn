@@ -9,14 +9,14 @@ export const Index: Record<string, any> = {
   "index": {
     name: "index",
     type: "registry:style",
-    registryDependencies: ["utils","@herocn/ui"],
+    registryDependencies: ["utils","https://herocn.dev/r/ui.json"],
     files: [],
     component: null,
   },
   "style": {
     name: "style",
     type: "registry:style",
-    registryDependencies: ["utils","@herocn/ui"],
+    registryDependencies: ["utils","https://herocn.dev/r/ui.json"],
     files: [],
     component: null,
   },
@@ -53,7 +53,7 @@ export const Index: Record<string, any> = {
   "button-group": {
     name: "button-group",
     type: "registry:ui",
-    registryDependencies: ["@herocn/separator"],
+    registryDependencies: ["https://herocn.dev/r/separator.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/button-group.tsx",
       type: "registry:ui",
@@ -173,7 +173,7 @@ export const Index: Record<string, any> = {
   "input-group": {
     name: "input-group",
     type: "registry:ui",
-    registryDependencies: ["@herocn/button","@herocn/input","@herocn/textarea"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/input.json","https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/input-group.tsx",
       type: "registry:ui",
@@ -308,7 +308,7 @@ export const Index: Record<string, any> = {
   "toggle-group": {
     name: "toggle-group",
     type: "registry:ui",
-    registryDependencies: ["@herocn/toggle"],
+    registryDependencies: ["https://herocn.dev/r/toggle.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/toggle-group.tsx",
       type: "registry:ui",
@@ -338,7 +338,7 @@ export const Index: Record<string, any> = {
   "card-demo": {
     name: "card-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/card","@herocn/input","@herocn/label"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/card-demo.tsx",
       type: "registry:example",
@@ -353,7 +353,7 @@ export const Index: Record<string, any> = {
   "card-variants": {
     name: "card-variants",
     type: "registry:example",
-    registryDependencies: ["@herocn/card"],
+    registryDependencies: ["https://herocn.dev/r/card.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/card-variants.tsx",
       type: "registry:example",
@@ -368,7 +368,7 @@ export const Index: Record<string, any> = {
   "card-small": {
     name: "card-small",
     type: "registry:example",
-    registryDependencies: ["@herocn/card"],
+    registryDependencies: ["https://herocn.dev/r/card.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/card-small.tsx",
       type: "registry:example",
@@ -383,7 +383,7 @@ export const Index: Record<string, any> = {
   "card-image": {
     name: "card-image",
     type: "registry:example",
-    registryDependencies: ["@herocn/badge","@herocn/button","@herocn/card"],
+    registryDependencies: ["https://herocn.dev/r/badge.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/card-image.tsx",
       type: "registry:example",
@@ -398,7 +398,7 @@ export const Index: Record<string, any> = {
   "card-rtl": {
     name: "card-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/card","@herocn/input","@herocn/label"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/card-rtl.tsx",
       type: "registry:example",
@@ -413,7 +413,7 @@ export const Index: Record<string, any> = {
   "button-demo": {
     name: "button-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/button"],
+    registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-demo.tsx",
       type: "registry:example",
@@ -428,7 +428,7 @@ export const Index: Record<string, any> = {
   "button-variants": {
     name: "button-variants",
     type: "registry:example",
-    registryDependencies: ["@herocn/button"],
+    registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-variants.tsx",
       type: "registry:example",
@@ -443,7 +443,7 @@ export const Index: Record<string, any> = {
   "button-sizes": {
     name: "button-sizes",
     type: "registry:example",
-    registryDependencies: ["@herocn/button"],
+    registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-sizes.tsx",
       type: "registry:example",
@@ -458,7 +458,7 @@ export const Index: Record<string, any> = {
   "button-icons": {
     name: "button-icons",
     type: "registry:example",
-    registryDependencies: ["@herocn/button"],
+    registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-icons.tsx",
       type: "registry:example",
@@ -473,7 +473,7 @@ export const Index: Record<string, any> = {
   "button-rtl": {
     name: "button-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/button"],
+    registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-rtl.tsx",
       type: "registry:example",
@@ -488,7 +488,7 @@ export const Index: Record<string, any> = {
   "skeleton-demo": {
     name: "skeleton-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/skeleton"],
+    registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-demo.tsx",
       type: "registry:example",
@@ -503,7 +503,7 @@ export const Index: Record<string, any> = {
   "skeleton-avatar": {
     name: "skeleton-avatar",
     type: "registry:example",
-    registryDependencies: ["@herocn/skeleton"],
+    registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-avatar.tsx",
       type: "registry:example",
@@ -518,7 +518,7 @@ export const Index: Record<string, any> = {
   "skeleton-card": {
     name: "skeleton-card",
     type: "registry:example",
-    registryDependencies: ["@herocn/card","@herocn/skeleton"],
+    registryDependencies: ["https://herocn.dev/r/card.json","https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-card.tsx",
       type: "registry:example",
@@ -533,7 +533,7 @@ export const Index: Record<string, any> = {
   "skeleton-text": {
     name: "skeleton-text",
     type: "registry:example",
-    registryDependencies: ["@herocn/skeleton"],
+    registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-text.tsx",
       type: "registry:example",
@@ -548,7 +548,7 @@ export const Index: Record<string, any> = {
   "skeleton-form": {
     name: "skeleton-form",
     type: "registry:example",
-    registryDependencies: ["@herocn/skeleton"],
+    registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-form.tsx",
       type: "registry:example",
@@ -563,7 +563,7 @@ export const Index: Record<string, any> = {
   "skeleton-table": {
     name: "skeleton-table",
     type: "registry:example",
-    registryDependencies: ["@herocn/skeleton"],
+    registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-table.tsx",
       type: "registry:example",
@@ -578,7 +578,7 @@ export const Index: Record<string, any> = {
   "skeleton-animation-types": {
     name: "skeleton-animation-types",
     type: "registry:example",
-    registryDependencies: ["@herocn/skeleton"],
+    registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-animation-types.tsx",
       type: "registry:example",
@@ -593,7 +593,7 @@ export const Index: Record<string, any> = {
   "skeleton-single-shimmer": {
     name: "skeleton-single-shimmer",
     type: "registry:example",
-    registryDependencies: ["@herocn/skeleton"],
+    registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-single-shimmer.tsx",
       type: "registry:example",
@@ -608,7 +608,7 @@ export const Index: Record<string, any> = {
   "skeleton-rtl": {
     name: "skeleton-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/skeleton"],
+    registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-rtl.tsx",
       type: "registry:example",
@@ -623,7 +623,7 @@ export const Index: Record<string, any> = {
   "badge-rtl": {
     name: "badge-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/badge"],
+    registryDependencies: ["https://herocn.dev/r/badge.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/badge-rtl.tsx",
       type: "registry:example",
@@ -638,7 +638,7 @@ export const Index: Record<string, any> = {
   "input-rtl": {
     name: "input-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/field","@herocn/input"],
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-rtl.tsx",
       type: "registry:example",
@@ -653,7 +653,7 @@ export const Index: Record<string, any> = {
   "textarea-demo": {
     name: "textarea-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/textarea"],
+    registryDependencies: ["https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-demo.tsx",
       type: "registry:example",
@@ -668,7 +668,7 @@ export const Index: Record<string, any> = {
   "textarea-variants": {
     name: "textarea-variants",
     type: "registry:example",
-    registryDependencies: ["@herocn/textarea"],
+    registryDependencies: ["https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-variants.tsx",
       type: "registry:example",
@@ -683,7 +683,7 @@ export const Index: Record<string, any> = {
   "textarea-states": {
     name: "textarea-states",
     type: "registry:example",
-    registryDependencies: ["@herocn/textarea"],
+    registryDependencies: ["https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-states.tsx",
       type: "registry:example",
@@ -698,7 +698,7 @@ export const Index: Record<string, any> = {
   "textarea-field": {
     name: "textarea-field",
     type: "registry:example",
-    registryDependencies: ["@herocn/field","@herocn/textarea"],
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-field.tsx",
       type: "registry:example",
@@ -713,7 +713,7 @@ export const Index: Record<string, any> = {
   "textarea-button": {
     name: "textarea-button",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/textarea"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-button.tsx",
       type: "registry:example",
@@ -728,7 +728,7 @@ export const Index: Record<string, any> = {
   "textarea-rtl": {
     name: "textarea-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/field","@herocn/textarea"],
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-rtl.tsx",
       type: "registry:example",
@@ -743,7 +743,7 @@ export const Index: Record<string, any> = {
   "textarea-in-surface": {
     name: "textarea-in-surface",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/card","@herocn/field","@herocn/textarea"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/field.json","https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-in-surface.tsx",
       type: "registry:example",
@@ -758,7 +758,7 @@ export const Index: Record<string, any> = {
   "avatar-rtl": {
     name: "avatar-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/avatar"],
+    registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-rtl.tsx",
       type: "registry:example",
@@ -773,7 +773,7 @@ export const Index: Record<string, any> = {
   "collapsible-rtl": {
     name: "collapsible-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/card","@herocn/collapsible"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/collapsible.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/collapsible-rtl.tsx",
       type: "registry:example",
@@ -788,7 +788,7 @@ export const Index: Record<string, any> = {
   "dropdown-menu-rtl": {
     name: "dropdown-menu-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/dropdown-menu"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-rtl.tsx",
       type: "registry:example",
@@ -803,7 +803,7 @@ export const Index: Record<string, any> = {
   "surface-rtl": {
     name: "surface-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/surface"],
+    registryDependencies: ["https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/surface-rtl.tsx",
       type: "registry:example",
@@ -818,7 +818,7 @@ export const Index: Record<string, any> = {
   "collapsible-demo": {
     name: "collapsible-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/collapsible"],
+    registryDependencies: ["https://herocn.dev/r/collapsible.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/collapsible-demo.tsx",
       type: "registry:example",
@@ -833,7 +833,7 @@ export const Index: Record<string, any> = {
   "collapsible-basic": {
     name: "collapsible-basic",
     type: "registry:example",
-    registryDependencies: ["@herocn/collapsible"],
+    registryDependencies: ["https://herocn.dev/r/collapsible.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/collapsible-basic.tsx",
       type: "registry:example",
@@ -848,7 +848,7 @@ export const Index: Record<string, any> = {
   "collapsible-settings": {
     name: "collapsible-settings",
     type: "registry:example",
-    registryDependencies: ["@herocn/collapsible"],
+    registryDependencies: ["https://herocn.dev/r/collapsible.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/collapsible-settings.tsx",
       type: "registry:example",
@@ -863,7 +863,7 @@ export const Index: Record<string, any> = {
   "collapsible-file-tree": {
     name: "collapsible-file-tree",
     type: "registry:example",
-    registryDependencies: ["@herocn/collapsible"],
+    registryDependencies: ["https://herocn.dev/r/collapsible.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/collapsible-file-tree.tsx",
       type: "registry:example",
@@ -878,7 +878,7 @@ export const Index: Record<string, any> = {
   "dropdown-menu-demo": {
     name: "dropdown-menu-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/dropdown-menu"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-demo.tsx",
       type: "registry:example",
@@ -893,7 +893,7 @@ export const Index: Record<string, any> = {
   "dropdown-menu-basic": {
     name: "dropdown-menu-basic",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/dropdown-menu"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-basic.tsx",
       type: "registry:example",
@@ -908,7 +908,7 @@ export const Index: Record<string, any> = {
   "dropdown-menu-submenu": {
     name: "dropdown-menu-submenu",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/dropdown-menu"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-submenu.tsx",
       type: "registry:example",
@@ -923,7 +923,7 @@ export const Index: Record<string, any> = {
   "dropdown-menu-shortcuts": {
     name: "dropdown-menu-shortcuts",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/dropdown-menu"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-shortcuts.tsx",
       type: "registry:example",
@@ -938,7 +938,7 @@ export const Index: Record<string, any> = {
   "dropdown-menu-icons": {
     name: "dropdown-menu-icons",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/dropdown-menu"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-icons.tsx",
       type: "registry:example",
@@ -953,7 +953,7 @@ export const Index: Record<string, any> = {
   "dropdown-menu-checkboxes": {
     name: "dropdown-menu-checkboxes",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/dropdown-menu"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-checkboxes.tsx",
       type: "registry:example",
@@ -968,7 +968,7 @@ export const Index: Record<string, any> = {
   "dropdown-menu-checkboxes-icons": {
     name: "dropdown-menu-checkboxes-icons",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/dropdown-menu"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-checkboxes-icons.tsx",
       type: "registry:example",
@@ -983,7 +983,7 @@ export const Index: Record<string, any> = {
   "dropdown-menu-radio-group": {
     name: "dropdown-menu-radio-group",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/dropdown-menu"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-radio-group.tsx",
       type: "registry:example",
@@ -998,7 +998,7 @@ export const Index: Record<string, any> = {
   "dropdown-menu-radio-icons": {
     name: "dropdown-menu-radio-icons",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/dropdown-menu"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-radio-icons.tsx",
       type: "registry:example",
@@ -1013,7 +1013,7 @@ export const Index: Record<string, any> = {
   "dropdown-menu-destructive": {
     name: "dropdown-menu-destructive",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/dropdown-menu"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-destructive.tsx",
       type: "registry:example",
@@ -1028,7 +1028,7 @@ export const Index: Record<string, any> = {
   "dropdown-menu-avatar": {
     name: "dropdown-menu-avatar",
     type: "registry:example",
-    registryDependencies: ["@herocn/avatar","@herocn/button","@herocn/dropdown-menu"],
+    registryDependencies: ["https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-avatar.tsx",
       type: "registry:example",
@@ -1043,7 +1043,7 @@ export const Index: Record<string, any> = {
   "dropdown-menu-complex": {
     name: "dropdown-menu-complex",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/dropdown-menu"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-complex.tsx",
       type: "registry:example",
@@ -1058,7 +1058,7 @@ export const Index: Record<string, any> = {
   "avatar-demo": {
     name: "avatar-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/avatar"],
+    registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-demo.tsx",
       type: "registry:example",
@@ -1073,7 +1073,7 @@ export const Index: Record<string, any> = {
   "avatar-basic": {
     name: "avatar-basic",
     type: "registry:example",
-    registryDependencies: ["@herocn/avatar"],
+    registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-basic.tsx",
       type: "registry:example",
@@ -1088,7 +1088,7 @@ export const Index: Record<string, any> = {
   "avatar-badge": {
     name: "avatar-badge",
     type: "registry:example",
-    registryDependencies: ["@herocn/avatar"],
+    registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-badge.tsx",
       type: "registry:example",
@@ -1103,7 +1103,7 @@ export const Index: Record<string, any> = {
   "avatar-badge-icon": {
     name: "avatar-badge-icon",
     type: "registry:example",
-    registryDependencies: ["@herocn/avatar"],
+    registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-badge-icon.tsx",
       type: "registry:example",
@@ -1118,7 +1118,7 @@ export const Index: Record<string, any> = {
   "avatar-group": {
     name: "avatar-group",
     type: "registry:example",
-    registryDependencies: ["@herocn/avatar"],
+    registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-group.tsx",
       type: "registry:example",
@@ -1133,7 +1133,7 @@ export const Index: Record<string, any> = {
   "avatar-group-count": {
     name: "avatar-group-count",
     type: "registry:example",
-    registryDependencies: ["@herocn/avatar"],
+    registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-group-count.tsx",
       type: "registry:example",
@@ -1148,7 +1148,7 @@ export const Index: Record<string, any> = {
   "avatar-group-count-icon": {
     name: "avatar-group-count-icon",
     type: "registry:example",
-    registryDependencies: ["@herocn/avatar"],
+    registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-group-count-icon.tsx",
       type: "registry:example",
@@ -1163,7 +1163,7 @@ export const Index: Record<string, any> = {
   "avatar-size": {
     name: "avatar-size",
     type: "registry:example",
-    registryDependencies: ["@herocn/avatar"],
+    registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-size.tsx",
       type: "registry:example",
@@ -1178,7 +1178,7 @@ export const Index: Record<string, any> = {
   "avatar-dropdown": {
     name: "avatar-dropdown",
     type: "registry:example",
-    registryDependencies: ["@herocn/avatar","@herocn/button","@herocn/dropdown-menu"],
+    registryDependencies: ["https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-dropdown.tsx",
       type: "registry:example",
@@ -1193,7 +1193,7 @@ export const Index: Record<string, any> = {
   "badge-demo": {
     name: "badge-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/badge"],
+    registryDependencies: ["https://herocn.dev/r/badge.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/badge-demo.tsx",
       type: "registry:example",
@@ -1208,7 +1208,7 @@ export const Index: Record<string, any> = {
   "badge-variants": {
     name: "badge-variants",
     type: "registry:example",
-    registryDependencies: ["@herocn/badge"],
+    registryDependencies: ["https://herocn.dev/r/badge.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/badge-variants.tsx",
       type: "registry:example",
@@ -1223,7 +1223,7 @@ export const Index: Record<string, any> = {
   "badge-sizes": {
     name: "badge-sizes",
     type: "registry:example",
-    registryDependencies: ["@herocn/badge"],
+    registryDependencies: ["https://herocn.dev/r/badge.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/badge-sizes.tsx",
       type: "registry:example",
@@ -1238,7 +1238,7 @@ export const Index: Record<string, any> = {
   "badge-icon": {
     name: "badge-icon",
     type: "registry:example",
-    registryDependencies: ["@herocn/badge"],
+    registryDependencies: ["https://herocn.dev/r/badge.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/badge-icon.tsx",
       type: "registry:example",
@@ -1253,7 +1253,7 @@ export const Index: Record<string, any> = {
   "badge-colors": {
     name: "badge-colors",
     type: "registry:example",
-    registryDependencies: ["@herocn/badge"],
+    registryDependencies: ["https://herocn.dev/r/badge.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/badge-colors.tsx",
       type: "registry:example",
@@ -1268,7 +1268,7 @@ export const Index: Record<string, any> = {
   "surface-demo": {
     name: "surface-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/surface"],
+    registryDependencies: ["https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/surface-demo.tsx",
       type: "registry:example",
@@ -1283,7 +1283,7 @@ export const Index: Record<string, any> = {
   "surface-variants": {
     name: "surface-variants",
     type: "registry:example",
-    registryDependencies: ["@herocn/surface"],
+    registryDependencies: ["https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/surface-variants.tsx",
       type: "registry:example",
@@ -1298,7 +1298,7 @@ export const Index: Record<string, any> = {
   "input-demo": {
     name: "input-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/input"],
+    registryDependencies: ["https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-demo.tsx",
       type: "registry:example",
@@ -1313,7 +1313,7 @@ export const Index: Record<string, any> = {
   "input-variants": {
     name: "input-variants",
     type: "registry:example",
-    registryDependencies: ["@herocn/input"],
+    registryDependencies: ["https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-variants.tsx",
       type: "registry:example",
@@ -1328,7 +1328,7 @@ export const Index: Record<string, any> = {
   "input-states": {
     name: "input-states",
     type: "registry:example",
-    registryDependencies: ["@herocn/input"],
+    registryDependencies: ["https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-states.tsx",
       type: "registry:example",
@@ -1343,7 +1343,7 @@ export const Index: Record<string, any> = {
   "input-field": {
     name: "input-field",
     type: "registry:example",
-    registryDependencies: ["@herocn/field","@herocn/input"],
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-field.tsx",
       type: "registry:example",
@@ -1358,7 +1358,7 @@ export const Index: Record<string, any> = {
   "input-fieldgroup": {
     name: "input-fieldgroup",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/field","@herocn/input"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-fieldgroup.tsx",
       type: "registry:example",
@@ -1373,7 +1373,7 @@ export const Index: Record<string, any> = {
   "input-badge": {
     name: "input-badge",
     type: "registry:example",
-    registryDependencies: ["@herocn/badge","@herocn/field","@herocn/input"],
+    registryDependencies: ["https://herocn.dev/r/badge.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-badge.tsx",
       type: "registry:example",
@@ -1388,7 +1388,7 @@ export const Index: Record<string, any> = {
   "input-input-group": {
     name: "input-input-group",
     type: "registry:example",
-    registryDependencies: ["@herocn/field","@herocn/input","@herocn/input-group"],
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-input-group.tsx",
       type: "registry:example",
@@ -1403,7 +1403,7 @@ export const Index: Record<string, any> = {
   "input-button-group": {
     name: "input-button-group",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/button-group","@herocn/field","@herocn/input"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-button-group.tsx",
       type: "registry:example",
@@ -1418,7 +1418,7 @@ export const Index: Record<string, any> = {
   "button-group-demo": {
     name: "button-group-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/button-group","@herocn/dropdown-menu"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-demo.tsx",
       type: "registry:example",
@@ -1433,7 +1433,7 @@ export const Index: Record<string, any> = {
   "button-group-orientation": {
     name: "button-group-orientation",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/button-group"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-orientation.tsx",
       type: "registry:example",
@@ -1448,7 +1448,7 @@ export const Index: Record<string, any> = {
   "button-group-size": {
     name: "button-group-size",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/button-group"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-size.tsx",
       type: "registry:example",
@@ -1463,7 +1463,7 @@ export const Index: Record<string, any> = {
   "button-group-separator": {
     name: "button-group-separator",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/button-group"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-separator.tsx",
       type: "registry:example",
@@ -1478,7 +1478,7 @@ export const Index: Record<string, any> = {
   "button-group-split": {
     name: "button-group-split",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/button-group"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-split.tsx",
       type: "registry:example",
@@ -1493,7 +1493,7 @@ export const Index: Record<string, any> = {
   "button-group-input": {
     name: "button-group-input",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/button-group","@herocn/input"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-input.tsx",
       type: "registry:example",
@@ -1508,7 +1508,7 @@ export const Index: Record<string, any> = {
   "button-group-input-group": {
     name: "button-group-input-group",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/button-group","@herocn/input-group","@herocn/tooltip"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/input-group.json","https://herocn.dev/r/tooltip.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-input-group.tsx",
       type: "registry:example",
@@ -1523,7 +1523,7 @@ export const Index: Record<string, any> = {
   "button-group-dropdown": {
     name: "button-group-dropdown",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/button-group","@herocn/dropdown-menu"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-dropdown.tsx",
       type: "registry:example",
@@ -1538,7 +1538,7 @@ export const Index: Record<string, any> = {
   "button-group-select": {
     name: "button-group-select",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/button-group","@herocn/input","@herocn/select"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/input.json","https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-select.tsx",
       type: "registry:example",
@@ -1553,7 +1553,7 @@ export const Index: Record<string, any> = {
   "button-group-popover": {
     name: "button-group-popover",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/button-group","@herocn/field","@herocn/popover","@herocn/textarea"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/field.json","https://herocn.dev/r/popover.json","https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-popover.tsx",
       type: "registry:example",
@@ -1568,7 +1568,7 @@ export const Index: Record<string, any> = {
   "button-group-rtl": {
     name: "button-group-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/button-group","@herocn/dropdown-menu"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-rtl.tsx",
       type: "registry:example",
@@ -1583,7 +1583,7 @@ export const Index: Record<string, any> = {
   "button-group-text": {
     name: "button-group-text",
     type: "registry:example",
-    registryDependencies: ["@herocn/button-group","@herocn/input","@herocn/label"],
+    registryDependencies: ["https://herocn.dev/r/button-group.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-text.tsx",
       type: "registry:example",
@@ -1598,7 +1598,7 @@ export const Index: Record<string, any> = {
   "tabs-demo": {
     name: "tabs-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/card","@herocn/tabs"],
+    registryDependencies: ["https://herocn.dev/r/card.json","https://herocn.dev/r/tabs.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-demo.tsx",
       type: "registry:example",
@@ -1613,7 +1613,7 @@ export const Index: Record<string, any> = {
   "tabs-line": {
     name: "tabs-line",
     type: "registry:example",
-    registryDependencies: ["@herocn/tabs"],
+    registryDependencies: ["https://herocn.dev/r/tabs.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-line.tsx",
       type: "registry:example",
@@ -1628,7 +1628,7 @@ export const Index: Record<string, any> = {
   "tabs-vertical": {
     name: "tabs-vertical",
     type: "registry:example",
-    registryDependencies: ["@herocn/tabs"],
+    registryDependencies: ["https://herocn.dev/r/tabs.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-vertical.tsx",
       type: "registry:example",
@@ -1643,7 +1643,7 @@ export const Index: Record<string, any> = {
   "tabs-vertical-line": {
     name: "tabs-vertical-line",
     type: "registry:example",
-    registryDependencies: ["@herocn/tabs"],
+    registryDependencies: ["https://herocn.dev/r/tabs.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-vertical-line.tsx",
       type: "registry:example",
@@ -1658,7 +1658,7 @@ export const Index: Record<string, any> = {
   "tabs-disabled": {
     name: "tabs-disabled",
     type: "registry:example",
-    registryDependencies: ["@herocn/tabs"],
+    registryDependencies: ["https://herocn.dev/r/tabs.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-disabled.tsx",
       type: "registry:example",
@@ -1673,7 +1673,7 @@ export const Index: Record<string, any> = {
   "tabs-icons": {
     name: "tabs-icons",
     type: "registry:example",
-    registryDependencies: ["@herocn/tabs"],
+    registryDependencies: ["https://herocn.dev/r/tabs.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-icons.tsx",
       type: "registry:example",
@@ -1688,7 +1688,7 @@ export const Index: Record<string, any> = {
   "tabs-rtl": {
     name: "tabs-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/card","@herocn/tabs"],
+    registryDependencies: ["https://herocn.dev/r/card.json","https://herocn.dev/r/tabs.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-rtl.tsx",
       type: "registry:example",
@@ -1703,7 +1703,7 @@ export const Index: Record<string, any> = {
   "select-demo": {
     name: "select-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/select"],
+    registryDependencies: ["https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-demo.tsx",
       type: "registry:example",
@@ -1718,7 +1718,7 @@ export const Index: Record<string, any> = {
   "select-variants": {
     name: "select-variants",
     type: "registry:example",
-    registryDependencies: ["@herocn/select"],
+    registryDependencies: ["https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-variants.tsx",
       type: "registry:example",
@@ -1733,7 +1733,7 @@ export const Index: Record<string, any> = {
   "select-surface": {
     name: "select-surface",
     type: "registry:example",
-    registryDependencies: ["@herocn/select","@herocn/surface"],
+    registryDependencies: ["https://herocn.dev/r/select.json","https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-surface.tsx",
       type: "registry:example",
@@ -1748,7 +1748,7 @@ export const Index: Record<string, any> = {
   "select-groups": {
     name: "select-groups",
     type: "registry:example",
-    registryDependencies: ["@herocn/select"],
+    registryDependencies: ["https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-groups.tsx",
       type: "registry:example",
@@ -1763,7 +1763,7 @@ export const Index: Record<string, any> = {
   "select-multiple": {
     name: "select-multiple",
     type: "registry:example",
-    registryDependencies: ["@herocn/select"],
+    registryDependencies: ["https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-multiple.tsx",
       type: "registry:example",
@@ -1778,7 +1778,7 @@ export const Index: Record<string, any> = {
   "select-scrollable": {
     name: "select-scrollable",
     type: "registry:example",
-    registryDependencies: ["@herocn/select"],
+    registryDependencies: ["https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-scrollable.tsx",
       type: "registry:example",
@@ -1793,7 +1793,7 @@ export const Index: Record<string, any> = {
   "select-disabled": {
     name: "select-disabled",
     type: "registry:example",
-    registryDependencies: ["@herocn/select"],
+    registryDependencies: ["https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-disabled.tsx",
       type: "registry:example",
@@ -1808,7 +1808,7 @@ export const Index: Record<string, any> = {
   "select-invalid": {
     name: "select-invalid",
     type: "registry:example",
-    registryDependencies: ["@herocn/field","@herocn/select"],
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-invalid.tsx",
       type: "registry:example",
@@ -1823,7 +1823,7 @@ export const Index: Record<string, any> = {
   "select-rtl": {
     name: "select-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/select"],
+    registryDependencies: ["https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-rtl.tsx",
       type: "registry:example",
@@ -1838,7 +1838,7 @@ export const Index: Record<string, any> = {
   "separator-demo": {
     name: "separator-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/separator"],
+    registryDependencies: ["https://herocn.dev/r/separator.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/separator-demo.tsx",
       type: "registry:example",
@@ -1853,7 +1853,7 @@ export const Index: Record<string, any> = {
   "separator-vertical": {
     name: "separator-vertical",
     type: "registry:example",
-    registryDependencies: ["@herocn/separator"],
+    registryDependencies: ["https://herocn.dev/r/separator.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/separator-vertical.tsx",
       type: "registry:example",
@@ -1868,7 +1868,7 @@ export const Index: Record<string, any> = {
   "separator-menu": {
     name: "separator-menu",
     type: "registry:example",
-    registryDependencies: ["@herocn/separator"],
+    registryDependencies: ["https://herocn.dev/r/separator.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/separator-menu.tsx",
       type: "registry:example",
@@ -1883,7 +1883,7 @@ export const Index: Record<string, any> = {
   "separator-list": {
     name: "separator-list",
     type: "registry:example",
-    registryDependencies: ["@herocn/separator"],
+    registryDependencies: ["https://herocn.dev/r/separator.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/separator-list.tsx",
       type: "registry:example",
@@ -1898,7 +1898,7 @@ export const Index: Record<string, any> = {
   "separator-surface": {
     name: "separator-surface",
     type: "registry:example",
-    registryDependencies: ["@herocn/separator","@herocn/surface"],
+    registryDependencies: ["https://herocn.dev/r/separator.json","https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/separator-surface.tsx",
       type: "registry:example",
@@ -1913,7 +1913,7 @@ export const Index: Record<string, any> = {
   "separator-rtl": {
     name: "separator-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/separator"],
+    registryDependencies: ["https://herocn.dev/r/separator.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/separator-rtl.tsx",
       type: "registry:example",
@@ -1928,7 +1928,7 @@ export const Index: Record<string, any> = {
   "popover-demo": {
     name: "popover-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/input","@herocn/label","@herocn/popover"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/popover-demo.tsx",
       type: "registry:example",
@@ -1943,7 +1943,7 @@ export const Index: Record<string, any> = {
   "popover-basic": {
     name: "popover-basic",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/popover"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/popover-basic.tsx",
       type: "registry:example",
@@ -1958,7 +1958,7 @@ export const Index: Record<string, any> = {
   "popover-align": {
     name: "popover-align",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/popover"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/popover-align.tsx",
       type: "registry:example",
@@ -1973,7 +1973,7 @@ export const Index: Record<string, any> = {
   "popover-form": {
     name: "popover-form",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/field","@herocn/input","@herocn/popover"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/popover-form.tsx",
       type: "registry:example",
@@ -1988,7 +1988,7 @@ export const Index: Record<string, any> = {
   "popover-with-arrow": {
     name: "popover-with-arrow",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/popover"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/popover-with-arrow.tsx",
       type: "registry:example",
@@ -2003,7 +2003,7 @@ export const Index: Record<string, any> = {
   "popover-rtl": {
     name: "popover-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/popover"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/popover-rtl.tsx",
       type: "registry:example",
@@ -2018,7 +2018,7 @@ export const Index: Record<string, any> = {
   "input-group-demo": {
     name: "input-group-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/input-group"],
+    registryDependencies: ["https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-demo.tsx",
       type: "registry:example",
@@ -2033,7 +2033,7 @@ export const Index: Record<string, any> = {
   "input-group-variants": {
     name: "input-group-variants",
     type: "registry:example",
-    registryDependencies: ["@herocn/input-group"],
+    registryDependencies: ["https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-variants.tsx",
       type: "registry:example",
@@ -2048,7 +2048,7 @@ export const Index: Record<string, any> = {
   "input-group-invalid": {
     name: "input-group-invalid",
     type: "registry:example",
-    registryDependencies: ["@herocn/field","@herocn/input-group"],
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-invalid.tsx",
       type: "registry:example",
@@ -2063,7 +2063,7 @@ export const Index: Record<string, any> = {
   "input-group-disabled": {
     name: "input-group-disabled",
     type: "registry:example",
-    registryDependencies: ["@herocn/field","@herocn/input-group"],
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-disabled.tsx",
       type: "registry:example",
@@ -2078,7 +2078,7 @@ export const Index: Record<string, any> = {
   "input-group-inline-start": {
     name: "input-group-inline-start",
     type: "registry:example",
-    registryDependencies: ["@herocn/field","@herocn/input-group"],
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-inline-start.tsx",
       type: "registry:example",
@@ -2093,7 +2093,7 @@ export const Index: Record<string, any> = {
   "input-group-inline-end": {
     name: "input-group-inline-end",
     type: "registry:example",
-    registryDependencies: ["@herocn/field","@herocn/input-group"],
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-inline-end.tsx",
       type: "registry:example",
@@ -2108,7 +2108,7 @@ export const Index: Record<string, any> = {
   "input-group-block-start": {
     name: "input-group-block-start",
     type: "registry:example",
-    registryDependencies: ["@herocn/field","@herocn/input-group"],
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-block-start.tsx",
       type: "registry:example",
@@ -2123,7 +2123,7 @@ export const Index: Record<string, any> = {
   "input-group-block-end": {
     name: "input-group-block-end",
     type: "registry:example",
-    registryDependencies: ["@herocn/field","@herocn/input-group"],
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-block-end.tsx",
       type: "registry:example",
@@ -2138,7 +2138,7 @@ export const Index: Record<string, any> = {
   "input-group-icon": {
     name: "input-group-icon",
     type: "registry:example",
-    registryDependencies: ["@herocn/input-group"],
+    registryDependencies: ["https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-icon.tsx",
       type: "registry:example",
@@ -2153,7 +2153,7 @@ export const Index: Record<string, any> = {
   "input-group-text": {
     name: "input-group-text",
     type: "registry:example",
-    registryDependencies: ["@herocn/input-group"],
+    registryDependencies: ["https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-text.tsx",
       type: "registry:example",
@@ -2168,7 +2168,7 @@ export const Index: Record<string, any> = {
   "input-group-button": {
     name: "input-group-button",
     type: "registry:example",
-    registryDependencies: ["@herocn/input-group"],
+    registryDependencies: ["https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-button.tsx",
       type: "registry:example",
@@ -2183,7 +2183,7 @@ export const Index: Record<string, any> = {
   "input-group-spinner": {
     name: "input-group-spinner",
     type: "registry:example",
-    registryDependencies: ["@herocn/input-group","@herocn/spinner"],
+    registryDependencies: ["https://herocn.dev/r/input-group.json","https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-spinner.tsx",
       type: "registry:example",
@@ -2198,7 +2198,7 @@ export const Index: Record<string, any> = {
   "input-group-textarea": {
     name: "input-group-textarea",
     type: "registry:example",
-    registryDependencies: ["@herocn/input-group"],
+    registryDependencies: ["https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-textarea.tsx",
       type: "registry:example",
@@ -2213,7 +2213,7 @@ export const Index: Record<string, any> = {
   "input-group-dropdown": {
     name: "input-group-dropdown",
     type: "registry:example",
-    registryDependencies: ["@herocn/dropdown-menu","@herocn/input-group"],
+    registryDependencies: ["https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-dropdown.tsx",
       type: "registry:example",
@@ -2228,7 +2228,7 @@ export const Index: Record<string, any> = {
   "input-group-rtl": {
     name: "input-group-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/field","@herocn/input-group","@herocn/spinner"],
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json","https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-rtl.tsx",
       type: "registry:example",
@@ -2243,7 +2243,7 @@ export const Index: Record<string, any> = {
   "input-group-in-surface": {
     name: "input-group-in-surface",
     type: "registry:example",
-    registryDependencies: ["@herocn/card","@herocn/input-group"],
+    registryDependencies: ["https://herocn.dev/r/card.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-in-surface.tsx",
       type: "registry:example",
@@ -2258,7 +2258,7 @@ export const Index: Record<string, any> = {
   "toggle-demo": {
     name: "toggle-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/toggle"],
+    registryDependencies: ["https://herocn.dev/r/toggle.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-demo.tsx",
       type: "registry:example",
@@ -2273,7 +2273,7 @@ export const Index: Record<string, any> = {
   "toggle-ghost": {
     name: "toggle-ghost",
     type: "registry:example",
-    registryDependencies: ["@herocn/toggle"],
+    registryDependencies: ["https://herocn.dev/r/toggle.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-ghost.tsx",
       type: "registry:example",
@@ -2288,7 +2288,7 @@ export const Index: Record<string, any> = {
   "toggle-sizes": {
     name: "toggle-sizes",
     type: "registry:example",
-    registryDependencies: ["@herocn/toggle"],
+    registryDependencies: ["https://herocn.dev/r/toggle.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-sizes.tsx",
       type: "registry:example",
@@ -2303,7 +2303,7 @@ export const Index: Record<string, any> = {
   "toggle-disabled": {
     name: "toggle-disabled",
     type: "registry:example",
-    registryDependencies: ["@herocn/toggle"],
+    registryDependencies: ["https://herocn.dev/r/toggle.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-disabled.tsx",
       type: "registry:example",
@@ -2318,7 +2318,7 @@ export const Index: Record<string, any> = {
   "toggle-rtl": {
     name: "toggle-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/toggle"],
+    registryDependencies: ["https://herocn.dev/r/toggle.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-rtl.tsx",
       type: "registry:example",
@@ -2333,7 +2333,7 @@ export const Index: Record<string, any> = {
   "toggle-group-demo": {
     name: "toggle-group-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/toggle-group"],
+    registryDependencies: ["https://herocn.dev/r/toggle-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-demo.tsx",
       type: "registry:example",
@@ -2348,7 +2348,7 @@ export const Index: Record<string, any> = {
   "toggle-group-sizes": {
     name: "toggle-group-sizes",
     type: "registry:example",
-    registryDependencies: ["@herocn/toggle-group"],
+    registryDependencies: ["https://herocn.dev/r/toggle-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-sizes.tsx",
       type: "registry:example",
@@ -2363,7 +2363,7 @@ export const Index: Record<string, any> = {
   "toggle-group-spacing": {
     name: "toggle-group-spacing",
     type: "registry:example",
-    registryDependencies: ["@herocn/toggle-group"],
+    registryDependencies: ["https://herocn.dev/r/toggle-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-spacing.tsx",
       type: "registry:example",
@@ -2378,7 +2378,7 @@ export const Index: Record<string, any> = {
   "toggle-group-vertical": {
     name: "toggle-group-vertical",
     type: "registry:example",
-    registryDependencies: ["@herocn/toggle-group"],
+    registryDependencies: ["https://herocn.dev/r/toggle-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-vertical.tsx",
       type: "registry:example",
@@ -2393,7 +2393,7 @@ export const Index: Record<string, any> = {
   "toggle-group-disabled": {
     name: "toggle-group-disabled",
     type: "registry:example",
-    registryDependencies: ["@herocn/toggle-group"],
+    registryDependencies: ["https://herocn.dev/r/toggle-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-disabled.tsx",
       type: "registry:example",
@@ -2408,7 +2408,7 @@ export const Index: Record<string, any> = {
   "toggle-group-custom": {
     name: "toggle-group-custom",
     type: "registry:example",
-    registryDependencies: ["@herocn/toggle-group","@herocn/field"],
+    registryDependencies: ["https://herocn.dev/r/toggle-group.json","https://herocn.dev/r/field.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-custom.tsx",
       type: "registry:example",
@@ -2423,7 +2423,7 @@ export const Index: Record<string, any> = {
   "toggle-group-rtl": {
     name: "toggle-group-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/toggle-group"],
+    registryDependencies: ["https://herocn.dev/r/toggle-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-rtl.tsx",
       type: "registry:example",
@@ -2438,7 +2438,7 @@ export const Index: Record<string, any> = {
   "switch-demo": {
     name: "switch-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/label","@herocn/switch"],
+    registryDependencies: ["https://herocn.dev/r/label.json","https://herocn.dev/r/switch.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/switch-demo.tsx",
       type: "registry:example",
@@ -2453,7 +2453,7 @@ export const Index: Record<string, any> = {
   "switch-description": {
     name: "switch-description",
     type: "registry:example",
-    registryDependencies: ["@herocn/field","@herocn/switch"],
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/switch-description.tsx",
       type: "registry:example",
@@ -2468,7 +2468,7 @@ export const Index: Record<string, any> = {
   "switch-choice-card": {
     name: "switch-choice-card",
     type: "registry:example",
-    registryDependencies: ["@herocn/field","@herocn/switch"],
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/switch-choice-card.tsx",
       type: "registry:example",
@@ -2483,7 +2483,7 @@ export const Index: Record<string, any> = {
   "switch-disabled": {
     name: "switch-disabled",
     type: "registry:example",
-    registryDependencies: ["@herocn/field","@herocn/switch"],
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/switch-disabled.tsx",
       type: "registry:example",
@@ -2498,7 +2498,7 @@ export const Index: Record<string, any> = {
   "switch-invalid": {
     name: "switch-invalid",
     type: "registry:example",
-    registryDependencies: ["@herocn/field","@herocn/switch"],
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/switch-invalid.tsx",
       type: "registry:example",
@@ -2513,7 +2513,7 @@ export const Index: Record<string, any> = {
   "switch-sizes": {
     name: "switch-sizes",
     type: "registry:example",
-    registryDependencies: ["@herocn/field","@herocn/switch"],
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/switch-sizes.tsx",
       type: "registry:example",
@@ -2528,7 +2528,7 @@ export const Index: Record<string, any> = {
   "switch-rtl": {
     name: "switch-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/field","@herocn/switch"],
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/switch-rtl.tsx",
       type: "registry:example",
@@ -2543,7 +2543,7 @@ export const Index: Record<string, any> = {
   "spinner-demo": {
     name: "spinner-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/spinner"],
+    registryDependencies: ["https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-demo.tsx",
       type: "registry:example",
@@ -2558,7 +2558,7 @@ export const Index: Record<string, any> = {
   "spinner-variants": {
     name: "spinner-variants",
     type: "registry:example",
-    registryDependencies: ["@herocn/spinner"],
+    registryDependencies: ["https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-variants.tsx",
       type: "registry:example",
@@ -2573,7 +2573,7 @@ export const Index: Record<string, any> = {
   "spinner-sizes": {
     name: "spinner-sizes",
     type: "registry:example",
-    registryDependencies: ["@herocn/spinner"],
+    registryDependencies: ["https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-sizes.tsx",
       type: "registry:example",
@@ -2588,7 +2588,7 @@ export const Index: Record<string, any> = {
   "spinner-button": {
     name: "spinner-button",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/spinner"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-button.tsx",
       type: "registry:example",
@@ -2603,7 +2603,7 @@ export const Index: Record<string, any> = {
   "spinner-badge": {
     name: "spinner-badge",
     type: "registry:example",
-    registryDependencies: ["@herocn/badge","@herocn/spinner"],
+    registryDependencies: ["https://herocn.dev/r/badge.json","https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-badge.tsx",
       type: "registry:example",
@@ -2618,7 +2618,7 @@ export const Index: Record<string, any> = {
   "spinner-input-group": {
     name: "spinner-input-group",
     type: "registry:example",
-    registryDependencies: ["@herocn/input-group","@herocn/spinner"],
+    registryDependencies: ["https://herocn.dev/r/input-group.json","https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-input-group.tsx",
       type: "registry:example",
@@ -2633,7 +2633,7 @@ export const Index: Record<string, any> = {
   "spinner-empty": {
     name: "spinner-empty",
     type: "registry:example",
-    registryDependencies: ["@herocn/button","@herocn/empty","@herocn/spinner"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/empty.json","https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-empty.tsx",
       type: "registry:example",
@@ -2648,7 +2648,7 @@ export const Index: Record<string, any> = {
   "spinner-rtl": {
     name: "spinner-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/spinner"],
+    registryDependencies: ["https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-rtl.tsx",
       type: "registry:example",
@@ -2663,7 +2663,7 @@ export const Index: Record<string, any> = {
   "slider-demo": {
     name: "slider-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/slider"],
+    registryDependencies: ["https://herocn.dev/r/slider.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/slider-demo.tsx",
       type: "registry:example",
@@ -2678,7 +2678,7 @@ export const Index: Record<string, any> = {
   "slider-range": {
     name: "slider-range",
     type: "registry:example",
-    registryDependencies: ["@herocn/slider"],
+    registryDependencies: ["https://herocn.dev/r/slider.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/slider-range.tsx",
       type: "registry:example",
@@ -2693,7 +2693,7 @@ export const Index: Record<string, any> = {
   "slider-multiple": {
     name: "slider-multiple",
     type: "registry:example",
-    registryDependencies: ["@herocn/slider"],
+    registryDependencies: ["https://herocn.dev/r/slider.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/slider-multiple.tsx",
       type: "registry:example",
@@ -2708,7 +2708,7 @@ export const Index: Record<string, any> = {
   "slider-vertical": {
     name: "slider-vertical",
     type: "registry:example",
-    registryDependencies: ["@herocn/slider"],
+    registryDependencies: ["https://herocn.dev/r/slider.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/slider-vertical.tsx",
       type: "registry:example",
@@ -2723,7 +2723,7 @@ export const Index: Record<string, any> = {
   "slider-controlled": {
     name: "slider-controlled",
     type: "registry:example",
-    registryDependencies: ["@herocn/label","@herocn/slider"],
+    registryDependencies: ["https://herocn.dev/r/label.json","https://herocn.dev/r/slider.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/slider-controlled.tsx",
       type: "registry:example",
@@ -2738,7 +2738,7 @@ export const Index: Record<string, any> = {
   "slider-disabled": {
     name: "slider-disabled",
     type: "registry:example",
-    registryDependencies: ["@herocn/slider"],
+    registryDependencies: ["https://herocn.dev/r/slider.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/slider-disabled.tsx",
       type: "registry:example",
@@ -2753,7 +2753,7 @@ export const Index: Record<string, any> = {
   "slider-rtl": {
     name: "slider-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/slider"],
+    registryDependencies: ["https://herocn.dev/r/slider.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/slider-rtl.tsx",
       type: "registry:example",

@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "input-group-disabled",
   "registryDependencies": [
-    "@herocn/field",
-    "@herocn/input-group"
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/input-group.json"
   ],
   "files": [
     {

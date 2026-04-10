@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "button-variants",
   "registryDependencies": [
-    "@herocn/button"
+    "https://herocn.dev/r/button.json"
   ],
   "files": [
     {

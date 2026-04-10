@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "select-invalid",
   "registryDependencies": [
-    "@herocn/field",
-    "@herocn/select"
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/select.json"
   ],
   "files": [
     {

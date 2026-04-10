@@ -5,7 +5,7 @@
     "@base-ui/react"
   ],
   "registryDependencies": [
-    "@herocn/separator"
+    "https://herocn.dev/r/separator.json"
   ],
   "files": [
     {

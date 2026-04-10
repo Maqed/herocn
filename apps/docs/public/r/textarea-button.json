@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "textarea-button",
   "registryDependencies": [
-    "@herocn/button",
-    "@herocn/textarea"
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/textarea.json"
   ],
   "files": [
     {

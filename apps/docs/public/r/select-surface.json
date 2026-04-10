@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "select-surface",
   "registryDependencies": [
-    "@herocn/select",
-    "@herocn/surface"
+    "https://herocn.dev/r/select.json",
+    "https://herocn.dev/r/surface.json"
   ],
   "files": [
     {

@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "toggle-group-custom",
   "registryDependencies": [
-    "@herocn/toggle-group",
-    "@herocn/field"
+    "https://herocn.dev/r/toggle-group.json",
+    "https://herocn.dev/r/field.json"
   ],
   "files": [
     {

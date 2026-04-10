@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "tabs-rtl",
   "registryDependencies": [
-    "@herocn/card",
-    "@herocn/tabs"
+    "https://herocn.dev/r/card.json",
+    "https://herocn.dev/r/tabs.json"
   ],
   "files": [
     {

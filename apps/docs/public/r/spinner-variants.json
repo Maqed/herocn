@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "spinner-variants",
   "registryDependencies": [
-    "@herocn/spinner"
+    "https://herocn.dev/r/spinner.json"
   ],
   "files": [
     {

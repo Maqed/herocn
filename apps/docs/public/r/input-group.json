@@ -2,9 +2,9 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "input-group",
   "registryDependencies": [
-    "@herocn/button",
-    "@herocn/input",
-    "@herocn/textarea"
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/input.json",
+    "https://herocn.dev/r/textarea.json"
   ],
   "files": [
     {

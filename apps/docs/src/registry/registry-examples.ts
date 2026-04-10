@@ -1,14 +1,15 @@
 import type { Registry } from "shadcn/schema";
+import { getRegistryItemInstallationAlias } from "@/lib/utils";
 
 export const examples: Registry["items"] = [
   {
     name: "card-demo",
     type: "registry:example",
     registryDependencies: [
-      "@herocn/button",
-      "@herocn/card",
-      "@herocn/input",
-      "@herocn/label",
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("card"),
+      getRegistryItemInstallationAlias("input"),
+      getRegistryItemInstallationAlias("label"),
     ],
     files: [
       {
@@ -20,7 +21,7 @@ export const examples: Registry["items"] = [
   {
     name: "card-variants",
     type: "registry:example",
-    registryDependencies: ["@herocn/card"],
+    registryDependencies: [getRegistryItemInstallationAlias("card")],
     files: [
       {
         path: "examples/card-variants.tsx",
@@ -31,7 +32,7 @@ export const examples: Registry["items"] = [
   {
     name: "card-small",
     type: "registry:example",
-    registryDependencies: ["@herocn/card"],
+    registryDependencies: [getRegistryItemInstallationAlias("card")],
     files: [
       {
         path: "examples/card-small.tsx",
@@ -42,7 +43,11 @@ export const examples: Registry["items"] = [
   {
     name: "card-image",
     type: "registry:example",
-    registryDependencies: ["@herocn/badge", "@herocn/button", "@herocn/card"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("badge"),
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("card"),
+    ],
     files: [
       {
         path: "examples/card-image.tsx",
@@ -54,10 +59,10 @@ export const examples: Registry["items"] = [
     name: "card-rtl",
     type: "registry:example",
     registryDependencies: [
-      "@herocn/button",
-      "@herocn/card",
-      "@herocn/input",
-      "@herocn/label",
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("card"),
+      getRegistryItemInstallationAlias("input"),
+      getRegistryItemInstallationAlias("label"),
     ],
     files: [
       {
@@ -69,7 +74,7 @@ export const examples: Registry["items"] = [
   {
     name: "button-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/button"],
+    registryDependencies: [getRegistryItemInstallationAlias("button")],
     files: [
       {
         path: "examples/button-demo.tsx",
@@ -80,7 +85,7 @@ export const examples: Registry["items"] = [
   {
     name: "button-variants",
     type: "registry:example",
-    registryDependencies: ["@herocn/button"],
+    registryDependencies: [getRegistryItemInstallationAlias("button")],
     files: [
       {
         path: "examples/button-variants.tsx",
@@ -91,7 +96,7 @@ export const examples: Registry["items"] = [
   {
     name: "button-sizes",
     type: "registry:example",
-    registryDependencies: ["@herocn/button"],
+    registryDependencies: [getRegistryItemInstallationAlias("button")],
     files: [
       {
         path: "examples/button-sizes.tsx",
@@ -102,7 +107,7 @@ export const examples: Registry["items"] = [
   {
     name: "button-icons",
     type: "registry:example",
-    registryDependencies: ["@herocn/button"],
+    registryDependencies: [getRegistryItemInstallationAlias("button")],
     files: [
       {
         path: "examples/button-icons.tsx",
@@ -113,7 +118,7 @@ export const examples: Registry["items"] = [
   {
     name: "button-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/button"],
+    registryDependencies: [getRegistryItemInstallationAlias("button")],
     files: [
       {
         path: "examples/button-rtl.tsx",
@@ -124,7 +129,7 @@ export const examples: Registry["items"] = [
   {
     name: "skeleton-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/skeleton"],
+    registryDependencies: [getRegistryItemInstallationAlias("skeleton")],
     files: [
       {
         path: "examples/skeleton-demo.tsx",
@@ -135,7 +140,7 @@ export const examples: Registry["items"] = [
   {
     name: "skeleton-avatar",
     type: "registry:example",
-    registryDependencies: ["@herocn/skeleton"],
+    registryDependencies: [getRegistryItemInstallationAlias("skeleton")],
     files: [
       {
         path: "examples/skeleton-avatar.tsx",
@@ -146,7 +151,10 @@ export const examples: Registry["items"] = [
   {
     name: "skeleton-card",
     type: "registry:example",
-    registryDependencies: ["@herocn/card", "@herocn/skeleton"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("card"),
+      getRegistryItemInstallationAlias("skeleton"),
+    ],
     files: [
       {
         path: "examples/skeleton-card.tsx",
@@ -157,7 +165,7 @@ export const examples: Registry["items"] = [
   {
     name: "skeleton-text",
     type: "registry:example",
-    registryDependencies: ["@herocn/skeleton"],
+    registryDependencies: [getRegistryItemInstallationAlias("skeleton")],
     files: [
       {
         path: "examples/skeleton-text.tsx",
@@ -168,7 +176,7 @@ export const examples: Registry["items"] = [
   {
     name: "skeleton-form",
     type: "registry:example",
-    registryDependencies: ["@herocn/skeleton"],
+    registryDependencies: [getRegistryItemInstallationAlias("skeleton")],
     files: [
       {
         path: "examples/skeleton-form.tsx",
@@ -179,7 +187,7 @@ export const examples: Registry["items"] = [
   {
     name: "skeleton-table",
     type: "registry:example",
-    registryDependencies: ["@herocn/skeleton"],
+    registryDependencies: [getRegistryItemInstallationAlias("skeleton")],
     files: [
       {
         path: "examples/skeleton-table.tsx",
@@ -190,7 +198,7 @@ export const examples: Registry["items"] = [
   {
     name: "skeleton-animation-types",
     type: "registry:example",
-    registryDependencies: ["@herocn/skeleton"],
+    registryDependencies: [getRegistryItemInstallationAlias("skeleton")],
     files: [
       {
         path: "examples/skeleton-animation-types.tsx",
@@ -201,7 +209,7 @@ export const examples: Registry["items"] = [
   {
     name: "skeleton-single-shimmer",
     type: "registry:example",
-    registryDependencies: ["@herocn/skeleton"],
+    registryDependencies: [getRegistryItemInstallationAlias("skeleton")],
     files: [
       {
         path: "examples/skeleton-single-shimmer.tsx",
@@ -212,7 +220,7 @@ export const examples: Registry["items"] = [
   {
     name: "skeleton-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/skeleton"],
+    registryDependencies: [getRegistryItemInstallationAlias("skeleton")],
     files: [
       {
         path: "examples/skeleton-rtl.tsx",
@@ -223,7 +231,7 @@ export const examples: Registry["items"] = [
   {
     name: "badge-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/badge"],
+    registryDependencies: [getRegistryItemInstallationAlias("badge")],
     files: [
       {
         path: "examples/badge-rtl.tsx",
@@ -234,7 +242,10 @@ export const examples: Registry["items"] = [
   {
     name: "input-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/field", "@herocn/input"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("input"),
+    ],
     files: [
       {
         path: "examples/input-rtl.tsx",
@@ -245,7 +256,7 @@ export const examples: Registry["items"] = [
   {
     name: "textarea-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/textarea"],
+    registryDependencies: [getRegistryItemInstallationAlias("textarea")],
     files: [
       {
         path: "examples/textarea-demo.tsx",
@@ -256,7 +267,7 @@ export const examples: Registry["items"] = [
   {
     name: "textarea-variants",
     type: "registry:example",
-    registryDependencies: ["@herocn/textarea"],
+    registryDependencies: [getRegistryItemInstallationAlias("textarea")],
     files: [
       {
         path: "examples/textarea-variants.tsx",
@@ -267,7 +278,7 @@ export const examples: Registry["items"] = [
   {
     name: "textarea-states",
     type: "registry:example",
-    registryDependencies: ["@herocn/textarea"],
+    registryDependencies: [getRegistryItemInstallationAlias("textarea")],
     files: [
       {
         path: "examples/textarea-states.tsx",
@@ -278,7 +289,10 @@ export const examples: Registry["items"] = [
   {
     name: "textarea-field",
     type: "registry:example",
-    registryDependencies: ["@herocn/field", "@herocn/textarea"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("textarea"),
+    ],
     files: [
       {
         path: "examples/textarea-field.tsx",
@@ -289,7 +303,10 @@ export const examples: Registry["items"] = [
   {
     name: "textarea-button",
     type: "registry:example",
-    registryDependencies: ["@herocn/button", "@herocn/textarea"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("textarea"),
+    ],
     files: [
       {
         path: "examples/textarea-button.tsx",
@@ -300,7 +317,10 @@ export const examples: Registry["items"] = [
   {
     name: "textarea-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/field", "@herocn/textarea"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("textarea"),
+    ],
     files: [
       {
         path: "examples/textarea-rtl.tsx",
@@ -312,10 +332,10 @@ export const examples: Registry["items"] = [
     name: "textarea-in-surface",
     type: "registry:example",
     registryDependencies: [
-      "@herocn/button",
-      "@herocn/card",
-      "@herocn/field",
-      "@herocn/textarea",
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("card"),
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("textarea"),
     ],
     files: [
       {
@@ -327,7 +347,7 @@ export const examples: Registry["items"] = [
   {
     name: "avatar-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/avatar"],
+    registryDependencies: [getRegistryItemInstallationAlias("avatar")],
     files: [
       {
         path: "examples/avatar-rtl.tsx",
@@ -339,9 +359,9 @@ export const examples: Registry["items"] = [
     name: "collapsible-rtl",
     type: "registry:example",
     registryDependencies: [
-      "@herocn/button",
-      "@herocn/card",
-      "@herocn/collapsible",
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("card"),
+      getRegistryItemInstallationAlias("collapsible"),
     ],
     files: [
       {
@@ -353,7 +373,10 @@ export const examples: Registry["items"] = [
   {
     name: "dropdown-menu-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/button", "@herocn/dropdown-menu"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("dropdown-menu"),
+    ],
     files: [
       {
         path: "examples/dropdown-menu-rtl.tsx",
@@ -364,7 +387,7 @@ export const examples: Registry["items"] = [
   {
     name: "surface-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/surface"],
+    registryDependencies: [getRegistryItemInstallationAlias("surface")],
     files: [
       {
         path: "examples/surface-rtl.tsx",
@@ -375,7 +398,7 @@ export const examples: Registry["items"] = [
   {
     name: "collapsible-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/collapsible"],
+    registryDependencies: [getRegistryItemInstallationAlias("collapsible")],
     files: [
       {
         path: "examples/collapsible-demo.tsx",
@@ -386,7 +409,7 @@ export const examples: Registry["items"] = [
   {
     name: "collapsible-basic",
     type: "registry:example",
-    registryDependencies: ["@herocn/collapsible"],
+    registryDependencies: [getRegistryItemInstallationAlias("collapsible")],
     files: [
       {
         path: "examples/collapsible-basic.tsx",
@@ -397,7 +420,7 @@ export const examples: Registry["items"] = [
   {
     name: "collapsible-settings",
     type: "registry:example",
-    registryDependencies: ["@herocn/collapsible"],
+    registryDependencies: [getRegistryItemInstallationAlias("collapsible")],
     files: [
       {
         path: "examples/collapsible-settings.tsx",
@@ -408,7 +431,7 @@ export const examples: Registry["items"] = [
   {
     name: "collapsible-file-tree",
     type: "registry:example",
-    registryDependencies: ["@herocn/collapsible"],
+    registryDependencies: [getRegistryItemInstallationAlias("collapsible")],
     files: [
       {
         path: "examples/collapsible-file-tree.tsx",
@@ -419,7 +442,10 @@ export const examples: Registry["items"] = [
   {
     name: "dropdown-menu-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/button", "@herocn/dropdown-menu"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("dropdown-menu"),
+    ],
     files: [
       {
         path: "examples/dropdown-menu-demo.tsx",
@@ -430,7 +456,10 @@ export const examples: Registry["items"] = [
   {
     name: "dropdown-menu-basic",
     type: "registry:example",
-    registryDependencies: ["@herocn/button", "@herocn/dropdown-menu"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("dropdown-menu"),
+    ],
     files: [
       {
         path: "examples/dropdown-menu-basic.tsx",
@@ -441,7 +470,10 @@ export const examples: Registry["items"] = [
   {
     name: "dropdown-menu-submenu",
     type: "registry:example",
-    registryDependencies: ["@herocn/button", "@herocn/dropdown-menu"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("dropdown-menu"),
+    ],
     files: [
       {
         path: "examples/dropdown-menu-submenu.tsx",
@@ -452,7 +484,10 @@ export const examples: Registry["items"] = [
   {
     name: "dropdown-menu-shortcuts",
     type: "registry:example",
-    registryDependencies: ["@herocn/button", "@herocn/dropdown-menu"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("dropdown-menu"),
+    ],
     files: [
       {
         path: "examples/dropdown-menu-shortcuts.tsx",
@@ -463,7 +498,10 @@ export const examples: Registry["items"] = [
   {
     name: "dropdown-menu-icons",
     type: "registry:example",
-    registryDependencies: ["@herocn/button", "@herocn/dropdown-menu"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("dropdown-menu"),
+    ],
     files: [
       {
         path: "examples/dropdown-menu-icons.tsx",
@@ -474,7 +512,10 @@ export const examples: Registry["items"] = [
   {
     name: "dropdown-menu-checkboxes",
     type: "registry:example",
-    registryDependencies: ["@herocn/button", "@herocn/dropdown-menu"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("dropdown-menu"),
+    ],
     files: [
       {
         path: "examples/dropdown-menu-checkboxes.tsx",
@@ -485,7 +526,10 @@ export const examples: Registry["items"] = [
   {
     name: "dropdown-menu-checkboxes-icons",
     type: "registry:example",
-    registryDependencies: ["@herocn/button", "@herocn/dropdown-menu"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("dropdown-menu"),
+    ],
     files: [
       {
         path: "examples/dropdown-menu-checkboxes-icons.tsx",
@@ -496,7 +540,10 @@ export const examples: Registry["items"] = [
   {
     name: "dropdown-menu-radio-group",
     type: "registry:example",
-    registryDependencies: ["@herocn/button", "@herocn/dropdown-menu"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("dropdown-menu"),
+    ],
     files: [
       {
         path: "examples/dropdown-menu-radio-group.tsx",
@@ -507,7 +554,10 @@ export const examples: Registry["items"] = [
   {
     name: "dropdown-menu-radio-icons",
     type: "registry:example",
-    registryDependencies: ["@herocn/button", "@herocn/dropdown-menu"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("dropdown-menu"),
+    ],
     files: [
       {
         path: "examples/dropdown-menu-radio-icons.tsx",
@@ -518,7 +568,10 @@ export const examples: Registry["items"] = [
   {
     name: "dropdown-menu-destructive",
     type: "registry:example",
-    registryDependencies: ["@herocn/button", "@herocn/dropdown-menu"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("dropdown-menu"),
+    ],
     files: [
       {
         path: "examples/dropdown-menu-destructive.tsx",
@@ -530,9 +583,9 @@ export const examples: Registry["items"] = [
     name: "dropdown-menu-avatar",
     type: "registry:example",
     registryDependencies: [
-      "@herocn/avatar",
-      "@herocn/button",
-      "@herocn/dropdown-menu",
+      getRegistryItemInstallationAlias("avatar"),
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("dropdown-menu"),
     ],
     files: [
       {
@@ -544,7 +597,10 @@ export const examples: Registry["items"] = [
   {
     name: "dropdown-menu-complex",
     type: "registry:example",
-    registryDependencies: ["@herocn/button", "@herocn/dropdown-menu"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("dropdown-menu"),
+    ],
     files: [
       {
         path: "examples/dropdown-menu-complex.tsx",
@@ -555,7 +611,7 @@ export const examples: Registry["items"] = [
   {
     name: "avatar-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/avatar"],
+    registryDependencies: [getRegistryItemInstallationAlias("avatar")],
     files: [
       {
         path: "examples/avatar-demo.tsx",
@@ -566,7 +622,7 @@ export const examples: Registry["items"] = [
   {
     name: "avatar-basic",
     type: "registry:example",
-    registryDependencies: ["@herocn/avatar"],
+    registryDependencies: [getRegistryItemInstallationAlias("avatar")],
     files: [
       {
         path: "examples/avatar-basic.tsx",
@@ -577,7 +633,7 @@ export const examples: Registry["items"] = [
   {
     name: "avatar-badge",
     type: "registry:example",
-    registryDependencies: ["@herocn/avatar"],
+    registryDependencies: [getRegistryItemInstallationAlias("avatar")],
     files: [
       {
         path: "examples/avatar-badge.tsx",
@@ -588,7 +644,7 @@ export const examples: Registry["items"] = [
   {
     name: "avatar-badge-icon",
     type: "registry:example",
-    registryDependencies: ["@herocn/avatar"],
+    registryDependencies: [getRegistryItemInstallationAlias("avatar")],
     files: [
       {
         path: "examples/avatar-badge-icon.tsx",
@@ -599,7 +655,7 @@ export const examples: Registry["items"] = [
   {
     name: "avatar-group",
     type: "registry:example",
-    registryDependencies: ["@herocn/avatar"],
+    registryDependencies: [getRegistryItemInstallationAlias("avatar")],
     files: [
       {
         path: "examples/avatar-group.tsx",
@@ -610,7 +666,7 @@ export const examples: Registry["items"] = [
   {
     name: "avatar-group-count",
     type: "registry:example",
-    registryDependencies: ["@herocn/avatar"],
+    registryDependencies: [getRegistryItemInstallationAlias("avatar")],
     files: [
       {
         path: "examples/avatar-group-count.tsx",
@@ -621,7 +677,7 @@ export const examples: Registry["items"] = [
   {
     name: "avatar-group-count-icon",
     type: "registry:example",
-    registryDependencies: ["@herocn/avatar"],
+    registryDependencies: [getRegistryItemInstallationAlias("avatar")],
     files: [
       {
         path: "examples/avatar-group-count-icon.tsx",
@@ -632,7 +688,7 @@ export const examples: Registry["items"] = [
   {
     name: "avatar-size",
     type: "registry:example",
-    registryDependencies: ["@herocn/avatar"],
+    registryDependencies: [getRegistryItemInstallationAlias("avatar")],
     files: [
       {
         path: "examples/avatar-size.tsx",
@@ -644,9 +700,9 @@ export const examples: Registry["items"] = [
     name: "avatar-dropdown",
     type: "registry:example",
     registryDependencies: [
-      "@herocn/avatar",
-      "@herocn/button",
-      "@herocn/dropdown-menu",
+      getRegistryItemInstallationAlias("avatar"),
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("dropdown-menu"),
     ],
     files: [
       {
@@ -658,7 +714,7 @@ export const examples: Registry["items"] = [
   {
     name: "badge-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/badge"],
+    registryDependencies: [getRegistryItemInstallationAlias("badge")],
     files: [
       {
         path: "examples/badge-demo.tsx",
@@ -669,7 +725,7 @@ export const examples: Registry["items"] = [
   {
     name: "badge-variants",
     type: "registry:example",
-    registryDependencies: ["@herocn/badge"],
+    registryDependencies: [getRegistryItemInstallationAlias("badge")],
     files: [
       {
         path: "examples/badge-variants.tsx",
@@ -680,7 +736,7 @@ export const examples: Registry["items"] = [
   {
     name: "badge-sizes",
     type: "registry:example",
-    registryDependencies: ["@herocn/badge"],
+    registryDependencies: [getRegistryItemInstallationAlias("badge")],
     files: [
       {
         path: "examples/badge-sizes.tsx",
@@ -691,7 +747,7 @@ export const examples: Registry["items"] = [
   {
     name: "badge-icon",
     type: "registry:example",
-    registryDependencies: ["@herocn/badge"],
+    registryDependencies: [getRegistryItemInstallationAlias("badge")],
     files: [
       {
         path: "examples/badge-icon.tsx",
@@ -702,7 +758,7 @@ export const examples: Registry["items"] = [
   {
     name: "badge-colors",
     type: "registry:example",
-    registryDependencies: ["@herocn/badge"],
+    registryDependencies: [getRegistryItemInstallationAlias("badge")],
     files: [
       {
         path: "examples/badge-colors.tsx",
@@ -713,7 +769,7 @@ export const examples: Registry["items"] = [
   {
     name: "surface-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/surface"],
+    registryDependencies: [getRegistryItemInstallationAlias("surface")],
     files: [
       {
         path: "examples/surface-demo.tsx",
@@ -724,7 +780,7 @@ export const examples: Registry["items"] = [
   {
     name: "surface-variants",
     type: "registry:example",
-    registryDependencies: ["@herocn/surface"],
+    registryDependencies: [getRegistryItemInstallationAlias("surface")],
     files: [
       {
         path: "examples/surface-variants.tsx",
@@ -735,7 +791,7 @@ export const examples: Registry["items"] = [
   {
     name: "input-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/input"],
+    registryDependencies: [getRegistryItemInstallationAlias("input")],
     files: [
       {
         path: "examples/input-demo.tsx",
@@ -746,7 +802,7 @@ export const examples: Registry["items"] = [
   {
     name: "input-variants",
     type: "registry:example",
-    registryDependencies: ["@herocn/input"],
+    registryDependencies: [getRegistryItemInstallationAlias("input")],
     files: [
       {
         path: "examples/input-variants.tsx",
@@ -757,7 +813,7 @@ export const examples: Registry["items"] = [
   {
     name: "input-states",
     type: "registry:example",
-    registryDependencies: ["@herocn/input"],
+    registryDependencies: [getRegistryItemInstallationAlias("input")],
     files: [
       {
         path: "examples/input-states.tsx",
@@ -768,7 +824,10 @@ export const examples: Registry["items"] = [
   {
     name: "input-field",
     type: "registry:example",
-    registryDependencies: ["@herocn/field", "@herocn/input"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("input"),
+    ],
     files: [
       {
         path: "examples/input-field.tsx",
@@ -779,7 +838,11 @@ export const examples: Registry["items"] = [
   {
     name: "input-fieldgroup",
     type: "registry:example",
-    registryDependencies: ["@herocn/button", "@herocn/field", "@herocn/input"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("input"),
+    ],
     files: [
       {
         path: "examples/input-fieldgroup.tsx",
@@ -790,7 +853,11 @@ export const examples: Registry["items"] = [
   {
     name: "input-badge",
     type: "registry:example",
-    registryDependencies: ["@herocn/badge", "@herocn/field", "@herocn/input"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("badge"),
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("input"),
+    ],
     files: [
       {
         path: "examples/input-badge.tsx",
@@ -802,9 +869,9 @@ export const examples: Registry["items"] = [
     name: "input-input-group",
     type: "registry:example",
     registryDependencies: [
-      "@herocn/field",
-      "@herocn/input",
-      "@herocn/input-group",
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("input"),
+      getRegistryItemInstallationAlias("input-group"),
     ],
     files: [
       {
@@ -817,10 +884,10 @@ export const examples: Registry["items"] = [
     name: "input-button-group",
     type: "registry:example",
     registryDependencies: [
-      "@herocn/button",
-      "@herocn/button-group",
-      "@herocn/field",
-      "@herocn/input",
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("button-group"),
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("input"),
     ],
     files: [
       {
@@ -833,9 +900,9 @@ export const examples: Registry["items"] = [
     name: "button-group-demo",
     type: "registry:example",
     registryDependencies: [
-      "@herocn/button",
-      "@herocn/button-group",
-      "@herocn/dropdown-menu",
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("button-group"),
+      getRegistryItemInstallationAlias("dropdown-menu"),
     ],
     files: [
       {
@@ -847,7 +914,10 @@ export const examples: Registry["items"] = [
   {
     name: "button-group-orientation",
     type: "registry:example",
-    registryDependencies: ["@herocn/button", "@herocn/button-group"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("button-group"),
+    ],
     files: [
       {
         path: "examples/button-group-orientation.tsx",
@@ -858,7 +928,10 @@ export const examples: Registry["items"] = [
   {
     name: "button-group-size",
     type: "registry:example",
-    registryDependencies: ["@herocn/button", "@herocn/button-group"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("button-group"),
+    ],
     files: [
       {
         path: "examples/button-group-size.tsx",
@@ -869,7 +942,10 @@ export const examples: Registry["items"] = [
   {
     name: "button-group-separator",
     type: "registry:example",
-    registryDependencies: ["@herocn/button", "@herocn/button-group"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("button-group"),
+    ],
     files: [
       {
         path: "examples/button-group-separator.tsx",
@@ -880,7 +956,10 @@ export const examples: Registry["items"] = [
   {
     name: "button-group-split",
     type: "registry:example",
-    registryDependencies: ["@herocn/button", "@herocn/button-group"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("button-group"),
+    ],
     files: [
       {
         path: "examples/button-group-split.tsx",
@@ -892,9 +971,9 @@ export const examples: Registry["items"] = [
     name: "button-group-input",
     type: "registry:example",
     registryDependencies: [
-      "@herocn/button",
-      "@herocn/button-group",
-      "@herocn/input",
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("button-group"),
+      getRegistryItemInstallationAlias("input"),
     ],
     files: [
       {
@@ -907,10 +986,10 @@ export const examples: Registry["items"] = [
     name: "button-group-input-group",
     type: "registry:example",
     registryDependencies: [
-      "@herocn/button",
-      "@herocn/button-group",
-      "@herocn/input-group",
-      "@herocn/tooltip",
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("button-group"),
+      getRegistryItemInstallationAlias("input-group"),
+      getRegistryItemInstallationAlias("tooltip"),
     ],
     files: [
       {
@@ -923,9 +1002,9 @@ export const examples: Registry["items"] = [
     name: "button-group-dropdown",
     type: "registry:example",
     registryDependencies: [
-      "@herocn/button",
-      "@herocn/button-group",
-      "@herocn/dropdown-menu",
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("button-group"),
+      getRegistryItemInstallationAlias("dropdown-menu"),
     ],
     files: [
       {
@@ -938,10 +1017,10 @@ export const examples: Registry["items"] = [
     name: "button-group-select",
     type: "registry:example",
     registryDependencies: [
-      "@herocn/button",
-      "@herocn/button-group",
-      "@herocn/input",
-      "@herocn/select",
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("button-group"),
+      getRegistryItemInstallationAlias("input"),
+      getRegistryItemInstallationAlias("select"),
     ],
     files: [
       {
@@ -954,11 +1033,11 @@ export const examples: Registry["items"] = [
     name: "button-group-popover",
     type: "registry:example",
     registryDependencies: [
-      "@herocn/button",
-      "@herocn/button-group",
-      "@herocn/field",
-      "@herocn/popover",
-      "@herocn/textarea",
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("button-group"),
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("popover"),
+      getRegistryItemInstallationAlias("textarea"),
     ],
     files: [
       {
@@ -971,9 +1050,9 @@ export const examples: Registry["items"] = [
     name: "button-group-rtl",
     type: "registry:example",
     registryDependencies: [
-      "@herocn/button",
-      "@herocn/button-group",
-      "@herocn/dropdown-menu",
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("button-group"),
+      getRegistryItemInstallationAlias("dropdown-menu"),
     ],
     files: [
       {
@@ -986,9 +1065,9 @@ export const examples: Registry["items"] = [
     name: "button-group-text",
     type: "registry:example",
     registryDependencies: [
-      "@herocn/button-group",
-      "@herocn/input",
-      "@herocn/label",
+      getRegistryItemInstallationAlias("button-group"),
+      getRegistryItemInstallationAlias("input"),
+      getRegistryItemInstallationAlias("label"),
     ],
     files: [
       {
@@ -1000,7 +1079,10 @@ export const examples: Registry["items"] = [
   {
     name: "tabs-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/card", "@herocn/tabs"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("card"),
+      getRegistryItemInstallationAlias("tabs"),
+    ],
     files: [
       {
         path: "examples/tabs-demo.tsx",
@@ -1011,7 +1093,7 @@ export const examples: Registry["items"] = [
   {
     name: "tabs-line",
     type: "registry:example",
-    registryDependencies: ["@herocn/tabs"],
+    registryDependencies: [getRegistryItemInstallationAlias("tabs")],
     files: [
       {
         path: "examples/tabs-line.tsx",
@@ -1022,7 +1104,7 @@ export const examples: Registry["items"] = [
   {
     name: "tabs-vertical",
     type: "registry:example",
-    registryDependencies: ["@herocn/tabs"],
+    registryDependencies: [getRegistryItemInstallationAlias("tabs")],
     files: [
       {
         path: "examples/tabs-vertical.tsx",
@@ -1033,7 +1115,7 @@ export const examples: Registry["items"] = [
   {
     name: "tabs-vertical-line",
     type: "registry:example",
-    registryDependencies: ["@herocn/tabs"],
+    registryDependencies: [getRegistryItemInstallationAlias("tabs")],
     files: [
       {
         path: "examples/tabs-vertical-line.tsx",
@@ -1044,7 +1126,7 @@ export const examples: Registry["items"] = [
   {
     name: "tabs-disabled",
     type: "registry:example",
-    registryDependencies: ["@herocn/tabs"],
+    registryDependencies: [getRegistryItemInstallationAlias("tabs")],
     files: [
       {
         path: "examples/tabs-disabled.tsx",
@@ -1055,7 +1137,7 @@ export const examples: Registry["items"] = [
   {
     name: "tabs-icons",
     type: "registry:example",
-    registryDependencies: ["@herocn/tabs"],
+    registryDependencies: [getRegistryItemInstallationAlias("tabs")],
     files: [
       {
         path: "examples/tabs-icons.tsx",
@@ -1066,7 +1148,10 @@ export const examples: Registry["items"] = [
   {
     name: "tabs-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/card", "@herocn/tabs"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("card"),
+      getRegistryItemInstallationAlias("tabs"),
+    ],
     files: [
       {
         path: "examples/tabs-rtl.tsx",
@@ -1077,7 +1162,7 @@ export const examples: Registry["items"] = [
   {
     name: "select-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/select"],
+    registryDependencies: [getRegistryItemInstallationAlias("select")],
     files: [
       {
         path: "examples/select-demo.tsx",
@@ -1088,7 +1173,7 @@ export const examples: Registry["items"] = [
   {
     name: "select-variants",
     type: "registry:example",
-    registryDependencies: ["@herocn/select"],
+    registryDependencies: [getRegistryItemInstallationAlias("select")],
     files: [
       {
         path: "examples/select-variants.tsx",
@@ -1099,7 +1184,10 @@ export const examples: Registry["items"] = [
   {
     name: "select-surface",
     type: "registry:example",
-    registryDependencies: ["@herocn/select", "@herocn/surface"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("select"),
+      getRegistryItemInstallationAlias("surface"),
+    ],
     files: [
       {
         path: "examples/select-surface.tsx",
@@ -1110,7 +1198,7 @@ export const examples: Registry["items"] = [
   {
     name: "select-groups",
     type: "registry:example",
-    registryDependencies: ["@herocn/select"],
+    registryDependencies: [getRegistryItemInstallationAlias("select")],
     files: [
       {
         path: "examples/select-groups.tsx",
@@ -1121,7 +1209,7 @@ export const examples: Registry["items"] = [
   {
     name: "select-multiple",
     type: "registry:example",
-    registryDependencies: ["@herocn/select"],
+    registryDependencies: [getRegistryItemInstallationAlias("select")],
     files: [
       {
         path: "examples/select-multiple.tsx",
@@ -1132,7 +1220,7 @@ export const examples: Registry["items"] = [
   {
     name: "select-scrollable",
     type: "registry:example",
-    registryDependencies: ["@herocn/select"],
+    registryDependencies: [getRegistryItemInstallationAlias("select")],
     files: [
       {
         path: "examples/select-scrollable.tsx",
@@ -1143,7 +1231,7 @@ export const examples: Registry["items"] = [
   {
     name: "select-disabled",
     type: "registry:example",
-    registryDependencies: ["@herocn/select"],
+    registryDependencies: [getRegistryItemInstallationAlias("select")],
     files: [
       {
         path: "examples/select-disabled.tsx",
@@ -1154,7 +1242,10 @@ export const examples: Registry["items"] = [
   {
     name: "select-invalid",
     type: "registry:example",
-    registryDependencies: ["@herocn/field", "@herocn/select"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("select"),
+    ],
     files: [
       {
         path: "examples/select-invalid.tsx",
@@ -1165,7 +1256,7 @@ export const examples: Registry["items"] = [
   {
     name: "select-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/select"],
+    registryDependencies: [getRegistryItemInstallationAlias("select")],
     files: [
       {
         path: "examples/select-rtl.tsx",
@@ -1176,7 +1267,7 @@ export const examples: Registry["items"] = [
   {
     name: "separator-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/separator"],
+    registryDependencies: [getRegistryItemInstallationAlias("separator")],
     files: [
       {
         path: "examples/separator-demo.tsx",
@@ -1187,7 +1278,7 @@ export const examples: Registry["items"] = [
   {
     name: "separator-vertical",
     type: "registry:example",
-    registryDependencies: ["@herocn/separator"],
+    registryDependencies: [getRegistryItemInstallationAlias("separator")],
     files: [
       {
         path: "examples/separator-vertical.tsx",
@@ -1198,7 +1289,7 @@ export const examples: Registry["items"] = [
   {
     name: "separator-menu",
     type: "registry:example",
-    registryDependencies: ["@herocn/separator"],
+    registryDependencies: [getRegistryItemInstallationAlias("separator")],
     files: [
       {
         path: "examples/separator-menu.tsx",
@@ -1209,7 +1300,7 @@ export const examples: Registry["items"] = [
   {
     name: "separator-list",
     type: "registry:example",
-    registryDependencies: ["@herocn/separator"],
+    registryDependencies: [getRegistryItemInstallationAlias("separator")],
     files: [
       {
         path: "examples/separator-list.tsx",
@@ -1220,7 +1311,10 @@ export const examples: Registry["items"] = [
   {
     name: "separator-surface",
     type: "registry:example",
-    registryDependencies: ["@herocn/separator", "@herocn/surface"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("separator"),
+      getRegistryItemInstallationAlias("surface"),
+    ],
     files: [
       {
         path: "examples/separator-surface.tsx",
@@ -1231,7 +1325,7 @@ export const examples: Registry["items"] = [
   {
     name: "separator-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/separator"],
+    registryDependencies: [getRegistryItemInstallationAlias("separator")],
     files: [
       {
         path: "examples/separator-rtl.tsx",
@@ -1243,10 +1337,10 @@ export const examples: Registry["items"] = [
     name: "popover-demo",
     type: "registry:example",
     registryDependencies: [
-      "@herocn/button",
-      "@herocn/input",
-      "@herocn/label",
-      "@herocn/popover",
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("input"),
+      getRegistryItemInstallationAlias("label"),
+      getRegistryItemInstallationAlias("popover"),
     ],
     files: [
       {
@@ -1258,7 +1352,10 @@ export const examples: Registry["items"] = [
   {
     name: "popover-basic",
     type: "registry:example",
-    registryDependencies: ["@herocn/button", "@herocn/popover"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("popover"),
+    ],
     files: [
       {
         path: "examples/popover-basic.tsx",
@@ -1269,7 +1366,10 @@ export const examples: Registry["items"] = [
   {
     name: "popover-align",
     type: "registry:example",
-    registryDependencies: ["@herocn/button", "@herocn/popover"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("popover"),
+    ],
     files: [
       {
         path: "examples/popover-align.tsx",
@@ -1281,10 +1381,10 @@ export const examples: Registry["items"] = [
     name: "popover-form",
     type: "registry:example",
     registryDependencies: [
-      "@herocn/button",
-      "@herocn/field",
-      "@herocn/input",
-      "@herocn/popover",
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("input"),
+      getRegistryItemInstallationAlias("popover"),
     ],
     files: [
       {
@@ -1296,7 +1396,10 @@ export const examples: Registry["items"] = [
   {
     name: "popover-with-arrow",
     type: "registry:example",
-    registryDependencies: ["@herocn/button", "@herocn/popover"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("popover"),
+    ],
     files: [
       {
         path: "examples/popover-with-arrow.tsx",
@@ -1307,7 +1410,10 @@ export const examples: Registry["items"] = [
   {
     name: "popover-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/button", "@herocn/popover"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("popover"),
+    ],
     files: [
       {
         path: "examples/popover-rtl.tsx",
@@ -1318,7 +1424,7 @@ export const examples: Registry["items"] = [
   {
     name: "input-group-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/input-group"],
+    registryDependencies: [getRegistryItemInstallationAlias("input-group")],
     files: [
       {
         path: "examples/input-group-demo.tsx",
@@ -1329,7 +1435,7 @@ export const examples: Registry["items"] = [
   {
     name: "input-group-variants",
     type: "registry:example",
-    registryDependencies: ["@herocn/input-group"],
+    registryDependencies: [getRegistryItemInstallationAlias("input-group")],
     files: [
       {
         path: "examples/input-group-variants.tsx",
@@ -1340,7 +1446,10 @@ export const examples: Registry["items"] = [
   {
     name: "input-group-invalid",
     type: "registry:example",
-    registryDependencies: ["@herocn/field", "@herocn/input-group"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("input-group"),
+    ],
     files: [
       {
         path: "examples/input-group-invalid.tsx",
@@ -1351,7 +1460,10 @@ export const examples: Registry["items"] = [
   {
     name: "input-group-disabled",
     type: "registry:example",
-    registryDependencies: ["@herocn/field", "@herocn/input-group"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("input-group"),
+    ],
     files: [
       {
         path: "examples/input-group-disabled.tsx",
@@ -1362,7 +1474,10 @@ export const examples: Registry["items"] = [
   {
     name: "input-group-inline-start",
     type: "registry:example",
-    registryDependencies: ["@herocn/field", "@herocn/input-group"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("input-group"),
+    ],
     files: [
       {
         path: "examples/input-group-inline-start.tsx",
@@ -1373,7 +1488,10 @@ export const examples: Registry["items"] = [
   {
     name: "input-group-inline-end",
     type: "registry:example",
-    registryDependencies: ["@herocn/field", "@herocn/input-group"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("input-group"),
+    ],
     files: [
       {
         path: "examples/input-group-inline-end.tsx",
@@ -1384,7 +1502,10 @@ export const examples: Registry["items"] = [
   {
     name: "input-group-block-start",
     type: "registry:example",
-    registryDependencies: ["@herocn/field", "@herocn/input-group"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("input-group"),
+    ],
     files: [
       {
         path: "examples/input-group-block-start.tsx",
@@ -1395,7 +1516,10 @@ export const examples: Registry["items"] = [
   {
     name: "input-group-block-end",
     type: "registry:example",
-    registryDependencies: ["@herocn/field", "@herocn/input-group"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("input-group"),
+    ],
     files: [
       {
         path: "examples/input-group-block-end.tsx",
@@ -1406,7 +1530,7 @@ export const examples: Registry["items"] = [
   {
     name: "input-group-icon",
     type: "registry:example",
-    registryDependencies: ["@herocn/input-group"],
+    registryDependencies: [getRegistryItemInstallationAlias("input-group")],
     files: [
       {
         path: "examples/input-group-icon.tsx",
@@ -1417,7 +1541,7 @@ export const examples: Registry["items"] = [
   {
     name: "input-group-text",
     type: "registry:example",
-    registryDependencies: ["@herocn/input-group"],
+    registryDependencies: [getRegistryItemInstallationAlias("input-group")],
     files: [
       {
         path: "examples/input-group-text.tsx",
@@ -1428,7 +1552,7 @@ export const examples: Registry["items"] = [
   {
     name: "input-group-button",
     type: "registry:example",
-    registryDependencies: ["@herocn/input-group"],
+    registryDependencies: [getRegistryItemInstallationAlias("input-group")],
     files: [
       {
         path: "examples/input-group-button.tsx",
@@ -1439,7 +1563,10 @@ export const examples: Registry["items"] = [
   {
     name: "input-group-spinner",
     type: "registry:example",
-    registryDependencies: ["@herocn/input-group", "@herocn/spinner"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("input-group"),
+      getRegistryItemInstallationAlias("spinner"),
+    ],
     files: [
       {
         path: "examples/input-group-spinner.tsx",
@@ -1450,7 +1577,7 @@ export const examples: Registry["items"] = [
   {
     name: "input-group-textarea",
     type: "registry:example",
-    registryDependencies: ["@herocn/input-group"],
+    registryDependencies: [getRegistryItemInstallationAlias("input-group")],
     files: [
       {
         path: "examples/input-group-textarea.tsx",
@@ -1461,7 +1588,10 @@ export const examples: Registry["items"] = [
   {
     name: "input-group-dropdown",
     type: "registry:example",
-    registryDependencies: ["@herocn/dropdown-menu", "@herocn/input-group"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("dropdown-menu"),
+      getRegistryItemInstallationAlias("input-group"),
+    ],
     files: [
       {
         path: "examples/input-group-dropdown.tsx",
@@ -1473,9 +1603,9 @@ export const examples: Registry["items"] = [
     name: "input-group-rtl",
     type: "registry:example",
     registryDependencies: [
-      "@herocn/field",
-      "@herocn/input-group",
-      "@herocn/spinner",
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("input-group"),
+      getRegistryItemInstallationAlias("spinner"),
     ],
     files: [
       {
@@ -1487,7 +1617,10 @@ export const examples: Registry["items"] = [
   {
     name: "input-group-in-surface",
     type: "registry:example",
-    registryDependencies: ["@herocn/card", "@herocn/input-group"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("card"),
+      getRegistryItemInstallationAlias("input-group"),
+    ],
     files: [
       {
         path: "examples/input-group-in-surface.tsx",
@@ -1498,7 +1631,7 @@ export const examples: Registry["items"] = [
   {
     name: "toggle-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/toggle"],
+    registryDependencies: [getRegistryItemInstallationAlias("toggle")],
     files: [
       {
         path: "examples/toggle-demo.tsx",
@@ -1509,7 +1642,7 @@ export const examples: Registry["items"] = [
   {
     name: "toggle-ghost",
     type: "registry:example",
-    registryDependencies: ["@herocn/toggle"],
+    registryDependencies: [getRegistryItemInstallationAlias("toggle")],
     files: [
       {
         path: "examples/toggle-ghost.tsx",
@@ -1520,7 +1653,7 @@ export const examples: Registry["items"] = [
   {
     name: "toggle-sizes",
     type: "registry:example",
-    registryDependencies: ["@herocn/toggle"],
+    registryDependencies: [getRegistryItemInstallationAlias("toggle")],
     files: [
       {
         path: "examples/toggle-sizes.tsx",
@@ -1531,7 +1664,7 @@ export const examples: Registry["items"] = [
   {
     name: "toggle-disabled",
     type: "registry:example",
-    registryDependencies: ["@herocn/toggle"],
+    registryDependencies: [getRegistryItemInstallationAlias("toggle")],
     files: [
       {
         path: "examples/toggle-disabled.tsx",
@@ -1542,7 +1675,7 @@ export const examples: Registry["items"] = [
   {
     name: "toggle-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/toggle"],
+    registryDependencies: [getRegistryItemInstallationAlias("toggle")],
     files: [
       {
         path: "examples/toggle-rtl.tsx",
@@ -1553,7 +1686,7 @@ export const examples: Registry["items"] = [
   {
     name: "toggle-group-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/toggle-group"],
+    registryDependencies: [getRegistryItemInstallationAlias("toggle-group")],
     files: [
       {
         path: "examples/toggle-group-demo.tsx",
@@ -1564,7 +1697,7 @@ export const examples: Registry["items"] = [
   {
     name: "toggle-group-sizes",
     type: "registry:example",
-    registryDependencies: ["@herocn/toggle-group"],
+    registryDependencies: [getRegistryItemInstallationAlias("toggle-group")],
     files: [
       {
         path: "examples/toggle-group-sizes.tsx",
@@ -1575,7 +1708,7 @@ export const examples: Registry["items"] = [
   {
     name: "toggle-group-spacing",
     type: "registry:example",
-    registryDependencies: ["@herocn/toggle-group"],
+    registryDependencies: [getRegistryItemInstallationAlias("toggle-group")],
     files: [
       {
         path: "examples/toggle-group-spacing.tsx",
@@ -1586,7 +1719,7 @@ export const examples: Registry["items"] = [
   {
     name: "toggle-group-vertical",
     type: "registry:example",
-    registryDependencies: ["@herocn/toggle-group"],
+    registryDependencies: [getRegistryItemInstallationAlias("toggle-group")],
     files: [
       {
         path: "examples/toggle-group-vertical.tsx",
@@ -1597,7 +1730,7 @@ export const examples: Registry["items"] = [
   {
     name: "toggle-group-disabled",
     type: "registry:example",
-    registryDependencies: ["@herocn/toggle-group"],
+    registryDependencies: [getRegistryItemInstallationAlias("toggle-group")],
     files: [
       {
         path: "examples/toggle-group-disabled.tsx",
@@ -1608,7 +1741,10 @@ export const examples: Registry["items"] = [
   {
     name: "toggle-group-custom",
     type: "registry:example",
-    registryDependencies: ["@herocn/toggle-group", "@herocn/field"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("toggle-group"),
+      getRegistryItemInstallationAlias("field"),
+    ],
     files: [
       {
         path: "examples/toggle-group-custom.tsx",
@@ -1619,7 +1755,7 @@ export const examples: Registry["items"] = [
   {
     name: "toggle-group-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/toggle-group"],
+    registryDependencies: [getRegistryItemInstallationAlias("toggle-group")],
     files: [
       {
         path: "examples/toggle-group-rtl.tsx",
@@ -1630,7 +1766,10 @@ export const examples: Registry["items"] = [
   {
     name: "switch-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/label", "@herocn/switch"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("label"),
+      getRegistryItemInstallationAlias("switch"),
+    ],
     files: [
       {
         path: "examples/switch-demo.tsx",
@@ -1641,7 +1780,10 @@ export const examples: Registry["items"] = [
   {
     name: "switch-description",
     type: "registry:example",
-    registryDependencies: ["@herocn/field", "@herocn/switch"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("switch"),
+    ],
     files: [
       {
         path: "examples/switch-description.tsx",
@@ -1652,7 +1794,10 @@ export const examples: Registry["items"] = [
   {
     name: "switch-choice-card",
     type: "registry:example",
-    registryDependencies: ["@herocn/field", "@herocn/switch"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("switch"),
+    ],
     files: [
       {
         path: "examples/switch-choice-card.tsx",
@@ -1663,7 +1808,10 @@ export const examples: Registry["items"] = [
   {
     name: "switch-disabled",
     type: "registry:example",
-    registryDependencies: ["@herocn/field", "@herocn/switch"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("switch"),
+    ],
     files: [
       {
         path: "examples/switch-disabled.tsx",
@@ -1674,7 +1822,10 @@ export const examples: Registry["items"] = [
   {
     name: "switch-invalid",
     type: "registry:example",
-    registryDependencies: ["@herocn/field", "@herocn/switch"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("switch"),
+    ],
     files: [
       {
         path: "examples/switch-invalid.tsx",
@@ -1685,7 +1836,10 @@ export const examples: Registry["items"] = [
   {
     name: "switch-sizes",
     type: "registry:example",
-    registryDependencies: ["@herocn/field", "@herocn/switch"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("switch"),
+    ],
     files: [
       {
         path: "examples/switch-sizes.tsx",
@@ -1696,7 +1850,10 @@ export const examples: Registry["items"] = [
   {
     name: "switch-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/field", "@herocn/switch"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("switch"),
+    ],
     files: [
       {
         path: "examples/switch-rtl.tsx",
@@ -1707,7 +1864,7 @@ export const examples: Registry["items"] = [
   {
     name: "spinner-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/spinner"],
+    registryDependencies: [getRegistryItemInstallationAlias("spinner")],
     files: [
       {
         path: "examples/spinner-demo.tsx",
@@ -1718,7 +1875,7 @@ export const examples: Registry["items"] = [
   {
     name: "spinner-variants",
     type: "registry:example",
-    registryDependencies: ["@herocn/spinner"],
+    registryDependencies: [getRegistryItemInstallationAlias("spinner")],
     files: [
       {
         path: "examples/spinner-variants.tsx",
@@ -1729,7 +1886,7 @@ export const examples: Registry["items"] = [
   {
     name: "spinner-sizes",
     type: "registry:example",
-    registryDependencies: ["@herocn/spinner"],
+    registryDependencies: [getRegistryItemInstallationAlias("spinner")],
     files: [
       {
         path: "examples/spinner-sizes.tsx",
@@ -1740,7 +1897,10 @@ export const examples: Registry["items"] = [
   {
     name: "spinner-button",
     type: "registry:example",
-    registryDependencies: ["@herocn/button", "@herocn/spinner"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("spinner"),
+    ],
     files: [
       {
         path: "examples/spinner-button.tsx",
@@ -1751,7 +1911,10 @@ export const examples: Registry["items"] = [
   {
     name: "spinner-badge",
     type: "registry:example",
-    registryDependencies: ["@herocn/badge", "@herocn/spinner"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("badge"),
+      getRegistryItemInstallationAlias("spinner"),
+    ],
     files: [
       {
         path: "examples/spinner-badge.tsx",
@@ -1762,7 +1925,10 @@ export const examples: Registry["items"] = [
   {
     name: "spinner-input-group",
     type: "registry:example",
-    registryDependencies: ["@herocn/input-group", "@herocn/spinner"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("input-group"),
+      getRegistryItemInstallationAlias("spinner"),
+    ],
     files: [
       {
         path: "examples/spinner-input-group.tsx",
@@ -1774,9 +1940,9 @@ export const examples: Registry["items"] = [
     name: "spinner-empty",
     type: "registry:example",
     registryDependencies: [
-      "@herocn/button",
-      "@herocn/empty",
-      "@herocn/spinner",
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("empty"),
+      getRegistryItemInstallationAlias("spinner"),
     ],
     files: [
       {
@@ -1788,7 +1954,7 @@ export const examples: Registry["items"] = [
   {
     name: "spinner-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/spinner"],
+    registryDependencies: [getRegistryItemInstallationAlias("spinner")],
     files: [
       {
         path: "examples/spinner-rtl.tsx",
@@ -1799,7 +1965,7 @@ export const examples: Registry["items"] = [
   {
     name: "slider-demo",
     type: "registry:example",
-    registryDependencies: ["@herocn/slider"],
+    registryDependencies: [getRegistryItemInstallationAlias("slider")],
     files: [
       {
         path: "examples/slider-demo.tsx",
@@ -1810,7 +1976,7 @@ export const examples: Registry["items"] = [
   {
     name: "slider-range",
     type: "registry:example",
-    registryDependencies: ["@herocn/slider"],
+    registryDependencies: [getRegistryItemInstallationAlias("slider")],
     files: [
       {
         path: "examples/slider-range.tsx",
@@ -1821,7 +1987,7 @@ export const examples: Registry["items"] = [
   {
     name: "slider-multiple",
     type: "registry:example",
-    registryDependencies: ["@herocn/slider"],
+    registryDependencies: [getRegistryItemInstallationAlias("slider")],
     files: [
       {
         path: "examples/slider-multiple.tsx",
@@ -1832,7 +1998,7 @@ export const examples: Registry["items"] = [
   {
     name: "slider-vertical",
     type: "registry:example",
-    registryDependencies: ["@herocn/slider"],
+    registryDependencies: [getRegistryItemInstallationAlias("slider")],
     files: [
       {
         path: "examples/slider-vertical.tsx",
@@ -1843,7 +2009,10 @@ export const examples: Registry["items"] = [
   {
     name: "slider-controlled",
     type: "registry:example",
-    registryDependencies: ["@herocn/label", "@herocn/slider"],
+    registryDependencies: [
+      getRegistryItemInstallationAlias("label"),
+      getRegistryItemInstallationAlias("slider"),
+    ],
     files: [
       {
         path: "examples/slider-controlled.tsx",
@@ -1854,7 +2023,7 @@ export const examples: Registry["items"] = [
   {
     name: "slider-disabled",
     type: "registry:example",
-    registryDependencies: ["@herocn/slider"],
+    registryDependencies: [getRegistryItemInstallationAlias("slider")],
     files: [
       {
         path: "examples/slider-disabled.tsx",
@@ -1865,7 +2034,7 @@ export const examples: Registry["items"] = [
   {
     name: "slider-rtl",
     type: "registry:example",
-    registryDependencies: ["@herocn/slider"],
+    registryDependencies: [getRegistryItemInstallationAlias("slider")],
     files: [
       {
         path: "examples/slider-rtl.tsx",

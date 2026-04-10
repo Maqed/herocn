@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "avatar-group-count",
   "registryDependencies": [
-    "@herocn/avatar"
+    "https://herocn.dev/r/avatar.json"
   ],
   "files": [
     {

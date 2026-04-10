@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "surface-rtl",
   "registryDependencies": [
-    "@herocn/surface"
+    "https://herocn.dev/r/surface.json"
   ],
   "files": [
     {

@@ -1,5 +1,6 @@
 import type { Registry } from "shadcn/schema";
 import { siteConfig } from "@/lib/config";
+import { getRegistryItemInstallationAlias } from "@/lib/utils";
 import { examples } from "./registry-examples";
 import { ui } from "./registry-ui";
 import { css, cssVars } from "./shared";
@@ -9,7 +10,7 @@ const HEROCN_STYLE = {
   type: "registry:style" as const,
   dependencies: ["@base-ui/react", "class-variance-authority", "lucide-react"],
   devDependencies: ["tw-animate-css"],
-  registryDependencies: ["utils", "@herocn/ui"],
+  registryDependencies: ["utils", getRegistryItemInstallationAlias("ui")],
   cssVars,
   css,
   files: [],

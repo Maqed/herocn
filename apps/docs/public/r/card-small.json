@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "card-small",
   "registryDependencies": [
-    "@herocn/card"
+    "https://herocn.dev/r/card.json"
   ],
   "files": [
     {

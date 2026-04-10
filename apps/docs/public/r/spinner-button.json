@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "spinner-button",
   "registryDependencies": [
-    "@herocn/button",
-    "@herocn/spinner"
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/spinner.json"
   ],
   "files": [
     {

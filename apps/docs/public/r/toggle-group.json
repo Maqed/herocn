@@ -5,7 +5,7 @@
     "@base-ui/react"
   ],
   "registryDependencies": [
-    "@herocn/toggle"
+    "https://herocn.dev/r/toggle.json"
   ],
   "files": [
     {

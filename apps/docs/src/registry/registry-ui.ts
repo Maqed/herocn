@@ -1,4 +1,5 @@
 import type { Registry } from "shadcn/schema";
+import { getRegistryItemInstallationAlias } from "@/lib/utils";
 import { css, cssVars } from "./shared";
 
 export const ui: Registry["items"] = [
@@ -79,7 +80,7 @@ export const ui: Registry["items"] = [
     name: "button-group",
     type: "registry:ui",
     dependencies: ["@base-ui/react"],
-    registryDependencies: ["@herocn/separator"],
+    registryDependencies: [getRegistryItemInstallationAlias("separator")],
     files: [
       {
         path: "ui/button-group.tsx",
@@ -262,9 +263,9 @@ export const ui: Registry["items"] = [
     name: "input-group",
     type: "registry:ui",
     registryDependencies: [
-      "@herocn/button",
-      "@herocn/input",
-      "@herocn/textarea",
+      getRegistryItemInstallationAlias("button"),
+      getRegistryItemInstallationAlias("input"),
+      getRegistryItemInstallationAlias("textarea"),
     ],
     files: [
       {
@@ -482,7 +483,7 @@ export const ui: Registry["items"] = [
     name: "toggle-group",
     type: "registry:ui",
     dependencies: ["@base-ui/react"],
-    registryDependencies: ["@herocn/toggle"],
+    registryDependencies: [getRegistryItemInstallationAlias("toggle")],
     files: [
       {
         path: "ui/toggle-group.tsx",

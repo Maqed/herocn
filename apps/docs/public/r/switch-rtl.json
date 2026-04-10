@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "switch-rtl",
   "registryDependencies": [
-    "@herocn/field",
-    "@herocn/switch"
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/switch.json"
   ],
   "files": [
     {

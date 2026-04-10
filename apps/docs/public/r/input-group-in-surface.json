@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "input-group-in-surface",
   "registryDependencies": [
-    "@herocn/card",
-    "@herocn/input-group"
+    "https://herocn.dev/r/card.json",
+    "https://herocn.dev/r/input-group.json"
   ],
   "files": [
     {

@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "button-group-split",
   "registryDependencies": [
-    "@herocn/button",
-    "@herocn/button-group"
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/button-group.json"
   ],
   "files": [
     {

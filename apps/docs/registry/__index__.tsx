@@ -170,6 +170,21 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "scroll-area": {
+    name: "scroll-area",
+    type: "registry:ui",
+    registryDependencies: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/ui/scroll-area.tsx",
+      type: "registry:ui",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/scroll-area.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "input": {
     name: "input",
     type: "registry:ui",
@@ -3091,6 +3106,51 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/sonner-position.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "scroll-area-demo": {
+    name: "scroll-area-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/scroll-area.json","https://herocn.dev/r/separator.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/scroll-area-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/scroll-area-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "scroll-area-horizontal": {
+    name: "scroll-area-horizontal",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/scroll-area.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/scroll-area-horizontal.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/scroll-area-horizontal.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "scroll-area-rtl": {
+    name: "scroll-area-rtl",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/scroll-area.json","https://herocn.dev/r/separator.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/scroll-area-rtl.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/scroll-area-rtl.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

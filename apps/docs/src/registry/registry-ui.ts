@@ -231,6 +231,16 @@ export const ui: Registry["items"] = [
     },
   },
   {
+    name: "scroll-area",
+    type: "registry:ui",
+    files: [
+      {
+        path: "ui/scroll-area.tsx",
+        type: "registry:ui",
+      },
+    ],
+  },
+  {
     name: "input",
     type: "registry:ui",
     dependencies: ["@base-ui/react"],

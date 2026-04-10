@@ -629,6 +629,16 @@
       }
     },
     {
+      "name": "scroll-area",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/scroll-area.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "input",
       "type": "registry:ui",
       "dependencies": [
@@ -3547,6 +3557,47 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/sonner-position.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "scroll-area-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/scroll-area.json",
+        "https://herocn.dev/r/separator.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/scroll-area-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "scroll-area-horizontal",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/scroll-area.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/scroll-area-horizontal.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "scroll-area-rtl",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/scroll-area.json",
+        "https://herocn.dev/r/separator.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/scroll-area-rtl.tsx",
           "type": "registry:example"
         }
       ]

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "scroll-area",
+  "files": [
+    {
+      "path": "components/ui/scroll-area.tsx",
+      "content": "\"use client\";\r\n\r\nimport { ScrollArea as ScrollAreaPrimitive } from \"@base-ui/react/scroll-area\";\r\nimport type React from \"react\";\r\nimport { cn } from \"@/lib/utils\";\r\n\r\nfunction ScrollArea({\r\n  className,\r\n  children,\r\n  ...props\r\n}: ScrollAreaPrimitive.Root.Props): React.ReactElement {\r\n  return (\r\n    <ScrollAreaPrimitive.Root\r\n      className={cn(\"size-full min-h-0\", className)}\r\n      {...props}\r\n    >\r\n      <ScrollAreaPrimitive.Viewport\r\n        data-slot=\"scroll-area-viewport\"\r\n        className=\"size-full rounded-[inherit] transition-[color,box-shadow] outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:outline-1\"\r\n      >\r\n        {children}\r\n      </ScrollAreaPrimitive.Viewport>\r\n      <ScrollBar />\r\n      <ScrollAreaPrimitive.Corner />\r\n    </ScrollAreaPrimitive.Root>\r\n  );\r\n}\r\n\r\nfunction ScrollBar({\r\n  className,\r\n  orientation = \"vertical\",\r\n  ...props\r\n}: ScrollAreaPrimitive.Scrollbar.Props): React.ReactElement {\r\n  return (\r\n    <ScrollAreaPrimitive.Scrollbar\r\n      className={cn(\r\n        \"m-1 flex opacity-0 transition-opacity delay-300 data-[orientation=horizontal]:h-1.5 data-[orientation=vertical]:w-1.5 data-[orientation=horizontal]:flex-col data-hovering:opacity-100 data-scrolling:opacity-100 data-hovering:delay-0 data-scrolling:delay-0 data-hovering:duration-100 data-scrolling:duration-100\",\r\n        className,\r\n      )}\r\n      data-slot=\"scroll-area-scrollbar\"\r\n      orientation={orientation}\r\n      {...props}\r\n    >\r\n      <ScrollAreaPrimitive.Thumb\r\n        className=\"relative flex-1 rounded-full bg-foreground/20\"\r\n        data-slot=\"scroll-area-thumb\"\r\n      />\r\n    </ScrollAreaPrimitive.Scrollbar>\r\n  );\r\n}\r\n\r\nexport { ScrollArea, ScrollBar };\r\n",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

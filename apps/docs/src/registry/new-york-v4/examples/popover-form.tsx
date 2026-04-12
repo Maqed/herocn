@@ -18,7 +18,7 @@ export default function PopoverForm() {
       <PopoverTrigger render={<Button variant="tertiary" />}>
         Open Popover
       </PopoverTrigger>
-      <PopoverContent className="w-64" align="start">
+      <PopoverContent className="w-64">
         <PopoverHeader>
           <PopoverTitle>Dimensions</PopoverTitle>
           <PopoverDescription>

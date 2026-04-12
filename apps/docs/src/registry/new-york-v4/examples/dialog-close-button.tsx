@@ -35,7 +35,7 @@ export default function DialogCloseButton() {
             <Input
               variant="secondary"
               id="link"
-              defaultValue="https://ui.shadcn.com/docs/installation"
+              defaultValue="https://herocn.dev/docs/installation"
               readOnly
             />
           </div>

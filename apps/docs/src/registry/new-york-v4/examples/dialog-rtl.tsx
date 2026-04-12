@@ -70,7 +70,11 @@ export default function DialogRtl() {
           <DialogTrigger render={<Button variant="tertiary" />}>
             {t.openDialog}
           </DialogTrigger>
-          <DialogContent className="sm:max-w-sm">
+          <DialogContent
+            dir={dir}
+            data-lang={dir === "rtl" ? language : undefined}
+            className="sm:max-w-sm"
+          >
             <DialogHeader>
               <DialogTitle>{t.editProfile}</DialogTitle>
               <DialogDescription>{t.description}</DialogDescription>
@@ -82,7 +86,7 @@ export default function DialogRtl() {
                   variant="secondary"
                   id="name-rtl"
                   name="name"
-                  defaultValue="Pedro Duarte"
+                  defaultValue="Maged Ibrahim"
                 />
               </Field>
               <Field>
@@ -91,7 +95,7 @@ export default function DialogRtl() {
                   variant="secondary"
                   id="username-rtl"
                   name="username"
-                  defaultValue="@peduarte"
+                  defaultValue="@0xMaqed"
                 />
               </Field>
             </FieldGroup>

@@ -37,7 +37,7 @@ export default function DialogDemo() {
                 variant="secondary"
                 id="name-1"
                 name="name"
-                defaultValue="Pedro Duarte"
+                defaultValue="Maged Ibrahim"
               />
             </Field>
             <Field>
@@ -46,7 +46,7 @@ export default function DialogDemo() {
                 variant="secondary"
                 id="username-1"
                 name="username"
-                defaultValue="@peduarte"
+                defaultValue="@0xMaqed"
               />
             </Field>
           </FieldGroup>

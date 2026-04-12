@@ -20,6 +20,7 @@ const buttonVariants = cva(
           "bg-default text-default-foreground hover:bg-default/80 active:bg-default/80",
         ghost:
           "hover:bg-muted hover:text-foreground active:bg-muted active:text-foreground dark:hover:bg-muted/50 aria-expanded:bg-muted aria-expanded:text-foreground",
+        link: "text-primary underline-offset-4 hover:underline",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90 active:bg-destructive/80 focus-visible:ring-destructive",
         "destructive-soft":
@@ -28,9 +29,11 @@ const buttonVariants = cva(
       size: {
         default:
           "h-9 w-fit has-data-[icon=inline-end]:pe-3 has-data-[icon=inline-start]:ps-3 ",
+        xs: "h-7 px-2.5 gap-0.5 has-data-[icon=inline-end]:pe-1.5 has-data-[icon=inline-start]:ps-1.5 [&_svg:not([class*='size-'])]:size-3",
         sm: "h-8 px-3 gap-1 has-data-[icon=inline-end]:pe-2 has-data-[icon=inline-start]:ps-2 [&_svg:not([class*='size-'])]:size-3.5",
         lg: "h-10 gap-1.5 text-base has-data-[icon=inline-end]:pe-3 has-data-[icon=inline-start]:ps-3 [&_svg:not([class*='size-'])]:size-4",
         icon: "size-9 [&_svg:not([class*='size-'])]:size-5",
+        "icon-xs": "size-7 px-3 [&_svg:not([class*='size-'])]:size-3.5",
         "icon-sm": "size-8 [&_svg:not([class*='size-'])]:size-4",
         "icon-lg": "size-10 [&_svg:not([class*='size-'])]:size-5.5",
       },

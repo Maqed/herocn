@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "components/examples/button-sizes.tsx",
-      "content": "import { SearchIcon } from \"lucide-react\";\nimport { Button } from \"@/components/ui/button\";\n\nexport default function ButtonSizes() {\n  return (\n    <div className=\"flex flex-wrap items-center gap-3\">\n      <Button size=\"sm\">Small</Button>\n      <Button>Default</Button>\n      <Button size=\"lg\">Large</Button>\n      <Button size=\"icon-sm\">\n        <SearchIcon />\n      </Button>\n      <Button size=\"icon\">\n        <SearchIcon />\n      </Button>\n      <Button size=\"icon-lg\">\n        <SearchIcon />\n      </Button>\n    </div>\n  );\n}\n",
+      "content": "import { SearchIcon } from \"lucide-react\";\nimport { Button } from \"@/components/ui/button\";\n\nexport default function ButtonSizes() {\n  return (\n    <div className=\"flex flex-wrap items-center gap-3\">\n      <Button size=\"xs\">Extra Small</Button>\n      <Button size=\"sm\">Small</Button>\n      <Button>Default</Button>\n      <Button size=\"lg\">Large</Button>\n      <Button size=\"icon-xs\">\n        <SearchIcon />\n      </Button>\n      <Button size=\"icon-sm\">\n        <SearchIcon />\n      </Button>\n      <Button size=\"icon\">\n        <SearchIcon />\n      </Button>\n      <Button size=\"icon-lg\">\n        <SearchIcon />\n      </Button>\n    </div>\n  );\n}\n",
       "type": "registry:example"
     }
   ],

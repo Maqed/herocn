@@ -2246,6 +2246,22 @@
       ]
     },
     {
+      "name": "input-in-surface",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/field.json",
+        "https://herocn.dev/r/input.json",
+        "https://herocn.dev/r/surface.json",
+        "https://herocn.dev/r/button.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/input-in-surface.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "button-group-demo",
       "type": "registry:example",
       "registryDependencies": [

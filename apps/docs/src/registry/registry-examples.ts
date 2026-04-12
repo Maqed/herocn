@@ -1073,6 +1073,22 @@ export const examples: Registry["items"] = [
     ],
   },
   {
+    name: "input-in-surface",
+    type: "registry:example",
+    registryDependencies: [
+      getRegistryItemInstallationAlias("field"),
+      getRegistryItemInstallationAlias("input"),
+      getRegistryItemInstallationAlias("surface"),
+      getRegistryItemInstallationAlias("button"),
+    ],
+    files: [
+      {
+        path: "examples/input-in-surface.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "button-group-demo",
     type: "registry:example",
     registryDependencies: [

@@ -1670,6 +1670,21 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "input-in-surface": {
+    name: "input-in-surface",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/surface.json","https://herocn.dev/r/button.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/input-in-surface.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/input-in-surface.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "button-group-demo": {
     name: "button-group-demo",
     type: "registry:example",

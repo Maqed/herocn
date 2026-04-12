@@ -706,6 +706,12 @@
       "content": "import { Button } from \"@/components/ui/button\";\nimport { ButtonGroup } from \"@/components/ui/button-group\";\nimport { Field, FieldLabel } from \"@/components/ui/field\";\nimport { Input } from \"@/components/ui/input\";\n\nexport default function InputButtonGroup() {\n  return (\n    <div className=\"w-full max-w-sm\">\n      <Field>\n        <FieldLabel htmlFor=\"input-button-group\">Search</FieldLabel>\n        <ButtonGroup>\n          <Input\n            id=\"input-button-group\"\n            variant=\"secondary\"\n            placeholder=\"Type to search...\"\n          />\n          <Button variant=\"tertiary\">Search</Button>\n        </ButtonGroup>\n      </Field>\n    </div>\n  );\n}\n"
     },
     {
+      "path": "examples/input-in-surface.tsx",
+      "type": "registry:example",
+      "target": "",
+      "content": "import { Button } from \"@/components/ui/button\";\nimport { Field, FieldLabel } from \"@/components/ui/field\";\nimport { Input } from \"@/components/ui/input\";\nimport { Surface } from \"@/components/ui/surface\";\n\nexport default function InputInSurface() {\n  return (\n    <Surface className=\"flex flex-col gap-3 p-6 rounded-3xl w-full max-w-sm\">\n      <Field>\n        <FieldLabel htmlFor=\"input-in-surface-message\">\n          What's your name?\n        </FieldLabel>\n        <Input id=\"input-in-surface-message\" variant=\"secondary\" />\n      </Field>\n      <Button>Submit</Button>\n    </Surface>\n  );\n}\n"
+    },
+    {
       "path": "examples/button-group-demo.tsx",
       "type": "registry:example",
       "target": "",

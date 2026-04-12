@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-in-surface",
+  "registryDependencies": [
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/input.json",
+    "https://herocn.dev/r/surface.json",
+    "https://herocn.dev/r/button.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/input-in-surface.tsx",
+      "content": "import { Button } from \"@/components/ui/button\";\nimport { Field, FieldLabel } from \"@/components/ui/field\";\nimport { Input } from \"@/components/ui/input\";\nimport { Surface } from \"@/components/ui/surface\";\n\nexport default function InputInSurface() {\n  return (\n    <Surface className=\"flex flex-col gap-3 p-6 rounded-3xl w-full max-w-sm\">\n      <Field>\n        <FieldLabel htmlFor=\"input-in-surface-message\">\n          What's your name?\n        </FieldLabel>\n        <Input id=\"input-in-surface-message\" variant=\"secondary\" />\n      </Field>\n      <Button>Submit</Button>\n    </Surface>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

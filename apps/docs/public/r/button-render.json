@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-render",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/button-render.tsx",
+      "content": "\"use client\"\nimport { buttonVariants } from \"@/components/ui/button\";\n\nexport function ButtonRender() {\n  return (\n    <a\n      href=\"#\"\n      className={buttonVariants({ variant: \"secondary\", size: \"sm\" })}\n    >\n      Login\n    </a>\n  );\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

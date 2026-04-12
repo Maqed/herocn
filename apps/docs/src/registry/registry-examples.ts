@@ -116,6 +116,17 @@ export const examples: Registry["items"] = [
     ],
   },
   {
+    name: "button-render",
+    type: "registry:example",
+    registryDependencies: [getRegistryItemInstallationAlias("button")],
+    files: [
+      {
+        path: "examples/button-render.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "button-rtl",
     type: "registry:example",
     registryDependencies: [getRegistryItemInstallationAlias("button")],

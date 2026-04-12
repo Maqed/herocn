@@ -71,7 +71,7 @@ function DialogContent({
               <Button
                 variant="tertiary"
                 className="absolute top-4 end-4"
-                size="icon-sm"
+                size="icon-xs"
               />
             }
           >

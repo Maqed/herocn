@@ -5,6 +5,9 @@ import { Toggle } from "@/registry/new-york-v4/ui/toggle";
 export default function ToggleSizes() {
   return (
     <div className="flex flex-wrap items-center gap-2">
+      <Toggle size="xs" aria-label="Toggle extra small">
+        Extra Small
+      </Toggle>
       <Toggle size="sm" aria-label="Toggle small">
         Small
       </Toggle>
@@ -13,6 +16,9 @@ export default function ToggleSizes() {
       </Toggle>
       <Toggle size="lg" aria-label="Toggle large">
         Large
+      </Toggle>
+      <Toggle size="icon-xs" aria-label="Toggle icon extra small">
+        <BookmarkIcon />
       </Toggle>
       <Toggle size="icon-sm" aria-label="Toggle icon small">
         <BookmarkIcon />

@@ -18,8 +18,8 @@ function Textarea({
         "aria-invalid:not-focus-visible:invalid-field-ring",
         "aria-invalid:focus-visible:invalid-field-ring-focus",
         "not-aria-invalid:focus-visible:focus-field-ring not-aria-invalid:focus-visible:ring-ring",
-        "hover:not-focus-visible:bg-input/40 dark:hover:not-focus-visible:bg-input hover:not-focus-visible:data-[variant=secondary]:bg-default",
-        "data-[variant=secondary]:bg-default/80 data-[variant=secondary]:shadow-none",
+        "hover:not-focus-visible:bg-input/40 dark:hover:not-focus-visible:bg-input hover:not-focus-visible:data-[variant=secondary]:bg-default dark:hover:not-focus-visible:data-[variant=secondary]:bg-default",
+        "data-[variant=secondary]:bg-default/80 data-[variant=secondary]:shadow-none dark:data-[variant=secondary]:bg-default/80",
         "disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50",
         className,
       )}

@@ -19,9 +19,9 @@ function InputGroup({
       role="group"
       data-variant={variant}
       className={cn(
-        "group/input-group relative flex h-9 w-full min-w-0 items-center rounded-4xl bg-input dark:bg-input/80 data-[variant=secondary]:bg-default/80 transition-all outline-none in-data-[slot=combobox-content]:focus-within:border-inherit in-data-[slot=combobox-content]:focus-within:ring-0 has-data-[align=block-end]:rounded-2xl has-data-[align=block-start]:rounded-2xl has-[[data-slot=input-group-control]:not([aria-invalid=true]):focus-visible]:focus-field-ring has-[[data-slot][aria-invalid=true]:not(:focus-visible)]:invalid-field-ring has-[[data-slot][aria-invalid=true]:focus-visible]:invalid-field-ring-focus has-[textarea]:rounded-xl has-[>[data-align=block-end]]:h-auto has-[>[data-align=block-end]]:flex-col has-[>[data-align=block-start]]:h-auto has-[>[data-align=block-start]]:flex-col has-[>textarea]:h-auto has-[>[data-align=block-end]]:[&>input]:pt-3 has-[>[data-align=block-start]]:[&>input]:pb-3 has-[>[data-align=inline-end]]:[&>input]:pe-1.5 has-[>[data-align=inline-start]]:[&>input]:ps-1.5",
+        "group/input-group relative flex h-9 w-full min-w-0 items-center rounded-4xl bg-input dark:bg-input/80 data-[variant=secondary]:bg-default/80 dark:data-[variant=secondary]:bg-default/80 transition-all outline-none in-data-[slot=combobox-content]:focus-within:border-inherit in-data-[slot=combobox-content]:focus-within:ring-0 has-data-[align=block-end]:rounded-2xl has-data-[align=block-start]:rounded-2xl has-[[data-slot=input-group-control]:not([aria-invalid=true]):focus-visible]:focus-field-ring has-[[data-slot][aria-invalid=true]:not(:focus-visible)]:invalid-field-ring has-[[data-slot][aria-invalid=true]:focus-visible]:invalid-field-ring-focus has-[textarea]:rounded-xl has-[>[data-align=block-end]]:h-auto has-[>[data-align=block-end]]:flex-col has-[>[data-align=block-start]]:h-auto has-[>[data-align=block-start]]:flex-col has-[>textarea]:h-auto has-[>[data-align=block-end]]:[&>input]:pt-3 has-[>[data-align=block-start]]:[&>input]:pb-3 has-[>[data-align=inline-end]]:[&>input]:pe-1.5 has-[>[data-align=inline-start]]:[&>input]:ps-1.5",
         "has-[>[data-slot=input-group-control]:disabled]:cursor-not-allowed has-[>[data-slot=input-group-control]:disabled]:opacity-50",
-        "hover:not-focus-visible:bg-input/40 dark:hover:not-focus-visible:bg-input hover:not-focus-visible:data-[variant=secondary]:bg-default",
+        "hover:not-focus-visible:bg-input/40 dark:hover:not-focus-visible:bg-input hover:not-focus-visible:data-[variant=secondary]:bg-default dark:hover:not-focus-visible:data-[variant=secondary]:bg-default",
         className,
       )}
       {...props}
@@ -131,7 +131,7 @@ function InputGroupInput({
       data-slot="input-group-control"
       className={cn(
         "peer flex-1 rounded-none bg-transparent shadow-none aria-invalid:not-focus-visible:outline-0 focus-visible:ring-0! aria-invalid:outline-none dark:bg-transparent",
-        "hover:not-focus-visible:bg-transparent dark:hover:not-focus-visible:bg-transparent hover:not-focus-visible:data-[variant=secondary]:bg-transparent",
+        "hover:not-focus-visible:bg-transparent dark:hover:not-focus-visible:bg-transparent hover:not-focus-visible:data-[variant=secondary]:bg-transparent dark:hover:not-focus-visible:data-[variant=secondary]:bg-transparent",
         "disabled:pointer-events-auto disabled:cursor-not-allowed disabled:opacity-50",
         className,
       )}
@@ -149,7 +149,7 @@ function InputGroupTextarea({
       data-slot="input-group-control"
       className={cn(
         "peer flex-1 resize-none rounded-none bg-transparent py-2 shadow-none aria-invalid:not-focus-visible:outline-0 focus-visible:ring-0! aria-invalid:outline-none dark:bg-transparent",
-        "hover:not-focus-visible:bg-transparent dark:hover:not-focus-visible:bg-transparent hover:not-focus-visible:data-[variant=secondary]:bg-transparent",
+        "hover:not-focus-visible:bg-transparent dark:hover:not-focus-visible:bg-transparent hover:not-focus-visible:data-[variant=secondary]:bg-transparent dark:hover:not-focus-visible:data-[variant=secondary]:bg-transparent",
         "disabled:pointer-events-auto disabled:cursor-not-allowed disabled:opacity-50",
         className,
       )}

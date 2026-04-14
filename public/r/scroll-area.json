@@ -1,0 +1,12 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "scroll-area",
+  "files": [
+    {
+      "path": "components/ui/scroll-area.tsx",
+      "content": "\"use client\";\n\nimport { ScrollArea as ScrollAreaPrimitive } from \"@base-ui/react/scroll-area\";\nimport type React from \"react\";\nimport { cn } from \"@/lib/utils\";\n\nfunction ScrollArea({\n\tclassName,\n\tchildren,\n\t...props\n}: ScrollAreaPrimitive.Root.Props): React.ReactElement {\n\treturn (\n\t\t<ScrollAreaPrimitive.Root\n\t\t\tclassName={cn(\"size-full min-h-0\", className)}\n\t\t\t{...props}\n\t\t>\n\t\t\t<ScrollAreaPrimitive.Viewport\n\t\t\t\tdata-slot=\"scroll-area-viewport\"\n\t\t\t\tclassName=\"size-full rounded-[inherit] outline-none transition-[color,box-shadow] focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50\"\n\t\t\t>\n\t\t\t\t{children}\n\t\t\t</ScrollAreaPrimitive.Viewport>\n\t\t\t<ScrollBar />\n\t\t\t<ScrollAreaPrimitive.Corner />\n\t\t</ScrollAreaPrimitive.Root>\n\t);\n}\n\nfunction ScrollBar({\n\tclassName,\n\torientation = \"vertical\",\n\t...props\n}: ScrollAreaPrimitive.Scrollbar.Props): React.ReactElement {\n\treturn (\n\t\t<ScrollAreaPrimitive.Scrollbar\n\t\t\tclassName={cn(\n\t\t\t\t\"m-1 flex opacity-0 transition-opacity delay-300 data-[orientation=horizontal]:h-1.5 data-[orientation=vertical]:w-1.5 data-[orientation=horizontal]:flex-col data-hovering:opacity-100 data-scrolling:opacity-100 data-hovering:delay-0 data-scrolling:delay-0 data-hovering:duration-100 data-scrolling:duration-100\",\n\t\t\t\tclassName,\n\t\t\t)}\n\t\t\tdata-slot=\"scroll-area-scrollbar\"\n\t\t\torientation={orientation}\n\t\t\t{...props}\n\t\t>\n\t\t\t<ScrollAreaPrimitive.Thumb\n\t\t\t\tclassName=\"relative flex-1 rounded-full bg-foreground/20\"\n\t\t\t\tdata-slot=\"scroll-area-thumb\"\n\t\t\t/>\n\t\t</ScrollAreaPrimitive.Scrollbar>\n\t);\n}\n\nexport { ScrollArea, ScrollBar };\n",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "separator-list",
+  "registryDependencies": [
+    "https://herocn.dev/r/separator.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/separator-list.tsx",
+      "content": "import { Separator } from \"@/components/ui/separator\";\n\nexport default function SeparatorList() {\n\treturn (\n\t\t<div className=\"flex w-full max-w-sm flex-col gap-2 text-sm\">\n\t\t\t<dl className=\"flex items-center justify-between\">\n\t\t\t\t<dt>Item 1</dt>\n\t\t\t\t<dd className=\"text-muted-foreground\">Value 1</dd>\n\t\t\t</dl>\n\t\t\t<Separator />\n\t\t\t<dl className=\"flex items-center justify-between\">\n\t\t\t\t<dt>Item 2</dt>\n\t\t\t\t<dd className=\"text-muted-foreground\">Value 2</dd>\n\t\t\t</dl>\n\t\t\t<Separator />\n\t\t\t<dl className=\"flex items-center justify-between\">\n\t\t\t\t<dt>Item 3</dt>\n\t\t\t\t<dd className=\"text-muted-foreground\">Value 3</dd>\n\t\t\t</dl>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

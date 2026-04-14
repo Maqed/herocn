@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-rtl",
+  "registryDependencies": [
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/input.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/input-rtl.tsx",
+      "content": "\"use client\";\n\nimport {\n\ttype Translations,\n\tuseTranslation,\n} from \"@/components/language-selector\";\nimport {\n\tField,\n\tFieldDescription,\n\tFieldLabel,\n} from \"@/components/ui/field\";\nimport { Input } from \"@/components/ui/input\";\n\nconst translations: Translations = {\n\ten: {\n\t\tdir: \"ltr\",\n\t\tvalues: {\n\t\t\tnameLabel: \"Full name\",\n\t\t\tnamePlaceholder: \"John Doe\",\n\t\t\temailLabel: \"Email address\",\n\t\t\temailPlaceholder: \"you@example.com\",\n\t\t\temailDescription: \"We'll never share your email with anyone.\",\n\t\t},\n\t},\n\tar: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\tnameLabel: \"الاسم الكامل\",\n\t\t\tnamePlaceholder: \"محمد علي\",\n\t\t\temailLabel: \"البريد الإلكتروني\",\n\t\t\temailPlaceholder: \"you@example.com\",\n\t\t\temailDescription: \"لن نشارك بريدك الإلكتروني مع أي شخص.\",\n\t\t},\n\t},\n\the: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\tnameLabel: \"שם מלא\",\n\t\t\tnamePlaceholder: \"ישראל ישראלי\",\n\t\t\temailLabel: \"כתובת דוא״ל\",\n\t\t\temailPlaceholder: \"you@example.com\",\n\t\t\temailDescription: \"לעולם לא נשתף את הדוא״ל שלך עם אחרים.\",\n\t\t},\n\t},\n};\n\nexport function InputRtl() {\n\tconst { dir, language, t } = useTranslation(translations, \"ar\");\n\n\treturn (\n\t\t<div\n\t\t\tclassName=\"flex w-full max-w-sm flex-col gap-4\"\n\t\t\tlang={language}\n\t\t\tdir={dir}\n\t\t>\n\t\t\t<Field>\n\t\t\t\t<FieldLabel htmlFor=\"form-input-rtl-name\">{t.nameLabel}</FieldLabel>\n\t\t\t\t<Input\n\t\t\t\t\ttype=\"text\"\n\t\t\t\t\tid=\"form-input-rtl-name\"\n\t\t\t\t\tplaceholder={t.namePlaceholder}\n\t\t\t\t/>\n\t\t\t</Field>\n\t\t\t<Field>\n\t\t\t\t<FieldLabel htmlFor=\"form-input-rtl-email\">{t.emailLabel}</FieldLabel>\n\t\t\t\t<Input\n\t\t\t\t\ttype=\"email\"\n\t\t\t\t\tid=\"form-input-rtl-email\"\n\t\t\t\t\tplaceholder={t.emailPlaceholder}\n\t\t\t\t/>\n\t\t\t\t<FieldDescription>{t.emailDescription}</FieldDescription>\n\t\t\t</Field>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "collapsible-rtl",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/card.json",
+    "https://herocn.dev/r/collapsible.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/collapsible-rtl.tsx",
+      "content": "\"use client\";\n\nimport { ChevronDownIcon } from \"lucide-react\";\n\nimport {\n\ttype Translations,\n\tuseTranslation,\n} from \"@/components/language-selector\";\nimport { Button } from \"@/components/ui/button\";\nimport { Card, CardContent } from \"@/components/ui/card\";\nimport {\n\tCollapsible,\n\tCollapsibleContent,\n\tCollapsibleTrigger,\n} from \"@/components/ui/collapsible\";\n\nconst translations: Translations = {\n\ten: {\n\t\tdir: \"ltr\",\n\t\tvalues: {\n\t\t\ttrigger: \"Frequently asked questions\",\n\t\t\tanswer:\n\t\t\t\t\"Yes. Free to use for personal and commercial projects. No attribution required.\",\n\t\t\tlearnMore: \"Learn More\",\n\t\t},\n\t},\n\tar: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\ttrigger: \"الأسئلة الشائعة\",\n\t\t\tanswer:\n\t\t\t\t\"نعم. مجاني للاستخدام في المشاريع الشخصية والتجارية. لا يلزم ذكر المصدر.\",\n\t\t\tlearnMore: \"اعرف المزيد\",\n\t\t},\n\t},\n\the: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\ttrigger: \"שאלות נפוצות\",\n\t\t\tanswer: \"כן. חינמי לשימוש בפרויקטים אישיים ומסחריים. אין צורך בייחוס.\",\n\t\t\tlearnMore: \"למד עוד\",\n\t\t},\n\t},\n};\n\nexport function CollapsibleRtl() {\n\tconst { dir, language, t } = useTranslation(translations, \"ar\");\n\n\treturn (\n\t\t<Card className=\"mx-auto w-full max-w-sm\" lang={language} dir={dir}>\n\t\t\t<CardContent>\n\t\t\t\t<Collapsible className=\"rounded-md data-open:bg-muted\">\n\t\t\t\t\t<CollapsibleTrigger\n\t\t\t\t\t\trender={<Button variant=\"ghost\" className=\"w-full\" />}\n\t\t\t\t\t>\n\t\t\t\t\t\t{t.trigger}\n\t\t\t\t\t\t<ChevronDownIcon className=\"ms-auto group-data-panel-open/button:rotate-180\" />\n\t\t\t\t\t</CollapsibleTrigger>\n\t\t\t\t\t<CollapsibleContent className=\"flex flex-col items-start gap-2 p-2.5 pt-1 text-sm\">\n\t\t\t\t\t\t<div>{t.answer}</div>\n\t\t\t\t\t\t<Button size=\"sm\">{t.learnMore}</Button>\n\t\t\t\t\t</CollapsibleContent>\n\t\t\t\t</Collapsible>\n\t\t\t</CardContent>\n\t\t</Card>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

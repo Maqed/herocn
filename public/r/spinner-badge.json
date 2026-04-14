@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "spinner-badge",
+  "registryDependencies": [
+    "https://herocn.dev/r/badge.json",
+    "https://herocn.dev/r/spinner.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/spinner-badge.tsx",
+      "content": "import { Badge } from \"@/components/ui/badge\";\nimport { Spinner } from \"@/components/ui/spinner\";\n\nexport default function SpinnerBadge() {\n\treturn (\n\t\t<div className=\"flex items-center gap-4\">\n\t\t\t<Badge>\n\t\t\t\t<Spinner data-icon=\"inline-start\" size=\"sm\" />\n\t\t\t\tSyncing\n\t\t\t</Badge>\n\t\t\t<Badge variant=\"primary\">\n\t\t\t\t<Spinner data-icon=\"inline-start\" size=\"sm\" />\n\t\t\t\tUpdating\n\t\t\t</Badge>\n\t\t\t<Badge variant=\"warning\">\n\t\t\t\t<Spinner data-icon=\"inline-start\" size=\"sm\" />\n\t\t\t\tProcessing\n\t\t\t</Badge>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-input-group",
+  "registryDependencies": [
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/input.json",
+    "https://herocn.dev/r/input-group.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/input-input-group.tsx",
+      "content": "import { InfoIcon } from \"lucide-react\";\nimport { Field, FieldLabel } from \"@/components/ui/field\";\nimport {\n\tInputGroup,\n\tInputGroupAddon,\n\tInputGroupInput,\n\tInputGroupText,\n} from \"@/components/ui/input-group\";\n\nexport default function InputInputGroup() {\n\treturn (\n\t\t<div className=\"w-full max-w-sm\">\n\t\t\t<Field>\n\t\t\t\t<FieldLabel htmlFor=\"input-group-url\">Website URL</FieldLabel>\n\t\t\t\t<InputGroup>\n\t\t\t\t\t<InputGroupInput id=\"input-group-url\" placeholder=\"example.com\" />\n\t\t\t\t\t<InputGroupAddon>\n\t\t\t\t\t\t<InputGroupText>https://</InputGroupText>\n\t\t\t\t\t</InputGroupAddon>\n\t\t\t\t\t<InputGroupAddon align=\"inline-end\">\n\t\t\t\t\t\t<InfoIcon />\n\t\t\t\t\t</InputGroupAddon>\n\t\t\t\t</InputGroup>\n\t\t\t</Field>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

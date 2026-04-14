@@ -1,0 +1,42 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "textarea",
+  "files": [
+    {
+      "path": "components/ui/textarea.tsx",
+      "content": "import type * as React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nfunction Textarea({\n\tclassName,\n\tvariant = \"default\",\n\t...props\n}: React.ComponentProps<\"textarea\"> & {\n\tvariant?: \"default\" | \"secondary\";\n}) {\n\treturn (\n\t\t<textarea\n\t\t\tdata-slot=\"textarea\"\n\t\t\tdata-variant={variant}\n\t\t\tclassName={cn(\n\t\t\t\t\"field-sizing-content flex min-h-16 w-full rounded-xl bg-input px-2.5 py-1.5 text-foreground text-sm shadow-xs outline-none transition-all placeholder:text-muted-foreground md:px-3 md:py-2 dark:bg-input/80\",\n\t\t\t\t\"aria-invalid:not-focus-visible:invalid-field-ring\",\n\t\t\t\t\"aria-invalid:focus-visible:invalid-field-ring-focus\",\n\t\t\t\t\"not-aria-invalid:focus-visible:focus-field-ring not-aria-invalid:focus-visible:ring-ring\",\n\t\t\t\t\"hover:not-focus-visible:bg-input/40 hover:not-focus-visible:data-[variant=secondary]:bg-default dark:hover:not-focus-visible:bg-input dark:hover:not-focus-visible:data-[variant=secondary]:bg-default\",\n\t\t\t\t\"data-[variant=secondary]:bg-default/80 data-[variant=secondary]:shadow-none dark:data-[variant=secondary]:bg-default/80\",\n\t\t\t\t\"disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50\",\n\t\t\t\tclassName,\n\t\t\t)}\n\t\t\t{...props}\n\t\t/>\n\t);\n}\n\nexport { Textarea };\n",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "theme": {
+      "--color-default": "var(--default)",
+      "--color-default-foreground": "var(--default-foreground)",
+      "--color-destructive-foreground": "var(--destructive-foreground)"
+    },
+    "light": {
+      "--eclipse": "oklch(0.2103 0.0059 285.89)",
+      "--snow": "oklch(0.9911 0 0)",
+      "--default": "oklch(94% 0.001 286.375)",
+      "--default-foreground": "var(--eclipse)",
+      "--destructive-foreground": "var(--snow)"
+    },
+    "dark": {
+      "--default": "oklch(27.4% 0.006 286.033)",
+      "--default-foreground": "var(--snow)",
+      "--destructive-foreground": "var(--snow)"
+    }
+  },
+  "css": {
+    "@utility focus-field-ring": {
+      "@apply ring-2 ring-ring ring-offset-0 outline-none": {}
+    },
+    "@utility invalid-field-ring": {
+      "@apply outline-1 outline-destructive outline-solid": {}
+    },
+    "@utility invalid-field-ring-focus": {
+      "@apply ring-2 outline-none ring-destructive ring-offset-0": {}
+    }
+  },
+  "type": "registry:ui"
+}

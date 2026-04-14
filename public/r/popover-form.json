@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "popover-form",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/input.json",
+    "https://herocn.dev/r/popover.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/popover-form.tsx",
+      "content": "\"use client\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { Field, FieldGroup, FieldLabel } from \"@/components/ui/field\";\nimport { Input } from \"@/components/ui/input\";\nimport {\n\tPopover,\n\tPopoverContent,\n\tPopoverDescription,\n\tPopoverHeader,\n\tPopoverTitle,\n\tPopoverTrigger,\n} from \"@/components/ui/popover\";\n\nexport default function PopoverForm() {\n\treturn (\n\t\t<Popover>\n\t\t\t<PopoverTrigger render={<Button variant=\"tertiary\" />}>\n\t\t\t\tOpen Popover\n\t\t\t</PopoverTrigger>\n\t\t\t<PopoverContent className=\"w-64\">\n\t\t\t\t<PopoverHeader>\n\t\t\t\t\t<PopoverTitle>Dimensions</PopoverTitle>\n\t\t\t\t\t<PopoverDescription>\n\t\t\t\t\t\tSet the dimensions for the layer.\n\t\t\t\t\t</PopoverDescription>\n\t\t\t\t</PopoverHeader>\n\t\t\t\t<FieldGroup className=\"gap-4\">\n\t\t\t\t\t<Field orientation=\"horizontal\">\n\t\t\t\t\t\t<FieldLabel htmlFor=\"popover-form-width\" className=\"w-1/2\">\n\t\t\t\t\t\t\tWidth\n\t\t\t\t\t\t</FieldLabel>\n\t\t\t\t\t\t<Input\n\t\t\t\t\t\t\tvariant=\"secondary\"\n\t\t\t\t\t\t\tid=\"popover-form-width\"\n\t\t\t\t\t\t\tdefaultValue=\"100%\"\n\t\t\t\t\t\t/>\n\t\t\t\t\t</Field>\n\t\t\t\t\t<Field orientation=\"horizontal\">\n\t\t\t\t\t\t<FieldLabel htmlFor=\"popover-form-height\" className=\"w-1/2\">\n\t\t\t\t\t\t\tHeight\n\t\t\t\t\t\t</FieldLabel>\n\t\t\t\t\t\t<Input\n\t\t\t\t\t\t\tvariant=\"secondary\"\n\t\t\t\t\t\t\tid=\"popover-form-height\"\n\t\t\t\t\t\t\tdefaultValue=\"25px\"\n\t\t\t\t\t\t/>\n\t\t\t\t\t</Field>\n\t\t\t\t</FieldGroup>\n\t\t\t</PopoverContent>\n\t\t</Popover>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

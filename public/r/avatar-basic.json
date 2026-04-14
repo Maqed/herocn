@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar-basic",
+  "registryDependencies": [
+    "https://herocn.dev/r/avatar.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/avatar-basic.tsx",
+      "content": "import {\n\tAvatar,\n\tAvatarFallback,\n\tAvatarImage,\n} from \"@/components/ui/avatar\";\n\nexport default function AvatarBasic() {\n\treturn (\n\t\t<Avatar>\n\t\t\t<AvatarImage src=\"https://github.com/Maqed.png\" alt=\"@0xMaqed\" />\n\t\t\t<AvatarFallback>Mqd</AvatarFallback>\n\t\t</Avatar>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

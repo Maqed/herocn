@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "field-select",
+  "registryDependencies": [
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/select.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/field-select.tsx",
+      "content": "import {\n\tField,\n\tFieldDescription,\n\tFieldLabel,\n} from \"@/components/ui/field\";\nimport {\n\tSelect,\n\tSelectContent,\n\tSelectGroup,\n\tSelectItem,\n\tSelectTrigger,\n\tSelectValue,\n} from \"@/components/ui/select\";\n\nconst items = [\n\t{ label: \"Choose department\", value: null },\n\t{ label: \"Engineering\", value: \"engineering\" },\n\t{ label: \"Design\", value: \"design\" },\n\t{ label: \"Marketing\", value: \"marketing\" },\n\t{ label: \"Sales\", value: \"sales\" },\n\t{ label: \"Customer Support\", value: \"support\" },\n\t{ label: \"Human Resources\", value: \"hr\" },\n\t{ label: \"Finance\", value: \"finance\" },\n\t{ label: \"Operations\", value: \"operations\" },\n];\n\nexport default function FieldSelect() {\n\treturn (\n\t\t<Field className=\"w-full max-w-xs\">\n\t\t\t<FieldLabel>Department</FieldLabel>\n\t\t\t<Select items={items}>\n\t\t\t\t<SelectTrigger>\n\t\t\t\t\t<SelectValue />\n\t\t\t\t</SelectTrigger>\n\t\t\t\t<SelectContent>\n\t\t\t\t\t<SelectGroup>\n\t\t\t\t\t\t{items.map((item, index) => (\n\t\t\t\t\t\t\t<SelectItem key={`${item.value}-${index}`} value={item.value}>\n\t\t\t\t\t\t\t\t{item.label}\n\t\t\t\t\t\t\t</SelectItem>\n\t\t\t\t\t\t))}\n\t\t\t\t\t</SelectGroup>\n\t\t\t\t</SelectContent>\n\t\t\t</Select>\n\t\t\t<FieldDescription>\n\t\t\t\tSelect your department or area of work.\n\t\t\t</FieldDescription>\n\t\t</Field>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

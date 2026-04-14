@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "field-checkbox",
+  "registryDependencies": [
+    "https://herocn.dev/r/checkbox.json",
+    "https://herocn.dev/r/field.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/field-checkbox.tsx",
+      "content": "import { Checkbox } from \"@/components/ui/checkbox\";\nimport {\n\tField,\n\tFieldContent,\n\tFieldDescription,\n\tFieldGroup,\n\tFieldLabel,\n\tFieldLegend,\n\tFieldSeparator,\n\tFieldSet,\n} from \"@/components/ui/field\";\n\nexport default function FieldCheckbox() {\n\treturn (\n\t\t<FieldGroup className=\"w-full max-w-xs\">\n\t\t\t<FieldSet>\n\t\t\t\t<FieldLegend variant=\"label\">\n\t\t\t\t\tShow these items on the desktop\n\t\t\t\t</FieldLegend>\n\t\t\t\t<FieldDescription>\n\t\t\t\t\tSelect the items you want to show on the desktop.\n\t\t\t\t</FieldDescription>\n\t\t\t\t<FieldGroup className=\"gap-3\">\n\t\t\t\t\t<Field orientation=\"horizontal\">\n\t\t\t\t\t\t<Checkbox id=\"finder-pref-9k2-hard-disks-ljj\" defaultChecked />\n\t\t\t\t\t\t<FieldLabel\n\t\t\t\t\t\t\thtmlFor=\"finder-pref-9k2-hard-disks-ljj\"\n\t\t\t\t\t\t\tclassName=\"font-normal\"\n\t\t\t\t\t\t>\n\t\t\t\t\t\t\tHard disks\n\t\t\t\t\t\t</FieldLabel>\n\t\t\t\t\t</Field>\n\t\t\t\t\t<Field orientation=\"horizontal\">\n\t\t\t\t\t\t<Checkbox id=\"finder-pref-9k2-external-disks-1yg\" />\n\t\t\t\t\t\t<FieldLabel\n\t\t\t\t\t\t\thtmlFor=\"finder-pref-9k2-external-disks-1yg\"\n\t\t\t\t\t\t\tclassName=\"font-normal\"\n\t\t\t\t\t\t>\n\t\t\t\t\t\t\tExternal disks\n\t\t\t\t\t\t</FieldLabel>\n\t\t\t\t\t</Field>\n\t\t\t\t\t<Field orientation=\"horizontal\">\n\t\t\t\t\t\t<Checkbox id=\"finder-pref-9k2-cds-dvds-fzt\" />\n\t\t\t\t\t\t<FieldLabel\n\t\t\t\t\t\t\thtmlFor=\"finder-pref-9k2-cds-dvds-fzt\"\n\t\t\t\t\t\t\tclassName=\"font-normal\"\n\t\t\t\t\t\t>\n\t\t\t\t\t\t\tCDs, DVDs, and iPods\n\t\t\t\t\t\t</FieldLabel>\n\t\t\t\t\t</Field>\n\t\t\t\t\t<Field orientation=\"horizontal\">\n\t\t\t\t\t\t<Checkbox id=\"finder-pref-9k2-connected-servers-6l2\" />\n\t\t\t\t\t\t<FieldLabel\n\t\t\t\t\t\t\thtmlFor=\"finder-pref-9k2-connected-servers-6l2\"\n\t\t\t\t\t\t\tclassName=\"font-normal\"\n\t\t\t\t\t\t>\n\t\t\t\t\t\t\tConnected servers\n\t\t\t\t\t\t</FieldLabel>\n\t\t\t\t\t</Field>\n\t\t\t\t</FieldGroup>\n\t\t\t</FieldSet>\n\t\t\t<FieldSeparator />\n\t\t\t<Field orientation=\"horizontal\">\n\t\t\t\t<Checkbox id=\"finder-pref-9k2-sync-folders-nep\" defaultChecked />\n\t\t\t\t<FieldContent>\n\t\t\t\t\t<FieldLabel htmlFor=\"finder-pref-9k2-sync-folders-nep\">\n\t\t\t\t\t\tSync Desktop & Documents folders\n\t\t\t\t\t</FieldLabel>\n\t\t\t\t\t<FieldDescription>\n\t\t\t\t\t\tYour Desktop & Documents folders are being synced with iCloud Drive.\n\t\t\t\t\t\tYou can access them from other devices.\n\t\t\t\t\t</FieldDescription>\n\t\t\t\t</FieldContent>\n\t\t\t</Field>\n\t\t</FieldGroup>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

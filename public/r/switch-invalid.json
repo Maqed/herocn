@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "switch-invalid",
+  "registryDependencies": [
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/switch.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/switch-invalid.tsx",
+      "content": "import {\n\tField,\n\tFieldContent,\n\tFieldDescription,\n\tFieldLabel,\n} from \"@/components/ui/field\";\nimport { Switch } from \"@/components/ui/switch\";\n\nexport default function SwitchInvalid() {\n\treturn (\n\t\t<Field orientation=\"horizontal\" className=\"max-w-sm\" data-invalid>\n\t\t\t<FieldContent>\n\t\t\t\t<FieldLabel htmlFor=\"switch-terms\">\n\t\t\t\t\tAccept terms and conditions\n\t\t\t\t</FieldLabel>\n\t\t\t\t<FieldDescription>\n\t\t\t\t\tYou must accept the terms and conditions to continue.\n\t\t\t\t</FieldDescription>\n\t\t\t</FieldContent>\n\t\t\t<Switch id=\"switch-terms\" aria-invalid />\n\t\t</Field>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

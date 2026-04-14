@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-group-variants",
+  "registryDependencies": [
+    "https://herocn.dev/r/input-group.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/input-group-variants.tsx",
+      "content": "import { SearchIcon } from \"lucide-react\";\n\nimport {\n\tInputGroup,\n\tInputGroupAddon,\n\tInputGroupInput,\n} from \"@/components/ui/input-group\";\n\nexport default function InputGroupVariants() {\n\treturn (\n\t\t<div className=\"grid w-full max-w-sm gap-4\">\n\t\t\t<InputGroup>\n\t\t\t\t<InputGroupInput placeholder=\"Default\" />\n\t\t\t\t<InputGroupAddon>\n\t\t\t\t\t<SearchIcon />\n\t\t\t\t</InputGroupAddon>\n\t\t\t</InputGroup>\n\t\t\t<InputGroup variant=\"secondary\">\n\t\t\t\t<InputGroupInput placeholder=\"Secondary\" />\n\t\t\t\t<InputGroupAddon>\n\t\t\t\t\t<SearchIcon />\n\t\t\t\t</InputGroupAddon>\n\t\t\t</InputGroup>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

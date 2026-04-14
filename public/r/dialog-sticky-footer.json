@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dialog-sticky-footer",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/dialog.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/dialog-sticky-footer.tsx",
+      "content": "\"use client\";\n\nimport { Button } from \"@/components/ui/button\";\nimport {\n\tDialog,\n\tDialogClose,\n\tDialogContent,\n\tDialogDescription,\n\tDialogFooter,\n\tDialogHeader,\n\tDialogTitle,\n\tDialogTrigger,\n} from \"@/components/ui/dialog\";\n\nexport default function DialogStickyFooter() {\n\treturn (\n\t\t<Dialog>\n\t\t\t<DialogTrigger render={<Button variant=\"tertiary\" />}>\n\t\t\t\tSticky Footer\n\t\t\t</DialogTrigger>\n\t\t\t<DialogContent>\n\t\t\t\t<DialogHeader>\n\t\t\t\t\t<DialogTitle>Sticky Footer</DialogTitle>\n\t\t\t\t\t<DialogDescription>\n\t\t\t\t\t\tThis dialog has a sticky footer that stays visible while the content\n\t\t\t\t\t\tscrolls.\n\t\t\t\t\t</DialogDescription>\n\t\t\t\t</DialogHeader>\n\t\t\t\t<div className=\"no-scrollbar -mx-4 max-h-[50vh] overflow-y-auto px-4\">\n\t\t\t\t\t{Array.from({ length: 10 }).map((_, index) => (\n\t\t\t\t\t\t<p key={index} className=\"mb-4 leading-normal\">\n\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do\n\t\t\t\t\t\t\teiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\n\t\t\t\t\t\t\tenim ad minim veniam, quis nostrud exercitation ullamco laboris\n\t\t\t\t\t\t\tnisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in\n\t\t\t\t\t\t\treprehenderit in voluptate velit esse cillum dolore eu fugiat\n\t\t\t\t\t\t\tnulla pariatur. Excepteur sint occaecat cupidatat non proident,\n\t\t\t\t\t\t\tsunt in culpa qui officia deserunt mollit anim id est laborum.\n\t\t\t\t\t\t</p>\n\t\t\t\t\t))}\n\t\t\t\t</div>\n\t\t\t\t<DialogFooter>\n\t\t\t\t\t<DialogClose render={<Button variant=\"tertiary\" />}>\n\t\t\t\t\t\tClose\n\t\t\t\t\t</DialogClose>\n\t\t\t\t</DialogFooter>\n\t\t\t</DialogContent>\n\t\t</Dialog>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

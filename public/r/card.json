@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card",
+  "files": [
+    {
+      "path": "components/ui/card.tsx",
+      "content": "import type * as React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nfunction Card({\n\tclassName,\n\tsize = \"default\",\n\tvariant = \"default\",\n\t...props\n}: React.ComponentProps<\"div\"> & { size?: \"default\" | \"sm\" } & {\n\tvariant?: \"default\" | \"transparent\" | \"secondary\" | \"tertiary\";\n}) {\n\treturn (\n\t\t<div\n\t\t\tdata-slot=\"card\"\n\t\t\tdata-size={size}\n\t\t\tclassName={cn(\n\t\t\t\t\"group/card relative flex flex-col gap-3 overflow-hidden rounded-3xl bg-surface p-4 py-4 text-card-foreground text-sm ring-1 ring-foreground/10 has-[>img:first-child]:pt-0 has-data-[slot=card-footer]:pb-0 data-[size=sm]:gap-3 data-[size=sm]:py-3 data-[size=sm]:has-data-[slot=card-footer]:pb-0 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl\",\n\t\t\t\tvariant === \"transparent\" && \"border-none bg-transparent shadow-none\",\n\t\t\t\tvariant === \"secondary\" && \"bg-surface-secondary\",\n\t\t\t\tvariant === \"tertiary\" && \"bg-surface-tertiary\",\n\t\t\t\tclassName,\n\t\t\t)}\n\t\t\t{...props}\n\t\t/>\n\t);\n}\n\nfunction CardHeader({ className, ...props }: React.ComponentProps<\"div\">) {\n\treturn (\n\t\t<div\n\t\t\tdata-slot=\"card-header\"\n\t\t\tclassName={cn(\n\t\t\t\t\"group/card-header @container/card-header grid auto-rows-min items-start gap-1 rounded-t-xl px-4 has-data-[slot=card-action]:grid-cols-[1fr_auto] has-data-[slot=card-description]:grid-rows-[auto_auto] group-data-[size=sm]/card:px-3 [.border-b]:pb-4 group-data-[size=sm]/card:[.border-b]:pb-3\",\n\t\t\t\tclassName,\n\t\t\t)}\n\t\t\t{...props}\n\t\t/>\n\t);\n}\n\nfunction CardTitle({ className, ...props }: React.ComponentProps<\"div\">) {\n\treturn (\n\t\t<div\n\t\t\tdata-slot=\"card-title\"\n\t\t\tclassName={cn(\n\t\t\t\t\"font-medium text-foreground text-sm leading-6 group-data-[size=sm]/card:text-xs\",\n\t\t\t\tclassName,\n\t\t\t)}\n\t\t\t{...props}\n\t\t/>\n\t);\n}\n\nfunction CardDescription({ className, ...props }: React.ComponentProps<\"div\">) {\n\treturn (\n\t\t<div\n\t\t\tdata-slot=\"card-description\"\n\t\t\tclassName={cn(\"text-muted-foreground text-sm leading-5\", className)}\n\t\t\t{...props}\n\t\t/>\n\t);\n}\n\nfunction CardAction({ className, ...props }: React.ComponentProps<\"div\">) {\n\treturn (\n\t\t<div\n\t\t\tdata-slot=\"card-action\"\n\t\t\tclassName={cn(\n\t\t\t\t\"col-start-2 row-span-2 row-start-1 self-start justify-self-end\",\n\t\t\t\tclassName,\n\t\t\t)}\n\t\t\t{...props}\n\t\t/>\n\t);\n}\n\nfunction CardContent({ className, ...props }: React.ComponentProps<\"div\">) {\n\treturn (\n\t\t<div\n\t\t\tdata-slot=\"card-content\"\n\t\t\tclassName={cn(\"px-4 group-data-[size=sm]/card:px-3\", className)}\n\t\t\t{...props}\n\t\t/>\n\t);\n}\n\nfunction CardFooter({ className, ...props }: React.ComponentProps<\"div\">) {\n\treturn (\n\t\t<div\n\t\t\tdata-slot=\"card-footer\"\n\t\t\tclassName={cn(\n\t\t\t\t\"flex items-center rounded-b-xl border-t p-4 group-data-[size=sm]/card:p-3\",\n\t\t\t\tclassName,\n\t\t\t)}\n\t\t\t{...props}\n\t\t/>\n\t);\n}\n\nexport {\n\tCard,\n\tCardAction,\n\tCardContent,\n\tCardDescription,\n\tCardFooter,\n\tCardHeader,\n\tCardTitle,\n};\n",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "theme": {
+      "--color-surface": "var(--surface)",
+      "--color-surface-secondary": "var(--surface-secondary)",
+      "--color-surface-tertiary": "var(--surface-tertiary)"
+    },
+    "light": {
+      "--surface": "white",
+      "--surface-secondary": "oklch(0.9524 0.0013 286.37)",
+      "--surface-tertiary": "oklch(0.9373 0.0013 286.37)"
+    },
+    "dark": {
+      "--surface": "oklch(0.2103 0.0059 285.89)",
+      "--surface-secondary": "oklch(0.257 0.0037 286.14)",
+      "--surface-tertiary": "oklch(0.2721 0.0024 247.91)"
+    }
+  },
+  "type": "registry:ui"
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sonner-description",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/sonner.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/sonner-description.tsx",
+      "content": "\"use client\";\n\nimport { toast } from \"sonner\";\n\nimport { Button } from \"@/components/ui/button\";\n\nexport function SonnerDescription() {\n\treturn (\n\t\t<Button\n\t\t\tvariant=\"tertiary\"\n\t\t\tclassName=\"w-fit\"\n\t\t\tonClick={() =>\n\t\t\t\ttoast(\"Event has been created\", {\n\t\t\t\t\tdescription: \"Monday, January 3rd at 6:00pm\",\n\t\t\t\t})\n\t\t\t}\n\t\t>\n\t\t\tShow Toast\n\t\t</Button>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

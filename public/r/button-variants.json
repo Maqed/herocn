@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-variants",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/button-variants.tsx",
+      "content": "import { Button } from \"@/components/ui/button\";\n\nfunction ButtonVariants() {\n\treturn (\n\t\t<div className=\"flex flex-wrap items-center gap-3\">\n\t\t\t<Button variant=\"default\">Default</Button>\n\t\t\t<Button variant=\"secondary\">Secondary</Button>\n\t\t\t<Button variant=\"tertiary\">Tertiary</Button>\n\t\t\t<Button variant=\"outline\">Outline</Button>\n\t\t\t<Button variant=\"ghost\">Ghost</Button>\n\t\t\t<Button variant=\"link\">Link</Button>\n\t\t\t<Button variant=\"destructive\">Destructive</Button>\n\t\t\t<Button variant=\"destructive-soft\">Destructive Soft</Button>\n\t\t</div>\n\t);\n}\n\nexport default ButtonVariants;\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

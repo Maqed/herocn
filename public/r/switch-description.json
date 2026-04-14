@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "switch-description",
+  "registryDependencies": [
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/switch.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/switch-description.tsx",
+      "content": "import {\n\tField,\n\tFieldContent,\n\tFieldDescription,\n\tFieldLabel,\n} from \"@/components/ui/field\";\nimport { Switch } from \"@/components/ui/switch\";\n\nexport default function SwitchDescription() {\n\treturn (\n\t\t<Field orientation=\"horizontal\" className=\"max-w-sm\">\n\t\t\t<FieldContent>\n\t\t\t\t<FieldLabel htmlFor=\"switch-focus-mode\">\n\t\t\t\t\tShare across devices\n\t\t\t\t</FieldLabel>\n\t\t\t\t<FieldDescription>\n\t\t\t\t\tFocus is shared across devices, and turns off when you leave the app.\n\t\t\t\t</FieldDescription>\n\t\t\t</FieldContent>\n\t\t\t<Switch id=\"switch-focus-mode\" />\n\t\t</Field>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

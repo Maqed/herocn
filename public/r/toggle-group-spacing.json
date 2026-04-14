@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toggle-group-spacing",
+  "registryDependencies": [
+    "https://herocn.dev/r/toggle-group.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/toggle-group-spacing.tsx",
+      "content": "import {\n\tToggleGroup,\n\tToggleGroupItem,\n} from \"@/components/ui/toggle-group\";\n\nexport default function ToggleGroupSpacing() {\n\treturn (\n\t\t<ToggleGroup defaultValue={[\"top\"]} spacing={2}>\n\t\t\t<ToggleGroupItem value=\"top\" aria-label=\"Toggle top\">\n\t\t\t\tTop\n\t\t\t</ToggleGroupItem>\n\t\t\t<ToggleGroupItem value=\"bottom\" aria-label=\"Toggle bottom\">\n\t\t\t\tBottom\n\t\t\t</ToggleGroupItem>\n\t\t\t<ToggleGroupItem value=\"left\" aria-label=\"Toggle left\">\n\t\t\t\tLeft\n\t\t\t</ToggleGroupItem>\n\t\t\t<ToggleGroupItem value=\"right\" aria-label=\"Toggle right\">\n\t\t\t\tRight\n\t\t\t</ToggleGroupItem>\n\t\t</ToggleGroup>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

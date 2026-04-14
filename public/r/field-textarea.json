@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "field-textarea",
+  "registryDependencies": [
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/textarea.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/field-textarea.tsx",
+      "content": "import {\n\tField,\n\tFieldDescription,\n\tFieldGroup,\n\tFieldLabel,\n\tFieldSet,\n} from \"@/components/ui/field\";\nimport { Textarea } from \"@/components/ui/textarea\";\n\nexport default function FieldTextarea() {\n\treturn (\n\t\t<FieldSet className=\"w-full max-w-xs\">\n\t\t\t<FieldGroup>\n\t\t\t\t<Field>\n\t\t\t\t\t<FieldLabel htmlFor=\"feedback\">Feedback</FieldLabel>\n\t\t\t\t\t<Textarea\n\t\t\t\t\t\tid=\"feedback\"\n\t\t\t\t\t\tplaceholder=\"Your feedback helps us improve...\"\n\t\t\t\t\t\trows={4}\n\t\t\t\t\t/>\n\t\t\t\t\t<FieldDescription>\n\t\t\t\t\t\tShare your thoughts about our service.\n\t\t\t\t\t</FieldDescription>\n\t\t\t\t</Field>\n\t\t\t</FieldGroup>\n\t\t</FieldSet>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

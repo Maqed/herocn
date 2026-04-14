@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "surface-variants",
+  "registryDependencies": [
+    "https://herocn.dev/r/surface.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/surface-variants.tsx",
+      "content": "import { Surface } from \"@/components/ui/surface\";\n\nexport default function SurfaceVariants() {\n\treturn (\n\t\t<div className=\"grid w-full gap-3 md:grid-cols-2\">\n\t\t\t<Surface variant=\"default\" className=\"rounded-3xl border p-6\">\n\t\t\t\tDefault\n\t\t\t</Surface>\n\t\t\t<Surface variant=\"secondary\" className=\"rounded-3xl border p-6\">\n\t\t\t\tSecondary\n\t\t\t</Surface>\n\t\t\t<Surface variant=\"tertiary\" className=\"rounded-3xl border p-6\">\n\t\t\t\tTertiary\n\t\t\t</Surface>\n\t\t\t<Surface variant=\"transparent\" className=\"rounded-3xl border p-6\">\n\t\t\t\tTransparent\n\t\t\t</Surface>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

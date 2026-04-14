@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "textarea-states",
+  "registryDependencies": [
+    "https://herocn.dev/r/textarea.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/textarea-states.tsx",
+      "content": "import { Textarea } from \"@/components/ui/textarea\";\n\nexport default function TextareaStates() {\n\treturn (\n\t\t<div className=\"flex w-full max-w-sm flex-col gap-3\">\n\t\t\t<Textarea disabled placeholder=\"Disabled\" rows={3} />\n\t\t\t<Textarea\n\t\t\t\taria-invalid\n\t\t\t\tplaceholder=\"Invalid\"\n\t\t\t\tdefaultValue=\"Invalid value\"\n\t\t\t\trows={3}\n\t\t\t/>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

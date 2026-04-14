@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "switch-rtl",
+  "registryDependencies": [
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/switch.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/switch-rtl.tsx",
+      "content": "\"use client\";\n\nimport {\n\ttype Translations,\n\tuseTranslation,\n} from \"@/components/language-selector\";\nimport {\n\tField,\n\tFieldContent,\n\tFieldDescription,\n\tFieldLabel,\n} from \"@/components/ui/field\";\nimport { Switch } from \"@/components/ui/switch\";\n\nconst translations: Translations = {\n\ten: {\n\t\tdir: \"ltr\",\n\t\tvalues: {\n\t\t\tlabel: \"Share across devices\",\n\t\t\tdescription:\n\t\t\t\t\"Focus is shared across devices, and turns off when you leave the app.\",\n\t\t},\n\t},\n\tar: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\tlabel: \"المشاركة عبر الأجهزة\",\n\t\t\tdescription:\n\t\t\t\t\"يتم مشاركة التركيز عبر الأجهزة، ويتم إيقاف تشغيله عند مغادرة التطبيق.\",\n\t\t},\n\t},\n\the: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\tlabel: \"שיתוף בין מכשירים\",\n\t\t\tdescription: \"המיקוד משותף בין מכשירים, וכבה כשאתה עוזב את האפליקציה.\",\n\t\t},\n\t},\n};\n\nexport function SwitchRtl() {\n\tconst { dir, language, t } = useTranslation(translations, \"ar\");\n\n\treturn (\n\t\t<div lang={language} dir={dir}>\n\t\t\t<Field orientation=\"horizontal\" className=\"max-w-sm\">\n\t\t\t\t<FieldContent>\n\t\t\t\t\t<FieldLabel htmlFor=\"switch-focus-mode-rtl\">{t.label}</FieldLabel>\n\t\t\t\t\t<FieldDescription>{t.description}</FieldDescription>\n\t\t\t\t</FieldContent>\n\t\t\t\t<Switch id=\"switch-focus-mode-rtl\" />\n\t\t\t</Field>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

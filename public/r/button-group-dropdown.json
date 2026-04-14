@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-group-dropdown",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/button-group.json",
+    "https://herocn.dev/r/dropdown-menu.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/button-group-dropdown.tsx",
+      "content": "import {\n\tAlertTriangleIcon,\n\tCheckIcon,\n\tChevronDownIcon,\n\tCopyIcon,\n\tShareIcon,\n\tTrashIcon,\n\tUserRoundXIcon,\n\tVolumeOffIcon,\n} from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { ButtonGroup } from \"@/components/ui/button-group\";\nimport {\n\tDropdownMenu,\n\tDropdownMenuContent,\n\tDropdownMenuGroup,\n\tDropdownMenuItem,\n\tDropdownMenuSeparator,\n\tDropdownMenuTrigger,\n} from \"@/components/ui/dropdown-menu\";\n\nexport default function ButtonGroupDropdown() {\n\treturn (\n\t\t<ButtonGroup>\n\t\t\t<Button variant=\"outline\">Follow</Button>\n\t\t\t<DropdownMenu>\n\t\t\t\t<DropdownMenuTrigger\n\t\t\t\t\trender={<Button variant=\"outline\" className=\"ps-2!\" />}\n\t\t\t\t>\n\t\t\t\t\t<ChevronDownIcon />\n\t\t\t\t</DropdownMenuTrigger>\n\t\t\t\t<DropdownMenuContent align=\"end\" className=\"w-44\">\n\t\t\t\t\t<DropdownMenuGroup>\n\t\t\t\t\t\t<DropdownMenuItem>\n\t\t\t\t\t\t\t<VolumeOffIcon />\n\t\t\t\t\t\t\tMute Conversation\n\t\t\t\t\t\t</DropdownMenuItem>\n\t\t\t\t\t\t<DropdownMenuItem>\n\t\t\t\t\t\t\t<CheckIcon />\n\t\t\t\t\t\t\tMark as Read\n\t\t\t\t\t\t</DropdownMenuItem>\n\t\t\t\t\t\t<DropdownMenuItem>\n\t\t\t\t\t\t\t<AlertTriangleIcon />\n\t\t\t\t\t\t\tReport Conversation\n\t\t\t\t\t\t</DropdownMenuItem>\n\t\t\t\t\t\t<DropdownMenuItem>\n\t\t\t\t\t\t\t<UserRoundXIcon />\n\t\t\t\t\t\t\tBlock User\n\t\t\t\t\t\t</DropdownMenuItem>\n\t\t\t\t\t\t<DropdownMenuItem>\n\t\t\t\t\t\t\t<ShareIcon />\n\t\t\t\t\t\t\tShare Conversation\n\t\t\t\t\t\t</DropdownMenuItem>\n\t\t\t\t\t\t<DropdownMenuItem>\n\t\t\t\t\t\t\t<CopyIcon />\n\t\t\t\t\t\t\tCopy Conversation\n\t\t\t\t\t\t</DropdownMenuItem>\n\t\t\t\t\t</DropdownMenuGroup>\n\t\t\t\t\t<DropdownMenuSeparator />\n\t\t\t\t\t<DropdownMenuGroup>\n\t\t\t\t\t\t<DropdownMenuItem variant=\"destructive\">\n\t\t\t\t\t\t\t<TrashIcon />\n\t\t\t\t\t\t\tDelete Conversation\n\t\t\t\t\t\t</DropdownMenuItem>\n\t\t\t\t\t</DropdownMenuGroup>\n\t\t\t\t</DropdownMenuContent>\n\t\t\t</DropdownMenu>\n\t\t</ButtonGroup>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

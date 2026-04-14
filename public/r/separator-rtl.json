@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "separator-rtl",
+  "registryDependencies": [
+    "https://herocn.dev/r/separator.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/separator-rtl.tsx",
+      "content": "\"use client\";\n\nimport {\n\ttype Translations,\n\tuseTranslation,\n} from \"@/components/language-selector\";\nimport { Separator } from \"@/components/ui/separator\";\n\nconst translations: Translations = {\n\ten: {\n\t\tdir: \"ltr\",\n\t\tvalues: {\n\t\t\ttitle: \"herocn\",\n\t\t\tsubtitle: \"HeroUI design system, shadcn/ui abstraction\",\n\t\t\tdescription: \"Beautifully designed components for your next application.\",\n\t\t},\n\t},\n\tar: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\ttitle: \"herocn\",\n\t\t\tsubtitle: \"نظام تصميم HeroUI، تجريد shadcn/ui\",\n\t\t\tdescription: \"مكونات مصممة بشكل جميل لتطبيقك القادم.\",\n\t\t},\n\t},\n\the: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\ttitle: \"herocn\",\n\t\t\tsubtitle: \"מערכת עיצוב HeroUI, הפשטה של shadcn/ui\",\n\t\t\tdescription: \"רכיבים מעוצבים בצורה יפה לאפליקציה הבאה שלך.\",\n\t\t},\n\t},\n};\n\nexport default function SeparatorRtl() {\n\tconst { dir, t } = useTranslation(translations, \"ar\");\n\n\treturn (\n\t\t<div className=\"flex max-w-sm flex-col gap-4 text-sm\" dir={dir}>\n\t\t\t<div className=\"flex flex-col gap-1.5\">\n\t\t\t\t<div className=\"font-medium leading-none\">{t.title}</div>\n\t\t\t\t<div className=\"text-muted-foreground\">{t.subtitle}</div>\n\t\t\t</div>\n\t\t\t<Separator />\n\t\t\t<div>{t.description}</div>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

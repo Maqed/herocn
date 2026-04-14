@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-rtl",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/button-rtl.tsx",
+      "content": "\"use client\";\n\nimport { ArrowRightIcon, PlusIcon } from \"lucide-react\";\nimport {\n\ttype Translations,\n\tuseTranslation,\n} from \"@/components/language-selector\";\nimport { Button } from \"@/components/ui/button\";\nimport { Spinner } from \"@/components/ui/spinner\";\n\nconst translations: Translations = {\n\ten: {\n\t\tdir: \"ltr\",\n\t\tvalues: {\n\t\t\tbutton: \"Button\",\n\t\t\tsubmit: \"Submit\",\n\t\t\tdelete: \"Delete\",\n\t\t\tloading: \"Loading\",\n\t\t},\n\t},\n\tar: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\tbutton: \"زر\",\n\t\t\tsubmit: \"إرسال\",\n\t\t\tdelete: \"حذف\",\n\t\t\tloading: \"جاري التحميل\",\n\t\t},\n\t},\n\the: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\tbutton: \"כפתור\",\n\t\t\tsubmit: \"שלח\",\n\t\t\tdelete: \"מחק\",\n\t\t\tloading: \"טוען\",\n\t\t},\n\t},\n};\n\nexport function ButtonRtl() {\n\tconst { dir, language, t } = useTranslation(translations, \"ar\");\n\n\treturn (\n\t\t<div\n\t\t\tclassName=\"flex flex-wrap items-center gap-2 md:flex-row\"\n\t\t\tlang={language}\n\t\t\tdir={dir}\n\t\t>\n\t\t\t<Button variant=\"secondary\">{t.button}</Button>\n\t\t\t<Button variant=\"destructive\">{t.delete}</Button>\n\t\t\t<Button variant=\"secondary\">\n\t\t\t\t{t.submit}\n\t\t\t\t<ArrowRightIcon className=\"rtl:rotate-180\" data-icon=\"inline-end\" />\n\t\t\t</Button>\n\t\t\t<Button variant=\"secondary\" size=\"icon\" aria-label=\"Add\">\n\t\t\t\t<PlusIcon />\n\t\t\t</Button>\n\t\t\t<Button variant=\"tertiary\" disabled>\n\t\t\t\t<Spinner data-icon=\"inline-start\" /> {t.loading}\n\t\t\t</Button>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

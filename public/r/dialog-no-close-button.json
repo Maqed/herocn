@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dialog-no-close-button",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/dialog.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/dialog-no-close-button.tsx",
+      "content": "\"use client\";\n\nimport { Button } from \"@/components/ui/button\";\nimport {\n\tDialog,\n\tDialogContent,\n\tDialogDescription,\n\tDialogHeader,\n\tDialogTitle,\n\tDialogTrigger,\n} from \"@/components/ui/dialog\";\n\nexport default function DialogNoCloseButton() {\n\treturn (\n\t\t<Dialog>\n\t\t\t<DialogTrigger render={<Button variant=\"tertiary\" />}>\n\t\t\t\tNo Close Button\n\t\t\t</DialogTrigger>\n\t\t\t<DialogContent showCloseButton={false}>\n\t\t\t\t<DialogHeader>\n\t\t\t\t\t<DialogTitle>No Close Button</DialogTitle>\n\t\t\t\t\t<DialogDescription>\n\t\t\t\t\t\tThis dialog doesn&apos;t have a close button in the top-right\n\t\t\t\t\t\tcorner.\n\t\t\t\t\t</DialogDescription>\n\t\t\t\t</DialogHeader>\n\t\t\t</DialogContent>\n\t\t</Dialog>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

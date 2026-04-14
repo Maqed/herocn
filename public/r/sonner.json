@@ -1,0 +1,45 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sonner",
+  "dependencies": [
+    "lucide-react",
+    "next-themes",
+    "sonner"
+  ],
+  "files": [
+    {
+      "path": "components/ui/sonner.tsx",
+      "content": "\"use client\";\n\nimport {\n\tCircleCheckIcon,\n\tInfoIcon,\n\tLoader2Icon,\n\tOctagonXIcon,\n\tTriangleAlertIcon,\n} from \"lucide-react\";\nimport { useTheme } from \"next-themes\";\nimport { Toaster as Sonner, type ToasterProps } from \"sonner\";\n\nconst Toaster = ({ ...props }: ToasterProps) => {\n\tconst { theme = \"system\" } = useTheme();\n\n\treturn (\n\t\t<Sonner\n\t\t\ttheme={theme as ToasterProps[\"theme\"]}\n\t\t\tclassName=\"toaster group\"\n\t\t\ticons={{\n\t\t\t\tsuccess: <CircleCheckIcon className=\"size-4\" />,\n\t\t\t\tinfo: <InfoIcon className=\"size-4\" />,\n\t\t\t\twarning: <TriangleAlertIcon className=\"size-4\" />,\n\t\t\t\terror: <OctagonXIcon className=\"size-4\" />,\n\t\t\t\tloading: (\n\t\t\t\t\t<Loader2Icon className=\"size-4 animate-duration-750 animate-spin\" />\n\t\t\t\t),\n\t\t\t}}\n\t\t\tposition=\"bottom-center\"\n\t\t\tstyle={\n\t\t\t\t{\n\t\t\t\t\t\"--normal-bg\": \"var(--popover)\",\n\t\t\t\t\t\"--normal-text\": \"var(--popover-foreground)\",\n\t\t\t\t\t\"--normal-border\": \"var(--border)\",\n\t\t\t\t\t\"--border-radius\": \"var(--radius)\",\n\t\t\t\t\t\"--info-bg\": \"var(--surface)\",\n\t\t\t\t\t\"--success-bg\": \"var(--surface)\",\n\t\t\t\t\t\"--success-text\": \"var(--success)\",\n\t\t\t\t\t\"--warning-bg\": \"var(--surface)\",\n\t\t\t\t\t\"--warning-text\": \"var(--warning)\",\n\t\t\t\t\t\"--error-bg\": \"var(--surface)\",\n\t\t\t\t\t\"--error-text\": \"var(--destructive)\",\n\t\t\t\t} as React.CSSProperties\n\t\t\t}\n\t\t\trichColors\n\t\t\tcloseButton\n\t\t\ttoastOptions={{\n\t\t\t\tclassNames: {\n\t\t\t\t\ttoast:\n\t\t\t\t\t\t\"group/toast border-none! rounded-3xl! bg-surface! px-4! py-3! shadow-xl! gap-1.5! sm:w-auto sm:min-w-112\",\n\t\t\t\t\ttitle: \"text-sm! leading-5! font-medium!\",\n\t\t\t\t\tdescription: \"text-sm! text-muted-foreground!\",\n\t\t\t\t\tcloseButton:\n\t\t\t\t\t\t\"top-2.5! end-0.5! transition-none text-muted-foreground! left-[unset]! translate-x-0! translate-y-0! size-5! border-border! bg-default! sm:bg-surface! text-default transition-all duration-500 sm:opacity-0! sm:pointer-events-none! sm:-top-1! sm:-end-1! group-hover:opacity-100! group-hover:pointer-events-auto!\",\n\t\t\t\t\tactionButton:\n\t\t\t\t\t\t\"rounded-3xl! bg-default! text-default-foreground! hover:bg-default/80! active:bg-default/80! pressible h-8! px-3! text-xs! mt-2! sm:mt-0!\",\n\t\t\t\t},\n\t\t\t}}\n\t\t\t{...props}\n\t\t/>\n\t);\n};\n\nexport { Toaster };\n",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "theme": {
+      "--color-surface": "var(--surface)",
+      "--color-success": "var(--success)",
+      "--color-warning": "var(--warning)",
+      "--color-default": "var(--default)",
+      "--color-default-foreground": "var(--default-foreground)"
+    },
+    "light": {
+      "--surface": "white",
+      "--success": "oklch(0.7329 0.1935 150.81)",
+      "--warning": "oklch(0.7819 0.1585 72.33)",
+      "--default": "oklch(94% 0.001 286.375)",
+      "--default-foreground": "var(--eclipse)"
+    },
+    "dark": {
+      "--surface": "oklch(0.2103 0.0059 285.89)",
+      "--warning": "oklch(0.8203 0.1388 76.34)",
+      "--default": "oklch(27.4% 0.006 286.033)",
+      "--default-foreground": "var(--snow)"
+    }
+  },
+  "css": {
+    "@utility pressible": {
+      "transition": "transform 250ms var(--ease-smooth), background-color 100ms var(--ease-out), box-shadow 100ms var(--ease-out)",
+      "@apply transform-gpu motion-reduce:transition-none active:scale-[0.97] aria-expanded:scale-[0.97]": {}
+    }
+  },
+  "type": "registry:ui"
+}

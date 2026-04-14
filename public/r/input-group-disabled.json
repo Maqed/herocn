@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-group-disabled",
+  "registryDependencies": [
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/input-group.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/input-group-disabled.tsx",
+      "content": "import { SearchIcon } from \"lucide-react\";\n\nimport { Field, FieldLabel } from \"@/components/ui/field\";\nimport {\n\tInputGroup,\n\tInputGroupAddon,\n\tInputGroupInput,\n\tInputGroupTextarea,\n} from \"@/components/ui/input-group\";\n\nexport default function InputGroupDisabled() {\n\treturn (\n\t\t<div className=\"grid w-full max-w-sm gap-6\">\n\t\t\t<Field>\n\t\t\t\t<FieldLabel htmlFor=\"disabled-input\">Search</FieldLabel>\n\t\t\t\t<InputGroup>\n\t\t\t\t\t<InputGroupInput\n\t\t\t\t\t\tid=\"disabled-input\"\n\t\t\t\t\t\tdisabled\n\t\t\t\t\t\tplaceholder=\"Search disabled...\"\n\t\t\t\t\t/>\n\t\t\t\t\t<InputGroupAddon>\n\t\t\t\t\t\t<SearchIcon />\n\t\t\t\t\t</InputGroupAddon>\n\t\t\t\t</InputGroup>\n\t\t\t</Field>\n\n\t\t\t<Field>\n\t\t\t\t<FieldLabel htmlFor=\"disabled-textarea\">Message</FieldLabel>\n\t\t\t\t<InputGroup>\n\t\t\t\t\t<InputGroupTextarea\n\t\t\t\t\t\tid=\"disabled-textarea\"\n\t\t\t\t\t\tdisabled\n\t\t\t\t\t\tplaceholder=\"Message disabled...\"\n\t\t\t\t\t\trows={3}\n\t\t\t\t\t/>\n\t\t\t\t</InputGroup>\n\t\t\t</Field>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

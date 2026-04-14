@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "badge-icon",
+  "registryDependencies": [
+    "https://herocn.dev/r/badge.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/badge-icon.tsx",
+      "content": "import { BellIcon, CheckCheckIcon } from \"lucide-react\";\n\nimport { Badge } from \"@/components/ui/badge\";\n\nexport default function BadgeIcon() {\n\treturn (\n\t\t<div className=\"flex flex-wrap items-center gap-2\">\n\t\t\t<Badge>\n\t\t\t\t<BellIcon data-icon=\"inline-start\" />\n\t\t\t\tNotifications\n\t\t\t</Badge>\n\t\t\t<Badge variant=\"success\">\n\t\t\t\t<CheckCheckIcon data-icon=\"inline-end\" />\n\t\t\t\tNew\n\t\t\t</Badge>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

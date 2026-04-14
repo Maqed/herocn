@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "separator-surface",
+  "registryDependencies": [
+    "https://herocn.dev/r/separator.json",
+    "https://herocn.dev/r/surface.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/separator-surface.tsx",
+      "content": "import { Separator } from \"@/components/ui/separator\";\nimport { Surface } from \"@/components/ui/surface\";\n\nexport default function SeparatorSurface() {\n\treturn (\n\t\t<div className=\"grid w-full gap-3 md:grid-cols-2\">\n\t\t\t<Surface variant=\"default\" className=\"rounded-3xl p-6\">\n\t\t\t\t<div className=\"flex flex-col gap-3\">\n\t\t\t\t\t<div className=\"font-medium text-base\">Default</div>\n\t\t\t\t\t<Separator />\n\t\t\t\t\t<div className=\"text-muted-foreground text-sm\">\n\t\t\t\t\t\tSeparator on the default surface background.\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</Surface>\n\t\t\t<Surface variant=\"secondary\" className=\"rounded-3xl p-6\">\n\t\t\t\t<div className=\"flex flex-col gap-3\">\n\t\t\t\t\t<div className=\"font-medium text-base\">Secondary</div>\n\t\t\t\t\t<Separator />\n\t\t\t\t\t<div className=\"text-muted-foreground text-sm\">\n\t\t\t\t\t\tSeparator on the secondary surface background.\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</Surface>\n\t\t\t<Surface variant=\"tertiary\" className=\"rounded-3xl p-6\">\n\t\t\t\t<div className=\"flex flex-col gap-3\">\n\t\t\t\t\t<div className=\"font-medium text-base\">Tertiary</div>\n\t\t\t\t\t<Separator />\n\t\t\t\t\t<div className=\"text-muted-foreground text-sm\">\n\t\t\t\t\t\tSeparator on the tertiary surface background.\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</Surface>\n\t\t\t<Surface variant=\"transparent\" className=\"rounded-3xl p-6\">\n\t\t\t\t<div className=\"flex flex-col gap-3\">\n\t\t\t\t\t<div className=\"font-medium text-base\">Transparent</div>\n\t\t\t\t\t<Separator />\n\t\t\t\t\t<div className=\"text-muted-foreground text-sm\">\n\t\t\t\t\t\tSeparator on a transparent surface (inherits parent).\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</Surface>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

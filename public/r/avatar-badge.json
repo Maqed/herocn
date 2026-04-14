@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar-badge",
+  "registryDependencies": [
+    "https://herocn.dev/r/avatar.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/avatar-badge.tsx",
+      "content": "import {\n\tAvatar,\n\tAvatarBadge,\n\tAvatarFallback,\n\tAvatarImage,\n} from \"@/components/ui/avatar\";\n\nexport default function AvatarWithBadge() {\n\tconst positions = [\n\t\t\"bottom-end\",\n\t\t\"bottom-start\",\n\t\t\"top-end\",\n\t\t\"top-start\",\n\t] as const;\n\tconst variants = [\n\t\t\"default\",\n\t\t\"primary\",\n\t\t\"success\",\n\t\t\"warning\",\n\t\t\"destructive\",\n\t] as const;\n\treturn (\n\t\t<div className=\"flex flex-wrap items-center justify-center gap-2\">\n\t\t\t{variants.map((variant, index) => (\n\t\t\t\t<Avatar key={`avatar-badge-variant-${variant}`}>\n\t\t\t\t\t<AvatarImage src=\"https://github.com/Maqed.png\" alt=\"@0xMaqed\" />\n\t\t\t\t\t<AvatarFallback>Mqd</AvatarFallback>\n\t\t\t\t\t<AvatarBadge position={positions[index % 4]} variant={variant}>\n\t\t\t\t\t\t{index + 1}\n\t\t\t\t\t</AvatarBadge>\n\t\t\t\t</Avatar>\n\t\t\t))}\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

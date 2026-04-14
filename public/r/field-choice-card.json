@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "field-choice-card",
+  "registryDependencies": [
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/radio-group.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/field-choice-card.tsx",
+      "content": "import {\n\tField,\n\tFieldContent,\n\tFieldDescription,\n\tFieldGroup,\n\tFieldLabel,\n\tFieldLegend,\n\tFieldSet,\n\tFieldTitle,\n} from \"@/components/ui/field\";\nimport {\n\tRadioGroup,\n\tRadioGroupItem,\n} from \"@/components/ui/radio-group\";\n\nexport default function FieldChoiceCard() {\n\treturn (\n\t\t<FieldGroup className=\"w-full max-w-xs\">\n\t\t\t<FieldSet>\n\t\t\t\t<FieldLegend variant=\"label\">Compute Environment</FieldLegend>\n\t\t\t\t<FieldDescription>\n\t\t\t\t\tSelect the compute environment for your cluster.\n\t\t\t\t</FieldDescription>\n\t\t\t\t<RadioGroup defaultValue=\"kubernetes\">\n\t\t\t\t\t<FieldLabel htmlFor=\"kubernetes-r2h\">\n\t\t\t\t\t\t<Field orientation=\"horizontal\">\n\t\t\t\t\t\t\t<FieldContent>\n\t\t\t\t\t\t\t\t<FieldTitle>Kubernetes</FieldTitle>\n\t\t\t\t\t\t\t\t<FieldDescription>\n\t\t\t\t\t\t\t\t\tRun GPU workloads on a K8s cluster.\n\t\t\t\t\t\t\t\t</FieldDescription>\n\t\t\t\t\t\t\t</FieldContent>\n\t\t\t\t\t\t\t<RadioGroupItem value=\"kubernetes\" id=\"kubernetes-r2h\" />\n\t\t\t\t\t\t</Field>\n\t\t\t\t\t</FieldLabel>\n\t\t\t\t\t<FieldLabel htmlFor=\"vm-z4k\">\n\t\t\t\t\t\t<Field orientation=\"horizontal\">\n\t\t\t\t\t\t\t<FieldContent>\n\t\t\t\t\t\t\t\t<FieldTitle>Virtual Machine</FieldTitle>\n\t\t\t\t\t\t\t\t<FieldDescription>\n\t\t\t\t\t\t\t\t\tAccess a cluster to run GPU workloads.\n\t\t\t\t\t\t\t\t</FieldDescription>\n\t\t\t\t\t\t\t</FieldContent>\n\t\t\t\t\t\t\t<RadioGroupItem value=\"vm\" id=\"vm-z4k\" />\n\t\t\t\t\t\t</Field>\n\t\t\t\t\t</FieldLabel>\n\t\t\t\t</RadioGroup>\n\t\t\t</FieldSet>\n\t\t</FieldGroup>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

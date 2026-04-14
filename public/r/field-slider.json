@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "field-slider",
+  "registryDependencies": [
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/slider.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/field-slider.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\n\nimport {\n\tField,\n\tFieldDescription,\n\tFieldTitle,\n} from \"@/components/ui/field\";\nimport { Slider } from \"@/components/ui/slider\";\n\nexport default function FieldSlider() {\n\tconst [value, setValue] = React.useState([200, 800]);\n\n\treturn (\n\t\t<Field className=\"w-full max-w-xs\">\n\t\t\t<FieldTitle>Price Range</FieldTitle>\n\t\t\t<FieldDescription>\n\t\t\t\tSet your budget range ($\n\t\t\t\t<span className=\"font-medium tabular-nums\">{value[0]}</span> -{\" \"}\n\t\t\t\t<span className=\"font-medium tabular-nums\">{value[1]}</span>).\n\t\t\t</FieldDescription>\n\t\t\t<Slider\n\t\t\t\tvalue={value}\n\t\t\t\tonValueChange={(nextValue) => setValue(nextValue as [number, number])}\n\t\t\t\tmax={1000}\n\t\t\t\tmin={0}\n\t\t\t\tstep={10}\n\t\t\t\tclassName=\"mt-2 w-full\"\n\t\t\t\taria-label=\"Price Range\"\n\t\t\t/>\n\t\t</Field>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

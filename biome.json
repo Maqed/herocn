@@ -1,5 +1,5 @@
 {
-	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"$schema": "https://biomejs.dev/schemas/2.4.12/schema.json",
 	"vcs": {
 		"enabled": true,
 		"clientKind": "git",
@@ -12,6 +12,7 @@
 			"!**/node_modules",
 			"!**/.next",
 			"!**/dist",
+			"!**/build",
 			"!**/.turbo",
 			"!**/.nx",
 			"!**/dev-dist",
@@ -28,18 +29,35 @@
 			"!**/wrangler.jsonc",
 			"!**/.source",
 			"!**/convex/_generated",
-			"!**/public/r"
+			"!**/public/r",
+			"!**/registry/__index__.tsx",
+			"!**/registry.json"
 		]
 	},
 	"formatter": {
 		"enabled": true,
 		"indentStyle": "tab"
 	},
-	"assist": { "actions": { "source": { "organizeImports": "on" } } },
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "double"
+		}
+	},
+	"css": {
+		"parser": {
+			"tailwindDirectives": true
+		}
+	},
 	"linter": {
 		"enabled": true,
 		"rules": {
 			"recommended": true,
+			"a11y": {
+				"useSemanticElements": "off",
+				"noLabelWithoutControl": "off",
+				"useKeyWithClickEvents": "off",
+				"useValidAnchor": "off"
+			},
 			"correctness": {
 				"useExhaustiveDependencies": "info"
 			},
@@ -52,8 +70,10 @@
 					}
 				}
 			},
+			"performance": {
+				"noImgElement": "off"
+			},
 			"style": {
-				"noParameterAssign": "error",
 				"useAsConstAssertion": "error",
 				"useDefaultParameterLast": "error",
 				"useEnumInitializers": "error",
@@ -63,17 +83,22 @@
 				"useNumberNamespace": "error",
 				"noInferrableTypes": "error",
 				"noUselessElse": "error"
+			},
+			"suspicious": {
+				"noArrayIndexKey": "off",
+				"noDocumentCookie": "off"
 			}
+		},
+		"domains": {
+			"next": "recommended",
+			"react": "recommended"
 		}
 	},
-	"javascript": {
-		"formatter": {
-			"quoteStyle": "double"
-		}
-	},
-	"css": {
-		"parser": {
-			"tailwindDirectives": true
+	"assist": {
+		"actions": {
+			"source": {
+				"organizeImports": "on"
+			}
 		}
 	}
 }

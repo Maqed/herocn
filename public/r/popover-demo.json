@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "popover-demo",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/input.json",
+    "https://herocn.dev/r/label.json",
+    "https://herocn.dev/r/popover.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/popover-demo.tsx",
+      "content": "\"use client\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { Input } from \"@/components/ui/input\";\nimport { Label } from \"@/components/ui/label\";\nimport {\n\tPopover,\n\tPopoverContent,\n\tPopoverTrigger,\n} from \"@/components/ui/popover\";\n\nexport default function PopoverDemo() {\n\treturn (\n\t\t<Popover>\n\t\t\t<PopoverTrigger render={<Button variant=\"tertiary\" />}>\n\t\t\t\tOpen popover\n\t\t\t</PopoverTrigger>\n\t\t\t<PopoverContent className=\"w-80\">\n\t\t\t\t<div className=\"grid gap-4\">\n\t\t\t\t\t<div className=\"space-y-2\">\n\t\t\t\t\t\t<h4 className=\"font-medium leading-none\">Dimensions</h4>\n\t\t\t\t\t\t<p className=\"text-muted-foreground text-sm\">\n\t\t\t\t\t\t\tSet the dimensions for the layer.\n\t\t\t\t\t\t</p>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div className=\"grid gap-2\">\n\t\t\t\t\t\t<div className=\"grid grid-cols-3 items-center gap-4\">\n\t\t\t\t\t\t\t<Label htmlFor=\"popover-width\">Width</Label>\n\t\t\t\t\t\t\t<Input\n\t\t\t\t\t\t\t\tvariant=\"secondary\"\n\t\t\t\t\t\t\t\tid=\"popover-width\"\n\t\t\t\t\t\t\t\tdefaultValue=\"100%\"\n\t\t\t\t\t\t\t\tclassName=\"col-span-2 h-8\"\n\t\t\t\t\t\t\t/>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div className=\"grid grid-cols-3 items-center gap-4\">\n\t\t\t\t\t\t\t<Label htmlFor=\"popover-max-width\">Max. width</Label>\n\t\t\t\t\t\t\t<Input\n\t\t\t\t\t\t\t\tvariant=\"secondary\"\n\t\t\t\t\t\t\t\tid=\"popover-max-width\"\n\t\t\t\t\t\t\t\tdefaultValue=\"300px\"\n\t\t\t\t\t\t\t\tclassName=\"col-span-2 h-8\"\n\t\t\t\t\t\t\t/>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div className=\"grid grid-cols-3 items-center gap-4\">\n\t\t\t\t\t\t\t<Label htmlFor=\"popover-height\">Height</Label>\n\t\t\t\t\t\t\t<Input\n\t\t\t\t\t\t\t\tvariant=\"secondary\"\n\t\t\t\t\t\t\t\tid=\"popover-height\"\n\t\t\t\t\t\t\t\tdefaultValue=\"25px\"\n\t\t\t\t\t\t\t\tclassName=\"col-span-2 h-8\"\n\t\t\t\t\t\t\t/>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div className=\"grid grid-cols-3 items-center gap-4\">\n\t\t\t\t\t\t\t<Label htmlFor=\"popover-max-height\">Max. height</Label>\n\t\t\t\t\t\t\t<Input\n\t\t\t\t\t\t\t\tvariant=\"secondary\"\n\t\t\t\t\t\t\t\tid=\"popover-max-height\"\n\t\t\t\t\t\t\t\tdefaultValue=\"none\"\n\t\t\t\t\t\t\t\tclassName=\"col-span-2 h-8\"\n\t\t\t\t\t\t\t/>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</PopoverContent>\n\t\t</Popover>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

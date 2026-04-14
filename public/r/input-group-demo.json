@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-group-demo",
+  "registryDependencies": [
+    "https://herocn.dev/r/input-group.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/input-group-demo.tsx",
+      "content": "import { Search } from \"lucide-react\";\n\nimport {\n\tInputGroup,\n\tInputGroupAddon,\n\tInputGroupInput,\n} from \"@/components/ui/input-group\";\n\nexport default function InputGroupDemo() {\n\treturn (\n\t\t<InputGroup className=\"max-w-xs\">\n\t\t\t<InputGroupInput placeholder=\"Search...\" />\n\t\t\t<InputGroupAddon>\n\t\t\t\t<Search />\n\t\t\t</InputGroupAddon>\n\t\t\t<InputGroupAddon align=\"inline-end\">12 results</InputGroupAddon>\n\t\t</InputGroup>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

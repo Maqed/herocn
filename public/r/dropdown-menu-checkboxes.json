@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dropdown-menu-checkboxes",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/dropdown-menu.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/dropdown-menu-checkboxes.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport { Button } from \"@/components/ui/button\";\nimport {\n\tDropdownMenu,\n\tDropdownMenuCheckboxItem,\n\tDropdownMenuContent,\n\tDropdownMenuGroup,\n\tDropdownMenuLabel,\n\tDropdownMenuTrigger,\n} from \"@/components/ui/dropdown-menu\";\n\nexport default function DropdownMenuCheckboxes() {\n\tconst [showStatusBar, setShowStatusBar] = React.useState(true);\n\tconst [showActivityBar, setShowActivityBar] = React.useState(false);\n\tconst [showPanel, setShowPanel] = React.useState(false);\n\n\treturn (\n\t\t<DropdownMenu>\n\t\t\t<DropdownMenuTrigger render={<Button variant=\"tertiary\" />}>\n\t\t\t\tOpen\n\t\t\t</DropdownMenuTrigger>\n\t\t\t<DropdownMenuContent>\n\t\t\t\t<DropdownMenuGroup>\n\t\t\t\t\t<DropdownMenuLabel>Appearance</DropdownMenuLabel>\n\t\t\t\t\t<DropdownMenuCheckboxItem\n\t\t\t\t\t\tchecked={showStatusBar ?? false}\n\t\t\t\t\t\tonCheckedChange={setShowStatusBar}\n\t\t\t\t\t>\n\t\t\t\t\t\tStatus Bar\n\t\t\t\t\t</DropdownMenuCheckboxItem>\n\t\t\t\t\t<DropdownMenuCheckboxItem\n\t\t\t\t\t\tchecked={showActivityBar}\n\t\t\t\t\t\tonCheckedChange={setShowActivityBar}\n\t\t\t\t\t\tdisabled\n\t\t\t\t\t>\n\t\t\t\t\t\tActivity Bar\n\t\t\t\t\t</DropdownMenuCheckboxItem>\n\t\t\t\t\t<DropdownMenuCheckboxItem\n\t\t\t\t\t\tchecked={showPanel}\n\t\t\t\t\t\tonCheckedChange={setShowPanel}\n\t\t\t\t\t>\n\t\t\t\t\t\tPanel\n\t\t\t\t\t</DropdownMenuCheckboxItem>\n\t\t\t\t</DropdownMenuGroup>\n\t\t\t</DropdownMenuContent>\n\t\t</DropdownMenu>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

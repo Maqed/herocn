@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-group-size",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/button-group.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/button-group-size.tsx",
+      "content": "import { PlusIcon } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { ButtonGroup } from \"@/components/ui/button-group\";\n\nexport default function ButtonGroupSize() {\n\treturn (\n\t\t<div className=\"flex flex-col items-start gap-8\">\n\t\t\t<ButtonGroup>\n\t\t\t\t<Button variant=\"tertiary\" size=\"sm\">\n\t\t\t\t\tSmall\n\t\t\t\t</Button>\n\t\t\t\t<Button variant=\"tertiary\" size=\"sm\">\n\t\t\t\t\tButton\n\t\t\t\t</Button>\n\t\t\t\t<Button variant=\"tertiary\" size=\"sm\">\n\t\t\t\t\tGroup\n\t\t\t\t</Button>\n\t\t\t\t<Button variant=\"tertiary\" size=\"icon-sm\">\n\t\t\t\t\t<PlusIcon />\n\t\t\t\t</Button>\n\t\t\t</ButtonGroup>\n\t\t\t<ButtonGroup>\n\t\t\t\t<Button variant=\"tertiary\">Default</Button>\n\t\t\t\t<Button variant=\"tertiary\">Button</Button>\n\t\t\t\t<Button variant=\"tertiary\">Group</Button>\n\t\t\t\t<Button variant=\"tertiary\" size=\"icon\">\n\t\t\t\t\t<PlusIcon />\n\t\t\t\t</Button>\n\t\t\t</ButtonGroup>\n\t\t\t<ButtonGroup>\n\t\t\t\t<Button variant=\"tertiary\" size=\"lg\">\n\t\t\t\t\tLarge\n\t\t\t\t</Button>\n\t\t\t\t<Button variant=\"tertiary\" size=\"lg\">\n\t\t\t\t\tButton\n\t\t\t\t</Button>\n\t\t\t\t<Button variant=\"tertiary\" size=\"lg\">\n\t\t\t\t\tGroup\n\t\t\t\t</Button>\n\t\t\t\t<Button variant=\"tertiary\" size=\"icon-lg\">\n\t\t\t\t\t<PlusIcon />\n\t\t\t\t</Button>\n\t\t\t</ButtonGroup>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

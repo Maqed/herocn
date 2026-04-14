@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar-dropdown",
+  "registryDependencies": [
+    "https://herocn.dev/r/avatar.json",
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/dropdown-menu.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/avatar-dropdown.tsx",
+      "content": "\"use client\";\n\nimport {\n\tAvatar,\n\tAvatarFallback,\n\tAvatarImage,\n} from \"@/components/ui/avatar\";\nimport { Button } from \"@/components/ui/button\";\nimport {\n\tDropdownMenu,\n\tDropdownMenuContent,\n\tDropdownMenuGroup,\n\tDropdownMenuItem,\n\tDropdownMenuSeparator,\n\tDropdownMenuTrigger,\n} from \"@/components/ui/dropdown-menu\";\n\nexport default function AvatarDropdown() {\n\treturn (\n\t\t<DropdownMenu>\n\t\t\t<DropdownMenuTrigger\n\t\t\t\trender={<Button variant=\"ghost\" size=\"icon\" className=\"rounded-full\" />}\n\t\t\t>\n\t\t\t\t<Avatar>\n\t\t\t\t\t<AvatarImage src=\"https://github.com/Maqed.png\" alt=\"0xMaqed\" />\n\t\t\t\t\t<AvatarFallback>Mqd</AvatarFallback>\n\t\t\t\t</Avatar>\n\t\t\t</DropdownMenuTrigger>\n\t\t\t<DropdownMenuContent className=\"w-32\">\n\t\t\t\t<DropdownMenuGroup>\n\t\t\t\t\t<DropdownMenuItem>Profile</DropdownMenuItem>\n\t\t\t\t\t<DropdownMenuItem>Billing</DropdownMenuItem>\n\t\t\t\t\t<DropdownMenuItem>Settings</DropdownMenuItem>\n\t\t\t\t</DropdownMenuGroup>\n\t\t\t\t<DropdownMenuSeparator />\n\t\t\t\t<DropdownMenuGroup>\n\t\t\t\t\t<DropdownMenuItem variant=\"destructive\">Log out</DropdownMenuItem>\n\t\t\t\t</DropdownMenuGroup>\n\t\t\t</DropdownMenuContent>\n\t\t</DropdownMenu>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

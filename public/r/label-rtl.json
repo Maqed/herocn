@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "label-rtl",
+  "registryDependencies": [
+    "https://herocn.dev/r/label.json",
+    "https://herocn.dev/r/switch.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/label-rtl.tsx",
+      "content": "\"use client\";\n\nimport {\n\ttype Translations,\n\tuseTranslation,\n} from \"@/components/language-selector\";\nimport { Label } from \"@/components/ui/label\";\nimport { Switch } from \"@/components/ui/switch\";\n\nconst translations: Translations = {\n\ten: {\n\t\tdir: \"ltr\",\n\t\tvalues: {\n\t\t\tlabel: \"Enable notifications\",\n\t\t},\n\t},\n\tar: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\tlabel: \"تفعيل الإشعارات\",\n\t\t},\n\t},\n\the: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\tlabel: \"הפעל התראות\",\n\t\t},\n\t},\n};\n\nexport function LabelRtl() {\n\tconst { dir, language, t } = useTranslation(translations, \"ar\");\n\n\treturn (\n\t\t<div className=\"flex items-center gap-2\" lang={language} dir={dir}>\n\t\t\t<Switch id=\"label-rtl-switch\" />\n\t\t\t<Label htmlFor=\"label-rtl-switch\">{t.label}</Label>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-variants",
+  "registryDependencies": [
+    "https://herocn.dev/r/input.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/input-variants.tsx",
+      "content": "import { Input } from \"@/components/ui/input\";\n\nexport default function InputVariants() {\n\treturn (\n\t\t<div className=\"flex w-full max-w-sm flex-col gap-3\">\n\t\t\t<Input placeholder=\"Default\" />\n\t\t\t<Input variant=\"secondary\" placeholder=\"Secondary\" />\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

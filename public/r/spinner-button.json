@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "spinner-button",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/spinner.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/spinner-button.tsx",
+      "content": "import { Button } from \"@/components/ui/button\";\nimport { Spinner } from \"@/components/ui/spinner\";\n\nexport default function SpinnerButton() {\n\treturn (\n\t\t<div className=\"flex flex-col items-center gap-4\">\n\t\t\t<Button disabled size=\"sm\">\n\t\t\t\t<Spinner data-icon=\"inline-start\" size=\"sm\" />\n\t\t\t\tLoading...\n\t\t\t</Button>\n\t\t\t<Button variant=\"outline\" disabled size=\"sm\">\n\t\t\t\t<Spinner data-icon=\"inline-start\" size=\"sm\" />\n\t\t\t\tPlease wait\n\t\t\t</Button>\n\t\t\t<Button variant=\"secondary\" disabled size=\"sm\">\n\t\t\t\t<Spinner data-icon=\"inline-end\" size=\"sm\" />\n\t\t\t\tProcessing\n\t\t\t</Button>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

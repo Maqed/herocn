@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-group-popover",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/button-group.json",
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/popover.json",
+    "https://herocn.dev/r/textarea.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/button-group-popover.tsx",
+      "content": "import { BotIcon, ChevronDownIcon } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { ButtonGroup } from \"@/components/ui/button-group\";\nimport {\n\tField,\n\tFieldDescription,\n\tFieldLabel,\n} from \"@/components/ui/field\";\nimport {\n\tPopover,\n\tPopoverContent,\n\tPopoverDescription,\n\tPopoverHeader,\n\tPopoverTitle,\n\tPopoverTrigger,\n} from \"@/components/ui/popover\";\nimport { Textarea } from \"@/components/ui/textarea\";\n\nexport default function ButtonGroupPopover() {\n\treturn (\n\t\t<ButtonGroup>\n\t\t\t<Button variant=\"outline\">\n\t\t\t\t<BotIcon /> Copilot\n\t\t\t</Button>\n\t\t\t<Popover>\n\t\t\t\t<PopoverTrigger\n\t\t\t\t\trender={\n\t\t\t\t\t\t<Button variant=\"outline\" size=\"icon\" aria-label=\"Open Popover\" />\n\t\t\t\t\t}\n\t\t\t\t>\n\t\t\t\t\t<ChevronDownIcon />\n\t\t\t\t</PopoverTrigger>\n\t\t\t\t<PopoverContent align=\"end\" className=\"rounded-xl text-sm\">\n\t\t\t\t\t<PopoverHeader>\n\t\t\t\t\t\t<PopoverTitle>Start a new task with Copilot</PopoverTitle>\n\t\t\t\t\t\t<PopoverDescription>\n\t\t\t\t\t\t\tDescribe your task in natural language.\n\t\t\t\t\t\t</PopoverDescription>\n\t\t\t\t\t</PopoverHeader>\n\t\t\t\t\t<Field>\n\t\t\t\t\t\t<FieldLabel htmlFor=\"button-group-task\" className=\"sr-only\">\n\t\t\t\t\t\t\tTask Description\n\t\t\t\t\t\t</FieldLabel>\n\t\t\t\t\t\t<Textarea\n\t\t\t\t\t\t\tid=\"button-group-task\"\n\t\t\t\t\t\t\tplaceholder=\"I need to...\"\n\t\t\t\t\t\t\tclassName=\"resize-none\"\n\t\t\t\t\t\t/>\n\t\t\t\t\t\t<FieldDescription>\n\t\t\t\t\t\t\tCopilot will open a pull request for review.\n\t\t\t\t\t\t</FieldDescription>\n\t\t\t\t\t</Field>\n\t\t\t\t</PopoverContent>\n\t\t\t</Popover>\n\t\t</ButtonGroup>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

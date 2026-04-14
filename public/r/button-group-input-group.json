@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-group-input-group",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/button-group.json",
+    "https://herocn.dev/r/input-group.json",
+    "https://herocn.dev/r/tooltip.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/button-group-input-group.tsx",
+      "content": "\"use client\";\n\nimport { AudioLinesIcon, PlusIcon } from \"lucide-react\";\nimport * as React from \"react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { ButtonGroup } from \"@/components/ui/button-group\";\nimport {\n\tInputGroup,\n\tInputGroupAddon,\n\tInputGroupButton,\n\tInputGroupInput,\n} from \"@/components/ui/input-group\";\nimport {\n\tTooltip,\n\tTooltipContent,\n\tTooltipTrigger,\n} from \"@/components/ui/tooltip\";\n\nexport default function ButtonGroupInputGroup() {\n\tconst [voiceEnabled, setVoiceEnabled] = React.useState(false);\n\n\treturn (\n\t\t<ButtonGroup>\n\t\t\t<ButtonGroup>\n\t\t\t\t<Button variant=\"outline\" size=\"icon\">\n\t\t\t\t\t<PlusIcon />\n\t\t\t\t</Button>\n\t\t\t</ButtonGroup>\n\t\t\t<ButtonGroup>\n\t\t\t\t<InputGroup>\n\t\t\t\t\t<InputGroupInput\n\t\t\t\t\t\tplaceholder={\n\t\t\t\t\t\t\tvoiceEnabled ? \"Record and send audio...\" : \"Send a message...\"\n\t\t\t\t\t\t}\n\t\t\t\t\t\tdisabled={voiceEnabled}\n\t\t\t\t\t/>\n\t\t\t\t\t<InputGroupAddon align=\"inline-end\">\n\t\t\t\t\t\t<Tooltip>\n\t\t\t\t\t\t\t<TooltipTrigger\n\t\t\t\t\t\t\t\trender={\n\t\t\t\t\t\t\t\t\t<InputGroupButton\n\t\t\t\t\t\t\t\t\t\tonClick={() => setVoiceEnabled(!voiceEnabled)}\n\t\t\t\t\t\t\t\t\t\tsize=\"icon-sm\"\n\t\t\t\t\t\t\t\t\t\tdata-active={voiceEnabled}\n\t\t\t\t\t\t\t\t\t\tclassName=\"data-[active=true]:bg-orange-100 data-[active=true]:text-orange-700 dark:data-[active=true]:bg-orange-800 dark:data-[active=true]:text-orange-100\"\n\t\t\t\t\t\t\t\t\t\taria-pressed={voiceEnabled}\n\t\t\t\t\t\t\t\t\t/>\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t>\n\t\t\t\t\t\t\t\t<AudioLinesIcon />\n\t\t\t\t\t\t\t</TooltipTrigger>\n\t\t\t\t\t\t\t<TooltipContent>Voice Mode</TooltipContent>\n\t\t\t\t\t\t</Tooltip>\n\t\t\t\t\t</InputGroupAddon>\n\t\t\t\t</InputGroup>\n\t\t\t</ButtonGroup>\n\t\t</ButtonGroup>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

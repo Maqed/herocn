@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-group-button",
+  "registryDependencies": [
+    "https://herocn.dev/r/input-group.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/input-group-button.tsx",
+      "content": "\"use client\";\n\nimport { CheckIcon, CopyIcon, StarIcon } from \"lucide-react\";\nimport * as React from \"react\";\n\nimport {\n\tInputGroup,\n\tInputGroupAddon,\n\tInputGroupButton,\n\tInputGroupInput,\n} from \"@/components/ui/input-group\";\n\nexport default function InputGroupButtonExample() {\n\tconst [isCopied, setIsCopied] = React.useState(false);\n\tconst [isFavorite, setIsFavorite] = React.useState(false);\n\n\tconst handleCopy = () => {\n\t\tnavigator.clipboard.writeText(\"https://x.com/0xMaqed\");\n\t\tsetIsCopied(true);\n\t\tsetTimeout(() => setIsCopied(false), 2000);\n\t};\n\n\treturn (\n\t\t<div className=\"grid w-full max-w-sm gap-6\">\n\t\t\t<InputGroup>\n\t\t\t\t<InputGroupInput placeholder=\"https://x.com/0xMaqed\" readOnly />\n\t\t\t\t<InputGroupAddon align=\"inline-end\">\n\t\t\t\t\t<InputGroupButton\n\t\t\t\t\t\taria-label=\"Copy\"\n\t\t\t\t\t\ttitle=\"Copy\"\n\t\t\t\t\t\tsize=\"icon-sm\"\n\t\t\t\t\t\tonClick={handleCopy}\n\t\t\t\t\t>\n\t\t\t\t\t\t{isCopied ? <CheckIcon /> : <CopyIcon />}\n\t\t\t\t\t</InputGroupButton>\n\t\t\t\t</InputGroupAddon>\n\t\t\t</InputGroup>\n\t\t\t<InputGroup>\n\t\t\t\t<InputGroupInput placeholder=\"Type to search...\" />\n\t\t\t\t<InputGroupAddon align=\"inline-end\">\n\t\t\t\t\t<InputGroupButton variant=\"secondary\">Search</InputGroupButton>\n\t\t\t\t</InputGroupAddon>\n\t\t\t</InputGroup>\n\t\t\t<InputGroup>\n\t\t\t\t<InputGroupInput placeholder=\"Add to favorites...\" />\n\t\t\t\t<InputGroupAddon align=\"inline-end\">\n\t\t\t\t\t<InputGroupButton\n\t\t\t\t\t\tonClick={() => setIsFavorite(!isFavorite)}\n\t\t\t\t\t\tsize=\"icon-sm\"\n\t\t\t\t\t>\n\t\t\t\t\t\t<StarIcon\n\t\t\t\t\t\t\tdata-favorite={isFavorite}\n\t\t\t\t\t\t\tclassName=\"data-[favorite=true]:fill-blue-600 data-[favorite=true]:stroke-blue-600\"\n\t\t\t\t\t\t/>\n\t\t\t\t\t</InputGroupButton>\n\t\t\t\t</InputGroupAddon>\n\t\t\t</InputGroup>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

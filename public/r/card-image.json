@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-image",
+  "registryDependencies": [
+    "https://herocn.dev/r/badge.json",
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/card.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/card-image.tsx",
+      "content": "import { Badge } from \"@/components/ui/badge\";\nimport { Button } from \"@/components/ui/button\";\nimport {\n\tCard,\n\tCardAction,\n\tCardDescription,\n\tCardFooter,\n\tCardHeader,\n\tCardTitle,\n} from \"@/components/ui/card\";\n\nexport default function CardImage() {\n\treturn (\n\t\t<Card className=\"relative w-full max-w-sm px-0 pt-0\">\n\t\t\t<img\n\t\t\t\tsrc=\"https://avatar.vercel.sh/shadcn1\"\n\t\t\t\talt=\"Event cover\"\n\t\t\t\tclassName=\"relative z-20 aspect-video w-full object-cover\"\n\t\t\t/>\n\t\t\t<CardHeader>\n\t\t\t\t<CardAction>\n\t\t\t\t\t<Badge>Featured</Badge>\n\t\t\t\t</CardAction>\n\t\t\t\t<CardTitle>Design systems meetup</CardTitle>\n\t\t\t\t<CardDescription>\n\t\t\t\t\tA practical talk on component APIs, accessibility, and shipping\n\t\t\t\t\tfaster.\n\t\t\t\t</CardDescription>\n\t\t\t</CardHeader>\n\t\t\t<CardFooter>\n\t\t\t\t<Button className=\"w-full\">View Event</Button>\n\t\t\t</CardFooter>\n\t\t</Card>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

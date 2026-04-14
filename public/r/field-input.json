@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "field-input",
+  "registryDependencies": [
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/input.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/field-input.tsx",
+      "content": "import {\n\tField,\n\tFieldDescription,\n\tFieldGroup,\n\tFieldLabel,\n\tFieldSet,\n} from \"@/components/ui/field\";\nimport { Input } from \"@/components/ui/input\";\n\nexport default function FieldInput() {\n\treturn (\n\t\t<FieldSet className=\"w-full max-w-xs\">\n\t\t\t<FieldGroup>\n\t\t\t\t<Field>\n\t\t\t\t\t<FieldLabel htmlFor=\"username\">Username</FieldLabel>\n\t\t\t\t\t<Input id=\"username\" type=\"text\" placeholder=\"Max Leiter\" />\n\t\t\t\t\t<FieldDescription>\n\t\t\t\t\t\tChoose a unique username for your account.\n\t\t\t\t\t</FieldDescription>\n\t\t\t\t</Field>\n\t\t\t\t<Field>\n\t\t\t\t\t<FieldLabel htmlFor=\"password\">Password</FieldLabel>\n\t\t\t\t\t<FieldDescription>\n\t\t\t\t\t\tMust be at least 8 characters long.\n\t\t\t\t\t</FieldDescription>\n\t\t\t\t\t<Input id=\"password\" type=\"password\" placeholder=\"••••••••\" />\n\t\t\t\t</Field>\n\t\t\t</FieldGroup>\n\t\t</FieldSet>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

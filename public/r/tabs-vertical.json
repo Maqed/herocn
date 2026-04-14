@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tabs-vertical",
+  "registryDependencies": [
+    "https://herocn.dev/r/tabs.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/tabs-vertical.tsx",
+      "content": "import {\n\tTabs,\n\tTabsContent,\n\tTabsList,\n\tTabsTrigger,\n} from \"@/components/ui/tabs\";\n\nexport function TabsVertical() {\n\treturn (\n\t\t<Tabs defaultValue=\"account\" orientation=\"vertical\" className=\"w-[500px]\">\n\t\t\t<TabsList>\n\t\t\t\t<TabsTrigger value=\"account\">Account</TabsTrigger>\n\t\t\t\t<TabsTrigger value=\"password\">Password</TabsTrigger>\n\t\t\t\t<TabsTrigger value=\"notifications\">Notifications</TabsTrigger>\n\t\t\t</TabsList>\n\t\t\t<TabsContent value=\"account\">\n\t\t\t\t<p className=\"font-medium text-sm\">Account Settings</p>\n\t\t\t\t<p className=\"mt-1 text-muted-foreground text-sm\">\n\t\t\t\t\tManage your account details, profile information, and connected\n\t\t\t\t\tservices.\n\t\t\t\t</p>\n\t\t\t</TabsContent>\n\t\t\t<TabsContent value=\"password\">\n\t\t\t\t<p className=\"font-medium text-sm\">Password & Security</p>\n\t\t\t\t<p className=\"mt-1 text-muted-foreground text-sm\">\n\t\t\t\t\tUpdate your password and configure two-factor authentication to keep\n\t\t\t\t\tyour account secure.\n\t\t\t\t</p>\n\t\t\t</TabsContent>\n\t\t\t<TabsContent value=\"notifications\">\n\t\t\t\t<p className=\"font-medium text-sm\">Notification Preferences</p>\n\t\t\t\t<p className=\"mt-1 text-muted-foreground text-sm\">\n\t\t\t\t\tChoose how and when you receive email, push, and in-app notifications.\n\t\t\t\t</p>\n\t\t\t</TabsContent>\n\t\t</Tabs>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

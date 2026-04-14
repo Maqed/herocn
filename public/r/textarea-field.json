@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "textarea-field",
+  "registryDependencies": [
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/textarea.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/textarea-field.tsx",
+      "content": "import {\n\tField,\n\tFieldDescription,\n\tFieldLabel,\n} from \"@/components/ui/field\";\nimport { Textarea } from \"@/components/ui/textarea\";\n\nexport default function TextareaField() {\n\treturn (\n\t\t<div className=\"w-full max-w-sm\">\n\t\t\t<Field>\n\t\t\t\t<FieldLabel htmlFor=\"textarea-field-message\">Message</FieldLabel>\n\t\t\t\t<Textarea\n\t\t\t\t\tid=\"textarea-field-message\"\n\t\t\t\t\tplaceholder=\"Type your message here.\"\n\t\t\t\t\trows={4}\n\t\t\t\t/>\n\t\t\t\t<FieldDescription>\n\t\t\t\t\tWe read every submission and aim to reply within two business days.\n\t\t\t\t</FieldDescription>\n\t\t\t</Field>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

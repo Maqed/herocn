@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dropdown-menu-destructive",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/dropdown-menu.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/dropdown-menu-destructive.tsx",
+      "content": "\"use client\";\n\nimport { PencilIcon, ShareIcon, TrashIcon } from \"lucide-react\";\nimport { Button } from \"@/components/ui/button\";\nimport {\n\tDropdownMenu,\n\tDropdownMenuContent,\n\tDropdownMenuGroup,\n\tDropdownMenuItem,\n\tDropdownMenuSeparator,\n\tDropdownMenuTrigger,\n} from \"@/components/ui/dropdown-menu\";\n\nexport default function DropdownMenuDestructive() {\n\treturn (\n\t\t<DropdownMenu>\n\t\t\t<DropdownMenuTrigger render={<Button variant=\"tertiary\" />}>\n\t\t\t\tActions\n\t\t\t</DropdownMenuTrigger>\n\t\t\t<DropdownMenuContent>\n\t\t\t\t<DropdownMenuGroup>\n\t\t\t\t\t<DropdownMenuItem>\n\t\t\t\t\t\t<PencilIcon />\n\t\t\t\t\t\tEdit\n\t\t\t\t\t</DropdownMenuItem>\n\t\t\t\t\t<DropdownMenuItem>\n\t\t\t\t\t\t<ShareIcon />\n\t\t\t\t\t\tShare\n\t\t\t\t\t</DropdownMenuItem>\n\t\t\t\t</DropdownMenuGroup>\n\t\t\t\t<DropdownMenuSeparator />\n\t\t\t\t<DropdownMenuGroup>\n\t\t\t\t\t<DropdownMenuItem variant=\"destructive\">\n\t\t\t\t\t\t<TrashIcon />\n\t\t\t\t\t\tDelete\n\t\t\t\t\t</DropdownMenuItem>\n\t\t\t\t</DropdownMenuGroup>\n\t\t\t</DropdownMenuContent>\n\t\t</DropdownMenu>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

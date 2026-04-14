@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "scroll-area-rtl",
+  "registryDependencies": [
+    "https://herocn.dev/r/scroll-area.json",
+    "https://herocn.dev/r/separator.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/scroll-area-rtl.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\n\nimport {\n\ttype Translations,\n\tuseTranslation,\n} from \"@/components/language-selector\";\nimport { ScrollArea } from \"@/components/ui/scroll-area\";\nimport { Separator } from \"@/components/ui/separator\";\n\nconst tags = Array.from({ length: 50 }).map(\n\t(_, i, array) => `v1.2.0-beta.${array.length - i}`,\n);\n\nconst translations: Translations = {\n\ten: {\n\t\tdir: \"ltr\",\n\t\tvalues: {\n\t\t\ttitle: \"Tags\",\n\t\t},\n\t},\n\tar: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\ttitle: \"العلامات\",\n\t\t},\n\t},\n\the: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\ttitle: \"תגיות\",\n\t\t},\n\t},\n};\n\nexport function ScrollAreaRtl() {\n\tconst { dir, language, t } = useTranslation(translations, \"ar\");\n\n\treturn (\n\t\t<div lang={language} dir={dir}>\n\t\t\t<ScrollArea className=\"h-72 w-48 rounded-md border\">\n\t\t\t\t<div className=\"p-4\">\n\t\t\t\t\t<h4 className=\"mb-4 font-medium text-sm leading-none\">{t.title}</h4>\n\t\t\t\t\t{tags.map((tag) => (\n\t\t\t\t\t\t<React.Fragment key={tag}>\n\t\t\t\t\t\t\t<div className=\"text-sm\">{tag}</div>\n\t\t\t\t\t\t\t<Separator className=\"my-2\" />\n\t\t\t\t\t\t</React.Fragment>\n\t\t\t\t\t))}\n\t\t\t\t</div>\n\t\t\t</ScrollArea>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

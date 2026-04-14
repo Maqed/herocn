@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-variants",
+  "registryDependencies": [
+    "https://herocn.dev/r/card.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/card-variants.tsx",
+      "content": "import {\n\tCard,\n\tCardContent,\n\tCardDescription,\n\tCardHeader,\n\tCardTitle,\n} from \"@/components/ui/card\";\n\nexport default function CardVariants() {\n\treturn (\n\t\t<div className=\"grid grid-cols-1 gap-4 lg:grid-cols-2\">\n\t\t\t<Card variant=\"transparent\">\n\t\t\t\t<CardHeader>\n\t\t\t\t\t<CardTitle>Transparent</CardTitle>\n\t\t\t\t\t<CardDescription>\n\t\t\t\t\t\tMinimal prominence with transparent background\n\t\t\t\t\t</CardDescription>\n\t\t\t\t</CardHeader>\n\t\t\t\t<CardContent>\n\t\t\t\t\t<p>Use for less important content or nested cards</p>\n\t\t\t\t</CardContent>\n\t\t\t</Card>\n\n\t\t\t<Card variant=\"default\">\n\t\t\t\t<CardHeader>\n\t\t\t\t\t<CardTitle>Default</CardTitle>\n\t\t\t\t\t<CardDescription>\n\t\t\t\t\t\tStandard card appearance (bg-surface)\n\t\t\t\t\t</CardDescription>\n\t\t\t\t</CardHeader>\n\t\t\t\t<CardContent>\n\t\t\t\t\t<p>The default card variant for most use cases</p>\n\t\t\t\t</CardContent>\n\t\t\t</Card>\n\n\t\t\t<Card variant=\"secondary\">\n\t\t\t\t<CardHeader>\n\t\t\t\t\t<CardTitle>Secondary</CardTitle>\n\t\t\t\t\t<CardDescription>\n\t\t\t\t\t\tMedium prominence (bg-surface-secondary)\n\t\t\t\t\t</CardDescription>\n\t\t\t\t</CardHeader>\n\t\t\t\t<CardContent>\n\t\t\t\t\t<p>Use to draw moderate attention</p>\n\t\t\t\t</CardContent>\n\t\t\t</Card>\n\n\t\t\t<Card variant=\"tertiary\">\n\t\t\t\t<CardHeader>\n\t\t\t\t\t<CardTitle>Tertiary</CardTitle>\n\t\t\t\t\t<CardDescription>\n\t\t\t\t\t\tHigher prominence (bg-surface-tertiary)\n\t\t\t\t\t</CardDescription>\n\t\t\t\t</CardHeader>\n\t\t\t\t<CardContent>\n\t\t\t\t\t<p>Use for primary or featured content</p>\n\t\t\t\t</CardContent>\n\t\t\t</Card>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

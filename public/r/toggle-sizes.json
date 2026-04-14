@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toggle-sizes",
+  "registryDependencies": [
+    "https://herocn.dev/r/toggle.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/toggle-sizes.tsx",
+      "content": "import { BookmarkIcon } from \"lucide-react\";\n\nimport { Toggle } from \"@/components/ui/toggle\";\n\nexport default function ToggleSizes() {\n\treturn (\n\t\t<div className=\"flex flex-wrap items-center gap-2\">\n\t\t\t<Toggle size=\"xs\" aria-label=\"Toggle extra small\">\n\t\t\t\tExtra Small\n\t\t\t</Toggle>\n\t\t\t<Toggle size=\"sm\" aria-label=\"Toggle small\">\n\t\t\t\tSmall\n\t\t\t</Toggle>\n\t\t\t<Toggle size=\"default\" aria-label=\"Toggle default\">\n\t\t\t\tDefault\n\t\t\t</Toggle>\n\t\t\t<Toggle size=\"lg\" aria-label=\"Toggle large\">\n\t\t\t\tLarge\n\t\t\t</Toggle>\n\t\t\t<Toggle size=\"icon-xs\" aria-label=\"Toggle icon extra small\">\n\t\t\t\t<BookmarkIcon />\n\t\t\t</Toggle>\n\t\t\t<Toggle size=\"icon-sm\" aria-label=\"Toggle icon small\">\n\t\t\t\t<BookmarkIcon />\n\t\t\t</Toggle>\n\t\t\t<Toggle size=\"icon\" aria-label=\"Toggle icon\">\n\t\t\t\t<BookmarkIcon />\n\t\t\t</Toggle>\n\t\t\t<Toggle size=\"icon-lg\" aria-label=\"Toggle icon large\">\n\t\t\t\t<BookmarkIcon />\n\t\t\t</Toggle>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

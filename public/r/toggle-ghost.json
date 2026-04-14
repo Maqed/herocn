@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toggle-ghost",
+  "registryDependencies": [
+    "https://herocn.dev/r/toggle.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/toggle-ghost.tsx",
+      "content": "import { BoldIcon, ItalicIcon } from \"lucide-react\";\n\nimport { Toggle } from \"@/components/ui/toggle\";\n\nexport default function ToggleGhost() {\n\treturn (\n\t\t<div className=\"flex flex-wrap items-center gap-2\">\n\t\t\t<Toggle variant=\"ghost\" aria-label=\"Toggle italic\">\n\t\t\t\t<ItalicIcon />\n\t\t\t\tItalic\n\t\t\t</Toggle>\n\t\t\t<Toggle variant=\"ghost\" aria-label=\"Toggle bold\">\n\t\t\t\t<BoldIcon />\n\t\t\t\tBold\n\t\t\t</Toggle>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "popover-align",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/popover.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/popover-align.tsx",
+      "content": "\"use client\";\n\nimport { Button } from \"@/components/ui/button\";\nimport {\n\tPopover,\n\tPopoverContent,\n\tPopoverTrigger,\n} from \"@/components/ui/popover\";\n\nexport default function PopoverAlign() {\n\treturn (\n\t\t<div className=\"flex gap-6\">\n\t\t\t<Popover>\n\t\t\t\t<PopoverTrigger render={<Button variant=\"tertiary\" size=\"sm\" />}>\n\t\t\t\t\tStart\n\t\t\t\t</PopoverTrigger>\n\t\t\t\t<PopoverContent align=\"start\" className=\"w-40\">\n\t\t\t\t\tAligned to start\n\t\t\t\t</PopoverContent>\n\t\t\t</Popover>\n\t\t\t<Popover>\n\t\t\t\t<PopoverTrigger render={<Button variant=\"tertiary\" size=\"sm\" />}>\n\t\t\t\t\tCenter\n\t\t\t\t</PopoverTrigger>\n\t\t\t\t<PopoverContent align=\"center\" className=\"w-40\">\n\t\t\t\t\tAligned to center\n\t\t\t\t</PopoverContent>\n\t\t\t</Popover>\n\t\t\t<Popover>\n\t\t\t\t<PopoverTrigger render={<Button variant=\"tertiary\" size=\"sm\" />}>\n\t\t\t\t\tEnd\n\t\t\t\t</PopoverTrigger>\n\t\t\t\t<PopoverContent align=\"end\" className=\"w-40\">\n\t\t\t\t\tAligned to end\n\t\t\t\t</PopoverContent>\n\t\t\t</Popover>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

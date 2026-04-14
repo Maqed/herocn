@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "textarea-rtl",
+  "registryDependencies": [
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/textarea.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/textarea-rtl.tsx",
+      "content": "\"use client\";\n\nimport {\n\ttype Translations,\n\tuseTranslation,\n} from \"@/components/language-selector\";\nimport {\n\tField,\n\tFieldDescription,\n\tFieldLabel,\n} from \"@/components/ui/field\";\nimport { Textarea } from \"@/components/ui/textarea\";\n\nconst translations: Translations = {\n\ten: {\n\t\tdir: \"ltr\",\n\t\tvalues: {\n\t\t\tlabel: \"Feedback\",\n\t\t\tplaceholder: \"Your feedback helps us improve...\",\n\t\t\tdescription: \"Share your thoughts about our service.\",\n\t\t},\n\t},\n\tar: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\tlabel: \"التعليقات\",\n\t\t\tplaceholder: \"تعليقاتك تساعدنا على التحسين...\",\n\t\t\tdescription: \"شاركنا أفكارك حول خدمتنا.\",\n\t\t},\n\t},\n\the: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\tlabel: \"משוב\",\n\t\t\tplaceholder: \"המשוב שלך עוזר לנו להשתפר...\",\n\t\t\tdescription: \"שתף את מחשבותיך על השירות שלנו.\",\n\t\t},\n\t},\n};\n\nexport function TextareaRtl() {\n\tconst { dir, language, t } = useTranslation(translations, \"ar\");\n\n\treturn (\n\t\t<div className=\"w-full max-w-sm\" lang={language} dir={dir}>\n\t\t\t<Field>\n\t\t\t\t<FieldLabel htmlFor=\"textarea-rtl-feedback\">{t.label}</FieldLabel>\n\t\t\t\t<Textarea\n\t\t\t\t\tid=\"textarea-rtl-feedback\"\n\t\t\t\t\tplaceholder={t.placeholder}\n\t\t\t\t\trows={4}\n\t\t\t\t/>\n\t\t\t\t<FieldDescription>{t.description}</FieldDescription>\n\t\t\t</Field>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-group-dropdown",
+  "registryDependencies": [
+    "https://herocn.dev/r/dropdown-menu.json",
+    "https://herocn.dev/r/input-group.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/input-group-dropdown.tsx",
+      "content": "\"use client\";\n\nimport { ChevronDownIcon, MoreHorizontalIcon } from \"lucide-react\";\n\nimport {\n\tDropdownMenu,\n\tDropdownMenuContent,\n\tDropdownMenuGroup,\n\tDropdownMenuItem,\n\tDropdownMenuTrigger,\n} from \"@/components/ui/dropdown-menu\";\nimport {\n\tInputGroup,\n\tInputGroupAddon,\n\tInputGroupButton,\n\tInputGroupInput,\n} from \"@/components/ui/input-group\";\n\nexport default function InputGroupDropdown() {\n\treturn (\n\t\t<div className=\"grid w-full max-w-sm gap-4\">\n\t\t\t<InputGroup>\n\t\t\t\t<InputGroupInput placeholder=\"Enter file name\" />\n\t\t\t\t<InputGroupAddon align=\"inline-end\">\n\t\t\t\t\t<DropdownMenu>\n\t\t\t\t\t\t<DropdownMenuTrigger\n\t\t\t\t\t\t\trender={\n\t\t\t\t\t\t\t\t<InputGroupButton\n\t\t\t\t\t\t\t\t\tvariant=\"ghost\"\n\t\t\t\t\t\t\t\t\taria-label=\"More\"\n\t\t\t\t\t\t\t\t\tsize=\"icon-sm\"\n\t\t\t\t\t\t\t\t/>\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t>\n\t\t\t\t\t\t\t<MoreHorizontalIcon />\n\t\t\t\t\t\t</DropdownMenuTrigger>\n\t\t\t\t\t\t<DropdownMenuContent align=\"end\" sideOffset={8} alignOffset={-4}>\n\t\t\t\t\t\t\t<DropdownMenuGroup>\n\t\t\t\t\t\t\t\t<DropdownMenuItem>Settings</DropdownMenuItem>\n\t\t\t\t\t\t\t\t<DropdownMenuItem>Copy path</DropdownMenuItem>\n\t\t\t\t\t\t\t\t<DropdownMenuItem>Open location</DropdownMenuItem>\n\t\t\t\t\t\t\t</DropdownMenuGroup>\n\t\t\t\t\t\t</DropdownMenuContent>\n\t\t\t\t\t</DropdownMenu>\n\t\t\t\t</InputGroupAddon>\n\t\t\t</InputGroup>\n\t\t\t<InputGroup>\n\t\t\t\t<InputGroupInput placeholder=\"Enter search query\" />\n\t\t\t\t<InputGroupAddon align=\"inline-end\">\n\t\t\t\t\t<DropdownMenu>\n\t\t\t\t\t\t<DropdownMenuTrigger\n\t\t\t\t\t\t\trender={\n\t\t\t\t\t\t\t\t<InputGroupButton variant=\"ghost\" className=\"pr-1.5! text-xs\" />\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t>\n\t\t\t\t\t\t\tSearch In... <ChevronDownIcon className=\"size-3\" />\n\t\t\t\t\t\t</DropdownMenuTrigger>\n\t\t\t\t\t\t<DropdownMenuContent align=\"end\" sideOffset={8} alignOffset={-4}>\n\t\t\t\t\t\t\t<DropdownMenuGroup>\n\t\t\t\t\t\t\t\t<DropdownMenuItem>Documentation</DropdownMenuItem>\n\t\t\t\t\t\t\t\t<DropdownMenuItem>Blog Posts</DropdownMenuItem>\n\t\t\t\t\t\t\t\t<DropdownMenuItem>Changelog</DropdownMenuItem>\n\t\t\t\t\t\t\t</DropdownMenuGroup>\n\t\t\t\t\t\t</DropdownMenuContent>\n\t\t\t\t\t</DropdownMenu>\n\t\t\t\t</InputGroupAddon>\n\t\t\t</InputGroup>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

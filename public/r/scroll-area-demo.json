@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "scroll-area-demo",
+  "registryDependencies": [
+    "https://herocn.dev/r/scroll-area.json",
+    "https://herocn.dev/r/separator.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/scroll-area-demo.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\n\nimport { ScrollArea } from \"@/components/ui/scroll-area\";\nimport { Separator } from \"@/components/ui/separator\";\n\nconst tags = Array.from({ length: 50 }).map(\n\t(_, i, array) => `v1.2.0-beta.${array.length - i}`,\n);\n\nexport function ScrollAreaDemo() {\n\treturn (\n\t\t<ScrollArea className=\"h-72 w-48 rounded-md border\">\n\t\t\t<div className=\"p-4\">\n\t\t\t\t<h4 className=\"mb-4 font-medium text-sm leading-none\">Tags</h4>\n\t\t\t\t{tags.map((tag) => (\n\t\t\t\t\t<React.Fragment key={tag}>\n\t\t\t\t\t\t<div className=\"text-sm\">{tag}</div>\n\t\t\t\t\t\t<Separator className=\"my-2\" />\n\t\t\t\t\t</React.Fragment>\n\t\t\t\t))}\n\t\t\t</div>\n\t\t</ScrollArea>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

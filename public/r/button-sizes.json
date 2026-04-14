@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-sizes",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/button-sizes.tsx",
+      "content": "import { SearchIcon } from \"lucide-react\";\nimport { Button } from \"@/components/ui/button\";\n\nexport default function ButtonSizes() {\n\treturn (\n\t\t<div className=\"flex flex-wrap items-center gap-3\">\n\t\t\t<Button size=\"xs\">Extra Small</Button>\n\t\t\t<Button size=\"sm\">Small</Button>\n\t\t\t<Button>Default</Button>\n\t\t\t<Button size=\"lg\">Large</Button>\n\t\t\t<Button size=\"icon-xs\">\n\t\t\t\t<SearchIcon />\n\t\t\t</Button>\n\t\t\t<Button size=\"icon-sm\">\n\t\t\t\t<SearchIcon />\n\t\t\t</Button>\n\t\t\t<Button size=\"icon\">\n\t\t\t\t<SearchIcon />\n\t\t\t</Button>\n\t\t\t<Button size=\"icon-lg\">\n\t\t\t\t<SearchIcon />\n\t\t\t</Button>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

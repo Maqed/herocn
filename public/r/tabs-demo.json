@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tabs-demo",
+  "registryDependencies": [
+    "https://herocn.dev/r/card.json",
+    "https://herocn.dev/r/tabs.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/tabs-demo.tsx",
+      "content": "import {\n\tCard,\n\tCardContent,\n\tCardDescription,\n\tCardHeader,\n\tCardTitle,\n} from \"@/components/ui/card\";\nimport {\n\tTabs,\n\tTabsContent,\n\tTabsList,\n\tTabsTrigger,\n} from \"@/components/ui/tabs\";\n\nexport function TabsDemo() {\n\treturn (\n\t\t<Tabs defaultValue=\"overview\" className=\"w-[400px]\">\n\t\t\t<TabsList>\n\t\t\t\t<TabsTrigger value=\"overview\">Overview</TabsTrigger>\n\t\t\t\t<TabsTrigger value=\"analytics\">Analytics</TabsTrigger>\n\t\t\t\t<TabsTrigger value=\"reports\">Reports</TabsTrigger>\n\t\t\t</TabsList>\n\t\t\t<TabsContent value=\"overview\">\n\t\t\t\t<Card>\n\t\t\t\t\t<CardHeader>\n\t\t\t\t\t\t<CardTitle>Overview</CardTitle>\n\t\t\t\t\t\t<CardDescription>\n\t\t\t\t\t\t\tView your key metrics and recent project activity. Track progress\n\t\t\t\t\t\t\tacross all your active projects.\n\t\t\t\t\t\t</CardDescription>\n\t\t\t\t\t</CardHeader>\n\t\t\t\t\t<CardContent className=\"text-muted-foreground text-sm\">\n\t\t\t\t\t\tYou have 12 active projects and 3 pending tasks.\n\t\t\t\t\t</CardContent>\n\t\t\t\t</Card>\n\t\t\t</TabsContent>\n\t\t\t<TabsContent value=\"analytics\">\n\t\t\t\t<Card>\n\t\t\t\t\t<CardHeader>\n\t\t\t\t\t\t<CardTitle>Analytics</CardTitle>\n\t\t\t\t\t\t<CardDescription>\n\t\t\t\t\t\t\tTrack performance and user engagement metrics. Monitor trends and\n\t\t\t\t\t\t\tidentify growth opportunities.\n\t\t\t\t\t\t</CardDescription>\n\t\t\t\t\t</CardHeader>\n\t\t\t\t\t<CardContent className=\"text-muted-foreground text-sm\">\n\t\t\t\t\t\tPage views are up 25% compared to last month.\n\t\t\t\t\t</CardContent>\n\t\t\t\t</Card>\n\t\t\t</TabsContent>\n\t\t\t<TabsContent value=\"reports\">\n\t\t\t\t<Card>\n\t\t\t\t\t<CardHeader>\n\t\t\t\t\t\t<CardTitle>Reports</CardTitle>\n\t\t\t\t\t\t<CardDescription>\n\t\t\t\t\t\t\tGenerate and download your detailed reports. Export data in\n\t\t\t\t\t\t\tmultiple formats for analysis.\n\t\t\t\t\t\t</CardDescription>\n\t\t\t\t\t</CardHeader>\n\t\t\t\t\t<CardContent className=\"text-muted-foreground text-sm\">\n\t\t\t\t\t\tYou have 5 reports ready and available to export.\n\t\t\t\t\t</CardContent>\n\t\t\t\t</Card>\n\t\t\t</TabsContent>\n\t\t</Tabs>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

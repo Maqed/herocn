@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "textarea-button",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/textarea.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/textarea-button.tsx",
+      "content": "import { Button } from \"@/components/ui/button\";\nimport { Textarea } from \"@/components/ui/textarea\";\n\nexport default function TextareaButton() {\n\treturn (\n\t\t<div className=\"grid w-full max-w-sm gap-2\">\n\t\t\t<Textarea placeholder=\"Type your message here.\" rows={4} />\n\t\t\t<Button className=\"w-full\">Send message</Button>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

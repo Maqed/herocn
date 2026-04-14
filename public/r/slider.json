@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "slider",
+  "dependencies": [
+    "@base-ui/react"
+  ],
+  "files": [
+    {
+      "path": "components/ui/slider.tsx",
+      "content": "\"use client\";\n\nimport { Slider as SliderPrimitive } from \"@base-ui/react/slider\";\n\nimport { cn } from \"@/lib/utils\";\n\nfunction Slider({\n\tclassName,\n\tdefaultValue,\n\tvalue,\n\tmin = 0,\n\tmax = 100,\n\t...props\n}: SliderPrimitive.Root.Props) {\n\tconst _values = Array.isArray(value)\n\t\t? value\n\t\t: Array.isArray(defaultValue)\n\t\t\t? defaultValue\n\t\t\t: [min, max];\n\n\treturn (\n\t\t<SliderPrimitive.Root\n\t\t\tclassName={cn(\n\t\t\t\t\"data-[orientation=vertical]:h-full data-[orientation=horizontal]:w-full\",\n\t\t\t\tclassName,\n\t\t\t)}\n\t\t\tdata-slot=\"slider\"\n\t\t\tdefaultValue={defaultValue}\n\t\t\tvalue={value}\n\t\t\tmin={min}\n\t\t\tmax={max}\n\t\t\tthumbAlignment=\"edge\"\n\t\t\tthumbCollisionBehavior=\"swap\"\n\t\t\t{...props}\n\t\t>\n\t\t\t<SliderPrimitive.Control className=\"relative flex w-full touch-none select-none items-center data-[orientation=vertical]:h-full data-[orientation=vertical]:min-h-40 data-[orientation=vertical]:w-auto data-dragging:cursor-grabbing data-[orientation=vertical]:flex-col data-disabled:opacity-50\">\n\t\t\t\t<SliderPrimitive.Track\n\t\t\t\t\tdata-slot=\"slider-track\"\n\t\t\t\t\tclassName=\"relative grow select-none overflow-hidden rounded-full bg-muted data-[orientation=horizontal]:h-4.5 data-[orientation=vertical]:h-full data-[orientation=horizontal]:w-full data-[orientation=vertical]:w-4.5\"\n\t\t\t\t>\n\t\t\t\t\t<SliderPrimitive.Indicator\n\t\t\t\t\t\tdata-slot=\"slider-range\"\n\t\t\t\t\t\tclassName=\"select-none bg-primary data-[orientation=horizontal]:h-full data-[orientation=vertical]:w-full\"\n\t\t\t\t\t/>\n\t\t\t\t</SliderPrimitive.Track>\n\t\t\t\t{Array.from({ length: _values.length }, (_, index) => (\n\t\t\t\t\t<SliderPrimitive.Thumb\n\t\t\t\t\t\tdata-slot=\"slider-thumb\"\n\t\t\t\t\t\tkey={index}\n\t\t\t\t\t\tclassName=\"group/slider-thumb has-focus-visible:focus-ring flex shrink-0 cursor-grab select-none items-center justify-center rounded-full bg-primary shadow-sm transition-colors data-disabled:pointer-events-none data-[orientation=horizontal]:h-4.5 data-[orientation=vertical]:h-6 data-[orientation=horizontal]:w-6 data-[orientation=vertical]:w-4.5 data-disabled:cursor-default data-dragging:cursor-grabbing\"\n\t\t\t\t\t>\n\t\t\t\t\t\t<div\n\t\t\t\t\t\t\tclassName={cn(\n\t\t\t\t\t\t\t\t\"block bg-white group-active/slider-thumb:scale-90 group-data-disabled/slider-thumb:scale-100\",\n\t\t\t\t\t\t\t\t\"group-data-[orientation=horizontal]/slider-thumb:h-3.5 group-data-[orientation=horizontal]/slider-thumb:w-5\",\n\t\t\t\t\t\t\t\t\"group-data-[orientation=vertical]/slider-thumb:h-5 group-data-[orientation=vertical]/slider-thumb:w-3.5\",\n\t\t\t\t\t\t\t\t\"rounded-full\",\n\t\t\t\t\t\t\t)}\n\t\t\t\t\t\t/>\n\t\t\t\t\t</SliderPrimitive.Thumb>\n\t\t\t\t))}\n\t\t\t</SliderPrimitive.Control>\n\t\t</SliderPrimitive.Root>\n\t);\n}\n\nexport { Slider };\n",
+      "type": "registry:ui"
+    }
+  ],
+  "css": {
+    "@utility focus-ring": {
+      "@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none": {}
+    }
+  },
+  "type": "registry:ui"
+}

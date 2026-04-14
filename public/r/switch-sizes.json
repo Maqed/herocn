@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "switch-sizes",
+  "registryDependencies": [
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/switch.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/switch-sizes.tsx",
+      "content": "import { Field, FieldGroup, FieldLabel } from \"@/components/ui/field\";\nimport { Switch } from \"@/components/ui/switch\";\n\nexport default function SwitchSizes() {\n\treturn (\n\t\t<FieldGroup className=\"w-full max-w-[10rem]\">\n\t\t\t<Field orientation=\"horizontal\">\n\t\t\t\t<Switch id=\"switch-size-sm\" size=\"sm\" />\n\t\t\t\t<FieldLabel htmlFor=\"switch-size-sm\">Small</FieldLabel>\n\t\t\t</Field>\n\t\t\t<Field orientation=\"horizontal\">\n\t\t\t\t<Switch id=\"switch-size-default\" size=\"default\" />\n\t\t\t\t<FieldLabel htmlFor=\"switch-size-default\">Default</FieldLabel>\n\t\t\t</Field>\n\t\t\t<Field orientation=\"horizontal\">\n\t\t\t\t<Switch id=\"switch-size-large\" size=\"lg\" />\n\t\t\t\t<FieldLabel htmlFor=\"switch-size-large\">Large</FieldLabel>\n\t\t\t</Field>\n\t\t</FieldGroup>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

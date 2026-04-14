@@ -1,0 +1,67 @@
+"use client";
+
+import { Slider as SliderPrimitive } from "@base-ui/react/slider";
+
+import { cn } from "@/lib/utils";
+
+function Slider({
+	className,
+	defaultValue,
+	value,
+	min = 0,
+	max = 100,
+	...props
+}: SliderPrimitive.Root.Props) {
+	const _values = Array.isArray(value)
+		? value
+		: Array.isArray(defaultValue)
+			? defaultValue
+			: [min, max];
+
+	return (
+		<SliderPrimitive.Root
+			className={cn(
+				"data-[orientation=vertical]:h-full data-[orientation=horizontal]:w-full",
+				className,
+			)}
+			data-slot="slider"
+			defaultValue={defaultValue}
+			value={value}
+			min={min}
+			max={max}
+			thumbAlignment="edge"
+			thumbCollisionBehavior="swap"
+			{...props}
+		>
+			<SliderPrimitive.Control className="relative flex w-full touch-none select-none items-center data-[orientation=vertical]:h-full data-[orientation=vertical]:min-h-40 data-[orientation=vertical]:w-auto data-dragging:cursor-grabbing data-[orientation=vertical]:flex-col data-disabled:opacity-50">
+				<SliderPrimitive.Track
+					data-slot="slider-track"
+					className="relative grow select-none overflow-hidden rounded-full bg-muted data-[orientation=horizontal]:h-4.5 data-[orientation=vertical]:h-full data-[orientation=horizontal]:w-full data-[orientation=vertical]:w-4.5"
+				>
+					<SliderPrimitive.Indicator
+						data-slot="slider-range"
+						className="select-none bg-primary data-[orientation=horizontal]:h-full data-[orientation=vertical]:w-full"
+					/>
+				</SliderPrimitive.Track>
+				{Array.from({ length: _values.length }, (_, index) => (
+					<SliderPrimitive.Thumb
+						data-slot="slider-thumb"
+						key={index}
+						className="group/slider-thumb has-focus-visible:focus-ring flex shrink-0 cursor-grab select-none items-center justify-center rounded-full bg-primary shadow-sm transition-colors data-disabled:pointer-events-none data-[orientation=horizontal]:h-4.5 data-[orientation=vertical]:h-6 data-[orientation=horizontal]:w-6 data-[orientation=vertical]:w-4.5 data-disabled:cursor-default data-dragging:cursor-grabbing"
+					>
+						<div
+							className={cn(
+								"block bg-white group-active/slider-thumb:scale-90 group-data-disabled/slider-thumb:scale-100",
+								"group-data-[orientation=horizontal]/slider-thumb:h-3.5 group-data-[orientation=horizontal]/slider-thumb:w-5",
+								"group-data-[orientation=vertical]/slider-thumb:h-5 group-data-[orientation=vertical]/slider-thumb:w-3.5",
+								"rounded-full",
+							)}
+						/>
+					</SliderPrimitive.Thumb>
+				))}
+			</SliderPrimitive.Control>
+		</SliderPrimitive.Root>
+	);
+}
+
+export { Slider };

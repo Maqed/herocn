@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toggle-demo",
+  "registryDependencies": [
+    "https://herocn.dev/r/toggle.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/toggle-demo.tsx",
+      "content": "import { BookmarkIcon } from \"lucide-react\";\n\nimport { Toggle } from \"@/components/ui/toggle\";\n\nexport default function ToggleDemo() {\n\treturn (\n\t\t<Toggle aria-label=\"Toggle bookmark\">\n\t\t\t<BookmarkIcon className=\"group-aria-pressed/toggle:fill-primary\" />\n\t\t\tBookmark\n\t\t</Toggle>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

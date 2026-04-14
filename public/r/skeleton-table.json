@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "skeleton-table",
+  "registryDependencies": [
+    "https://herocn.dev/r/skeleton.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/skeleton-table.tsx",
+      "content": "import { Skeleton } from \"@/components/ui/skeleton\";\n\nexport default function SkeletonTable() {\n\treturn (\n\t\t<div className=\"flex w-full max-w-sm flex-col gap-2\">\n\t\t\t{Array.from({ length: 5 }).map((_, index) => (\n\t\t\t\t<div className=\"flex gap-4\" key={index}>\n\t\t\t\t\t<Skeleton className=\"h-4 flex-1\" />\n\t\t\t\t\t<Skeleton className=\"h-4 w-24\" />\n\t\t\t\t\t<Skeleton className=\"h-4 w-20\" />\n\t\t\t\t</div>\n\t\t\t))}\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

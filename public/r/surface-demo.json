@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "surface-demo",
+  "registryDependencies": [
+    "https://herocn.dev/r/surface.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/surface-demo.tsx",
+      "content": "import { Surface } from \"@/components/ui/surface\";\n\nexport default function SurfaceDemo() {\n\treturn (\n\t\t<div className=\"grid w-full gap-3 md:grid-cols-2\">\n\t\t\t<Surface className=\"rounded-3xl border p-6\">\n\t\t\t\t<h4 className=\"font-medium\">Default Surface</h4>\n\t\t\t\t<p className=\"mt-1 text-muted-foreground text-sm\">\n\t\t\t\t\tUse for cards, panels, and grouped content.\n\t\t\t\t</p>\n\t\t\t</Surface>\n\t\t\t<Surface variant=\"secondary\" className=\"rounded-3xl border p-6\">\n\t\t\t\t<h4 className=\"font-medium\">Secondary Surface</h4>\n\t\t\t\t<p className=\"mt-1 text-muted-foreground text-sm\">\n\t\t\t\t\tGreat for nested sections and subtle emphasis.\n\t\t\t\t</p>\n\t\t\t</Surface>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

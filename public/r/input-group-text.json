@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-group-text",
+  "registryDependencies": [
+    "https://herocn.dev/r/input-group.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/input-group-text.tsx",
+      "content": "import {\n\tInputGroup,\n\tInputGroupAddon,\n\tInputGroupInput,\n\tInputGroupText,\n\tInputGroupTextarea,\n} from \"@/components/ui/input-group\";\n\nexport default function InputGroupTextExample() {\n\treturn (\n\t\t<div className=\"grid w-full max-w-sm gap-6\">\n\t\t\t<InputGroup>\n\t\t\t\t<InputGroupAddon>\n\t\t\t\t\t<InputGroupText>$</InputGroupText>\n\t\t\t\t</InputGroupAddon>\n\t\t\t\t<InputGroupInput placeholder=\"0.00\" />\n\t\t\t\t<InputGroupAddon align=\"inline-end\">\n\t\t\t\t\t<InputGroupText>USD</InputGroupText>\n\t\t\t\t</InputGroupAddon>\n\t\t\t</InputGroup>\n\t\t\t<InputGroup>\n\t\t\t\t<InputGroupAddon>\n\t\t\t\t\t<InputGroupText>https://</InputGroupText>\n\t\t\t\t</InputGroupAddon>\n\t\t\t\t<InputGroupInput placeholder=\"example.com\" className=\"pl-0.5!\" />\n\t\t\t\t<InputGroupAddon align=\"inline-end\">\n\t\t\t\t\t<InputGroupText>.com</InputGroupText>\n\t\t\t\t</InputGroupAddon>\n\t\t\t</InputGroup>\n\t\t\t<InputGroup>\n\t\t\t\t<InputGroupInput placeholder=\"Enter your username\" />\n\t\t\t\t<InputGroupAddon align=\"inline-end\">\n\t\t\t\t\t<InputGroupText>@company.com</InputGroupText>\n\t\t\t\t</InputGroupAddon>\n\t\t\t</InputGroup>\n\t\t\t<InputGroup>\n\t\t\t\t<InputGroupTextarea placeholder=\"Enter your message\" />\n\t\t\t\t<InputGroupAddon align=\"block-end\">\n\t\t\t\t\t<InputGroupText className=\"text-muted-foreground text-xs\">\n\t\t\t\t\t\t120 characters left\n\t\t\t\t\t</InputGroupText>\n\t\t\t\t</InputGroupAddon>\n\t\t\t</InputGroup>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

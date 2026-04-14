@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dropdown-menu-basic",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/dropdown-menu.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/dropdown-menu-basic.tsx",
+      "content": "\"use client\";\n\nimport { Button } from \"@/components/ui/button\";\nimport {\n\tDropdownMenu,\n\tDropdownMenuContent,\n\tDropdownMenuGroup,\n\tDropdownMenuItem,\n\tDropdownMenuLabel,\n\tDropdownMenuSeparator,\n\tDropdownMenuTrigger,\n} from \"@/components/ui/dropdown-menu\";\n\nexport default function DropdownMenuBasic() {\n\treturn (\n\t\t<DropdownMenu>\n\t\t\t<DropdownMenuTrigger render={<Button variant=\"tertiary\" />}>\n\t\t\t\tOpen\n\t\t\t</DropdownMenuTrigger>\n\t\t\t<DropdownMenuContent>\n\t\t\t\t<DropdownMenuGroup>\n\t\t\t\t\t<DropdownMenuLabel>My Account</DropdownMenuLabel>\n\t\t\t\t\t<DropdownMenuItem>Profile</DropdownMenuItem>\n\t\t\t\t\t<DropdownMenuItem>Billing</DropdownMenuItem>\n\t\t\t\t\t<DropdownMenuItem>Settings</DropdownMenuItem>\n\t\t\t\t</DropdownMenuGroup>\n\t\t\t\t<DropdownMenuSeparator />\n\t\t\t\t<DropdownMenuItem>GitHub</DropdownMenuItem>\n\t\t\t\t<DropdownMenuItem>Support</DropdownMenuItem>\n\t\t\t\t<DropdownMenuItem disabled>API</DropdownMenuItem>\n\t\t\t</DropdownMenuContent>\n\t\t</DropdownMenu>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

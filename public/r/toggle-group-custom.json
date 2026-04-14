@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toggle-group-custom",
+  "registryDependencies": [
+    "https://herocn.dev/r/toggle-group.json",
+    "https://herocn.dev/r/field.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/toggle-group-custom.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\n\nimport {\n\tField,\n\tFieldDescription,\n\tFieldLabel,\n} from \"@/components/ui/field\";\nimport {\n\tToggleGroup,\n\tToggleGroupItem,\n} from \"@/components/ui/toggle-group\";\n\nexport default function ToggleGroupCustom() {\n\tconst [fontWeight, setFontWeight] = React.useState(\"normal\");\n\n\treturn (\n\t\t<Field>\n\t\t\t<FieldLabel>Font Weight</FieldLabel>\n\t\t\t<ToggleGroup\n\t\t\t\tvalue={[fontWeight]}\n\t\t\t\tonValueChange={(value) => setFontWeight(value[0])}\n\t\t\t\tspacing={2}\n\t\t\t\tsize=\"lg\"\n\t\t\t>\n\t\t\t\t<ToggleGroupItem\n\t\t\t\t\tvalue=\"light\"\n\t\t\t\t\taria-label=\"Light\"\n\t\t\t\t\tclassName=\"flex size-16 flex-col items-center justify-center rounded-xl\"\n\t\t\t\t>\n\t\t\t\t\t<span className=\"font-light text-2xl leading-none\">Aa</span>\n\t\t\t\t\t<span className=\"text-muted-foreground text-xs\">Light</span>\n\t\t\t\t</ToggleGroupItem>\n\t\t\t\t<ToggleGroupItem\n\t\t\t\t\tvalue=\"normal\"\n\t\t\t\t\taria-label=\"Normal\"\n\t\t\t\t\tclassName=\"flex size-16 flex-col items-center justify-center rounded-xl\"\n\t\t\t\t>\n\t\t\t\t\t<span className=\"font-normal text-2xl leading-none\">Aa</span>\n\t\t\t\t\t<span className=\"text-muted-foreground text-xs\">Normal</span>\n\t\t\t\t</ToggleGroupItem>\n\t\t\t\t<ToggleGroupItem\n\t\t\t\t\tvalue=\"medium\"\n\t\t\t\t\taria-label=\"Medium\"\n\t\t\t\t\tclassName=\"flex size-16 flex-col items-center justify-center rounded-xl\"\n\t\t\t\t>\n\t\t\t\t\t<span className=\"font-medium text-2xl leading-none\">Aa</span>\n\t\t\t\t\t<span className=\"text-muted-foreground text-xs\">Medium</span>\n\t\t\t\t</ToggleGroupItem>\n\t\t\t\t<ToggleGroupItem\n\t\t\t\t\tvalue=\"bold\"\n\t\t\t\t\taria-label=\"Bold\"\n\t\t\t\t\tclassName=\"flex size-16 flex-col items-center justify-center rounded-xl\"\n\t\t\t\t>\n\t\t\t\t\t<span className=\"font-bold text-2xl leading-none\">Aa</span>\n\t\t\t\t\t<span className=\"text-muted-foreground text-xs\">Bold</span>\n\t\t\t\t</ToggleGroupItem>\n\t\t\t</ToggleGroup>\n\t\t\t<FieldDescription>\n\t\t\t\tUse{\" \"}\n\t\t\t\t<code className=\"rounded-md bg-muted px-1 py-0.5 font-mono\">\n\t\t\t\t\tfont-{fontWeight}\n\t\t\t\t</code>{\" \"}\n\t\t\t\tto set the font weight.\n\t\t\t</FieldDescription>\n\t\t</Field>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

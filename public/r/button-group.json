@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-group",
+  "dependencies": [
+    "@base-ui/react"
+  ],
+  "registryDependencies": [
+    "https://herocn.dev/r/separator.json"
+  ],
+  "files": [
+    {
+      "path": "components/ui/button-group.tsx",
+      "content": "import { mergeProps } from \"@base-ui/react/merge-props\";\nimport { useRender } from \"@base-ui/react/use-render\";\nimport { cva, type VariantProps } from \"class-variance-authority\";\n\nimport { cn } from \"@/lib/utils\";\nimport { Separator } from \"@/components/ui/separator\";\n\nconst buttonGroupVariants = cva(\n\t\"flex w-fit items-stretch *:focus-visible:relative *:focus-visible:z-10 has-[>[data-slot=button-group]]:gap-2 has-[select[aria-hidden=true]:last-child]:[&>[data-slot=select-trigger]:last-of-type]:rounded-e-3xl [&>[data-slot=select-trigger]:not([class*='w-'])]:w-fit [&>input]:flex-1\",\n\t{\n\t\tvariants: {\n\t\t\torientation: {\n\t\t\t\thorizontal:\n\t\t\t\t\t\"*:data-slot:rounded-e-none [&>[data-slot]:not(:has(~[data-slot]))]:rounded-e-3xl! [&>[data-slot]~[data-slot]]:rounded-s-none [&>[data-slot]~[data-slot]]:border-s-0\",\n\t\t\t\tvertical:\n\t\t\t\t\t\"flex-col *:w-full *:data-slot:rounded-b-none [&>[data-slot]:not(:has(~[data-slot]))]:rounded-b-3xl! [&>[data-slot]~[data-slot]]:rounded-t-none [&>[data-slot]~[data-slot]]:border-t-0\",\n\t\t\t},\n\t\t},\n\t\tdefaultVariants: {\n\t\t\torientation: \"horizontal\",\n\t\t},\n\t},\n);\n\nfunction ButtonGroup({\n\tclassName,\n\torientation,\n\t...props\n}: React.ComponentProps<\"div\"> & VariantProps<typeof buttonGroupVariants>) {\n\treturn (\n\t\t<div\n\t\t\trole=\"group\"\n\t\t\tdata-slot=\"button-group\"\n\t\t\tdata-orientation={orientation}\n\t\t\tclassName={cn(buttonGroupVariants({ orientation }), className)}\n\t\t\t{...props}\n\t\t/>\n\t);\n}\n\nfunction ButtonGroupText({\n\tclassName,\n\trender,\n\t...props\n}: useRender.ComponentProps<\"div\">) {\n\treturn useRender({\n\t\tdefaultTagName: \"div\",\n\t\tprops: mergeProps<\"div\">(\n\t\t\t{\n\t\t\t\tclassName: cn(\n\t\t\t\t\t\"flex items-center gap-2 rounded-3xl border bg-muted px-2.5 font-medium text-sm [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none\",\n\t\t\t\t\tclassName,\n\t\t\t\t),\n\t\t\t},\n\t\t\tprops,\n\t\t),\n\t\trender,\n\t\tstate: {\n\t\t\tslot: \"button-group-text\",\n\t\t},\n\t});\n}\n\nfunction ButtonGroupSeparator({\n\tclassName,\n\torientation = \"vertical\",\n\t...props\n}: React.ComponentProps<typeof Separator>) {\n\treturn (\n\t\t<Separator\n\t\t\tdata-slot=\"button-group-separator\"\n\t\t\torientation={orientation}\n\t\t\tclassName={cn(\n\t\t\t\t\"relative self-stretch bg-input data-[orientation=horizontal]:mx-px data-[orientation=vertical]:my-px data-[orientation=vertical]:h-auto data-[orientation=horizontal]:w-auto\",\n\t\t\t\tclassName,\n\t\t\t)}\n\t\t\t{...props}\n\t\t/>\n\t);\n}\n\nexport {\n\tButtonGroup,\n\tButtonGroupSeparator,\n\tButtonGroupText,\n\tbuttonGroupVariants,\n};\n",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

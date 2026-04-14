@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "switch-disabled",
+  "registryDependencies": [
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/switch.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/switch-disabled.tsx",
+      "content": "import { Field, FieldLabel } from \"@/components/ui/field\";\nimport { Switch } from \"@/components/ui/switch\";\n\nexport default function SwitchDisabled() {\n\treturn (\n\t\t<Field orientation=\"horizontal\" data-disabled className=\"w-fit\">\n\t\t\t<Switch id=\"switch-disabled-unchecked\" disabled />\n\t\t\t<FieldLabel htmlFor=\"switch-disabled-unchecked\">Disabled</FieldLabel>\n\t\t</Field>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

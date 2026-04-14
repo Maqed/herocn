@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dialog-rtl",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/dialog.json",
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/input.json",
+    "https://herocn.dev/r/label.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/dialog-rtl.tsx",
+      "content": "\"use client\";\n\nimport {\n\ttype Translations,\n\tuseTranslation,\n} from \"@/components/language-selector\";\nimport { Button } from \"@/components/ui/button\";\nimport {\n\tDialog,\n\tDialogClose,\n\tDialogContent,\n\tDialogDescription,\n\tDialogFooter,\n\tDialogHeader,\n\tDialogTitle,\n\tDialogTrigger,\n} from \"@/components/ui/dialog\";\nimport { Field, FieldGroup } from \"@/components/ui/field\";\nimport { Input } from \"@/components/ui/input\";\nimport { Label } from \"@/components/ui/label\";\n\nconst translations: Translations = {\n\ten: {\n\t\tdir: \"ltr\",\n\t\tvalues: {\n\t\t\topenDialog: \"Open Dialog\",\n\t\t\teditProfile: \"Edit profile\",\n\t\t\tdescription:\n\t\t\t\t\"Make changes to your profile here. Click save when you're done.\",\n\t\t\tname: \"Name\",\n\t\t\tusername: \"Username\",\n\t\t\tcancel: \"Cancel\",\n\t\t\tsaveChanges: \"Save changes\",\n\t\t},\n\t},\n\tar: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\topenDialog: \"فتح الحوار\",\n\t\t\teditProfile: \"تعديل الملف الشخصي\",\n\t\t\tdescription:\n\t\t\t\t\"قم بإجراء تغييرات على ملفك الشخصي هنا. انقر فوق حفظ عند الانتهاء.\",\n\t\t\tname: \"الاسم\",\n\t\t\tusername: \"اسم المستخدم\",\n\t\t\tcancel: \"إلغاء\",\n\t\t\tsaveChanges: \"حفظ التغييرات\",\n\t\t},\n\t},\n\the: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\topenDialog: \"פתח דיאלוג\",\n\t\t\teditProfile: \"ערוך פרופיל\",\n\t\t\tdescription: \"בצע שינויים בפרופיל שלך כאן. לחץ על שמור כשתסיים.\",\n\t\t\tname: \"שם\",\n\t\t\tusername: \"שם משתמש\",\n\t\t\tcancel: \"בטל\",\n\t\t\tsaveChanges: \"שמור שינויים\",\n\t\t},\n\t},\n};\n\nexport default function DialogRtl() {\n\tconst { dir, language, t } = useTranslation(translations, \"ar\");\n\n\treturn (\n\t\t<div lang={language} dir={dir}>\n\t\t\t<Dialog>\n\t\t\t\t<form>\n\t\t\t\t\t<DialogTrigger render={<Button variant=\"tertiary\" />}>\n\t\t\t\t\t\t{t.openDialog}\n\t\t\t\t\t</DialogTrigger>\n\t\t\t\t\t<DialogContent\n\t\t\t\t\t\tdir={dir}\n\t\t\t\t\t\tdata-lang={dir === \"rtl\" ? language : undefined}\n\t\t\t\t\t\tclassName=\"sm:max-w-sm\"\n\t\t\t\t\t>\n\t\t\t\t\t\t<DialogHeader>\n\t\t\t\t\t\t\t<DialogTitle>{t.editProfile}</DialogTitle>\n\t\t\t\t\t\t\t<DialogDescription>{t.description}</DialogDescription>\n\t\t\t\t\t\t</DialogHeader>\n\t\t\t\t\t\t<FieldGroup>\n\t\t\t\t\t\t\t<Field>\n\t\t\t\t\t\t\t\t<Label htmlFor=\"name-rtl\">{t.name}</Label>\n\t\t\t\t\t\t\t\t<Input\n\t\t\t\t\t\t\t\t\tvariant=\"secondary\"\n\t\t\t\t\t\t\t\t\tid=\"name-rtl\"\n\t\t\t\t\t\t\t\t\tname=\"name\"\n\t\t\t\t\t\t\t\t\tdefaultValue=\"Maged Ibrahim\"\n\t\t\t\t\t\t\t\t/>\n\t\t\t\t\t\t\t</Field>\n\t\t\t\t\t\t\t<Field>\n\t\t\t\t\t\t\t\t<Label htmlFor=\"username-rtl\">{t.username}</Label>\n\t\t\t\t\t\t\t\t<Input\n\t\t\t\t\t\t\t\t\tvariant=\"secondary\"\n\t\t\t\t\t\t\t\t\tid=\"username-rtl\"\n\t\t\t\t\t\t\t\t\tname=\"username\"\n\t\t\t\t\t\t\t\t\tdefaultValue=\"@0xMaqed\"\n\t\t\t\t\t\t\t\t/>\n\t\t\t\t\t\t\t</Field>\n\t\t\t\t\t\t</FieldGroup>\n\t\t\t\t\t\t<DialogFooter>\n\t\t\t\t\t\t\t<DialogClose render={<Button variant=\"tertiary\" />}>\n\t\t\t\t\t\t\t\t{t.cancel}\n\t\t\t\t\t\t\t</DialogClose>\n\t\t\t\t\t\t\t<Button type=\"submit\">{t.saveChanges}</Button>\n\t\t\t\t\t\t</DialogFooter>\n\t\t\t\t\t</DialogContent>\n\t\t\t\t</form>\n\t\t\t</Dialog>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

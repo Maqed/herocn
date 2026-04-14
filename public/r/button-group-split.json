@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-group-split",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/button-group.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/button-group-split.tsx",
+      "content": "import { PlusIcon } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport {\n\tButtonGroup,\n\tButtonGroupSeparator,\n} from \"@/components/ui/button-group\";\n\nexport default function ButtonGroupSplit() {\n\treturn (\n\t\t<div className=\"flex flex-col items-center justify-center gap-4\">\n\t\t\t<ButtonGroup orientation=\"horizontal\">\n\t\t\t\t<Button variant=\"secondary\">Button</Button>\n\t\t\t\t<ButtonGroupSeparator />\n\t\t\t\t<Button size=\"icon\" variant=\"secondary\">\n\t\t\t\t\t<PlusIcon />\n\t\t\t\t</Button>\n\t\t\t</ButtonGroup>\n\t\t\t<ButtonGroup orientation=\"vertical\" className=\"h-fit\">\n\t\t\t\t<Button variant=\"secondary\">Button</Button>\n\t\t\t\t<ButtonGroupSeparator orientation=\"horizontal\" />\n\t\t\t\t<Button size=\"icon\" variant=\"secondary\">\n\t\t\t\t\t<PlusIcon />\n\t\t\t\t</Button>\n\t\t\t</ButtonGroup>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

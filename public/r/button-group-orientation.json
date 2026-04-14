@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-group-orientation",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/button-group.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/button-group-orientation.tsx",
+      "content": "import { MinusIcon, PlusIcon } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { ButtonGroup } from \"@/components/ui/button-group\";\n\nexport default function ButtonGroupOrientation() {\n\treturn (\n\t\t<ButtonGroup\n\t\t\torientation=\"vertical\"\n\t\t\taria-label=\"Media controls\"\n\t\t\tclassName=\"h-fit\"\n\t\t>\n\t\t\t<Button variant=\"tertiary\" size=\"icon\">\n\t\t\t\t<PlusIcon />\n\t\t\t</Button>\n\t\t\t<Button variant=\"tertiary\" size=\"icon\">\n\t\t\t\t<MinusIcon />\n\t\t\t</Button>\n\t\t</ButtonGroup>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

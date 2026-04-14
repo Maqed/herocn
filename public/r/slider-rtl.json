@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "slider-rtl",
+  "registryDependencies": [
+    "https://herocn.dev/r/slider.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/slider-rtl.tsx",
+      "content": "\"use client\";\n\nimport {\n\ttype Translations,\n\tuseTranslation,\n} from \"@/components/language-selector\";\nimport { Slider } from \"@/components/ui/slider\";\n\nconst translations: Translations = {\n\ten: {\n\t\tdir: \"ltr\",\n\t\tvalues: {},\n\t},\n\tar: {\n\t\tdir: \"rtl\",\n\t\tvalues: {},\n\t},\n\the: {\n\t\tdir: \"rtl\",\n\t\tvalues: {},\n\t},\n};\n\nexport default function SliderRtl() {\n\tconst { dir } = useTranslation(translations, \"ar\");\n\n\treturn (\n\t\t<Slider\n\t\t\tdefaultValue={[75]}\n\t\t\tmax={100}\n\t\t\tstep={1}\n\t\t\tclassName=\"mx-auto w-full max-w-xs\"\n\t\t\tdir={dir}\n\t\t/>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

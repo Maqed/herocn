@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-in-surface",
+  "registryDependencies": [
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/input.json",
+    "https://herocn.dev/r/surface.json",
+    "https://herocn.dev/r/button.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/input-in-surface.tsx",
+      "content": "import { Button } from \"@/components/ui/button\";\nimport { Field, FieldLabel } from \"@/components/ui/field\";\nimport { Input } from \"@/components/ui/input\";\nimport { Surface } from \"@/components/ui/surface\";\n\nexport default function InputInSurface() {\n\treturn (\n\t\t<Surface className=\"flex w-full max-w-sm flex-col gap-3 rounded-3xl p-6\">\n\t\t\t<Field>\n\t\t\t\t<FieldLabel htmlFor=\"input-in-surface-message\">\n\t\t\t\t\tWhat's your name?\n\t\t\t\t</FieldLabel>\n\t\t\t\t<Input id=\"input-in-surface-message\" variant=\"secondary\" />\n\t\t\t</Field>\n\t\t\t<Button>Submit</Button>\n\t\t</Surface>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

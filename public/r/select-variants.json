@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "select-variants",
+  "registryDependencies": [
+    "https://herocn.dev/r/select.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/select-variants.tsx",
+      "content": "import {\n\tSelect,\n\tSelectContent,\n\tSelectGroup,\n\tSelectItem,\n\tSelectTrigger,\n\tSelectValue,\n} from \"@/components/ui/select\";\n\nconst items = [\n\t{ label: \"Select a fruit\", value: null },\n\t{ label: \"Apple\", value: \"apple\" },\n\t{ label: \"Banana\", value: \"banana\" },\n\t{ label: \"Blueberry\", value: \"blueberry\" },\n];\n\nexport default function SelectVariants() {\n\treturn (\n\t\t<div className=\"flex w-full max-w-sm flex-col gap-4\">\n\t\t\t<Select items={items} variant=\"default\">\n\t\t\t\t<SelectTrigger className=\"w-full\">\n\t\t\t\t\t<SelectValue />\n\t\t\t\t</SelectTrigger>\n\t\t\t\t<SelectContent>\n\t\t\t\t\t<SelectGroup>\n\t\t\t\t\t\t{items.map((item) => (\n\t\t\t\t\t\t\t<SelectItem key={item.label} value={item.value}>\n\t\t\t\t\t\t\t\t{item.label}\n\t\t\t\t\t\t\t</SelectItem>\n\t\t\t\t\t\t))}\n\t\t\t\t\t</SelectGroup>\n\t\t\t\t</SelectContent>\n\t\t\t</Select>\n\t\t\t<Select items={items} variant=\"secondary\">\n\t\t\t\t<SelectTrigger className=\"w-full\">\n\t\t\t\t\t<SelectValue />\n\t\t\t\t</SelectTrigger>\n\t\t\t\t<SelectContent>\n\t\t\t\t\t<SelectGroup>\n\t\t\t\t\t\t{items.map((item) => (\n\t\t\t\t\t\t\t<SelectItem key={item.label} value={item.value}>\n\t\t\t\t\t\t\t\t{item.label}\n\t\t\t\t\t\t\t</SelectItem>\n\t\t\t\t\t\t))}\n\t\t\t\t\t</SelectGroup>\n\t\t\t\t</SelectContent>\n\t\t\t</Select>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

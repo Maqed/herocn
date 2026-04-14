@@ -1,0 +1,50 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "skeleton",
+  "dependencies": [
+    "class-variance-authority"
+  ],
+  "files": [
+    {
+      "path": "components/ui/skeleton.tsx",
+      "content": "import { cva, type VariantProps } from \"class-variance-authority\";\nimport { cn } from \"@/lib/utils\";\n\nconst skeletonAnimationTypes = cva(\n\t\"skeleton pointer-events-none relative overflow-hidden rounded-sm bg-surface-tertiary/70\",\n\t{\n\t\tvariants: {\n\t\t\tanimationType: {\n\t\t\t\tshimmer: \"skeleton--shimmer\",\n\t\t\t\tpulse: \"animate-pulse\",\n\t\t\t\tnone: \"\",\n\t\t\t},\n\t\t},\n\t\tdefaultVariants: {\n\t\t\tanimationType: \"shimmer\",\n\t\t},\n\t},\n);\n\nfunction Skeleton({\n\tclassName,\n\tanimationType,\n\t...props\n}: React.ComponentProps<\"div\"> & VariantProps<typeof skeletonAnimationTypes>) {\n\treturn (\n\t\t<div\n\t\t\tdata-slot=\"skeleton\"\n\t\t\tclassName={cn(skeletonAnimationTypes({ animationType, className }))}\n\t\t\t{...props}\n\t\t/>\n\t);\n}\n\nexport { Skeleton, skeletonAnimationTypes };\n",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "theme": {
+      "--color-surface-tertiary": "var(--surface-tertiary)",
+      "--animate-skeleton": "skeleton 2s linear infinite"
+    },
+    "light": {
+      "--surface-tertiary": "oklch(0.9373 0.0013 286.37)"
+    },
+    "dark": {
+      "--surface-tertiary": "oklch(0.2721 0.0024 247.91)"
+    }
+  },
+  "css": {
+    "@keyframes skeleton": {
+      "100%": {
+        "transform": "translateX(200%)"
+      }
+    },
+    ".skeleton--shimmer::after": {
+      "@apply absolute inset-0 -translate-x-full animate-skeleton bg-linear-to-r from-transparent via-surface-tertiary to-transparent content-['']": {}
+    },
+    ".skeleton--shimmer:has(.skeleton)::after": {
+      "content": "none"
+    },
+    ".skeleton--shimmer:has(.skeleton)::before": {
+      "@apply absolute inset-0 -translate-x-full animate-skeleton content-['']": {},
+      "background": "linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.5) 50%, transparent 100%)",
+      "z-index": "10",
+      "pointer-events": "none",
+      "mix-blend-mode": "overlay"
+    },
+    ".skeleton--shimmer:has(.skeleton) .skeleton::after": {
+      "content": "none"
+    }
+  },
+  "type": "registry:ui"
+}

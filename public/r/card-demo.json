@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-demo",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/card.json",
+    "https://herocn.dev/r/input.json",
+    "https://herocn.dev/r/label.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/card-demo.tsx",
+      "content": "import { Button } from \"@/components/ui/button\";\nimport {\n\tCard,\n\tCardAction,\n\tCardContent,\n\tCardDescription,\n\tCardFooter,\n\tCardHeader,\n\tCardTitle,\n} from \"@/components/ui/card\";\nimport { Input } from \"@/components/ui/input\";\nimport { Label } from \"@/components/ui/label\";\n\nexport default function CardDemo() {\n\treturn (\n\t\t<Card className=\"w-full max-w-sm\">\n\t\t\t<CardHeader>\n\t\t\t\t<CardTitle>Login to your account</CardTitle>\n\t\t\t\t<CardDescription>\n\t\t\t\t\tEnter your email below to login to your account\n\t\t\t\t</CardDescription>\n\t\t\t\t<CardAction>\n\t\t\t\t\t<Button variant=\"ghost\">Sign Up</Button>\n\t\t\t\t</CardAction>\n\t\t\t</CardHeader>\n\t\t\t<CardContent>\n\t\t\t\t<form>\n\t\t\t\t\t<div className=\"flex flex-col gap-6\">\n\t\t\t\t\t\t<div className=\"grid gap-2\">\n\t\t\t\t\t\t\t<Label htmlFor=\"email\">Email</Label>\n\t\t\t\t\t\t\t<Input\n\t\t\t\t\t\t\t\tvariant=\"secondary\"\n\t\t\t\t\t\t\t\tid=\"email\"\n\t\t\t\t\t\t\t\ttype=\"email\"\n\t\t\t\t\t\t\t\tplaceholder=\"m@example.com\"\n\t\t\t\t\t\t\t\trequired\n\t\t\t\t\t\t\t/>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div className=\"grid gap-2\">\n\t\t\t\t\t\t\t<div className=\"flex items-center\">\n\t\t\t\t\t\t\t\t<Label htmlFor=\"password\">Password</Label>\n\t\t\t\t\t\t\t\t<a\n\t\t\t\t\t\t\t\t\thref=\"#\"\n\t\t\t\t\t\t\t\t\tclassName=\"ml-auto inline-block text-xs underline-offset-4 hover:underline sm:text-sm\"\n\t\t\t\t\t\t\t\t>\n\t\t\t\t\t\t\t\t\tForgot your password?\n\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<Input\n\t\t\t\t\t\t\t\tvariant=\"secondary\"\n\t\t\t\t\t\t\t\tid=\"password\"\n\t\t\t\t\t\t\t\ttype=\"password\"\n\t\t\t\t\t\t\t\trequired\n\t\t\t\t\t\t\t/>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</form>\n\t\t\t</CardContent>\n\t\t\t<CardFooter className=\"flex-col gap-2\">\n\t\t\t\t<Button type=\"submit\" className=\"w-full\">\n\t\t\t\t\tLogin\n\t\t\t\t</Button>\n\t\t\t\t<Button variant=\"outline\" className=\"w-full\">\n\t\t\t\t\tLogin with Google\n\t\t\t\t</Button>\n\t\t\t</CardFooter>\n\t\t</Card>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "select-disabled",
+  "registryDependencies": [
+    "https://herocn.dev/r/select.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/select-disabled.tsx",
+      "content": "import {\n\tSelect,\n\tSelectContent,\n\tSelectGroup,\n\tSelectItem,\n\tSelectTrigger,\n\tSelectValue,\n} from \"@/components/ui/select\";\n\nconst items: Array<{\n\tlabel: string;\n\tvalue: string | null;\n\tdisabled?: boolean;\n}> = [\n\t{ label: \"Select a fruit\", value: null },\n\t{ label: \"Apple\", value: \"apple\" },\n\t{ label: \"Banana\", value: \"banana\" },\n\t{ label: \"Blueberry\", value: \"blueberry\" },\n\t{ label: \"Grapes\", value: \"grapes\", disabled: true },\n\t{ label: \"Pineapple\", value: \"pineapple\" },\n];\n\nexport default function SelectDisabled() {\n\treturn (\n\t\t<Select items={items} disabled>\n\t\t\t<SelectTrigger className=\"w-full max-w-48\">\n\t\t\t\t<SelectValue />\n\t\t\t</SelectTrigger>\n\t\t\t<SelectContent>\n\t\t\t\t<SelectGroup>\n\t\t\t\t\t{items.map((item) => (\n\t\t\t\t\t\t<SelectItem\n\t\t\t\t\t\t\tkey={item.label}\n\t\t\t\t\t\t\tvalue={item.value}\n\t\t\t\t\t\t\tdisabled={item.disabled}\n\t\t\t\t\t\t>\n\t\t\t\t\t\t\t{item.label}\n\t\t\t\t\t\t</SelectItem>\n\t\t\t\t\t))}\n\t\t\t\t</SelectGroup>\n\t\t\t</SelectContent>\n\t\t</Select>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

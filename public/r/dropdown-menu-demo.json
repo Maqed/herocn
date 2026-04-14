@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dropdown-menu-demo",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/dropdown-menu.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/dropdown-menu-demo.tsx",
+      "content": "\"use client\";\n\nimport { Button } from \"@/components/ui/button\";\nimport {\n\tDropdownMenu,\n\tDropdownMenuContent,\n\tDropdownMenuGroup,\n\tDropdownMenuItem,\n\tDropdownMenuLabel,\n\tDropdownMenuPortal,\n\tDropdownMenuSeparator,\n\tDropdownMenuShortcut,\n\tDropdownMenuSub,\n\tDropdownMenuSubContent,\n\tDropdownMenuSubTrigger,\n\tDropdownMenuTrigger,\n} from \"@/components/ui/dropdown-menu\";\n\nexport default function DropdownMenuDemo() {\n\treturn (\n\t\t<DropdownMenu>\n\t\t\t<DropdownMenuTrigger render={<Button variant=\"tertiary\" />}>\n\t\t\t\tOpen\n\t\t\t</DropdownMenuTrigger>\n\t\t\t<DropdownMenuContent align=\"start\">\n\t\t\t\t<DropdownMenuGroup>\n\t\t\t\t\t<DropdownMenuLabel>My Account</DropdownMenuLabel>\n\t\t\t\t\t<DropdownMenuItem>\n\t\t\t\t\t\tProfile\n\t\t\t\t\t\t<DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>\n\t\t\t\t\t</DropdownMenuItem>\n\t\t\t\t\t<DropdownMenuItem>\n\t\t\t\t\t\tBilling\n\t\t\t\t\t\t<DropdownMenuShortcut>⌘B</DropdownMenuShortcut>\n\t\t\t\t\t</DropdownMenuItem>\n\t\t\t\t\t<DropdownMenuItem>\n\t\t\t\t\t\tSettings\n\t\t\t\t\t\t<DropdownMenuShortcut>⌘S</DropdownMenuShortcut>\n\t\t\t\t\t</DropdownMenuItem>\n\t\t\t\t</DropdownMenuGroup>\n\t\t\t\t<DropdownMenuSeparator />\n\t\t\t\t<DropdownMenuGroup>\n\t\t\t\t\t<DropdownMenuItem>Team</DropdownMenuItem>\n\t\t\t\t\t<DropdownMenuSub>\n\t\t\t\t\t\t<DropdownMenuSubTrigger>Invite users</DropdownMenuSubTrigger>\n\t\t\t\t\t\t<DropdownMenuPortal>\n\t\t\t\t\t\t\t<DropdownMenuSubContent>\n\t\t\t\t\t\t\t\t<DropdownMenuItem>Email</DropdownMenuItem>\n\t\t\t\t\t\t\t\t<DropdownMenuItem>Message</DropdownMenuItem>\n\t\t\t\t\t\t\t\t<DropdownMenuSeparator />\n\t\t\t\t\t\t\t\t<DropdownMenuItem>More...</DropdownMenuItem>\n\t\t\t\t\t\t\t</DropdownMenuSubContent>\n\t\t\t\t\t\t</DropdownMenuPortal>\n\t\t\t\t\t</DropdownMenuSub>\n\t\t\t\t\t<DropdownMenuItem>\n\t\t\t\t\t\tNew Team\n\t\t\t\t\t\t<DropdownMenuShortcut>⌘+T</DropdownMenuShortcut>\n\t\t\t\t\t</DropdownMenuItem>\n\t\t\t\t</DropdownMenuGroup>\n\t\t\t\t<DropdownMenuSeparator />\n\t\t\t\t<DropdownMenuGroup>\n\t\t\t\t\t<DropdownMenuItem>GitHub</DropdownMenuItem>\n\t\t\t\t\t<DropdownMenuItem>Support</DropdownMenuItem>\n\t\t\t\t\t<DropdownMenuItem disabled>API</DropdownMenuItem>\n\t\t\t\t</DropdownMenuGroup>\n\t\t\t\t<DropdownMenuSeparator />\n\t\t\t\t<DropdownMenuGroup>\n\t\t\t\t\t<DropdownMenuItem variant=\"destructive\">\n\t\t\t\t\t\tLog out\n\t\t\t\t\t\t<DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>\n\t\t\t\t\t</DropdownMenuItem>\n\t\t\t\t</DropdownMenuGroup>\n\t\t\t</DropdownMenuContent>\n\t\t</DropdownMenu>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

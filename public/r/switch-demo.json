@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "switch-demo",
+  "registryDependencies": [
+    "https://herocn.dev/r/label.json",
+    "https://herocn.dev/r/switch.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/switch-demo.tsx",
+      "content": "import { Label } from \"@/components/ui/label\";\nimport { Switch } from \"@/components/ui/switch\";\n\nexport default function SwitchDemo() {\n\treturn (\n\t\t<div className=\"flex items-center space-x-2\">\n\t\t\t<Switch id=\"airplane-mode\" />\n\t\t\t<Label htmlFor=\"airplane-mode\">Airplane Mode</Label>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-button-group",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/button-group.json",
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/input.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/input-button-group.tsx",
+      "content": "import { Button } from \"@/components/ui/button\";\nimport { ButtonGroup } from \"@/components/ui/button-group\";\nimport { Field, FieldLabel } from \"@/components/ui/field\";\nimport { Input } from \"@/components/ui/input\";\n\nexport default function InputButtonGroup() {\n\treturn (\n\t\t<div className=\"w-full max-w-sm\">\n\t\t\t<Field>\n\t\t\t\t<FieldLabel htmlFor=\"input-button-group\">Search</FieldLabel>\n\t\t\t\t<ButtonGroup>\n\t\t\t\t\t<Input\n\t\t\t\t\t\tid=\"input-button-group\"\n\t\t\t\t\t\tvariant=\"secondary\"\n\t\t\t\t\t\tplaceholder=\"Type to search...\"\n\t\t\t\t\t/>\n\t\t\t\t\t<Button variant=\"tertiary\">Search</Button>\n\t\t\t\t</ButtonGroup>\n\t\t\t</Field>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

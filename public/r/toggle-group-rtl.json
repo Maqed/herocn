@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toggle-group-rtl",
+  "registryDependencies": [
+    "https://herocn.dev/r/toggle-group.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/toggle-group-rtl.tsx",
+      "content": "\"use client\";\n\nimport {\n\ttype Translations,\n\tuseTranslation,\n} from \"@/components/language-selector\";\nimport {\n\tToggleGroup,\n\tToggleGroupItem,\n} from \"@/components/ui/toggle-group\";\n\nconst translations: Translations = {\n\ten: {\n\t\tdir: \"ltr\",\n\t\tvalues: {\n\t\t\tlist: \"List\",\n\t\t\tgrid: \"Grid\",\n\t\t\tcards: \"Cards\",\n\t\t},\n\t},\n\tar: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\tlist: \"قائمة\",\n\t\t\tgrid: \"شبكة\",\n\t\t\tcards: \"بطاقات\",\n\t\t},\n\t},\n\the: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\tlist: \"רשימה\",\n\t\t\tgrid: \"רשת\",\n\t\t\tcards: \"כרטיסים\",\n\t\t},\n\t},\n};\n\nexport function ToggleGroupRtl() {\n\tconst { dir, language, t } = useTranslation(translations, \"ar\");\n\n\treturn (\n\t\t<div lang={language} dir={dir}>\n\t\t\t<ToggleGroup defaultValue={[\"list\"]} dir={dir}>\n\t\t\t\t<ToggleGroupItem value=\"list\" aria-label={t.list}>\n\t\t\t\t\t{t.list}\n\t\t\t\t</ToggleGroupItem>\n\t\t\t\t<ToggleGroupItem value=\"grid\" aria-label={t.grid}>\n\t\t\t\t\t{t.grid}\n\t\t\t\t</ToggleGroupItem>\n\t\t\t\t<ToggleGroupItem value=\"cards\" aria-label={t.cards}>\n\t\t\t\t\t{t.cards}\n\t\t\t\t</ToggleGroupItem>\n\t\t\t</ToggleGroup>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

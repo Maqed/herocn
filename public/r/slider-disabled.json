@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "slider-disabled",
+  "registryDependencies": [
+    "https://herocn.dev/r/slider.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/slider-disabled.tsx",
+      "content": "import { Slider } from \"@/components/ui/slider\";\n\nexport default function SliderDisabled() {\n\treturn (\n\t\t<Slider\n\t\t\tdefaultValue={[50]}\n\t\t\tmax={100}\n\t\t\tstep={1}\n\t\t\tdisabled\n\t\t\tclassName=\"mx-auto w-full max-w-xs\"\n\t\t/>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "skeleton-animation-types",
+  "registryDependencies": [
+    "https://herocn.dev/r/skeleton.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/skeleton-animation-types.tsx",
+      "content": "import { Skeleton } from \"@/components/ui/skeleton\";\n\nexport default function SkeletonAnimationTypes() {\n\treturn (\n\t\t<div className=\"grid w-full max-w-xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3\">\n\t\t\t<div className=\"space-y-2\">\n\t\t\t\t<p className=\"truncate text-muted-foreground text-xs\">Shimmer</p>\n\t\t\t\t<div className=\"space-y-3 rounded-lg bg-transparent p-4 shadow-panel\">\n\t\t\t\t\t<Skeleton animationType=\"shimmer\" className=\"h-20 rounded-lg\" />\n\t\t\t\t\t<Skeleton animationType=\"shimmer\" className=\"h-3 w-3/5 rounded-lg\" />\n\t\t\t\t\t<Skeleton animationType=\"shimmer\" className=\"h-3 w-4/5 rounded-lg\" />\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div className=\"space-y-2\">\n\t\t\t\t<p className=\"truncate text-muted-foreground text-xs\">Pulse</p>\n\t\t\t\t<div className=\"space-y-3 rounded-lg bg-transparent p-4 shadow-panel\">\n\t\t\t\t\t<Skeleton animationType=\"pulse\" className=\"h-20 rounded-lg\" />\n\t\t\t\t\t<Skeleton animationType=\"pulse\" className=\"h-3 w-3/5 rounded-lg\" />\n\t\t\t\t\t<Skeleton animationType=\"pulse\" className=\"h-3 w-4/5 rounded-lg\" />\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div className=\"space-y-2\">\n\t\t\t\t<p className=\"truncate text-muted-foreground text-xs\">None</p>\n\t\t\t\t<div className=\"space-y-3 rounded-lg bg-transparent p-4 shadow-panel\">\n\t\t\t\t\t<Skeleton animationType=\"none\" className=\"h-20 rounded-lg\" />\n\t\t\t\t\t<Skeleton animationType=\"none\" className=\"h-3 w-3/5 rounded-lg\" />\n\t\t\t\t\t<Skeleton animationType=\"none\" className=\"h-3 w-4/5 rounded-lg\" />\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "scroll-area-horizontal",
+  "registryDependencies": [
+    "https://herocn.dev/r/scroll-area.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/scroll-area-horizontal.tsx",
+      "content": "import { ScrollArea, ScrollBar } from \"@/components/ui/scroll-area\";\n\nexport interface Artwork {\n\tartist: string;\n\tart: string;\n}\n\nexport const works: Artwork[] = [\n\t{\n\t\tartist: \"Ornella Binni\",\n\t\tart: \"https://images.unsplash.com/photo-1465869185982-5a1a7522cbcb?auto=format&fit=crop&w=300&q=80\",\n\t},\n\t{\n\t\tartist: \"Tom Byrom\",\n\t\tart: \"https://images.unsplash.com/photo-1548516173-3cabfa4607e9?auto=format&fit=crop&w=300&q=80\",\n\t},\n\t{\n\t\tartist: \"Vladimir Malyavko\",\n\t\tart: \"https://images.unsplash.com/photo-1494337480532-3725c85fd2ab?auto=format&fit=crop&w=300&q=80\",\n\t},\n];\n\nexport function ScrollAreaHorizontalDemo() {\n\treturn (\n\t\t<ScrollArea className=\"w-96 whitespace-nowrap rounded-md border\">\n\t\t\t<div className=\"flex w-max space-x-4 p-4\">\n\t\t\t\t{works.map((artwork) => (\n\t\t\t\t\t<figure key={artwork.artist} className=\"shrink-0\">\n\t\t\t\t\t\t<div className=\"overflow-hidden rounded-md\">\n\t\t\t\t\t\t\t<img\n\t\t\t\t\t\t\t\tsrc={artwork.art}\n\t\t\t\t\t\t\t\talt={`By ${artwork.artist}`}\n\t\t\t\t\t\t\t\tclassName=\"aspect-[3/4] h-fit w-fit object-cover\"\n\t\t\t\t\t\t\t\twidth={300}\n\t\t\t\t\t\t\t\theight={400}\n\t\t\t\t\t\t\t/>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<figcaption className=\"pt-2 text-muted-foreground text-xs\">\n\t\t\t\t\t\t\tPhoto by{\" \"}\n\t\t\t\t\t\t\t<span className=\"font-semibold text-foreground\">\n\t\t\t\t\t\t\t\t{artwork.artist}\n\t\t\t\t\t\t\t</span>\n\t\t\t\t\t\t</figcaption>\n\t\t\t\t\t</figure>\n\t\t\t\t))}\n\t\t\t</div>\n\t\t\t<ScrollBar orientation=\"horizontal\" />\n\t\t</ScrollArea>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

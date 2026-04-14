@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-badge",
+  "registryDependencies": [
+    "https://herocn.dev/r/badge.json",
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/input.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/input-badge.tsx",
+      "content": "import { Badge } from \"@/components/ui/badge\";\nimport { Field, FieldLabel } from \"@/components/ui/field\";\nimport { Input } from \"@/components/ui/input\";\n\nexport default function InputBadge() {\n\treturn (\n\t\t<div className=\"w-full max-w-sm\">\n\t\t\t<Field>\n\t\t\t\t<FieldLabel\n\t\t\t\t\thtmlFor=\"input-badge\"\n\t\t\t\t\tclassName=\"flex w-full items-center gap-2\"\n\t\t\t\t>\n\t\t\t\t\tWebhook URL\n\t\t\t\t\t<Badge variant=\"default\" className=\"ml-auto\">\n\t\t\t\t\t\tBeta\n\t\t\t\t\t</Badge>\n\t\t\t\t</FieldLabel>\n\t\t\t\t<Input\n\t\t\t\t\tid=\"input-badge\"\n\t\t\t\t\ttype=\"url\"\n\t\t\t\t\tplaceholder=\"https://api.example.com/webhook\"\n\t\t\t\t/>\n\t\t\t</Field>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

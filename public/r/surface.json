@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "surface",
+  "files": [
+    {
+      "path": "components/ui/surface.tsx",
+      "content": "import { cva, type VariantProps } from \"class-variance-authority\";\nimport { cn } from \"@/lib/utils\";\n\nexport const surfaceVariants = cva(\"relative text-foreground\", {\n\tvariants: {\n\t\tvariant: {\n\t\t\tdefault: \"bg-surface\",\n\t\t\tsecondary: \"bg-surface-secondary\",\n\t\t\ttertiary: \"bg-surface-tertiary\",\n\t\t\ttransparent: \"bg-transparent\",\n\t\t},\n\t},\n\tdefaultVariants: {\n\t\tvariant: \"default\",\n\t},\n});\n\nfunction Surface({\n\tclassName,\n\tvariant,\n\t...props\n}: React.ComponentProps<\"div\"> & VariantProps<typeof surfaceVariants>) {\n\treturn (\n\t\t<div className={cn(surfaceVariants({ variant }), className)} {...props} />\n\t);\n}\n\nexport { Surface };\n",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "theme": {
+      "--color-surface": "var(--surface)",
+      "--color-surface-secondary": "var(--surface-secondary)",
+      "--color-surface-tertiary": "var(--surface-tertiary)"
+    },
+    "light": {
+      "--surface": "white",
+      "--surface-secondary": "oklch(0.9524 0.0013 286.37)",
+      "--surface-tertiary": "oklch(0.9373 0.0013 286.37)"
+    },
+    "dark": {
+      "--surface": "oklch(0.2103 0.0059 285.89)",
+      "--surface-secondary": "oklch(0.257 0.0037 286.14)",
+      "--surface-tertiary": "oklch(0.2721 0.0024 247.91)"
+    }
+  },
+  "type": "registry:ui"
+}

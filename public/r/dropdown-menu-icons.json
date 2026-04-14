@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dropdown-menu-icons",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/dropdown-menu.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/dropdown-menu-icons.tsx",
+      "content": "\"use client\";\n\nimport {\n\tCreditCardIcon,\n\tLogOutIcon,\n\tSettingsIcon,\n\tUserIcon,\n} from \"lucide-react\";\nimport { Button } from \"@/components/ui/button\";\nimport {\n\tDropdownMenu,\n\tDropdownMenuContent,\n\tDropdownMenuItem,\n\tDropdownMenuSeparator,\n\tDropdownMenuTrigger,\n} from \"@/components/ui/dropdown-menu\";\n\nexport default function DropdownMenuIcons() {\n\treturn (\n\t\t<DropdownMenu>\n\t\t\t<DropdownMenuTrigger render={<Button variant=\"tertiary\" />}>\n\t\t\t\tOpen\n\t\t\t</DropdownMenuTrigger>\n\t\t\t<DropdownMenuContent>\n\t\t\t\t<DropdownMenuItem>\n\t\t\t\t\t<UserIcon />\n\t\t\t\t\tProfile\n\t\t\t\t</DropdownMenuItem>\n\t\t\t\t<DropdownMenuItem>\n\t\t\t\t\t<CreditCardIcon />\n\t\t\t\t\tBilling\n\t\t\t\t</DropdownMenuItem>\n\t\t\t\t<DropdownMenuItem>\n\t\t\t\t\t<SettingsIcon />\n\t\t\t\t\tSettings\n\t\t\t\t</DropdownMenuItem>\n\t\t\t\t<DropdownMenuSeparator />\n\t\t\t\t<DropdownMenuItem variant=\"destructive\">\n\t\t\t\t\t<LogOutIcon />\n\t\t\t\t\tLog out\n\t\t\t\t</DropdownMenuItem>\n\t\t\t</DropdownMenuContent>\n\t\t</DropdownMenu>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

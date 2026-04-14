@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "slider-controlled",
+  "registryDependencies": [
+    "https://herocn.dev/r/label.json",
+    "https://herocn.dev/r/slider.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/slider-controlled.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\n\nimport { Label } from \"@/components/ui/label\";\nimport { Slider } from \"@/components/ui/slider\";\n\nexport default function SliderControlled() {\n\tconst [value, setValue] = React.useState([0.3, 0.7]);\n\n\treturn (\n\t\t<div className=\"mx-auto grid w-full max-w-xs gap-3\">\n\t\t\t<div className=\"flex items-center justify-between gap-2\">\n\t\t\t\t<Label htmlFor=\"slider-controlled-temperature\">Temperature</Label>\n\t\t\t\t<span className=\"text-muted-foreground text-sm\">\n\t\t\t\t\t{value.join(\", \")}\n\t\t\t\t</span>\n\t\t\t</div>\n\t\t\t<Slider\n\t\t\t\tid=\"slider-controlled-temperature\"\n\t\t\t\tvalue={value}\n\t\t\t\tonValueChange={(val) => setValue(val as number[])}\n\t\t\t\tmin={0}\n\t\t\t\tmax={1}\n\t\t\t\tstep={0.1}\n\t\t\t/>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

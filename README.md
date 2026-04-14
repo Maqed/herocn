@@ -1,64 +1,47 @@
-# herocn
+# fumadocs
 
-Minimal template for building shadcn registry with docs
+This is a Next.js application generated with
+[Create Fumadocs](https://github.com/fuma-nama/fumadocs).
 
-## Features
+It is a Next.js app with [Static Export](https://nextjs.org/docs/app/guides/static-exports) configured.
 
-- **TypeScript** - For type safety and improved developer experience
-- **Biome** - Linting and formatting
-- **Husky** - Git hooks for code quality
-- **Turborepo** - Optimized monorepo build system
-
-## Getting Started
-
-First, install the dependencies:
+Run development server:
 
 ```bash
-bun install
+npm run dev
+# or
+pnpm dev
+# or
+yarn dev
 ```
 
-Then, run the development server:
+Open http://localhost:3000 with your browser to see the result.
 
-```bash
-bun run dev
-```
+## Explore
 
-## Git Hooks and Formatting
+In the project, you can see:
 
-- Initialize hooks: `bun run prepare`
-- Format and lint fix: `bun run check`
+- `lib/source.ts`: Code for content source adapter, [`loader()`](https://fumadocs.dev/docs/headless/source-api) provides the interface to access your content.
+- `lib/layout.shared.tsx`: Shared options for layouts, optional but preferred to keep.
 
-## Project Structure
+| Route                     | Description                                            |
+| ------------------------- | ------------------------------------------------------ |
+| `app/(home)`              | The route group for your landing page and other pages. |
+| `app/docs`                | The documentation layout and pages.                    |
+| `app/api/search/route.ts` | The Route Handler for search.                          |
 
-```
-herocn/
-├── apps/
-│   └── docs/          # Next.js + Fumadocs app with the registry UI
-└── packages/
-    └── config/       # Shared TypeScript / tooling config
-```
+### Fumadocs MDX
 
-## Available Scripts
+A `source.config.ts` config file has been included, you can customise different options like frontmatter schema.
 
-- `bun run dev`: Start all applications in development mode
-- `bun run build`: Build all applications
-- `bun run check-types`: Check TypeScript types across all apps
-- `bun run check`: Run Biome formatting and linting
+Read the [Introduction](https://fumadocs.dev/docs/mdx) for further details.
 
-## Customizing this template
+## Learn More
 
-- **Change site name, description, links, and nav**
-  - Edit `apps/docs/src/lib/config.ts` to update the site name, description, URLs, social links, and top navigation items.
+To learn more about Next.js and Fumadocs, take a look at the following
+resources:
 
-- **Customize documentation content**
-  - Docs live in `apps/docs/content/docs` as MDX files (for example: `index.mdx`, `components/*.mdx`).
-  - Adjust frontmatter and meta schemas in `apps/docs/source.config.ts` if you need custom fields.
-
-- **Customize shadcn registry items**
-  - Add or edit UI components under `apps/docs/src/registry/new-york-v4/ui`.
-  - Add or edit examples under `apps/docs/src/registry/new-york-v4/examples`.
-  - Control the exported registry (name, homepage, items) in `apps/docs/src/registry/index.ts` and `apps/docs/registry.json`.
-
-- **Update URLs and deployment metadata**
-  - Update the public site URL in `apps/docs/src/lib/config.ts` (`url` field).
-  - Update the registry homepage in `apps/docs/registry.json` and `apps/docs/src/registry/index.ts`.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js
+  features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Fumadocs](https://fumadocs.dev) - learn about Fumadocs

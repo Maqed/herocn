@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "field-switch",
+  "registryDependencies": [
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/switch.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/field-switch.tsx",
+      "content": "import { Field, FieldLabel } from \"@/components/ui/field\";\nimport { Switch } from \"@/components/ui/switch\";\n\nexport default function FieldSwitch() {\n\treturn (\n\t\t<Field orientation=\"horizontal\" className=\"w-fit\">\n\t\t\t<FieldLabel htmlFor=\"2fa\">Multi-factor authentication</FieldLabel>\n\t\t\t<Switch id=\"2fa\" />\n\t\t</Field>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

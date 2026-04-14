@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "badge-colors",
+  "registryDependencies": [
+    "https://herocn.dev/r/badge.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/badge-colors.tsx",
+      "content": "import { Badge } from \"@/components/ui/badge\";\n\nexport default function BadgeColors() {\n\treturn (\n\t\t<div className=\"flex flex-wrap items-center gap-2\">\n\t\t\t<Badge className=\"bg-green-50 text-green-900 dark:bg-green-800 dark:text-green-50\">\n\t\t\t\tCustom green\n\t\t\t</Badge>\n\t\t\t<Badge className=\"bg-blue-50 text-blue-900 dark:bg-blue-800 dark:text-blue-50\">\n\t\t\t\tCustom blue\n\t\t\t</Badge>\n\t\t\t<Badge className=\"bg-amber-50 text-amber-900 dark:bg-amber-800 dark:text-amber-50\">\n\t\t\t\tCustom amber\n\t\t\t</Badge>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

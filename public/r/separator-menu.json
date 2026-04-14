@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "separator-menu",
+  "registryDependencies": [
+    "https://herocn.dev/r/separator.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/separator-menu.tsx",
+      "content": "import { Separator } from \"@/components/ui/separator\";\n\nexport default function SeparatorMenu() {\n\treturn (\n\t\t<div className=\"flex items-center gap-2 text-sm md:gap-4\">\n\t\t\t<div className=\"flex flex-col gap-1\">\n\t\t\t\t<span className=\"font-medium\">Settings</span>\n\t\t\t\t<span className=\"text-muted-foreground text-xs\">\n\t\t\t\t\tManage preferences\n\t\t\t\t</span>\n\t\t\t</div>\n\t\t\t<Separator orientation=\"vertical\" />\n\t\t\t<div className=\"flex flex-col gap-1\">\n\t\t\t\t<span className=\"font-medium\">Account</span>\n\t\t\t\t<span className=\"text-muted-foreground text-xs\">\n\t\t\t\t\tProfile & security\n\t\t\t\t</span>\n\t\t\t</div>\n\t\t\t<Separator orientation=\"vertical\" className=\"hidden md:block\" />\n\t\t\t<div className=\"hidden flex-col gap-1 md:flex\">\n\t\t\t\t<span className=\"font-medium\">Help</span>\n\t\t\t\t<span className=\"text-muted-foreground text-xs\">Support & docs</span>\n\t\t\t</div>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "badge-variants",
+  "registryDependencies": [
+    "https://herocn.dev/r/badge.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/badge-variants.tsx",
+      "content": "import { Badge } from \"@/components/ui/badge\";\n\nexport default function BadgeVariants() {\n\treturn (\n\t\t<div className=\"flex flex-wrap items-center gap-2\">\n\t\t\t<Badge>Default</Badge>\n\t\t\t<Badge variant=\"primary\">Primary</Badge>\n\t\t\t<Badge variant=\"success\">Success</Badge>\n\t\t\t<Badge variant=\"warning\">Warning</Badge>\n\t\t\t<Badge variant=\"destructive\">Destructive</Badge>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

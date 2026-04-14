@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sonner-types",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/sonner.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/sonner-types.tsx",
+      "content": "\"use client\";\n\nimport { toast } from \"sonner\";\n\nimport { Button } from \"@/components/ui/button\";\n\nexport function SonnerTypes() {\n\treturn (\n\t\t<div className=\"flex flex-wrap gap-2\">\n\t\t\t<Button\n\t\t\t\tvariant=\"tertiary\"\n\t\t\t\tonClick={() => toast(\"Event has been created\")}\n\t\t\t>\n\t\t\t\tDefault\n\t\t\t</Button>\n\t\t\t<Button\n\t\t\t\tvariant=\"tertiary\"\n\t\t\t\tclassName=\"text-success\"\n\t\t\t\tonClick={() => toast.success(\"Event has been created\")}\n\t\t\t>\n\t\t\t\tSuccess\n\t\t\t</Button>\n\t\t\t<Button\n\t\t\t\tvariant=\"tertiary\"\n\t\t\t\tclassName=\"text-primary\"\n\t\t\t\tonClick={() =>\n\t\t\t\t\ttoast.info(\"Be at the area 10 minutes before the event time\")\n\t\t\t\t}\n\t\t\t>\n\t\t\t\tInfo\n\t\t\t</Button>\n\t\t\t<Button\n\t\t\t\tvariant=\"tertiary\"\n\t\t\t\tclassName=\"text-warning\"\n\t\t\t\tonClick={() =>\n\t\t\t\t\ttoast.warning(\"Event start time cannot be earlier than 8am\")\n\t\t\t\t}\n\t\t\t>\n\t\t\t\tWarning\n\t\t\t</Button>\n\t\t\t<Button\n\t\t\t\tvariant=\"tertiary\"\n\t\t\t\tclassName=\"text-destructive\"\n\t\t\t\tonClick={() => toast.error(\"Event has not been created\")}\n\t\t\t>\n\t\t\t\tError\n\t\t\t</Button>\n\t\t\t<Button\n\t\t\t\tvariant=\"tertiary\"\n\t\t\t\tonClick={() => {\n\t\t\t\t\ttoast.promise<{ name: string }>(\n\t\t\t\t\t\t() =>\n\t\t\t\t\t\t\tnew Promise((resolve) =>\n\t\t\t\t\t\t\t\tsetTimeout(() => resolve({ name: \"Event\" }), 2000),\n\t\t\t\t\t\t\t),\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tloading: \"Loading...\",\n\t\t\t\t\t\t\tsuccess: (data) => `${data.name} has been created`,\n\t\t\t\t\t\t\terror: \"Error\",\n\t\t\t\t\t\t},\n\t\t\t\t\t);\n\t\t\t\t}}\n\t\t\t>\n\t\t\t\tPromise\n\t\t\t</Button>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

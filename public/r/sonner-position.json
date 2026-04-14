@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sonner-position",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/sonner.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/sonner-position.tsx",
+      "content": "\"use client\";\n\nimport { toast } from \"sonner\";\n\nimport { Button } from \"@/components/ui/button\";\n\nexport function SonnerPosition() {\n\treturn (\n\t\t<div className=\"flex flex-wrap justify-center gap-2\">\n\t\t\t<Button\n\t\t\t\tvariant=\"tertiary\"\n\t\t\t\tonClick={() =>\n\t\t\t\t\ttoast(\"Event has been created\", { position: \"top-left\" })\n\t\t\t\t}\n\t\t\t>\n\t\t\t\tTop Left\n\t\t\t</Button>\n\t\t\t<Button\n\t\t\t\tvariant=\"tertiary\"\n\t\t\t\tonClick={() =>\n\t\t\t\t\ttoast(\"Event has been created\", { position: \"top-center\" })\n\t\t\t\t}\n\t\t\t>\n\t\t\t\tTop Center\n\t\t\t</Button>\n\t\t\t<Button\n\t\t\t\tvariant=\"tertiary\"\n\t\t\t\tonClick={() =>\n\t\t\t\t\ttoast(\"Event has been created\", { position: \"top-right\" })\n\t\t\t\t}\n\t\t\t>\n\t\t\t\tTop Right\n\t\t\t</Button>\n\t\t\t<Button\n\t\t\t\tvariant=\"tertiary\"\n\t\t\t\tonClick={() =>\n\t\t\t\t\ttoast(\"Event has been created\", { position: \"bottom-left\" })\n\t\t\t\t}\n\t\t\t>\n\t\t\t\tBottom Left\n\t\t\t</Button>\n\t\t\t<Button\n\t\t\t\tvariant=\"tertiary\"\n\t\t\t\tonClick={() =>\n\t\t\t\t\ttoast(\"Event has been created\", { position: \"bottom-center\" })\n\t\t\t\t}\n\t\t\t>\n\t\t\t\tBottom Center\n\t\t\t</Button>\n\t\t\t<Button\n\t\t\t\tvariant=\"tertiary\"\n\t\t\t\tonClick={() =>\n\t\t\t\t\ttoast(\"Event has been created\", { position: \"bottom-right\" })\n\t\t\t\t}\n\t\t\t>\n\t\t\t\tBottom Right\n\t\t\t</Button>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

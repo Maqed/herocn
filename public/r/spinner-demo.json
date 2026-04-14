@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "spinner-demo",
+  "registryDependencies": [
+    "https://herocn.dev/r/spinner.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/spinner-demo.tsx",
+      "content": "import { Spinner } from \"@/components/ui/spinner\";\nimport { Surface } from \"@/components/ui/surface\";\n\nexport default function SpinnerDemo() {\n\treturn (\n\t\t<Surface className=\"flex w-full max-w-sm items-center gap-3 rounded-3xl p-6\">\n\t\t\t<Spinner />\n\t\t\t<div className=\"flex min-w-0 flex-1 flex-col\">\n\t\t\t\t<span className=\"truncate font-medium text-base\">\n\t\t\t\t\tProcessing payment...\n\t\t\t\t</span>\n\t\t\t\t<span className=\"text-muted-foreground text-sm\">Please wait</span>\n\t\t\t</div>\n\t\t\t<span className=\"text-base tabular-nums\">$100.00</span>\n\t\t</Surface>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

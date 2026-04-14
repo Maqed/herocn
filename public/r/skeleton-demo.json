@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "skeleton-demo",
+  "registryDependencies": [
+    "https://herocn.dev/r/skeleton.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/skeleton-demo.tsx",
+      "content": "import { Skeleton } from \"@/components/ui/skeleton\";\n\nexport default function SkeletonDemo() {\n\treturn (\n\t\t<div className=\"flex items-center gap-4\">\n\t\t\t<Skeleton className=\"size-12 rounded-full\" />\n\t\t\t<div className=\"space-y-2\">\n\t\t\t\t<Skeleton className=\"h-4 w-[250px]\" />\n\t\t\t\t<Skeleton className=\"h-4 w-[200px]\" />\n\t\t\t</div>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

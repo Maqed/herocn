@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-states",
+  "registryDependencies": [
+    "https://herocn.dev/r/input.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/input-states.tsx",
+      "content": "import { Input } from \"@/components/ui/input\";\n\nexport default function InputStates() {\n\treturn (\n\t\t<div className=\"flex w-full max-w-sm flex-col gap-3\">\n\t\t\t<Input disabled placeholder=\"Disabled\" />\n\t\t\t<Input aria-invalid placeholder=\"Invalid\" defaultValue=\"Invalid value\" />\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

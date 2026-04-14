@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "badge-rtl",
+  "registryDependencies": [
+    "https://herocn.dev/r/badge.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/badge-rtl.tsx",
+      "content": "\"use client\";\n\nimport {\n\tBellIcon,\n\tCheckCheckIcon,\n\tStarIcon,\n\tTriangleAlertIcon,\n} from \"lucide-react\";\n\nimport {\n\ttype Translations,\n\tuseTranslation,\n} from \"@/components/language-selector\";\nimport { Badge } from \"@/components/ui/badge\";\n\nconst translations: Translations = {\n\ten: {\n\t\tdir: \"ltr\",\n\t\tvalues: {\n\t\t\tnew: \"New\",\n\t\t\tverified: \"Verified\",\n\t\t\tpending: \"Pending\",\n\t\t\tnotifications: \"Notifications\",\n\t\t},\n\t},\n\tar: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\tnew: \"جديد\",\n\t\t\tverified: \"موثق\",\n\t\t\tpending: \"قيد الانتظار\",\n\t\t\tnotifications: \"الإشعارات\",\n\t\t},\n\t},\n\the: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\tnew: \"חדש\",\n\t\t\tverified: \"מאומת\",\n\t\t\tpending: \"ממתין\",\n\t\t\tnotifications: \"התראות\",\n\t\t},\n\t},\n};\n\nexport function BadgeRtl() {\n\tconst { dir, language, t } = useTranslation(translations, \"ar\");\n\n\treturn (\n\t\t<div\n\t\t\tclassName=\"flex flex-wrap items-center gap-2\"\n\t\t\tlang={language}\n\t\t\tdir={dir}\n\t\t>\n\t\t\t<Badge variant=\"primary\">\n\t\t\t\t<StarIcon data-icon=\"inline-start\" />\n\t\t\t\t{t.new}\n\t\t\t</Badge>\n\t\t\t<Badge variant=\"success\">\n\t\t\t\t<CheckCheckIcon data-icon=\"inline-start\" />\n\t\t\t\t{t.verified}\n\t\t\t</Badge>\n\t\t\t<Badge variant=\"warning\">\n\t\t\t\t<TriangleAlertIcon data-icon=\"inline-start\" />\n\t\t\t\t{t.pending}\n\t\t\t</Badge>\n\t\t\t<Badge>\n\t\t\t\t<BellIcon data-icon=\"inline-start\" />\n\t\t\t\t{t.notifications}\n\t\t\t</Badge>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

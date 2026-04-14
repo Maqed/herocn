@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toggle-rtl",
+  "registryDependencies": [
+    "https://herocn.dev/r/toggle.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/toggle-rtl.tsx",
+      "content": "\"use client\";\n\nimport { BookmarkIcon } from \"lucide-react\";\n\nimport {\n\ttype Translations,\n\tuseTranslation,\n} from \"@/components/language-selector\";\nimport { Toggle } from \"@/components/ui/toggle\";\n\nconst translations: Translations = {\n\ten: {\n\t\tdir: \"ltr\",\n\t\tvalues: {\n\t\t\tlabel: \"Bookmark\",\n\t\t},\n\t},\n\tar: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\tlabel: \"إشارة مرجعية\",\n\t\t},\n\t},\n\the: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\tlabel: \"סימנייה\",\n\t\t},\n\t},\n};\n\nexport function ToggleRtl() {\n\tconst { dir, language, t } = useTranslation(translations, \"ar\");\n\n\treturn (\n\t\t<div lang={language} dir={dir}>\n\t\t\t<Toggle aria-label=\"Toggle bookmark\">\n\t\t\t\t<BookmarkIcon className=\"group-aria-pressed/toggle:fill-primary\" />\n\t\t\t\t{t.label}\n\t\t\t</Toggle>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

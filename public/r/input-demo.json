@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-demo",
+  "registryDependencies": [
+    "https://herocn.dev/r/input.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/input-demo.tsx",
+      "content": "import { Input } from \"@/components/ui/input\";\n\nexport default function InputDemo() {\n\treturn (\n\t\t<div className=\"w-full max-w-sm\">\n\t\t\t<Input type=\"email\" placeholder=\"Email\" />\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

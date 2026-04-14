@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-group-select",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/button-group.json",
+    "https://herocn.dev/r/input.json",
+    "https://herocn.dev/r/select.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/button-group-select.tsx",
+      "content": "\"use client\";\n\nimport { ArrowRightIcon } from \"lucide-react\";\nimport * as React from \"react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { ButtonGroup } from \"@/components/ui/button-group\";\nimport { Input } from \"@/components/ui/input\";\nimport {\n\tSelect,\n\tSelectContent,\n\tSelectGroup,\n\tSelectItem,\n\tSelectTrigger,\n} from \"@/components/ui/select\";\n\nconst CURRENCIES = [\n\t{ label: \"US Dollar\", value: \"$\" },\n\t{ label: \"Euro\", value: \"€\" },\n\t{ label: \"British Pound\", value: \"£\" },\n];\n\nexport default function ButtonGroupSelect() {\n\tconst [currency, setCurrency] = React.useState(\"$\");\n\n\treturn (\n\t\t<ButtonGroup>\n\t\t\t<ButtonGroup>\n\t\t\t\t<Select\n\t\t\t\t\titems={CURRENCIES}\n\t\t\t\t\tvalue={currency}\n\t\t\t\t\tvariant=\"secondary\"\n\t\t\t\t\tonValueChange={(value) => setCurrency(value as string)}\n\t\t\t\t>\n\t\t\t\t\t<SelectTrigger>{currency}</SelectTrigger>\n\t\t\t\t\t<SelectContent align=\"start\">\n\t\t\t\t\t\t<SelectGroup>\n\t\t\t\t\t\t\t{CURRENCIES.map((item) => (\n\t\t\t\t\t\t\t\t<SelectItem key={item.value} value={item.value}>\n\t\t\t\t\t\t\t\t\t{item.value}{\" \"}\n\t\t\t\t\t\t\t\t\t<span className=\"text-muted-foreground\">{item.label}</span>\n\t\t\t\t\t\t\t\t</SelectItem>\n\t\t\t\t\t\t\t))}\n\t\t\t\t\t\t</SelectGroup>\n\t\t\t\t\t</SelectContent>\n\t\t\t\t</Select>\n\t\t\t\t<Input variant=\"secondary\" placeholder=\"10.00\" pattern=\"[0-9]*\" />\n\t\t\t</ButtonGroup>\n\t\t\t<ButtonGroup>\n\t\t\t\t<Button aria-label=\"Send\" size=\"icon\" variant=\"tertiary\">\n\t\t\t\t\t<ArrowRightIcon />\n\t\t\t\t</Button>\n\t\t\t</ButtonGroup>\n\t\t</ButtonGroup>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

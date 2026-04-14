@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "switch-choice-card",
+  "registryDependencies": [
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/switch.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/switch-choice-card.tsx",
+      "content": "import {\n\tField,\n\tFieldContent,\n\tFieldDescription,\n\tFieldGroup,\n\tFieldLabel,\n\tFieldTitle,\n} from \"@/components/ui/field\";\nimport { Switch } from \"@/components/ui/switch\";\n\nexport default function SwitchChoiceCard() {\n\treturn (\n\t\t<FieldGroup className=\"w-full max-w-sm\">\n\t\t\t<FieldLabel htmlFor=\"switch-share\">\n\t\t\t\t<Field orientation=\"horizontal\">\n\t\t\t\t\t<FieldContent>\n\t\t\t\t\t\t<FieldTitle>Share across devices</FieldTitle>\n\t\t\t\t\t\t<FieldDescription>\n\t\t\t\t\t\t\tFocus is shared across devices, and turns off when you leave the\n\t\t\t\t\t\t\tapp.\n\t\t\t\t\t\t</FieldDescription>\n\t\t\t\t\t</FieldContent>\n\t\t\t\t\t<Switch id=\"switch-share\" />\n\t\t\t\t</Field>\n\t\t\t</FieldLabel>\n\t\t\t<FieldLabel htmlFor=\"switch-notifications\">\n\t\t\t\t<Field orientation=\"horizontal\">\n\t\t\t\t\t<FieldContent>\n\t\t\t\t\t\t<FieldTitle>Enable notifications</FieldTitle>\n\t\t\t\t\t\t<FieldDescription>\n\t\t\t\t\t\t\tReceive notifications when focus mode is enabled or disabled.\n\t\t\t\t\t\t</FieldDescription>\n\t\t\t\t\t</FieldContent>\n\t\t\t\t\t<Switch id=\"switch-notifications\" defaultChecked />\n\t\t\t\t</Field>\n\t\t\t</FieldLabel>\n\t\t</FieldGroup>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

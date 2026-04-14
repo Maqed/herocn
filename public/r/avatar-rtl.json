@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar-rtl",
+  "registryDependencies": [
+    "https://herocn.dev/r/avatar.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/avatar-rtl.tsx",
+      "content": "\"use client\";\n\nimport {\n\ttype Translations,\n\tuseTranslation,\n} from \"@/components/language-selector\";\nimport {\n\tAvatar,\n\tAvatarFallback,\n\tAvatarGroup,\n\tAvatarGroupCount,\n\tAvatarImage,\n} from \"@/components/ui/avatar\";\n\nconst translations: Translations = {\n\ten: {\n\t\tdir: \"ltr\",\n\t\tvalues: {\n\t\t\tteamLabel: \"Team members\",\n\t\t},\n\t},\n\tar: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\tteamLabel: \"أعضاء الفريق\",\n\t\t},\n\t},\n\the: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\tteamLabel: \"חברי הצוות\",\n\t\t},\n\t},\n};\n\nexport function AvatarRtl() {\n\tconst { dir, language, t } = useTranslation(translations, \"ar\");\n\n\treturn (\n\t\t<div className=\"flex items-center gap-3\" lang={language} dir={dir}>\n\t\t\t<AvatarGroup>\n\t\t\t\t<Avatar>\n\t\t\t\t\t<AvatarImage src=\"https://github.com/shadcn.png\" alt=\"@shadcn\" />\n\t\t\t\t\t<AvatarFallback>CN</AvatarFallback>\n\t\t\t\t</Avatar>\n\t\t\t\t<Avatar>\n\t\t\t\t\t<AvatarImage\n\t\t\t\t\t\tsrc=\"https://github.com/maxleiter.png\"\n\t\t\t\t\t\talt=\"@maxleiter\"\n\t\t\t\t\t/>\n\t\t\t\t\t<AvatarFallback>LR</AvatarFallback>\n\t\t\t\t</Avatar>\n\t\t\t\t<Avatar>\n\t\t\t\t\t<AvatarImage src=\"https://github.com/Maqed.png\" alt=\"@0xMaqed\" />\n\t\t\t\t\t<AvatarFallback>Mqd</AvatarFallback>\n\t\t\t\t</Avatar>\n\t\t\t\t<AvatarGroupCount>+3</AvatarGroupCount>\n\t\t\t</AvatarGroup>\n\t\t\t<span className=\"text-muted-foreground text-sm\">{t.teamLabel}</span>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

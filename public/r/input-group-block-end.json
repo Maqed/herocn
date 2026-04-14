@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-group-block-end",
+  "registryDependencies": [
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/input-group.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/input-group-block-end.tsx",
+      "content": "import {\n\tField,\n\tFieldDescription,\n\tFieldGroup,\n\tFieldLabel,\n} from \"@/components/ui/field\";\nimport {\n\tInputGroup,\n\tInputGroupAddon,\n\tInputGroupButton,\n\tInputGroupInput,\n\tInputGroupText,\n\tInputGroupTextarea,\n} from \"@/components/ui/input-group\";\n\nexport default function InputGroupBlockEnd() {\n\treturn (\n\t\t<FieldGroup className=\"max-w-sm\">\n\t\t\t<Field>\n\t\t\t\t<FieldLabel htmlFor=\"block-end-input\">Input</FieldLabel>\n\t\t\t\t<InputGroup className=\"h-auto\">\n\t\t\t\t\t<InputGroupInput id=\"block-end-input\" placeholder=\"Enter amount\" />\n\t\t\t\t\t<InputGroupAddon align=\"block-end\">\n\t\t\t\t\t\t<InputGroupText>USD</InputGroupText>\n\t\t\t\t\t</InputGroupAddon>\n\t\t\t\t</InputGroup>\n\t\t\t\t<FieldDescription>Footer positioned below the input.</FieldDescription>\n\t\t\t</Field>\n\t\t\t<Field>\n\t\t\t\t<FieldLabel htmlFor=\"block-end-textarea\">Textarea</FieldLabel>\n\t\t\t\t<InputGroup>\n\t\t\t\t\t<InputGroupTextarea\n\t\t\t\t\t\tid=\"block-end-textarea\"\n\t\t\t\t\t\tplaceholder=\"Write a comment...\"\n\t\t\t\t\t/>\n\t\t\t\t\t<InputGroupAddon align=\"block-end\">\n\t\t\t\t\t\t<InputGroupText>0/280</InputGroupText>\n\t\t\t\t\t\t<InputGroupButton variant=\"default\" size=\"sm\" className=\"ml-auto\">\n\t\t\t\t\t\t\tPost\n\t\t\t\t\t\t</InputGroupButton>\n\t\t\t\t\t</InputGroupAddon>\n\t\t\t\t</InputGroup>\n\t\t\t\t<FieldDescription>\n\t\t\t\t\tFooter positioned below the textarea.\n\t\t\t\t</FieldDescription>\n\t\t\t</Field>\n\t\t</FieldGroup>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

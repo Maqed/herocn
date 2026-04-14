@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar-badge-icon",
+  "registryDependencies": [
+    "https://herocn.dev/r/avatar.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/avatar-badge-icon.tsx",
+      "content": "import { PlusIcon } from \"lucide-react\";\nimport {\n\tAvatar,\n\tAvatarBadge,\n\tAvatarFallback,\n\tAvatarImage,\n} from \"@/components/ui/avatar\";\n\nexport default function AvatarBadgeIconExample() {\n\treturn (\n\t\t<Avatar>\n\t\t\t<AvatarImage src=\"https://github.com/Maqed.png\" alt=\"@0xMaqed\" />\n\t\t\t<AvatarFallback>Mqd</AvatarFallback>\n\t\t\t<AvatarBadge variant=\"primary\">\n\t\t\t\t<PlusIcon />\n\t\t\t</AvatarBadge>\n\t\t</Avatar>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

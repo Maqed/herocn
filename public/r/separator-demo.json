@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "separator-demo",
+  "registryDependencies": [
+    "https://herocn.dev/r/separator.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/separator-demo.tsx",
+      "content": "import { Separator } from \"@/components/ui/separator\";\n\nexport default function SeparatorDemo() {\n\treturn (\n\t\t<div className=\"flex max-w-sm flex-col gap-4 text-sm\">\n\t\t\t<div className=\"flex flex-col gap-1.5\">\n\t\t\t\t<div className=\"font-medium leading-none\">herocn</div>\n\t\t\t\t<div className=\"text-muted-foreground\">\n\t\t\t\t\tHeroUI design system, shadcn/ui abstraction\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<Separator />\n\t\t\t<div>Beautifully designed components for your next application.</div>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

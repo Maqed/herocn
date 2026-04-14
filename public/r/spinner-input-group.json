@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "spinner-input-group",
+  "registryDependencies": [
+    "https://herocn.dev/r/input-group.json",
+    "https://herocn.dev/r/spinner.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/spinner-input-group.tsx",
+      "content": "import { ArrowUpIcon } from \"lucide-react\";\n\nimport {\n\tInputGroup,\n\tInputGroupAddon,\n\tInputGroupButton,\n\tInputGroupInput,\n\tInputGroupTextarea,\n} from \"@/components/ui/input-group\";\nimport { Spinner } from \"@/components/ui/spinner\";\n\nexport default function SpinnerInputGroup() {\n\treturn (\n\t\t<div className=\"flex w-full max-w-md flex-col gap-4\">\n\t\t\t<InputGroup>\n\t\t\t\t<InputGroupInput placeholder=\"Send a message...\" disabled />\n\t\t\t\t<InputGroupAddon align=\"inline-end\">\n\t\t\t\t\t<Spinner size=\"sm\" />\n\t\t\t\t</InputGroupAddon>\n\t\t\t</InputGroup>\n\t\t\t<InputGroup>\n\t\t\t\t<InputGroupTextarea placeholder=\"Send a message...\" disabled />\n\t\t\t\t<InputGroupAddon align=\"block-end\">\n\t\t\t\t\t<Spinner size=\"sm\" /> Validating...\n\t\t\t\t\t<InputGroupButton disabled className=\"ml-auto\" variant=\"default\">\n\t\t\t\t\t\t<ArrowUpIcon />\n\t\t\t\t\t\t<span className=\"sr-only\">Send</span>\n\t\t\t\t\t</InputGroupButton>\n\t\t\t\t</InputGroupAddon>\n\t\t\t</InputGroup>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

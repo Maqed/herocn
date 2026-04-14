@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "select-multiple",
+  "registryDependencies": [
+    "https://herocn.dev/r/select.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/select-multiple.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport {\n\tSelect,\n\tSelectContent,\n\tSelectGroup,\n\tSelectItem,\n\tSelectTrigger,\n\tSelectValue,\n} from \"@/components/ui/select\";\n\nconst fruits = [\n\t{ label: \"Apple\", value: \"apple\" },\n\t{ label: \"Banana\", value: \"banana\" },\n\t{ label: \"Blueberry\", value: \"blueberry\" },\n\t{ label: \"Grapes\", value: \"grapes\" },\n\t{ label: \"Pineapple\", value: \"pineapple\" },\n];\n\nexport default function SelectMultiple() {\n\tconst [value, setValue] = React.useState<string[]>([]);\n\n\treturn (\n\t\t<Select multiple items={fruits} value={value} onValueChange={setValue}>\n\t\t\t<SelectTrigger className=\"w-full max-w-sm\">\n\t\t\t\t<SelectValue placeholder=\"Select fruits...\" />\n\t\t\t</SelectTrigger>\n\t\t\t<SelectContent>\n\t\t\t\t<SelectGroup>\n\t\t\t\t\t{fruits.map((item) => (\n\t\t\t\t\t\t<SelectItem key={item.value} value={item.value}>\n\t\t\t\t\t\t\t{item.label}\n\t\t\t\t\t\t</SelectItem>\n\t\t\t\t\t))}\n\t\t\t\t</SelectGroup>\n\t\t\t</SelectContent>\n\t\t</Select>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

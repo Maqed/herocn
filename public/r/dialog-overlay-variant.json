@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dialog-overlay-variant",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/dialog.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/dialog-overlay-variant.tsx",
+      "content": "\"use client\";\n\nimport { Button } from \"@/components/ui/button\";\nimport {\n\tDialog,\n\tDialogContent,\n\tDialogDescription,\n\tDialogHeader,\n\tDialogTitle,\n\tDialogTrigger,\n} from \"@/components/ui/dialog\";\n\nexport default function DialogOverlayVariant() {\n\treturn (\n\t\t<div className=\"flex flex-wrap gap-2\">\n\t\t\t<Dialog>\n\t\t\t\t<DialogTrigger render={<Button variant=\"tertiary\" />}>\n\t\t\t\t\tOpaque\n\t\t\t\t</DialogTrigger>\n\t\t\t\t<DialogContent overlayVariant=\"opaque\" className=\"sm:max-w-sm\">\n\t\t\t\t\t<DialogHeader>\n\t\t\t\t\t\t<DialogTitle>Opaque overlay</DialogTitle>\n\t\t\t\t\t\t<DialogDescription>\n\t\t\t\t\t\t\tDefault dimmed backdrop without extra blur on the page behind the\n\t\t\t\t\t\t\tdialog.\n\t\t\t\t\t\t</DialogDescription>\n\t\t\t\t\t</DialogHeader>\n\t\t\t\t</DialogContent>\n\t\t\t</Dialog>\n\t\t\t<Dialog>\n\t\t\t\t<DialogTrigger render={<Button variant=\"tertiary\" />}>\n\t\t\t\t\tBlur\n\t\t\t\t</DialogTrigger>\n\t\t\t\t<DialogContent overlayVariant=\"blur\" className=\"sm:max-w-sm\">\n\t\t\t\t\t<DialogHeader>\n\t\t\t\t\t\t<DialogTitle>Blurred overlay</DialogTitle>\n\t\t\t\t\t\t<DialogDescription>\n\t\t\t\t\t\t\tBackdrop blur so content behind the dialog is visibly softened.\n\t\t\t\t\t\t</DialogDescription>\n\t\t\t\t\t</DialogHeader>\n\t\t\t\t</DialogContent>\n\t\t\t</Dialog>\n\t\t\t<Dialog>\n\t\t\t\t<DialogTrigger render={<Button variant=\"tertiary\" />}>\n\t\t\t\t\tTransparent\n\t\t\t\t</DialogTrigger>\n\t\t\t\t<DialogContent overlayVariant=\"transparent\" className=\"sm:max-w-sm\">\n\t\t\t\t\t<DialogHeader>\n\t\t\t\t\t\t<DialogTitle>Transparent overlay</DialogTitle>\n\t\t\t\t\t\t<DialogDescription>\n\t\t\t\t\t\t\tNo dimmed backdrop — the page stays fully visible behind the\n\t\t\t\t\t\t\tdialog surface.\n\t\t\t\t\t\t</DialogDescription>\n\t\t\t\t\t</DialogHeader>\n\t\t\t\t</DialogContent>\n\t\t\t</Dialog>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

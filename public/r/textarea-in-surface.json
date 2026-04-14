@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "textarea-in-surface",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/card.json",
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/textarea.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/textarea-in-surface.tsx",
+      "content": "import { Button } from \"@/components/ui/button\";\nimport {\n\tCard,\n\tCardContent,\n\tCardFooter,\n\tCardHeader,\n\tCardTitle,\n} from \"@/components/ui/card\";\nimport {\n\tField,\n\tFieldDescription,\n\tFieldLabel,\n} from \"@/components/ui/field\";\nimport { Textarea } from \"@/components/ui/textarea\";\n\nexport default function TextareaInSurface() {\n\treturn (\n\t\t<Card className=\"w-full max-w-sm\">\n\t\t\t<CardHeader>\n\t\t\t\t<CardTitle>Leave a comment</CardTitle>\n\t\t\t</CardHeader>\n\t\t\t<CardContent>\n\t\t\t\t<Field>\n\t\t\t\t\t<FieldLabel htmlFor=\"textarea-in-surface-message\">Message</FieldLabel>\n\t\t\t\t\t<Textarea\n\t\t\t\t\t\tid=\"textarea-in-surface-message\"\n\t\t\t\t\t\tvariant=\"secondary\"\n\t\t\t\t\t\tplaceholder=\"Share your thoughts...\"\n\t\t\t\t\t\trows={4}\n\t\t\t\t\t/>\n\t\t\t\t\t<FieldDescription>\n\t\t\t\t\t\tYour feedback helps us improve the product.\n\t\t\t\t\t</FieldDescription>\n\t\t\t\t</Field>\n\t\t\t</CardContent>\n\t\t\t<CardFooter className=\"justify-end gap-2\">\n\t\t\t\t<Button variant=\"ghost\" size=\"sm\">\n\t\t\t\t\tCancel\n\t\t\t\t</Button>\n\t\t\t\t<Button size=\"sm\">Submit</Button>\n\t\t\t</CardFooter>\n\t\t</Card>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

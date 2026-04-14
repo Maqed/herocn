@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "field-fieldset",
+  "registryDependencies": [
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/input.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/field-fieldset.tsx",
+      "content": "import {\n\tField,\n\tFieldDescription,\n\tFieldGroup,\n\tFieldLabel,\n\tFieldLegend,\n\tFieldSet,\n} from \"@/components/ui/field\";\nimport { Input } from \"@/components/ui/input\";\n\nexport default function FieldFieldset() {\n\treturn (\n\t\t<FieldSet className=\"w-full max-w-sm\">\n\t\t\t<FieldLegend>Address Information</FieldLegend>\n\t\t\t<FieldDescription>\n\t\t\t\tWe need your address to deliver your order.\n\t\t\t</FieldDescription>\n\t\t\t<FieldGroup>\n\t\t\t\t<Field>\n\t\t\t\t\t<FieldLabel htmlFor=\"street\">Street Address</FieldLabel>\n\t\t\t\t\t<Input id=\"street\" type=\"text\" placeholder=\"123 Main St\" />\n\t\t\t\t</Field>\n\t\t\t\t<div className=\"grid grid-cols-2 gap-4\">\n\t\t\t\t\t<Field>\n\t\t\t\t\t\t<FieldLabel htmlFor=\"city\">City</FieldLabel>\n\t\t\t\t\t\t<Input id=\"city\" type=\"text\" placeholder=\"New York\" />\n\t\t\t\t\t</Field>\n\t\t\t\t\t<Field>\n\t\t\t\t\t\t<FieldLabel htmlFor=\"zip\">Postal Code</FieldLabel>\n\t\t\t\t\t\t<Input id=\"zip\" type=\"text\" placeholder=\"90502\" />\n\t\t\t\t\t</Field>\n\t\t\t\t</div>\n\t\t\t</FieldGroup>\n\t\t</FieldSet>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

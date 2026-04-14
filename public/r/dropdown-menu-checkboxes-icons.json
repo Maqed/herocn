@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dropdown-menu-checkboxes-icons",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/dropdown-menu.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/dropdown-menu-checkboxes-icons.tsx",
+      "content": "\"use client\";\n\nimport { BellIcon, MailIcon, MessageSquareIcon } from \"lucide-react\";\nimport * as React from \"react\";\nimport { Button } from \"@/components/ui/button\";\nimport {\n\tDropdownMenu,\n\tDropdownMenuCheckboxItem,\n\tDropdownMenuContent,\n\tDropdownMenuGroup,\n\tDropdownMenuLabel,\n\tDropdownMenuTrigger,\n} from \"@/components/ui/dropdown-menu\";\n\nexport default function DropdownMenuCheckboxesIcons() {\n\tconst [notifications, setNotifications] = React.useState({\n\t\temail: true,\n\t\tsms: false,\n\t\tpush: true,\n\t});\n\n\treturn (\n\t\t<DropdownMenu>\n\t\t\t<DropdownMenuTrigger render={<Button variant=\"tertiary\" />}>\n\t\t\t\tNotifications\n\t\t\t</DropdownMenuTrigger>\n\t\t\t<DropdownMenuContent>\n\t\t\t\t<DropdownMenuGroup>\n\t\t\t\t\t<DropdownMenuLabel>Notification Preferences</DropdownMenuLabel>\n\t\t\t\t\t<DropdownMenuCheckboxItem\n\t\t\t\t\t\tchecked={notifications.email}\n\t\t\t\t\t\tonCheckedChange={(checked) =>\n\t\t\t\t\t\t\tsetNotifications((prev) => ({\n\t\t\t\t\t\t\t\t...prev,\n\t\t\t\t\t\t\t\temail: checked === true,\n\t\t\t\t\t\t\t}))\n\t\t\t\t\t\t}\n\t\t\t\t\t>\n\t\t\t\t\t\t<MailIcon />\n\t\t\t\t\t\tEmail notifications\n\t\t\t\t\t</DropdownMenuCheckboxItem>\n\t\t\t\t\t<DropdownMenuCheckboxItem\n\t\t\t\t\t\tchecked={notifications.sms}\n\t\t\t\t\t\tonCheckedChange={(checked) =>\n\t\t\t\t\t\t\tsetNotifications((prev) => ({\n\t\t\t\t\t\t\t\t...prev,\n\t\t\t\t\t\t\t\tsms: checked === true,\n\t\t\t\t\t\t\t}))\n\t\t\t\t\t\t}\n\t\t\t\t\t>\n\t\t\t\t\t\t<MessageSquareIcon />\n\t\t\t\t\t\tSMS notifications\n\t\t\t\t\t</DropdownMenuCheckboxItem>\n\t\t\t\t\t<DropdownMenuCheckboxItem\n\t\t\t\t\t\tchecked={notifications.push}\n\t\t\t\t\t\tonCheckedChange={(checked) =>\n\t\t\t\t\t\t\tsetNotifications((prev) => ({\n\t\t\t\t\t\t\t\t...prev,\n\t\t\t\t\t\t\t\tpush: checked === true,\n\t\t\t\t\t\t\t}))\n\t\t\t\t\t\t}\n\t\t\t\t\t>\n\t\t\t\t\t\t<BellIcon />\n\t\t\t\t\t\tPush notifications\n\t\t\t\t\t</DropdownMenuCheckboxItem>\n\t\t\t\t</DropdownMenuGroup>\n\t\t\t</DropdownMenuContent>\n\t\t</DropdownMenu>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

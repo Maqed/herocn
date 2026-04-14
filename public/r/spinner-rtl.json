@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "spinner-rtl",
+  "registryDependencies": [
+    "https://herocn.dev/r/spinner.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/spinner-rtl.tsx",
+      "content": "\"use client\";\n\nimport {\n\ttype Translations,\n\tuseTranslation,\n} from \"@/components/language-selector\";\nimport { Spinner } from \"@/components/ui/spinner\";\nimport { Surface } from \"@/components/ui/surface\";\n\nconst translations: Translations = {\n\ten: {\n\t\tdir: \"ltr\",\n\t\tvalues: {\n\t\t\ttitle: \"Processing payment...\",\n\t\t\tamount: \"$100.00\",\n\t\t},\n\t},\n\tar: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\ttitle: \"جاري معالجة الدفع...\",\n\t\t\tamount: \"١٠٠.٠٠ دولار\",\n\t\t},\n\t},\n\the: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\ttitle: \"מעבד תשלום...\",\n\t\t\tamount: \"$100.00\",\n\t\t},\n\t},\n};\n\nexport function SpinnerRtl() {\n\tconst { dir, language, t } = useTranslation(translations, \"ar\");\n\n\treturn (\n\t\t<Surface\n\t\t\tclassName=\"flex w-full max-w-sm items-center gap-3 rounded-3xl p-6\"\n\t\t\tlang={language}\n\t\t\tdir={dir}\n\t\t>\n\t\t\t<Spinner />\n\t\t\t<div className=\"flex min-w-0 flex-1 flex-col\">\n\t\t\t\t<span className=\"truncate font-medium text-sm\">{t.title}</span>\n\t\t\t</div>\n\t\t\t<span className=\"text-sm tabular-nums\">{t.amount}</span>\n\t\t</Surface>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

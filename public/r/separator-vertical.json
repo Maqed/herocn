@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "separator-vertical",
+  "registryDependencies": [
+    "https://herocn.dev/r/separator.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/separator-vertical.tsx",
+      "content": "import { Separator } from \"@/components/ui/separator\";\n\nexport default function SeparatorVertical() {\n\treturn (\n\t\t<div className=\"flex h-5 items-center gap-4 text-sm\">\n\t\t\t<div>Blog</div>\n\t\t\t<Separator orientation=\"vertical\" />\n\t\t\t<div>Docs</div>\n\t\t\t<Separator orientation=\"vertical\" />\n\t\t\t<div>Source</div>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

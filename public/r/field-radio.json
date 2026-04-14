@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "field-radio",
+  "registryDependencies": [
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/radio-group.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/field-radio.tsx",
+      "content": "import {\n\tField,\n\tFieldDescription,\n\tFieldLabel,\n\tFieldLegend,\n\tFieldSet,\n} from \"@/components/ui/field\";\nimport {\n\tRadioGroup,\n\tRadioGroupItem,\n} from \"@/components/ui/radio-group\";\n\nexport default function FieldRadio() {\n\treturn (\n\t\t<FieldSet className=\"w-full max-w-xs\">\n\t\t\t<FieldLegend variant=\"label\">Subscription Plan</FieldLegend>\n\t\t\t<FieldDescription>\n\t\t\t\tYearly and lifetime plans offer significant savings.\n\t\t\t</FieldDescription>\n\t\t\t<RadioGroup defaultValue=\"monthly\">\n\t\t\t\t<Field orientation=\"horizontal\">\n\t\t\t\t\t<RadioGroupItem value=\"monthly\" id=\"plan-monthly\" />\n\t\t\t\t\t<FieldLabel htmlFor=\"plan-monthly\" className=\"font-normal\">\n\t\t\t\t\t\tMonthly ($9.99/month)\n\t\t\t\t\t</FieldLabel>\n\t\t\t\t</Field>\n\t\t\t\t<Field orientation=\"horizontal\">\n\t\t\t\t\t<RadioGroupItem value=\"yearly\" id=\"plan-yearly\" />\n\t\t\t\t\t<FieldLabel htmlFor=\"plan-yearly\" className=\"font-normal\">\n\t\t\t\t\t\tYearly ($99.99/year)\n\t\t\t\t\t</FieldLabel>\n\t\t\t\t</Field>\n\t\t\t\t<Field orientation=\"horizontal\">\n\t\t\t\t\t<RadioGroupItem value=\"lifetime\" id=\"plan-lifetime\" />\n\t\t\t\t\t<FieldLabel htmlFor=\"plan-lifetime\" className=\"font-normal\">\n\t\t\t\t\t\tLifetime ($299.99)\n\t\t\t\t\t</FieldLabel>\n\t\t\t\t</Field>\n\t\t\t</RadioGroup>\n\t\t</FieldSet>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

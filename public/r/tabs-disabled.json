@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tabs-disabled",
+  "registryDependencies": [
+    "https://herocn.dev/r/tabs.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/tabs-disabled.tsx",
+      "content": "import { Tabs, TabsList, TabsTrigger } from \"@/components/ui/tabs\";\n\nexport function TabsDisabled() {\n\treturn (\n\t\t<Tabs defaultValue=\"home\">\n\t\t\t<TabsList>\n\t\t\t\t<TabsTrigger value=\"home\">Home</TabsTrigger>\n\t\t\t\t<TabsTrigger value=\"settings\" disabled>\n\t\t\t\t\tDisabled\n\t\t\t\t</TabsTrigger>\n\t\t\t</TabsList>\n\t\t</Tabs>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

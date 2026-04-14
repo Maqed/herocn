@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "select-groups",
+  "registryDependencies": [
+    "https://herocn.dev/r/select.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/select-groups.tsx",
+      "content": "import {\n\tSelect,\n\tSelectContent,\n\tSelectGroup,\n\tSelectItem,\n\tSelectLabel,\n\tSelectSeparator,\n\tSelectTrigger,\n\tSelectValue,\n} from \"@/components/ui/select\";\n\nexport default function SelectGroups() {\n\tconst fruits = [\n\t\t{ label: \"Apple\", value: \"apple\" },\n\t\t{ label: \"Banana\", value: \"banana\" },\n\t\t{ label: \"Blueberry\", value: \"blueberry\" },\n\t];\n\tconst vegetables = [\n\t\t{ label: \"Carrot\", value: \"carrot\" },\n\t\t{ label: \"Broccoli\", value: \"broccoli\" },\n\t\t{ label: \"Spinach\", value: \"spinach\" },\n\t];\n\tconst allItems = [\n\t\t{ label: \"Select a fruit\", value: null },\n\t\t...fruits,\n\t\t...vegetables,\n\t];\n\treturn (\n\t\t<Select items={allItems}>\n\t\t\t<SelectTrigger className=\"w-full max-w-48\">\n\t\t\t\t<SelectValue />\n\t\t\t</SelectTrigger>\n\t\t\t<SelectContent>\n\t\t\t\t<SelectGroup>\n\t\t\t\t\t<SelectLabel>Fruits</SelectLabel>\n\t\t\t\t\t{fruits.map((item) => (\n\t\t\t\t\t\t<SelectItem key={item.value} value={item.value}>\n\t\t\t\t\t\t\t{item.label}\n\t\t\t\t\t\t</SelectItem>\n\t\t\t\t\t))}\n\t\t\t\t</SelectGroup>\n\t\t\t\t<SelectSeparator />\n\t\t\t\t<SelectGroup>\n\t\t\t\t\t<SelectLabel>Vegetables</SelectLabel>\n\t\t\t\t\t{vegetables.map((item) => (\n\t\t\t\t\t\t<SelectItem key={item.value} value={item.value}>\n\t\t\t\t\t\t\t{item.label}\n\t\t\t\t\t\t</SelectItem>\n\t\t\t\t\t))}\n\t\t\t\t</SelectGroup>\n\t\t\t</SelectContent>\n\t\t</Select>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

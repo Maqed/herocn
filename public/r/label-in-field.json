@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "label-in-field",
+  "registryDependencies": [
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/input.json",
+    "https://herocn.dev/r/label.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/label-in-field.tsx",
+      "content": "import {\n\tField,\n\tFieldDescription,\n\tFieldLabel,\n} from \"@/components/ui/field\";\nimport { Input } from \"@/components/ui/input\";\n\nexport default function LabelInField() {\n\treturn (\n\t\t<div className=\"w-full max-w-sm\">\n\t\t\t<Field>\n\t\t\t\t<FieldLabel htmlFor=\"label-in-field-username\">Username</FieldLabel>\n\t\t\t\t<Input\n\t\t\t\t\tid=\"label-in-field-username\"\n\t\t\t\t\ttype=\"text\"\n\t\t\t\t\tplaceholder=\"Enter your username\"\n\t\t\t\t/>\n\t\t\t\t<FieldDescription>\n\t\t\t\t\tUse `FieldLabel` for forms that also need descriptions and errors.\n\t\t\t\t</FieldDescription>\n\t\t\t</Field>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

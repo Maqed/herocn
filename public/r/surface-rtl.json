@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "surface-rtl",
+  "registryDependencies": [
+    "https://herocn.dev/r/surface.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/surface-rtl.tsx",
+      "content": "\"use client\";\n\nimport {\n\ttype Translations,\n\tuseTranslation,\n} from \"@/components/language-selector\";\nimport { Surface } from \"@/components/ui/surface\";\n\nconst translations: Translations = {\n\ten: {\n\t\tdir: \"ltr\",\n\t\tvalues: {\n\t\t\tcardTitle: \"Project Overview\",\n\t\t\tcardDescription: \"Use for cards, panels, and grouped content.\",\n\t\t\tnestedTitle: \"Details\",\n\t\t\tnestedDescription: \"Great for nested sections and subtle emphasis.\",\n\t\t},\n\t},\n\tar: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\tcardTitle: \"نظرة عامة على المشروع\",\n\t\t\tcardDescription: \"يُستخدم للبطاقات واللوحات والمحتوى المُجمَّع.\",\n\t\t\tnestedTitle: \"التفاصيل\",\n\t\t\tnestedDescription: \"مناسب للأقسام المتداخلة والتمييز الخفي.\",\n\t\t},\n\t},\n\the: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\tcardTitle: \"סקירת פרויקט\",\n\t\t\tcardDescription: \"לשימוש בכרטיסים, פנלים ותוכן מקובץ.\",\n\t\t\tnestedTitle: \"פרטים\",\n\t\t\tnestedDescription: \"מצוין לסקציות מקוננות ודגש עדין.\",\n\t\t},\n\t},\n};\n\nexport function SurfaceRtl() {\n\tconst { dir, language, t } = useTranslation(translations, \"ar\");\n\n\treturn (\n\t\t<div className=\"grid w-full gap-3 md:grid-cols-2\" lang={language} dir={dir}>\n\t\t\t<Surface className=\"rounded-3xl border p-6\">\n\t\t\t\t<h4 className=\"font-medium\">{t.cardTitle}</h4>\n\t\t\t\t<p className=\"mt-1 text-muted-foreground text-sm\">\n\t\t\t\t\t{t.cardDescription}\n\t\t\t\t</p>\n\t\t\t</Surface>\n\t\t\t<Surface variant=\"secondary\" className=\"rounded-3xl border p-6\">\n\t\t\t\t<h4 className=\"font-medium\">{t.nestedTitle}</h4>\n\t\t\t\t<p className=\"mt-1 text-muted-foreground text-sm\">\n\t\t\t\t\t{t.nestedDescription}\n\t\t\t\t</p>\n\t\t\t</Surface>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

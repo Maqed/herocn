@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "card-small",
+  "registryDependencies": [
+    "https://herocn.dev/r/card.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/card-small.tsx",
+      "content": "import { ChevronRightIcon } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport {\n\tCard,\n\tCardContent,\n\tCardDescription,\n\tCardFooter,\n\tCardHeader,\n\tCardTitle,\n} from \"@/components/ui/card\";\n\nexport function CardSmall() {\n\tconst featureName = \"Scheduled reports\";\n\n\treturn (\n\t\t<Card size=\"sm\" className=\"mx-auto w-full max-w-xs\">\n\t\t\t<CardHeader>\n\t\t\t\t<CardTitle>{featureName}</CardTitle>\n\t\t\t\t<CardDescription>\n\t\t\t\t\tWeekly snapshots. No more manual exports.\n\t\t\t\t</CardDescription>\n\t\t\t</CardHeader>\n\t\t\t<CardContent>\n\t\t\t\t<ul className=\"grid gap-2 py-2 text-sm\">\n\t\t\t\t\t<li className=\"flex gap-2\">\n\t\t\t\t\t\t<ChevronRightIcon className=\"mt-0.5 size-4 shrink-0 text-muted-foreground\" />\n\t\t\t\t\t\t<span>Choose a schedule (daily, or weekly).</span>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li className=\"flex gap-2\">\n\t\t\t\t\t\t<ChevronRightIcon className=\"mt-0.5 size-4 shrink-0 text-muted-foreground\" />\n\t\t\t\t\t\t<span>Send to channels or specific teammates.</span>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li className=\"flex gap-2\">\n\t\t\t\t\t\t<ChevronRightIcon className=\"mt-0.5 size-4 shrink-0 text-muted-foreground\" />\n\t\t\t\t\t\t<span>Include charts, tables, and key metrics.</span>\n\t\t\t\t\t</li>\n\t\t\t\t</ul>\n\t\t\t</CardContent>\n\t\t\t<CardFooter className=\"flex-col gap-2\">\n\t\t\t\t<Button size=\"sm\" className=\"w-full\">\n\t\t\t\t\tSet up scheduled reports\n\t\t\t\t</Button>\n\t\t\t\t<Button variant=\"outline\" size=\"sm\" className=\"w-full\">\n\t\t\t\t\tSee what&apos;s new\n\t\t\t\t</Button>\n\t\t\t</CardFooter>\n\t\t</Card>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

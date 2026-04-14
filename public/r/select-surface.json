@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "select-surface",
+  "registryDependencies": [
+    "https://herocn.dev/r/select.json",
+    "https://herocn.dev/r/surface.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/select-surface.tsx",
+      "content": "import {\n\tSelect,\n\tSelectContent,\n\tSelectGroup,\n\tSelectItem,\n\tSelectTrigger,\n\tSelectValue,\n} from \"@/components/ui/select\";\nimport { Surface } from \"@/components/ui/surface\";\n\nconst items = [\n\t{ label: \"Select a theme\", value: null },\n\t{ label: \"Light\", value: \"light\" },\n\t{ label: \"Dark\", value: \"dark\" },\n\t{ label: \"System\", value: \"system\" },\n];\n\nexport default function SelectSurface() {\n\treturn (\n\t\t<Surface className=\"w-full max-w-sm rounded-3xl border p-4\">\n\t\t\t<h4 className=\"font-medium text-sm\">Appearance</h4>\n\t\t\t<p className=\"mt-1 text-muted-foreground text-sm\">\n\t\t\t\tChoose how the interface looks on this device.\n\t\t\t</p>\n\t\t\t<div className=\"mt-4\">\n\t\t\t\t<Select items={items} variant=\"secondary\">\n\t\t\t\t\t<SelectTrigger className=\"w-full\">\n\t\t\t\t\t\t<SelectValue />\n\t\t\t\t\t</SelectTrigger>\n\t\t\t\t\t<SelectContent>\n\t\t\t\t\t\t<SelectGroup>\n\t\t\t\t\t\t\t{items.map((item) => (\n\t\t\t\t\t\t\t\t<SelectItem key={item.label} value={item.value}>\n\t\t\t\t\t\t\t\t\t{item.label}\n\t\t\t\t\t\t\t\t</SelectItem>\n\t\t\t\t\t\t\t))}\n\t\t\t\t\t\t</SelectGroup>\n\t\t\t\t\t</SelectContent>\n\t\t\t\t</Select>\n\t\t\t</div>\n\t\t</Surface>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

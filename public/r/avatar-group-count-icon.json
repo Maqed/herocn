@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar-group-count-icon",
+  "registryDependencies": [
+    "https://herocn.dev/r/avatar.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/avatar-group-count-icon.tsx",
+      "content": "import { PlusIcon } from \"lucide-react\";\nimport {\n\tAvatar,\n\tAvatarFallback,\n\tAvatarGroup,\n\tAvatarGroupCount,\n\tAvatarImage,\n} from \"@/components/ui/avatar\";\n\nexport default function AvatarGroupCountIconExample() {\n\treturn (\n\t\t<AvatarGroup>\n\t\t\t<Avatar>\n\t\t\t\t<AvatarImage src=\"https://github.com/shadcn.png\" alt=\"@shadcn\" />\n\t\t\t\t<AvatarFallback>CN</AvatarFallback>\n\t\t\t</Avatar>\n\t\t\t<Avatar>\n\t\t\t\t<AvatarImage src=\"https://github.com/Maqed.png\" alt=\"@0xMaqed\" />\n\t\t\t\t<AvatarFallback>Mqd</AvatarFallback>\n\t\t\t</Avatar>\n\t\t\t<Avatar>\n\t\t\t\t<AvatarImage\n\t\t\t\t\tsrc=\"https://github.com/evilrabbit.png\"\n\t\t\t\t\talt=\"@evilrabbit\"\n\t\t\t\t/>\n\t\t\t\t<AvatarFallback>ER</AvatarFallback>\n\t\t\t</Avatar>\n\t\t\t<AvatarGroupCount>\n\t\t\t\t<PlusIcon />\n\t\t\t</AvatarGroupCount>\n\t\t</AvatarGroup>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

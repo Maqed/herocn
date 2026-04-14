@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input-fieldgroup",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/field.json",
+    "https://herocn.dev/r/input.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/input-fieldgroup.tsx",
+      "content": "import { Button } from \"@/components/ui/button\";\nimport {\n\tField,\n\tFieldDescription,\n\tFieldGroup,\n\tFieldLabel,\n} from \"@/components/ui/field\";\nimport { Input } from \"@/components/ui/input\";\n\nexport default function InputFieldgroup() {\n\treturn (\n\t\t<div className=\"w-full max-w-sm\">\n\t\t\t<FieldGroup>\n\t\t\t\t<Field>\n\t\t\t\t\t<FieldLabel htmlFor=\"fieldgroup-name\">Name</FieldLabel>\n\t\t\t\t\t<Input id=\"fieldgroup-name\" placeholder=\"Jordan Lee\" />\n\t\t\t\t</Field>\n\t\t\t\t<Field>\n\t\t\t\t\t<FieldLabel htmlFor=\"fieldgroup-email\">Email</FieldLabel>\n\t\t\t\t\t<Input\n\t\t\t\t\t\tid=\"fieldgroup-email\"\n\t\t\t\t\t\ttype=\"email\"\n\t\t\t\t\t\tplaceholder=\"name@example.com\"\n\t\t\t\t\t/>\n\t\t\t\t\t<FieldDescription>\n\t\t\t\t\t\tWe&apos;ll send updates to this address.\n\t\t\t\t\t</FieldDescription>\n\t\t\t\t</Field>\n\t\t\t\t<Field orientation=\"horizontal\">\n\t\t\t\t\t<Button type=\"reset\" variant=\"outline\">\n\t\t\t\t\t\tReset\n\t\t\t\t\t</Button>\n\t\t\t\t\t<Button type=\"submit\">Submit</Button>\n\t\t\t\t</Field>\n\t\t\t</FieldGroup>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

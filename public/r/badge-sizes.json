@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "badge-sizes",
+  "registryDependencies": [
+    "https://herocn.dev/r/badge.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/badge-sizes.tsx",
+      "content": "import { Badge } from \"@/components/ui/badge\";\n\nexport default function BadgeSizes() {\n\treturn (\n\t\t<div className=\"flex flex-wrap items-center gap-2\">\n\t\t\t<Badge size=\"sm\">Small</Badge>\n\t\t\t<Badge>Default</Badge>\n\t\t\t<Badge size=\"lg\">Large</Badge>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

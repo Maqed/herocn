@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@import "./theme.css";
+@import "fumadocs-ui/css/shadcn.css";
+@import "fumadocs-ui/css/preset.css";
+
+/* Docs */
+@layer base {
+	[data-lang="ar"] {
+		font-family: var(--font-ar);
+	}
+
+	[data-lang="he"] {
+		font-family: var(--font-he);
+	}
+}
+
+@layer components {
+	.steps {
+		&:first-child {
+			@apply !mt-0;
+		}
+
+		&:first-child > h3:first-child {
+			@apply !mt-0;
+		}
+
+		> h3 {
+			@apply !mt-8;
+		}
+
+		> h3 + p {
+			@apply !mt-2;
+		}
+	}
+}
+
+@utility step {
+	counter-increment: step;
+
+	&:before {
+		@apply border-background bg-muted mr-2 inline-flex size-6 items-center justify-center rounded-full text-center -indent-px font-mono text-sm font-medium md:absolute md:mt-[-4px] md:ml-[-50px] md:size-9 md:border-4;
+		content: counter(step);
+	}
+}
+
+@utility no-scrollbar {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}

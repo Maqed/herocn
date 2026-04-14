@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "skeleton-card",
+  "registryDependencies": [
+    "https://herocn.dev/r/card.json",
+    "https://herocn.dev/r/skeleton.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/skeleton-card.tsx",
+      "content": "import { Card, CardContent, CardHeader } from \"@/components/ui/card\";\nimport { Skeleton } from \"@/components/ui/skeleton\";\n\nexport default function SkeletonCard() {\n\treturn (\n\t\t<Card className=\"w-full max-w-xs\">\n\t\t\t<CardHeader>\n\t\t\t\t<Skeleton className=\"h-4 w-2/3\" />\n\t\t\t\t<Skeleton className=\"h-4 w-1/2\" />\n\t\t\t</CardHeader>\n\t\t\t<CardContent>\n\t\t\t\t<Skeleton className=\"aspect-video w-full\" />\n\t\t\t</CardContent>\n\t\t</Card>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-demo",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/button-demo.tsx",
+      "content": "import { ArrowUpIcon } from \"lucide-react\";\nimport { Button } from \"@/components/ui/button\";\n\nexport default function ButtonDemo() {\n\treturn (\n\t\t<div className=\"flex gap-3\">\n\t\t\t<Button>Button</Button>\n\t\t\t<Button size=\"icon\">\n\t\t\t\t<ArrowUpIcon />\n\t\t\t</Button>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

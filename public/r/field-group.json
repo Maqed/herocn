@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "field-group",
+  "registryDependencies": [
+    "https://herocn.dev/r/checkbox.json",
+    "https://herocn.dev/r/field.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/field-group.tsx",
+      "content": "import { Checkbox } from \"@/components/ui/checkbox\";\nimport {\n\tField,\n\tFieldDescription,\n\tFieldGroup,\n\tFieldLabel,\n\tFieldSeparator,\n\tFieldSet,\n} from \"@/components/ui/field\";\n\nexport default function FieldGroupExample() {\n\treturn (\n\t\t<FieldGroup className=\"w-full max-w-xs\">\n\t\t\t<FieldSet>\n\t\t\t\t<FieldLabel>Responses</FieldLabel>\n\t\t\t\t<FieldDescription>\n\t\t\t\t\tGet notified when ChatGPT responds to requests that take time, like\n\t\t\t\t\tresearch or image generation.\n\t\t\t\t</FieldDescription>\n\t\t\t\t<FieldGroup data-slot=\"checkbox-group\">\n\t\t\t\t\t<Field orientation=\"horizontal\">\n\t\t\t\t\t\t<Checkbox id=\"push\" defaultChecked disabled />\n\t\t\t\t\t\t<FieldLabel htmlFor=\"push\" className=\"font-normal\">\n\t\t\t\t\t\t\tPush notifications\n\t\t\t\t\t\t</FieldLabel>\n\t\t\t\t\t</Field>\n\t\t\t\t</FieldGroup>\n\t\t\t</FieldSet>\n\t\t\t<FieldSeparator />\n\t\t\t<FieldSet>\n\t\t\t\t<FieldLabel>Tasks</FieldLabel>\n\t\t\t\t<FieldDescription>\n\t\t\t\t\tGet notified when tasks you've created have updates.{\" \"}\n\t\t\t\t\t<a href=\"#\">Manage tasks</a>\n\t\t\t\t</FieldDescription>\n\t\t\t\t<FieldGroup data-slot=\"checkbox-group\">\n\t\t\t\t\t<Field orientation=\"horizontal\">\n\t\t\t\t\t\t<Checkbox id=\"push-tasks\" />\n\t\t\t\t\t\t<FieldLabel htmlFor=\"push-tasks\" className=\"font-normal\">\n\t\t\t\t\t\t\tPush notifications\n\t\t\t\t\t\t</FieldLabel>\n\t\t\t\t\t</Field>\n\t\t\t\t\t<Field orientation=\"horizontal\">\n\t\t\t\t\t\t<Checkbox id=\"email-tasks\" />\n\t\t\t\t\t\t<FieldLabel htmlFor=\"email-tasks\" className=\"font-normal\">\n\t\t\t\t\t\t\tEmail notifications\n\t\t\t\t\t\t</FieldLabel>\n\t\t\t\t\t</Field>\n\t\t\t\t</FieldGroup>\n\t\t\t</FieldSet>\n\t\t</FieldGroup>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

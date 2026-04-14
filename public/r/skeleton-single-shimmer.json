@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "skeleton-single-shimmer",
+  "registryDependencies": [
+    "https://herocn.dev/r/skeleton.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/skeleton-single-shimmer.tsx",
+      "content": "import { Skeleton } from \"@/components/ui/skeleton\";\n\nexport function SingleShimmer() {\n\treturn (\n\t\t<div className=\"skeleton--shimmer relative grid w-full max-w-xl grid-cols-3 gap-4 overflow-hidden rounded-xl\">\n\t\t\t<Skeleton animationType=\"none\" className=\"h-24 rounded-xl\" />\n\t\t\t<Skeleton animationType=\"none\" className=\"h-24 rounded-xl\" />\n\t\t\t<Skeleton animationType=\"none\" className=\"h-24 rounded-xl\" />\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

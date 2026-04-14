@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar-group",
+  "registryDependencies": [
+    "https://herocn.dev/r/avatar.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/avatar-group.tsx",
+      "content": "import {\n\tAvatar,\n\tAvatarFallback,\n\tAvatarGroup,\n\tAvatarImage,\n} from \"@/components/ui/avatar\";\n\nexport default function AvatarGroupExample() {\n\treturn (\n\t\t<AvatarGroup>\n\t\t\t<Avatar>\n\t\t\t\t<AvatarImage src=\"https://github.com/shadcn.png\" alt=\"@shadcn\" />\n\t\t\t\t<AvatarFallback>CN</AvatarFallback>\n\t\t\t</Avatar>\n\t\t\t<Avatar>\n\t\t\t\t<AvatarImage src=\"https://github.com/maxleiter.png\" alt=\"@maxleiter\" />\n\t\t\t\t<AvatarFallback>LR</AvatarFallback>\n\t\t\t</Avatar>\n\t\t\t<Avatar>\n\t\t\t\t<AvatarImage src=\"https://github.com/Maqed.png\" alt=\"@0xMaqed\" />\n\t\t\t\t<AvatarFallback>Mqd</AvatarFallback>\n\t\t\t</Avatar>\n\t\t</AvatarGroup>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

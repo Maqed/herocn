@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "skeleton-rtl",
+  "registryDependencies": [
+    "https://herocn.dev/r/skeleton.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/skeleton-rtl.tsx",
+      "content": "\"use client\";\n\nimport {\n\ttype Translations,\n\tuseTranslation,\n} from \"@/components/language-selector\";\nimport { Skeleton } from \"@/components/ui/skeleton\";\n\nconst translations: Translations = {\n\ten: {\n\t\tdir: \"ltr\",\n\t\tvalues: {},\n\t},\n\tar: {\n\t\tdir: \"rtl\",\n\t\tvalues: {},\n\t},\n\the: {\n\t\tdir: \"rtl\",\n\t\tvalues: {},\n\t},\n};\n\nexport default function SkeletonRtl() {\n\tconst { dir, language } = useTranslation(translations, \"ar\");\n\n\treturn (\n\t\t<div className=\"flex items-center gap-4\" dir={dir} lang={language}>\n\t\t\t<Skeleton className=\"size-12 rounded-full\" />\n\t\t\t<div className=\"space-y-2\">\n\t\t\t\t<Skeleton className=\"h-4 w-[250px]\" />\n\t\t\t\t<Skeleton className=\"h-4 w-[200px]\" />\n\t\t\t</div>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

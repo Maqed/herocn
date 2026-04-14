@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dropdown-menu-radio-group",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/dropdown-menu.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/dropdown-menu-radio-group.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport { Button } from \"@/components/ui/button\";\nimport {\n\tDropdownMenu,\n\tDropdownMenuContent,\n\tDropdownMenuGroup,\n\tDropdownMenuLabel,\n\tDropdownMenuRadioGroup,\n\tDropdownMenuRadioItem,\n\tDropdownMenuTrigger,\n} from \"@/components/ui/dropdown-menu\";\n\nexport default function DropdownMenuRadioGroupDemo() {\n\tconst [position, setPosition] = React.useState(\"bottom\");\n\n\treturn (\n\t\t<DropdownMenu>\n\t\t\t<DropdownMenuTrigger render={<Button variant=\"tertiary\" />}>\n\t\t\t\tOpen\n\t\t\t</DropdownMenuTrigger>\n\t\t\t<DropdownMenuContent>\n\t\t\t\t<DropdownMenuGroup>\n\t\t\t\t\t<DropdownMenuLabel>Panel Position</DropdownMenuLabel>\n\t\t\t\t\t<DropdownMenuRadioGroup value={position} onValueChange={setPosition}>\n\t\t\t\t\t\t<DropdownMenuRadioItem value=\"top\">Top</DropdownMenuRadioItem>\n\t\t\t\t\t\t<DropdownMenuRadioItem value=\"bottom\">Bottom</DropdownMenuRadioItem>\n\t\t\t\t\t\t<DropdownMenuRadioItem value=\"right\">Right</DropdownMenuRadioItem>\n\t\t\t\t\t</DropdownMenuRadioGroup>\n\t\t\t\t</DropdownMenuGroup>\n\t\t\t</DropdownMenuContent>\n\t\t</DropdownMenu>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

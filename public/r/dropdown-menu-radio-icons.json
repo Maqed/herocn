@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dropdown-menu-radio-icons",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/dropdown-menu.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/dropdown-menu-radio-icons.tsx",
+      "content": "\"use client\";\n\nimport { Building2Icon, CreditCardIcon, WalletIcon } from \"lucide-react\";\nimport * as React from \"react\";\nimport { Button } from \"@/components/ui/button\";\nimport {\n\tDropdownMenu,\n\tDropdownMenuContent,\n\tDropdownMenuGroup,\n\tDropdownMenuLabel,\n\tDropdownMenuRadioGroup,\n\tDropdownMenuRadioItem,\n\tDropdownMenuTrigger,\n} from \"@/components/ui/dropdown-menu\";\n\nexport default function DropdownMenuRadioIcons() {\n\tconst [paymentMethod, setPaymentMethod] = React.useState(\"card\");\n\n\treturn (\n\t\t<DropdownMenu>\n\t\t\t<DropdownMenuTrigger render={<Button variant=\"tertiary\" />}>\n\t\t\t\tPayment Method\n\t\t\t</DropdownMenuTrigger>\n\t\t\t<DropdownMenuContent>\n\t\t\t\t<DropdownMenuGroup>\n\t\t\t\t\t<DropdownMenuLabel>Select Payment Method</DropdownMenuLabel>\n\t\t\t\t\t<DropdownMenuRadioGroup\n\t\t\t\t\t\tvalue={paymentMethod}\n\t\t\t\t\t\tonValueChange={setPaymentMethod}\n\t\t\t\t\t>\n\t\t\t\t\t\t<DropdownMenuRadioItem value=\"card\">\n\t\t\t\t\t\t\t<CreditCardIcon />\n\t\t\t\t\t\t\tCredit Card\n\t\t\t\t\t\t</DropdownMenuRadioItem>\n\t\t\t\t\t\t<DropdownMenuRadioItem value=\"paypal\">\n\t\t\t\t\t\t\t<WalletIcon />\n\t\t\t\t\t\t\tPayPal\n\t\t\t\t\t\t</DropdownMenuRadioItem>\n\t\t\t\t\t\t<DropdownMenuRadioItem value=\"bank\">\n\t\t\t\t\t\t\t<Building2Icon />\n\t\t\t\t\t\t\tBank Transfer\n\t\t\t\t\t\t</DropdownMenuRadioItem>\n\t\t\t\t\t</DropdownMenuRadioGroup>\n\t\t\t\t</DropdownMenuGroup>\n\t\t\t</DropdownMenuContent>\n\t\t</DropdownMenu>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

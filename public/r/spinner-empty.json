@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "spinner-empty",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/empty.json",
+    "https://herocn.dev/r/spinner.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/spinner-empty.tsx",
+      "content": "import { Button } from \"@/components/ui/button\";\nimport {\n\tEmpty,\n\tEmptyContent,\n\tEmptyDescription,\n\tEmptyHeader,\n\tEmptyMedia,\n\tEmptyTitle,\n} from \"@/components/ui/empty\";\nimport { Spinner } from \"@/components/ui/spinner\";\n\nexport default function SpinnerEmpty() {\n\treturn (\n\t\t<Empty className=\"w-full\">\n\t\t\t<EmptyHeader>\n\t\t\t\t<EmptyMedia variant=\"icon\">\n\t\t\t\t\t<Spinner />\n\t\t\t\t</EmptyMedia>\n\t\t\t\t<EmptyTitle>Processing your request</EmptyTitle>\n\t\t\t\t<EmptyDescription>\n\t\t\t\t\tPlease wait while we process your request. Do not refresh the page.\n\t\t\t\t</EmptyDescription>\n\t\t\t</EmptyHeader>\n\t\t\t<EmptyContent>\n\t\t\t\t<Button variant=\"outline\" size=\"sm\">\n\t\t\t\t\tCancel\n\t\t\t\t</Button>\n\t\t\t</EmptyContent>\n\t\t</Empty>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

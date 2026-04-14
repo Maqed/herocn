@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button-icons",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/button-icons.tsx",
+      "content": "import {\n\tArrowRightIcon,\n\tDownloadIcon,\n\tSearchIcon,\n\tTrash2Icon,\n} from \"lucide-react\";\nimport { Button } from \"@/components/ui/button\";\n\nexport default function ButtonIcons() {\n\treturn (\n\t\t<div className=\"flex flex-wrap items-center gap-3\">\n\t\t\t<Button>\n\t\t\t\t<SearchIcon data-icon=\"inline-start\" />\n\t\t\t\tSearch\n\t\t\t</Button>\n\t\t\t<Button variant=\"secondary\">\n\t\t\t\t<DownloadIcon data-icon=\"inline-start\" />\n\t\t\t\tDownload\n\t\t\t</Button>\n\t\t\t<Button variant=\"outline\">\n\t\t\t\tNext\n\t\t\t\t<ArrowRightIcon data-icon=\"inline-end\" />\n\t\t\t</Button>\n\t\t\t<Button variant=\"destructive\">\n\t\t\t\tDelete <Trash2Icon data-icon=\"inline-end\" />\n\t\t\t</Button>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

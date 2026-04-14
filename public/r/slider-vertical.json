@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "slider-vertical",
+  "registryDependencies": [
+    "https://herocn.dev/r/slider.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/slider-vertical.tsx",
+      "content": "import { Slider } from \"@/components/ui/slider\";\n\nexport default function SliderVertical() {\n\treturn (\n\t\t<div className=\"mx-auto flex w-full max-w-xs items-center justify-center gap-6\">\n\t\t\t<Slider\n\t\t\t\tdefaultValue={[50]}\n\t\t\t\tmax={100}\n\t\t\t\tstep={1}\n\t\t\t\torientation=\"vertical\"\n\t\t\t\tclassName=\"h-40\"\n\t\t\t/>\n\t\t\t<Slider\n\t\t\t\tdefaultValue={[25]}\n\t\t\t\tmax={100}\n\t\t\t\tstep={1}\n\t\t\t\torientation=\"vertical\"\n\t\t\t\tclassName=\"h-40\"\n\t\t\t/>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

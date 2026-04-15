@@ -169,13 +169,8 @@ export const css = {
 		content: "none",
 	},
 	".skeleton--shimmer:has(.skeleton)::before": {
-		"@apply absolute inset-0 -translate-x-full animate-skeleton content-['']":
+		"@apply absolute inset-0 z-10 pointer-events-none mix-blend-overlay -translate-x-full bg-linear-to-r from-transparent via-white/50 to-transparent animate-skeleton content-['']":
 			{},
-		background:
-			"linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.5) 50%, transparent 100%)",
-		"z-index": "10",
-		"pointer-events": "none",
-		"mix-blend-mode": "overlay",
 		"animation-direction": "var(--skeleton-animation-dir, normal)",
 	},
 	".skeleton--shimmer:has(.skeleton) .skeleton::after": {

@@ -1,6 +1,6 @@
 ---
 description: Guide for adding new components to the herocn registry
-globs: apps/docs/src/registry/**
+globs: src/registry/**
 alwaysApply: false
 ---
 
@@ -8,7 +8,7 @@ alwaysApply: false
 
 ## Step 1 — Add the entry to `registry-ui.ts`
 
-Every component must be registered in `apps/docs/src/registry/registry-ui.ts`. The minimum shape is:
+Every component must be registered in `src/registry/registry-ui.ts`. The minimum shape is:
 
 ```ts
 {
@@ -30,7 +30,7 @@ Every component must be registered in `apps/docs/src/registry/registry-ui.ts`. T
 
 ## Step 2 — Check `shared.ts` for required extras
 
-`apps/docs/src/registry/shared.ts` exports two objects:
+`src/registry/shared.ts` exports two objects:
 
 | Export    | What it contains                                                                                                    |
 | --------- | ------------------------------------------------------------------------------------------------------------------- |
@@ -94,7 +94,7 @@ where `<component-name>` is the kebab-case `name` of the target entry in `regist
 
 - **`registry-examples.ts` (`registry:example`)** — Add for **every** registry UI component the example imports from `@/registry/new-york-v4/ui/...`. Examples nearly always set this field because demos compose multiple components.
 
-- **`index` / `style` (`registry:style`)** — The shared style object in `apps/docs/src/registry/index.ts` already sets `registryDependencies: ["utils", "@herocn/ui"]`. Change that only if the style entry's contract with the CLI or meta-package layout changes.
+- **`index` / `style` (`registry:style`)** — The shared style object in `src/registry/index.ts` already sets `registryDependencies: ["utils", "@herocn/ui"]`. Change that only if the style entry's contract with the CLI or meta-package layout changes.
 
 ### How to determine the list
 

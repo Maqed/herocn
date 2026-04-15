@@ -1,6 +1,6 @@
 # Documentation Guide
 
-This guide defines the conventions for writing component documentation pages (`.mdx` files) in `apps/docs/content/docs/components/`.
+This guide defines the conventions for writing component documentation pages (`.mdx` files) in `content/docs/components/`.
 
 ---
 
@@ -89,7 +89,7 @@ Use a fenced `text` block for the hierarchy and include only the component parts
 
 ### Example (`Card`)
 
-```mdx
+````mdx
 ## Composition
 
 Use the following composition to build a `Card`:
@@ -103,7 +103,9 @@ Card
 ├── CardContent
 └── CardFooter
 ```
-```
+````
+
+````
 
 ---
 
@@ -115,7 +117,7 @@ Card
 
 ```mdx
 <CodeBlockCommand command="npx shadcn@latest add @herocn/{name}" />
-```
+````
 
 ### How It Works
 
@@ -167,9 +169,19 @@ title?: string; // defaults to "globals.css"
 
 ```mdx
 <RenderCSSShared
-  light={["--eclipse", "--snow", "--default", "--default-foreground", "--destructive-foreground"]}
+  light={[
+    "--eclipse",
+    "--snow",
+    "--default",
+    "--default-foreground",
+    "--destructive-foreground",
+  ]}
   dark={["--default", "--default-foreground", "--destructive-foreground"]}
-  theme={["--color-default", "--color-default-foreground", "--color-destructive-foreground"]}
+  theme={[
+    "--color-default",
+    "--color-default-foreground",
+    "--color-destructive-foreground",
+  ]}
   css={["@utility pressible", "@utility focus-ring"]}
 />
 ```
@@ -241,14 +253,14 @@ When adding new examples for a component, two things must be done:
 Place the example `.tsx` file in:
 
 ```
-apps/docs/src/registry/new-york-v4/examples/{component-name}-{example-name}.tsx
+src/registry/new-york-v4/examples/{component-name}-{example-name}.tsx
 ```
 
-For example: `apps/docs/src/registry/new-york-v4/examples/button-variants.tsx`
+For example: `src/registry/new-york-v4/examples/button-variants.tsx`
 
 ### 2. Register the example
 
-Add an entry to the `examples` array in `apps/docs/src/registry/registry-examples.ts`:
+Add an entry to the `examples` array in `src/registry/registry-examples.ts`:
 
 ```ts
 {
@@ -266,7 +278,7 @@ Add an entry to the `examples` array in `apps/docs/src/registry/registry-example
 
 - `name` must match the `name` prop passed to `<ComponentPreview name="..." />` in the `.mdx` file.
 - `registryDependencies` should list all registry components the example depends on (e.g. `["@herocn/button", "@herocn/avatar"]`).
-- The `path` is relative to `apps/docs/src/registry/new-york-v4/`.
+- The `path` is relative to `src/registry/new-york-v4/`.
 
 ---
 
@@ -291,15 +303,18 @@ The `direction="rtl"` prop activates a language selector toolbar (English / Arab
 Place the file at:
 
 ```
-apps/docs/src/registry/new-york-v4/examples/{component-name}-rtl.tsx
+src/registry/new-york-v4/examples/{component-name}-rtl.tsx
 ```
 
 #### Required pattern
 
 ```tsx
-"use client"
+"use client";
 
-import { useTranslation, type Translations } from "@/components/language-selector"
+import {
+  useTranslation,
+  type Translations,
+} from "@/components/language-selector";
 
 const translations: Translations = {
   en: {
@@ -320,20 +335,21 @@ const translations: Translations = {
       label: "תווית",
     },
   },
-}
+};
 
 export function ComponentRtl() {
-  const { dir, language, t } = useTranslation(translations, "ar")
+  const { dir, language, t } = useTranslation(translations, "ar");
 
   return (
     <div lang={language} dir={dir}>
       {/* render the component using t.label, etc. */}
     </div>
-  )
+  );
 }
 ```
 
 Key rules:
+
 - Always define all three languages: `en`, `ar`, `he`.
 - Use `"use client"` because `useTranslation` is a client hook.
 - Apply `lang={language} dir={dir}` on the outermost container element — **not** on individual child components.
@@ -341,7 +357,7 @@ Key rules:
 
 ### 3. Register the RTL example
 
-Add an entry to `apps/docs/src/registry/registry-examples.ts` with `registryDependencies` that includes all registry components used:
+Add an entry to `src/registry/registry-examples.ts` with `registryDependencies` that includes all registry components used:
 
 ```ts
 {
@@ -361,17 +377,21 @@ Add an entry to `apps/docs/src/registry/registry-examples.ts` with `registryDepe
 
 When rendering icons that should flip in RTL, apply `rtl:rotate-180` via Tailwind. Use `data-icon` to control inline spacing relative to text direction:
 
-| `data-icon` value | Position      | LTR margin | RTL margin |
-| ----------------- | ------------- | ---------- | ---------- |
-| `"inline-start"`  | Before text   | `mr-*`     | `ml-*`     |
-| `"inline-end"`    | After text    | `ml-*`     | `mr-*`     |
+| `data-icon` value | Position    | LTR margin | RTL margin |
+| ----------------- | ----------- | ---------- | ---------- |
+| `"inline-start"`  | Before text | `mr-*`     | `ml-*`     |
+| `"inline-end"`    | After text  | `ml-*`     | `mr-*`     |
 
 ```tsx
-{/* Arrow that flips direction */}
-<ArrowRightIcon className="rtl:rotate-180" data-icon="inline-end" />
+{
+  /* Arrow that flips direction */
+}
+<ArrowRightIcon className="rtl:rotate-180" data-icon="inline-end" />;
 
-{/* Spinner/icon before text */}
-<Spinner data-icon="inline-start" />
+{
+  /* Spinner/icon before text */
+}
+<Spinner data-icon="inline-start" />;
 ```
 
 ### `LanguageProvider` context

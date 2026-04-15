@@ -1,7 +1,7 @@
 {
     "tailwindCSS.classFunctions": ["cva", "cn"],
     "search.exclude": {
-      "apps/docs/public/r/*": true,
+    "public/r/*": true,
     }
   }
   

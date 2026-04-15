@@ -156,9 +156,14 @@ export const css = {
 			transform: "translateX(200%)",
 		},
 	},
+	".skeleton--shimmer": {
+		"@apply relative overflow-hidden rtl:[--skeleton-animation-dir:reverse]":
+			{},
+	},
 	".skeleton--shimmer::after": {
 		"@apply absolute inset-0 -translate-x-full animate-skeleton bg-linear-to-r from-transparent via-surface-tertiary to-transparent content-['']":
 			{},
+		"animation-direction": "var(--skeleton-animation-dir, normal)",
 	},
 	".skeleton--shimmer:has(.skeleton)::after": {
 		content: "none",
@@ -171,6 +176,7 @@ export const css = {
 		"z-index": "10",
 		"pointer-events": "none",
 		"mix-blend-mode": "overlay",
+		"animation-direction": "var(--skeleton-animation-dir, normal)",
 	},
 	".skeleton--shimmer:has(.skeleton) .skeleton::after": {
 		content: "none",

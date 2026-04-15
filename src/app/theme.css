@@ -203,9 +203,13 @@
 		box-shadow 100ms var(--ease-out);
 	@apply transform-gpu motion-reduce:transition-none active:scale-[0.97] aria-expanded:scale-[0.97];
 }
+.skeleton--shimmer {
+	@apply relative overflow-hidden rtl:[--skeleton-animation-dir:reverse];
+}
 
 .skeleton--shimmer::after {
 	@apply absolute inset-0 -translate-x-full animate-skeleton bg-linear-to-r from-transparent via-surface-tertiary to-transparent content-[''];
+	animation-direction: var(--skeleton-animation-dir, normal);
 }
 
 .skeleton--shimmer:has(.skeleton)::after {
@@ -223,6 +227,7 @@
 	z-index: 10;
 	pointer-events: none;
 	mix-blend-mode: overlay;
+	animation-direction: var(--skeleton-animation-dir, normal);
 }
 
 .skeleton--shimmer:has(.skeleton) .skeleton::after {

@@ -470,6 +470,7 @@ export const ui: Registry["items"] = [
 		},
 		css: {
 			"@keyframes skeleton": css["@keyframes skeleton"],
+			".skeleton--shimmer": css[".skeleton--shimmer"],
 			".skeleton--shimmer::after": css[".skeleton--shimmer::after"],
 			".skeleton--shimmer:has(.skeleton)::after":
 				css[".skeleton--shimmer:has(.skeleton)::after"],

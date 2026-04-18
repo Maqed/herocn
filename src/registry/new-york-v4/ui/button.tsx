@@ -6,7 +6,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-	"group/button pressible no-highlight focus-visible:focus-ring relative isolate inline-flex w-fit shrink-0 origin-center cursor-pointer select-none items-center justify-center gap-2 whitespace-nowrap rounded-3xl px-4 font-medium text-sm outline-none transition-all disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:cursor-not-allowed aria-disabled:opacity-70 [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0",
+	"group/button pressible no-highlight focus-visible:focus-ring relative isolate inline-flex w-fit shrink-0 origin-center cursor-pointer select-none items-center justify-center gap-2 whitespace-nowrap rounded-3xl px-4 font-medium text-sm outline-none transition-all disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 has-data-[icon=inline-start]:ps-3.5 has-data-[icon=inline-end]:pe-3.5 aria-disabled:pointer-events-none aria-disabled:cursor-not-allowed aria-disabled:opacity-70 [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0",
 	{
 		variants: {
 			variant: {
@@ -27,13 +27,13 @@ const buttonVariants = cva(
 					"bg-destructive/10 text-destructive hover:bg-destructive/20 focus-visible:ring-destructive active:bg-destructive/20 dark:bg-destructive/20 dark:active:bg-destructive/30 dark:hover:bg-destructive/30",
 			},
 			size: {
-				default:
-					"h-9 w-fit has-data-[icon=inline-start]:ps-3 has-data-[icon=inline-end]:pe-3",
-				xs: "h-7 gap-0.5 px-2.5 has-data-[icon=inline-start]:ps-1.5 has-data-[icon=inline-end]:pe-1.5 [&_svg:not([class*='size-'])]:size-3",
-				sm: "h-8 gap-1 px-3 has-data-[icon=inline-start]:ps-2 has-data-[icon=inline-end]:pe-2 [&_svg:not([class*='size-'])]:size-3.5",
-				lg: "h-10 gap-1.5 text-base has-data-[icon=inline-start]:ps-3 has-data-[icon=inline-end]:pe-3 [&_svg:not([class*='size-'])]:size-4",
+				default: "h-9 w-fit",
+				xs: "h-7 gap-0.5 px-2.5 has-data-[icon=inline-start]:ps-2 has-data-[icon=inline-end]:pe-2 [&_svg:not([class*='size-'])]:size-3",
+				sm: "h-8 gap-1 px-3 has-data-[icon=inline-start]:ps-2.5 has-data-[icon=inline-end]:pe-2.5 [&_svg:not([class*='size-'])]:size-3.5",
+				lg: "h-10 gap-1.5 text-base [&_svg:not([class*='size-'])]:size-4",
 				icon: "size-9 [&_svg:not([class*='size-'])]:size-5",
-				"icon-xs": "size-7 px-3 [&_svg:not([class*='size-'])]:size-3.5",
+				"icon-xs":
+					"size-7 px-3 has-data-[icon=inline-start]:ps-2.5 has-data-[icon=inline-end]:pe-2.5 [&_svg:not([class*='size-'])]:size-3.5",
 				"icon-sm": "size-8 [&_svg:not([class*='size-'])]:size-4",
 				"icon-lg": "size-10 [&_svg:not([class*='size-'])]:size-5.5",
 			},

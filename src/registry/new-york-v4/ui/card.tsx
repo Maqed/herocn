@@ -15,8 +15,8 @@ function Card({
 			data-slot="card"
 			data-size={size}
 			className={cn(
-				"group/card relative flex flex-col gap-3 overflow-hidden rounded-3xl bg-surface p-4 py-4 text-card-foreground text-sm ring-1 ring-foreground/10 has-[>img:first-child]:pt-0 has-data-[slot=card-footer]:pb-0 data-[size=sm]:gap-3 data-[size=sm]:py-3 data-[size=sm]:has-data-[slot=card-footer]:pb-0 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl",
-				variant === "transparent" && "border-none bg-transparent shadow-none",
+				"group/card relative flex flex-col gap-3 overflow-hidden rounded-3xl bg-surface p-4 py-4 text-card-foreground text-sm shadow-sm has-[>img:first-child]:pt-0 has-data-[slot=card-footer]:pb-0 data-[size=sm]:gap-3 data-[size=sm]:py-3 data-[size=sm]:has-data-[slot=card-footer]:pb-0 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl",
+				variant === "transparent" && "bg-transparent shadow-none",
 				variant === "secondary" && "bg-surface-secondary",
 				variant === "tertiary" && "bg-surface-tertiary",
 				className,

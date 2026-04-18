@@ -1207,13 +1207,13 @@
       "path": "examples/spinner-button.tsx",
       "type": "registry:example",
       "target": "",
-      "content": "import { Button } from \"@/components/ui/button\";\nimport { Spinner } from \"@/components/ui/spinner\";\n\nexport default function SpinnerButton() {\n\treturn (\n\t\t<div className=\"flex flex-col items-center gap-4\">\n\t\t\t<Button disabled size=\"sm\">\n\t\t\t\t<Spinner data-icon=\"inline-start\" size=\"sm\" />\n\t\t\t\tLoading...\n\t\t\t</Button>\n\t\t\t<Button variant=\"outline\" disabled size=\"sm\">\n\t\t\t\t<Spinner data-icon=\"inline-start\" size=\"sm\" />\n\t\t\t\tPlease wait\n\t\t\t</Button>\n\t\t\t<Button variant=\"secondary\" disabled size=\"sm\">\n\t\t\t\t<Spinner data-icon=\"inline-end\" size=\"sm\" />\n\t\t\t\tProcessing\n\t\t\t</Button>\n\t\t</div>\n\t);\n}\n"
+      "content": "import { Button } from \"@/components/ui/button\";\nimport { Spinner } from \"@/components/ui/spinner\";\n\nexport default function SpinnerButton() {\n\treturn (\n\t\t<div className=\"flex flex-col items-center gap-4\">\n\t\t\t<Button disabled size=\"sm\">\n\t\t\t\t<Spinner data-icon=\"inline-start\" size=\"sm\" />\n\t\t\t\tLoading...\n\t\t\t</Button>\n\t\t\t<Button variant=\"outline\" disabled size=\"sm\">\n\t\t\t\tPlease wait\n\t\t\t\t<Spinner data-icon=\"inline-end\" size=\"sm\" />\n\t\t\t</Button>\n\t\t\t<Button variant=\"secondary\" disabled size=\"sm\">\n\t\t\t\t<Spinner data-icon=\"inline-start\" size=\"sm\" />\n\t\t\t\tProcessing\n\t\t\t</Button>\n\t\t</div>\n\t);\n}\n"
     },
     {
       "path": "examples/spinner-badge.tsx",
       "type": "registry:example",
       "target": "",
-      "content": "import { Badge } from \"@/components/ui/badge\";\nimport { Spinner } from \"@/components/ui/spinner\";\n\nexport default function SpinnerBadge() {\n\treturn (\n\t\t<div className=\"flex items-center gap-4\">\n\t\t\t<Badge>\n\t\t\t\t<Spinner data-icon=\"inline-start\" size=\"sm\" />\n\t\t\t\tSyncing\n\t\t\t</Badge>\n\t\t\t<Badge variant=\"primary\">\n\t\t\t\t<Spinner data-icon=\"inline-start\" size=\"sm\" />\n\t\t\t\tUpdating\n\t\t\t</Badge>\n\t\t\t<Badge variant=\"warning\">\n\t\t\t\t<Spinner data-icon=\"inline-start\" size=\"sm\" />\n\t\t\t\tProcessing\n\t\t\t</Badge>\n\t\t</div>\n\t);\n}\n"
+      "content": "import { Badge } from \"@/components/ui/badge\";\nimport { Spinner } from \"@/components/ui/spinner\";\n\nexport default function SpinnerBadge() {\n\treturn (\n\t\t<div className=\"flex items-center gap-4\">\n\t\t\t<Badge>\n\t\t\t\t<Spinner data-icon=\"inline-start\" size=\"sm\" />\n\t\t\t\tSyncing\n\t\t\t</Badge>\n\t\t\t<Badge variant=\"primary\">\n\t\t\t\tUpdating\n\t\t\t\t<Spinner data-icon=\"inline-end\" size=\"sm\" />\n\t\t\t</Badge>\n\t\t\t<Badge variant=\"warning\">\n\t\t\t\t<Spinner data-icon=\"inline-start\" size=\"sm\" />\n\t\t\t\tProcessing\n\t\t\t</Badge>\n\t\t</div>\n\t);\n}\n"
     },
     {
       "path": "examples/spinner-input-group.tsx",

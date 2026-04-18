@@ -9,8 +9,8 @@ export default function SpinnerBadge() {
 				Syncing
 			</Badge>
 			<Badge variant="primary">
-				<Spinner data-icon="inline-start" size="sm" />
 				Updating
+				<Spinner data-icon="inline-end" size="sm" />
 			</Badge>
 			<Badge variant="warning">
 				<Spinner data-icon="inline-start" size="sm" />

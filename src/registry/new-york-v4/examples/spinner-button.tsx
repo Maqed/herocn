@@ -9,11 +9,11 @@ export default function SpinnerButton() {
 				Loading...
 			</Button>
 			<Button variant="outline" disabled size="sm">
-				<Spinner data-icon="inline-start" size="sm" />
 				Please wait
+				<Spinner data-icon="inline-end" size="sm" />
 			</Button>
 			<Button variant="secondary" disabled size="sm">
-				<Spinner data-icon="inline-end" size="sm" />
+				<Spinner data-icon="inline-start" size="sm" />
 				Processing
 			</Button>
 		</div>

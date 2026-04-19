@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "components/examples/toggle-group-vertical.tsx",
-      "content": "import { BoldIcon, ItalicIcon, UnderlineIcon } from \"lucide-react\";\n\nimport {\n\tToggleGroup,\n\tToggleGroupItem,\n} from \"@/components/ui/toggle-group\";\n\nexport default function ToggleGroupVertical() {\n\treturn (\n\t\t<ToggleGroup\n\t\t\tmultiple\n\t\t\torientation=\"vertical\"\n\t\t\tspacing={1}\n\t\t\tdefaultValue={[\"bold\", \"italic\"]}\n\t\t>\n\t\t\t<ToggleGroupItem value=\"bold\" aria-label=\"Toggle bold\">\n\t\t\t\t<BoldIcon />\n\t\t\t</ToggleGroupItem>\n\t\t\t<ToggleGroupItem value=\"italic\" aria-label=\"Toggle italic\">\n\t\t\t\t<ItalicIcon />\n\t\t\t</ToggleGroupItem>\n\t\t\t<ToggleGroupItem value=\"underline\" aria-label=\"Toggle underline\">\n\t\t\t\t<UnderlineIcon />\n\t\t\t</ToggleGroupItem>\n\t\t</ToggleGroup>\n\t);\n}\n",
+      "content": "import { BoldIcon, ItalicIcon, UnderlineIcon } from \"lucide-react\";\r\n\r\nimport {\r\n\tToggleGroup,\r\n\tToggleGroupItem,\r\n} from \"@/components/ui/toggle-group\";\r\n\r\nexport default function ToggleGroupVertical() {\r\n\treturn (\r\n\t\t<ToggleGroup\r\n\t\t\tmultiple\r\n\t\t\torientation=\"vertical\"\r\n\t\t\tspacing={1}\r\n\t\t\tdefaultValue={[\"bold\", \"italic\"]}\r\n\t\t>\r\n\t\t\t<ToggleGroupItem value=\"bold\" aria-label=\"Toggle bold\">\r\n\t\t\t\t<BoldIcon />\r\n\t\t\t</ToggleGroupItem>\r\n\t\t\t<ToggleGroupItem value=\"italic\" aria-label=\"Toggle italic\">\r\n\t\t\t\t<ItalicIcon />\r\n\t\t\t</ToggleGroupItem>\r\n\t\t\t<ToggleGroupItem value=\"underline\" aria-label=\"Toggle underline\">\r\n\t\t\t\t<UnderlineIcon />\r\n\t\t\t</ToggleGroupItem>\r\n\t\t</ToggleGroup>\r\n\t);\r\n}\r\n",
       "type": "registry:example"
     }
   ],

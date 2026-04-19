@@ -1,5 +1,4 @@
 import type * as React from "react";
-
 import { cn } from "@/lib/utils";
 
 function Textarea({
@@ -18,8 +17,8 @@ function Textarea({
 				"aria-invalid:not-focus-visible:invalid-field-ring",
 				"aria-invalid:focus-visible:invalid-field-ring-focus",
 				"not-aria-invalid:focus-visible:focus-field-ring not-aria-invalid:focus-visible:ring-ring",
-				"hover:not-focus-visible:bg-input/40 hover:not-focus-visible:data-[variant=secondary]:bg-default dark:hover:not-focus-visible:bg-input dark:hover:not-focus-visible:data-[variant=secondary]:bg-default",
-				"data-[variant=secondary]:bg-default/80 data-[variant=secondary]:shadow-none dark:data-[variant=secondary]:bg-default/80",
+				"hover:not-focus-visible:bg-input/40 hover:not-focus-visible:data-[variant=secondary]:bg-default not-dark:hover:not-focus-visible:data-[variant=secondary]:brightness-96 dark:hover:not-focus-visible:bg-input dark:hover:not-focus-visible:data-[variant=secondary]:bg-default",
+				"data-[variant=secondary]:bg-default data-[variant=secondary]:shadow-none not-dark:data-[variant=secondary]:brightness-100 dark:data-[variant=secondary]:bg-default/80",
 				"disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50",
 				className,
 			)}

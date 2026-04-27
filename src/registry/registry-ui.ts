@@ -175,6 +175,17 @@ export const ui: Registry["items"] = [
 		],
 	},
 	{
+		name: "tooltip",
+		type: "registry:ui",
+		dependencies: ["@base-ui/react"],
+		files: [
+			{
+				path: "ui/tooltip.tsx",
+				type: "registry:ui",
+			},
+		],
+	},
+	{
 		name: "dropdown-menu",
 		type: "registry:ui",
 		dependencies: ["@base-ui/react", "lucide-react"],

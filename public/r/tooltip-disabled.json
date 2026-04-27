@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tooltip-disabled",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/tooltip.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/tooltip-disabled.tsx",
+      "content": "\"use client\";\n\nimport { Button } from \"@/components/ui/button\";\nimport {\n\tTooltip,\n\tTooltipContent,\n\tTooltipTrigger,\n} from \"@/components/ui/tooltip\";\n\nexport default function TooltipDisabled() {\n\treturn (\n\t\t<Tooltip>\n\t\t\t<TooltipTrigger render={<span className=\"inline-block w-fit\" />}>\n\t\t\t\t<Button variant=\"outline\" disabled>\n\t\t\t\t\tDisabled\n\t\t\t\t</Button>\n\t\t\t</TooltipTrigger>\n\t\t\t<TooltipContent>\n\t\t\t\t<p>This feature is currently unavailable</p>\n\t\t\t</TooltipContent>\n\t\t</Tooltip>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

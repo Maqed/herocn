@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tooltip-keyboard",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/tooltip.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/tooltip-keyboard.tsx",
+      "content": "\"use client\";\n\nimport { SaveIcon } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { Kbd } from \"@/components/ui/kbd\";\nimport {\n\tTooltip,\n\tTooltipContent,\n\tTooltipTrigger,\n} from \"@/components/ui/tooltip\";\n\nexport default function TooltipKeyboard() {\n\treturn (\n\t\t<Tooltip>\n\t\t\t<TooltipTrigger render={<Button variant=\"outline\" size=\"icon-sm\" />}>\n\t\t\t\t<SaveIcon />\n\t\t\t</TooltipTrigger>\n\t\t\t<TooltipContent>\n\t\t\t\tSave Changes <Kbd>S</Kbd>\n\t\t\t</TooltipContent>\n\t\t</Tooltip>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

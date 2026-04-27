@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tooltip-arrow",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/tooltip.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/tooltip-arrow.tsx",
+      "content": "\"use client\";\n\nimport { Button } from \"@/components/ui/button\";\nimport {\n\tTooltip,\n\tTooltipContent,\n\tTooltipTrigger,\n} from \"@/components/ui/tooltip\";\n\nexport default function ToolTipArrow() {\n\treturn (\n\t\t<div className=\"flex flex-wrap gap-2\">\n\t\t\t{([\"left\", \"top\", \"bottom\", \"right\"] as const).map((side) => (\n\t\t\t\t<Tooltip key={side}>\n\t\t\t\t\t<TooltipTrigger\n\t\t\t\t\t\trender={<Button variant=\"outline\" className=\"w-fit capitalize\" />}\n\t\t\t\t\t>\n\t\t\t\t\t\t{side}\n\t\t\t\t\t</TooltipTrigger>\n\t\t\t\t\t<TooltipContent withArrow side={side}>\n\t\t\t\t\t\t<p>This tooltip has an arrow</p>\n\t\t\t\t\t</TooltipContent>\n\t\t\t\t</Tooltip>\n\t\t\t))}\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

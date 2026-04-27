@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tooltip-rtl",
+  "registryDependencies": [
+    "https://herocn.dev/r/button.json",
+    "https://herocn.dev/r/tooltip.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/tooltip-rtl.tsx",
+      "content": "\"use client\";\n\nimport {\n\ttype Translations,\n\tuseTranslation,\n} from \"@/components/language-selector\";\nimport { Button } from \"@/components/ui/button\";\nimport {\n\tTooltip,\n\tTooltipContent,\n\tTooltipTrigger,\n} from \"@/components/ui/tooltip\";\n\nconst translations: Translations = {\n\ten: {\n\t\tdir: \"ltr\",\n\t\tvalues: {\n\t\t\tcontent: \"Add to library\",\n\t\t\t\"inline-start\": \"Inline Start\",\n\t\t\tleft: \"Left\",\n\t\t\ttop: \"Top\",\n\t\t\tbottom: \"Bottom\",\n\t\t\tright: \"Right\",\n\t\t\t\"inline-end\": \"Inline End\",\n\t\t},\n\t},\n\tar: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\tcontent: \"إضافة إلى المكتبة\",\n\t\t\t\"inline-start\": \"بداية السطر\",\n\t\t\tleft: \"يسار\",\n\t\t\ttop: \"أعلى\",\n\t\t\tbottom: \"أسفل\",\n\t\t\tright: \"يمين\",\n\t\t\t\"inline-end\": \"نهاية السطر\",\n\t\t},\n\t},\n\the: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\tcontent: \"הוסף לספרייה\",\n\t\t\t\"inline-start\": \"תחילת השורה\",\n\t\t\tleft: \"שמאל\",\n\t\t\ttop: \"למעלה\",\n\t\t\tbottom: \"למטה\",\n\t\t\tright: \"ימין\",\n\t\t\t\"inline-end\": \"סוף השורה\",\n\t\t},\n\t},\n};\n\nconst physicalSides = [\"left\", \"top\", \"bottom\", \"right\"] as const;\nconst logicalSides = [\"inline-start\", \"inline-end\"] as const;\n\nexport default function TooltipRtl() {\n\tconst { dir, language, t } = useTranslation(translations, \"ar\");\n\n\treturn (\n\t\t<div lang={language} dir={dir} className=\"grid gap-4\">\n\t\t\t<div className=\"flex flex-wrap justify-center gap-2\">\n\t\t\t\t{physicalSides.map((side) => (\n\t\t\t\t\t<Tooltip key={side}>\n\t\t\t\t\t\t<TooltipTrigger render={<Button variant=\"outline\" />}>\n\t\t\t\t\t\t\t{t[side]}\n\t\t\t\t\t\t</TooltipTrigger>\n\t\t\t\t\t\t<TooltipContent side={side} dir={dir}>\n\t\t\t\t\t\t\t{t.content}\n\t\t\t\t\t\t</TooltipContent>\n\t\t\t\t\t</Tooltip>\n\t\t\t\t))}\n\t\t\t</div>\n\t\t\t<div className=\"flex flex-wrap justify-center gap-2\">\n\t\t\t\t{logicalSides.map((side) => (\n\t\t\t\t\t<Tooltip key={side}>\n\t\t\t\t\t\t<TooltipTrigger render={<Button variant=\"outline\" />}>\n\t\t\t\t\t\t\t{t[side]}\n\t\t\t\t\t\t</TooltipTrigger>\n\t\t\t\t\t\t<TooltipContent side={side} dir={dir}>\n\t\t\t\t\t\t\t{t.content}\n\t\t\t\t\t\t</TooltipContent>\n\t\t\t\t\t</Tooltip>\n\t\t\t\t))}\n\t\t\t</div>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

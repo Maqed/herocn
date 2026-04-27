@@ -36,6 +36,7 @@
     "https://herocn.dev/r/tabs.json",
     "https://herocn.dev/r/textarea.json",
     "https://herocn.dev/r/toggle-group.json",
-    "https://herocn.dev/r/toggle.json"
+    "https://herocn.dev/r/toggle.json",
+    "https://herocn.dev/r/tooltip.json"
   ]
 }

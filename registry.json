@@ -568,6 +568,19 @@
       ]
     },
     {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/tooltip.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "dropdown-menu",
       "type": "registry:ui",
       "dependencies": [
@@ -2832,6 +2845,90 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/popover-rtl.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "tooltip-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/tooltip.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/tooltip-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "tooltip-sides",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/tooltip.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/tooltip-sides.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "tooltip-arrow",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/tooltip.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/tooltip-arrow.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "tooltip-keyboard",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/tooltip.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/tooltip-keyboard.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "tooltip-disabled",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/tooltip.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/tooltip-disabled.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "tooltip-rtl",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/tooltip.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/tooltip-rtl.tsx",
           "type": "registry:example"
         }
       ]

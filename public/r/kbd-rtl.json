@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "kbd-rtl",
+  "registryDependencies": [
+    "https://herocn.dev/r/kbd.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/kbd-rtl.tsx",
+      "content": "\"use client\";\n\nimport {\n\ttype Translations,\n\tuseTranslation,\n} from \"@/components/language-selector\";\nimport { Kbd, KbdGroup } from \"@/components/ui/kbd\";\n\nconst translations: Translations = {\n\ten: {\n\t\tdir: \"ltr\",\n\t\tvalues: {\n\t\t\thint: \"Common shortcuts\",\n\t\t},\n\t},\n\tar: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\thint: \"اختصارات شائعة\",\n\t\t},\n\t},\n\the: {\n\t\tdir: \"rtl\",\n\t\tvalues: {\n\t\t\thint: \"קיצורי דרך נפוצים\",\n\t\t},\n\t},\n};\n\nexport function KbdRtl() {\n\tconst { dir, language, t } = useTranslation(translations, \"ar\");\n\n\treturn (\n\t\t<div className=\"flex flex-col items-center gap-4\" lang={language} dir={dir}>\n\t\t\t<p className=\"text-muted-foreground text-sm\">{t.hint}</p>\n\t\t\t<KbdGroup>\n\t\t\t\t<Kbd>⌘</Kbd>\n\t\t\t\t<Kbd>⇧</Kbd>\n\t\t\t\t<Kbd>⌥</Kbd>\n\t\t\t\t<Kbd>⌃</Kbd>\n\t\t\t</KbdGroup>\n\t\t\t<KbdGroup>\n\t\t\t\t<Kbd>Ctrl</Kbd>\n\t\t\t\t<span className=\"text-muted-foreground text-sm\">+</span>\n\t\t\t\t<Kbd>B</Kbd>\n\t\t\t</KbdGroup>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

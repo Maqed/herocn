@@ -1916,6 +1916,94 @@ export const examples: Registry["items"] = [
 		],
 	},
 	{
+		name: "kbd-demo",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("kbd")],
+		files: [
+			{
+				path: "examples/kbd-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "kbd-variants",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("kbd")],
+		files: [
+			{
+				path: "examples/kbd-variants.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "kbd-group",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("kbd")],
+		files: [
+			{
+				path: "examples/kbd-group.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "kbd-button",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("kbd"),
+		],
+		files: [
+			{
+				path: "examples/kbd-button.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "kbd-tooltip",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("button-group"),
+			getRegistryItemInstallationAlias("tooltip"),
+			getRegistryItemInstallationAlias("kbd"),
+		],
+		files: [
+			{
+				path: "examples/kbd-tooltip.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "kbd-input-group",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("input-group"),
+			getRegistryItemInstallationAlias("kbd"),
+		],
+		files: [
+			{
+				path: "examples/kbd-input-group.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "kbd-rtl",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("kbd")],
+		files: [
+			{
+				path: "examples/kbd-rtl.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
 		name: "toggle-demo",
 		type: "registry:example",
 		registryDependencies: [getRegistryItemInstallationAlias("toggle")],

@@ -340,6 +340,27 @@ export const ui: Registry["items"] = [
 		},
 	},
 	{
+		name: "kbd",
+		type: "registry:ui",
+		files: [
+			{
+				path: "ui/kbd.tsx",
+				type: "registry:ui",
+			},
+		],
+		cssVars: {
+			light: {
+				"--default": cssVars.light["--default"],
+			},
+			dark: {
+				"--default": cssVars.dark["--default"],
+			},
+			theme: {
+				"--color-default": cssVars.theme["--color-default"],
+			},
+		},
+	},
+	{
 		name: "label",
 		type: "registry:ui",
 		files: [

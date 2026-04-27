@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "kbd-variants",
+  "registryDependencies": [
+    "https://herocn.dev/r/kbd.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/kbd-variants.tsx",
+      "content": "import { Kbd } from \"@/components/ui/kbd\";\n\nexport default function KbdVariants() {\n\treturn (\n\t\t<div className=\"flex flex-wrap items-center gap-4\">\n\t\t\t<Kbd variant=\"default\">Ctrl + B</Kbd>\n\t\t\t<Kbd variant=\"light\">Ctrl + B</Kbd>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

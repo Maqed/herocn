@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "kbd-input-group",
+  "registryDependencies": [
+    "https://herocn.dev/r/input-group.json",
+    "https://herocn.dev/r/kbd.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/kbd-input-group.tsx",
+      "content": "import { SearchIcon } from \"lucide-react\";\n\nimport {\n\tInputGroup,\n\tInputGroupAddon,\n\tInputGroupInput,\n} from \"@/components/ui/input-group\";\nimport { Kbd } from \"@/components/ui/kbd\";\n\nexport default function KbdInputGroup() {\n\treturn (\n\t\t<div className=\"flex w-full max-w-xs flex-col gap-6\">\n\t\t\t<InputGroup>\n\t\t\t\t<InputGroupInput placeholder=\"Search...\" />\n\t\t\t\t<InputGroupAddon>\n\t\t\t\t\t<SearchIcon />\n\t\t\t\t</InputGroupAddon>\n\t\t\t\t<InputGroupAddon align=\"inline-end\">\n\t\t\t\t\t<Kbd>⌘</Kbd>\n\t\t\t\t\t<Kbd>K</Kbd>\n\t\t\t\t</InputGroupAddon>\n\t\t\t</InputGroup>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

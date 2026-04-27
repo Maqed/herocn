@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "kbd-demo",
+  "registryDependencies": [
+    "https://herocn.dev/r/kbd.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/kbd-demo.tsx",
+      "content": "import { Kbd, KbdGroup } from \"@/components/ui/kbd\";\n\nexport default function KbdDemo() {\n\treturn (\n\t\t<div className=\"flex flex-col items-center gap-4\">\n\t\t\t<KbdGroup>\n\t\t\t\t<Kbd>⌘</Kbd>\n\t\t\t\t<Kbd>⇧</Kbd>\n\t\t\t\t<Kbd>⌥</Kbd>\n\t\t\t\t<Kbd>⌃</Kbd>\n\t\t\t</KbdGroup>\n\t\t\t<KbdGroup>\n\t\t\t\t<Kbd>Ctrl</Kbd>\n\t\t\t\t<span className=\"text-muted-foreground text-sm\">+</span>\n\t\t\t\t<Kbd>B</Kbd>\n\t\t\t</KbdGroup>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

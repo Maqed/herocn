@@ -245,6 +245,21 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "kbd": {
+    name: "kbd",
+    type: "registry:ui",
+    registryDependencies: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/ui/kbd.tsx",
+      type: "registry:ui",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/kbd.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "label": {
     name: "label",
     type: "registry:ui",
@@ -2641,6 +2656,111 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-in-surface.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "kbd-demo": {
+    name: "kbd-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/kbd.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/kbd-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/kbd-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "kbd-variants": {
+    name: "kbd-variants",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/kbd.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/kbd-variants.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/kbd-variants.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "kbd-group": {
+    name: "kbd-group",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/kbd.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/kbd-group.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/kbd-group.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "kbd-button": {
+    name: "kbd-button",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/kbd.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/kbd-button.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/kbd-button.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "kbd-tooltip": {
+    name: "kbd-tooltip",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/tooltip.json","https://herocn.dev/r/kbd.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/kbd-tooltip.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/kbd-tooltip.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "kbd-input-group": {
+    name: "kbd-input-group",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/input-group.json","https://herocn.dev/r/kbd.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/kbd-input-group.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/kbd-input-group.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "kbd-rtl": {
+    name: "kbd-rtl",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/kbd.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/kbd-rtl.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/kbd-rtl.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

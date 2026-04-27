@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "kbd",
+  "files": [
+    {
+      "path": "components/ui/kbd.tsx",
+      "content": "import { cn } from \"@/lib/utils\";\n\nfunction Kbd({\n\tclassName,\n\tvariant = \"default\",\n\t...props\n}: React.ComponentProps<\"kbd\"> & { variant?: \"default\" | \"light\" }) {\n\treturn (\n\t\t<kbd\n\t\t\tdata-slot=\"kbd\"\n\t\t\tdata-variant={variant}\n\t\t\tclassName={cn(\n\t\t\t\t\"pointer-events-none inline-flex h-6 w-fit min-w-5.5 select-none items-center justify-center gap-1 space-x-0.5 whitespace-nowrap rounded-lg bg-default in-data-[slot=input-group]:bg-input px-2 text-center font-medium font-sans text-muted-foreground text-xs data-[variant=light]:bg-transparent [&_svg:not([class*='size-'])]:size-3\",\n\t\t\t\tclassName,\n\t\t\t)}\n\t\t\t{...props}\n\t\t/>\n\t);\n}\n\nfunction KbdGroup({ className, ...props }: React.ComponentProps<\"div\">) {\n\treturn (\n\t\t<kbd\n\t\t\tdata-slot=\"kbd-group\"\n\t\t\tclassName={cn(\"inline-flex items-center gap-1\", className)}\n\t\t\t{...props}\n\t\t/>\n\t);\n}\n\nexport { Kbd, KbdGroup };\n",
+      "type": "registry:ui"
+    }
+  ],
+  "cssVars": {
+    "theme": {
+      "--color-default": "var(--default)"
+    },
+    "light": {
+      "--default": "oklch(94% 0.001 286.375)"
+    },
+    "dark": {
+      "--default": "oklch(27.4% 0.006 286.033)"
+    }
+  },
+  "type": "registry:ui"
+}

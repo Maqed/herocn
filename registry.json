@@ -757,6 +757,27 @@
       }
     },
     {
+      "name": "kbd",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/kbd.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "--default": "oklch(94% 0.001 286.375)"
+        },
+        "dark": {
+          "--default": "oklch(27.4% 0.006 286.033)"
+        },
+        "theme": {
+          "--color-default": "var(--default)"
+        }
+      }
+    },
+    {
       "name": "label",
       "type": "registry:ui",
       "files": [
@@ -3148,6 +3169,102 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/input-group-in-surface.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "kbd-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/kbd.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/kbd-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "kbd-variants",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/kbd.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/kbd-variants.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "kbd-group",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/kbd.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/kbd-group.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "kbd-button",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/kbd.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/kbd-button.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "kbd-tooltip",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/button-group.json",
+        "https://herocn.dev/r/tooltip.json",
+        "https://herocn.dev/r/kbd.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/kbd-tooltip.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "kbd-input-group",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/input-group.json",
+        "https://herocn.dev/r/kbd.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/kbd-input-group.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "kbd-rtl",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/kbd.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/kbd-rtl.tsx",
           "type": "registry:example"
         }
       ]

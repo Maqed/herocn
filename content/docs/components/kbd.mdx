@@ -1,0 +1,150 @@
+---
+title: Kbd
+description: Used to display textual user input from the keyboard.
+---
+
+<ComponentPreview name="kbd-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+<CodeBlockCommand command="npx shadcn@latest add https://herocn.dev/r/kbd.json" />
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+<CodeBlockCommand command="npm install @base-ui/react" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="kbd" title="components/ui/kbd.tsx" />
+
+<Step>Add the following css colors & utilities</Step>
+
+<RenderCSSShared
+  light={[
+    "--default",
+  ]}
+  dark={[
+    "--default",
+  ]}
+  theme={[
+    "--color-default",
+  ]}
+/>
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { Kbd, KbdGroup } from "@/components/ui/kbd"
+```
+
+```tsx
+<Kbd>Ctrl</Kbd>
+```
+
+## Composition
+
+Use the following composition to build `Kbd` and `KbdGroup`:
+
+```text
+Kbd
+KbdGroup
+├── Kbd
+└── Kbd
+```
+
+## Examples
+
+### Variants
+
+Use the `variant` prop on `Kbd` for the default filled style or a lighter appearance (`variant="light"`).
+
+<ComponentPreview name="kbd-variants" />
+
+### Group
+
+Use `KbdGroup` to group multiple keys with consistent spacing.
+
+<ComponentPreview name="kbd-group" />
+
+### Button
+
+Put `Kbd` inside `Button` to show an accelerator hint next to the label. Use `data-icon="inline-end"` so spacing respects RTL.
+
+<ComponentPreview name="kbd-button" />
+
+### Tooltip
+
+Use `Kbd` inside `TooltipContent` to show shortcuts in hover hints.
+
+<ComponentPreview name="kbd-tooltip" />
+
+### Input group
+
+Show shortcuts inside `InputGroupAddon`, for example on the trailing edge of a search field.
+
+<ComponentPreview name="kbd-input-group" />
+
+## RTL
+
+To enable RTL support in shadcn/ui, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview name="kbd-rtl" direction="rtl" />
+
+## API Reference
+
+### Kbd
+
+Displays a keyboard key or shortcut fragment.
+
+<ApiRefTable
+  props={[
+    {
+      name: "variant",
+      type: '"default" | "light"',
+      defaultValue: '"default"',
+      description:
+        '`light` uses a transparent background for a softer look alongside body text.',
+    },
+    {
+      name: "className",
+      type: "string",
+      description: "Passed to the underlying `kbd` element.",
+    },
+  ]}
+/>
+
+### KbdGroup
+
+Groups multiple `Kbd` nodes with inline layout and gap spacing.
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+      description: "Passed to the wrapper element.",
+    },
+  ]}
+/>

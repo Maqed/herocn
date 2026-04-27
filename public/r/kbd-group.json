@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "kbd-group",
+  "registryDependencies": [
+    "https://herocn.dev/r/kbd.json"
+  ],
+  "files": [
+    {
+      "path": "components/examples/kbd-group.tsx",
+      "content": "import { Kbd, KbdGroup } from \"@/registry/new-york-v4//ui/kbd\";\n\nexport function KbdGroupExample() {\n\treturn (\n\t\t<div className=\"flex flex-col items-center gap-4\">\n\t\t\t<p className=\"text-muted-foreground\">\n\t\t\t\tUse{\" \"}\n\t\t\t\t<KbdGroup>\n\t\t\t\t\t<Kbd>Ctrl + B</Kbd>\n\t\t\t\t\t<Kbd>Ctrl + K</Kbd>\n\t\t\t\t</KbdGroup>{\" \"}\n\t\t\t\tto open the command palette\n\t\t\t</p>\n\t\t</div>\n\t);\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}

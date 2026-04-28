@@ -61,7 +61,7 @@ export default function TooltipRtl() {
 			<div className="flex flex-wrap justify-center gap-2">
 				{physicalSides.map((side) => (
 					<Tooltip key={side}>
-						<TooltipTrigger render={<Button variant="outline" />}>
+						<TooltipTrigger render={<Button variant="tertiary" />}>
 							{t[side]}
 						</TooltipTrigger>
 						<TooltipContent side={side} dir={dir}>
@@ -73,7 +73,7 @@ export default function TooltipRtl() {
 			<div className="flex flex-wrap justify-center gap-2">
 				{logicalSides.map((side) => (
 					<Tooltip key={side}>
-						<TooltipTrigger render={<Button variant="outline" />}>
+						<TooltipTrigger render={<Button variant="tertiary" />}>
 							{t[side]}
 						</TooltipTrigger>
 						<TooltipContent side={side} dir={dir}>

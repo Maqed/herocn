@@ -10,7 +10,7 @@ import {
 export default function TooltipDemo() {
 	return (
 		<Tooltip>
-			<TooltipTrigger render={<Button variant="outline" />}>
+			<TooltipTrigger render={<Button variant="tertiary" />}>
 				Hover
 			</TooltipTrigger>
 			<TooltipContent>

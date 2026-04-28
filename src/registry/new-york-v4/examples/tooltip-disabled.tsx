@@ -11,7 +11,7 @@ export default function TooltipDisabled() {
 	return (
 		<Tooltip>
 			<TooltipTrigger render={<span className="inline-block w-fit" />}>
-				<Button variant="outline" disabled>
+				<Button variant="tertiary" disabled>
 					Disabled
 				</Button>
 			</TooltipTrigger>

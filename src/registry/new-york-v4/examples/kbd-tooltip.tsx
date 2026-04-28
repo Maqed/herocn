@@ -15,7 +15,7 @@ export default function KbdTooltip() {
 			<ButtonGroup>
 				<Tooltip>
 					<TooltipTrigger
-						render={<Button variant="outline" className="w-fit" />}
+						render={<Button variant="tertiary" className="w-fit" />}
 					>
 						Save
 					</TooltipTrigger>
@@ -25,7 +25,7 @@ export default function KbdTooltip() {
 				</Tooltip>
 				<Tooltip>
 					<TooltipTrigger
-						render={<Button variant="outline" className="w-fit" />}
+						render={<Button variant="tertiary" className="w-fit" />}
 					>
 						Print
 					</TooltipTrigger>

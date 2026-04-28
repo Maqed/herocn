@@ -13,7 +13,7 @@ import {
 export default function TooltipKeyboard() {
 	return (
 		<Tooltip>
-			<TooltipTrigger render={<Button variant="outline" size="icon-sm" />}>
+			<TooltipTrigger render={<Button variant="tertiary" size="icon-sm" />}>
 				<SaveIcon />
 			</TooltipTrigger>
 			<TooltipContent>

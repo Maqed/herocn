@@ -20,6 +20,21 @@ export const Index: Record<string, any> = {
     files: [],
     component: null,
   },
+  "alert-dialog": {
+    name: "alert-dialog",
+    type: "registry:ui",
+    registryDependencies: ["https://herocn.dev/r/button.json"],
+    files: [{
+      path: "src/registry/new-york-v4/ui/alert-dialog.tsx",
+      type: "registry:ui",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/alert-dialog.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "avatar": {
     name: "avatar",
     type: "registry:ui",
@@ -3316,6 +3331,126 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/slider-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "alert-dialog-demo": {
+    name: "alert-dialog-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/alert-dialog-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/alert-dialog-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "alert-dialog-basic": {
+    name: "alert-dialog-basic",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/alert-dialog-basic.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/alert-dialog-basic.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "alert-dialog-variants": {
+    name: "alert-dialog-variants",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/alert-dialog.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/alert-dialog-variants.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/alert-dialog-variants.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "alert-dialog-small": {
+    name: "alert-dialog-small",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/alert-dialog-small.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/alert-dialog-small.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "alert-dialog-with-media": {
+    name: "alert-dialog-with-media",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/alert-dialog-with-media.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/alert-dialog-with-media.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "alert-dialog-small-with-media": {
+    name: "alert-dialog-small-with-media",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/alert-dialog-small-with-media.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/alert-dialog-small-with-media.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "alert-dialog-destructive": {
+    name: "alert-dialog-destructive",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/alert-dialog-destructive.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/alert-dialog-destructive.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "alert-dialog-rtl": {
+    name: "alert-dialog-rtl",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/alert-dialog-rtl.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/alert-dialog-rtl.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

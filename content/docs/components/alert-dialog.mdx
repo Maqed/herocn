@@ -1,0 +1,167 @@
+---
+title: Alert Dialog
+description: A modal dialog that interrupts the user with important content and expects a response.
+featured: true
+base: base
+component: true
+links:
+  doc: https://base-ui.com/react/components/alert-dialog
+  api: https://base-ui.com/react/components/alert-dialog#api-reference
+---
+
+<ComponentPreview name="alert-dialog-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+<CodeBlockCommand command="npx shadcn@latest add https://herocn.dev/r/alert-dialog.json" />
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+<CodeBlockCommand command="npm install @base-ui/react" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="alert-dialog" title="components/ui/alert-dialog.tsx" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
+```
+
+```tsx
+<AlertDialog>
+  <AlertDialogTrigger render={<Button variant="outline" />}>
+    Show Dialog
+  </AlertDialogTrigger>
+  <AlertDialogContent>
+    <AlertDialogHeader>
+      <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+      <AlertDialogDescription>
+        This action cannot be undone. This will permanently delete your account
+        from our servers.
+      </AlertDialogDescription>
+    </AlertDialogHeader>
+    <AlertDialogFooter>
+      <AlertDialogCancel>Cancel</AlertDialogCancel>
+      <AlertDialogAction>Continue</AlertDialogAction>
+    </AlertDialogFooter>
+  </AlertDialogContent>
+</AlertDialog>
+```
+
+## Composition
+
+Use the following composition to build an `AlertDialog`:
+
+```text
+AlertDialog
+├── AlertDialogTrigger
+└── AlertDialogContent
+    ├── AlertDialogHeader
+    │   ├── AlertDialogMedia
+    │   ├── AlertDialogTitle
+    │   └── AlertDialogDescription
+    └── AlertDialogFooter
+        ├── AlertDialogCancel
+        └── AlertDialogAction
+```
+
+## Examples
+
+### Basic
+
+A basic alert dialog with a title, description, and cancel and continue buttons.
+
+<ComponentPreview name="alert-dialog-basic" />
+
+### Overlay variant
+
+Use `overlayVariant` on `AlertDialogContent` to choose an opaque dim (`opaque`), a blurred backdrop (`blur`), or transparent overlay (`transparent`).
+
+<ComponentPreview name="alert-dialog-variants" />
+
+### Small
+
+Use the `size="sm"` prop to make the alert dialog smaller.
+
+<ComponentPreview name="alert-dialog-small" />
+
+### Media
+
+Use the `AlertDialogMedia` component to add a media element such as an icon or image to the alert dialog.
+
+<ComponentPreview name="alert-dialog-with-media" />
+
+### Small with Media
+
+Use the `size="sm"` prop to make the alert dialog smaller and the `AlertDialogMedia` component to add a media element such as an icon or image to the alert dialog.
+
+<ComponentPreview name="alert-dialog-small-with-media" />
+
+### Destructive
+
+Use the `AlertDialogAction` component to add a destructive action button to the alert dialog.
+
+<ComponentPreview name="alert-dialog-destructive" />
+
+## RTL
+
+To enable RTL support in shadcn/ui, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview name="alert-dialog-rtl" direction="rtl" />
+
+## API Reference
+
+### AlertDialogContent
+
+<ApiRefTable
+  props={[
+    {
+      name: "size",
+      type: '"default" | "sm"',
+      defaultValue: '"default"',
+    },
+    {
+      name: "overlayVariant",
+      type: '"opaque" | "blur" | "transparent"',
+      defaultValue: '"opaque"',
+      description:
+        "Controls the backdrop style rendered by AlertDialogOverlay.",
+    },
+  ]}
+/>
+
+For more information about other components and their props, see the [Base UI documentation](https://base-ui.com/react/components/alert-dialog#api-reference).

@@ -2461,6 +2461,118 @@ export const examples: Registry["items"] = [
 		],
 	},
 	{
+		name: "alert-dialog-demo",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("alert-dialog"),
+			getRegistryItemInstallationAlias("button"),
+		],
+		files: [
+			{
+				path: "examples/alert-dialog-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "alert-dialog-basic",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("alert-dialog"),
+			getRegistryItemInstallationAlias("button"),
+		],
+		files: [
+			{
+				path: "examples/alert-dialog-basic.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "alert-dialog-variants",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("alert-dialog"),
+		],
+		files: [
+			{
+				path: "examples/alert-dialog-variants.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "alert-dialog-small",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("alert-dialog"),
+			getRegistryItemInstallationAlias("button"),
+		],
+		files: [
+			{
+				path: "examples/alert-dialog-small.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "alert-dialog-with-media",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("alert-dialog"),
+			getRegistryItemInstallationAlias("button"),
+		],
+		files: [
+			{
+				path: "examples/alert-dialog-with-media.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "alert-dialog-small-with-media",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("alert-dialog"),
+			getRegistryItemInstallationAlias("button"),
+		],
+		files: [
+			{
+				path: "examples/alert-dialog-small-with-media.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "alert-dialog-destructive",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("alert-dialog"),
+			getRegistryItemInstallationAlias("button"),
+		],
+		files: [
+			{
+				path: "examples/alert-dialog-destructive.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "alert-dialog-rtl",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("alert-dialog"),
+			getRegistryItemInstallationAlias("button"),
+		],
+		files: [
+			{
+				path: "examples/alert-dialog-rtl.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
 		name: "dialog-demo",
 		type: "registry:example",
 		registryDependencies: [

@@ -383,6 +383,32 @@
       "files": []
     },
     {
+      "name": "alert",
+      "type": "registry:ui",
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/alert.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "--success": "oklch(0.7329 0.1935 150.81)",
+          "--warning": "oklch(0.7819 0.1585 72.33)"
+        },
+        "dark": {
+          "--warning": "oklch(0.8203 0.1388 76.34)"
+        },
+        "theme": {
+          "--color-success": "var(--success)",
+          "--color-warning": "var(--warning)"
+        }
+      }
+    },
+    {
       "name": "alert-dialog",
       "type": "registry:ui",
       "dependencies": [
@@ -3780,6 +3806,72 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/slider-rtl.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "alert-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/alert.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/alert-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "alert-variants",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/alert.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/alert-variants.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "alert-action",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/alert.json",
+        "https://herocn.dev/r/button.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/alert-action.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "alert-colors",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/alert.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/alert-colors.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "alert-rtl",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/alert.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/alert-rtl.tsx",
           "type": "registry:example"
         }
       ]

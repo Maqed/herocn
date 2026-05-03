@@ -4,6 +4,30 @@ import { css, cssVars } from "./shared";
 
 export const ui: Registry["items"] = [
 	{
+		name: "alert",
+		type: "registry:ui",
+		dependencies: ["class-variance-authority"],
+		files: [
+			{
+				path: "ui/alert.tsx",
+				type: "registry:ui",
+			},
+		],
+		cssVars: {
+			light: {
+				"--success": cssVars.light["--success"],
+				"--warning": cssVars.light["--warning"],
+			},
+			dark: {
+				"--warning": cssVars.dark["--warning"],
+			},
+			theme: {
+				"--color-success": cssVars.theme["--color-success"],
+				"--color-warning": cssVars.theme["--color-warning"],
+			},
+		},
+	},
+	{
 		name: "alert-dialog",
 		type: "registry:ui",
 		dependencies: ["@base-ui/react"],

@@ -1,0 +1,171 @@
+---
+title: Alert
+description: Displays a callout for user attention.
+base: base
+component: true
+---
+
+<ComponentPreview name="alert-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+<CodeBlockCommand command="npx shadcn@latest add https://herocn.dev/r/alert.json" />
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+<CodeBlockCommand command="npm install @base-ui/react" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="alert" title="components/ui/alert.tsx" />
+
+<Step>Add the following css colors & utilities</Step>
+
+<RenderCSSShared
+  light={["--success", "--warning"]}
+  dark={["--warning"]}
+  theme={["--color-success", "--color-warning"]}
+/>
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import {
+  Alert,
+  AlertAction,
+  AlertDescription,
+  AlertTitle,
+} from "@/components/ui/alert"
+```
+
+```tsx
+<Alert>
+  <InfoIcon />
+  <AlertTitle>Heads up!</AlertTitle>
+  <AlertDescription>
+    You can add components and dependencies to your app using the cli.
+  </AlertDescription>
+  <AlertAction>
+    <Button variant="outline">Enable</Button>
+  </AlertAction>
+</Alert>
+```
+
+## Composition
+
+Use the following composition to build an `Alert`:
+
+```text
+Alert
+├── Icon
+├── AlertTitle
+├── AlertDescription
+└── AlertAction
+```
+
+## Examples
+
+### Variant
+
+Use the `variant` prop to render semantic alert styles.
+
+<ComponentPreview name="alert-variants" />
+
+### Action
+
+Use `AlertAction` to attach a contextual action.
+
+<ComponentPreview name="alert-action" />
+
+### Custom Colors
+
+You can customize colors with utility classes such as `bg-amber-50 dark:bg-amber-950`.
+
+<ComponentPreview name="alert-colors" />
+
+## RTL
+
+To enable RTL support in shadcn/ui, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview name="alert-rtl" direction="rtl" />
+
+## API Reference
+
+### Alert
+
+The `Alert` component displays a callout for user attention.
+
+<ApiRefTable
+  props={[
+    {
+      name: "variant",
+      type: '"default" | "primary" | "success" | "warning" | "destructive"',
+      defaultValue: '"default"',
+      description: "Controls the semantic color treatment of the alert title.",
+    },
+  ]}
+/>
+
+### AlertTitle
+
+`AlertTitle` renders the headline content of the alert.
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+      description: "Additional classes for the title wrapper.",
+    },
+  ]}
+/>
+
+### AlertDescription
+
+`AlertDescription` renders supporting copy under the title.
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+      description: "Additional classes for the description wrapper.",
+    },
+  ]}
+/>
+
+### AlertAction
+
+`AlertAction` positions an action element in the top end corner of the alert.
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+      description: "Additional classes for the action wrapper.",
+    },
+  ]}
+/>

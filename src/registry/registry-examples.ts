@@ -2461,6 +2461,64 @@ export const examples: Registry["items"] = [
 		],
 	},
 	{
+		name: "alert-demo",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("alert")],
+		files: [
+			{
+				path: "examples/alert-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "alert-variants",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("alert")],
+		files: [
+			{
+				path: "examples/alert-variants.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "alert-action",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("alert"),
+			getRegistryItemInstallationAlias("button"),
+		],
+		files: [
+			{
+				path: "examples/alert-action.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "alert-colors",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("alert")],
+		files: [
+			{
+				path: "examples/alert-colors.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "alert-rtl",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("alert")],
+		files: [
+			{
+				path: "examples/alert-rtl.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
 		name: "alert-dialog-demo",
 		type: "registry:example",
 		registryDependencies: [

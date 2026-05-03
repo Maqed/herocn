@@ -20,6 +20,21 @@ export const Index: Record<string, any> = {
     files: [],
     component: null,
   },
+  "alert": {
+    name: "alert",
+    type: "registry:ui",
+    registryDependencies: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/ui/alert.tsx",
+      type: "registry:ui",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/alert.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "alert-dialog": {
     name: "alert-dialog",
     type: "registry:ui",
@@ -3331,6 +3346,81 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/slider-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "alert-demo": {
+    name: "alert-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/alert.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/alert-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/alert-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "alert-variants": {
+    name: "alert-variants",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/alert.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/alert-variants.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/alert-variants.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "alert-action": {
+    name: "alert-action",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/alert.json","https://herocn.dev/r/button.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/alert-action.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/alert-action.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "alert-colors": {
+    name: "alert-colors",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/alert.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/alert-colors.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/alert-colors.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "alert-rtl": {
+    name: "alert-rtl",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/alert.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/alert-rtl.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/alert-rtl.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

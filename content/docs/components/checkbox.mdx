@@ -31,9 +31,24 @@ description: A control that allows the user to toggle between checked and not ch
 
 <ComponentSource name="checkbox" title="components/ui/checkbox.tsx" />
 
-<Step>Add the following css utilities</Step>
+<Step>Add the following css colors & utilities</Step>
 
 <RenderCSSShared
+  light={[
+    "--default",
+    "--destructive",
+    "--destructive-foreground",
+  ]}
+  dark={[
+    "--default",
+    "--destructive",
+    "--destructive-foreground",
+  ]}
+  theme={[
+    "--color-default",
+    "--color-destructive",
+    "--color-destructive-foreground",
+  ]}
   css={["@utility focus-ring", "@utility invalid-field-ring", "@utility invalid-field-ring-focus"]}
 />
 

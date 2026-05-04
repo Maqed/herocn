@@ -598,20 +598,17 @@
         "light": {
           "--default": "oklch(94% 0.001 286.375)",
           "--destructive": "oklch(0.6532 0.2328 25.74)",
-          "--destructive-foreground": "var(--snow)",
-          "--input": "white"
+          "--destructive-foreground": "var(--snow)"
         },
         "dark": {
           "--default": "oklch(27.4% 0.006 286.033)",
           "--destructive": "oklch(0.594 0.1967 24.63)",
-          "--destructive-foreground": "var(--snow)",
-          "--input": "oklch(0.2103 0.0059 285.89)"
+          "--destructive-foreground": "var(--snow)"
         },
         "theme": {
           "--color-default": "var(--default)",
           "--color-destructive": "var(--destructive)",
-          "--color-destructive-foreground": "var(--destructive-foreground)",
-          "--color-input": "var(--input)"
+          "--color-destructive-foreground": "var(--destructive-foreground)"
         }
       },
       "css": {
@@ -620,6 +617,9 @@
         },
         "@utility invalid-field-ring": {
           "@apply outline-1 outline-destructive outline-solid": {}
+        },
+        "@utility invalid-field-ring-focus": {
+          "@apply ring-2 outline-none ring-destructive ring-offset-0": {}
         }
       }
     },
@@ -1882,6 +1882,105 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/field-radio.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "radio-group-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/label.json",
+        "https://herocn.dev/r/radio-group.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/radio-group-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "radio-group-variants",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/field.json",
+        "https://herocn.dev/r/radio-group.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/radio-group-variants.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "radio-group-description",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/field.json",
+        "https://herocn.dev/r/radio-group.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/radio-group-description.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "radio-group-disabled",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/field.json",
+        "https://herocn.dev/r/radio-group.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/radio-group-disabled.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "radio-group-invalid",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/field.json",
+        "https://herocn.dev/r/radio-group.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/radio-group-invalid.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "radio-group-in-surface",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/field.json",
+        "https://herocn.dev/r/radio-group.json",
+        "https://herocn.dev/r/surface.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/radio-group-in-surface.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "radio-group-rtl",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/field.json",
+        "https://herocn.dev/r/radio-group.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/radio-group-rtl.tsx",
           "type": "registry:example"
         }
       ]

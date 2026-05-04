@@ -1,4 +1,3 @@
-import { exec } from "node:child_process";
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import { rimraf } from "rimraf";
@@ -87,19 +86,6 @@ async function buildRegistryJsonFile() {
 	await fs.writeFile(
 		path.join(process.cwd(), "registry.json"),
 		JSON.stringify(fixedRegistry, null, 2),
-	);
-
-	// 3. Format the registry.json file.
-	await exec("prettier --write registry.json");
-
-	// 3. Copy the registry.json to the www/public/r/styles/new-york-v4 directory.
-	await fs.cp(
-		path.join(process.cwd(), "registry.json"),
-		path.join(
-			process.cwd(),
-			"../docs/public/r/styles/new-york-v4/registry.json",
-		),
-		{ recursive: true },
 	);
 }
 

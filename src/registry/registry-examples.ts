@@ -1625,6 +1625,75 @@ export const examples: Registry["items"] = [
 		],
 	},
 	{
+		name: "progress-demo",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("progress")],
+		files: [
+			{
+				path: "examples/progress-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "progress-label",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("progress")],
+		files: [
+			{
+				path: "examples/progress-label.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "progress-controlled",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("progress"),
+			getRegistryItemInstallationAlias("slider"),
+		],
+		files: [
+			{
+				path: "examples/progress-controlled.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "progress-sizes",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("progress")],
+		files: [
+			{
+				path: "examples/progress-sizes.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "progress-variants",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("progress")],
+		files: [
+			{
+				path: "examples/progress-variants.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "progress-rtl",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("progress")],
+		files: [
+			{
+				path: "examples/progress-rtl.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
 		name: "tooltip-demo",
 		type: "registry:example",
 		registryDependencies: [

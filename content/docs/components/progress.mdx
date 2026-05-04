@@ -1,0 +1,220 @@
+---
+title: Progress
+description: Displays an indicator showing the completion progress of a task, typically as a progress bar.
+---
+
+<ComponentPreview name="progress-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+<CodeBlockCommand command="npx shadcn@latest add https://herocn.dev/r/progress.json" />
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+<CodeBlockCommand command="npm install @base-ui/react" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="progress" title="components/ui/progress.tsx" />
+
+<Step>Add the following css colors & utilities</Step>
+
+<RenderCSSShared
+  light={[
+    "--eclipse",
+    "--snow",
+    "--default",
+    "--default-foreground",
+    "--success",
+    "--warning",
+    "--destructive",
+    "--muted-foreground",
+  ]}
+  dark={[
+    "--default",
+    "--default-foreground",
+    "--warning",
+    "--destructive",
+    "--muted-foreground",
+  ]}
+  theme={[
+    "--color-default",
+    "--color-default-foreground",
+    "--color-success",
+    "--color-warning",
+    "--color-destructive",
+    "--color-muted-foreground",
+  ]}
+/>
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import {
+  Progress,
+  ProgressLabel,
+  ProgressValue,
+} from "@/components/ui/progress"
+```
+
+```tsx
+<Progress value={33} />
+```
+
+## Composition
+
+Use `ProgressLabel` and `ProgressValue` as optional children for a header row; the track and indicator are rendered automatically inside `Progress`.
+
+```text
+Progress
+├── ProgressLabel
+├── ProgressValue
+└── ProgressTrack
+    └── ProgressIndicator
+```
+
+## Examples
+
+### Label
+
+Use `ProgressLabel` and `ProgressValue` to show a title and formatted percentage.
+
+<ComponentPreview name="progress-label" />
+
+### Variants
+
+Use the `variant` prop to match semantic status colors (`default` uses the neutral foreground on the track).
+
+<ComponentPreview name="progress-variants" />
+
+### Sizes
+
+Use the `size` prop to change the track height (`sm`, `default`, or `lg`).
+
+<ComponentPreview name="progress-sizes" />
+
+### Controlled
+
+Drive the bar from another control, such as a slider.
+
+<ComponentPreview name="progress-controlled" />
+
+## RTL
+
+To enable RTL support in shadcn/ui, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview name="progress-rtl" direction="rtl" />
+
+## API Reference
+
+### Progress
+
+`Progress` wraps Base UI `Progress.Root` and sets `variant` and `size` on the root for styling the built-in track and indicator.
+
+<ApiRefTable
+  props={[
+    {
+      name: "variant",
+      type: '"default" | "primary" | "success" | "warning" | "destructive"',
+      defaultValue: '"primary"',
+      description: "Semantic color of the filled portion of the bar.",
+    },
+    {
+      name: "size",
+      type: '"sm" | "default" | "lg"',
+      defaultValue: '"default"',
+      description: "Height of the track.",
+    },
+    {
+      name: "value",
+      type: "number | null",
+      description:
+        "Current value between min and max. Use null for an indeterminate bar.",
+    },
+    {
+      name: "min",
+      type: "number",
+      defaultValue: "0",
+      description: "Minimum value (inherited from Base UI Progress root).",
+    },
+    {
+      name: "max",
+      type: "number",
+      defaultValue: "100",
+      description: "Maximum value (inherited from Base UI Progress root).",
+    },
+    {
+      name: "format",
+      type: "Intl.NumberFormatOptions",
+      description: "Options passed to Intl when formatting the displayed value.",
+    },
+    {
+      name: "className",
+      type: "string",
+      description: "Additional classes on the root element.",
+    },
+    {
+      name: "children",
+      type: "React.ReactNode",
+      description: "Typically `ProgressLabel` and/or `ProgressValue`.",
+    },
+  ]}
+/>
+
+### ProgressLabel
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+      description: "Additional classes for the label.",
+    },
+  ]}
+/>
+
+### ProgressValue
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+      description: "Additional classes for the value text.",
+    },
+    {
+      name: "children",
+      type: "(formattedValue: string | null, value: number | null) => React.ReactNode",
+      description:
+        "Optional render function to customize how the numeric value is shown.",
+    },
+  ]}
+/>
+
+### ProgressTrack & ProgressIndicator
+
+These parts are rendered by default. They are exported if you need to build a fully custom layout alongside the same primitives.
+
+For the full root API (locale, `getAriaValueText`, etc.), see the [Base UI Progress documentation](https://base-ui.com/react/components/progress#api-reference).

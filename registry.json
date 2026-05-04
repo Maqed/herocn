@@ -610,6 +610,46 @@
       ]
     },
     {
+      "name": "progress",
+      "type": "registry:ui",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/progress.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "--eclipse": "oklch(0.2103 0.0059 285.89)",
+          "--snow": "oklch(0.9911 0 0)",
+          "--default": "oklch(94% 0.001 286.375)",
+          "--default-foreground": "var(--eclipse)",
+          "--success": "oklch(0.7329 0.1935 150.81)",
+          "--warning": "oklch(0.7819 0.1585 72.33)",
+          "--destructive": "oklch(0.6532 0.2328 25.74)",
+          "--muted-foreground": "oklch(0.552 0.016 285.938)"
+        },
+        "dark": {
+          "--default": "oklch(27.4% 0.006 286.033)",
+          "--default-foreground": "var(--snow)",
+          "--warning": "oklch(0.8203 0.1388 76.34)",
+          "--destructive": "oklch(0.594 0.1967 24.63)",
+          "--muted-foreground": "oklch(0.705 0.015 286.067)"
+        },
+        "theme": {
+          "--color-default": "var(--default)",
+          "--color-default-foreground": "var(--default-foreground)",
+          "--color-success": "var(--success)",
+          "--color-warning": "var(--warning)",
+          "--color-destructive": "var(--destructive)",
+          "--color-muted-foreground": "var(--muted-foreground)"
+        }
+      }
+    },
+    {
       "name": "tooltip",
       "type": "registry:ui",
       "dependencies": [
@@ -2981,6 +3021,85 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/popover-rtl.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "progress-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/progress.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/progress-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "progress-label",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/progress.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/progress-label.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "progress-controlled",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/progress.json",
+        "https://herocn.dev/r/slider.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/progress-controlled.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "progress-sizes",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/progress.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/progress-sizes.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "progress-variants",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/progress.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/progress-variants.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "progress-rtl",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/progress.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/progress-rtl.tsx",
           "type": "registry:example"
         }
       ]

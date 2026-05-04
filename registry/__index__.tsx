@@ -155,6 +155,21 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "progress": {
+    name: "progress",
+    type: "registry:ui",
+    registryDependencies: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/ui/progress.tsx",
+      type: "registry:ui",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/progress.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "tooltip": {
     name: "tooltip",
     type: "registry:ui",
@@ -2401,6 +2416,96 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/popover-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "progress-demo": {
+    name: "progress-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/progress.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/progress-demo.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/progress-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "progress-label": {
+    name: "progress-label",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/progress.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/progress-label.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/progress-label.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "progress-controlled": {
+    name: "progress-controlled",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/progress.json","https://herocn.dev/r/slider.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/progress-controlled.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/progress-controlled.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "progress-sizes": {
+    name: "progress-sizes",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/progress.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/progress-sizes.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/progress-sizes.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "progress-variants": {
+    name: "progress-variants",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/progress.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/progress-variants.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/progress-variants.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "progress-rtl": {
+    name: "progress-rtl",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/progress.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/progress-rtl.tsx",
+      type: "registry:example",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/progress-rtl.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

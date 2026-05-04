@@ -211,6 +211,45 @@ export const ui: Registry["items"] = [
 		],
 	},
 	{
+		name: "progress",
+		type: "registry:ui",
+		dependencies: ["@base-ui/react"],
+		files: [
+			{
+				path: "ui/progress.tsx",
+				type: "registry:ui",
+			},
+		],
+		cssVars: {
+			light: {
+				"--eclipse": cssVars.light["--eclipse"],
+				"--snow": cssVars.light["--snow"],
+				"--default": cssVars.light["--default"],
+				"--default-foreground": cssVars.light["--default-foreground"],
+				"--success": cssVars.light["--success"],
+				"--warning": cssVars.light["--warning"],
+				"--destructive": cssVars.light["--destructive"],
+				"--muted-foreground": cssVars.light["--muted-foreground"],
+			},
+			dark: {
+				"--default": cssVars.dark["--default"],
+				"--default-foreground": cssVars.dark["--default-foreground"],
+				"--warning": cssVars.dark["--warning"],
+				"--destructive": cssVars.dark["--destructive"],
+				"--muted-foreground": cssVars.dark["--muted-foreground"],
+			},
+			theme: {
+				"--color-default": cssVars.theme["--color-default"],
+				"--color-default-foreground":
+					cssVars.theme["--color-default-foreground"],
+				"--color-success": cssVars.theme["--color-success"],
+				"--color-warning": cssVars.theme["--color-warning"],
+				"--color-destructive": cssVars.theme["--color-destructive"],
+				"--color-muted-foreground": cssVars.theme["--color-muted-foreground"],
+			},
+		},
+	},
+	{
 		name: "tooltip",
 		type: "registry:ui",
 		dependencies: ["@base-ui/react"],

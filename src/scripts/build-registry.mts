@@ -36,8 +36,7 @@ export const Index: Record<string, any> = {`;
 				? `"${resolvedFilePath}"`
 				: `{
       path: "${filePath}",
-      type: "${file.type}",
-      target: "${file.target ?? ""}"
+      type: "${file.type}"
     }`;
 		})}],
     component: ${

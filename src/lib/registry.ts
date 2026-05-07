@@ -115,35 +115,6 @@ async function getFileContent(
 	return code;
 }
 
-function getFileTarget(file: RegistryItemFile) {
-	let target = file.target;
-
-	if (!target || target === "") {
-		const fileName = file.path.split("/").pop();
-		if (
-			file.type === "registry:block" ||
-			file.type === "registry:component" ||
-			file.type === "registry:example"
-		) {
-			target = `components/${fileName}`;
-		}
-
-		if (file.type === "registry:ui") {
-			target = `components/ui/${fileName}`;
-		}
-
-		if (file.type === "registry:hook") {
-			target = `hooks/${fileName}`;
-		}
-
-		if (file.type === "registry:lib") {
-			target = `lib/${fileName}`;
-		}
-	}
-
-	return target ?? "";
-}
-
 async function createTempSourceFile(filename: string) {
 	const dir = await fs.mkdtemp(path.join(tmpdir(), "shadcn-"));
 	return path.join(dir, filename);
@@ -162,7 +133,6 @@ function fixFilePaths(files: RegistryItem["files"]) {
 		return {
 			...file,
 			path: path.relative(firstFilePathDir, file.path),
-			target: getFileTarget(file),
 		};
 	});
 }

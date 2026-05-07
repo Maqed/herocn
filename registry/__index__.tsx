@@ -26,8 +26,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/alert.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/alert.tsx")
@@ -41,8 +40,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/alert-dialog.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/alert-dialog.tsx")
@@ -56,8 +54,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/avatar.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/avatar.tsx")
@@ -71,8 +68,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/button.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/button.tsx")
@@ -86,8 +82,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/separator.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/button-group.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/button-group.tsx")
@@ -101,8 +96,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/badge.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/badge.tsx")
@@ -116,8 +110,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/card.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/card.tsx")
@@ -131,8 +124,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/checkbox.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/checkbox.tsx")
@@ -146,8 +138,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/collapsible.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/collapsible.tsx")
@@ -161,8 +152,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/popover.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/popover.tsx")
@@ -176,8 +166,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/progress.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/progress.tsx")
@@ -191,8 +180,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/tooltip.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/tooltip.tsx")
@@ -206,8 +194,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/dropdown-menu.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/dropdown-menu.tsx")
@@ -221,8 +208,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/empty.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/empty.tsx")
@@ -236,8 +222,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/dialog.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/dialog.tsx")
@@ -251,8 +236,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/sheet.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/sheet.tsx")
@@ -266,8 +250,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/label.json","https://herocn.dev/r/separator.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/field.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/field.tsx")
@@ -281,8 +264,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/surface.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/surface.tsx")
@@ -296,8 +278,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/scroll-area.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/scroll-area.tsx")
@@ -311,8 +292,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/sheet.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/sheet.tsx")
@@ -326,8 +306,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/input.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/input.tsx")
@@ -341,8 +320,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/input.json","https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/input-group.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/input-group.tsx")
@@ -356,8 +334,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/separator.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/item.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/item.tsx")
@@ -371,8 +348,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/kbd.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/kbd.tsx")
@@ -386,8 +362,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/label.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/label.tsx")
@@ -401,8 +376,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/select.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/select.tsx")
@@ -416,8 +390,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/separator.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/separator.tsx")
@@ -431,8 +404,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/switch.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/switch.tsx")
@@ -446,8 +418,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/checkbox.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/checkbox.tsx")
@@ -461,8 +432,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/slider.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/slider.tsx")
@@ -476,8 +446,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/sonner.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/sonner.tsx")
@@ -491,8 +460,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/skeleton.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/skeleton.tsx")
@@ -506,8 +474,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/spinner.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/spinner.tsx")
@@ -521,8 +488,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/tabs.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/tabs.tsx")
@@ -536,8 +502,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/toggle.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/toggle.tsx")
@@ -551,8 +516,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/toggle.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/toggle-group.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/toggle-group.tsx")
@@ -566,8 +530,7 @@ export const Index: Record<string, any> = {
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/textarea.tsx",
-      type: "registry:ui",
-      target: ""
+      type: "registry:ui"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/textarea.tsx")
@@ -581,8 +544,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/card-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/card-demo.tsx")
@@ -596,8 +558,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/card.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/card-variants.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/card-variants.tsx")
@@ -611,8 +572,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/card.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/card-small.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/card-small.tsx")
@@ -626,8 +586,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/badge.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/card-image.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/card-image.tsx")
@@ -641,8 +600,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/card-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/card-rtl.tsx")
@@ -656,8 +614,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-demo.tsx")
@@ -671,8 +628,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-variants.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-variants.tsx")
@@ -686,8 +642,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-sizes.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-sizes.tsx")
@@ -701,8 +656,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-icons.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-icons.tsx")
@@ -716,8 +670,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-render.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-render.tsx")
@@ -731,8 +684,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-rtl.tsx")
@@ -746,8 +698,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/skeleton-demo.tsx")
@@ -761,8 +712,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-avatar.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/skeleton-avatar.tsx")
@@ -776,8 +726,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/card.json","https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-card.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/skeleton-card.tsx")
@@ -791,8 +740,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-text.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/skeleton-text.tsx")
@@ -806,8 +754,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-form.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/skeleton-form.tsx")
@@ -821,8 +768,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-table.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/skeleton-table.tsx")
@@ -836,8 +782,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-animation-types.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/skeleton-animation-types.tsx")
@@ -851,8 +796,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-single-shimmer.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/skeleton-single-shimmer.tsx")
@@ -866,8 +810,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/skeleton-rtl.tsx")
@@ -881,8 +824,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/badge.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/badge-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/badge-rtl.tsx")
@@ -896,8 +838,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-rtl.tsx")
@@ -911,8 +852,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/select.json","https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/field-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/field-demo.tsx")
@@ -926,8 +866,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/field-input.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/field-input.tsx")
@@ -941,8 +880,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/field-textarea.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/field-textarea.tsx")
@@ -956,8 +894,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/field-select.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/field-select.tsx")
@@ -971,8 +908,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/slider.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/field-slider.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/field-slider.tsx")
@@ -986,8 +922,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/field-fieldset.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/field-fieldset.tsx")
@@ -1001,8 +936,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/field-checkbox.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/field-checkbox.tsx")
@@ -1016,8 +950,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json","https://herocn.dev/r/label.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/checkbox-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/checkbox-demo.tsx")
@@ -1031,8 +964,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/checkbox-basic.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/checkbox-basic.tsx")
@@ -1046,8 +978,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/checkbox-variants.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/checkbox-variants.tsx")
@@ -1061,8 +992,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/checkbox-description.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/checkbox-description.tsx")
@@ -1076,8 +1006,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/checkbox-disabled.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/checkbox-disabled.tsx")
@@ -1091,8 +1020,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/checkbox-invalid.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/checkbox-invalid.tsx")
@@ -1106,8 +1034,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json","https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/checkbox-in-surface.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/checkbox-in-surface.tsx")
@@ -1121,8 +1048,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json","https://herocn.dev/r/label.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/checkbox-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/checkbox-rtl.tsx")
@@ -1136,8 +1062,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/radio-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/field-radio.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/field-radio.tsx")
@@ -1151,8 +1076,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/label.json","https://herocn.dev/r/radio-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/radio-group-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/radio-group-demo.tsx")
@@ -1166,8 +1090,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/radio-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/radio-group-variants.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/radio-group-variants.tsx")
@@ -1181,8 +1104,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/radio-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/radio-group-description.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/radio-group-description.tsx")
@@ -1196,8 +1118,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/radio-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/radio-group-disabled.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/radio-group-disabled.tsx")
@@ -1211,8 +1132,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/radio-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/radio-group-invalid.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/radio-group-invalid.tsx")
@@ -1226,8 +1146,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/radio-group.json","https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/radio-group-in-surface.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/radio-group-in-surface.tsx")
@@ -1241,8 +1160,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/radio-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/radio-group-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/radio-group-rtl.tsx")
@@ -1256,8 +1174,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/field-switch.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/field-switch.tsx")
@@ -1271,8 +1188,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/radio-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/field-choice-card.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/field-choice-card.tsx")
@@ -1286,8 +1202,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/field-group.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/field-group.tsx")
@@ -1301,8 +1216,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/select.json","https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/field-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/field-rtl.tsx")
@@ -1316,8 +1230,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/textarea-demo.tsx")
@@ -1331,8 +1244,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-variants.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/textarea-variants.tsx")
@@ -1346,8 +1258,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-states.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/textarea-states.tsx")
@@ -1361,8 +1272,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-field.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/textarea-field.tsx")
@@ -1376,8 +1286,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-button.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/textarea-button.tsx")
@@ -1391,8 +1300,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/textarea-rtl.tsx")
@@ -1406,8 +1314,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/field.json","https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-in-surface.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/textarea-in-surface.tsx")
@@ -1421,8 +1328,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/avatar-rtl.tsx")
@@ -1436,8 +1342,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/collapsible.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/collapsible-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/collapsible-rtl.tsx")
@@ -1451,8 +1356,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-rtl.tsx")
@@ -1466,8 +1370,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/surface-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/surface-rtl.tsx")
@@ -1481,8 +1384,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/collapsible.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/collapsible-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/collapsible-demo.tsx")
@@ -1496,8 +1398,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/collapsible.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/collapsible-basic.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/collapsible-basic.tsx")
@@ -1511,8 +1412,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/collapsible.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/collapsible-settings.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/collapsible-settings.tsx")
@@ -1526,8 +1426,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/collapsible.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/collapsible-file-tree.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/collapsible-file-tree.tsx")
@@ -1541,8 +1440,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-demo.tsx")
@@ -1556,8 +1454,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-basic.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-basic.tsx")
@@ -1571,8 +1468,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-submenu.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-submenu.tsx")
@@ -1586,8 +1482,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-shortcuts.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-shortcuts.tsx")
@@ -1601,8 +1496,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-icons.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-icons.tsx")
@@ -1616,8 +1510,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-checkboxes.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-checkboxes.tsx")
@@ -1631,8 +1524,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-checkboxes-icons.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-checkboxes-icons.tsx")
@@ -1646,8 +1538,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-radio-group.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-radio-group.tsx")
@@ -1661,8 +1552,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-radio-icons.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-radio-icons.tsx")
@@ -1676,8 +1566,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-destructive.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-destructive.tsx")
@@ -1691,8 +1580,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-avatar.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-avatar.tsx")
@@ -1706,8 +1594,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-complex.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-complex.tsx")
@@ -1721,8 +1608,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/avatar-demo.tsx")
@@ -1736,8 +1622,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-basic.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/avatar-basic.tsx")
@@ -1751,8 +1636,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-badge.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/avatar-badge.tsx")
@@ -1766,8 +1650,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-badge-icon.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/avatar-badge-icon.tsx")
@@ -1781,8 +1664,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-group.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/avatar-group.tsx")
@@ -1796,8 +1678,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-group-count.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/avatar-group-count.tsx")
@@ -1811,8 +1692,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-group-count-icon.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/avatar-group-count-icon.tsx")
@@ -1826,8 +1706,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-size.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/avatar-size.tsx")
@@ -1841,8 +1720,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-dropdown.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/avatar-dropdown.tsx")
@@ -1856,8 +1734,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/badge.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/badge-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/badge-demo.tsx")
@@ -1871,8 +1748,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/badge.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/badge-variants.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/badge-variants.tsx")
@@ -1886,8 +1762,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/badge.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/badge-sizes.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/badge-sizes.tsx")
@@ -1901,8 +1776,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/badge.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/badge-icon.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/badge-icon.tsx")
@@ -1916,8 +1790,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/badge.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/badge-colors.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/badge-colors.tsx")
@@ -1931,8 +1804,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/surface-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/surface-demo.tsx")
@@ -1946,8 +1818,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/surface-variants.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/surface-variants.tsx")
@@ -1961,8 +1832,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-demo.tsx")
@@ -1976,8 +1846,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-variants.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-variants.tsx")
@@ -1991,8 +1860,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-states.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-states.tsx")
@@ -2006,8 +1874,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-field.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-field.tsx")
@@ -2021,8 +1888,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-fieldgroup.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-fieldgroup.tsx")
@@ -2036,8 +1902,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/badge.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-badge.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-badge.tsx")
@@ -2051,8 +1916,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-input-group.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-input-group.tsx")
@@ -2066,8 +1930,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-button-group.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-button-group.tsx")
@@ -2081,8 +1944,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/surface.json","https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-in-surface.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-in-surface.tsx")
@@ -2096,8 +1958,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-group-demo.tsx")
@@ -2111,8 +1972,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-orientation.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-group-orientation.tsx")
@@ -2126,8 +1986,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-size.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-group-size.tsx")
@@ -2141,8 +2000,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-separator.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-group-separator.tsx")
@@ -2156,8 +2014,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-split.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-group-split.tsx")
@@ -2171,8 +2028,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-input.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-group-input.tsx")
@@ -2186,8 +2042,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/input-group.json","https://herocn.dev/r/tooltip.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-input-group.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-group-input-group.tsx")
@@ -2201,8 +2056,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-dropdown.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-group-dropdown.tsx")
@@ -2216,8 +2070,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/input.json","https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-select.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-group-select.tsx")
@@ -2231,8 +2084,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/field.json","https://herocn.dev/r/popover.json","https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-popover.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-group-popover.tsx")
@@ -2246,8 +2098,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-group-rtl.tsx")
@@ -2261,8 +2112,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button-group.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-text.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-group-text.tsx")
@@ -2276,8 +2126,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/card.json","https://herocn.dev/r/tabs.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/tabs-demo.tsx")
@@ -2291,8 +2140,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/tabs.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-line.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/tabs-line.tsx")
@@ -2306,8 +2154,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/tabs.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-vertical.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/tabs-vertical.tsx")
@@ -2321,8 +2168,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/tabs.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-vertical-line.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/tabs-vertical-line.tsx")
@@ -2336,8 +2182,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/tabs.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-disabled.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/tabs-disabled.tsx")
@@ -2351,8 +2196,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/tabs.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-icons.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/tabs-icons.tsx")
@@ -2366,8 +2210,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/card.json","https://herocn.dev/r/tabs.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/tabs-rtl.tsx")
@@ -2381,8 +2224,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/select-demo.tsx")
@@ -2396,8 +2238,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-variants.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/select-variants.tsx")
@@ -2411,8 +2252,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/select.json","https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-surface.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/select-surface.tsx")
@@ -2426,8 +2266,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-groups.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/select-groups.tsx")
@@ -2441,8 +2280,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-multiple.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/select-multiple.tsx")
@@ -2456,8 +2294,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-scrollable.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/select-scrollable.tsx")
@@ -2471,8 +2308,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-disabled.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/select-disabled.tsx")
@@ -2486,8 +2322,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-invalid.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/select-invalid.tsx")
@@ -2501,8 +2336,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/select-rtl.tsx")
@@ -2516,8 +2350,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/separator.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/separator-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/separator-demo.tsx")
@@ -2531,8 +2364,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/separator.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/separator-vertical.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/separator-vertical.tsx")
@@ -2546,8 +2378,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/separator.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/separator-menu.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/separator-menu.tsx")
@@ -2561,8 +2392,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/separator.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/separator-list.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/separator-list.tsx")
@@ -2576,8 +2406,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/separator.json","https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/separator-surface.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/separator-surface.tsx")
@@ -2591,8 +2420,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/separator.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/separator-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/separator-rtl.tsx")
@@ -2606,8 +2434,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/popover-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/popover-demo.tsx")
@@ -2621,8 +2448,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/popover-basic.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/popover-basic.tsx")
@@ -2636,8 +2462,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/popover-align.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/popover-align.tsx")
@@ -2651,8 +2476,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/popover-form.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/popover-form.tsx")
@@ -2666,8 +2490,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/popover-with-arrow.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/popover-with-arrow.tsx")
@@ -2681,8 +2504,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/popover-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/popover-rtl.tsx")
@@ -2696,8 +2518,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/progress.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/progress-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/progress-demo.tsx")
@@ -2711,8 +2532,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/progress.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/progress-label.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/progress-label.tsx")
@@ -2726,8 +2546,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/progress.json","https://herocn.dev/r/slider.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/progress-controlled.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/progress-controlled.tsx")
@@ -2741,8 +2560,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/progress.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/progress-sizes.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/progress-sizes.tsx")
@@ -2756,8 +2574,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/progress.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/progress-variants.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/progress-variants.tsx")
@@ -2771,8 +2588,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/progress.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/progress-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/progress-rtl.tsx")
@@ -2786,8 +2602,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/tooltip.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tooltip-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/tooltip-demo.tsx")
@@ -2801,8 +2616,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/tooltip.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tooltip-sides.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/tooltip-sides.tsx")
@@ -2816,8 +2630,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/tooltip.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tooltip-arrow.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/tooltip-arrow.tsx")
@@ -2831,8 +2644,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/tooltip.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tooltip-keyboard.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/tooltip-keyboard.tsx")
@@ -2846,8 +2658,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/tooltip.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tooltip-disabled.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/tooltip-disabled.tsx")
@@ -2861,8 +2672,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/tooltip.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tooltip-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/tooltip-rtl.tsx")
@@ -2876,8 +2686,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-demo.tsx")
@@ -2891,8 +2700,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-variants.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-variants.tsx")
@@ -2906,8 +2714,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-invalid.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-invalid.tsx")
@@ -2921,8 +2728,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-disabled.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-disabled.tsx")
@@ -2936,8 +2742,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-inline-start.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-inline-start.tsx")
@@ -2951,8 +2756,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-inline-end.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-inline-end.tsx")
@@ -2966,8 +2770,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-block-start.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-block-start.tsx")
@@ -2981,8 +2784,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-block-end.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-block-end.tsx")
@@ -2996,8 +2798,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-icon.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-icon.tsx")
@@ -3011,8 +2812,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-text.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-text.tsx")
@@ -3026,8 +2826,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-button.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-button.tsx")
@@ -3041,8 +2840,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/input-group.json","https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-spinner.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-spinner.tsx")
@@ -3056,8 +2854,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-textarea.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-textarea.tsx")
@@ -3071,8 +2868,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-dropdown.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-dropdown.tsx")
@@ -3086,8 +2882,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json","https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-rtl.tsx")
@@ -3101,8 +2896,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/card.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-in-surface.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-in-surface.tsx")
@@ -3116,8 +2910,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/item.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/item-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/item-demo.tsx")
@@ -3131,8 +2924,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/item.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/item-variants.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/item-variants.tsx")
@@ -3146,8 +2938,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/item.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/item-sizes.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/item-sizes.tsx")
@@ -3161,8 +2952,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/item.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/item-icon.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/item-icon.tsx")
@@ -3176,8 +2966,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/item.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/item-avatar.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/item-avatar.tsx")
@@ -3191,8 +2980,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/item.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/item-image.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/item-image.tsx")
@@ -3206,8 +2994,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/item.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/item-group.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/item-group.tsx")
@@ -3221,8 +3008,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/item.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/item-header.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/item-header.tsx")
@@ -3236,8 +3022,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/item.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/item-link.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/item-link.tsx")
@@ -3251,8 +3036,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/item.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/item-dropdown.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/item-dropdown.tsx")
@@ -3266,8 +3050,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/item.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/item-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/item-rtl.tsx")
@@ -3281,8 +3064,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/kbd.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/kbd-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/kbd-demo.tsx")
@@ -3296,8 +3078,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/kbd.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/kbd-variants.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/kbd-variants.tsx")
@@ -3311,8 +3092,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/kbd.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/kbd-group.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/kbd-group.tsx")
@@ -3326,8 +3106,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/kbd.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/kbd-button.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/kbd-button.tsx")
@@ -3341,8 +3120,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/tooltip.json","https://herocn.dev/r/kbd.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/kbd-tooltip.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/kbd-tooltip.tsx")
@@ -3356,8 +3134,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/input-group.json","https://herocn.dev/r/kbd.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/kbd-input-group.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/kbd-input-group.tsx")
@@ -3371,8 +3148,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/kbd.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/kbd-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/kbd-rtl.tsx")
@@ -3386,8 +3162,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/toggle.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toggle-demo.tsx")
@@ -3401,8 +3176,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/toggle.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-ghost.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toggle-ghost.tsx")
@@ -3416,8 +3190,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/toggle.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-sizes.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toggle-sizes.tsx")
@@ -3431,8 +3204,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/toggle.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-disabled.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toggle-disabled.tsx")
@@ -3446,8 +3218,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/toggle.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toggle-rtl.tsx")
@@ -3461,8 +3232,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/toggle-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toggle-group-demo.tsx")
@@ -3476,8 +3246,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/toggle-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-sizes.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toggle-group-sizes.tsx")
@@ -3491,8 +3260,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/toggle-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-spacing.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toggle-group-spacing.tsx")
@@ -3506,8 +3274,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/toggle-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-vertical.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toggle-group-vertical.tsx")
@@ -3521,8 +3288,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/toggle-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-disabled.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toggle-group-disabled.tsx")
@@ -3536,8 +3302,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/toggle-group.json","https://herocn.dev/r/field.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-custom.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toggle-group-custom.tsx")
@@ -3551,8 +3316,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/toggle-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toggle-group-rtl.tsx")
@@ -3566,8 +3330,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/label-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/label-demo.tsx")
@@ -3581,8 +3344,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/label-in-field.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/label-in-field.tsx")
@@ -3596,8 +3358,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/label.json","https://herocn.dev/r/switch.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/label-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/label-rtl.tsx")
@@ -3611,8 +3372,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/label.json","https://herocn.dev/r/switch.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/switch-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/switch-demo.tsx")
@@ -3626,8 +3386,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/switch-description.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/switch-description.tsx")
@@ -3641,8 +3400,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/switch-choice-card.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/switch-choice-card.tsx")
@@ -3656,8 +3414,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/switch-disabled.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/switch-disabled.tsx")
@@ -3671,8 +3428,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/switch-invalid.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/switch-invalid.tsx")
@@ -3686,8 +3442,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/switch-sizes.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/switch-sizes.tsx")
@@ -3701,8 +3456,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/switch-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/switch-rtl.tsx")
@@ -3716,8 +3470,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/spinner-demo.tsx")
@@ -3731,8 +3484,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-variants.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/spinner-variants.tsx")
@@ -3746,8 +3498,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-sizes.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/spinner-sizes.tsx")
@@ -3761,8 +3512,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-button.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/spinner-button.tsx")
@@ -3776,8 +3526,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/badge.json","https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-badge.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/spinner-badge.tsx")
@@ -3791,8 +3540,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/input-group.json","https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-input-group.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/spinner-input-group.tsx")
@@ -3806,8 +3554,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/empty.json","https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-empty.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/spinner-empty.tsx")
@@ -3821,8 +3568,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/empty.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/empty-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/empty-demo.tsx")
@@ -3836,8 +3582,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/empty.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/empty-outline.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/empty-outline.tsx")
@@ -3851,8 +3596,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/empty.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/empty-background.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/empty-background.tsx")
@@ -3866,8 +3610,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/empty.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/empty-avatar.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/empty-avatar.tsx")
@@ -3881,8 +3624,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/empty.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/empty-avatar-group.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/empty-avatar-group.tsx")
@@ -3896,8 +3638,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/empty.json","https://herocn.dev/r/input-group.json","https://herocn.dev/r/kbd.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/empty-input-group.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/empty-input-group.tsx")
@@ -3911,8 +3652,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/empty.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/empty-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/empty-rtl.tsx")
@@ -3926,8 +3666,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/spinner-rtl.tsx")
@@ -3941,8 +3680,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/slider.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/slider-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/slider-demo.tsx")
@@ -3956,8 +3694,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/slider.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/slider-range.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/slider-range.tsx")
@@ -3971,8 +3708,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/slider.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/slider-multiple.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/slider-multiple.tsx")
@@ -3986,8 +3722,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/slider.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/slider-vertical.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/slider-vertical.tsx")
@@ -4001,8 +3736,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/label.json","https://herocn.dev/r/slider.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/slider-controlled.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/slider-controlled.tsx")
@@ -4016,8 +3750,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/slider.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/slider-disabled.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/slider-disabled.tsx")
@@ -4031,8 +3764,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/slider.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/slider-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/slider-rtl.tsx")
@@ -4046,8 +3778,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/alert.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/alert-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/alert-demo.tsx")
@@ -4061,8 +3792,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/alert.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/alert-variants.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/alert-variants.tsx")
@@ -4076,8 +3806,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/alert.json","https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/alert-action.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/alert-action.tsx")
@@ -4091,8 +3820,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/alert.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/alert-colors.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/alert-colors.tsx")
@@ -4106,8 +3834,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/alert.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/alert-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/alert-rtl.tsx")
@@ -4121,8 +3848,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/alert-dialog-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/alert-dialog-demo.tsx")
@@ -4136,8 +3862,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/alert-dialog-basic.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/alert-dialog-basic.tsx")
@@ -4151,8 +3876,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/alert-dialog.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/alert-dialog-variants.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/alert-dialog-variants.tsx")
@@ -4166,8 +3890,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/alert-dialog-small.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/alert-dialog-small.tsx")
@@ -4181,8 +3904,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/alert-dialog-with-media.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/alert-dialog-with-media.tsx")
@@ -4196,8 +3918,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/alert-dialog-small-with-media.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/alert-dialog-small-with-media.tsx")
@@ -4211,8 +3932,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/alert-dialog-destructive.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/alert-dialog-destructive.tsx")
@@ -4226,8 +3946,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/alert-dialog-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/alert-dialog-rtl.tsx")
@@ -4241,8 +3960,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dialog-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dialog-demo.tsx")
@@ -4256,8 +3974,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dialog-close-button.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dialog-close-button.tsx")
@@ -4271,8 +3988,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dialog-no-close-button.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dialog-no-close-button.tsx")
@@ -4286,8 +4002,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dialog-sticky-footer.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dialog-sticky-footer.tsx")
@@ -4301,8 +4016,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dialog-scrollable-content.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dialog-scrollable-content.tsx")
@@ -4316,8 +4030,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dialog-overlay-variant.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dialog-overlay-variant.tsx")
@@ -4331,8 +4044,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dialog-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dialog-rtl.tsx")
@@ -4346,8 +4058,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json","https://herocn.dev/r/sheet.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/sheet-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/sheet-demo.tsx")
@@ -4361,8 +4072,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/sheet.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/sheet-side.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/sheet-side.tsx")
@@ -4376,8 +4086,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/sheet.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/sheet-overlay-variant.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/sheet-overlay-variant.tsx")
@@ -4391,8 +4100,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/sheet.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/sheet-no-close-button.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/sheet-no-close-button.tsx")
@@ -4406,8 +4114,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/sheet.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/sheet-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/sheet-rtl.tsx")
@@ -4421,8 +4128,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/sonner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/sonner-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/sonner-demo.tsx")
@@ -4436,8 +4142,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/sonner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/sonner-types.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/sonner-types.tsx")
@@ -4451,8 +4156,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/sonner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/sonner-description.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/sonner-description.tsx")
@@ -4466,8 +4170,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/sonner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/sonner-position.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/sonner-position.tsx")
@@ -4481,8 +4184,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/scroll-area.json","https://herocn.dev/r/separator.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/scroll-area-demo.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/scroll-area-demo.tsx")
@@ -4496,8 +4198,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/scroll-area.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/scroll-area-horizontal.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/scroll-area-horizontal.tsx")
@@ -4511,8 +4212,7 @@ export const Index: Record<string, any> = {
     registryDependencies: ["https://herocn.dev/r/scroll-area.json","https://herocn.dev/r/separator.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/scroll-area-rtl.tsx",
-      type: "registry:example",
-      target: ""
+      type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/scroll-area-rtl.tsx")

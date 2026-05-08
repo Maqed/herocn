@@ -267,6 +267,20 @@ export const ui: Registry["items"] = [
 		},
 	},
 	{
+		name: "context-menu",
+		type: "registry:ui",
+		dependencies: ["@base-ui/react", "lucide-react"],
+		files: [
+			{
+				path: "ui/context-menu.tsx",
+				type: "registry:ui",
+			},
+		],
+		css: {
+			"@utility focus-ring": css["@utility focus-ring"],
+		},
+	},
+	{
 		name: "popover",
 		type: "registry:ui",
 		dependencies: ["@base-ui/react", "lucide-react"],

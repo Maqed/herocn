@@ -693,6 +693,25 @@
       }
     },
     {
+      "name": "context-menu",
+      "type": "registry:ui",
+      "dependencies": [
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/context-menu.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "css": {
+        "@utility focus-ring": {
+          "@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none": {}
+        }
+      }
+    },
+    {
       "name": "popover",
       "type": "registry:ui",
       "dependencies": [
@@ -5274,6 +5293,149 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/hover-card-rtl.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "context-menu-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/context-menu.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/context-menu-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "context-menu-basic",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/context-menu.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/context-menu-basic.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "context-menu-submenu",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/context-menu.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/context-menu-submenu.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "context-menu-shortcuts",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/context-menu.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/context-menu-shortcuts.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "context-menu-groups",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/context-menu.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/context-menu-groups.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "context-menu-icons",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/context-menu.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/context-menu-icons.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "context-menu-checkboxes",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/context-menu.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/context-menu-checkboxes.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "context-menu-radio",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/context-menu.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/context-menu-radio.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "context-menu-destructive",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/context-menu.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/context-menu-destructive.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "context-menu-sides",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/context-menu.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/context-menu-sides.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "context-menu-rtl",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/context-menu.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/context-menu-rtl.tsx",
           "type": "registry:example"
         }
       ]

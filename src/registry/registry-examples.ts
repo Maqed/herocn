@@ -3623,4 +3623,125 @@ export const examples: Registry["items"] = [
 			},
 		],
 	},
+	{
+		name: "context-menu-demo",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("context-menu")],
+		files: [
+			{
+				path: "examples/context-menu-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "context-menu-basic",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("context-menu")],
+		files: [
+			{
+				path: "examples/context-menu-basic.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "context-menu-submenu",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("context-menu")],
+		files: [
+			{
+				path: "examples/context-menu-submenu.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "context-menu-shortcuts",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("context-menu")],
+		files: [
+			{
+				path: "examples/context-menu-shortcuts.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "context-menu-groups",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("context-menu")],
+		files: [
+			{
+				path: "examples/context-menu-groups.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "context-menu-icons",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("context-menu")],
+		files: [
+			{
+				path: "examples/context-menu-icons.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "context-menu-checkboxes",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("context-menu")],
+		files: [
+			{
+				path: "examples/context-menu-checkboxes.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "context-menu-radio",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("context-menu")],
+		files: [
+			{
+				path: "examples/context-menu-radio.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "context-menu-destructive",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("context-menu")],
+		files: [
+			{
+				path: "examples/context-menu-destructive.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "context-menu-sides",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("context-menu")],
+		files: [
+			{
+				path: "examples/context-menu-sides.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "context-menu-rtl",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("context-menu")],
+		files: [
+			{
+				path: "examples/context-menu-rtl.tsx",
+				type: "registry:example",
+			},
+		],
+	},
 ];

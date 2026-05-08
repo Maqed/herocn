@@ -160,6 +160,20 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "context-menu": {
+    name: "context-menu",
+    type: "registry:ui",
+    registryDependencies: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/ui/context-menu.tsx",
+      type: "registry:ui"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/context-menu.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "popover": {
     name: "popover",
     type: "registry:ui",
@@ -4454,6 +4468,160 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/hover-card-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "context-menu-demo": {
+    name: "context-menu-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/context-menu.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/context-menu-demo.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/context-menu-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "context-menu-basic": {
+    name: "context-menu-basic",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/context-menu.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/context-menu-basic.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/context-menu-basic.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "context-menu-submenu": {
+    name: "context-menu-submenu",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/context-menu.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/context-menu-submenu.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/context-menu-submenu.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "context-menu-shortcuts": {
+    name: "context-menu-shortcuts",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/context-menu.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/context-menu-shortcuts.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/context-menu-shortcuts.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "context-menu-groups": {
+    name: "context-menu-groups",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/context-menu.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/context-menu-groups.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/context-menu-groups.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "context-menu-icons": {
+    name: "context-menu-icons",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/context-menu.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/context-menu-icons.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/context-menu-icons.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "context-menu-checkboxes": {
+    name: "context-menu-checkboxes",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/context-menu.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/context-menu-checkboxes.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/context-menu-checkboxes.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "context-menu-radio": {
+    name: "context-menu-radio",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/context-menu.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/context-menu-radio.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/context-menu-radio.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "context-menu-destructive": {
+    name: "context-menu-destructive",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/context-menu.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/context-menu-destructive.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/context-menu-destructive.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "context-menu-sides": {
+    name: "context-menu-sides",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/context-menu.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/context-menu-sides.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/context-menu-sides.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "context-menu-rtl": {
+    name: "context-menu-rtl",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/context-menu.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/context-menu-rtl.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/context-menu-rtl.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

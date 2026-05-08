@@ -147,6 +147,14 @@
           "--color-surface": "var(--surface)",
           "--color-surface-secondary": "var(--surface-secondary)",
           "--color-surface-tertiary": "var(--surface-tertiary)",
+          "--radius-xs": "calc(var(--radius) * 0.25)",
+          "--radius-sm": "calc(var(--radius) * 0.5)",
+          "--radius-md": "calc(var(--radius) * 0.75)",
+          "--radius-lg": "calc(var(--radius) * 1)",
+          "--radius-xl": "calc(var(--radius) * 1.5)",
+          "--radius-2xl": "calc(var(--radius) * 2)",
+          "--radius-3xl": "calc(var(--radius) * 3)",
+          "--radius-4xl": "calc(var(--radius) * 4)",
           "--animate-skeleton": "skeleton 2s linear infinite"
         }
       },
@@ -337,6 +345,14 @@
           "--color-surface": "var(--surface)",
           "--color-surface-secondary": "var(--surface-secondary)",
           "--color-surface-tertiary": "var(--surface-tertiary)",
+          "--radius-xs": "calc(var(--radius) * 0.25)",
+          "--radius-sm": "calc(var(--radius) * 0.5)",
+          "--radius-md": "calc(var(--radius) * 0.75)",
+          "--radius-lg": "calc(var(--radius) * 1)",
+          "--radius-xl": "calc(var(--radius) * 1.5)",
+          "--radius-2xl": "calc(var(--radius) * 2)",
+          "--radius-3xl": "calc(var(--radius) * 3)",
+          "--radius-4xl": "calc(var(--radius) * 4)",
           "--animate-skeleton": "skeleton 2s linear infinite"
         }
       },

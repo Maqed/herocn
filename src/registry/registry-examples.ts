@@ -3433,4 +3433,137 @@ export const examples: Registry["items"] = [
 			},
 		],
 	},
+	{
+		name: "combobox-demo",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("combobox")],
+		files: [
+			{
+				path: "examples/combobox-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "combobox-variants",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("combobox")],
+		files: [
+			{
+				path: "examples/combobox-variants.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "combobox-surface",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("combobox"),
+			getRegistryItemInstallationAlias("surface"),
+		],
+		files: [
+			{
+				path: "examples/combobox-surface.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "combobox-multiple",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("combobox")],
+		files: [
+			{
+				path: "examples/combobox-multiple.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "combobox-groups",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("combobox")],
+		files: [
+			{
+				path: "examples/combobox-groups.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "combobox-clear",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("combobox")],
+		files: [
+			{
+				path: "examples/combobox-clear.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "combobox-invalid",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("combobox"),
+			getRegistryItemInstallationAlias("field"),
+		],
+		files: [
+			{
+				path: "examples/combobox-invalid.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "combobox-disabled",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("combobox")],
+		files: [
+			{
+				path: "examples/combobox-disabled.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "combobox-auto-highlight",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("combobox")],
+		files: [
+			{
+				path: "examples/combobox-auto-highlight.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "combobox-popup",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("combobox"),
+		],
+		files: [
+			{
+				path: "examples/combobox-popup.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "combobox-rtl",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("combobox"),
+			getRegistryItemInstallationAlias("field"),
+		],
+		files: [
+			{
+				path: "examples/combobox-rtl.tsx",
+				type: "registry:example",
+			},
+		],
+	},
 ];

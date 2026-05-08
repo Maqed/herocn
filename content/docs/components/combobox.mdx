@@ -1,0 +1,260 @@
+---
+title: Combobox
+description: Autocomplete input with a list of suggestions.
+---
+
+<ComponentPreview name="combobox-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+<CodeBlockCommand command="npx shadcn@latest add https://herocn.dev/r/combobox.json" />
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+<CodeBlockCommand command="npm install @base-ui/react" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="combobox" title="components/ui/combobox.tsx" />
+
+<Step>Add the following css colors & utilities</Step>
+
+<RenderCSSShared
+  light={["--default", "--default-foreground", "--destructive-foreground"]}
+  dark={["--default", "--default-foreground", "--destructive-foreground"]}
+  theme={["--color-default", "--color-default-foreground", "--color-destructive-foreground"]}
+  css={["@utility pressible", "@utility focus-field-ring", "@utility invalid-field-ring", "@utility invalid-field-ring-focus"]}
+/>
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import {
+  Combobox,
+  ComboboxContent,
+  ComboboxEmpty,
+  ComboboxInput,
+  ComboboxItem,
+  ComboboxList,
+} from "@/components/ui/combobox"
+```
+
+Pass an `items` array to `Combobox` and render items inside `ComboboxList` using the render prop.
+
+```tsx
+const frameworks = ["Next.js", "SvelteKit", "Nuxt.js", "Remix", "Astro"]
+
+<Combobox items={frameworks}>
+  <ComboboxInput placeholder="Select a framework" />
+  <ComboboxContent>
+    <ComboboxEmpty>No items found.</ComboboxEmpty>
+    <ComboboxList>
+      {(item) => (
+        <ComboboxItem key={item} value={item}>
+          {item}
+        </ComboboxItem>
+      )}
+    </ComboboxList>
+  </ComboboxContent>
+</Combobox>
+```
+
+## Composition
+
+Use the following composition to build a `Combobox`:
+
+### Simple
+
+```text
+Combobox
+├── ComboboxInput
+└── ComboboxContent
+    ├── ComboboxEmpty
+    └── ComboboxList
+        ├── ComboboxItem
+        └── ComboboxItem
+```
+
+### With chips
+
+Multi-select with `multiple`, chips, and a chips input.
+
+```text
+Combobox
+├── ComboboxChips
+│   ├── ComboboxValue
+│   │   └── ComboboxChip
+│   └── ComboboxChipsInput
+└── ComboboxContent
+    ├── ComboboxEmpty
+    └── ComboboxList
+        ├── ComboboxItem
+        └── ComboboxItem
+```
+
+### With groups
+
+Nested items per group using `ComboboxCollection` inside each `ComboboxGroup`, with a separator between groups.
+
+```text
+Combobox
+├── ComboboxInput
+└── ComboboxContent
+    ├── ComboboxEmpty
+    └── ComboboxList
+        ├── ComboboxGroup
+        │   ├── ComboboxLabel
+        │   └── ComboboxCollection
+        │       ├── ComboboxItem
+        │       └── ComboboxItem
+        ├── ComboboxSeparator
+        └── ComboboxGroup
+            ├── ComboboxLabel
+            └── ComboboxCollection
+                ├── ComboboxItem
+                └── ComboboxItem
+```
+
+## Examples
+
+### Multiple
+
+Use `multiple`, `ComboboxChips`, `ComboboxChip`, and `ComboboxChipsInput` for multi-select.
+
+<ComponentPreview name="combobox-multiple" />
+
+### Groups
+
+Use `ComboboxGroup`, `ComboboxLabel`, `ComboboxCollection`, and `ComboboxSeparator` to organize items.
+
+<ComponentPreview name="combobox-groups" />
+
+### Clear Button
+
+Set `showClear` on `ComboboxInput` to show a clear button.
+
+<ComponentPreview name="combobox-clear" />
+
+### Disabled
+
+Set `disabled` on `ComboboxInput` to disable the control.
+
+<ComponentPreview name="combobox-disabled" />
+
+### Invalid
+
+Set `aria-invalid="true"` on `ComboboxInput` to show an error state.
+
+<ComponentPreview name="combobox-invalid" />
+
+### Auto Highlight
+
+Set `autoHighlight` on the root `Combobox` to automatically highlight the first item on filter.
+
+<ComponentPreview name="combobox-auto-highlight" />
+
+### Popup
+
+Use `ComboboxTrigger` and `ComboboxValue` to trigger the combobox from a button. Move `ComboboxInput` inside `ComboboxContent`.
+
+<ComponentPreview name="combobox-popup" />
+
+### Variants
+
+The Combobox component supports two visual variants:
+
+- `default` (default) — Standard styling, suitable for most use cases
+- `secondary` — Lower emphasis variant, suitable for use in Surface components
+
+<ComponentPreview name="combobox-variants" />
+
+### In Surface
+
+Place the combobox inside a [`Surface`](/docs/components/surface) panel. Use `variant="secondary"` on `Combobox` so the input sits cleanly on the surface background.
+
+<ComponentPreview name="combobox-surface" />
+
+## RTL
+
+To enable RTL support in shadcn/ui, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview name="combobox-rtl" direction="rtl" />
+
+## API Reference
+
+The combobox is built on [Base UI Combobox](https://base-ui.com/react/components/combobox#api-reference). `Combobox` forwards props to the root; sub-components forward to their corresponding Base UI primitives.
+
+### Combobox
+
+<ApiRefTable
+  props={[
+    {
+      name: "variant",
+      type: '"default" | "secondary"',
+      defaultValue: '"default"',
+      description: "Sets the input style via context (secondary uses a softer background).",
+    },
+  ]}
+/>
+
+### ComboboxInput
+
+<ApiRefTable
+  props={[
+    {
+      name: "showTrigger",
+      type: "boolean",
+      defaultValue: "true",
+      description: "Shows the dropdown trigger chevron button.",
+    },
+    {
+      name: "showClear",
+      type: "boolean",
+      defaultValue: "false",
+      description: "Shows a clear button to reset the value.",
+    },
+    {
+      name: "variant",
+      type: '"default" | "secondary"',
+      defaultValue: "-",
+      description: "Overrides the context variant for this input.",
+    },
+  ]}
+/>
+
+### ComboboxChip
+
+<ApiRefTable
+  props={[
+    {
+      name: "showRemove",
+      type: "boolean",
+      defaultValue: "true",
+      description: "Shows the remove button on the chip.",
+    },
+  ]}
+/>
+
+See the [Base UI Combobox API reference](https://base-ui.com/react/components/combobox#api-reference) for all other props (`items`, `value`, `onValueChange`, `multiple`, `autoHighlight`, positioning, etc.).

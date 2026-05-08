@@ -12,7 +12,29 @@ import {
 	InputGroupInput,
 } from "@/registry/new-york-v4/ui/input-group";
 
-const Combobox = ComboboxPrimitive.Root;
+const ComboboxVariantContext = React.createContext<"default" | "secondary">(
+	"default",
+);
+
+function Combobox<
+	Value = string,
+	Multiple extends boolean | undefined = false,
+>({
+	variant = "default",
+	...props
+}: ComboboxPrimitive.Root.Props<Value, Multiple> & {
+	variant?: "default" | "secondary";
+}) {
+	return (
+		<ComboboxVariantContext.Provider value={variant}>
+			<ComboboxPrimitive.Root<Value, Multiple>
+				data-slot="combobox"
+				data-variant={variant}
+				{...props}
+			/>
+		</ComboboxVariantContext.Provider>
+	);
+}
 
 function ComboboxValue({ ...props }: ComboboxPrimitive.Value.Props) {
 	return <ComboboxPrimitive.Value data-slot="combobox-value" {...props} />;
@@ -26,11 +48,14 @@ function ComboboxTrigger({
 	return (
 		<ComboboxPrimitive.Trigger
 			data-slot="combobox-trigger"
-			className={cn("[&_svg:not([class*='size-'])]:size-4", className)}
+			className={cn(
+				"group/combobox-trigger [&_svg:not([class*='size-'])]:size-4",
+				className,
+			)}
 			{...props}
 		>
 			{children}
-			<ChevronDownIcon className="pointer-events-none size-4 text-muted-foreground" />
+			<ChevronDownIcon className="pointer-events-none size-4 text-muted-foreground transition duration-150 group-data-popup-open/combobox-trigger:rotate-180" />
 		</ComboboxPrimitive.Trigger>
 	);
 }
@@ -43,7 +68,7 @@ function ComboboxClear({ className, ...props }: ComboboxPrimitive.Clear.Props) {
 			className={cn(className)}
 			{...props}
 		>
-			<XIcon className="pointer-events-none" />
+			<XIcon className="pointer-events-none size-4 text-muted-foreground" />
 		</ComboboxPrimitive.Clear>
 	);
 }
@@ -54,13 +79,24 @@ function ComboboxInput({
 	disabled = false,
 	showTrigger = true,
 	showClear = false,
+	variant: variantProp,
 	...props
 }: ComboboxPrimitive.Input.Props & {
 	showTrigger?: boolean;
 	showClear?: boolean;
+	variant?: "default" | "secondary";
 }) {
+	const contextVariant = React.useContext(ComboboxVariantContext);
+	const variant = variantProp ?? contextVariant;
 	return (
-		<InputGroup className={cn("w-auto", className)}>
+		<InputGroup
+			variant={variant}
+			className={cn(
+				"in-data-[slot=combobox-content]:mb-5 w-auto in-data-[slot=combobox-content]:rounded-2xl rounded-xl",
+				variant === "default" ? "shadow" : "",
+				className,
+			)}
+		>
 			<ComboboxPrimitive.Input
 				render={<InputGroupInput disabled={disabled} />}
 				{...props}
@@ -142,7 +178,7 @@ function ComboboxItem({
 		<ComboboxPrimitive.Item
 			data-slot="combobox-item"
 			className={cn(
-				"relative flex w-full cursor-default select-none items-center gap-2.5 rounded-xl py-2 ps-3 pe-8 text-sm outline-hidden data-disabled:pointer-events-none data-highlighted:bg-accent data-highlighted:text-accent-foreground data-disabled:opacity-50 not-data-[variant=destructive]:data-highlighted:**:text-accent-foreground [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0",
+				"data-highlighted:focus-ring relative flex w-full cursor-default select-none items-center gap-2.5 rounded-2xl py-2 ps-3 pe-8 text-sm outline-hidden hover:bg-accent hover:text-accent-foreground data-disabled:pointer-events-none data-disabled:opacity-50 not-data-[variant=destructive]:data-highlighted:**:text-accent-foreground [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0",
 				className,
 			)}
 			{...props}
@@ -219,11 +255,21 @@ function ComboboxChips({
 	...props
 }: React.ComponentPropsWithRef<typeof ComboboxPrimitive.Chips> &
 	ComboboxPrimitive.Chips.Props) {
+	const variant = React.useContext(ComboboxVariantContext);
 	return (
 		<ComboboxPrimitive.Chips
 			data-slot="combobox-chips"
+			data-variant={variant}
 			className={cn(
-				"flex min-h-9 flex-wrap items-center gap-1.5 rounded-4xl border border-input bg-input/30 bg-clip-padding px-2.5 py-1.5 text-sm transition-colors focus-within:border-ring focus-within:ring-[3px] focus-within:ring-ring/50 has-aria-invalid:border-destructive has-data-[slot=combobox-chip]:px-1.5 has-aria-invalid:ring-[3px] has-aria-invalid:ring-destructive/20 dark:has-aria-invalid:border-destructive/50 dark:has-aria-invalid:ring-destructive/40",
+				"flex min-h-9 flex-wrap items-center gap-1.5 rounded-xl border border-input bg-input bg-clip-padding px-2.5 py-1.5 text-sm shadow-xs outline-none transition-all placeholder:text-muted-foreground md:px-3 md:py-2",
+				"dark:brightness-100",
+				"hover:not-focus-within:brightness-97 dark:hover:not-focus-within:brightness-110",
+				"focus-within:focus-field-ring",
+				"has-aria-invalid:invalid-field-ring has-aria-invalid:focus-within:invalid-field-ring-focus",
+				"has-data-[slot=combobox-chip]:px-1.5",
+				"disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50",
+				variant === "secondary" &&
+					"bg-default shadow-none not-dark:brightness-100 not-dark:hover:not-focus-within:brightness-96",
 				className,
 			)}
 			{...props}
@@ -252,7 +298,7 @@ function ComboboxChip({
 			{showRemove && (
 				<ComboboxPrimitive.ChipRemove
 					render={<Button variant="ghost" size="icon-xs" />}
-					className="-ms-1 opacity-50 hover:opacity-100"
+					className="-ms-1 size-5 opacity-50 hover:opacity-100"
 					data-slot="combobox-chip-remove"
 				>
 					<XIcon className="pointer-events-none" />

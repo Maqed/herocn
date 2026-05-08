@@ -146,6 +146,20 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "combobox": {
+    name: "combobox",
+    type: "registry:ui",
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/input-group.json"],
+    files: [{
+      path: "src/registry/new-york-v4/ui/combobox.tsx",
+      type: "registry:ui"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/combobox.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "popover": {
     name: "popover",
     type: "registry:ui",
@@ -4216,6 +4230,160 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/scroll-area-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "combobox-demo": {
+    name: "combobox-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/combobox.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/combobox-demo.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/combobox-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "combobox-variants": {
+    name: "combobox-variants",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/combobox.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/combobox-variants.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/combobox-variants.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "combobox-surface": {
+    name: "combobox-surface",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/combobox.json","https://herocn.dev/r/surface.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/combobox-surface.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/combobox-surface.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "combobox-multiple": {
+    name: "combobox-multiple",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/combobox.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/combobox-multiple.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/combobox-multiple.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "combobox-groups": {
+    name: "combobox-groups",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/combobox.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/combobox-groups.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/combobox-groups.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "combobox-clear": {
+    name: "combobox-clear",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/combobox.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/combobox-clear.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/combobox-clear.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "combobox-invalid": {
+    name: "combobox-invalid",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/combobox.json","https://herocn.dev/r/field.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/combobox-invalid.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/combobox-invalid.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "combobox-disabled": {
+    name: "combobox-disabled",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/combobox.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/combobox-disabled.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/combobox-disabled.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "combobox-auto-highlight": {
+    name: "combobox-auto-highlight",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/combobox.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/combobox-auto-highlight.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/combobox-auto-highlight.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "combobox-popup": {
+    name: "combobox-popup",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/combobox.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/combobox-popup.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/combobox-popup.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "combobox-rtl": {
+    name: "combobox-rtl",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/combobox.json","https://herocn.dev/r/field.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/combobox-rtl.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/combobox-rtl.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

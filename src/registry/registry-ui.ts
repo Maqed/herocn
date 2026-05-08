@@ -235,6 +235,38 @@ export const ui: Registry["items"] = [
 		],
 	},
 	{
+		name: "combobox",
+		type: "registry:ui",
+		dependencies: ["@base-ui/react", "lucide-react"],
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("input-group"),
+		],
+		files: [
+			{
+				path: "ui/combobox.tsx",
+				type: "registry:ui",
+			},
+		],
+		cssVars: {
+			light: {
+				"--default": cssVars.light["--default"],
+			},
+			dark: {
+				"--default": cssVars.dark["--default"],
+			},
+			theme: {
+				"--color-default": cssVars.theme["--color-default"],
+			},
+		},
+		css: {
+			"@utility focus-field-ring": css["@utility focus-field-ring"],
+			"@utility invalid-field-ring": css["@utility invalid-field-ring"],
+			"@utility invalid-field-ring-focus":
+				css["@utility invalid-field-ring-focus"],
+		},
+	},
+	{
 		name: "popover",
 		type: "registry:ui",
 		dependencies: ["@base-ui/react", "lucide-react"],

@@ -1,0 +1,161 @@
+---
+title: Hover Card
+description: For sighted users to preview content available behind a link.
+---
+
+<ComponentPreview name="hover-card-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+<CodeBlockCommand command="npx shadcn@latest add @herocn/hover-card" />
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+<CodeBlockCommand command="npm install @base-ui/react" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="hover-card" title="components/ui/hover-card.tsx" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx showLineNumbers
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card"
+```
+
+```tsx showLineNumbers
+<HoverCard>
+  <HoverCardTrigger>Hover</HoverCardTrigger>
+  <HoverCardContent>
+    The React Framework – created and maintained by @vercel.
+  </HoverCardContent>
+</HoverCard>
+```
+
+## Composition
+
+Use the following composition to build a `HoverCard`:
+
+```text
+HoverCard
+├── HoverCardTrigger
+└── HoverCardContent
+```
+
+## Trigger Delays
+
+Use `delay` and `closeDelay` on the trigger to control when the card opens and
+closes.
+
+```tsx showLineNumbers
+<HoverCard>
+  <HoverCardTrigger delay={100} closeDelay={200}>
+    Hover
+  </HoverCardTrigger>
+  <HoverCardContent>Content</HoverCardContent>
+</HoverCard>
+```
+
+## Positioning
+
+Use the `side` and `align` props on `HoverCardContent` to control placement.
+
+```tsx showLineNumbers
+<HoverCard>
+  <HoverCardTrigger>Hover</HoverCardTrigger>
+  <HoverCardContent side="top" align="start">
+    Content
+  </HoverCardContent>
+</HoverCard>
+```
+
+## Examples
+
+### Sides
+
+Use the `side` prop to change the position of the hover card.
+
+<ComponentPreview name="hover-card-sides" />
+
+### With arrow
+
+Use the `withArrow` prop to add an arrow pointing at the trigger.
+
+<ComponentPreview name="hover-card-with-arrow" />
+
+## RTL
+
+To enable RTL support in shadcn/ui, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview name="hover-card-rtl" direction="rtl" />
+
+## API Reference
+
+The hover card is built on [Base UI PreviewCard](https://base-ui.com/react/components/preview-card). `HoverCardContent` sets default positioning and passes the remaining props to the popup.
+
+### HoverCardContent
+
+<ApiRefTable
+  props={[
+    {
+      name: "align",
+      type: '"start" | "center" | "end"',
+      defaultValue: '"center"',
+      description:
+        "Horizontal alignment of the popup relative to the anchor.",
+    },
+    {
+      name: "alignOffset",
+      type: "number",
+      defaultValue: "8",
+      description: "Offset along the alignment axis.",
+    },
+    {
+      name: "side",
+      type: '"top" | "bottom" | "left" | "right" | "inline-start" | "inline-end"',
+      defaultValue: '"bottom"',
+      description:
+        "Which side of the anchor to place the popup on. Logical sides follow the document direction when used with `dir`.",
+    },
+    {
+      name: "sideOffset",
+      type: "number",
+      defaultValue: "8",
+      description: "Distance between the anchor and the popup.",
+    },
+    {
+      name: "withArrow",
+      type: "boolean",
+      defaultValue: "false",
+      description: "Adds an arrow to the HoverCard content",
+    },
+  ]}
+/>
+
+See the [Base UI PreviewCard API reference](https://base-ui.com/react/components/preview-card#api-reference) for root, trigger, and other props.

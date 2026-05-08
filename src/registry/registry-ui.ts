@@ -392,6 +392,17 @@ export const ui: Registry["items"] = [
 		],
 	},
 	{
+		name: "hover-card",
+		type: "registry:ui",
+		dependencies: ["@base-ui/react", "lucide-react"],
+		files: [
+			{
+				path: "ui/hover-card.tsx",
+				type: "registry:ui",
+			},
+		],
+	},
+	{
 		name: "surface",
 		type: "registry:ui",
 		files: [

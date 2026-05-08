@@ -272,6 +272,20 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "hover-card": {
+    name: "hover-card",
+    type: "registry:ui",
+    registryDependencies: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/ui/hover-card.tsx",
+      type: "registry:ui"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/hover-card.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "surface": {
     name: "surface",
     type: "registry:ui",
@@ -4384,6 +4398,62 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/combobox-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "hover-card-demo": {
+    name: "hover-card-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/hover-card.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/hover-card-demo.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/hover-card-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "hover-card-with-arrow": {
+    name: "hover-card-with-arrow",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/hover-card.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/hover-card-with-arrow.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/hover-card-with-arrow.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "hover-card-sides": {
+    name: "hover-card-sides",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/hover-card.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/hover-card-sides.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/hover-card-sides.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "hover-card-rtl": {
+    name: "hover-card-rtl",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/hover-card.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/hover-card-rtl.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/hover-card-rtl.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

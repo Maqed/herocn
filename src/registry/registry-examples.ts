@@ -3566,4 +3566,61 @@ export const examples: Registry["items"] = [
 			},
 		],
 	},
+	{
+		name: "hover-card-demo",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("avatar"),
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("hover-card"),
+		],
+		files: [
+			{
+				path: "examples/hover-card-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "hover-card-with-arrow",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("hover-card"),
+		],
+		files: [
+			{
+				path: "examples/hover-card-with-arrow.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "hover-card-sides",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("hover-card"),
+		],
+		files: [
+			{
+				path: "examples/hover-card-sides.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "hover-card-rtl",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("hover-card"),
+		],
+		files: [
+			{
+				path: "examples/hover-card-rtl.tsx",
+				type: "registry:example",
+			},
+		],
+	},
 ];

@@ -843,6 +843,20 @@
       ]
     },
     {
+      "name": "hover-card",
+      "type": "registry:ui",
+      "dependencies": [
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/hover-card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "surface",
       "type": "registry:ui",
       "files": [
@@ -5203,6 +5217,63 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/combobox-rtl.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "hover-card-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/avatar.json",
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/hover-card.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/hover-card-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "hover-card-with-arrow",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/hover-card.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/hover-card-with-arrow.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "hover-card-sides",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/hover-card.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/hover-card-sides.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "hover-card-rtl",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/hover-card.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/hover-card-rtl.tsx",
           "type": "registry:example"
         }
       ]

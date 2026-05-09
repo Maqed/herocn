@@ -79,7 +79,11 @@ export function ComboboxPopup() {
 				}
 			/>
 			<ComboboxContent className="min-w-(--anchor-width)">
-				<ComboboxInput showTrigger={false} placeholder="Search" />
+				<ComboboxInput
+					variant="secondary"
+					showTrigger={false}
+					placeholder="Search"
+				/>
 				<ComboboxEmpty>No items found.</ComboboxEmpty>
 				<ComboboxList>
 					{(item) => (

@@ -92,7 +92,7 @@ function ComboboxInput({
 		<InputGroup
 			variant={variant}
 			className={cn(
-				"in-data-[slot=combobox-content]:mb-5 w-auto in-data-[slot=combobox-content]:rounded-2xl rounded-xl",
+				"in-data-[slot=combobox-content]:m-2! w-auto rounded-xl",
 				variant === "default" ? "shadow" : "",
 				className,
 			)}

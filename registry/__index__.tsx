@@ -4710,6 +4710,20 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "native-select-sizes": {
+    name: "native-select-sizes",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/native-select.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/native-select-sizes.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/native-select-sizes.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "native-select-groups": {
     name: "native-select-groups",
     type: "registry:example",

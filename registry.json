@@ -5542,6 +5542,19 @@
       ]
     },
     {
+      "name": "native-select-sizes",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/native-select.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/native-select-sizes.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "native-select-groups",
       "type": "registry:example",
       "registryDependencies": [

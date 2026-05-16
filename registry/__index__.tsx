@@ -412,6 +412,20 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "native-select": {
+    name: "native-select",
+    type: "registry:ui",
+    registryDependencies: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/ui/native-select.tsx",
+      type: "registry:ui"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/native-select.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "select": {
     name: "select",
     type: "registry:ui",
@@ -4622,6 +4636,104 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/context-menu-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "native-select-demo": {
+    name: "native-select-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/native-select.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/native-select-demo.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/native-select-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "native-select-variants": {
+    name: "native-select-variants",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/native-select.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/native-select-variants.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/native-select-variants.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "native-select-in-surface": {
+    name: "native-select-in-surface",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/native-select.json","https://herocn.dev/r/surface.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/native-select-in-surface.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/native-select-in-surface.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "native-select-disabled": {
+    name: "native-select-disabled",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/native-select.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/native-select-disabled.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/native-select-disabled.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "native-select-invalid": {
+    name: "native-select-invalid",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/native-select.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/native-select-invalid.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/native-select-invalid.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "native-select-groups": {
+    name: "native-select-groups",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/native-select.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/native-select-groups.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/native-select-groups.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "native-select-rtl": {
+    name: "native-select-rtl",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/native-select.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/native-select-rtl.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/native-select-rtl.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

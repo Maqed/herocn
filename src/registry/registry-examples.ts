@@ -3744,4 +3744,84 @@ export const examples: Registry["items"] = [
 			},
 		],
 	},
+	{
+		name: "native-select-demo",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("native-select")],
+		files: [
+			{
+				path: "examples/native-select-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "native-select-variants",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("native-select")],
+		files: [
+			{
+				path: "examples/native-select-variants.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "native-select-in-surface",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("native-select"),
+			getRegistryItemInstallationAlias("surface"),
+		],
+		files: [
+			{
+				path: "examples/native-select-in-surface.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "native-select-disabled",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("native-select")],
+		files: [
+			{
+				path: "examples/native-select-disabled.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "native-select-invalid",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("native-select")],
+		files: [
+			{
+				path: "examples/native-select-invalid.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "native-select-groups",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("native-select")],
+		files: [
+			{
+				path: "examples/native-select-groups.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "native-select-rtl",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("native-select")],
+		files: [
+			{
+				path: "examples/native-select-rtl.tsx",
+				type: "registry:example",
+			},
+		],
+	},
 ];

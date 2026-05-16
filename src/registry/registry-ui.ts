@@ -605,6 +605,34 @@ export const ui: Registry["items"] = [
 		],
 	},
 	{
+		name: "native-select",
+		type: "registry:ui",
+		dependencies: ["lucide-react"],
+		files: [
+			{
+				path: "ui/native-select.tsx",
+				type: "registry:ui",
+			},
+		],
+		cssVars: {
+			light: {
+				"--default": cssVars.light["--default"],
+			},
+			dark: {
+				"--default": cssVars.dark["--default"],
+			},
+			theme: {
+				"--color-default": cssVars.theme["--color-default"],
+			},
+		},
+		css: {
+			"@utility focus-field-ring": css["@utility focus-field-ring"],
+			"@utility invalid-field-ring": css["@utility invalid-field-ring"],
+			"@utility invalid-field-ring-focus":
+				css["@utility invalid-field-ring-focus"],
+		},
+	},
+	{
 		name: "select",
 		type: "registry:ui",
 		dependencies: ["@base-ui/react", "lucide-react"],

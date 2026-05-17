@@ -3339,6 +3339,82 @@ export const examples: Registry["items"] = [
 		],
 	},
 	{
+		name: "drawer-demo",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("drawer"),
+			getRegistryItemInstallationAlias("field"),
+			getRegistryItemInstallationAlias("input"),
+			getRegistryItemInstallationAlias("label"),
+		],
+		files: [
+			{
+				path: "examples/drawer-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "drawer-direction",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("drawer"),
+		],
+		files: [
+			{
+				path: "examples/drawer-direction.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "drawer-overlay-variant",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("drawer"),
+		],
+		files: [
+			{
+				path: "examples/drawer-overlay-variant.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "drawer-scrollable-content",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("drawer"),
+		],
+		files: [
+			{
+				path: "examples/drawer-scrollable-content.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "drawer-rtl",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("drawer"),
+			getRegistryItemInstallationAlias("field"),
+			getRegistryItemInstallationAlias("input"),
+			getRegistryItemInstallationAlias("label"),
+		],
+		files: [
+			{
+				path: "examples/drawer-rtl.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
 		name: "sonner-demo",
 		type: "registry:example",
 		registryDependencies: [

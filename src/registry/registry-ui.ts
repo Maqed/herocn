@@ -356,6 +356,17 @@ export const ui: Registry["items"] = [
 		},
 	},
 	{
+		name: "drawer",
+		type: "registry:ui",
+		dependencies: ["vaul"],
+		files: [
+			{
+				path: "ui/drawer.tsx",
+				type: "registry:ui",
+			},
+		],
+	},
+	{
 		name: "empty",
 		type: "registry:ui",
 		dependencies: ["class-variance-authority"],

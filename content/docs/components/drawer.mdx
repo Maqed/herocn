@@ -1,0 +1,117 @@
+---
+title: Drawer
+description: A drawer component that slides in from any side of the screen, built on top of Vaul.
+---
+
+<ComponentPreview name="drawer-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+<CodeBlockCommand command="npx shadcn@latest add @herocn/drawer" />
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+<CodeBlockCommand command="npm install vaul" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="drawer" title="components/ui/drawer.tsx" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer"
+```
+
+```tsx
+<Drawer>
+  <DrawerTrigger>Open</DrawerTrigger>
+  <DrawerContent>
+    <DrawerHeader>
+      <DrawerTitle>Are you absolutely sure?</DrawerTitle>
+      <DrawerDescription>This action cannot be undone.</DrawerDescription>
+    </DrawerHeader>
+    <DrawerFooter>
+      <Button>Submit</Button>
+      <DrawerClose>
+        <Button variant="outline">Cancel</Button>
+      </DrawerClose>
+    </DrawerFooter>
+  </DrawerContent>
+</Drawer>
+```
+
+## Composition
+
+Use the following composition to build a `Drawer`:
+
+```text
+Drawer
+├── DrawerTrigger
+└── DrawerContent
+    ├── DrawerHeader
+    │   ├── DrawerTitle
+    │   └── DrawerDescription
+    └── DrawerFooter
+```
+
+## Examples
+
+### Direction
+
+Use the `direction` prop on `Drawer` to set the side the drawer slides in from. Available options are `top`, `right`, `bottom`, and `left`.
+
+<ComponentPreview name="drawer-direction" />
+
+### Overlay variant
+
+Use `overlayVariant` on `DrawerContent` to choose an opaque dim (`opaque`), a blurred backdrop (`blur`), or transparent overlay (`transparent`).
+
+<ComponentPreview name="drawer-overlay-variant" />
+
+### Scrollable Content
+
+Keep actions visible while the content scrolls.
+
+<ComponentPreview name="drawer-scrollable-content" />
+
+## RTL
+
+To enable RTL support in herocn, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview name="drawer-rtl" direction="rtl" />
+
+## API Reference
+
+See the [Vaul documentation](https://vaul.emilkowal.ski/getting-started) for the full API reference.

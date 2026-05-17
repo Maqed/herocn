@@ -230,6 +230,20 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "drawer": {
+    name: "drawer",
+    type: "registry:ui",
+    registryDependencies: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/ui/drawer.tsx",
+      type: "registry:ui"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/drawer.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "empty": {
     name: "empty",
     type: "registry:ui",
@@ -4174,6 +4188,76 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/sheet-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "drawer-demo": {
+    name: "drawer-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/drawer-demo.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/drawer-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "drawer-direction": {
+    name: "drawer-direction",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/drawer-direction.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/drawer-direction.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "drawer-overlay-variant": {
+    name: "drawer-overlay-variant",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/drawer-overlay-variant.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/drawer-overlay-variant.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "drawer-scrollable-content": {
+    name: "drawer-scrollable-content",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/drawer-scrollable-content.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/drawer-scrollable-content.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "drawer-rtl": {
+    name: "drawer-rtl",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/drawer-rtl.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/drawer-rtl.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

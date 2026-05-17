@@ -17,7 +17,6 @@ import {
 import {
 	Item,
 	ItemContent,
-	ItemDescription,
 	ItemMedia,
 	ItemTitle,
 } from "@/registry/new-york-v4/ui/item";

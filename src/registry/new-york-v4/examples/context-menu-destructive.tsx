@@ -1,6 +1,6 @@
 "use client";
 
-import { ArchiveIcon, PencilIcon, ShareIcon, TrashIcon } from "lucide-react";
+import { PencilIcon, ShareIcon, TrashIcon } from "lucide-react";
 import {
 	ContextMenu,
 	ContextMenuContent,

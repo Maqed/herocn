@@ -84,7 +84,11 @@ export default function CheckboxRtl() {
 			</Field>
 			<FieldLabel>
 				<Field orientation="horizontal">
-					<Checkbox id="checkbox-rtl-notify-on" name="checkbox-rtl-notify-on" />
+					<Checkbox
+						variant="secondary"
+						id="checkbox-rtl-notify-on"
+						name="checkbox-rtl-notify-on"
+					/>
 					<FieldContent>
 						<FieldTitle>{t.enableNotifications}</FieldTitle>
 						<FieldDescription>

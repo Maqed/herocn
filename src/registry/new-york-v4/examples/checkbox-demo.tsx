@@ -41,6 +41,7 @@ export default function CheckboxDemo() {
 					<Checkbox
 						id="checkbox-demo-notify-on"
 						name="checkbox-demo-notify-on"
+						variant="secondary"
 					/>
 					<FieldContent>
 						<FieldTitle>Enable notifications</FieldTitle>

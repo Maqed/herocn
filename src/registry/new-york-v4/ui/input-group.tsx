@@ -125,7 +125,7 @@ function InputGroupText({ className, ...props }: React.ComponentProps<"span">) {
 function InputGroupInput({
 	className,
 	...props
-}: React.ComponentProps<"input">) {
+}: React.ComponentProps<typeof Input>) {
 	return (
 		<Input
 			data-slot="input-group-control"
@@ -143,7 +143,7 @@ function InputGroupInput({
 function InputGroupTextarea({
 	className,
 	...props
-}: React.ComponentProps<"textarea">) {
+}: React.ComponentProps<typeof Textarea>) {
 	return (
 		<Textarea
 			data-slot="input-group-control"

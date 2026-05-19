@@ -653,6 +653,24 @@
       ]
     },
     {
+      "name": "command",
+      "type": "registry:ui",
+      "dependencies": [
+        "cmdk",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "https://herocn.dev/r/dialog.json",
+        "https://herocn.dev/r/input-group.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/command.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "combobox",
       "type": "registry:ui",
       "dependencies": [
@@ -5682,6 +5700,76 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/native-select-rtl.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "command-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/command.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/command-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "command-shortcuts",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/command.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/command-shortcuts.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "command-groups",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/command.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/command-groups.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "command-scrollable",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/command.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/command-scrollable.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "command-rtl",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/command.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/command-rtl.tsx",
           "type": "registry:example"
         }
       ]

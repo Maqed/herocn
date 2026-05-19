@@ -3928,4 +3928,74 @@ export const examples: Registry["items"] = [
 			},
 		],
 	},
+	{
+		name: "command-demo",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("command"),
+		],
+		files: [
+			{
+				path: "examples/command-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "command-shortcuts",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("command"),
+		],
+		files: [
+			{
+				path: "examples/command-shortcuts.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "command-groups",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("command"),
+		],
+		files: [
+			{
+				path: "examples/command-groups.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "command-scrollable",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("command"),
+		],
+		files: [
+			{
+				path: "examples/command-scrollable.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "command-rtl",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("command"),
+		],
+		files: [
+			{
+				path: "examples/command-rtl.tsx",
+				type: "registry:example",
+			},
+		],
+	},
 ];

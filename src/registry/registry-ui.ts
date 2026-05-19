@@ -235,6 +235,21 @@ export const ui: Registry["items"] = [
 		],
 	},
 	{
+		name: "command",
+		type: "registry:ui",
+		dependencies: ["cmdk", "lucide-react"],
+		registryDependencies: [
+			getRegistryItemInstallationAlias("dialog"),
+			getRegistryItemInstallationAlias("input-group"),
+		],
+		files: [
+			{
+				path: "ui/command.tsx",
+				type: "registry:ui",
+			},
+		],
+	},
+	{
 		name: "combobox",
 		type: "registry:ui",
 		dependencies: ["@base-ui/react", "lucide-react"],

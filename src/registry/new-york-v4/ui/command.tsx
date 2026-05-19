@@ -24,7 +24,7 @@ function Command({
 		<CommandPrimitive
 			data-slot="command"
 			className={cn(
-				"flex size-full flex-col overflow-hidden bg-popover text-popover-foreground",
+				"flex size-full flex-col overflow-hidden rounded-xl bg-popover text-popover-foreground",
 				className,
 			)}
 			{...props}
@@ -69,9 +69,9 @@ function CommandInput({
 	return (
 		<div
 			data-slot="command-input-wrapper"
-			className="border border-border p-1 pb-1.5"
+			className="rounded-t-xl border-border border-b p-1 pb-1.5"
 		>
-			<InputGroup className="rounded-xl">
+			<InputGroup className="rounded-xl hover:not-focus-within:brightness-100 dark:hover:not-focus-within:brightness-100">
 				<CommandPrimitive.Input
 					data-slot="command-input"
 					className={cn(

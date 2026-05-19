@@ -1,23 +1,18 @@
 "use client";
 import { SearchIcon } from "lucide-react";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import type { ComponentProps } from "react";
 import * as React from "react";
 import type { source } from "@/lib/source";
 import { Button } from "@/registry/new-york-v4/ui/button";
 import {
 	Command,
-	CommandCollection,
 	CommandDialog,
-	CommandDialogPopup,
-	CommandDialogTrigger,
 	CommandEmpty,
 	CommandGroup,
-	CommandGroupLabel,
 	CommandInput,
 	CommandItem,
 	CommandList,
-	CommandPanel,
 } from "@/registry/new-york-v4/ui/command";
 
 interface PageItem {
@@ -42,12 +37,11 @@ export function CommandMenu({
 	navItems?: { href: string; label: string; isExternal?: boolean }[];
 }) {
 	const [open, setOpen] = React.useState(false);
+	const router = useRouter();
 
-	// Convert tree structure to grouped items
 	const groupedItems = React.useMemo<PageGroup[]>(() => {
 		const groups: PageGroup[] = [];
 
-		// Add nav items group
 		if (navItems && navItems.length > 0) {
 			groups.push({
 				items: navItems.map((item) => ({
@@ -61,7 +55,6 @@ export function CommandMenu({
 			});
 		}
 
-		// Add tree groups
 		tree.children.forEach((group) => {
 			if (group.type === "folder") {
 				const items: PageItem[] = [];
@@ -91,6 +84,11 @@ export function CommandMenu({
 		return groups;
 	}, [tree, navItems]);
 
+	const runCommand = (command: () => unknown) => {
+		setOpen(false);
+		command();
+	};
+
 	React.useEffect(() => {
 		const down = (e: KeyboardEvent) => {
 			if ((e.key === "k" && (e.metaKey || e.ctrlKey)) || e.key === "/") {
@@ -113,56 +111,39 @@ export function CommandMenu({
 	}, []);
 
 	return (
-		<CommandDialog onOpenChange={setOpen} open={open} {...props}>
-			<CommandDialogTrigger
-				render={
-					<Button
-						variant="outline"
-						className="max-md:size-8 max-md:border-none md:pe-10 max-md:[&_svg:not([class*='size-'])]:size-4.5"
-						onClick={() => setOpen(true)}
-						{...props}
-					>
-						<span className="hidden xl:inline-flex">
-							Search documentation...
-						</span>
-						<span className="hidden md:inline-flex xl:hidden">Search...</span>
-						<span>
-							<SearchIcon className="md:hidden" />
-						</span>
-					</Button>
-				}
-			/>
-			<CommandDialogPopup>
-				<Command items={groupedItems}>
+		<>
+			<Button
+				variant="outline"
+				className="max-md:size-8 max-md:border-none md:pe-10 max-md:[&_svg:not([class*='size-'])]:size-4.5"
+				onClick={() => setOpen(true)}
+			>
+				<span className="hidden xl:inline-flex">Search documentation...</span>
+				<span className="hidden md:inline-flex xl:hidden">Search...</span>
+				<span>
+					<SearchIcon className="md:hidden" />
+				</span>
+			</Button>
+			<CommandDialog open={open} onOpenChange={setOpen} {...props}>
+				<Command>
 					<CommandInput placeholder="Search documentation…" />
-					<CommandPanel>
+					<CommandList>
 						<CommandEmpty>No results found.</CommandEmpty>
-						<CommandList>
-							{(group: PageGroup, _index: number) => (
-								<CommandGroup items={group.items} key={group.value}>
-									<CommandGroupLabel>{group.value}</CommandGroupLabel>
-									<CommandCollection>
-										{(item: PageItem) => (
-											<CommandItem
-												className="flex w-full items-center"
-												key={item.value}
-												render={
-													<Link
-														href={item.url}
-														onNavigate={() => setOpen(false)}
-													/>
-												}
-											>
-												<span className="flex-1">{item.label}</span>
-											</CommandItem>
-										)}
-									</CommandCollection>
-								</CommandGroup>
-							)}
-						</CommandList>
-					</CommandPanel>
+						{groupedItems.map((group) => (
+							<CommandGroup key={group.value} heading={group.value}>
+								{group.items.map((item) => (
+									<CommandItem
+										key={item.value}
+										className="flex w-full items-center"
+										onSelect={() => runCommand(() => router.push(item.url))}
+									>
+										{item.label}
+									</CommandItem>
+								))}
+							</CommandGroup>
+						))}
+					</CommandList>
 				</Command>
-			</CommandDialogPopup>
-		</CommandDialog>
+			</CommandDialog>
+		</>
 	);
 }

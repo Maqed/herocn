@@ -56,7 +56,7 @@ function CommandDialog({
 			</DialogHeader>
 			<DialogContent
 				className={cn(
-					"top-1/3 -translate-y-1/3 overflow-hidden rounded-2xl p-0 sm:max-w-xl",
+					"top-4 -translate-y-4 overflow-hidden rounded-2xl p-0 sm:max-w-xl md:top-1/3 md:-translate-y-1/3",
 					className,
 				)}
 				overlayVariant={overlayVariant}

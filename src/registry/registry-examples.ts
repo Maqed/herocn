@@ -3943,6 +3943,20 @@ export const examples: Registry["items"] = [
 		],
 	},
 	{
+		name: "command-basic",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("command"),
+		],
+		files: [
+			{
+				path: "examples/command-basic.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
 		name: "command-shortcuts",
 		type: "registry:example",
 		registryDependencies: [

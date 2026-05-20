@@ -5736,6 +5736,20 @@
       ]
     },
     {
+      "name": "command-basic",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/command.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/command-basic.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "command-shortcuts",
       "type": "registry:example",
       "registryDependencies": [

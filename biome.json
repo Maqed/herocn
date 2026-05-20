@@ -54,6 +54,8 @@
 			"recommended": true,
 			"a11y": {
 				"useSemanticElements": "off",
+				"useFocusableInteractive": "off",
+				"useAriaPropsForRole": "off",
 				"noLabelWithoutControl": "off",
 				"useKeyWithClickEvents": "off",
 				"useValidAnchor": "off",

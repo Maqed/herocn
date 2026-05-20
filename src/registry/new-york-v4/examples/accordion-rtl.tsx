@@ -77,15 +77,18 @@ export function AccordionRtl() {
 	const { dir, language, t } = useTranslation(translations, "ar");
 
 	return (
-		<div lang={language} dir={dir}>
-			<Accordion defaultValue={["item-1"]} className="max-w-lg">
-				{items.map((item) => (
-					<AccordionItem key={item.value} value={item.value}>
-						<AccordionTrigger>{t[item.questionKey]}</AccordionTrigger>
-						<AccordionContent>{t[item.answerKey]}</AccordionContent>
-					</AccordionItem>
-				))}
-			</Accordion>
-		</div>
+		<Accordion
+			lang={language}
+			dir={dir}
+			defaultValue={["item-1"]}
+			className="max-w-lg"
+		>
+			{items.map((item) => (
+				<AccordionItem key={item.value} value={item.value}>
+					<AccordionTrigger>{t[item.questionKey]}</AccordionTrigger>
+					<AccordionContent>{t[item.answerKey]}</AccordionContent>
+				</AccordionItem>
+			))}
+		</Accordion>
 	);
 }

@@ -30,10 +30,10 @@ function AccordionItem({ className, ...props }: AccordionPrimitive.Item.Props) {
 			data-slot="accordion-item"
 			className={cn(
 				"relative border-none",
-				"after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:rounded-xs after:bg-border",
+				"after:absolute after:start-0 after:bottom-0 after:h-px after:w-full after:rounded-xs after:bg-border",
 				"last:after:content-none",
 				"data-[hide-separator=true]:after:hidden",
-				"group-data-[variant=surface]/accordion:after:left-[3%] group-data-[variant=surface]/accordion:after:w-[94%]",
+				"group-data-[variant=surface]/accordion:after:start-[3%] group-data-[variant=surface]/accordion:after:w-[94%]",
 				"group-data-[variant=surface]/accordion:first-of-type:[&_[data-slot=accordion-trigger]]:rounded-t-3xl",
 				"group-data-[variant=surface]/accordion:last-of-type:not-has-[[data-slot=accordion-trigger][aria-expanded=true]]:[&_[data-slot=accordion-trigger]]:rounded-b-3xl",
 				className,
@@ -54,7 +54,7 @@ function AccordionTrigger({
 				data-slot="accordion-trigger"
 				className={cn(
 					"group/accordion-trigger no-highlight",
-					"flex flex-1 items-center justify-between px-4 py-4 text-left font-medium text-sm",
+					"flex flex-1 items-center justify-between px-4 py-4 text-start font-medium text-sm",
 					"cursor-pointer select-none",
 					"group-data-[variant=secondary]:first:rounded-t-3xltransition-none",
 					"hover:bg-foreground/3 aria-expanded:hover:bg-transparent",
@@ -70,7 +70,7 @@ function AccordionTrigger({
 				<ChevronDownIcon
 					data-slot="accordion-trigger-icon"
 					className={cn(
-						"ml-auto size-4 shrink-0 text-muted-foreground",
+						"ms-auto size-4 shrink-0 text-muted-foreground",
 						"transition-transform duration-250 motion-reduce:transition-none",
 						"group-aria-expanded/accordion-trigger:-rotate-180",
 					)}

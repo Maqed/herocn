@@ -4575,4 +4575,48 @@ export const examples: Registry["items"] = [
 			},
 		],
 	},
+	{
+		name: "resizable-demo",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("resizable")],
+		files: [
+			{
+				path: "examples/resizable-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "resizable-vertical",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("resizable")],
+		files: [
+			{
+				path: "examples/resizable-vertical.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "resizable-handle",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("resizable")],
+		files: [
+			{
+				path: "examples/resizable-handle.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "resizable-rtl",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("resizable")],
+		files: [
+			{
+				path: "examples/resizable-rtl.tsx",
+				type: "registry:example",
+			},
+		],
+	},
 ];

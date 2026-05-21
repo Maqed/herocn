@@ -678,6 +678,20 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "resizable": {
+    name: "resizable",
+    type: "registry:ui",
+    registryDependencies: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/ui/resizable.tsx",
+      type: "registry:ui"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/resizable.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "card-demo": {
     name: "card-demo",
     type: "registry:example",
@@ -5616,6 +5630,62 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/table-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "resizable-demo": {
+    name: "resizable-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/resizable.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/resizable-demo.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/resizable-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "resizable-vertical": {
+    name: "resizable-vertical",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/resizable.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/resizable-vertical.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/resizable-vertical.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "resizable-handle": {
+    name: "resizable-handle",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/resizable.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/resizable-handle.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/resizable-handle.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "resizable-rtl": {
+    name: "resizable-rtl",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/resizable.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/resizable-rtl.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/resizable-rtl.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

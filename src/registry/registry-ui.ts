@@ -1042,4 +1042,15 @@ export const ui: Registry["items"] = [
 				css["@utility invalid-field-ring-focus"],
 		},
 	},
+	{
+		name: "resizable",
+		type: "registry:ui",
+		dependencies: ["react-resizable-panels"],
+		files: [
+			{
+				path: "ui/resizable.tsx",
+				type: "registry:ui",
+			},
+		],
+	},
 ];

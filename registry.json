@@ -1625,6 +1625,19 @@
       }
     },
     {
+      "name": "resizable",
+      "type": "registry:ui",
+      "dependencies": [
+        "react-resizable-panels"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/resizable.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "card-demo",
       "type": "registry:example",
       "registryDependencies": [
@@ -6507,6 +6520,58 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/table-rtl.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "resizable-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/resizable.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/resizable-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "resizable-vertical",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/resizable.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/resizable-vertical.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "resizable-handle",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/resizable.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/resizable-handle.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "resizable-rtl",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/resizable.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/resizable-rtl.tsx",
           "type": "registry:example"
         }
       ]

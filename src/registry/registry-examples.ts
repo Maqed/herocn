@@ -4505,4 +4505,74 @@ export const examples: Registry["items"] = [
 			},
 		],
 	},
+	{
+		name: "table-demo",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("table")],
+		files: [
+			{
+				path: "examples/table-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "table-secondary",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("table")],
+		files: [
+			{
+				path: "examples/table-secondary.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "table-secondary-footer",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("table")],
+		files: [
+			{
+				path: "examples/table-secondary-footer.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "table-footer",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("table")],
+		files: [
+			{
+				path: "examples/table-footer.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "table-actions",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("dropdown-menu"),
+			getRegistryItemInstallationAlias("table"),
+		],
+		files: [
+			{
+				path: "examples/table-actions.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "table-rtl",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("table")],
+		files: [
+			{
+				path: "examples/table-rtl.tsx",
+				type: "registry:example",
+			},
+		],
+	},
 ];

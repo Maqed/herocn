@@ -622,6 +622,20 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "table": {
+    name: "table",
+    type: "registry:ui",
+    registryDependencies: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/ui/table.tsx",
+      type: "registry:ui"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/table.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "toggle": {
     name: "toggle",
     type: "registry:ui",
@@ -5518,6 +5532,90 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/accordion-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "table-demo": {
+    name: "table-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/table.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/table-demo.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/table-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "table-secondary": {
+    name: "table-secondary",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/table.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/table-secondary.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/table-secondary.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "table-secondary-footer": {
+    name: "table-secondary-footer",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/table.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/table-secondary-footer.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/table-secondary-footer.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "table-footer": {
+    name: "table-footer",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/table.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/table-footer.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/table-footer.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "table-actions": {
+    name: "table-actions",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/table.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/table-actions.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/table-actions.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "table-rtl": {
+    name: "table-rtl",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/table.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/table-rtl.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/table-rtl.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

@@ -938,6 +938,30 @@ export const ui: Registry["items"] = [
 		},
 	},
 	{
+		name: "table",
+		type: "registry:ui",
+		files: [
+			{
+				path: "ui/table.tsx",
+				type: "registry:ui",
+			},
+		],
+		cssVars: {
+			light: {
+				"--surface": cssVars.light["--surface"],
+				"--surface-secondary": cssVars.light["--surface-secondary"],
+			},
+			dark: {
+				"--surface": cssVars.dark["--surface"],
+				"--surface-secondary": cssVars.dark["--surface-secondary"],
+			},
+			theme: {
+				"--color-surface": cssVars.theme["--color-surface"],
+				"--color-surface-secondary": cssVars.theme["--color-surface-secondary"],
+			},
+		},
+	},
+	{
 		name: "toggle",
 		type: "registry:ui",
 		dependencies: ["@base-ui/react"],

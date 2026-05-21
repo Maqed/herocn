@@ -1,0 +1,235 @@
+---
+title: Table
+description: A responsive table component.
+---
+
+<ComponentPreview name="table-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+<CodeBlockCommand command="npx shadcn@latest add https://herocn.dev/r/table.json" />
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="table" title="components/ui/table.tsx" />
+
+<Step>Add the following css colors</Step>
+<RenderCSSShared
+  light={["--surface", "--surface-secondary"]}
+  dark={["--surface", "--surface-secondary"]}
+  theme={["--color-surface", "--color-surface-secondary"]}
+/>
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableFooter,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table"
+```
+
+```tsx
+<Table>
+  <TableCaption>A list of your recent invoices.</TableCaption>
+  <TableHeader>
+    <TableRow>
+      <TableHead className="w-[100px]">Invoice</TableHead>
+      <TableHead>Status</TableHead>
+      <TableHead>Method</TableHead>
+      <TableHead className="text-right">Amount</TableHead>
+    </TableRow>
+  </TableHeader>
+  <TableBody>
+    <TableRow>
+      <TableCell className="font-medium">INV001</TableCell>
+      <TableCell>Paid</TableCell>
+      <TableCell>Credit Card</TableCell>
+      <TableCell className="text-right">$250.00</TableCell>
+    </TableRow>
+  </TableBody>
+</Table>
+```
+
+## Composition
+
+Use the following composition to build a `Table`:
+
+```text
+Table
+├── TableCaption
+├── TableHeader
+│   └── TableRow
+│       ├── TableHead
+│       ├── TableHead
+│       ├── TableHead
+│       └── TableHead
+├── TableBody
+│   ├── TableRow
+│   │   ├── TableCell
+│   │   ├── TableCell
+│   │   ├── TableCell
+│   │   └── TableCell
+│   └── TableRow
+│       ├── TableCell
+│       ├── TableCell
+│       ├── TableCell
+│       └── TableCell
+└── TableFooter
+```
+
+## Examples
+
+### Secondary
+
+Use `variant="secondary"` for a table with a different visual style.
+
+<ComponentPreview name="table-secondary" />
+
+### Secondary with Footer
+
+A secondary variant table with a footer showing totals.
+
+<ComponentPreview name="table-secondary-footer" />
+
+### Footer
+
+Use the `<TableFooter />` component to add a footer to the table.
+
+<ComponentPreview name="table-footer" />
+
+### Actions
+
+A table showing actions for each row using a `<DropdownMenu />` component.
+
+<ComponentPreview name="table-actions" />
+
+## RTL
+
+To enable RTL support in herocn, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview name="table-rtl" direction="rtl" />
+
+## API Reference
+
+### Table
+
+<ApiRefTable
+  props={[
+    {
+      name: "variant",
+      type: '"primary" | "secondary"',
+      defaultValue: '"primary"',
+      description: "Controls the visual style of the table.",
+    },
+    {
+      name: "className",
+      type: "string",
+    },
+  ]}
+/>
+
+### TableHeader
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+    },
+  ]}
+/>
+
+### TableBody
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+    },
+  ]}
+/>
+
+### TableFooter
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+    },
+  ]}
+/>
+
+### TableRow
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+    },
+  ]}
+/>
+
+### TableHead
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+    },
+  ]}
+/>
+
+### TableCell
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+    },
+  ]}
+/>
+
+### TableCaption
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+    },
+  ]}
+/>

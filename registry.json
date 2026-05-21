@@ -1507,6 +1507,30 @@
       }
     },
     {
+      "name": "table",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/table.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "--surface": "white",
+          "--surface-secondary": "oklch(0.9524 0.0013 286.37)"
+        },
+        "dark": {
+          "--surface": "oklch(0.2103 0.0059 285.89)",
+          "--surface-secondary": "oklch(0.257 0.0037 286.14)"
+        },
+        "theme": {
+          "--color-surface": "var(--surface)",
+          "--color-surface-secondary": "var(--surface-secondary)"
+        }
+      }
+    },
+    {
       "name": "toggle",
       "type": "registry:ui",
       "dependencies": [
@@ -6403,6 +6427,86 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/accordion-rtl.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "table-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/table.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/table-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "table-secondary",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/table.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/table-secondary.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "table-secondary-footer",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/table.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/table-secondary-footer.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "table-footer",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/table.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/table-footer.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "table-actions",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/dropdown-menu.json",
+        "https://herocn.dev/r/table.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/table-actions.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "table-rtl",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/table.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/table-rtl.tsx",
           "type": "registry:example"
         }
       ]

@@ -153,6 +153,17 @@ export const ui: Registry["items"] = [
 		],
 	},
 	{
+		name: "breadcrumb",
+		type: "registry:ui",
+		dependencies: ["@base-ui/react", "lucide-react"],
+		files: [
+			{
+				path: "ui/breadcrumb.tsx",
+				type: "registry:ui",
+			},
+		],
+	},
+	{
 		name: "badge",
 		type: "registry:ui",
 		dependencies: ["@base-ui/react"],
@@ -188,6 +199,17 @@ export const ui: Registry["items"] = [
 				"--color-warning": cssVars.theme["--color-warning"],
 			},
 		},
+	},
+	{
+		name: "breadcrumb",
+		type: "registry:ui",
+		dependencies: ["@base-ui/react", "lucide-react"],
+		files: [
+			{
+				path: "ui/breadcrumb.tsx",
+				type: "registry:ui",
+			},
+		],
 	},
 	{
 		name: "calendar",

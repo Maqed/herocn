@@ -104,6 +104,20 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "breadcrumb": {
+    name: "breadcrumb",
+    type: "registry:ui",
+    registryDependencies: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/ui/breadcrumb.tsx",
+      type: "registry:ui"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/breadcrumb.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "badge": {
     name: "badge",
     type: "registry:ui",
@@ -114,6 +128,20 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/badge.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "breadcrumb": {
+    name: "breadcrumb",
+    type: "registry:ui",
+    registryDependencies: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/ui/breadcrumb.tsx",
+      type: "registry:ui"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/breadcrumb.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),
@@ -5784,6 +5812,104 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/pagination-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "breadcrumb-demo": {
+    name: "breadcrumb-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/breadcrumb.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/breadcrumb-demo.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/breadcrumb-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "breadcrumb-basic": {
+    name: "breadcrumb-basic",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/breadcrumb.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/breadcrumb-basic.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/breadcrumb-basic.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "breadcrumb-separator": {
+    name: "breadcrumb-separator",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/breadcrumb.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/breadcrumb-separator.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/breadcrumb-separator.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "breadcrumb-dropdown": {
+    name: "breadcrumb-dropdown",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/breadcrumb.json","https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/breadcrumb-dropdown.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/breadcrumb-dropdown.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "breadcrumb-collapsed": {
+    name: "breadcrumb-collapsed",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/breadcrumb.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/breadcrumb-collapsed.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/breadcrumb-collapsed.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "breadcrumb-link": {
+    name: "breadcrumb-link",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/breadcrumb.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/breadcrumb-link.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/breadcrumb-link.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "breadcrumb-rtl": {
+    name: "breadcrumb-rtl",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/breadcrumb.json","https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/breadcrumb-rtl.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/breadcrumb-rtl.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

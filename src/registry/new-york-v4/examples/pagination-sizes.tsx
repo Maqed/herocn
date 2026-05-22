@@ -5,7 +5,7 @@ import {
 	PaginationLink,
 } from "@/registry/new-york-v4/ui/pagination";
 
-const sizes = ["sm", "default", "lg"] as const;
+const sizes = ["icon-xs", "icon-sm", "icon", "icon-lg"] as const;
 
 export default function PaginationSizes() {
 	return (

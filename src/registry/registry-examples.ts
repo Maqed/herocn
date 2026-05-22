@@ -4668,6 +4668,17 @@ export const examples: Registry["items"] = [
 		],
 	},
 	{
+		name: "pagination-ellipsis",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("pagination")],
+		files: [
+			{
+				path: "examples/pagination-ellipsis.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
 		name: "pagination-rtl",
 		type: "registry:example",
 		registryDependencies: [getRegistryItemInstallationAlias("pagination")],

@@ -5760,6 +5760,20 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "pagination-ellipsis": {
+    name: "pagination-ellipsis",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/pagination.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/pagination-ellipsis.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/pagination-ellipsis.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "pagination-rtl": {
     name: "pagination-rtl",
     type: "registry:example",

@@ -68,7 +68,7 @@ function MenubarTrigger({
 		<DropdownMenuTrigger
 			data-slot="menubar-trigger"
 			className={cn(
-				"pressible no-highlight focus-visible:focus-ring inline-flex cursor-pointer select-none items-center justify-center rounded-2xl px-3 py-1.5 font-medium text-sm outline-none transition-all hover:bg-muted aria-expanded:bg-muted group-data-[variant=secondary]/menubar:aria-expanded:brightness-97 group-data-[variant=tertiary]/menubar:aria-expanded:brightness-94 group-data-[variant=secondary]/menubar:hover:brightness-97 group-data-[variant=tertiary]/menubar:hover:brightness-94 dark:group-data-[variant=secondary]/menubar:aria-expanded:brightness-110 dark:group-data-[variant=tertiary]/menubar:aria-expanded:brightness-120 dark:group-data-[variant=secondary]/menubar:hover:brightness-110 dark:group-data-[variant=tertiary]/menubar:hover:brightness-120",
+				"pressible no-highlight focus-visible:focus-ring inline-flex cursor-pointer select-none items-center justify-center rounded-2xl px-3 py-1.5 font-medium text-sm outline-none transition-all hover:bg-muted data-popup-open:bg-muted group-data-[variant=secondary]/menubar:data-popup-open:brightness-97 group-data-[variant=tertiary]/menubar:data-popup-open:brightness-94 group-data-[variant=secondary]/menubar:hover:brightness-97 group-data-[variant=tertiary]/menubar:hover:brightness-94 dark:group-data-[variant=secondary]/menubar:data-popup-open:brightness-110 dark:group-data-[variant=tertiary]/menubar:data-popup-open:brightness-120 dark:group-data-[variant=secondary]/menubar:hover:brightness-110 dark:group-data-[variant=tertiary]/menubar:hover:brightness-120",
 				className,
 			)}
 			{...props}

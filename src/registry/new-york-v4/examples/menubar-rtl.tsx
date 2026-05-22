@@ -60,6 +60,7 @@ const translations: Translations = {
 			luis: "Luis",
 			editProfile: "Edit...",
 			addProfile: "Add Profile...",
+			deleteUser: "Delete User",
 		},
 	},
 	ar: {
@@ -98,6 +99,7 @@ const translations: Translations = {
 			luis: "لويس",
 			editProfile: "تعديل...",
 			addProfile: "إضافة ملف شخصي...",
+			deleteUser: "حذف المستخدم",
 		},
 	},
 	he: {
@@ -136,6 +138,7 @@ const translations: Translations = {
 			luis: "Luis",
 			editProfile: "ערוך...",
 			addProfile: "הוסף פרופיל...",
+			deleteUser: "מחק משתמש",
 		},
 	},
 };
@@ -275,6 +278,10 @@ export default function MenubarRtl() {
 					<MenubarSeparator />
 					<MenubarGroup>
 						<MenubarItem>{t.addProfile}</MenubarItem>
+					</MenubarGroup>
+					<MenubarSeparator />
+					<MenubarGroup>
+						<MenubarItem variant="destructive">{t.deleteUser}</MenubarItem>
 					</MenubarGroup>
 				</MenubarContent>
 			</MenubarMenu>

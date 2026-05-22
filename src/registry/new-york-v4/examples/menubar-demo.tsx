@@ -129,6 +129,10 @@ export default function MenubarDemo() {
 					<MenubarGroup>
 						<MenubarItem>Add Profile...</MenubarItem>
 					</MenubarGroup>
+					<MenubarSeparator />
+					<MenubarGroup>
+						<MenubarItem variant="destructive">Delete User</MenubarItem>
+					</MenubarGroup>
 				</MenubarContent>
 			</MenubarMenu>
 		</Menubar>

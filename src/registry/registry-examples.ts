@@ -4772,4 +4772,95 @@ export const examples: Registry["items"] = [
 			},
 		],
 	},
+	{
+		name: "menubar-demo",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("menubar")],
+		files: [
+			{
+				path: "examples/menubar-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "menubar-checkbox",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("menubar")],
+		files: [
+			{
+				path: "examples/menubar-checkbox.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "menubar-radio",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("menubar")],
+		files: [
+			{
+				path: "examples/menubar-radio.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "menubar-submenu",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("menubar")],
+		files: [
+			{
+				path: "examples/menubar-submenu.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "menubar-icons",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("menubar")],
+		files: [
+			{
+				path: "examples/menubar-icons.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "menubar-rtl",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("menubar")],
+		files: [
+			{
+				path: "examples/menubar-rtl.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "menubar-variants",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("menubar")],
+		files: [
+			{
+				path: "examples/menubar-variants.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "menubar-in-surface",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("menubar"),
+			getRegistryItemInstallationAlias("surface"),
+		],
+		files: [
+			{
+				path: "examples/menubar-in-surface.tsx",
+				type: "registry:example",
+			},
+		],
+	},
 ];

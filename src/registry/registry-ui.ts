@@ -721,6 +721,39 @@ export const ui: Registry["items"] = [
 		],
 	},
 	{
+		name: "menubar",
+		type: "registry:ui",
+		dependencies: ["@base-ui/react", "lucide-react"],
+		registryDependencies: [getRegistryItemInstallationAlias("dropdown-menu")],
+		files: [
+			{
+				path: "ui/menubar.tsx",
+				type: "registry:ui",
+			},
+		],
+		cssVars: {
+			light: {
+				"--surface": cssVars.light["--surface"],
+				"--surface-secondary": cssVars.light["--surface-secondary"],
+				"--surface-tertiary": cssVars.light["--surface-tertiary"],
+			},
+			dark: {
+				"--surface": cssVars.dark["--surface"],
+				"--surface-secondary": cssVars.dark["--surface-secondary"],
+				"--surface-tertiary": cssVars.dark["--surface-tertiary"],
+			},
+			theme: {
+				"--color-surface": cssVars.theme["--color-surface"],
+				"--color-surface-secondary": cssVars.theme["--color-surface-secondary"],
+				"--color-surface-tertiary": cssVars.theme["--color-surface-tertiary"],
+			},
+		},
+		css: {
+			"@utility pressible": css["@utility pressible"],
+			"@utility focus-ring": css["@utility focus-ring"],
+		},
+	},
+	{
 		name: "native-select",
 		type: "registry:ui",
 		dependencies: ["lucide-react"],

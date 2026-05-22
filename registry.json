@@ -1231,6 +1231,23 @@
       ]
     },
     {
+      "name": "menubar",
+      "type": "registry:ui",
+      "dependencies": [
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "https://herocn.dev/r/dropdown-menu.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/menubar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "native-select",
       "type": "registry:ui",
       "dependencies": [
@@ -6744,7 +6761,6 @@
       "type": "registry:example",
       "registryDependencies": [
         "https://herocn.dev/r/breadcrumb.json",
-        "https://herocn.dev/r/button.json",
         "https://herocn.dev/r/dropdown-menu.json"
       ],
       "files": [
@@ -6785,12 +6801,116 @@
       "type": "registry:example",
       "registryDependencies": [
         "https://herocn.dev/r/breadcrumb.json",
-        "https://herocn.dev/r/button.json",
         "https://herocn.dev/r/dropdown-menu.json"
       ],
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/breadcrumb-rtl.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "menubar-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/menubar.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/menubar-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "menubar-checkbox",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/menubar.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/menubar-checkbox.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "menubar-radio",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/menubar.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/menubar-radio.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "menubar-submenu",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/menubar.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/menubar-submenu.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "menubar-icons",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/menubar.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/menubar-icons.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "menubar-rtl",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/menubar.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/menubar-rtl.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "menubar-variants",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/menubar.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/menubar-variants.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "menubar-in-surface",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/menubar.json",
+        "https://herocn.dev/r/surface.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/menubar-in-surface.tsx",
           "type": "registry:example"
         }
       ]

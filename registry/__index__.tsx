@@ -510,6 +510,20 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "menubar": {
+    name: "menubar",
+    type: "registry:ui",
+    registryDependencies: ["https://herocn.dev/r/dropdown-menu.json"],
+    files: [{
+      path: "src/registry/new-york-v4/ui/menubar.tsx",
+      type: "registry:ui"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/menubar.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "native-select": {
     name: "native-select",
     type: "registry:ui",
@@ -5861,7 +5875,7 @@ export const Index: Record<string, any> = {
   "breadcrumb-dropdown": {
     name: "breadcrumb-dropdown",
     type: "registry:example",
-    registryDependencies: ["https://herocn.dev/r/breadcrumb.json","https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
+    registryDependencies: ["https://herocn.dev/r/breadcrumb.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/breadcrumb-dropdown.tsx",
       type: "registry:example"
@@ -5903,13 +5917,125 @@ export const Index: Record<string, any> = {
   "breadcrumb-rtl": {
     name: "breadcrumb-rtl",
     type: "registry:example",
-    registryDependencies: ["https://herocn.dev/r/breadcrumb.json","https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
+    registryDependencies: ["https://herocn.dev/r/breadcrumb.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/breadcrumb-rtl.tsx",
       type: "registry:example"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/breadcrumb-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "menubar-demo": {
+    name: "menubar-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/menubar.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/menubar-demo.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/menubar-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "menubar-checkbox": {
+    name: "menubar-checkbox",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/menubar.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/menubar-checkbox.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/menubar-checkbox.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "menubar-radio": {
+    name: "menubar-radio",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/menubar.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/menubar-radio.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/menubar-radio.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "menubar-submenu": {
+    name: "menubar-submenu",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/menubar.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/menubar-submenu.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/menubar-submenu.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "menubar-icons": {
+    name: "menubar-icons",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/menubar.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/menubar-icons.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/menubar-icons.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "menubar-rtl": {
+    name: "menubar-rtl",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/menubar.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/menubar-rtl.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/menubar-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "menubar-variants": {
+    name: "menubar-variants",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/menubar.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/menubar-variants.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/menubar-variants.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "menubar-in-surface": {
+    name: "menubar-in-surface",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/menubar.json","https://herocn.dev/r/surface.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/menubar-in-surface.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/menubar-in-surface.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

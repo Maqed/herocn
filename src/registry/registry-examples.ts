@@ -4619,4 +4619,63 @@ export const examples: Registry["items"] = [
 			},
 		],
 	},
+	{
+		name: "pagination-demo",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("pagination")],
+		files: [
+			{
+				path: "examples/pagination-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "pagination-simple",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("pagination")],
+		files: [
+			{
+				path: "examples/pagination-simple.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "pagination-icons-only",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("field"),
+			getRegistryItemInstallationAlias("pagination"),
+			getRegistryItemInstallationAlias("select"),
+		],
+		files: [
+			{
+				path: "examples/pagination-icons-only.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "pagination-sizes",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("pagination")],
+		files: [
+			{
+				path: "examples/pagination-sizes.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "pagination-rtl",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("pagination")],
+		files: [
+			{
+				path: "examples/pagination-rtl.tsx",
+				type: "registry:example",
+			},
+		],
+	},
 ];

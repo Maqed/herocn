@@ -1238,6 +1238,22 @@
       }
     },
     {
+      "name": "pagination",
+      "type": "registry:ui",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/pagination.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "select",
       "type": "registry:ui",
       "dependencies": [
@@ -6572,6 +6588,73 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/resizable-rtl.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "pagination-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/pagination.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/pagination-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "pagination-simple",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/pagination.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/pagination-simple.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "pagination-icons-only",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/field.json",
+        "https://herocn.dev/r/pagination.json",
+        "https://herocn.dev/r/select.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/pagination-icons-only.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "pagination-sizes",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/pagination.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/pagination-sizes.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "pagination-rtl",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/pagination.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/pagination-rtl.tsx",
           "type": "registry:example"
         }
       ]

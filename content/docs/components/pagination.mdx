@@ -1,0 +1,204 @@
+---
+title: Pagination
+description: Pagination with page navigation, next and previous links.
+---
+
+<ComponentPreview name="pagination-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+<CodeBlockCommand command="npx shadcn@latest add https://herocn.dev/r/pagination.json" />
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+<CodeBlockCommand command="npm install lucide-react" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource
+  name="pagination"
+  title="components/ui/pagination.tsx"
+/>
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from "@/components/ui/pagination"
+```
+
+```tsx
+<Pagination>
+  <PaginationContent>
+    <PaginationItem>
+      <PaginationPrevious href="#" />
+    </PaginationItem>
+    <PaginationItem>
+      <PaginationLink href="#">1</PaginationLink>
+    </PaginationItem>
+    <PaginationItem>
+      <PaginationLink href="#" isActive>
+        2
+      </PaginationLink>
+    </PaginationItem>
+    <PaginationItem>
+      <PaginationLink href="#">3</PaginationLink>
+    </PaginationItem>
+    <PaginationItem>
+      <PaginationEllipsis />
+    </PaginationItem>
+    <PaginationItem>
+      <PaginationNext href="#" />
+    </PaginationItem>
+  </PaginationContent>
+</Pagination>
+```
+
+## Composition
+
+Use the following composition to build a `Pagination`:
+
+```text
+Pagination
+└── PaginationContent
+    ├── PaginationItem
+    │   └── PaginationPrevious
+    ├── PaginationItem
+    │   └── PaginationLink
+    ├── PaginationItem
+    │   └── PaginationEllipsis
+    └── PaginationItem
+        └── PaginationNext
+```
+
+## Examples
+
+### Simple
+
+A simple pagination with only page numbers.
+
+<ComponentPreview name="pagination-simple" />
+
+### Icons Only
+
+Use just the previous and next buttons without page numbers. This is useful for data tables with a rows per page selector.
+
+<ComponentPreview name="pagination-icons-only" />
+
+### Sizes
+
+Use the `size` prop to change the size of the pagination links.
+
+<ComponentPreview name="pagination-sizes" />
+
+## RTL
+
+To enable RTL support in herocn, see the [RTL configuration guide](/docs/rtl).
+
+<ComponentPreview name="pagination-rtl" direction="rtl" />
+
+## API Reference
+
+### Pagination
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+      description: "Custom CSS classes for the pagination nav element.",
+    },
+  ]}
+/>
+
+### PaginationLink
+
+<ApiRefTable
+  props={[
+    {
+      name: "href",
+      type: "string",
+      required: true,
+      description: "The URL for the pagination link.",
+    },
+    {
+      name: "isActive",
+      type: "boolean",
+      defaultValue: "false",
+      description: "Whether the link is the currently active page.",
+    },
+    {
+      name: "size",
+      type: '"default" | "sm" | "lg" | "icon"',
+      defaultValue: '"icon"',
+      description: "The size of the pagination link button.",
+    },
+  ]}
+/>
+
+### PaginationPrevious
+
+<ApiRefTable
+  props={[
+    {
+      name: "href",
+      type: "string",
+      required: true,
+      description: "The URL for the previous page link.",
+    },
+    {
+      name: "text",
+      type: "string",
+      defaultValue: '"Previous"',
+      description: "Custom text for the previous button label.",
+    },
+  ]}
+/>
+
+### PaginationNext
+
+<ApiRefTable
+  props={[
+    {
+      name: "href",
+      type: "string",
+      required: true,
+      description: "The URL for the next page link.",
+    },
+    {
+      name: "text",
+      type: "string",
+      defaultValue: '"Next"',
+      description: "Custom text for the next button label.",
+    },
+  ]}
+/>

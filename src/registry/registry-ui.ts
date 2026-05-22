@@ -727,6 +727,18 @@ export const ui: Registry["items"] = [
 		},
 	},
 	{
+		name: "pagination",
+		type: "registry:ui",
+		dependencies: ["lucide-react"],
+		registryDependencies: [getRegistryItemInstallationAlias("button")],
+		files: [
+			{
+				path: "ui/pagination.tsx",
+				type: "registry:ui",
+			},
+		],
+	},
+	{
 		name: "select",
 		type: "registry:ui",
 		dependencies: ["@base-ui/react", "lucide-react"],

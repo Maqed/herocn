@@ -496,6 +496,20 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "pagination": {
+    name: "pagination",
+    type: "registry:ui",
+    registryDependencies: ["https://herocn.dev/r/button.json"],
+    files: [{
+      path: "src/registry/new-york-v4/ui/pagination.tsx",
+      type: "registry:ui"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/pagination.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "select": {
     name: "select",
     type: "registry:ui",
@@ -5686,6 +5700,76 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/resizable-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "pagination-demo": {
+    name: "pagination-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/pagination.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/pagination-demo.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/pagination-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "pagination-simple": {
+    name: "pagination-simple",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/pagination.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/pagination-simple.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/pagination-simple.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "pagination-icons-only": {
+    name: "pagination-icons-only",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/pagination.json","https://herocn.dev/r/select.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/pagination-icons-only.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/pagination-icons-only.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "pagination-sizes": {
+    name: "pagination-sizes",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/pagination.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/pagination-sizes.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/pagination-sizes.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "pagination-rtl": {
+    name: "pagination-rtl",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/pagination.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/pagination-rtl.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/pagination-rtl.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

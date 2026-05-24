@@ -20,7 +20,7 @@ import { SpinnerEmpty } from "./spinner-empty";
 
 export function RootComponents() {
 	return (
-		<div className="grid gap-8 py-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-6">
+		<div className="grid grid-cols-1 gap-8 py-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-6">
 			<div className="flex flex-col gap-6 *:[div]:w-full *:[div]:max-w-full">
 				<FieldDemo />
 				<InputOTPDemo />

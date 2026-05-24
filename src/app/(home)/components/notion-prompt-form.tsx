@@ -169,6 +169,8 @@ export function NotionPromptForm() {
 		(typeof SAMPLE_DATA.models)[0]
 	>(SAMPLE_DATA.models[0]);
 	const [scopeMenuOpen, setScopeMenuOpen] = useState(false);
+	const [webSearchSwitch, setWebSearchSwitch] = useState(true);
+	const [appsSwitch, setAppsSwitch] = useState(true);
 
 	const grouped = useMemo(() => {
 		return SAMPLE_DATA.mentionable.reduce(
@@ -355,14 +357,17 @@ export function NotionPromptForm() {
 							<DropdownMenuContent side="top" align="end" className="w-72">
 								<DropdownMenuGroup>
 									<DropdownMenuItem
-										onSelect={(e) => e.preventDefault()}
+										closeOnClick={false}
+										onClick={() => {
+											setWebSearchSwitch((prev) => !prev);
+										}}
 										render={
 											<label htmlFor="web-search">
 												<Globe /> Web Search{" "}
 												<Switch
 													id="web-search"
 													className="ml-auto"
-													defaultChecked
+													checked={webSearchSwitch}
 												/>
 											</label>
 										}
@@ -371,11 +376,18 @@ export function NotionPromptForm() {
 								<DropdownMenuSeparator />
 								<DropdownMenuGroup>
 									<DropdownMenuItem
-										onSelect={(e) => e.preventDefault()}
+										closeOnClick={false}
+										onClick={() => {
+											setAppsSwitch((prev) => !prev);
+										}}
 										render={
 											<label htmlFor="apps">
 												<AppWindow /> Apps and Integrations
-												<Switch id="apps" className="ml-auto" defaultChecked />
+												<Switch
+													id="apps"
+													className="ml-auto"
+													checked={appsSwitch}
+												/>
 											</label>
 										}
 									/>

@@ -27,9 +27,9 @@ export function InputGroupButtonExample() {
 			<InputGroup>
 				<InputGroupInput id="input-secure-19" />
 				<Popover>
-					<PopoverTrigger
-						render={
-							<InputGroupAddon>
+					<InputGroupAddon>
+						<PopoverTrigger
+							render={
 								<InputGroupButton
 									variant="secondary"
 									size="icon-sm"
@@ -37,9 +37,9 @@ export function InputGroupButtonExample() {
 								>
 									<InfoIcon />
 								</InputGroupButton>
-							</InputGroupAddon>
-						}
-					/>
+							}
+						/>
+					</InputGroupAddon>
 					<PopoverContent
 						align="start"
 						alignOffset={10}
@@ -49,7 +49,7 @@ export function InputGroupButtonExample() {
 						<p>You should not enter any sensitive information on this site.</p>
 					</PopoverContent>
 				</Popover>
-				<InputGroupAddon className="pl-1! text-muted-foreground">
+				<InputGroupAddon className="-ml-1.5 text-muted-foreground">
 					https://
 				</InputGroupAddon>
 				<InputGroupAddon align="inline-end">

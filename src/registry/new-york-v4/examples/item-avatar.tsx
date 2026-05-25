@@ -41,7 +41,7 @@ export default function ItemAvatar() {
 			</Item>
 			<Item variant="outline">
 				<ItemMedia>
-					<div className="flex -space-x-2 *:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:ring-background *:data-[slot=avatar]:grayscale">
+					<div className="flex -space-x-2 *:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:ring-background">
 						<Avatar className="hidden sm:flex">
 							<AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
 							<AvatarFallback>CN</AvatarFallback>
@@ -54,11 +54,8 @@ export default function ItemAvatar() {
 							<AvatarFallback>LR</AvatarFallback>
 						</Avatar>
 						<Avatar>
-							<AvatarImage
-								src="https://github.com/evilrabbit.png"
-								alt="@evilrabbit"
-							/>
-							<AvatarFallback>ER</AvatarFallback>
+							<AvatarImage src="https://github.com/Maqed.png" alt="@0xMaqed" />
+							<AvatarFallback>Mqd</AvatarFallback>
 						</Avatar>
 					</div>
 				</ItemMedia>

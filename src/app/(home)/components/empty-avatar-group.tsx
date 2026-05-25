@@ -21,7 +21,7 @@ export function EmptyAvatarGroup() {
 		<Empty className="flex-none rounded-3xl bg-surface py-10">
 			<EmptyHeader>
 				<EmptyMedia>
-					<AvatarGroup className="grayscale">
+					<AvatarGroup>
 						<Avatar>
 							<AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
 							<AvatarFallback>CN</AvatarFallback>

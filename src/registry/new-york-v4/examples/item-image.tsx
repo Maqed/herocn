@@ -45,7 +45,7 @@ export default function ItemImage() {
 								alt=""
 								width={32}
 								height={32}
-								className="object-cover grayscale"
+								className="object-cover"
 							/>
 						</ItemMedia>
 						<ItemContent>

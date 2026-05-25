@@ -474,6 +474,16 @@
       }
     },
     {
+      "name": "aspect-ratio",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/aspect-ratio.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "avatar",
       "type": "registry:ui",
       "dependencies": [
@@ -1245,7 +1255,33 @@
           "path": "src/registry/new-york-v4/ui/menubar.tsx",
           "type": "registry:ui"
         }
-      ]
+      ],
+      "cssVars": {
+        "light": {
+          "--surface": "white",
+          "--surface-secondary": "oklch(0.9524 0.0013 286.37)",
+          "--surface-tertiary": "oklch(0.9373 0.0013 286.37)"
+        },
+        "dark": {
+          "--surface": "oklch(0.2103 0.0059 285.89)",
+          "--surface-secondary": "oklch(0.257 0.0037 286.14)",
+          "--surface-tertiary": "oklch(0.2721 0.0024 247.91)"
+        },
+        "theme": {
+          "--color-surface": "var(--surface)",
+          "--color-surface-secondary": "var(--surface-secondary)",
+          "--color-surface-tertiary": "var(--surface-tertiary)"
+        }
+      },
+      "css": {
+        "@utility pressible": {
+          "transition": "transform 250ms var(--ease-smooth), background-color 100ms var(--ease-out), box-shadow 100ms var(--ease-out)",
+          "@apply transform-gpu motion-reduce:transition-none active:scale-[0.97] aria-expanded:scale-[0.97]": {}
+        },
+        "@utility focus-ring": {
+          "@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none": {}
+        }
+      }
     },
     {
       "name": "native-select",
@@ -1695,6 +1731,58 @@
         {
           "path": "src/registry/new-york-v4/ui/resizable.tsx",
           "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "aspect-ratio-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/aspect-ratio.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/aspect-ratio-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "aspect-ratio-portrait",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/aspect-ratio.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/aspect-ratio-portrait.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "aspect-ratio-square",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/aspect-ratio.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/aspect-ratio-square.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "aspect-ratio-rtl",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/aspect-ratio.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/aspect-ratio-rtl.tsx",
+          "type": "registry:example"
         }
       ]
     },

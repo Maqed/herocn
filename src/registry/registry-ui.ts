@@ -68,6 +68,16 @@ export const ui: Registry["items"] = [
 		},
 	},
 	{
+		name: "aspect-ratio",
+		type: "registry:ui",
+		files: [
+			{
+				path: "ui/aspect-ratio.tsx",
+				type: "registry:ui",
+			},
+		],
+	},
+	{
 		name: "avatar",
 		type: "registry:ui",
 		dependencies: ["@base-ui/react"],

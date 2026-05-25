@@ -3,6 +3,61 @@ import { getRegistryItemInstallationAlias } from "@/lib/utils";
 
 export const examples: Registry["items"] = [
 	{
+		name: "aspect-ratio-demo",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("aspect-ratio")],
+		files: [
+			{
+				path: "examples/aspect-ratio-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "aspect-ratio-portrait",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("aspect-ratio")],
+		files: [
+			{
+				path: "examples/aspect-ratio-portrait.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "aspect-ratio-rtl",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("aspect-ratio")],
+		files: [
+			{
+				path: "examples/aspect-ratio-rtl.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "aspect-ratio-square",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("aspect-ratio")],
+		files: [
+			{
+				path: "examples/aspect-ratio-square.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "aspect-ratio-rtl",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("aspect-ratio")],
+		files: [
+			{
+				path: "examples/aspect-ratio-rtl.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
 		name: "card-demo",
 		type: "registry:example",
 		registryDependencies: [

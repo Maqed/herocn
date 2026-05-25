@@ -62,6 +62,20 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "aspect-ratio": {
+    name: "aspect-ratio",
+    type: "registry:ui",
+    registryDependencies: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/ui/aspect-ratio.tsx",
+      type: "registry:ui"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/aspect-ratio.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "avatar": {
     name: "avatar",
     type: "registry:ui",
@@ -744,6 +758,62 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/resizable.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "aspect-ratio-demo": {
+    name: "aspect-ratio-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/aspect-ratio.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/aspect-ratio-demo.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/aspect-ratio-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "aspect-ratio-portrait": {
+    name: "aspect-ratio-portrait",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/aspect-ratio.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/aspect-ratio-portrait.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/aspect-ratio-portrait.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "aspect-ratio-square": {
+    name: "aspect-ratio-square",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/aspect-ratio.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/aspect-ratio-square.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/aspect-ratio-square.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "aspect-ratio-rtl": {
+    name: "aspect-ratio-rtl",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/aspect-ratio.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/aspect-ratio-rtl.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/aspect-ratio-rtl.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

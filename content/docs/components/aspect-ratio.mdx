@@ -1,0 +1,90 @@
+---
+title: Aspect Ratio
+description: Displays content within a desired ratio.
+---
+
+<ComponentPreview name="aspect-ratio-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+<CodeBlockCommand command="npx shadcn@latest add @herocn/aspect-ratio" />
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="aspect-ratio" title="components/ui/aspect-ratio.tsx" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { AspectRatio } from "@/components/ui/aspect-ratio"
+```
+
+```tsx
+<AspectRatio ratio={16 / 9}>
+  <img src="..." alt="Image" className="rounded-md object-cover" />
+</AspectRatio>
+```
+
+## Composition
+
+Use the following composition to build an `AspectRatio`:
+
+```text
+AspectRatio
+```
+
+## Examples
+
+### Square
+
+<ComponentPreview name="aspect-ratio-square" />
+
+### Portrait
+
+<ComponentPreview name="aspect-ratio-portrait" />
+
+## RTL
+
+<ComponentPreview name="aspect-ratio-rtl" direction="rtl" />
+
+## API Reference
+
+### AspectRatio
+
+<ApiRefTable
+  props={[
+    {
+      name: "ratio",
+      type: "number",
+      required: true,
+      description: "The desired width-to-height ratio expressed as a number. For example, 16/9 for a widescreen aspect ratio.",
+    },
+    {
+      name: "className",
+      type: "string",
+      description: "Additional CSS classes to apply to the component.",
+    },
+  ]}
+/>

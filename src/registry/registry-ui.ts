@@ -773,6 +773,10 @@ export const ui: Registry["items"] = [
 				type: "registry:ui",
 			},
 		],
+		css: {
+			"@utility pressible": css["@utility pressible"],
+			"@utility focus-ring": css["@utility focus-ring"],
+		},
 	},
 	{
 		name: "native-select",

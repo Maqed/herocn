@@ -538,6 +538,20 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "navigation-menu": {
+    name: "navigation-menu",
+    type: "registry:ui",
+    registryDependencies: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/ui/navigation-menu.tsx",
+      type: "registry:ui"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/navigation-menu.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "native-select": {
     name: "native-select",
     type: "registry:ui",
@@ -786,6 +800,20 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/aspect-ratio-portrait.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "aspect-ratio-rtl": {
+    name: "aspect-ratio-rtl",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/aspect-ratio.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/aspect-ratio-rtl.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/aspect-ratio-rtl.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),
@@ -6106,6 +6134,48 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/menubar-in-surface.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "navigation-menu-demo": {
+    name: "navigation-menu-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/navigation-menu.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/navigation-menu-demo.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/navigation-menu-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "navigation-menu-link": {
+    name: "navigation-menu-link",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/navigation-menu.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/navigation-menu-link.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/navigation-menu-link.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "navigation-menu-rtl": {
+    name: "navigation-menu-rtl",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/navigation-menu.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/navigation-menu-rtl.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/navigation-menu-rtl.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

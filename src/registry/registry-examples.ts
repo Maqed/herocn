@@ -4918,4 +4918,37 @@ export const examples: Registry["items"] = [
 			},
 		],
 	},
+	{
+		name: "navigation-menu-demo",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("navigation-menu")],
+		files: [
+			{
+				path: "examples/navigation-menu-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "navigation-menu-link",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("navigation-menu")],
+		files: [
+			{
+				path: "examples/navigation-menu-link.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "navigation-menu-rtl",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("navigation-menu")],
+		files: [
+			{
+				path: "examples/navigation-menu-rtl.tsx",
+				type: "registry:example",
+			},
+		],
+	},
 ];

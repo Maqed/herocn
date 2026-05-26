@@ -764,6 +764,17 @@ export const ui: Registry["items"] = [
 		},
 	},
 	{
+		name: "navigation-menu",
+		type: "registry:ui",
+		dependencies: ["@base-ui/react", "lucide-react"],
+		files: [
+			{
+				path: "ui/navigation-menu.tsx",
+				type: "registry:ui",
+			},
+		],
+	},
+	{
 		name: "native-select",
 		type: "registry:ui",
 		dependencies: ["lucide-react"],

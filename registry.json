@@ -1284,6 +1284,20 @@
       }
     },
     {
+      "name": "navigation-menu",
+      "type": "registry:ui",
+      "dependencies": [
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/navigation-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "native-select",
       "type": "registry:ui",
       "dependencies": [
@@ -1756,6 +1770,19 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/aspect-ratio-portrait.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "aspect-ratio-rtl",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/aspect-ratio.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/aspect-ratio-rtl.tsx",
           "type": "registry:example"
         }
       ]
@@ -6999,6 +7026,45 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/menubar-in-surface.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "navigation-menu-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/navigation-menu.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/navigation-menu-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "navigation-menu-link",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/navigation-menu.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/navigation-menu-link.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "navigation-menu-rtl",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/navigation-menu.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/navigation-menu-rtl.tsx",
           "type": "registry:example"
         }
       ]

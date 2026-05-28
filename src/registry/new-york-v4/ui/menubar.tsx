@@ -68,7 +68,7 @@ function MenubarTrigger({
 		<DropdownMenuTrigger
 			data-slot="menubar-trigger"
 			className={cn(
-				"pressible no-highlight focus-visible:focus-ring inline-flex cursor-pointer select-none items-center justify-center rounded-2xl px-3 py-1.5 font-medium text-sm outline-none transition-all hover:bg-muted data-popup-open:bg-muted group-data-[variant=secondary]/menubar:data-popup-open:brightness-97 group-data-[variant=tertiary]/menubar:data-popup-open:brightness-94 group-data-[variant=secondary]/menubar:hover:brightness-97 group-data-[variant=tertiary]/menubar:hover:brightness-94 dark:group-data-[variant=secondary]/menubar:data-popup-open:brightness-110 dark:group-data-[variant=tertiary]/menubar:data-popup-open:brightness-120 dark:group-data-[variant=secondary]/menubar:hover:brightness-110 dark:group-data-[variant=tertiary]/menubar:hover:brightness-120",
+				"pressible focus-visible:focus-ring inline-flex cursor-pointer select-none items-center justify-center rounded-2xl px-3 py-1.5 font-medium text-sm outline-none transition-all hover:bg-muted data-popup-open:bg-muted group-data-[variant=secondary]/menubar:data-popup-open:brightness-97 group-data-[variant=tertiary]/menubar:data-popup-open:brightness-94 group-data-[variant=secondary]/menubar:hover:brightness-97 group-data-[variant=tertiary]/menubar:hover:brightness-94 dark:group-data-[variant=secondary]/menubar:data-popup-open:brightness-110 dark:group-data-[variant=tertiary]/menubar:data-popup-open:brightness-120 dark:group-data-[variant=secondary]/menubar:hover:brightness-110 dark:group-data-[variant=tertiary]/menubar:hover:brightness-120",
 				className,
 			)}
 			{...props}
@@ -98,7 +98,7 @@ function MenubarCheckboxItem({
 		<MenuPrimitive.CheckboxItem
 			data-slot="menubar-checkbox-item"
 			className={cn(
-				"no-highlight focus-visible:focus-ring relative flex min-h-9 w-full cursor-default select-none items-center justify-start gap-3 rounded-2xl px-3 py-1.5 text-sm outline-none outline-hidden transition-all hover:bg-accent hover:text-accent-foreground data-disabled:pointer-events-none data-disabled:opacity-50 [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0",
+				"focus-visible:focus-ring relative flex min-h-9 w-full cursor-default select-none items-center justify-start gap-3 rounded-2xl px-3 py-1.5 text-sm outline-none outline-hidden transition-all hover:bg-accent hover:text-accent-foreground data-disabled:pointer-events-none data-disabled:opacity-50 [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0",
 				className,
 			)}
 			checked={checked}
@@ -132,7 +132,7 @@ function MenubarRadioItem({
 		<MenuPrimitive.RadioItem
 			data-slot="menubar-radio-item"
 			className={cn(
-				"no-highlight focus-visible:focus-ring relative flex min-h-9 w-full cursor-default select-none items-center justify-start gap-3 rounded-2xl px-3 py-1.5 ps-1.5 pe-8 text-sm outline-none outline-hidden transition-all hover:bg-accent hover:text-accent-foreground data-disabled:pointer-events-none data-disabled:opacity-50 [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0",
+				"focus-visible:focus-ring relative flex min-h-9 w-full cursor-default select-none items-center justify-start gap-3 rounded-2xl px-3 py-1.5 ps-1.5 pe-8 text-sm outline-none outline-hidden transition-all hover:bg-accent hover:text-accent-foreground data-disabled:pointer-events-none data-disabled:opacity-50 [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0",
 				className,
 			)}
 			{...props}

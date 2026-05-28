@@ -53,7 +53,7 @@ function AccordionTrigger({
 			<AccordionPrimitive.Trigger
 				data-slot="accordion-trigger"
 				className={cn(
-					"group/accordion-trigger no-highlight",
+					"group/accordion-trigger",
 					"flex flex-1 items-center justify-between px-4 py-4 text-start font-medium text-sm",
 					"cursor-pointer select-none",
 					"group-data-[variant=secondary]:first:rounded-t-3xltransition-none",

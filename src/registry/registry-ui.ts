@@ -774,7 +774,6 @@ export const ui: Registry["items"] = [
 			},
 		],
 		css: {
-			"@utility pressible": css["@utility pressible"],
 			"@utility focus-ring": css["@utility focus-ring"],
 		},
 	},

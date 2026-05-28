@@ -1295,7 +1295,12 @@
           "path": "src/registry/new-york-v4/ui/navigation-menu.tsx",
           "type": "registry:ui"
         }
-      ]
+      ],
+      "css": {
+        "@utility focus-ring": {
+          "@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none": {}
+        }
+      }
     },
     {
       "name": "native-select",

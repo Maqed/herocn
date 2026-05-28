@@ -24,7 +24,10 @@ export default async function Page(props: {
 	const MDX = doc.body;
 	const neighbours = findNeighbour(source.pageTree, page.url);
 	const raw = await page.data.getText("raw");
-	const markdownUrl = `${page.url}.mdx`;
+	const markdownUrl =
+		process.env.NODE_ENV === "development"
+			? `/llms.mdx/docs/${[...page.slugs, "index.mdx"].join("/")}`
+			: `${page.url}.mdx`;
 
 	return (
 		<div

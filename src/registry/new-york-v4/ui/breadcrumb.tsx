@@ -48,7 +48,7 @@ function BreadcrumbLink({
 		props: mergeProps<"a">(
 			{
 				className: cn(
-					"font-medium transition-colors hover:text-foreground",
+					"focus-visible:focus-ring rounded-3xl font-medium no-underline outline-none transition hover:underline hover:underline-offset-4",
 					className,
 				),
 			},

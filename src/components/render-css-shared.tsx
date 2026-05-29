@@ -47,7 +47,7 @@ function emitUtilityDeclarations(
 	}
 }
 
-function generateCSSString({
+export function generateCSSString({
 	light,
 	dark,
 	theme,

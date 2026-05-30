@@ -27,7 +27,7 @@ export default async function Page(props: {
 	const markdownUrl =
 		process.env.NODE_ENV === "development"
 			? `/llms.mdx/docs/${[...page.slugs, "index.mdx"].join("/")}`
-			: `${page.url}.mdx`;
+			: `${page.url}.md`;
 
 	return (
 		<div

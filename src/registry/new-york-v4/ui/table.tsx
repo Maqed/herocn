@@ -6,16 +6,21 @@ import { cn } from "@/lib/utils";
 
 function Table({
 	className,
+	containerClassName,
 	variant = "primary",
 	...props
-}: React.ComponentProps<"table"> & { variant?: "primary" | "secondary" }) {
+}: React.ComponentProps<"table"> & {
+	variant?: "primary" | "secondary";
+	containerClassName?: string;
+}) {
 	return (
 		<div
 			data-slot="table-container"
 			data-variant={variant}
 			className={cn(
-				"group/table relative w-full overflow-x-auto",
+				"group/table no-scrollbar relative w-full overflow-x-auto",
 				variant === "primary" && "rounded-3xl bg-surface-secondary p-1",
+				containerClassName,
 			)}
 		>
 			<table

@@ -42,7 +42,7 @@ function ApiRefRow({ prop }: { prop: ApiProp }) {
 				</span>
 			</TableCell>
 			<TableCell>
-				<code className="font-mono text-xs">{prop.type}</code>
+				<code className="whitespace-nowrap font-mono text-xs">{prop.type}</code>
 			</TableCell>
 			<TableCell>
 				<div className="flex items-center justify-between">
@@ -96,7 +96,10 @@ function ApiRefRow({ prop }: { prop: ApiProp }) {
 
 export function ApiRefTable({ props, className }: ApiRefTableProps) {
 	return (
-		<Table variant="secondary" className={cn("not-prose", className)}>
+		<Table
+			variant="secondary"
+			containerClassName={cn("not-prose no-scrollbar", className)}
+		>
 			<TableHeader>
 				<TableRow>
 					<TableHead>Prop</TableHead>

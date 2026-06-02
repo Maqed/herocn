@@ -45,6 +45,7 @@ export default function ButtonGroupPopover() {
 						<Textarea
 							id="button-group-task"
 							placeholder="I need to..."
+							variant="secondary"
 							className="resize-none"
 						/>
 						<FieldDescription>

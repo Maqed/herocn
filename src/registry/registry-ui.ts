@@ -832,13 +832,13 @@ export const ui: Registry["items"] = [
 		],
 		cssVars: {
 			light: {
-				"--surface-secondary": cssVars.light["--surface-secondary"],
+				"--default": cssVars.light["--default"],
 			},
 			dark: {
-				"--surface-secondary": cssVars.dark["--surface-secondary"],
+				"--default": cssVars.dark["--default"],
 			},
 			theme: {
-				"--color-surface-secondary": cssVars.theme["--color-surface-secondary"],
+				"--color-default": cssVars.theme["--color-default"],
 			},
 		},
 		css: {

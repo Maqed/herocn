@@ -23,10 +23,10 @@ import {
 export default function ButtonGroupDropdown() {
 	return (
 		<ButtonGroup>
-			<Button variant="outline">Follow</Button>
+			<Button variant="tertiary">Follow</Button>
 			<DropdownMenu>
 				<DropdownMenuTrigger
-					render={<Button variant="outline" className="ps-2!" />}
+					render={<Button variant="tertiary" className="ps-2!" />}
 				>
 					<ChevronDownIcon />
 				</DropdownMenuTrigger>

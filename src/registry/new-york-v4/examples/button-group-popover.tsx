@@ -20,13 +20,13 @@ import { Textarea } from "@/registry/new-york-v4/ui/textarea";
 export default function ButtonGroupPopover() {
 	return (
 		<ButtonGroup>
-			<Button variant="outline">
+			<Button variant="tertiary">
 				<BotIcon /> Copilot
 			</Button>
 			<Popover>
 				<PopoverTrigger
 					render={
-						<Button variant="outline" size="icon" aria-label="Open Popover" />
+						<Button variant="tertiary" size="icon" aria-label="Open Popover" />
 					}
 				>
 					<ChevronDownIcon />

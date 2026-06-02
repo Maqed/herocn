@@ -233,17 +233,3 @@ Static text or label region inside the group. Uses Base UI’s `render` prop (no
 Use `render` to associate text with a form control:
 
 <ComponentPreview previewClassName="*:max-w-full" name="button-group-text" />
-
-```tsx showLineNumbers
-import { ButtonGroup, ButtonGroupText } from "@/components/ui/button-group"
-import { Label } from "@/components/ui/label"
-
-export function ButtonGroupTextExample() {
-  return (
-    <ButtonGroup>
-      <ButtonGroupText render={<Label htmlFor="name">Text</Label>} />
-      <Input placeholder="Type something here..." id="name" />
-    </ButtonGroup>
-  )
-}
-```

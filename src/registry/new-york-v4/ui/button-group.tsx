@@ -11,9 +11,9 @@ const buttonGroupVariants = cva(
 		variants: {
 			orientation: {
 				horizontal:
-					"*:data-slot:rounded-e-none [&>[data-slot]:not(:has(~[data-slot]))]:rounded-e-3xl [&>[data-slot]~[data-slot]]:rounded-s-none [&>[data-slot]~[data-slot]]:border-s-0",
+					"*:data-slot:rounded-e-none [&>:is([data-slot='input'],[data-slot='input-group'],[data-slot='select-trigger']):first-child]:rounded-s-3xl [&>:is([data-slot='input'],[data-slot='input-group'],[data-slot='select-trigger']):last-child]:rounded-e-3xl [&>[data-slot]:not(:has(~[data-slot]))]:rounded-e-3xl [&>[data-slot]~[data-slot]]:rounded-s-none [&>[data-slot]~[data-slot]]:border-s-0",
 				vertical:
-					"flex-col *:data-slot:rounded-b-none [&>[data-slot]:not(:has(~[data-slot]))]:rounded-b-3xl [&>[data-slot]~[data-slot]]:rounded-t-none [&>[data-slot]~[data-slot]]:border-t-0",
+					"flex-col *:data-slot:rounded-b-none [&>:is([data-slot='input'],[data-slot='input-group'],[data-slot='select-trigger']):first-child]:rounded-t-3xl [&>:is([data-slot='input'],[data-slot='input-group'],[data-slot='select-trigger']):last-child]:rounded-b-3xl [&>[data-slot]:not(:has(~[data-slot]))]:rounded-b-3xl [&>[data-slot]~[data-slot]]:rounded-t-none [&>[data-slot]~[data-slot]]:border-t-0",
 			},
 		},
 		defaultVariants: {

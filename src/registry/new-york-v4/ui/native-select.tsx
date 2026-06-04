@@ -2,15 +2,13 @@ import { ChevronDownIcon } from "lucide-react";
 import type * as React from "react";
 import { cn } from "@/lib/utils";
 
-type NativeSelectProps = Omit<React.ComponentProps<"select">, "size"> & {
+type NativeSelectProps = React.ComponentProps<"select"> & {
 	variant?: "default" | "secondary";
-	size?: "sm" | "default";
 };
 
 function NativeSelect({
 	className,
 	variant = "default",
-	size = "default",
 	...props
 }: NativeSelectProps) {
 	return (
@@ -21,19 +19,16 @@ function NativeSelect({
 			)}
 			data-slot="native-select-wrapper"
 			data-variant={variant}
-			data-size={size}
 		>
 			<select
 				data-slot="native-select"
 				data-variant={variant}
-				data-size={size}
 				className={cn(
 					"w-full min-w-36 appearance-none rounded-xl bg-input px-2.5 py-1.5 pe-8 text-sm shadow-xs outline-none transition-all placeholder:text-muted-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 data-[variant=secondary]:bg-default data-[variant=secondary]:shadow-none md:px-3 md:py-2 dark:brightness-100",
 					"aria-invalid:not-focus-visible:invalid-field-ring",
 					"aria-invalid:focus-visible:invalid-field-ring-focus",
 					"not-aria-invalid:focus-visible:focus-field-ring not-aria-invalid:focus-visible:ring-ring",
 					"hover:not-focus-visible:brightness-97 not-dark:data-[variant=secondary]:brightness-100 hover:not-focus-visible:data-[variant=secondary]:bg-default not-dark:hover:not-focus-visible:data-[variant=secondary]:brightness-96 dark:hover:not-focus-visible:brightness-110 dark:hover:not-focus-visible:data-[variant=secondary]:bg-default",
-					"data-[size=sm]:py-1 data-[size=sm]:text-xs data-[size=sm]:md:py-1.5",
 				)}
 				{...props}
 			/>

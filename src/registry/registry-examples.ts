@@ -3951,17 +3951,6 @@ export const examples: Registry["items"] = [
 		],
 	},
 	{
-		name: "native-select-sizes",
-		type: "registry:example",
-		registryDependencies: [getRegistryItemInstallationAlias("native-select")],
-		files: [
-			{
-				path: "examples/native-select-sizes.tsx",
-				type: "registry:example",
-			},
-		],
-	},
-	{
 		name: "native-select-groups",
 		type: "registry:example",
 		registryDependencies: [getRegistryItemInstallationAlias("native-select")],

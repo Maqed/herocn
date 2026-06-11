@@ -4940,4 +4940,103 @@ export const examples: Registry["items"] = [
 			},
 		],
 	},
+	{
+		name: "carousel-demo",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("carousel"),
+			getRegistryItemInstallationAlias("surface"),
+		],
+		files: [
+			{
+				path: "examples/carousel-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "carousel-size",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("carousel"),
+			getRegistryItemInstallationAlias("surface"),
+		],
+		files: [
+			{
+				path: "examples/carousel-size.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "carousel-spacing",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("carousel"),
+			getRegistryItemInstallationAlias("surface"),
+		],
+		files: [
+			{
+				path: "examples/carousel-spacing.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "carousel-orientation",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("carousel"),
+			getRegistryItemInstallationAlias("surface"),
+		],
+		files: [
+			{
+				path: "examples/carousel-orientation.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "carousel-api",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("carousel"),
+			getRegistryItemInstallationAlias("surface"),
+		],
+		files: [
+			{
+				path: "examples/carousel-api.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "carousel-plugin",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("carousel"),
+			getRegistryItemInstallationAlias("surface"),
+		],
+		dependencies: ["embla-carousel-autoplay"],
+		files: [
+			{
+				path: "examples/carousel-plugin.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "carousel-rtl",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("carousel"),
+			getRegistryItemInstallationAlias("surface"),
+		],
+		files: [
+			{
+				path: "examples/carousel-rtl.tsx",
+				type: "registry:example",
+			},
+		],
+	},
 ];

@@ -119,7 +119,7 @@ function Carousel({
 		>
 			<div
 				onKeyDownCapture={handleKeyDown}
-				className={cn("relative", className)}
+				className={cn("relative rounded-xl bg-surface", className)}
 				role="region"
 				aria-roledescription="carousel"
 				data-slot="carousel"
@@ -137,7 +137,7 @@ function CarouselContent({ className, ...props }: React.ComponentProps<"div">) {
 	return (
 		<div
 			ref={carouselRef}
-			className="overflow-hidden"
+			className="overflow-hidden rounded-xl"
 			data-slot="carousel-content"
 		>
 			<div
@@ -172,7 +172,7 @@ function CarouselItem({ className, ...props }: React.ComponentProps<"div">) {
 
 function CarouselPrevious({
 	className,
-	variant = "outline",
+	variant = "tertiary",
 	size = "icon-sm",
 	...props
 }: React.ComponentProps<typeof Button>) {
@@ -186,15 +186,15 @@ function CarouselPrevious({
 			className={cn(
 				"absolute touch-manipulation rounded-full",
 				orientation === "horizontal"
-					? "-start-12 top-1/2 -translate-y-1/2"
-					: "start-1/2 -top-12 -translate-x-1/2 rotate-90 rtl:translate-x-1/2",
+					? "start-4 top-1/2 -translate-y-1/2"
+					: "start-1/2 top-4 -translate-x-1/2 rotate-90 rtl:translate-x-1/2",
 				className,
 			)}
 			disabled={!canScrollPrev}
 			onClick={scrollPrev}
 			{...props}
 		>
-			<ChevronLeftIcon className="rtl:rotate-180" />
+			<ChevronLeftIcon className="size-5 rtl:rotate-180" />
 			<span className="sr-only">Previous slide</span>
 		</Button>
 	);
@@ -202,7 +202,7 @@ function CarouselPrevious({
 
 function CarouselNext({
 	className,
-	variant = "outline",
+	variant = "tertiary",
 	size = "icon-sm",
 	...props
 }: React.ComponentProps<typeof Button>) {
@@ -216,15 +216,15 @@ function CarouselNext({
 			className={cn(
 				"absolute touch-manipulation rounded-full",
 				orientation === "horizontal"
-					? "-end-12 top-1/2 -translate-y-1/2"
-					: "start-1/2 -bottom-12 -translate-x-1/2 rotate-90 rtl:translate-x-1/2",
+					? "end-4 top-1/2 -translate-y-1/2"
+					: "start-1/2 bottom-4 -translate-x-1/2 rotate-90 rtl:translate-x-1/2",
 				className,
 			)}
 			disabled={!canScrollNext}
 			onClick={scrollNext}
 			{...props}
 		>
-			<ChevronRightIcon className="rtl:rotate-180" />
+			<ChevronRightIcon className="size-5 rtl:rotate-180" />
 			<span className="sr-only">Next slide</span>
 		</Button>
 	);

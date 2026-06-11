@@ -692,6 +692,34 @@
       }
     },
     {
+      "name": "carousel",
+      "type": "registry:ui",
+      "dependencies": [
+        "embla-carousel-react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/carousel.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "--surface": "white"
+        },
+        "dark": {
+          "--surface": "oklch(0.2103 0.0059 285.89)"
+        },
+        "theme": {
+          "--color-surface": "var(--surface)"
+        }
+      }
+    },
+    {
       "name": "checkbox",
       "type": "registry:ui",
       "dependencies": [
@@ -7062,6 +7090,107 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/navigation-menu-rtl.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "carousel-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/carousel.json",
+        "https://herocn.dev/r/card.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/carousel-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "carousel-size",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/carousel.json",
+        "https://herocn.dev/r/card.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/carousel-size.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "carousel-spacing",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/carousel.json",
+        "https://herocn.dev/r/card.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/carousel-spacing.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "carousel-orientation",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/carousel.json",
+        "https://herocn.dev/r/card.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/carousel-orientation.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "carousel-api",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/carousel.json",
+        "https://herocn.dev/r/card.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/carousel-api.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "carousel-plugin",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/carousel.json",
+        "https://herocn.dev/r/card.json"
+      ],
+      "dependencies": [
+        "embla-carousel-autoplay"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/carousel-plugin.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "carousel-rtl",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/carousel.json",
+        "https://herocn.dev/r/card.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/carousel-rtl.tsx",
           "type": "registry:example"
         }
       ]

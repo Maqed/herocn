@@ -264,6 +264,29 @@ export const ui: Registry["items"] = [
 		},
 	},
 	{
+		name: "carousel",
+		type: "registry:ui",
+		dependencies: ["embla-carousel-react", "lucide-react"],
+		registryDependencies: [getRegistryItemInstallationAlias("button")],
+		files: [
+			{
+				path: "ui/carousel.tsx",
+				type: "registry:ui",
+			},
+		],
+		cssVars: {
+			light: {
+				"--surface": cssVars.light["--surface"],
+			},
+			dark: {
+				"--surface": cssVars.dark["--surface"],
+			},
+			theme: {
+				"--color-surface": cssVars.theme["--color-surface"],
+			},
+		},
+	},
+	{
 		name: "checkbox",
 		type: "registry:ui",
 		dependencies: ["@base-ui/react"],

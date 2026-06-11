@@ -188,6 +188,20 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "carousel": {
+    name: "carousel",
+    type: "registry:ui",
+    registryDependencies: ["https://herocn.dev/r/button.json"],
+    files: [{
+      path: "src/registry/new-york-v4/ui/carousel.tsx",
+      type: "registry:ui"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/carousel.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "checkbox": {
     name: "checkbox",
     type: "registry:ui",
@@ -6162,6 +6176,104 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/navigation-menu-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "carousel-demo": {
+    name: "carousel-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/carousel-demo.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/carousel-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "carousel-size": {
+    name: "carousel-size",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/carousel-size.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/carousel-size.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "carousel-spacing": {
+    name: "carousel-spacing",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/carousel-spacing.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/carousel-spacing.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "carousel-orientation": {
+    name: "carousel-orientation",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/carousel-orientation.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/carousel-orientation.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "carousel-api": {
+    name: "carousel-api",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/carousel-api.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/carousel-api.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "carousel-plugin": {
+    name: "carousel-plugin",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/carousel-plugin.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/carousel-plugin.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "carousel-rtl": {
+    name: "carousel-rtl",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/carousel-rtl.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/carousel-rtl.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

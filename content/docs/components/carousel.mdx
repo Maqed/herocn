@@ -149,69 +149,6 @@ Use the `orientation` prop to set the orientation of the carousel.
 </Carousel>
 ```
 
-### API
-
-Use a state and the `setApi` prop to get an instance of the carousel API.
-
-<ComponentPreview name="carousel-api" />
-
-```tsx
-import { type CarouselApi } from "@/components/ui/carousel"
-
-export function Example() {
-  const [api, setApi] = React.useState<CarouselApi>()
-  const [current, setCurrent] = React.useState(0)
-  const [count, setCount] = React.useState(0)
-
-  React.useEffect(() => {
-    if (!api) {
-      return
-    }
-
-    setCount(api.scrollSnapList().length)
-    setCurrent(api.selectedScrollSnap() + 1)
-
-    api.on("select", () => {
-      setCurrent(api.selectedScrollSnap() + 1)
-    })
-  }, [api])
-
-  return (
-    <Carousel setApi={setApi}>
-      <CarouselContent>
-        <CarouselItem>...</CarouselItem>
-        <CarouselItem>...</CarouselItem>
-        <CarouselItem>...</CarouselItem>
-      </CarouselContent>
-    </Carousel>
-  )
-}
-```
-
-### Plugins
-
-Use the `plugins` prop to add plugins to the carousel.
-
-<ComponentPreview name="carousel-plugin" />
-
-```ts
-import Autoplay from "embla-carousel-autoplay"
-
-export function Example() {
-  return (
-    <Carousel
-      plugins={[
-        Autoplay({
-          delay: 2000,
-        }),
-      ]}
-    >
-      ...
-    </Carousel>
-  )
-}
-```
-
 ## Options
 
 You can pass options to the carousel using the `opts` prop. See the [Embla Carousel docs](https://www.embla-carousel.com/api/options/) for more information.
@@ -230,6 +167,12 @@ You can pass options to the carousel using the `opts` prop. See the [Embla Carou
   </CarouselContent>
 </Carousel>
 ```
+
+## API
+
+Use a state and the `setApi` prop to get an instance of the carousel API.
+
+<ComponentPreview name="carousel-api" />
 
 ## Events
 
@@ -262,6 +205,31 @@ export function Example() {
   )
 }
 ```
+
+## Plugins
+
+Use the `plugins` prop to add plugins to the carousel.
+
+<ComponentPreview name="carousel-plugin" />
+
+```ts
+import Autoplay from "embla-carousel-autoplay"
+
+export function Example() {
+  return (
+    <Carousel
+      plugins={[
+        Autoplay({
+          delay: 2000,
+        }),
+      ]}
+    >
+      ...
+    </Carousel>
+  )
+}
+```
+
 
 See the [Embla Carousel docs](https://www.embla-carousel.com/api/events/) for more information on using events.
 

@@ -41,7 +41,7 @@ description: For sighted users to preview content available behind a link.
 
 ## Usage
 
-```tsx showLineNumbers
+```tsx
 import {
   HoverCard,
   HoverCardContent,
@@ -49,7 +49,7 @@ import {
 } from "@/components/ui/hover-card"
 ```
 
-```tsx showLineNumbers
+```tsx
 <HoverCard>
   <HoverCardTrigger>Hover</HoverCardTrigger>
   <HoverCardContent>
@@ -73,7 +73,7 @@ HoverCard
 Use `delay` and `closeDelay` on the trigger to control when the card opens and
 closes.
 
-```tsx showLineNumbers
+```tsx
 <HoverCard>
   <HoverCardTrigger delay={100} closeDelay={200}>
     Hover
@@ -86,7 +86,7 @@ closes.
 
 Use the `side` and `align` props on `HoverCardContent` to control placement.
 
-```tsx showLineNumbers
+```tsx
 <HoverCard>
   <HoverCardTrigger>Hover</HoverCardTrigger>
   <HoverCardContent side="top" align="start">

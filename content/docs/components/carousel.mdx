@@ -93,7 +93,7 @@ To set the size of the items, you can use the `basis` utility class on the `<Car
 
 <ComponentPreview name="carousel-size" />
 
-```tsx showLineNumbers {4-6}
+```tsx
 // 33% of the carousel width.
 <Carousel>
   <CarouselContent>
@@ -104,7 +104,7 @@ To set the size of the items, you can use the `basis` utility class on the `<Car
 </Carousel>
 ```
 
-```tsx showLineNumbers {4-6}
+```tsx
 // 50% on small screens and 33% on larger screens.
 <Carousel>
   <CarouselContent>
@@ -121,7 +121,7 @@ To set the spacing between the items, use a `pl-[VALUE]` utility on the `<Carous
 
 <ComponentPreview name="carousel-spacing" />
 
-```tsx showLineNumbers /-ml-4/ /pl-4/
+```tsx
 <Carousel>
   <CarouselContent className="-ml-4">
     <CarouselItem className="pl-4">...</CarouselItem>
@@ -131,7 +131,7 @@ To set the spacing between the items, use a `pl-[VALUE]` utility on the `<Carous
 </Carousel>
 ```
 
-```tsx showLineNumbers /-ml-2/ /pl-2/ /md:-ml-4/ /md:pl-4/
+```tsx
 <Carousel>
   <CarouselContent className="-ml-2 md:-ml-4">
     <CarouselItem className="pl-2 md:pl-4">...</CarouselItem>
@@ -147,7 +147,7 @@ Use the `orientation` prop to set the orientation of the carousel.
 
 <ComponentPreview name="carousel-orientation" />
 
-```tsx showLineNumbers /vertical | horizontal/
+```tsx
 <Carousel orientation="vertical | horizontal">
   <CarouselContent>
     <CarouselItem>...</CarouselItem>
@@ -163,7 +163,7 @@ Use a state and the `setApi` prop to get an instance of the carousel API.
 
 <ComponentPreview name="carousel-api" />
 
-```tsx showLineNumbers {1,4,22}
+```tsx
 import { type CarouselApi } from "@/components/ui/carousel"
 
 export function Example() {
@@ -202,7 +202,7 @@ Use the `plugins` prop to add plugins to the carousel.
 
 <ComponentPreview name="carousel-plugin" />
 
-```ts showLineNumbers {1,6-10}
+```ts
 import Autoplay from "embla-carousel-autoplay"
 
 export function Example() {
@@ -224,7 +224,7 @@ export function Example() {
 
 You can pass options to the carousel using the `opts` prop. See the [Embla Carousel docs](https://www.embla-carousel.com/api/options/) for more information.
 
-```tsx showLineNumbers {2-5}
+```tsx
 <Carousel
   opts={{
     align: "start",
@@ -243,7 +243,7 @@ You can pass options to the carousel using the `opts` prop. See the [Embla Carou
 
 You can listen to events using the api instance from `setApi`.
 
-```tsx showLineNumbers {1,4-14,16}
+```tsx
 import { type CarouselApi } from "@/components/ui/carousel"
 
 export function Example() {
@@ -281,7 +281,7 @@ To enable RTL support in shadcn/ui, see the [RTL configuration guide](/docs/rtl)
 
 When localizing the carousel for RTL languages, set the `direction` option in the `opts` prop to match the text direction.
 
-```tsx showLineNumbers {2-5}
+```tsx
 <Carousel
   dir={dir}
   opts={{

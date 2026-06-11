@@ -9,7 +9,7 @@ import { Surface } from "@/registry/new-york-v4/ui/surface";
 
 export default function CarouselSpacing() {
 	return (
-		<Carousel className="w-full max-w-[12rem] sm:max-w-xs md:max-w-sm">
+		<Carousel className="w-full sm:max-w-xs md:max-w-sm">
 			<CarouselContent className="-ml-1">
 				{Array.from({ length: 5 }).map((_, index) => (
 					<CarouselItem key={index} className="basis-1/2 pl-1 lg:basis-1/3">

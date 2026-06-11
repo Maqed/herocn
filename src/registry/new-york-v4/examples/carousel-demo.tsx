@@ -9,7 +9,7 @@ import { Surface } from "@/registry/new-york-v4/ui/surface";
 
 export default function CarouselDemo() {
 	return (
-		<Carousel className="w-full max-w-[12rem] sm:max-w-xs">
+		<Carousel className="w-full sm:max-w-xs">
 			<CarouselContent>
 				{Array.from({ length: 5 }).map((_, index) => (
 					<CarouselItem key={index}>

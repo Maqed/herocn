@@ -14,7 +14,7 @@ export default function CarouselOrientation() {
 				align: "start",
 			}}
 			orientation="vertical"
-			className="w-full max-w-xs"
+			className="w-full sm:max-w-xs"
 		>
 			<CarouselContent className="-mt-1 h-[270px]">
 				{Array.from({ length: 5 }).map((_, index) => (

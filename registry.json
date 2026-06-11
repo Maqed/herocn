@@ -7099,7 +7099,7 @@
       "type": "registry:example",
       "registryDependencies": [
         "https://herocn.dev/r/carousel.json",
-        "https://herocn.dev/r/card.json"
+        "https://herocn.dev/r/surface.json"
       ],
       "files": [
         {
@@ -7113,7 +7113,7 @@
       "type": "registry:example",
       "registryDependencies": [
         "https://herocn.dev/r/carousel.json",
-        "https://herocn.dev/r/card.json"
+        "https://herocn.dev/r/surface.json"
       ],
       "files": [
         {
@@ -7127,7 +7127,7 @@
       "type": "registry:example",
       "registryDependencies": [
         "https://herocn.dev/r/carousel.json",
-        "https://herocn.dev/r/card.json"
+        "https://herocn.dev/r/surface.json"
       ],
       "files": [
         {
@@ -7141,7 +7141,7 @@
       "type": "registry:example",
       "registryDependencies": [
         "https://herocn.dev/r/carousel.json",
-        "https://herocn.dev/r/card.json"
+        "https://herocn.dev/r/surface.json"
       ],
       "files": [
         {
@@ -7155,7 +7155,7 @@
       "type": "registry:example",
       "registryDependencies": [
         "https://herocn.dev/r/carousel.json",
-        "https://herocn.dev/r/card.json"
+        "https://herocn.dev/r/surface.json"
       ],
       "files": [
         {
@@ -7169,7 +7169,7 @@
       "type": "registry:example",
       "registryDependencies": [
         "https://herocn.dev/r/carousel.json",
-        "https://herocn.dev/r/card.json"
+        "https://herocn.dev/r/surface.json"
       ],
       "dependencies": [
         "embla-carousel-autoplay"
@@ -7186,7 +7186,7 @@
       "type": "registry:example",
       "registryDependencies": [
         "https://herocn.dev/r/carousel.json",
-        "https://herocn.dev/r/card.json"
+        "https://herocn.dev/r/surface.json"
       ],
       "files": [
         {

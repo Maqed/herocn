@@ -6183,7 +6183,7 @@ export const Index: Record<string, any> = {
   "carousel-demo": {
     name: "carousel-demo",
     type: "registry:example",
-    registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
+    registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/carousel-demo.tsx",
       type: "registry:example"
@@ -6197,7 +6197,7 @@ export const Index: Record<string, any> = {
   "carousel-size": {
     name: "carousel-size",
     type: "registry:example",
-    registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
+    registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/carousel-size.tsx",
       type: "registry:example"
@@ -6211,7 +6211,7 @@ export const Index: Record<string, any> = {
   "carousel-spacing": {
     name: "carousel-spacing",
     type: "registry:example",
-    registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
+    registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/carousel-spacing.tsx",
       type: "registry:example"
@@ -6225,7 +6225,7 @@ export const Index: Record<string, any> = {
   "carousel-orientation": {
     name: "carousel-orientation",
     type: "registry:example",
-    registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
+    registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/carousel-orientation.tsx",
       type: "registry:example"
@@ -6239,7 +6239,7 @@ export const Index: Record<string, any> = {
   "carousel-api": {
     name: "carousel-api",
     type: "registry:example",
-    registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
+    registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/carousel-api.tsx",
       type: "registry:example"
@@ -6253,7 +6253,7 @@ export const Index: Record<string, any> = {
   "carousel-plugin": {
     name: "carousel-plugin",
     type: "registry:example",
-    registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
+    registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/carousel-plugin.tsx",
       type: "registry:example"
@@ -6267,7 +6267,7 @@ export const Index: Record<string, any> = {
   "carousel-rtl": {
     name: "carousel-rtl",
     type: "registry:example",
-    registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
+    registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/carousel-rtl.tsx",
       type: "registry:example"

@@ -274,17 +274,6 @@ export const ui: Registry["items"] = [
 				type: "registry:ui",
 			},
 		],
-		cssVars: {
-			light: {
-				"--surface": cssVars.light["--surface"],
-			},
-			dark: {
-				"--surface": cssVars.dark["--surface"],
-			},
-			theme: {
-				"--color-surface": cssVars.theme["--color-surface"],
-			},
-		},
 	},
 	{
 		name: "checkbox",

@@ -1,3 +1,4 @@
+import { Card, CardContent } from "@/registry/new-york-v4/ui/card";
 import {
 	Carousel,
 	CarouselContent,
@@ -5,7 +6,6 @@ import {
 	CarouselNext,
 	CarouselPrevious,
 } from "@/registry/new-york-v4/ui/carousel";
-import { Surface } from "@/registry/new-york-v4/ui/surface";
 
 export default function CarouselSpacing() {
 	return (
@@ -14,9 +14,11 @@ export default function CarouselSpacing() {
 				{Array.from({ length: 5 }).map((_, index) => (
 					<CarouselItem key={index} className="basis-1/2 pl-1 lg:basis-1/3">
 						<div className="p-1">
-							<Surface className="flex aspect-square items-center justify-center rounded-3xl p-6">
-								<span className="font-semibold text-2xl">{index + 1}</span>
-							</Surface>
+							<Card>
+								<CardContent className="flex aspect-square items-center justify-center p-6">
+									<span className="font-semibold text-2xl">{index + 1}</span>
+								</CardContent>
+							</Card>
 						</div>
 					</CarouselItem>
 				))}

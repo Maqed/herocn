@@ -1,3 +1,4 @@
+import { Card, CardContent } from "@/registry/new-york-v4/ui/card";
 import {
 	Carousel,
 	CarouselContent,
@@ -5,7 +6,6 @@ import {
 	CarouselNext,
 	CarouselPrevious,
 } from "@/registry/new-york-v4/ui/carousel";
-import { Surface } from "@/registry/new-york-v4/ui/surface";
 
 export default function CarouselOrientation() {
 	return (
@@ -20,9 +20,11 @@ export default function CarouselOrientation() {
 				{Array.from({ length: 5 }).map((_, index) => (
 					<CarouselItem key={index} className="basis-1/2 pt-1">
 						<div className="p-1">
-							<Surface className="flex items-center justify-center rounded-3xl p-6">
-								<span className="font-semibold text-3xl">{index + 1}</span>
-							</Surface>
+							<Card>
+								<CardContent className="flex items-center justify-center p-6">
+									<span className="font-semibold text-3xl">{index + 1}</span>
+								</CardContent>
+							</Card>
 						</div>
 					</CarouselItem>
 				))}

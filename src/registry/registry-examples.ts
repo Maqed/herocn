@@ -4945,7 +4945,7 @@ export const examples: Registry["items"] = [
 		type: "registry:example",
 		registryDependencies: [
 			getRegistryItemInstallationAlias("carousel"),
-			getRegistryItemInstallationAlias("surface"),
+			getRegistryItemInstallationAlias("card"),
 		],
 		files: [
 			{
@@ -4959,7 +4959,7 @@ export const examples: Registry["items"] = [
 		type: "registry:example",
 		registryDependencies: [
 			getRegistryItemInstallationAlias("carousel"),
-			getRegistryItemInstallationAlias("surface"),
+			getRegistryItemInstallationAlias("card"),
 		],
 		files: [
 			{
@@ -4973,7 +4973,7 @@ export const examples: Registry["items"] = [
 		type: "registry:example",
 		registryDependencies: [
 			getRegistryItemInstallationAlias("carousel"),
-			getRegistryItemInstallationAlias("surface"),
+			getRegistryItemInstallationAlias("card"),
 		],
 		files: [
 			{
@@ -4987,7 +4987,7 @@ export const examples: Registry["items"] = [
 		type: "registry:example",
 		registryDependencies: [
 			getRegistryItemInstallationAlias("carousel"),
-			getRegistryItemInstallationAlias("surface"),
+			getRegistryItemInstallationAlias("card"),
 		],
 		files: [
 			{
@@ -5001,7 +5001,7 @@ export const examples: Registry["items"] = [
 		type: "registry:example",
 		registryDependencies: [
 			getRegistryItemInstallationAlias("carousel"),
-			getRegistryItemInstallationAlias("surface"),
+			getRegistryItemInstallationAlias("card"),
 		],
 		files: [
 			{
@@ -5015,7 +5015,7 @@ export const examples: Registry["items"] = [
 		type: "registry:example",
 		registryDependencies: [
 			getRegistryItemInstallationAlias("carousel"),
-			getRegistryItemInstallationAlias("surface"),
+			getRegistryItemInstallationAlias("card"),
 		],
 		dependencies: ["embla-carousel-autoplay"],
 		files: [
@@ -5030,7 +5030,7 @@ export const examples: Registry["items"] = [
 		type: "registry:example",
 		registryDependencies: [
 			getRegistryItemInstallationAlias("carousel"),
-			getRegistryItemInstallationAlias("surface"),
+			getRegistryItemInstallationAlias("card"),
 		],
 		files: [
 			{

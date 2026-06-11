@@ -119,7 +119,7 @@ function Carousel({
 		>
 			<div
 				onKeyDownCapture={handleKeyDown}
-				className={cn("relative rounded-xl bg-surface", className)}
+				className={cn("relative", className)}
 				role="region"
 				aria-roledescription="carousel"
 				data-slot="carousel"

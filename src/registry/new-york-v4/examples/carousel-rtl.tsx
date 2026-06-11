@@ -4,6 +4,7 @@ import {
 	type Translations,
 	useTranslation,
 } from "@/components/language-selector";
+import { Card, CardContent } from "@/registry/new-york-v4/ui/card";
 import {
 	Carousel,
 	CarouselContent,
@@ -11,7 +12,6 @@ import {
 	CarouselNext,
 	CarouselPrevious,
 } from "@/registry/new-york-v4/ui/carousel";
-import { Surface } from "@/registry/new-york-v4/ui/surface";
 
 const translations: Translations = {
 	en: {
@@ -59,11 +59,13 @@ export default function CarouselRtl() {
 				{Array.from({ length: 5 }).map((_, index) => (
 					<CarouselItem key={index}>
 						<div className="p-1">
-							<Surface className="flex aspect-square items-center justify-center rounded-3xl p-6">
-								<span className="font-semibold text-4xl">
-									{formatNumber(index + 1)}
-								</span>
-							</Surface>
+							<Card>
+								<CardContent className="flex aspect-square items-center justify-center p-6">
+									<span className="font-semibold text-4xl">
+										{formatNumber(index + 1)}
+									</span>
+								</CardContent>
+							</Card>
 						</div>
 					</CarouselItem>
 				))}

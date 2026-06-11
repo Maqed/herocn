@@ -2,6 +2,8 @@
 
 import Autoplay from "embla-carousel-autoplay";
 import * as React from "react";
+
+import { Card, CardContent } from "@/registry/new-york-v4/ui/card";
 import {
 	Carousel,
 	CarouselContent,
@@ -9,7 +11,6 @@ import {
 	CarouselNext,
 	CarouselPrevious,
 } from "@/registry/new-york-v4/ui/carousel";
-import { Surface } from "@/registry/new-york-v4/ui/surface";
 
 export default function CarouselPlugin() {
 	const plugin = React.useRef(
@@ -27,9 +28,11 @@ export default function CarouselPlugin() {
 				{Array.from({ length: 5 }).map((_, index) => (
 					<CarouselItem key={index}>
 						<div className="p-1">
-							<Surface className="flex aspect-square items-center justify-center rounded-3xl p-6">
-								<span className="font-semibold text-4xl">{index + 1}</span>
-							</Surface>
+							<Card>
+								<CardContent className="flex aspect-square items-center justify-center p-6">
+									<span className="font-semibold text-4xl">{index + 1}</span>
+								</CardContent>
+							</Card>
 						</div>
 					</CarouselItem>
 				))}

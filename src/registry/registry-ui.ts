@@ -1149,6 +1149,34 @@ export const ui: Registry["items"] = [
 		},
 	},
 	{
+		name: "radio-group",
+		type: "registry:ui",
+		dependencies: ["@base-ui/react"],
+		files: [
+			{
+				path: "ui/radio-group.tsx",
+				type: "registry:ui",
+			},
+		],
+		cssVars: {
+			light: {
+				"--default": cssVars.light["--default"],
+			},
+			dark: {
+				"--default": cssVars.dark["--default"],
+			},
+			theme: {
+				"--color-default": cssVars.theme["--color-default"],
+			},
+		},
+		css: {
+			"@utility focus-ring": css["@utility focus-ring"],
+			"@utility invalid-field-ring": css["@utility invalid-field-ring"],
+			"@utility invalid-field-ring-focus":
+				css["@utility invalid-field-ring-focus"],
+		},
+	},
+	{
 		name: "resizable",
 		type: "registry:ui",
 		dependencies: ["react-resizable-panels"],

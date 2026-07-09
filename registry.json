@@ -1763,6 +1763,41 @@
       }
     },
     {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/radio-group.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "--default": "oklch(94% 0.001 286.375)"
+        },
+        "dark": {
+          "--default": "oklch(27.4% 0.006 286.033)"
+        },
+        "theme": {
+          "--color-default": "var(--default)"
+        }
+      },
+      "css": {
+        "@utility focus-ring": {
+          "@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none": {}
+        },
+        "@utility invalid-field-ring": {
+          "@apply outline-1 outline-destructive outline-solid": {}
+        },
+        "@utility invalid-field-ring-focus": {
+          "@apply ring-2 outline-none ring-destructive ring-offset-0": {}
+        }
+      }
+    },
+    {
       "name": "resizable",
       "type": "registry:ui",
       "dependencies": [

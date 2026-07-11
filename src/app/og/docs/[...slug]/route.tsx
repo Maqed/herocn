@@ -1,6 +1,6 @@
-import { ImageResponse } from "@takumi-rs/image-response";
 import { generate as DefaultImage } from "fumadocs-ui/og/takumi";
 import { notFound } from "next/navigation";
+import { ImageResponse } from "takumi-js/response";
 import { Icons } from "@/components/icons";
 import { siteConfig } from "@/lib/config";
 import { getPageImage, source } from "@/lib/source";

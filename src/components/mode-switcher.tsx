@@ -70,7 +70,6 @@ export function DarkModeScript() {
 		<Script
 			id="dark-mode-listener"
 			strategy="beforeInteractive"
-			// biome-ignore lint/security/noDangerouslySetInnerHtml: <added by me>
 			dangerouslySetInnerHTML={{
 				__html: `
             (function() {

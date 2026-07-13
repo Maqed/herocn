@@ -5039,4 +5039,95 @@ export const examples: Registry["items"] = [
 			},
 		],
 	},
+	{
+		name: "chart-demo",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("card"),
+			getRegistryItemInstallationAlias("chart"),
+		],
+		files: [
+			{
+				path: "examples/chart-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "chart-bar-demo",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("chart")],
+		files: [
+			{
+				path: "examples/chart-bar-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "chart-bar-demo-grid",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("chart")],
+		files: [
+			{
+				path: "examples/chart-bar-demo-grid.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "chart-bar-demo-axis",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("chart")],
+		files: [
+			{
+				path: "examples/chart-bar-demo-axis.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "chart-bar-demo-tooltip",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("chart")],
+		files: [
+			{
+				path: "examples/chart-bar-demo-tooltip.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "chart-bar-demo-legend",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("chart")],
+		files: [
+			{
+				path: "examples/chart-bar-demo-legend.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "chart-tooltip-demo",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("chart")],
+		files: [
+			{
+				path: "examples/chart-tooltip-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "chart-rtl",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("chart")],
+		files: [
+			{
+				path: "examples/chart-rtl.tsx",
+				type: "registry:example",
+			},
+		],
+	},
 ];

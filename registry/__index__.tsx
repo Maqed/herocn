@@ -187,6 +187,20 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "chart": {
+    name: "chart",
+    type: "registry:ui",
+    registryDependencies: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/ui/chart.tsx",
+      type: "registry:ui"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/chart.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "carousel": {
     name: "carousel",
     type: "registry:ui",
@@ -6287,6 +6301,118 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/carousel-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-demo": {
+    name: "chart-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/card.json","https://herocn.dev/r/chart.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/chart-demo.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/chart-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-bar-demo": {
+    name: "chart-bar-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/chart.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/chart-bar-demo.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/chart-bar-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-bar-demo-grid": {
+    name: "chart-bar-demo-grid",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/chart.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/chart-bar-demo-grid.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/chart-bar-demo-grid.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-bar-demo-axis": {
+    name: "chart-bar-demo-axis",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/chart.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/chart-bar-demo-axis.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/chart-bar-demo-axis.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-bar-demo-tooltip": {
+    name: "chart-bar-demo-tooltip",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/chart.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/chart-bar-demo-tooltip.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/chart-bar-demo-tooltip.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-bar-demo-legend": {
+    name: "chart-bar-demo-legend",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/chart.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/chart-bar-demo-legend.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/chart-bar-demo-legend.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-tooltip-demo": {
+    name: "chart-tooltip-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/chart.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/chart-tooltip-demo.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/chart-tooltip-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-rtl": {
+    name: "chart-rtl",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/chart.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/chart-rtl.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/chart-rtl.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

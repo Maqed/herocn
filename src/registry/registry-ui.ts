@@ -264,6 +264,17 @@ export const ui: Registry["items"] = [
 		},
 	},
 	{
+		name: "chart",
+		type: "registry:ui",
+		dependencies: ["recharts"],
+		files: [
+			{
+				path: "ui/chart.tsx",
+				type: "registry:ui",
+			},
+		],
+	},
+	{
 		name: "carousel",
 		type: "registry:ui",
 		dependencies: ["embla-carousel-react", "lucide-react"],

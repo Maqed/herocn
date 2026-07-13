@@ -1,0 +1,427 @@
+---
+title: Chart
+description: Beautiful charts. Built using Recharts. Copy and paste into your apps.
+---
+
+<ComponentPreview name="chart-demo" previewClassName="h-[40rem]" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+<CodeBlockCommand command="npx shadcn@latest add https://herocn.dev/r/chart.json" />
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+<CodeBlockCommand command="npm install recharts" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="chart" title="components/ui/chart.tsx" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+We use [Recharts](https://recharts.org/) under the hood.
+
+We designed the `chart` component with composition in mind. **You build your charts using Recharts components and only bring in custom components, such as `ChartTooltip`, when and where you need it**.
+
+```tsx
+import { Bar, BarChart } from "recharts"
+
+import { ChartContainer, ChartTooltipContent } from "@/components/ui/chart"
+
+function MyChart() {
+  return (
+    <ChartContainer config={chartConfig}>
+      <BarChart data={data}>
+        <Bar dataKey="value" />
+        <ChartTooltip content={<ChartTooltipContent />} />
+      </BarChart>
+    </ChartContainer>
+  )
+}
+```
+
+We do not wrap Recharts. This means you're not locked into an abstraction. When a new Recharts version is released, you can follow the official upgrade path to upgrade your charts.
+
+**The components are yours**.
+
+## Composition
+
+Use the following composition to build a `Chart`:
+
+```text
+ChartContainer
+├── ChartStyle (injects CSS custom properties)
+├── ChartTooltip
+│   └── ChartTooltipContent
+└── ChartLegend
+    └── ChartLegendContent
+```
+
+## Your First Chart
+
+Let's build your first chart. We'll build a bar chart, add a grid, axis, tooltip and legend.
+
+### Basic bar chart
+
+Start by defining your chart data and config, then build the chart.
+
+<ComponentPreview name="chart-bar-demo" />
+
+### Add a Grid
+
+Import the `CartesianGrid` component from recharts and add it to your chart.
+
+<ComponentPreview name="chart-bar-demo-grid" />
+
+### Add an Axis
+
+Use the `XAxis` component to add an x-axis to your chart.
+
+<ComponentPreview name="chart-bar-demo-axis" />
+
+### Add a Tooltip
+
+Use the custom `ChartTooltip` and `ChartTooltipContent` components to add a tooltip.
+
+<ComponentPreview name="chart-bar-demo-tooltip" />
+
+### Add a Legend
+
+Use the `ChartLegend` and `ChartLegendContent` components to add a legend.
+
+<ComponentPreview name="chart-bar-demo-legend" />
+
+## Chart Config
+
+The chart config is where you define the labels, icons and colors for a chart.
+
+```tsx
+import { Monitor } from "lucide-react"
+
+import { type ChartConfig } from "@/components/ui/chart"
+
+const chartConfig = {
+  desktop: {
+    label: "Desktop",
+    icon: Monitor,
+    color: "var(--chart-1)",
+    theme: {
+      light: "var(--chart-1)",
+      dark: "var(--chart-3)",
+    },
+  },
+} satisfies ChartConfig
+```
+
+## Theming
+
+Charts have built-in support for theming. You can use CSS variables (recommended) or color values in any color format, such as hex, hsl or oklch.
+
+### CSS Variables
+
+Define your colors in your CSS file and reference them in the chart config:
+
+```css title="app/globals.css"
+@layer base {
+  :root {
+    --chart-1: oklch(0.646 0.222 41.116);
+    --chart-2: oklch(0.6 0.118 184.704);
+  }
+
+  .dark {
+    --chart-1: oklch(0.488 0.243 264.376);
+    --chart-2: oklch(0.696 0.17 162.48);
+  }
+}
+```
+
+```tsx
+const chartConfig = {
+  desktop: {
+    label: "Desktop",
+    color: "var(--chart-1)",
+  },
+  mobile: {
+    label: "Mobile",
+    color: "var(--chart-2)",
+  },
+} satisfies ChartConfig
+```
+
+### Using Colors
+
+To use the theme colors in your chart, reference the colors using the format `var(--color-KEY)`.
+
+#### Components
+
+```tsx
+<Bar dataKey="desktop" fill="var(--color-desktop)" />
+```
+
+#### Chart Data
+
+```tsx
+const chartData = [
+  { browser: "chrome", visitors: 275, fill: "var(--color-chrome)" },
+  { browser: "safari", visitors: 200, fill: "var(--color-safari)" },
+]
+```
+
+#### Tailwind
+
+```tsx
+<LabelList className="fill-(--color-desktop)" />
+```
+
+## Tooltip
+
+A chart tooltip contains a label, name, indicator and value. You can use a combination of these to customize your tooltip.
+
+<ComponentPreview name="chart-tooltip-demo" hideCode />
+
+You can turn on/off any of these using the `hideLabel`, `hideIndicator` props and customize the indicator style using the `indicator` prop.
+
+Use `labelKey` and `nameKey` to use a custom key for the tooltip label and name.
+
+### Tooltip Colors
+
+Colors are automatically referenced from the chart config.
+
+### Custom Keys
+
+To use custom keys for the tooltip label and names, use `labelKey` and `nameKey`:
+
+```tsx
+const chartData = [
+  { browser: "chrome", visitors: 187, fill: "var(--color-chrome)" },
+  { browser: "safari", visitors: 200, fill: "var(--color-safari)" },
+]
+
+const chartConfig = {
+  visitors: {
+    label: "Total Visitors",
+  },
+  chrome: {
+    label: "Chrome",
+    color: "var(--chart-1)",
+  },
+  safari: {
+    label: "Safari",
+    color: "var(--chart-2)",
+  },
+} satisfies ChartConfig
+```
+
+```tsx
+<ChartTooltip
+  content={<ChartTooltipContent labelKey="visitors" nameKey="browser" />}
+/>
+```
+
+## Legend
+
+You can use the custom `<ChartLegend>` and `<ChartLegendContent>` components to add a legend to your chart.
+
+Colors are automatically referenced from the chart config.
+
+### Custom Keys
+
+To use custom keys for legend names, use the `nameKey` prop:
+
+```tsx
+<ChartLegend content={<ChartLegendContent nameKey="browser" />} />
+```
+
+## Accessibility
+
+You can turn on the `accessibilityLayer` prop on your Recharts chart to add keyboard access and screen reader support.
+
+```tsx
+<BarChart accessibilityLayer />
+```
+
+## RTL
+
+To enable RTL support, set `dir="rtl"` on the chart container and reverse the axis accordingly.
+
+<ComponentPreview name="chart-rtl" direction="rtl" />
+
+## API Reference
+
+### ChartContainer
+
+The `ChartContainer` component wraps a Recharts chart and provides the chart config context.
+
+<ApiRefTable
+  props={[
+    {
+      name: "config",
+      type: "ChartConfig",
+      required: true,
+      description: "The chart configuration object defining labels, icons, and colors for each data key.",
+    },
+    {
+      name: "className",
+      type: "string",
+      description: "Additional CSS classes to style the chart container.",
+    },
+    {
+      name: "id",
+      type: "string",
+      description: "Custom ID for the chart container. Used to scope CSS variables.",
+    },
+    {
+      name: "initialDimension",
+      type: "{ width: number; height: number }",
+      defaultValue: "{ width: 320, height: 200 }",
+      description: "Initial dimensions for the responsive container before measurement.",
+    },
+  ]}
+/>
+
+### ChartTooltip
+
+The `ChartTooltip` component is a wrapper around the Recharts `Tooltip` component.
+
+<ApiRefTable
+  props={[
+    {
+      name: "content",
+      type: "ReactElement",
+      description: "Custom tooltip content. Typically a <ChartTooltipContent /> instance.",
+    },
+  ]}
+/>
+
+### ChartTooltipContent
+
+The `ChartTooltipContent` component renders the tooltip with labels, indicators, and values.
+
+<ApiRefTable
+  props={[
+    {
+      name: "indicator",
+      type: '"dot" | "line" | "dashed"',
+      defaultValue: '"dot"',
+      description: "The indicator style for each tooltip item.",
+    },
+    {
+      name: "hideLabel",
+      type: "boolean",
+      defaultValue: "false",
+      description: "Whether to hide the tooltip label.",
+    },
+    {
+      name: "hideIndicator",
+      type: "boolean",
+      defaultValue: "false",
+      description: "Whether to hide the color indicator.",
+    },
+    {
+      name: "labelKey",
+      type: "string",
+      description: "The config or data key to use for the tooltip label.",
+    },
+    {
+      name: "nameKey",
+      type: "string",
+      description: "The config or data key to use for the tooltip series names.",
+    },
+    {
+      name: "labelFormatter",
+      type: "(value: unknown, payload: unknown[]) => ReactNode",
+      description: "Custom formatter for the tooltip label.",
+    },
+    {
+      name: "formatter",
+      type: "(value: unknown, name: unknown, item: unknown, index: number, payload: unknown) => ReactNode",
+      description: "Custom formatter for individual tooltip items.",
+    },
+    {
+      name: "className",
+      type: "string",
+      description: "Additional CSS classes for the tooltip container.",
+    },
+  ]}
+/>
+
+### ChartLegend
+
+The `ChartLegend` component is a wrapper around the Recharts `Legend` component.
+
+<ApiRefTable
+  props={[
+    {
+      name: "content",
+      type: "ReactElement",
+      description: "Custom legend content. Typically a <ChartLegendContent /> instance.",
+    },
+  ]}
+/>
+
+### ChartLegendContent
+
+The `ChartLegendContent` component renders the legend with color indicators and labels.
+
+<ApiRefTable
+  props={[
+    {
+      name: "nameKey",
+      type: "string",
+      description: "The config or data key to use for the legend item names.",
+    },
+    {
+      name: "hideIcon",
+      type: "boolean",
+      defaultValue: "false",
+      description: "Whether to hide the icon or color indicator in the legend.",
+    },
+    {
+      name: "className",
+      type: "string",
+      description: "Additional CSS classes for the legend container.",
+    },
+    {
+      name: "verticalAlign",
+      type: '"top" | "bottom"',
+      defaultValue: '"bottom"',
+      description: "Vertical alignment of the legend.",
+    },
+  ]}
+/>
+
+### ChartConfig
+
+The `ChartConfig` type defines the configuration object for the chart.
+
+<ApiRefTable
+  props={[
+    {
+      name: "[key]",
+      type: "{ label?: ReactNode; icon?: ComponentType; color?: string } | { label?: ReactNode; icon?: ComponentType; theme: { light: string; dark: string } }",
+      description: "A record mapping data keys to their display configuration.",
+    },
+  ]}
+/>

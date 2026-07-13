@@ -692,6 +692,19 @@
       }
     },
     {
+      "name": "chart",
+      "type": "registry:ui",
+      "dependencies": [
+        "recharts"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/chart.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "carousel",
       "type": "registry:ui",
       "dependencies": [
@@ -7215,6 +7228,111 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/carousel-rtl.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "chart-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/card.json",
+        "https://herocn.dev/r/chart.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/chart-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "chart-bar-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/chart.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/chart-bar-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "chart-bar-demo-grid",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/chart.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/chart-bar-demo-grid.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "chart-bar-demo-axis",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/chart.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/chart-bar-demo-axis.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "chart-bar-demo-tooltip",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/chart.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/chart-bar-demo-tooltip.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "chart-bar-demo-legend",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/chart.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/chart-bar-demo-legend.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "chart-tooltip-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/chart.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/chart-tooltip-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "chart-rtl",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/chart.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/chart-rtl.tsx",
           "type": "registry:example"
         }
       ]

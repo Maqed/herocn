@@ -43,7 +43,7 @@ export function ComponentPreviewTabs({
 		<div
 			data-slot="component-preview"
 			className={cn(
-				"group relative mt-4 mb-12 flex flex-col overflow-hidden rounded-xl border",
+				"group relative mt-4 mb-12 flex flex-col overflow-hidden rounded-3xl border",
 				className,
 			)}
 			{...props}

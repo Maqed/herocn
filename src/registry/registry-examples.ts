@@ -1806,6 +1806,38 @@ export const examples: Registry["items"] = [
 		],
 	},
 	{
+		name: "sidebar-demo",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("sidebar"),
+			getRegistryItemInstallationAlias("avatar"),
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("collapsible"),
+			getRegistryItemInstallationAlias("dropdown-menu"),
+		],
+		files: [
+			{
+				path: "examples/sidebar-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "sidebar-rtl",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("sidebar"),
+			getRegistryItemInstallationAlias("avatar"),
+			getRegistryItemInstallationAlias("dropdown-menu"),
+		],
+		files: [
+			{
+				path: "examples/sidebar-rtl.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
 		name: "popover-demo",
 		type: "registry:example",
 		registryDependencies: [

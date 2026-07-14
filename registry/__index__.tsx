@@ -663,6 +663,23 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "sidebar": {
+    name: "sidebar",
+    type: "registry:ui",
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/input.json","https://herocn.dev/r/separator.json","https://herocn.dev/r/sheet.json","https://herocn.dev/r/skeleton.json","https://herocn.dev/r/tooltip.json"],
+    files: [{
+      path: "src/registry/new-york-v4/ui/sidebar.tsx",
+      type: "registry:ui"
+    },{
+      path: "src/registry/new-york-v4/hooks/use-mobile.ts",
+      type: "registry:hook"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/sidebar.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "slider": {
     name: "slider",
     type: "registry:ui",
@@ -2773,6 +2790,34 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/separator-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "sidebar-demo": {
+    name: "sidebar-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/sidebar.json","https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/collapsible.json","https://herocn.dev/r/dropdown-menu.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/sidebar-demo.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/sidebar-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "sidebar-rtl": {
+    name: "sidebar-rtl",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/sidebar.json","https://herocn.dev/r/avatar.json","https://herocn.dev/r/dropdown-menu.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/sidebar-rtl.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/sidebar-rtl.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

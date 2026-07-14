@@ -918,6 +918,36 @@ export const ui: Registry["items"] = [
 		},
 	},
 	{
+		name: "sidebar",
+		type: "registry:ui",
+		dependencies: [
+			"@base-ui/react",
+			"class-variance-authority",
+			"lucide-react",
+		],
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("input"),
+			getRegistryItemInstallationAlias("separator"),
+			getRegistryItemInstallationAlias("sheet"),
+			getRegistryItemInstallationAlias("skeleton"),
+			getRegistryItemInstallationAlias("tooltip"),
+		],
+		files: [
+			{
+				path: "ui/sidebar.tsx",
+				type: "registry:ui",
+			},
+			{
+				path: "hooks/use-mobile.ts",
+				type: "registry:hook",
+			},
+		],
+		css: {
+			"@utility focus-ring": css["@utility focus-ring"],
+		},
+	},
+	{
 		name: "slider",
 		type: "registry:ui",
 		dependencies: ["@base-ui/react"],

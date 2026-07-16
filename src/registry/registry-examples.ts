@@ -5449,4 +5449,94 @@ export const examples: Registry["items"] = [
 			},
 		],
 	},
+	{
+		name: "message-demo",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("message"),
+			getRegistryItemInstallationAlias("avatar"),
+			getRegistryItemInstallationAlias("bubble"),
+			getRegistryItemInstallationAlias("marker"),
+		],
+		files: [
+			{
+				path: "examples/message-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "message-avatar",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("message"),
+			getRegistryItemInstallationAlias("avatar"),
+			getRegistryItemInstallationAlias("bubble"),
+		],
+		files: [
+			{
+				path: "examples/message-avatar.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "message-group",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("message"),
+			getRegistryItemInstallationAlias("avatar"),
+			getRegistryItemInstallationAlias("bubble"),
+		],
+		files: [
+			{
+				path: "examples/message-group.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "message-header-footer",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("message"),
+			getRegistryItemInstallationAlias("bubble"),
+		],
+		files: [
+			{
+				path: "examples/message-header-footer.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "message-actions",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("message"),
+			getRegistryItemInstallationAlias("bubble"),
+			getRegistryItemInstallationAlias("button"),
+		],
+		files: [
+			{
+				path: "examples/message-actions.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "message-attachment",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("message"),
+			getRegistryItemInstallationAlias("bubble"),
+			getRegistryItemInstallationAlias("attachment"),
+		],
+		files: [
+			{
+				path: "examples/message-attachment.tsx",
+				type: "registry:example",
+			},
+		],
+	},
 ];

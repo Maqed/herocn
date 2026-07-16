@@ -841,6 +841,16 @@ export const ui: Registry["items"] = [
 		],
 	},
 	{
+		name: "message",
+		type: "registry:ui",
+		files: [
+			{
+				path: "ui/message.tsx",
+				type: "registry:ui",
+			},
+		],
+	},
+	{
 		name: "navigation-menu",
 		type: "registry:ui",
 		dependencies: ["@base-ui/react", "lucide-react"],

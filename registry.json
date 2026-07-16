@@ -1383,6 +1383,16 @@
       ]
     },
     {
+      "name": "message",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/message.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "navigation-menu",
       "type": "registry:ui",
       "dependencies": [
@@ -7774,6 +7784,96 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/bubble-popover.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "message-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/message.json",
+        "https://herocn.dev/r/avatar.json",
+        "https://herocn.dev/r/bubble.json",
+        "https://herocn.dev/r/marker.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/message-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "message-avatar",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/message.json",
+        "https://herocn.dev/r/avatar.json",
+        "https://herocn.dev/r/bubble.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/message-avatar.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "message-group",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/message.json",
+        "https://herocn.dev/r/avatar.json",
+        "https://herocn.dev/r/bubble.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/message-group.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "message-header-footer",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/message.json",
+        "https://herocn.dev/r/bubble.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/message-header-footer.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "message-actions",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/message.json",
+        "https://herocn.dev/r/bubble.json",
+        "https://herocn.dev/r/button.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/message-actions.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "message-attachment",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/message.json",
+        "https://herocn.dev/r/bubble.json",
+        "https://herocn.dev/r/attachment.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/message-attachment.tsx",
           "type": "registry:example"
         }
       ]

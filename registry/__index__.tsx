@@ -607,6 +607,20 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "message": {
+    name: "message",
+    type: "registry:ui",
+    registryDependencies: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/ui/message.tsx",
+      type: "registry:ui"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/message.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "navigation-menu": {
     name: "navigation-menu",
     type: "registry:ui",
@@ -6822,6 +6836,90 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/bubble-popover.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "message-demo": {
+    name: "message-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/message.json","https://herocn.dev/r/avatar.json","https://herocn.dev/r/bubble.json","https://herocn.dev/r/marker.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/message-demo.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/message-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "message-avatar": {
+    name: "message-avatar",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/message.json","https://herocn.dev/r/avatar.json","https://herocn.dev/r/bubble.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/message-avatar.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/message-avatar.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "message-group": {
+    name: "message-group",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/message.json","https://herocn.dev/r/avatar.json","https://herocn.dev/r/bubble.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/message-group.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/message-group.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "message-header-footer": {
+    name: "message-header-footer",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/message.json","https://herocn.dev/r/bubble.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/message-header-footer.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/message-header-footer.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "message-actions": {
+    name: "message-actions",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/message.json","https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/message-actions.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/message-actions.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "message-attachment": {
+    name: "message-attachment",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/message.json","https://herocn.dev/r/bubble.json","https://herocn.dev/r/attachment.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/message-attachment.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/message-attachment.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

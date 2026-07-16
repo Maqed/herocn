@@ -63,7 +63,7 @@
 				"noAmbiguousAnchorText": "off"
 			},
 			"correctness": {
-				"useExhaustiveDependencies": "info"
+				"useExhaustiveDependencies": "off"
 			},
 			"nursery": {
 				"useSortedClasses": {

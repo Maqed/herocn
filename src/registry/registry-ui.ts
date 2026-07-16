@@ -834,6 +834,18 @@ export const ui: Registry["items"] = [
 		],
 	},
 	{
+		name: "message-scroller",
+		type: "registry:ui",
+		dependencies: ["@shadcn/react", "lucide-react"],
+		registryDependencies: [getRegistryItemInstallationAlias("button")],
+		files: [
+			{
+				path: "ui/message-scroller.tsx",
+				type: "registry:ui",
+			},
+		],
+	},
+	{
 		name: "navigation-menu",
 		type: "registry:ui",
 		dependencies: ["@base-ui/react", "lucide-react"],

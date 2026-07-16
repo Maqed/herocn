@@ -621,6 +621,20 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "message-scroller": {
+    name: "message-scroller",
+    type: "registry:ui",
+    registryDependencies: ["https://herocn.dev/r/button.json"],
+    files: [{
+      path: "src/registry/new-york-v4/ui/message-scroller.tsx",
+      type: "registry:ui"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/message-scroller.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "navigation-menu": {
     name: "navigation-menu",
     type: "registry:ui",
@@ -6920,6 +6934,160 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/message-attachment.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "message-scroller-demo": {
+    name: "message-scroller-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/empty.json","https://herocn.dev/r/input-group.json","https://herocn.dev/r/tooltip.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/message-scroller-demo.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/message-scroller-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "message-scroller-anchoring": {
+    name: "message-scroller-anchoring",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/empty.json","https://herocn.dev/r/toggle-group.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/message-scroller-anchoring.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/message-scroller-anchoring.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "message-scroller-group-chat": {
+    name: "message-scroller-group-chat",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/marker.json","https://herocn.dev/r/message.json","https://herocn.dev/r/tooltip.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/message-scroller-group-chat.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/message-scroller-group-chat.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "message-scroller-previous-context": {
+    name: "message-scroller-previous-context",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/input-group.json","https://herocn.dev/r/slider.json","https://herocn.dev/r/tooltip.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/message-scroller-previous-context.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/message-scroller-previous-context.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "message-scroller-streaming": {
+    name: "message-scroller-streaming",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/empty.json","https://herocn.dev/r/input-group.json","https://herocn.dev/r/tooltip.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/message-scroller-streaming.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/message-scroller-streaming.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "message-scroller-opening-position": {
+    name: "message-scroller-opening-position",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/message.json","https://herocn.dev/r/tabs.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/message-scroller-opening-position.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/message-scroller-opening-position.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "message-scroller-load-history": {
+    name: "message-scroller-load-history",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/marker.json","https://herocn.dev/r/message.json","https://herocn.dev/r/tooltip.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/message-scroller-load-history.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/message-scroller-load-history.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "message-scroller-animation": {
+    name: "message-scroller-animation",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/empty.json","https://herocn.dev/r/select.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/message-scroller-animation.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/message-scroller-animation.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "message-scroller-commands": {
+    name: "message-scroller-commands",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/message.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/message-scroller-commands.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/message-scroller-commands.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "message-scroller-visibility": {
+    name: "message-scroller-visibility",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/bubble.json","https://herocn.dev/r/card.json","https://herocn.dev/r/hover-card.json","https://herocn.dev/r/message.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/message-scroller-visibility.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/message-scroller-visibility.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "message-scroller-scrollable": {
+    name: "message-scroller-scrollable",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/card.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/message-scroller-scrollable.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/message-scroller-scrollable.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

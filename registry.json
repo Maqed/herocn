@@ -498,26 +498,7 @@
           "path": "src/registry/new-york-v4/ui/attachment.tsx",
           "type": "registry:ui"
         }
-      ],
-      "cssVars": {
-        "light": {
-          "--surface": "white",
-          "--default": "oklch(94% 0.001 286.375)"
-        },
-        "dark": {
-          "--surface": "oklch(0.2103 0.0059 285.89)",
-          "--default": "oklch(27.4% 0.006 286.033)"
-        },
-        "theme": {
-          "--color-surface": "var(--surface)",
-          "--color-default": "var(--default)"
-        }
-      },
-      "css": {
-        "@utility focus-ring": {
-          "@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none": {}
-        }
-      }
+      ]
     },
     {
       "name": "avatar",
@@ -1388,6 +1369,23 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/ui/message.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "message-scroller",
+      "type": "registry:ui",
+      "dependencies": [
+        "@shadcn/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/message-scroller.tsx",
           "type": "registry:ui"
         }
       ]
@@ -7874,6 +7872,202 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/message-attachment.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "message-scroller-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/message-scroller.json",
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/card.json",
+        "https://herocn.dev/r/dropdown-menu.json",
+        "https://herocn.dev/r/empty.json",
+        "https://herocn.dev/r/input-group.json",
+        "https://herocn.dev/r/tooltip.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/message-scroller-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "message-scroller-anchoring",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/message-scroller.json",
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/card.json",
+        "https://herocn.dev/r/empty.json",
+        "https://herocn.dev/r/toggle-group.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/message-scroller-anchoring.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "message-scroller-group-chat",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/message-scroller.json",
+        "https://herocn.dev/r/bubble.json",
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/card.json",
+        "https://herocn.dev/r/marker.json",
+        "https://herocn.dev/r/message.json",
+        "https://herocn.dev/r/tooltip.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/message-scroller-group-chat.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "message-scroller-previous-context",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/message-scroller.json",
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/card.json",
+        "https://herocn.dev/r/dropdown-menu.json",
+        "https://herocn.dev/r/input-group.json",
+        "https://herocn.dev/r/slider.json",
+        "https://herocn.dev/r/tooltip.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/message-scroller-previous-context.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "message-scroller-streaming",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/message-scroller.json",
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/card.json",
+        "https://herocn.dev/r/dropdown-menu.json",
+        "https://herocn.dev/r/empty.json",
+        "https://herocn.dev/r/input-group.json",
+        "https://herocn.dev/r/tooltip.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/message-scroller-streaming.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "message-scroller-opening-position",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/message-scroller.json",
+        "https://herocn.dev/r/bubble.json",
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/card.json",
+        "https://herocn.dev/r/message.json",
+        "https://herocn.dev/r/tabs.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/message-scroller-opening-position.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "message-scroller-load-history",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/message-scroller.json",
+        "https://herocn.dev/r/bubble.json",
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/card.json",
+        "https://herocn.dev/r/marker.json",
+        "https://herocn.dev/r/message.json",
+        "https://herocn.dev/r/tooltip.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/message-scroller-load-history.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "message-scroller-animation",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/message-scroller.json",
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/card.json",
+        "https://herocn.dev/r/empty.json",
+        "https://herocn.dev/r/select.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/message-scroller-animation.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "message-scroller-commands",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/message-scroller.json",
+        "https://herocn.dev/r/bubble.json",
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/card.json",
+        "https://herocn.dev/r/dropdown-menu.json",
+        "https://herocn.dev/r/message.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/message-scroller-commands.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "message-scroller-visibility",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/message-scroller.json",
+        "https://herocn.dev/r/bubble.json",
+        "https://herocn.dev/r/card.json",
+        "https://herocn.dev/r/hover-card.json",
+        "https://herocn.dev/r/message.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/message-scroller-visibility.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "message-scroller-scrollable",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/message-scroller.json",
+        "https://herocn.dev/r/card.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/message-scroller-scrollable.tsx",
           "type": "registry:example"
         }
       ]

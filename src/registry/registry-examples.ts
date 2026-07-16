@@ -5539,4 +5539,200 @@ export const examples: Registry["items"] = [
 			},
 		],
 	},
+	{
+		name: "message-scroller-demo",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("message-scroller"),
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("card"),
+			getRegistryItemInstallationAlias("dropdown-menu"),
+			getRegistryItemInstallationAlias("empty"),
+			getRegistryItemInstallationAlias("input-group"),
+			getRegistryItemInstallationAlias("tooltip"),
+		],
+		files: [
+			{
+				path: "examples/message-scroller-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "message-scroller-anchoring",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("message-scroller"),
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("card"),
+			getRegistryItemInstallationAlias("empty"),
+			getRegistryItemInstallationAlias("toggle-group"),
+		],
+		files: [
+			{
+				path: "examples/message-scroller-anchoring.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "message-scroller-group-chat",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("message-scroller"),
+			getRegistryItemInstallationAlias("bubble"),
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("card"),
+			getRegistryItemInstallationAlias("marker"),
+			getRegistryItemInstallationAlias("message"),
+			getRegistryItemInstallationAlias("tooltip"),
+		],
+		files: [
+			{
+				path: "examples/message-scroller-group-chat.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "message-scroller-previous-context",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("message-scroller"),
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("card"),
+			getRegistryItemInstallationAlias("dropdown-menu"),
+			getRegistryItemInstallationAlias("input-group"),
+			getRegistryItemInstallationAlias("slider"),
+			getRegistryItemInstallationAlias("tooltip"),
+		],
+		files: [
+			{
+				path: "examples/message-scroller-previous-context.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "message-scroller-streaming",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("message-scroller"),
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("card"),
+			getRegistryItemInstallationAlias("dropdown-menu"),
+			getRegistryItemInstallationAlias("empty"),
+			getRegistryItemInstallationAlias("input-group"),
+			getRegistryItemInstallationAlias("tooltip"),
+		],
+		files: [
+			{
+				path: "examples/message-scroller-streaming.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "message-scroller-opening-position",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("message-scroller"),
+			getRegistryItemInstallationAlias("bubble"),
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("card"),
+			getRegistryItemInstallationAlias("message"),
+			getRegistryItemInstallationAlias("tabs"),
+		],
+		files: [
+			{
+				path: "examples/message-scroller-opening-position.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "message-scroller-load-history",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("message-scroller"),
+			getRegistryItemInstallationAlias("bubble"),
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("card"),
+			getRegistryItemInstallationAlias("marker"),
+			getRegistryItemInstallationAlias("message"),
+			getRegistryItemInstallationAlias("tooltip"),
+		],
+		files: [
+			{
+				path: "examples/message-scroller-load-history.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "message-scroller-animation",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("message-scroller"),
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("card"),
+			getRegistryItemInstallationAlias("empty"),
+			getRegistryItemInstallationAlias("select"),
+		],
+		files: [
+			{
+				path: "examples/message-scroller-animation.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "message-scroller-commands",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("message-scroller"),
+			getRegistryItemInstallationAlias("bubble"),
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("card"),
+			getRegistryItemInstallationAlias("dropdown-menu"),
+			getRegistryItemInstallationAlias("message"),
+		],
+		files: [
+			{
+				path: "examples/message-scroller-commands.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "message-scroller-visibility",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("message-scroller"),
+			getRegistryItemInstallationAlias("bubble"),
+			getRegistryItemInstallationAlias("card"),
+			getRegistryItemInstallationAlias("hover-card"),
+			getRegistryItemInstallationAlias("message"),
+		],
+		files: [
+			{
+				path: "examples/message-scroller-visibility.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "message-scroller-scrollable",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("message-scroller"),
+			getRegistryItemInstallationAlias("card"),
+		],
+		files: [
+			{
+				path: "examples/message-scroller-scrollable.tsx",
+				type: "registry:example",
+			},
+		],
+	},
 ];

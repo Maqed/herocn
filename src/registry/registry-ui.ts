@@ -790,6 +790,17 @@ export const ui: Registry["items"] = [
 		},
 	},
 	{
+		name: "marker",
+		type: "registry:ui",
+		dependencies: ["@base-ui/react", "class-variance-authority"],
+		files: [
+			{
+				path: "ui/marker.tsx",
+				type: "registry:ui",
+			},
+		],
+	},
+	{
 		name: "navigation-menu",
 		type: "registry:ui",
 		dependencies: ["@base-ui/react", "lucide-react"],

@@ -1,0 +1,179 @@
+---
+title: Marker
+description: Displays an inline status, system note, bordered row, or labeled separator in a conversation.
+---
+
+<ComponentPreview name="marker-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+<CodeBlockCommand command="npx shadcn@latest add @herocn/marker" />
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+<CodeBlockCommand command="npm install @base-ui/react" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource
+  name="marker"
+  title="components/ui/marker.tsx"
+/>
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { Marker, MarkerContent, MarkerIcon } from "@/components/ui/marker"
+```
+
+```tsx
+<Marker>
+  <MarkerIcon>
+    <CheckIcon />
+  </MarkerIcon>
+  <MarkerContent>Explored 4 files</MarkerContent>
+</Marker>
+```
+
+## Composition
+
+Use the following composition to build a marker:
+
+```text
+Marker
+├── MarkerIcon
+└── MarkerContent
+```
+
+## Examples
+
+### Variants
+
+Use `variant` to switch between an inline marker, bordered row, and labeled separator.
+
+<ComponentPreview name="marker-variants" />
+
+### Status
+
+Set `role="status"` and include a [`Spinner`](/docs/components/spinner) for streaming or in-progress markers so updates are announced.
+
+<ComponentPreview name="marker-status" />
+
+### Shimmer
+
+Add the `shimmer` utility class to `MarkerContent` for an animated streaming-text effect.
+
+<ComponentPreview name="marker-shimmer" />
+
+### Separator
+
+Use the `separator` variant for labeled dividers, such as dates or section breaks, in a conversation.
+
+<ComponentPreview name="marker-separator" />
+
+### Border
+
+Use the `border` variant for status rows that should keep the default marker alignment while separating the next row.
+
+<ComponentPreview name="marker-border" />
+
+### With Icon
+
+Use `MarkerIcon` to render an icon alongside the content. Use `flex-col` to stack the icon above the content.
+
+<ComponentPreview name="marker-icon" />
+
+### Links and Buttons
+
+Turn a marker into a link or button with the `render` prop on `Marker`.
+
+<ComponentPreview name="marker-link-button" />
+
+```tsx showLineNumbers
+import { Marker, MarkerContent } from "@/components/ui/marker"
+
+export function MarkerLinkDemo() {
+  return (
+    <Marker render={<a href="#" />}>
+      <MarkerContent>View the pull request</MarkerContent>
+    </Marker>
+  )
+}
+```
+
+## API Reference
+
+### Marker
+
+The root marker element. The file also exports `markerVariants` for composing the marker styles into custom components.
+
+<ApiRefTable
+  props={[
+    {
+      name: "variant",
+      type: '"default" | "border" | "separator"',
+      defaultValue: '"default"',
+      description: "The marker layout.",
+    },
+    {
+      name: "render",
+      type: "ReactElement | function",
+      description: "Render as a different element, such as a link.",
+    },
+    {
+      name: "className",
+      type: "string",
+      description: "Additional classes to apply to the root element.",
+    },
+  ]}
+/>
+
+### MarkerIcon
+
+A decorative icon slot. Hidden from assistive tech with `aria-hidden`.
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+      description: "Additional classes to apply to the icon slot.",
+    },
+  ]}
+/>
+
+### MarkerContent
+
+The marker text content.
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+      description: "Additional classes to apply to the content slot.",
+    },
+  ]}
+/>

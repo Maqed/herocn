@@ -565,6 +565,20 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "marker": {
+    name: "marker",
+    type: "registry:ui",
+    registryDependencies: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/ui/marker.tsx",
+      type: "registry:ui"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/marker.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "navigation-menu": {
     name: "navigation-menu",
     type: "registry:ui",
@@ -6458,6 +6472,118 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/chart-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "marker-demo": {
+    name: "marker-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/marker.json","https://herocn.dev/r/spinner.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/marker-demo.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/marker-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "marker-variants": {
+    name: "marker-variants",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/marker.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/marker-variants.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/marker-variants.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "marker-status": {
+    name: "marker-status",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/marker.json","https://herocn.dev/r/spinner.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/marker-status.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/marker-status.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "marker-shimmer": {
+    name: "marker-shimmer",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/marker.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/marker-shimmer.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/marker-shimmer.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "marker-separator": {
+    name: "marker-separator",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/marker.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/marker-separator.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/marker-separator.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "marker-border": {
+    name: "marker-border",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/marker.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/marker-border.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/marker-border.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "marker-icon": {
+    name: "marker-icon",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/marker.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/marker-icon.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/marker-icon.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "marker-link-button": {
+    name: "marker-link-button",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/marker.json","https://herocn.dev/r/sonner.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/marker-link-button.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/marker-link-button.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

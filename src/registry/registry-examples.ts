@@ -5162,4 +5162,101 @@ export const examples: Registry["items"] = [
 			},
 		],
 	},
+	{
+		name: "marker-demo",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("marker"),
+			getRegistryItemInstallationAlias("spinner"),
+		],
+		files: [
+			{
+				path: "examples/marker-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "marker-variants",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("marker")],
+		files: [
+			{
+				path: "examples/marker-variants.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "marker-status",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("marker"),
+			getRegistryItemInstallationAlias("spinner"),
+		],
+		files: [
+			{
+				path: "examples/marker-status.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "marker-shimmer",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("marker")],
+		files: [
+			{
+				path: "examples/marker-shimmer.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "marker-separator",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("marker")],
+		files: [
+			{
+				path: "examples/marker-separator.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "marker-border",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("marker")],
+		files: [
+			{
+				path: "examples/marker-border.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "marker-icon",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("marker")],
+		files: [
+			{
+				path: "examples/marker-icon.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "marker-link-button",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("marker"),
+			getRegistryItemInstallationAlias("sonner"),
+		],
+		files: [
+			{
+				path: "examples/marker-link-button.tsx",
+				type: "registry:example",
+			},
+		],
+	},
 ];

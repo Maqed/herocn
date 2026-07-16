@@ -1319,6 +1319,20 @@
       }
     },
     {
+      "name": "marker",
+      "type": "registry:ui",
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/marker.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "navigation-menu",
       "type": "registry:ui",
       "dependencies": [
@@ -7397,6 +7411,113 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/chart-rtl.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "marker-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/marker.json",
+        "https://herocn.dev/r/spinner.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/marker-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "marker-variants",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/marker.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/marker-variants.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "marker-status",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/marker.json",
+        "https://herocn.dev/r/spinner.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/marker-status.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "marker-shimmer",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/marker.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/marker-shimmer.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "marker-separator",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/marker.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/marker-separator.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "marker-border",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/marker.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/marker-border.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "marker-icon",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/marker.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/marker-icon.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "marker-link-button",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/marker.json",
+        "https://herocn.dev/r/sonner.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/marker-link-button.tsx",
           "type": "registry:example"
         }
       ]

@@ -53,7 +53,6 @@ export default function MessageAttachmentDemo() {
 								type="button"
 								title="Download"
 								aria-label="Download"
-								size="icon-sm"
 								variant="secondary"
 							>
 								<DownloadIcon />

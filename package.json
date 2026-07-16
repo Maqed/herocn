@@ -18,6 +18,7 @@
 	"dependencies": {
 		"@base-ui/react": "^1.6.0",
 		"@orama/orama": "^3.1.18",
+		"@shadcn/react": "^0.2.1",
 		"@streamdown/code": "^1.1.1",
 		"chrono-node": "^2.10.0",
 		"class-variance-authority": "^0.7.1",

@@ -7,14 +7,14 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/registry/new-york-v4/ui/button";
 
 const attachmentVariants = cva(
-	"group/attachment relative flex w-fit min-w-0 max-w-full shrink-0 flex-wrap rounded-2xl border bg-surface shadow-md transition-colors focus-within:ring-1 focus-within:ring-ring/50 has-[>a,>button]:hover:bg-muted/50 data-[state=error]:border-destructive/30 data-[state=idle]:border-dashed",
+	"group/attachment relative flex w-fit min-w-0 max-w-full shrink-0 flex-wrap rounded-2xl border bg-card text-card-foreground transition-colors focus-within:ring-1 focus-within:ring-ring/50 has-[>a,>button]:hover:bg-muted/50 data-[state=error]:border-destructive/30 data-[state=idle]:border-dashed",
 	{
 		variants: {
 			size: {
 				default:
-					"gap-3.5 text-sm has-data-[slot=attachment-content]:px-4 has-data-[slot=attachment-content]:py-3.5",
-				sm: "gap-3.5 text-sm has-data-[slot=attachment-content]:px-3.5 has-data-[slot=attachment-content]:py-3",
-				xs: "gap-2.5 text-sm has-data-[slot=attachment-content]:px-3 has-data-[slot=attachment-content]:py-2.5",
+					"gap-2.5 text-sm has-data-[slot=attachment-media]:p-2.5 has-data-[slot=attachment-content]:px-3 has-data-[slot=attachment-content]:py-2.5",
+				sm: "gap-3 text-xs has-data-[slot=attachment-media]:p-2 has-data-[slot=attachment-content]:px-2.5 has-data-[slot=attachment-content]:py-2",
+				xs: "gap-2 rounded-xl text-xs has-data-[slot=attachment-media]:p-1.5 has-data-[slot=attachment-content]:px-2 has-data-[slot=attachment-content]:py-1.5",
 			},
 			orientation: {
 				horizontal: "min-w-40 items-center",
@@ -47,13 +47,13 @@ function Attachment({
 }
 
 const attachmentMediaVariants = cva(
-	"relative flex aspect-square shrink-0 items-center justify-center gap-2 overflow-hidden text-foreground group-has-data-[slot=attachment-description]/attachment:translate-y-0.5 group-has-data-[slot=attachment-description]/attachment:self-start group-data-[orientation=vertical]/attachment:w-full group-data-[state=error]/attachment:bg-destructive/10 group-data-[state=error]/attachment:text-destructive group-data-[orientation=vertical]/attachment:*:data-[slot=spinner]:size-6! [&_svg:not([class*='size-'])]:size-5.5 group-data-[orientation=vertical]/attachment:[&_svg:not([class*='size-'])]:size-6 group-data-[size=sm]/attachment:[&_svg:not([class*='size-'])]:size-4.5 group-data-[size=xs]/attachment:[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none",
+	"relative flex aspect-square w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-muted text-foreground group-data-[orientation=vertical]/attachment:w-full group-data-[size=sm]/attachment:w-8 group-data-[size=xs]/attachment:w-7 group-data-[size=xs]/attachment:rounded-lg group-data-[state=error]/attachment:bg-destructive/10 group-data-[state=error]/attachment:text-destructive group-data-[orientation=vertical]/attachment:*:data-[slot=spinner]:size-6! [&_svg:not([class*='size-'])]:size-4 group-data-[orientation=vertical]/attachment:[&_svg:not([class*='size-'])]:size-6 group-data-[size=xs]/attachment:[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none",
 	{
 		variants: {
 			variant: {
-				icon: "rounded-xl bg-default p-3 group-data-[size=sm]/attachment:p-2.5 group-data-[size=xs]/attachment:p-2.5",
+				icon: "",
 				image:
-					"w-10 rounded-lg opacity-60 group-data-[size=sm]/attachment:w-8 group-data-[size=xs]/attachment:w-6 group-data-[size=xs]/attachment:rounded-md group-data-[state=done]/attachment:opacity-100 group-data-[state=idle]/attachment:opacity-100 [&_img]:size-full [&_img]:object-cover",
+					"opacity-60 group-data-[state=done]/attachment:opacity-100 group-data-[state=idle]/attachment:opacity-100 *:[img]:aspect-square *:[img]:w-full *:[img]:object-cover",
 			},
 		},
 		defaultVariants: {
@@ -85,7 +85,7 @@ function AttachmentContent({
 		<div
 			data-slot="attachment-content"
 			className={cn(
-				"min-w-0 max-w-full flex-1 leading-tight group-data-[orientation=vertical]/attachment:px-1",
+				"min-w-0 max-w-full flex-1 leading-tight group-data-[orientation=vertical]/attachment:px-1.5",
 				className,
 			)}
 			{...props}
@@ -101,7 +101,7 @@ function AttachmentTitle({
 		<span
 			data-slot="attachment-title"
 			className={cn(
-				"group-data-[state=processing]/attachment:shimmer group-data-[state=uploading]/attachment:shimmer block min-w-0 max-w-full truncate font-medium text-sm leading-snug",
+				"group-data-[state=processing]/attachment:shimmer group-data-[state=uploading]/attachment:shimmer block min-w-0 max-w-full truncate font-medium",
 				className,
 			)}
 			{...props}
@@ -117,7 +117,7 @@ function AttachmentDescription({
 		<span
 			data-slot="attachment-description"
 			className={cn(
-				"mt-0.5 block min-w-0 truncate text-start text-muted-foreground text-sm group-data-[state=error]/attachment:text-destructive/80",
+				"mt-1 block min-w-0 truncate text-muted-foreground text-xs group-data-[state=error]/attachment:text-destructive/80",
 				"max-w-full",
 				className,
 			)}
@@ -134,7 +134,7 @@ function AttachmentActions({
 		<div
 			data-slot="attachment-actions"
 			className={cn(
-				"relative z-20 flex shrink-0 items-center group-data-[orientation=vertical]/attachment:absolute group-data-[orientation=vertical]/attachment:end-3 group-data-[orientation=vertical]/attachment:top-3 group-data-[orientation=vertical]/attachment:gap-1",
+				"relative z-20 flex shrink-0 items-center group-data-[orientation=vertical]/attachment:absolute group-data-[orientation=vertical]/attachment:end-3.5 group-data-[orientation=vertical]/attachment:top-3.5 group-data-[orientation=vertical]/attachment:gap-1.5",
 				className,
 			)}
 			{...props}
@@ -186,7 +186,7 @@ function AttachmentGroup({ className, ...props }: React.ComponentProps<"div">) {
 		<div
 			data-slot="attachment-group"
 			className={cn(
-				"scroll-fade-x scrollbar-none flex min-w-0 snap-x snap-mandatory scroll-px-1 gap-3 overflow-x-auto overscroll-x-contain py-1 *:data-[slot=attachment]:flex-none *:data-[slot=attachment]:snap-start",
+				"scroll-fade-x scrollbar-none flex min-w-0 snap-x snap-mandatory scroll-px-1.5 gap-4 overflow-x-auto overscroll-x-contain py-1.5 *:data-[slot=attachment]:flex-none *:data-[slot=attachment]:snap-start",
 				className,
 			)}
 			{...props}

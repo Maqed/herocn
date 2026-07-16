@@ -24,15 +24,25 @@ export default function MessageActionsDemo() {
 						</BubbleContent>
 					</Bubble>
 					<MessageFooter>
-						<Button variant="ghost" size="icon" aria-label="Copy" title="Copy">
+						<Button
+							variant="ghost"
+							size="icon-sm"
+							aria-label="Copy"
+							title="Copy"
+						>
 							<CopyIcon />
 						</Button>
-						<Button variant="ghost" size="icon" aria-label="Like" title="Like">
+						<Button
+							variant="ghost"
+							size="icon-sm"
+							aria-label="Like"
+							title="Like"
+						>
 							<ThumbsUpIcon />
 						</Button>
 						<Button
 							variant="ghost"
-							size="icon"
+							size="icon-sm"
 							aria-label="Dislike"
 							title="Dislike"
 						>

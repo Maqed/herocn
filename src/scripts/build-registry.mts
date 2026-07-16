@@ -27,6 +27,8 @@ export const Index: Record<string, any> = {`;
   "${item.name}": {
     name: "${item.name}",
     type: "${item.type}",
+    dependencies: ${JSON.stringify(item.dependencies)},
+    devDependencies: ${JSON.stringify(item.devDependencies)},
     registryDependencies: ${JSON.stringify(item.registryDependencies)},
     files: [${item.files?.map((file) => {
 			const filePath = `src/registry/new-york-v4/${typeof file === "string" ? file : file.path}`;

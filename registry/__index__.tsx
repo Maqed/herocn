@@ -8,6 +8,8 @@ export const Index: Record<string, any> = {
   "index": {
     name: "index",
     type: "registry:style",
+    dependencies: ["@base-ui/react","class-variance-authority","lucide-react"],
+    devDependencies: ["tw-animate-css"],
     registryDependencies: ["utils","https://herocn.dev/r/ui.json"],
     files: [],
     component: null,
@@ -15,6 +17,8 @@ export const Index: Record<string, any> = {
   "style": {
     name: "style",
     type: "registry:style",
+    dependencies: ["@base-ui/react","class-variance-authority","lucide-react"],
+    devDependencies: ["tw-animate-css"],
     registryDependencies: ["utils","https://herocn.dev/r/ui.json"],
     files: [],
     component: null,
@@ -22,6 +26,8 @@ export const Index: Record<string, any> = {
   "alert": {
     name: "alert",
     type: "registry:ui",
+    dependencies: ["class-variance-authority"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/alert.tsx",
@@ -36,6 +42,8 @@ export const Index: Record<string, any> = {
   "alert-dialog": {
     name: "alert-dialog",
     type: "registry:ui",
+    dependencies: ["@base-ui/react"],
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/alert-dialog.tsx",
@@ -50,6 +58,8 @@ export const Index: Record<string, any> = {
   "accordion": {
     name: "accordion",
     type: "registry:ui",
+    dependencies: ["@base-ui/react","lucide-react"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/accordion.tsx",
@@ -64,6 +74,8 @@ export const Index: Record<string, any> = {
   "aspect-ratio": {
     name: "aspect-ratio",
     type: "registry:ui",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/aspect-ratio.tsx",
@@ -78,6 +90,8 @@ export const Index: Record<string, any> = {
   "attachment": {
     name: "attachment",
     type: "registry:ui",
+    dependencies: ["@base-ui/react","class-variance-authority"],
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/attachment.tsx",
@@ -92,6 +106,8 @@ export const Index: Record<string, any> = {
   "avatar": {
     name: "avatar",
     type: "registry:ui",
+    dependencies: ["@base-ui/react"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/avatar.tsx",
@@ -106,6 +122,8 @@ export const Index: Record<string, any> = {
   "button": {
     name: "button",
     type: "registry:ui",
+    dependencies: ["@base-ui/react"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/button.tsx",
@@ -120,6 +138,8 @@ export const Index: Record<string, any> = {
   "button-group": {
     name: "button-group",
     type: "registry:ui",
+    dependencies: ["@base-ui/react"],
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/separator.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/button-group.tsx",
@@ -134,6 +154,8 @@ export const Index: Record<string, any> = {
   "breadcrumb": {
     name: "breadcrumb",
     type: "registry:ui",
+    dependencies: ["@base-ui/react","lucide-react"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/breadcrumb.tsx",
@@ -148,6 +170,8 @@ export const Index: Record<string, any> = {
   "badge": {
     name: "badge",
     type: "registry:ui",
+    dependencies: ["@base-ui/react"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/badge.tsx",
@@ -162,6 +186,8 @@ export const Index: Record<string, any> = {
   "breadcrumb": {
     name: "breadcrumb",
     type: "registry:ui",
+    dependencies: ["@base-ui/react","lucide-react"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/breadcrumb.tsx",
@@ -176,6 +202,8 @@ export const Index: Record<string, any> = {
   "bubble": {
     name: "bubble",
     type: "registry:ui",
+    dependencies: ["@base-ui/react","class-variance-authority"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/bubble.tsx",
@@ -190,6 +218,8 @@ export const Index: Record<string, any> = {
   "calendar": {
     name: "calendar",
     type: "registry:ui",
+    dependencies: ["lucide-react","react-day-picker"],
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/calendar.tsx",
@@ -204,6 +234,8 @@ export const Index: Record<string, any> = {
   "card": {
     name: "card",
     type: "registry:ui",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/card.tsx",
@@ -218,6 +250,8 @@ export const Index: Record<string, any> = {
   "chart": {
     name: "chart",
     type: "registry:ui",
+    dependencies: ["recharts"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/chart.tsx",
@@ -232,6 +266,8 @@ export const Index: Record<string, any> = {
   "carousel": {
     name: "carousel",
     type: "registry:ui",
+    dependencies: ["embla-carousel-react","lucide-react"],
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/carousel.tsx",
@@ -246,6 +282,8 @@ export const Index: Record<string, any> = {
   "checkbox": {
     name: "checkbox",
     type: "registry:ui",
+    dependencies: ["@base-ui/react"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/checkbox.tsx",
@@ -260,6 +298,8 @@ export const Index: Record<string, any> = {
   "collapsible": {
     name: "collapsible",
     type: "registry:ui",
+    dependencies: ["@base-ui/react"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/collapsible.tsx",
@@ -274,6 +314,8 @@ export const Index: Record<string, any> = {
   "command": {
     name: "command",
     type: "registry:ui",
+    dependencies: ["cmdk","lucide-react"],
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/dialog.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/command.tsx",
@@ -288,6 +330,8 @@ export const Index: Record<string, any> = {
   "combobox": {
     name: "combobox",
     type: "registry:ui",
+    dependencies: ["@base-ui/react","lucide-react"],
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/combobox.tsx",
@@ -302,6 +346,8 @@ export const Index: Record<string, any> = {
   "context-menu": {
     name: "context-menu",
     type: "registry:ui",
+    dependencies: ["@base-ui/react","lucide-react"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/context-menu.tsx",
@@ -316,6 +362,8 @@ export const Index: Record<string, any> = {
   "popover": {
     name: "popover",
     type: "registry:ui",
+    dependencies: ["@base-ui/react","lucide-react"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/popover.tsx",
@@ -330,6 +378,8 @@ export const Index: Record<string, any> = {
   "progress": {
     name: "progress",
     type: "registry:ui",
+    dependencies: ["@base-ui/react"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/progress.tsx",
@@ -344,6 +394,8 @@ export const Index: Record<string, any> = {
   "tooltip": {
     name: "tooltip",
     type: "registry:ui",
+    dependencies: ["@base-ui/react"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/tooltip.tsx",
@@ -358,6 +410,8 @@ export const Index: Record<string, any> = {
   "dropdown-menu": {
     name: "dropdown-menu",
     type: "registry:ui",
+    dependencies: ["@base-ui/react","lucide-react"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/dropdown-menu.tsx",
@@ -372,6 +426,8 @@ export const Index: Record<string, any> = {
   "drawer": {
     name: "drawer",
     type: "registry:ui",
+    dependencies: ["vaul"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/drawer.tsx",
@@ -386,6 +442,8 @@ export const Index: Record<string, any> = {
   "empty": {
     name: "empty",
     type: "registry:ui",
+    dependencies: ["class-variance-authority"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/empty.tsx",
@@ -400,6 +458,8 @@ export const Index: Record<string, any> = {
   "dialog": {
     name: "dialog",
     type: "registry:ui",
+    dependencies: ["@base-ui/react","lucide-react"],
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/dialog.tsx",
@@ -414,6 +474,8 @@ export const Index: Record<string, any> = {
   "sheet": {
     name: "sheet",
     type: "registry:ui",
+    dependencies: ["@base-ui/react","lucide-react"],
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/sheet.tsx",
@@ -428,6 +490,8 @@ export const Index: Record<string, any> = {
   "field": {
     name: "field",
     type: "registry:ui",
+    dependencies: ["class-variance-authority"],
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/label.json","https://herocn.dev/r/separator.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/field.tsx",
@@ -442,6 +506,8 @@ export const Index: Record<string, any> = {
   "hover-card": {
     name: "hover-card",
     type: "registry:ui",
+    dependencies: ["@base-ui/react","lucide-react"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/hover-card.tsx",
@@ -456,6 +522,8 @@ export const Index: Record<string, any> = {
   "surface": {
     name: "surface",
     type: "registry:ui",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/surface.tsx",
@@ -470,6 +538,8 @@ export const Index: Record<string, any> = {
   "scroll-area": {
     name: "scroll-area",
     type: "registry:ui",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/scroll-area.tsx",
@@ -484,6 +554,8 @@ export const Index: Record<string, any> = {
   "sheet": {
     name: "sheet",
     type: "registry:ui",
+    dependencies: ["@base-ui/react","lucide-react"],
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/sheet.tsx",
@@ -498,6 +570,8 @@ export const Index: Record<string, any> = {
   "input": {
     name: "input",
     type: "registry:ui",
+    dependencies: ["@base-ui/react"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/input.tsx",
@@ -512,6 +586,8 @@ export const Index: Record<string, any> = {
   "input-group": {
     name: "input-group",
     type: "registry:ui",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/input.json","https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/input-group.tsx",
@@ -526,6 +602,8 @@ export const Index: Record<string, any> = {
   "input-otp": {
     name: "input-otp",
     type: "registry:ui",
+    dependencies: ["input-otp","lucide-react"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/input-otp.tsx",
@@ -540,6 +618,8 @@ export const Index: Record<string, any> = {
   "item": {
     name: "item",
     type: "registry:ui",
+    dependencies: ["@base-ui/react","class-variance-authority"],
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/separator.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/item.tsx",
@@ -554,6 +634,8 @@ export const Index: Record<string, any> = {
   "kbd": {
     name: "kbd",
     type: "registry:ui",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/kbd.tsx",
@@ -568,6 +650,8 @@ export const Index: Record<string, any> = {
   "label": {
     name: "label",
     type: "registry:ui",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/label.tsx",
@@ -582,6 +666,8 @@ export const Index: Record<string, any> = {
   "menubar": {
     name: "menubar",
     type: "registry:ui",
+    dependencies: ["@base-ui/react","lucide-react"],
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/menubar.tsx",
@@ -596,6 +682,8 @@ export const Index: Record<string, any> = {
   "marker": {
     name: "marker",
     type: "registry:ui",
+    dependencies: ["@base-ui/react","class-variance-authority"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/marker.tsx",
@@ -610,6 +698,8 @@ export const Index: Record<string, any> = {
   "message": {
     name: "message",
     type: "registry:ui",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/message.tsx",
@@ -624,6 +714,8 @@ export const Index: Record<string, any> = {
   "message-scroller": {
     name: "message-scroller",
     type: "registry:ui",
+    dependencies: ["@shadcn/react","lucide-react"],
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/message-scroller.tsx",
@@ -638,6 +730,8 @@ export const Index: Record<string, any> = {
   "navigation-menu": {
     name: "navigation-menu",
     type: "registry:ui",
+    dependencies: ["@base-ui/react","lucide-react"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/navigation-menu.tsx",
@@ -652,6 +746,8 @@ export const Index: Record<string, any> = {
   "native-select": {
     name: "native-select",
     type: "registry:ui",
+    dependencies: ["lucide-react"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/native-select.tsx",
@@ -666,6 +762,8 @@ export const Index: Record<string, any> = {
   "pagination": {
     name: "pagination",
     type: "registry:ui",
+    dependencies: ["lucide-react"],
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/pagination.tsx",
@@ -680,6 +778,8 @@ export const Index: Record<string, any> = {
   "select": {
     name: "select",
     type: "registry:ui",
+    dependencies: ["@base-ui/react","lucide-react"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/select.tsx",
@@ -694,6 +794,8 @@ export const Index: Record<string, any> = {
   "separator": {
     name: "separator",
     type: "registry:ui",
+    dependencies: ["@base-ui/react"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/separator.tsx",
@@ -708,6 +810,8 @@ export const Index: Record<string, any> = {
   "switch": {
     name: "switch",
     type: "registry:ui",
+    dependencies: ["@base-ui/react"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/switch.tsx",
@@ -722,6 +826,8 @@ export const Index: Record<string, any> = {
   "checkbox": {
     name: "checkbox",
     type: "registry:ui",
+    dependencies: ["@base-ui/react"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/checkbox.tsx",
@@ -736,6 +842,8 @@ export const Index: Record<string, any> = {
   "sidebar": {
     name: "sidebar",
     type: "registry:ui",
+    dependencies: ["@base-ui/react","class-variance-authority","lucide-react"],
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/input.json","https://herocn.dev/r/separator.json","https://herocn.dev/r/sheet.json","https://herocn.dev/r/skeleton.json","https://herocn.dev/r/tooltip.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/sidebar.tsx",
@@ -753,6 +861,8 @@ export const Index: Record<string, any> = {
   "slider": {
     name: "slider",
     type: "registry:ui",
+    dependencies: ["@base-ui/react"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/slider.tsx",
@@ -767,6 +877,8 @@ export const Index: Record<string, any> = {
   "sonner": {
     name: "sonner",
     type: "registry:ui",
+    dependencies: ["lucide-react","next-themes","sonner"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/sonner.tsx",
@@ -781,6 +893,8 @@ export const Index: Record<string, any> = {
   "skeleton": {
     name: "skeleton",
     type: "registry:ui",
+    dependencies: ["class-variance-authority"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/skeleton.tsx",
@@ -795,6 +909,8 @@ export const Index: Record<string, any> = {
   "spinner": {
     name: "spinner",
     type: "registry:ui",
+    dependencies: ["class-variance-authority"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/spinner.tsx",
@@ -809,6 +925,8 @@ export const Index: Record<string, any> = {
   "tabs": {
     name: "tabs",
     type: "registry:ui",
+    dependencies: ["@base-ui/react"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/tabs.tsx",
@@ -823,6 +941,8 @@ export const Index: Record<string, any> = {
   "table": {
     name: "table",
     type: "registry:ui",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/table.tsx",
@@ -837,6 +957,8 @@ export const Index: Record<string, any> = {
   "toggle": {
     name: "toggle",
     type: "registry:ui",
+    dependencies: ["@base-ui/react"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/toggle.tsx",
@@ -851,6 +973,8 @@ export const Index: Record<string, any> = {
   "toggle-group": {
     name: "toggle-group",
     type: "registry:ui",
+    dependencies: ["@base-ui/react"],
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/toggle-group.tsx",
@@ -865,6 +989,8 @@ export const Index: Record<string, any> = {
   "textarea": {
     name: "textarea",
     type: "registry:ui",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/textarea.tsx",
@@ -879,6 +1005,8 @@ export const Index: Record<string, any> = {
   "radio-group": {
     name: "radio-group",
     type: "registry:ui",
+    dependencies: ["@base-ui/react"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/radio-group.tsx",
@@ -893,6 +1021,8 @@ export const Index: Record<string, any> = {
   "resizable": {
     name: "resizable",
     type: "registry:ui",
+    dependencies: ["react-resizable-panels"],
+    devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/resizable.tsx",
@@ -907,6 +1037,8 @@ export const Index: Record<string, any> = {
   "attachment-demo": {
     name: "attachment-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/attachment.json","https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/attachment-demo.tsx",
@@ -921,6 +1053,8 @@ export const Index: Record<string, any> = {
   "attachment-image": {
     name: "attachment-image",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/attachment.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/attachment-image.tsx",
@@ -935,6 +1069,8 @@ export const Index: Record<string, any> = {
   "attachment-states": {
     name: "attachment-states",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/attachment.json","https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/attachment-states.tsx",
@@ -949,6 +1085,8 @@ export const Index: Record<string, any> = {
   "attachment-sizes": {
     name: "attachment-sizes",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/attachment.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/attachment-sizes.tsx",
@@ -963,6 +1101,8 @@ export const Index: Record<string, any> = {
   "attachment-group": {
     name: "attachment-group",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/attachment.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/attachment-group.tsx",
@@ -977,6 +1117,8 @@ export const Index: Record<string, any> = {
   "attachment-trigger": {
     name: "attachment-trigger",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/attachment.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/attachment-trigger.tsx",
@@ -991,6 +1133,8 @@ export const Index: Record<string, any> = {
   "aspect-ratio-demo": {
     name: "aspect-ratio-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/aspect-ratio.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/aspect-ratio-demo.tsx",
@@ -1005,6 +1149,8 @@ export const Index: Record<string, any> = {
   "aspect-ratio-portrait": {
     name: "aspect-ratio-portrait",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/aspect-ratio.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/aspect-ratio-portrait.tsx",
@@ -1019,6 +1165,8 @@ export const Index: Record<string, any> = {
   "aspect-ratio-rtl": {
     name: "aspect-ratio-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/aspect-ratio.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/aspect-ratio-rtl.tsx",
@@ -1033,6 +1181,8 @@ export const Index: Record<string, any> = {
   "aspect-ratio-square": {
     name: "aspect-ratio-square",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/aspect-ratio.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/aspect-ratio-square.tsx",
@@ -1047,6 +1197,8 @@ export const Index: Record<string, any> = {
   "aspect-ratio-rtl": {
     name: "aspect-ratio-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/aspect-ratio.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/aspect-ratio-rtl.tsx",
@@ -1061,6 +1213,8 @@ export const Index: Record<string, any> = {
   "card-demo": {
     name: "card-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/card-demo.tsx",
@@ -1075,6 +1229,8 @@ export const Index: Record<string, any> = {
   "card-variants": {
     name: "card-variants",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/card.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/card-variants.tsx",
@@ -1089,6 +1245,8 @@ export const Index: Record<string, any> = {
   "card-small": {
     name: "card-small",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/card.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/card-small.tsx",
@@ -1103,6 +1261,8 @@ export const Index: Record<string, any> = {
   "card-image": {
     name: "card-image",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/badge.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/card-image.tsx",
@@ -1117,6 +1277,8 @@ export const Index: Record<string, any> = {
   "card-rtl": {
     name: "card-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/card-rtl.tsx",
@@ -1131,6 +1293,8 @@ export const Index: Record<string, any> = {
   "button-demo": {
     name: "button-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-demo.tsx",
@@ -1145,6 +1309,8 @@ export const Index: Record<string, any> = {
   "button-variants": {
     name: "button-variants",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-variants.tsx",
@@ -1159,6 +1325,8 @@ export const Index: Record<string, any> = {
   "button-sizes": {
     name: "button-sizes",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-sizes.tsx",
@@ -1173,6 +1341,8 @@ export const Index: Record<string, any> = {
   "button-icons": {
     name: "button-icons",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-icons.tsx",
@@ -1187,6 +1357,8 @@ export const Index: Record<string, any> = {
   "button-render": {
     name: "button-render",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-render.tsx",
@@ -1201,6 +1373,8 @@ export const Index: Record<string, any> = {
   "button-rtl": {
     name: "button-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-rtl.tsx",
@@ -1215,6 +1389,8 @@ export const Index: Record<string, any> = {
   "skeleton-demo": {
     name: "skeleton-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-demo.tsx",
@@ -1229,6 +1405,8 @@ export const Index: Record<string, any> = {
   "skeleton-avatar": {
     name: "skeleton-avatar",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-avatar.tsx",
@@ -1243,6 +1421,8 @@ export const Index: Record<string, any> = {
   "skeleton-card": {
     name: "skeleton-card",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/card.json","https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-card.tsx",
@@ -1257,6 +1437,8 @@ export const Index: Record<string, any> = {
   "skeleton-text": {
     name: "skeleton-text",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-text.tsx",
@@ -1271,6 +1453,8 @@ export const Index: Record<string, any> = {
   "skeleton-form": {
     name: "skeleton-form",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-form.tsx",
@@ -1285,6 +1469,8 @@ export const Index: Record<string, any> = {
   "skeleton-table": {
     name: "skeleton-table",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-table.tsx",
@@ -1299,6 +1485,8 @@ export const Index: Record<string, any> = {
   "skeleton-animation-types": {
     name: "skeleton-animation-types",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-animation-types.tsx",
@@ -1313,6 +1501,8 @@ export const Index: Record<string, any> = {
   "skeleton-single-shimmer": {
     name: "skeleton-single-shimmer",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-single-shimmer.tsx",
@@ -1327,6 +1517,8 @@ export const Index: Record<string, any> = {
   "skeleton-rtl": {
     name: "skeleton-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-rtl.tsx",
@@ -1341,6 +1533,8 @@ export const Index: Record<string, any> = {
   "badge-rtl": {
     name: "badge-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/badge.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/badge-rtl.tsx",
@@ -1355,6 +1549,8 @@ export const Index: Record<string, any> = {
   "input-rtl": {
     name: "input-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-rtl.tsx",
@@ -1369,6 +1565,8 @@ export const Index: Record<string, any> = {
   "field-demo": {
     name: "field-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/select.json","https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/field-demo.tsx",
@@ -1383,6 +1581,8 @@ export const Index: Record<string, any> = {
   "field-input": {
     name: "field-input",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/field-input.tsx",
@@ -1397,6 +1597,8 @@ export const Index: Record<string, any> = {
   "field-textarea": {
     name: "field-textarea",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/field-textarea.tsx",
@@ -1411,6 +1613,8 @@ export const Index: Record<string, any> = {
   "field-select": {
     name: "field-select",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/field-select.tsx",
@@ -1425,6 +1629,8 @@ export const Index: Record<string, any> = {
   "field-slider": {
     name: "field-slider",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/slider.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/field-slider.tsx",
@@ -1439,6 +1645,8 @@ export const Index: Record<string, any> = {
   "field-fieldset": {
     name: "field-fieldset",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/field-fieldset.tsx",
@@ -1453,6 +1661,8 @@ export const Index: Record<string, any> = {
   "field-checkbox": {
     name: "field-checkbox",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/field-checkbox.tsx",
@@ -1467,6 +1677,8 @@ export const Index: Record<string, any> = {
   "checkbox-demo": {
     name: "checkbox-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json","https://herocn.dev/r/label.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/checkbox-demo.tsx",
@@ -1481,6 +1693,8 @@ export const Index: Record<string, any> = {
   "checkbox-basic": {
     name: "checkbox-basic",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/checkbox-basic.tsx",
@@ -1495,6 +1709,8 @@ export const Index: Record<string, any> = {
   "checkbox-variants": {
     name: "checkbox-variants",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/checkbox-variants.tsx",
@@ -1509,6 +1725,8 @@ export const Index: Record<string, any> = {
   "checkbox-description": {
     name: "checkbox-description",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/checkbox-description.tsx",
@@ -1523,6 +1741,8 @@ export const Index: Record<string, any> = {
   "checkbox-disabled": {
     name: "checkbox-disabled",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/checkbox-disabled.tsx",
@@ -1537,6 +1757,8 @@ export const Index: Record<string, any> = {
   "checkbox-invalid": {
     name: "checkbox-invalid",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/checkbox-invalid.tsx",
@@ -1551,6 +1773,8 @@ export const Index: Record<string, any> = {
   "checkbox-in-surface": {
     name: "checkbox-in-surface",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json","https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/checkbox-in-surface.tsx",
@@ -1565,6 +1789,8 @@ export const Index: Record<string, any> = {
   "checkbox-rtl": {
     name: "checkbox-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json","https://herocn.dev/r/label.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/checkbox-rtl.tsx",
@@ -1579,6 +1805,8 @@ export const Index: Record<string, any> = {
   "field-radio": {
     name: "field-radio",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/radio-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/field-radio.tsx",
@@ -1593,6 +1821,8 @@ export const Index: Record<string, any> = {
   "radio-group-demo": {
     name: "radio-group-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/label.json","https://herocn.dev/r/radio-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/radio-group-demo.tsx",
@@ -1607,6 +1837,8 @@ export const Index: Record<string, any> = {
   "radio-group-variants": {
     name: "radio-group-variants",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/radio-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/radio-group-variants.tsx",
@@ -1621,6 +1853,8 @@ export const Index: Record<string, any> = {
   "radio-group-description": {
     name: "radio-group-description",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/radio-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/radio-group-description.tsx",
@@ -1635,6 +1869,8 @@ export const Index: Record<string, any> = {
   "radio-group-disabled": {
     name: "radio-group-disabled",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/radio-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/radio-group-disabled.tsx",
@@ -1649,6 +1885,8 @@ export const Index: Record<string, any> = {
   "radio-group-invalid": {
     name: "radio-group-invalid",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/radio-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/radio-group-invalid.tsx",
@@ -1663,6 +1901,8 @@ export const Index: Record<string, any> = {
   "radio-group-in-surface": {
     name: "radio-group-in-surface",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/radio-group.json","https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/radio-group-in-surface.tsx",
@@ -1677,6 +1917,8 @@ export const Index: Record<string, any> = {
   "radio-group-rtl": {
     name: "radio-group-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/radio-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/radio-group-rtl.tsx",
@@ -1691,6 +1933,8 @@ export const Index: Record<string, any> = {
   "field-switch": {
     name: "field-switch",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/field-switch.tsx",
@@ -1705,6 +1949,8 @@ export const Index: Record<string, any> = {
   "field-choice-card": {
     name: "field-choice-card",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/radio-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/field-choice-card.tsx",
@@ -1719,6 +1965,8 @@ export const Index: Record<string, any> = {
   "field-group": {
     name: "field-group",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/field-group.tsx",
@@ -1733,6 +1981,8 @@ export const Index: Record<string, any> = {
   "field-rtl": {
     name: "field-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/select.json","https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/field-rtl.tsx",
@@ -1747,6 +1997,8 @@ export const Index: Record<string, any> = {
   "textarea-demo": {
     name: "textarea-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-demo.tsx",
@@ -1761,6 +2013,8 @@ export const Index: Record<string, any> = {
   "textarea-variants": {
     name: "textarea-variants",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-variants.tsx",
@@ -1775,6 +2029,8 @@ export const Index: Record<string, any> = {
   "textarea-states": {
     name: "textarea-states",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-states.tsx",
@@ -1789,6 +2045,8 @@ export const Index: Record<string, any> = {
   "textarea-field": {
     name: "textarea-field",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-field.tsx",
@@ -1803,6 +2061,8 @@ export const Index: Record<string, any> = {
   "textarea-button": {
     name: "textarea-button",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-button.tsx",
@@ -1817,6 +2077,8 @@ export const Index: Record<string, any> = {
   "textarea-rtl": {
     name: "textarea-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-rtl.tsx",
@@ -1831,6 +2093,8 @@ export const Index: Record<string, any> = {
   "textarea-in-surface": {
     name: "textarea-in-surface",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/field.json","https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-in-surface.tsx",
@@ -1845,6 +2109,8 @@ export const Index: Record<string, any> = {
   "avatar-rtl": {
     name: "avatar-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-rtl.tsx",
@@ -1859,6 +2125,8 @@ export const Index: Record<string, any> = {
   "collapsible-rtl": {
     name: "collapsible-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/collapsible.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/collapsible-rtl.tsx",
@@ -1873,6 +2141,8 @@ export const Index: Record<string, any> = {
   "dropdown-menu-rtl": {
     name: "dropdown-menu-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-rtl.tsx",
@@ -1887,6 +2157,8 @@ export const Index: Record<string, any> = {
   "surface-rtl": {
     name: "surface-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/surface-rtl.tsx",
@@ -1901,6 +2173,8 @@ export const Index: Record<string, any> = {
   "collapsible-demo": {
     name: "collapsible-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/collapsible.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/collapsible-demo.tsx",
@@ -1915,6 +2189,8 @@ export const Index: Record<string, any> = {
   "collapsible-basic": {
     name: "collapsible-basic",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/collapsible.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/collapsible-basic.tsx",
@@ -1929,6 +2205,8 @@ export const Index: Record<string, any> = {
   "collapsible-settings": {
     name: "collapsible-settings",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/collapsible.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/collapsible-settings.tsx",
@@ -1943,6 +2221,8 @@ export const Index: Record<string, any> = {
   "collapsible-file-tree": {
     name: "collapsible-file-tree",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/collapsible.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/collapsible-file-tree.tsx",
@@ -1957,6 +2237,8 @@ export const Index: Record<string, any> = {
   "dropdown-menu-demo": {
     name: "dropdown-menu-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-demo.tsx",
@@ -1971,6 +2253,8 @@ export const Index: Record<string, any> = {
   "dropdown-menu-basic": {
     name: "dropdown-menu-basic",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-basic.tsx",
@@ -1985,6 +2269,8 @@ export const Index: Record<string, any> = {
   "dropdown-menu-submenu": {
     name: "dropdown-menu-submenu",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-submenu.tsx",
@@ -1999,6 +2285,8 @@ export const Index: Record<string, any> = {
   "dropdown-menu-shortcuts": {
     name: "dropdown-menu-shortcuts",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-shortcuts.tsx",
@@ -2013,6 +2301,8 @@ export const Index: Record<string, any> = {
   "dropdown-menu-icons": {
     name: "dropdown-menu-icons",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-icons.tsx",
@@ -2027,6 +2317,8 @@ export const Index: Record<string, any> = {
   "dropdown-menu-checkboxes": {
     name: "dropdown-menu-checkboxes",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-checkboxes.tsx",
@@ -2041,6 +2333,8 @@ export const Index: Record<string, any> = {
   "dropdown-menu-checkboxes-icons": {
     name: "dropdown-menu-checkboxes-icons",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-checkboxes-icons.tsx",
@@ -2055,6 +2349,8 @@ export const Index: Record<string, any> = {
   "dropdown-menu-radio-group": {
     name: "dropdown-menu-radio-group",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-radio-group.tsx",
@@ -2069,6 +2365,8 @@ export const Index: Record<string, any> = {
   "dropdown-menu-radio-icons": {
     name: "dropdown-menu-radio-icons",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-radio-icons.tsx",
@@ -2083,6 +2381,8 @@ export const Index: Record<string, any> = {
   "dropdown-menu-destructive": {
     name: "dropdown-menu-destructive",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-destructive.tsx",
@@ -2097,6 +2397,8 @@ export const Index: Record<string, any> = {
   "dropdown-menu-avatar": {
     name: "dropdown-menu-avatar",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-avatar.tsx",
@@ -2111,6 +2413,8 @@ export const Index: Record<string, any> = {
   "dropdown-menu-complex": {
     name: "dropdown-menu-complex",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-complex.tsx",
@@ -2125,6 +2429,8 @@ export const Index: Record<string, any> = {
   "avatar-demo": {
     name: "avatar-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-demo.tsx",
@@ -2139,6 +2445,8 @@ export const Index: Record<string, any> = {
   "avatar-basic": {
     name: "avatar-basic",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-basic.tsx",
@@ -2153,6 +2461,8 @@ export const Index: Record<string, any> = {
   "avatar-badge": {
     name: "avatar-badge",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-badge.tsx",
@@ -2167,6 +2477,8 @@ export const Index: Record<string, any> = {
   "avatar-badge-icon": {
     name: "avatar-badge-icon",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-badge-icon.tsx",
@@ -2181,6 +2493,8 @@ export const Index: Record<string, any> = {
   "avatar-group": {
     name: "avatar-group",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-group.tsx",
@@ -2195,6 +2509,8 @@ export const Index: Record<string, any> = {
   "avatar-group-count": {
     name: "avatar-group-count",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-group-count.tsx",
@@ -2209,6 +2525,8 @@ export const Index: Record<string, any> = {
   "avatar-group-count-icon": {
     name: "avatar-group-count-icon",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-group-count-icon.tsx",
@@ -2223,6 +2541,8 @@ export const Index: Record<string, any> = {
   "avatar-size": {
     name: "avatar-size",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-size.tsx",
@@ -2237,6 +2557,8 @@ export const Index: Record<string, any> = {
   "avatar-dropdown": {
     name: "avatar-dropdown",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-dropdown.tsx",
@@ -2251,6 +2573,8 @@ export const Index: Record<string, any> = {
   "badge-demo": {
     name: "badge-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/badge.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/badge-demo.tsx",
@@ -2265,6 +2589,8 @@ export const Index: Record<string, any> = {
   "badge-variants": {
     name: "badge-variants",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/badge.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/badge-variants.tsx",
@@ -2279,6 +2605,8 @@ export const Index: Record<string, any> = {
   "badge-sizes": {
     name: "badge-sizes",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/badge.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/badge-sizes.tsx",
@@ -2293,6 +2621,8 @@ export const Index: Record<string, any> = {
   "badge-icon": {
     name: "badge-icon",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/badge.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/badge-icon.tsx",
@@ -2307,6 +2637,8 @@ export const Index: Record<string, any> = {
   "badge-colors": {
     name: "badge-colors",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/badge.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/badge-colors.tsx",
@@ -2321,6 +2653,8 @@ export const Index: Record<string, any> = {
   "surface-demo": {
     name: "surface-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/surface-demo.tsx",
@@ -2335,6 +2669,8 @@ export const Index: Record<string, any> = {
   "surface-variants": {
     name: "surface-variants",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/surface-variants.tsx",
@@ -2349,6 +2685,8 @@ export const Index: Record<string, any> = {
   "input-demo": {
     name: "input-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-demo.tsx",
@@ -2363,6 +2701,8 @@ export const Index: Record<string, any> = {
   "input-variants": {
     name: "input-variants",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-variants.tsx",
@@ -2377,6 +2717,8 @@ export const Index: Record<string, any> = {
   "input-states": {
     name: "input-states",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-states.tsx",
@@ -2391,6 +2733,8 @@ export const Index: Record<string, any> = {
   "input-field": {
     name: "input-field",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-field.tsx",
@@ -2405,6 +2749,8 @@ export const Index: Record<string, any> = {
   "input-fieldgroup": {
     name: "input-fieldgroup",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-fieldgroup.tsx",
@@ -2419,6 +2765,8 @@ export const Index: Record<string, any> = {
   "input-badge": {
     name: "input-badge",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/badge.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-badge.tsx",
@@ -2433,6 +2781,8 @@ export const Index: Record<string, any> = {
   "input-input-group": {
     name: "input-input-group",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-input-group.tsx",
@@ -2447,6 +2797,8 @@ export const Index: Record<string, any> = {
   "input-button-group": {
     name: "input-button-group",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-button-group.tsx",
@@ -2461,6 +2813,8 @@ export const Index: Record<string, any> = {
   "input-in-surface": {
     name: "input-in-surface",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/surface.json","https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-in-surface.tsx",
@@ -2475,6 +2829,8 @@ export const Index: Record<string, any> = {
   "button-group-demo": {
     name: "button-group-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-demo.tsx",
@@ -2489,6 +2845,8 @@ export const Index: Record<string, any> = {
   "button-group-orientation": {
     name: "button-group-orientation",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-orientation.tsx",
@@ -2503,6 +2861,8 @@ export const Index: Record<string, any> = {
   "button-group-size": {
     name: "button-group-size",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-size.tsx",
@@ -2517,6 +2877,8 @@ export const Index: Record<string, any> = {
   "button-group-separator": {
     name: "button-group-separator",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-separator.tsx",
@@ -2531,6 +2893,8 @@ export const Index: Record<string, any> = {
   "button-group-split": {
     name: "button-group-split",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-split.tsx",
@@ -2545,6 +2909,8 @@ export const Index: Record<string, any> = {
   "button-group-input": {
     name: "button-group-input",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/input.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-input.tsx",
@@ -2559,6 +2925,8 @@ export const Index: Record<string, any> = {
   "button-group-input-group": {
     name: "button-group-input-group",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/input-group.json","https://herocn.dev/r/tooltip.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-input-group.tsx",
@@ -2573,6 +2941,8 @@ export const Index: Record<string, any> = {
   "button-group-dropdown": {
     name: "button-group-dropdown",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-dropdown.tsx",
@@ -2587,6 +2957,8 @@ export const Index: Record<string, any> = {
   "button-group-select": {
     name: "button-group-select",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/input.json","https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-select.tsx",
@@ -2601,6 +2973,8 @@ export const Index: Record<string, any> = {
   "button-group-popover": {
     name: "button-group-popover",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/field.json","https://herocn.dev/r/popover.json","https://herocn.dev/r/textarea.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-popover.tsx",
@@ -2615,6 +2989,8 @@ export const Index: Record<string, any> = {
   "button-group-rtl": {
     name: "button-group-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-rtl.tsx",
@@ -2629,6 +3005,8 @@ export const Index: Record<string, any> = {
   "button-group-text": {
     name: "button-group-text",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button-group.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-text.tsx",
@@ -2643,6 +3021,8 @@ export const Index: Record<string, any> = {
   "tabs-demo": {
     name: "tabs-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/card.json","https://herocn.dev/r/tabs.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-demo.tsx",
@@ -2657,6 +3037,8 @@ export const Index: Record<string, any> = {
   "tabs-line": {
     name: "tabs-line",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/tabs.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-line.tsx",
@@ -2671,6 +3053,8 @@ export const Index: Record<string, any> = {
   "tabs-vertical": {
     name: "tabs-vertical",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/tabs.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-vertical.tsx",
@@ -2685,6 +3069,8 @@ export const Index: Record<string, any> = {
   "tabs-vertical-line": {
     name: "tabs-vertical-line",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/tabs.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-vertical-line.tsx",
@@ -2699,6 +3085,8 @@ export const Index: Record<string, any> = {
   "tabs-disabled": {
     name: "tabs-disabled",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/tabs.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-disabled.tsx",
@@ -2713,6 +3101,8 @@ export const Index: Record<string, any> = {
   "tabs-icons": {
     name: "tabs-icons",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/tabs.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-icons.tsx",
@@ -2727,6 +3117,8 @@ export const Index: Record<string, any> = {
   "tabs-rtl": {
     name: "tabs-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/card.json","https://herocn.dev/r/tabs.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-rtl.tsx",
@@ -2741,6 +3133,8 @@ export const Index: Record<string, any> = {
   "select-demo": {
     name: "select-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-demo.tsx",
@@ -2755,6 +3149,8 @@ export const Index: Record<string, any> = {
   "select-variants": {
     name: "select-variants",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-variants.tsx",
@@ -2769,6 +3165,8 @@ export const Index: Record<string, any> = {
   "select-surface": {
     name: "select-surface",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/select.json","https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-surface.tsx",
@@ -2783,6 +3181,8 @@ export const Index: Record<string, any> = {
   "select-groups": {
     name: "select-groups",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-groups.tsx",
@@ -2797,6 +3197,8 @@ export const Index: Record<string, any> = {
   "select-multiple": {
     name: "select-multiple",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-multiple.tsx",
@@ -2811,6 +3213,8 @@ export const Index: Record<string, any> = {
   "select-scrollable": {
     name: "select-scrollable",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-scrollable.tsx",
@@ -2825,6 +3229,8 @@ export const Index: Record<string, any> = {
   "select-disabled": {
     name: "select-disabled",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-disabled.tsx",
@@ -2839,6 +3245,8 @@ export const Index: Record<string, any> = {
   "select-invalid": {
     name: "select-invalid",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-invalid.tsx",
@@ -2853,6 +3261,8 @@ export const Index: Record<string, any> = {
   "select-rtl": {
     name: "select-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/select-rtl.tsx",
@@ -2867,6 +3277,8 @@ export const Index: Record<string, any> = {
   "separator-demo": {
     name: "separator-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/separator.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/separator-demo.tsx",
@@ -2881,6 +3293,8 @@ export const Index: Record<string, any> = {
   "separator-vertical": {
     name: "separator-vertical",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/separator.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/separator-vertical.tsx",
@@ -2895,6 +3309,8 @@ export const Index: Record<string, any> = {
   "separator-menu": {
     name: "separator-menu",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/separator.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/separator-menu.tsx",
@@ -2909,6 +3325,8 @@ export const Index: Record<string, any> = {
   "separator-list": {
     name: "separator-list",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/separator.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/separator-list.tsx",
@@ -2923,6 +3341,8 @@ export const Index: Record<string, any> = {
   "separator-surface": {
     name: "separator-surface",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/separator.json","https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/separator-surface.tsx",
@@ -2937,6 +3357,8 @@ export const Index: Record<string, any> = {
   "separator-rtl": {
     name: "separator-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/separator.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/separator-rtl.tsx",
@@ -2951,6 +3373,8 @@ export const Index: Record<string, any> = {
   "sidebar-demo": {
     name: "sidebar-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/sidebar.json","https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/collapsible.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/sidebar-demo.tsx",
@@ -2965,6 +3389,8 @@ export const Index: Record<string, any> = {
   "sidebar-rtl": {
     name: "sidebar-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/sidebar.json","https://herocn.dev/r/avatar.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/sidebar-rtl.tsx",
@@ -2979,6 +3405,8 @@ export const Index: Record<string, any> = {
   "popover-demo": {
     name: "popover-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/popover-demo.tsx",
@@ -2993,6 +3421,8 @@ export const Index: Record<string, any> = {
   "popover-basic": {
     name: "popover-basic",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/popover-basic.tsx",
@@ -3007,6 +3437,8 @@ export const Index: Record<string, any> = {
   "popover-align": {
     name: "popover-align",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/popover-align.tsx",
@@ -3021,6 +3453,8 @@ export const Index: Record<string, any> = {
   "popover-form": {
     name: "popover-form",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/popover-form.tsx",
@@ -3035,6 +3469,8 @@ export const Index: Record<string, any> = {
   "popover-with-arrow": {
     name: "popover-with-arrow",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/popover-with-arrow.tsx",
@@ -3049,6 +3485,8 @@ export const Index: Record<string, any> = {
   "popover-rtl": {
     name: "popover-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/popover-rtl.tsx",
@@ -3063,6 +3501,8 @@ export const Index: Record<string, any> = {
   "progress-demo": {
     name: "progress-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/progress.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/progress-demo.tsx",
@@ -3077,6 +3517,8 @@ export const Index: Record<string, any> = {
   "progress-label": {
     name: "progress-label",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/progress.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/progress-label.tsx",
@@ -3091,6 +3533,8 @@ export const Index: Record<string, any> = {
   "progress-controlled": {
     name: "progress-controlled",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/progress.json","https://herocn.dev/r/slider.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/progress-controlled.tsx",
@@ -3105,6 +3549,8 @@ export const Index: Record<string, any> = {
   "progress-sizes": {
     name: "progress-sizes",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/progress.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/progress-sizes.tsx",
@@ -3119,6 +3565,8 @@ export const Index: Record<string, any> = {
   "progress-variants": {
     name: "progress-variants",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/progress.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/progress-variants.tsx",
@@ -3133,6 +3581,8 @@ export const Index: Record<string, any> = {
   "progress-rtl": {
     name: "progress-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/progress.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/progress-rtl.tsx",
@@ -3147,6 +3597,8 @@ export const Index: Record<string, any> = {
   "tooltip-demo": {
     name: "tooltip-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/tooltip.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tooltip-demo.tsx",
@@ -3161,6 +3613,8 @@ export const Index: Record<string, any> = {
   "tooltip-sides": {
     name: "tooltip-sides",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/tooltip.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tooltip-sides.tsx",
@@ -3175,6 +3629,8 @@ export const Index: Record<string, any> = {
   "tooltip-arrow": {
     name: "tooltip-arrow",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/tooltip.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tooltip-arrow.tsx",
@@ -3189,6 +3645,8 @@ export const Index: Record<string, any> = {
   "tooltip-keyboard": {
     name: "tooltip-keyboard",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/tooltip.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tooltip-keyboard.tsx",
@@ -3203,6 +3661,8 @@ export const Index: Record<string, any> = {
   "tooltip-disabled": {
     name: "tooltip-disabled",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/tooltip.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tooltip-disabled.tsx",
@@ -3217,6 +3677,8 @@ export const Index: Record<string, any> = {
   "tooltip-rtl": {
     name: "tooltip-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/tooltip.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/tooltip-rtl.tsx",
@@ -3231,6 +3693,8 @@ export const Index: Record<string, any> = {
   "input-group-demo": {
     name: "input-group-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-demo.tsx",
@@ -3245,6 +3709,8 @@ export const Index: Record<string, any> = {
   "input-group-variants": {
     name: "input-group-variants",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-variants.tsx",
@@ -3259,6 +3725,8 @@ export const Index: Record<string, any> = {
   "input-group-invalid": {
     name: "input-group-invalid",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-invalid.tsx",
@@ -3273,6 +3741,8 @@ export const Index: Record<string, any> = {
   "input-group-disabled": {
     name: "input-group-disabled",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-disabled.tsx",
@@ -3287,6 +3757,8 @@ export const Index: Record<string, any> = {
   "input-group-inline-start": {
     name: "input-group-inline-start",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-inline-start.tsx",
@@ -3301,6 +3773,8 @@ export const Index: Record<string, any> = {
   "input-group-inline-end": {
     name: "input-group-inline-end",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-inline-end.tsx",
@@ -3315,6 +3789,8 @@ export const Index: Record<string, any> = {
   "input-group-block-start": {
     name: "input-group-block-start",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-block-start.tsx",
@@ -3329,6 +3805,8 @@ export const Index: Record<string, any> = {
   "input-group-block-end": {
     name: "input-group-block-end",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-block-end.tsx",
@@ -3343,6 +3821,8 @@ export const Index: Record<string, any> = {
   "input-group-icon": {
     name: "input-group-icon",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-icon.tsx",
@@ -3357,6 +3837,8 @@ export const Index: Record<string, any> = {
   "input-group-text": {
     name: "input-group-text",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-text.tsx",
@@ -3371,6 +3853,8 @@ export const Index: Record<string, any> = {
   "input-group-button": {
     name: "input-group-button",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-button.tsx",
@@ -3385,6 +3869,8 @@ export const Index: Record<string, any> = {
   "input-group-spinner": {
     name: "input-group-spinner",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-group.json","https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-spinner.tsx",
@@ -3399,6 +3885,8 @@ export const Index: Record<string, any> = {
   "input-group-textarea": {
     name: "input-group-textarea",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-textarea.tsx",
@@ -3413,6 +3901,8 @@ export const Index: Record<string, any> = {
   "input-group-dropdown": {
     name: "input-group-dropdown",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-dropdown.tsx",
@@ -3427,6 +3917,8 @@ export const Index: Record<string, any> = {
   "input-group-rtl": {
     name: "input-group-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json","https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-rtl.tsx",
@@ -3441,6 +3933,8 @@ export const Index: Record<string, any> = {
   "input-group-in-surface": {
     name: "input-group-in-surface",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/card.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-in-surface.tsx",
@@ -3455,6 +3949,8 @@ export const Index: Record<string, any> = {
   "item-demo": {
     name: "item-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/item.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/item-demo.tsx",
@@ -3469,6 +3965,8 @@ export const Index: Record<string, any> = {
   "item-variants": {
     name: "item-variants",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/item.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/item-variants.tsx",
@@ -3483,6 +3981,8 @@ export const Index: Record<string, any> = {
   "item-sizes": {
     name: "item-sizes",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/item.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/item-sizes.tsx",
@@ -3497,6 +3997,8 @@ export const Index: Record<string, any> = {
   "item-icon": {
     name: "item-icon",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/item.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/item-icon.tsx",
@@ -3511,6 +4013,8 @@ export const Index: Record<string, any> = {
   "item-avatar": {
     name: "item-avatar",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/item.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/item-avatar.tsx",
@@ -3525,6 +4029,8 @@ export const Index: Record<string, any> = {
   "item-image": {
     name: "item-image",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/item.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/item-image.tsx",
@@ -3539,6 +4045,8 @@ export const Index: Record<string, any> = {
   "item-group": {
     name: "item-group",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/item.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/item-group.tsx",
@@ -3553,6 +4061,8 @@ export const Index: Record<string, any> = {
   "item-header": {
     name: "item-header",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/item.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/item-header.tsx",
@@ -3567,6 +4077,8 @@ export const Index: Record<string, any> = {
   "item-link": {
     name: "item-link",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/item.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/item-link.tsx",
@@ -3581,6 +4093,8 @@ export const Index: Record<string, any> = {
   "item-dropdown": {
     name: "item-dropdown",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/item.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/item-dropdown.tsx",
@@ -3595,6 +4109,8 @@ export const Index: Record<string, any> = {
   "item-rtl": {
     name: "item-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/item.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/item-rtl.tsx",
@@ -3609,6 +4125,8 @@ export const Index: Record<string, any> = {
   "kbd-demo": {
     name: "kbd-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/kbd.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/kbd-demo.tsx",
@@ -3623,6 +4141,8 @@ export const Index: Record<string, any> = {
   "kbd-variants": {
     name: "kbd-variants",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/kbd.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/kbd-variants.tsx",
@@ -3637,6 +4157,8 @@ export const Index: Record<string, any> = {
   "kbd-group": {
     name: "kbd-group",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/kbd.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/kbd-group.tsx",
@@ -3651,6 +4173,8 @@ export const Index: Record<string, any> = {
   "kbd-button": {
     name: "kbd-button",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/kbd.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/kbd-button.tsx",
@@ -3665,6 +4189,8 @@ export const Index: Record<string, any> = {
   "kbd-tooltip": {
     name: "kbd-tooltip",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/tooltip.json","https://herocn.dev/r/kbd.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/kbd-tooltip.tsx",
@@ -3679,6 +4205,8 @@ export const Index: Record<string, any> = {
   "kbd-input-group": {
     name: "kbd-input-group",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-group.json","https://herocn.dev/r/kbd.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/kbd-input-group.tsx",
@@ -3693,6 +4221,8 @@ export const Index: Record<string, any> = {
   "kbd-rtl": {
     name: "kbd-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/kbd.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/kbd-rtl.tsx",
@@ -3707,6 +4237,8 @@ export const Index: Record<string, any> = {
   "toggle-demo": {
     name: "toggle-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-demo.tsx",
@@ -3721,6 +4253,8 @@ export const Index: Record<string, any> = {
   "toggle-ghost": {
     name: "toggle-ghost",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-ghost.tsx",
@@ -3735,6 +4269,8 @@ export const Index: Record<string, any> = {
   "toggle-sizes": {
     name: "toggle-sizes",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-sizes.tsx",
@@ -3749,6 +4285,8 @@ export const Index: Record<string, any> = {
   "toggle-disabled": {
     name: "toggle-disabled",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-disabled.tsx",
@@ -3763,6 +4301,8 @@ export const Index: Record<string, any> = {
   "toggle-rtl": {
     name: "toggle-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-rtl.tsx",
@@ -3777,6 +4317,8 @@ export const Index: Record<string, any> = {
   "toggle-group-demo": {
     name: "toggle-group-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-demo.tsx",
@@ -3791,6 +4333,8 @@ export const Index: Record<string, any> = {
   "toggle-group-sizes": {
     name: "toggle-group-sizes",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-sizes.tsx",
@@ -3805,6 +4349,8 @@ export const Index: Record<string, any> = {
   "toggle-group-spacing": {
     name: "toggle-group-spacing",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-spacing.tsx",
@@ -3819,6 +4365,8 @@ export const Index: Record<string, any> = {
   "toggle-group-vertical": {
     name: "toggle-group-vertical",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-vertical.tsx",
@@ -3833,6 +4381,8 @@ export const Index: Record<string, any> = {
   "toggle-group-disabled": {
     name: "toggle-group-disabled",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-disabled.tsx",
@@ -3847,6 +4397,8 @@ export const Index: Record<string, any> = {
   "toggle-group-custom": {
     name: "toggle-group-custom",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle-group.json","https://herocn.dev/r/field.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-custom.tsx",
@@ -3861,6 +4413,8 @@ export const Index: Record<string, any> = {
   "toggle-group-rtl": {
     name: "toggle-group-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-rtl.tsx",
@@ -3875,6 +4429,8 @@ export const Index: Record<string, any> = {
   "label-demo": {
     name: "label-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/label-demo.tsx",
@@ -3889,6 +4445,8 @@ export const Index: Record<string, any> = {
   "label-in-field": {
     name: "label-in-field",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/label-in-field.tsx",
@@ -3903,6 +4461,8 @@ export const Index: Record<string, any> = {
   "label-rtl": {
     name: "label-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/label.json","https://herocn.dev/r/switch.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/label-rtl.tsx",
@@ -3917,6 +4477,8 @@ export const Index: Record<string, any> = {
   "switch-demo": {
     name: "switch-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/label.json","https://herocn.dev/r/switch.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/switch-demo.tsx",
@@ -3931,6 +4493,8 @@ export const Index: Record<string, any> = {
   "switch-description": {
     name: "switch-description",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/switch-description.tsx",
@@ -3945,6 +4509,8 @@ export const Index: Record<string, any> = {
   "switch-choice-card": {
     name: "switch-choice-card",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/switch-choice-card.tsx",
@@ -3959,6 +4525,8 @@ export const Index: Record<string, any> = {
   "switch-disabled": {
     name: "switch-disabled",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/switch-disabled.tsx",
@@ -3973,6 +4541,8 @@ export const Index: Record<string, any> = {
   "switch-invalid": {
     name: "switch-invalid",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/switch-invalid.tsx",
@@ -3987,6 +4557,8 @@ export const Index: Record<string, any> = {
   "switch-sizes": {
     name: "switch-sizes",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/switch-sizes.tsx",
@@ -4001,6 +4573,8 @@ export const Index: Record<string, any> = {
   "switch-rtl": {
     name: "switch-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/switch-rtl.tsx",
@@ -4015,6 +4589,8 @@ export const Index: Record<string, any> = {
   "spinner-demo": {
     name: "spinner-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-demo.tsx",
@@ -4029,6 +4605,8 @@ export const Index: Record<string, any> = {
   "spinner-variants": {
     name: "spinner-variants",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-variants.tsx",
@@ -4043,6 +4621,8 @@ export const Index: Record<string, any> = {
   "spinner-sizes": {
     name: "spinner-sizes",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-sizes.tsx",
@@ -4057,6 +4637,8 @@ export const Index: Record<string, any> = {
   "spinner-button": {
     name: "spinner-button",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-button.tsx",
@@ -4071,6 +4653,8 @@ export const Index: Record<string, any> = {
   "spinner-badge": {
     name: "spinner-badge",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/badge.json","https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-badge.tsx",
@@ -4085,6 +4669,8 @@ export const Index: Record<string, any> = {
   "spinner-input-group": {
     name: "spinner-input-group",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-group.json","https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-input-group.tsx",
@@ -4099,6 +4685,8 @@ export const Index: Record<string, any> = {
   "spinner-empty": {
     name: "spinner-empty",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/empty.json","https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-empty.tsx",
@@ -4113,6 +4701,8 @@ export const Index: Record<string, any> = {
   "empty-demo": {
     name: "empty-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/empty.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/empty-demo.tsx",
@@ -4127,6 +4717,8 @@ export const Index: Record<string, any> = {
   "empty-outline": {
     name: "empty-outline",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/empty.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/empty-outline.tsx",
@@ -4141,6 +4733,8 @@ export const Index: Record<string, any> = {
   "empty-background": {
     name: "empty-background",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/empty.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/empty-background.tsx",
@@ -4155,6 +4749,8 @@ export const Index: Record<string, any> = {
   "empty-avatar": {
     name: "empty-avatar",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/empty.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/empty-avatar.tsx",
@@ -4169,6 +4765,8 @@ export const Index: Record<string, any> = {
   "empty-avatar-group": {
     name: "empty-avatar-group",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/empty.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/empty-avatar-group.tsx",
@@ -4183,6 +4781,8 @@ export const Index: Record<string, any> = {
   "empty-input-group": {
     name: "empty-input-group",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/empty.json","https://herocn.dev/r/input-group.json","https://herocn.dev/r/kbd.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/empty-input-group.tsx",
@@ -4197,6 +4797,8 @@ export const Index: Record<string, any> = {
   "empty-rtl": {
     name: "empty-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/empty.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/empty-rtl.tsx",
@@ -4211,6 +4813,8 @@ export const Index: Record<string, any> = {
   "spinner-rtl": {
     name: "spinner-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-rtl.tsx",
@@ -4225,6 +4829,8 @@ export const Index: Record<string, any> = {
   "slider-demo": {
     name: "slider-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/slider.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/slider-demo.tsx",
@@ -4239,6 +4845,8 @@ export const Index: Record<string, any> = {
   "slider-range": {
     name: "slider-range",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/slider.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/slider-range.tsx",
@@ -4253,6 +4861,8 @@ export const Index: Record<string, any> = {
   "slider-multiple": {
     name: "slider-multiple",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/slider.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/slider-multiple.tsx",
@@ -4267,6 +4877,8 @@ export const Index: Record<string, any> = {
   "slider-vertical": {
     name: "slider-vertical",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/slider.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/slider-vertical.tsx",
@@ -4281,6 +4893,8 @@ export const Index: Record<string, any> = {
   "slider-controlled": {
     name: "slider-controlled",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/label.json","https://herocn.dev/r/slider.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/slider-controlled.tsx",
@@ -4295,6 +4909,8 @@ export const Index: Record<string, any> = {
   "slider-disabled": {
     name: "slider-disabled",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/slider.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/slider-disabled.tsx",
@@ -4309,6 +4925,8 @@ export const Index: Record<string, any> = {
   "slider-rtl": {
     name: "slider-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/slider.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/slider-rtl.tsx",
@@ -4323,6 +4941,8 @@ export const Index: Record<string, any> = {
   "alert-demo": {
     name: "alert-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/alert.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/alert-demo.tsx",
@@ -4337,6 +4957,8 @@ export const Index: Record<string, any> = {
   "alert-variants": {
     name: "alert-variants",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/alert.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/alert-variants.tsx",
@@ -4351,6 +4973,8 @@ export const Index: Record<string, any> = {
   "alert-action": {
     name: "alert-action",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/alert.json","https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/alert-action.tsx",
@@ -4365,6 +4989,8 @@ export const Index: Record<string, any> = {
   "alert-colors": {
     name: "alert-colors",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/alert.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/alert-colors.tsx",
@@ -4379,6 +5005,8 @@ export const Index: Record<string, any> = {
   "alert-rtl": {
     name: "alert-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/alert.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/alert-rtl.tsx",
@@ -4393,6 +5021,8 @@ export const Index: Record<string, any> = {
   "alert-dialog-demo": {
     name: "alert-dialog-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/alert-dialog-demo.tsx",
@@ -4407,6 +5037,8 @@ export const Index: Record<string, any> = {
   "alert-dialog-basic": {
     name: "alert-dialog-basic",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/alert-dialog-basic.tsx",
@@ -4421,6 +5053,8 @@ export const Index: Record<string, any> = {
   "alert-dialog-variants": {
     name: "alert-dialog-variants",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/alert-dialog.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/alert-dialog-variants.tsx",
@@ -4435,6 +5069,8 @@ export const Index: Record<string, any> = {
   "alert-dialog-small": {
     name: "alert-dialog-small",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/alert-dialog-small.tsx",
@@ -4449,6 +5085,8 @@ export const Index: Record<string, any> = {
   "alert-dialog-with-media": {
     name: "alert-dialog-with-media",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/alert-dialog-with-media.tsx",
@@ -4463,6 +5101,8 @@ export const Index: Record<string, any> = {
   "alert-dialog-small-with-media": {
     name: "alert-dialog-small-with-media",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/alert-dialog-small-with-media.tsx",
@@ -4477,6 +5117,8 @@ export const Index: Record<string, any> = {
   "alert-dialog-destructive": {
     name: "alert-dialog-destructive",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/alert-dialog-destructive.tsx",
@@ -4491,6 +5133,8 @@ export const Index: Record<string, any> = {
   "alert-dialog-rtl": {
     name: "alert-dialog-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/alert-dialog-rtl.tsx",
@@ -4505,6 +5149,8 @@ export const Index: Record<string, any> = {
   "dialog-demo": {
     name: "dialog-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dialog-demo.tsx",
@@ -4519,6 +5165,8 @@ export const Index: Record<string, any> = {
   "dialog-close-button": {
     name: "dialog-close-button",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dialog-close-button.tsx",
@@ -4533,6 +5181,8 @@ export const Index: Record<string, any> = {
   "dialog-no-close-button": {
     name: "dialog-no-close-button",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dialog-no-close-button.tsx",
@@ -4547,6 +5197,8 @@ export const Index: Record<string, any> = {
   "dialog-sticky-footer": {
     name: "dialog-sticky-footer",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dialog-sticky-footer.tsx",
@@ -4561,6 +5213,8 @@ export const Index: Record<string, any> = {
   "dialog-scrollable-content": {
     name: "dialog-scrollable-content",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dialog-scrollable-content.tsx",
@@ -4575,6 +5229,8 @@ export const Index: Record<string, any> = {
   "dialog-overlay-variant": {
     name: "dialog-overlay-variant",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dialog-overlay-variant.tsx",
@@ -4589,6 +5245,8 @@ export const Index: Record<string, any> = {
   "dialog-rtl": {
     name: "dialog-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/dialog-rtl.tsx",
@@ -4603,6 +5261,8 @@ export const Index: Record<string, any> = {
   "sheet-demo": {
     name: "sheet-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json","https://herocn.dev/r/sheet.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/sheet-demo.tsx",
@@ -4617,6 +5277,8 @@ export const Index: Record<string, any> = {
   "sheet-side": {
     name: "sheet-side",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/sheet.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/sheet-side.tsx",
@@ -4631,6 +5293,8 @@ export const Index: Record<string, any> = {
   "sheet-overlay-variant": {
     name: "sheet-overlay-variant",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/sheet.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/sheet-overlay-variant.tsx",
@@ -4645,6 +5309,8 @@ export const Index: Record<string, any> = {
   "sheet-no-close-button": {
     name: "sheet-no-close-button",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/sheet.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/sheet-no-close-button.tsx",
@@ -4659,6 +5325,8 @@ export const Index: Record<string, any> = {
   "sheet-rtl": {
     name: "sheet-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/sheet.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/sheet-rtl.tsx",
@@ -4673,6 +5341,8 @@ export const Index: Record<string, any> = {
   "drawer-demo": {
     name: "drawer-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/drawer-demo.tsx",
@@ -4687,6 +5357,8 @@ export const Index: Record<string, any> = {
   "drawer-direction": {
     name: "drawer-direction",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/drawer-direction.tsx",
@@ -4701,6 +5373,8 @@ export const Index: Record<string, any> = {
   "drawer-overlay-variant": {
     name: "drawer-overlay-variant",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/drawer-overlay-variant.tsx",
@@ -4715,6 +5389,8 @@ export const Index: Record<string, any> = {
   "drawer-scrollable-content": {
     name: "drawer-scrollable-content",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/drawer-scrollable-content.tsx",
@@ -4729,6 +5405,8 @@ export const Index: Record<string, any> = {
   "drawer-rtl": {
     name: "drawer-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/drawer-rtl.tsx",
@@ -4743,6 +5421,8 @@ export const Index: Record<string, any> = {
   "drawer-responsive-dialog": {
     name: "drawer-responsive-dialog",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json","https://herocn.dev/r/drawer.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/drawer-responsive-dialog.tsx",
@@ -4757,6 +5437,8 @@ export const Index: Record<string, any> = {
   "sonner-demo": {
     name: "sonner-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/sonner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/sonner-demo.tsx",
@@ -4771,6 +5453,8 @@ export const Index: Record<string, any> = {
   "sonner-types": {
     name: "sonner-types",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/sonner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/sonner-types.tsx",
@@ -4785,6 +5469,8 @@ export const Index: Record<string, any> = {
   "sonner-description": {
     name: "sonner-description",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/sonner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/sonner-description.tsx",
@@ -4799,6 +5485,8 @@ export const Index: Record<string, any> = {
   "sonner-position": {
     name: "sonner-position",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/sonner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/sonner-position.tsx",
@@ -4813,6 +5501,8 @@ export const Index: Record<string, any> = {
   "scroll-area-demo": {
     name: "scroll-area-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/scroll-area.json","https://herocn.dev/r/separator.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/scroll-area-demo.tsx",
@@ -4827,6 +5517,8 @@ export const Index: Record<string, any> = {
   "scroll-area-horizontal": {
     name: "scroll-area-horizontal",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/scroll-area.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/scroll-area-horizontal.tsx",
@@ -4841,6 +5533,8 @@ export const Index: Record<string, any> = {
   "scroll-area-rtl": {
     name: "scroll-area-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/scroll-area.json","https://herocn.dev/r/separator.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/scroll-area-rtl.tsx",
@@ -4855,6 +5549,8 @@ export const Index: Record<string, any> = {
   "combobox-demo": {
     name: "combobox-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/combobox.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/combobox-demo.tsx",
@@ -4869,6 +5565,8 @@ export const Index: Record<string, any> = {
   "combobox-variants": {
     name: "combobox-variants",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/combobox.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/combobox-variants.tsx",
@@ -4883,6 +5581,8 @@ export const Index: Record<string, any> = {
   "combobox-surface": {
     name: "combobox-surface",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/combobox.json","https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/combobox-surface.tsx",
@@ -4897,6 +5597,8 @@ export const Index: Record<string, any> = {
   "combobox-multiple": {
     name: "combobox-multiple",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/combobox.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/combobox-multiple.tsx",
@@ -4911,6 +5613,8 @@ export const Index: Record<string, any> = {
   "combobox-groups": {
     name: "combobox-groups",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/combobox.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/combobox-groups.tsx",
@@ -4925,6 +5629,8 @@ export const Index: Record<string, any> = {
   "combobox-clear": {
     name: "combobox-clear",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/combobox.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/combobox-clear.tsx",
@@ -4939,6 +5645,8 @@ export const Index: Record<string, any> = {
   "combobox-invalid": {
     name: "combobox-invalid",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/combobox.json","https://herocn.dev/r/field.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/combobox-invalid.tsx",
@@ -4953,6 +5661,8 @@ export const Index: Record<string, any> = {
   "combobox-disabled": {
     name: "combobox-disabled",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/combobox.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/combobox-disabled.tsx",
@@ -4967,6 +5677,8 @@ export const Index: Record<string, any> = {
   "combobox-auto-highlight": {
     name: "combobox-auto-highlight",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/combobox.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/combobox-auto-highlight.tsx",
@@ -4981,6 +5693,8 @@ export const Index: Record<string, any> = {
   "combobox-popup": {
     name: "combobox-popup",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/combobox.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/combobox-popup.tsx",
@@ -4995,6 +5709,8 @@ export const Index: Record<string, any> = {
   "combobox-rtl": {
     name: "combobox-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/combobox.json","https://herocn.dev/r/field.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/combobox-rtl.tsx",
@@ -5009,6 +5725,8 @@ export const Index: Record<string, any> = {
   "hover-card-demo": {
     name: "hover-card-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/hover-card.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/hover-card-demo.tsx",
@@ -5023,6 +5741,8 @@ export const Index: Record<string, any> = {
   "hover-card-with-arrow": {
     name: "hover-card-with-arrow",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/hover-card.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/hover-card-with-arrow.tsx",
@@ -5037,6 +5757,8 @@ export const Index: Record<string, any> = {
   "hover-card-sides": {
     name: "hover-card-sides",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/hover-card.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/hover-card-sides.tsx",
@@ -5051,6 +5773,8 @@ export const Index: Record<string, any> = {
   "hover-card-rtl": {
     name: "hover-card-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/hover-card.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/hover-card-rtl.tsx",
@@ -5065,6 +5789,8 @@ export const Index: Record<string, any> = {
   "context-menu-demo": {
     name: "context-menu-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/context-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/context-menu-demo.tsx",
@@ -5079,6 +5805,8 @@ export const Index: Record<string, any> = {
   "context-menu-basic": {
     name: "context-menu-basic",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/context-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/context-menu-basic.tsx",
@@ -5093,6 +5821,8 @@ export const Index: Record<string, any> = {
   "context-menu-submenu": {
     name: "context-menu-submenu",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/context-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/context-menu-submenu.tsx",
@@ -5107,6 +5837,8 @@ export const Index: Record<string, any> = {
   "context-menu-shortcuts": {
     name: "context-menu-shortcuts",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/context-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/context-menu-shortcuts.tsx",
@@ -5121,6 +5853,8 @@ export const Index: Record<string, any> = {
   "context-menu-groups": {
     name: "context-menu-groups",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/context-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/context-menu-groups.tsx",
@@ -5135,6 +5869,8 @@ export const Index: Record<string, any> = {
   "context-menu-icons": {
     name: "context-menu-icons",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/context-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/context-menu-icons.tsx",
@@ -5149,6 +5885,8 @@ export const Index: Record<string, any> = {
   "context-menu-checkboxes": {
     name: "context-menu-checkboxes",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/context-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/context-menu-checkboxes.tsx",
@@ -5163,6 +5901,8 @@ export const Index: Record<string, any> = {
   "context-menu-radio": {
     name: "context-menu-radio",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/context-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/context-menu-radio.tsx",
@@ -5177,6 +5917,8 @@ export const Index: Record<string, any> = {
   "context-menu-destructive": {
     name: "context-menu-destructive",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/context-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/context-menu-destructive.tsx",
@@ -5191,6 +5933,8 @@ export const Index: Record<string, any> = {
   "context-menu-sides": {
     name: "context-menu-sides",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/context-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/context-menu-sides.tsx",
@@ -5205,6 +5949,8 @@ export const Index: Record<string, any> = {
   "context-menu-rtl": {
     name: "context-menu-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/context-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/context-menu-rtl.tsx",
@@ -5219,6 +5965,8 @@ export const Index: Record<string, any> = {
   "native-select-demo": {
     name: "native-select-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/native-select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/native-select-demo.tsx",
@@ -5233,6 +5981,8 @@ export const Index: Record<string, any> = {
   "native-select-variants": {
     name: "native-select-variants",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/native-select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/native-select-variants.tsx",
@@ -5247,6 +5997,8 @@ export const Index: Record<string, any> = {
   "native-select-in-surface": {
     name: "native-select-in-surface",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/native-select.json","https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/native-select-in-surface.tsx",
@@ -5261,6 +6013,8 @@ export const Index: Record<string, any> = {
   "native-select-disabled": {
     name: "native-select-disabled",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/native-select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/native-select-disabled.tsx",
@@ -5275,6 +6029,8 @@ export const Index: Record<string, any> = {
   "native-select-invalid": {
     name: "native-select-invalid",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/native-select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/native-select-invalid.tsx",
@@ -5289,6 +6045,8 @@ export const Index: Record<string, any> = {
   "native-select-groups": {
     name: "native-select-groups",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/native-select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/native-select-groups.tsx",
@@ -5303,6 +6061,8 @@ export const Index: Record<string, any> = {
   "native-select-rtl": {
     name: "native-select-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/native-select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/native-select-rtl.tsx",
@@ -5317,6 +6077,8 @@ export const Index: Record<string, any> = {
   "command-demo": {
     name: "command-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/command.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/command-demo.tsx",
@@ -5331,6 +6093,8 @@ export const Index: Record<string, any> = {
   "command-basic": {
     name: "command-basic",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/command.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/command-basic.tsx",
@@ -5345,6 +6109,8 @@ export const Index: Record<string, any> = {
   "command-shortcuts": {
     name: "command-shortcuts",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/command.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/command-shortcuts.tsx",
@@ -5359,6 +6125,8 @@ export const Index: Record<string, any> = {
   "command-groups": {
     name: "command-groups",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/command.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/command-groups.tsx",
@@ -5373,6 +6141,8 @@ export const Index: Record<string, any> = {
   "command-scrollable": {
     name: "command-scrollable",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/command.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/command-scrollable.tsx",
@@ -5387,6 +6157,8 @@ export const Index: Record<string, any> = {
   "command-rtl": {
     name: "command-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/command.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/command-rtl.tsx",
@@ -5401,6 +6173,8 @@ export const Index: Record<string, any> = {
   "command-overlay-variant": {
     name: "command-overlay-variant",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/command.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/command-overlay-variant.tsx",
@@ -5415,6 +6189,8 @@ export const Index: Record<string, any> = {
   "calendar-demo": {
     name: "calendar-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/calendar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/calendar-demo.tsx",
@@ -5429,6 +6205,8 @@ export const Index: Record<string, any> = {
   "calendar-basic": {
     name: "calendar-basic",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/calendar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/calendar-basic.tsx",
@@ -5443,6 +6221,8 @@ export const Index: Record<string, any> = {
   "calendar-range": {
     name: "calendar-range",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/calendar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/calendar-range.tsx",
@@ -5457,6 +6237,8 @@ export const Index: Record<string, any> = {
   "calendar-caption": {
     name: "calendar-caption",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/calendar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/calendar-caption.tsx",
@@ -5471,6 +6253,8 @@ export const Index: Record<string, any> = {
   "calendar-with-presets": {
     name: "calendar-with-presets",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/calendar.json","https://herocn.dev/r/card.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/calendar-with-presets.tsx",
@@ -5485,6 +6269,8 @@ export const Index: Record<string, any> = {
   "calendar-with-time": {
     name: "calendar-with-time",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/calendar.json","https://herocn.dev/r/card.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/calendar-with-time.tsx",
@@ -5499,6 +6285,8 @@ export const Index: Record<string, any> = {
   "calendar-booked-dates": {
     name: "calendar-booked-dates",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/calendar.json","https://herocn.dev/r/card.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/calendar-booked-dates.tsx",
@@ -5513,6 +6301,8 @@ export const Index: Record<string, any> = {
   "calendar-custom-days": {
     name: "calendar-custom-days",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/calendar.json","https://herocn.dev/r/card.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/calendar-custom-days.tsx",
@@ -5527,6 +6317,8 @@ export const Index: Record<string, any> = {
   "calendar-week-numbers": {
     name: "calendar-week-numbers",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/calendar.json","https://herocn.dev/r/card.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/calendar-week-numbers.tsx",
@@ -5541,6 +6333,8 @@ export const Index: Record<string, any> = {
   "calendar-rtl": {
     name: "calendar-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/calendar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/calendar-rtl.tsx",
@@ -5555,6 +6349,8 @@ export const Index: Record<string, any> = {
   "date-picker-demo": {
     name: "date-picker-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/calendar.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/date-picker-demo.tsx",
@@ -5569,6 +6365,8 @@ export const Index: Record<string, any> = {
   "date-picker-simple": {
     name: "date-picker-simple",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/calendar.json","https://herocn.dev/r/field.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/date-picker-simple.tsx",
@@ -5583,6 +6381,8 @@ export const Index: Record<string, any> = {
   "date-picker-with-range": {
     name: "date-picker-with-range",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/calendar.json","https://herocn.dev/r/field.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/date-picker-with-range.tsx",
@@ -5597,6 +6397,8 @@ export const Index: Record<string, any> = {
   "date-picker-dob": {
     name: "date-picker-dob",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/calendar.json","https://herocn.dev/r/field.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/date-picker-dob.tsx",
@@ -5611,6 +6413,8 @@ export const Index: Record<string, any> = {
   "date-picker-input": {
     name: "date-picker-input",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/calendar.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/date-picker-input.tsx",
@@ -5625,6 +6429,8 @@ export const Index: Record<string, any> = {
   "date-picker-time": {
     name: "date-picker-time",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/calendar.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/date-picker-time.tsx",
@@ -5639,6 +6445,8 @@ export const Index: Record<string, any> = {
   "date-picker-natural-language": {
     name: "date-picker-natural-language",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/calendar.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/date-picker-natural-language.tsx",
@@ -5653,6 +6461,8 @@ export const Index: Record<string, any> = {
   "date-picker-rtl": {
     name: "date-picker-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/calendar.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/date-picker-rtl.tsx",
@@ -5667,6 +6477,8 @@ export const Index: Record<string, any> = {
   "input-otp-demo": {
     name: "input-otp-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-otp.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-otp-demo.tsx",
@@ -5681,6 +6493,8 @@ export const Index: Record<string, any> = {
   "input-otp-variants": {
     name: "input-otp-variants",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-otp.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-otp-variants.tsx",
@@ -5695,6 +6509,8 @@ export const Index: Record<string, any> = {
   "input-otp-in-surface": {
     name: "input-otp-in-surface",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-otp.json","https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-otp-in-surface.tsx",
@@ -5709,6 +6525,8 @@ export const Index: Record<string, any> = {
   "input-otp-separator": {
     name: "input-otp-separator",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-otp.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-otp-separator.tsx",
@@ -5723,6 +6541,8 @@ export const Index: Record<string, any> = {
   "input-otp-disabled": {
     name: "input-otp-disabled",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-otp.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-otp-disabled.tsx",
@@ -5737,6 +6557,8 @@ export const Index: Record<string, any> = {
   "input-otp-controlled": {
     name: "input-otp-controlled",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-otp.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-otp-controlled.tsx",
@@ -5751,6 +6573,8 @@ export const Index: Record<string, any> = {
   "input-otp-invalid": {
     name: "input-otp-invalid",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-otp.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-otp-invalid.tsx",
@@ -5765,6 +6589,8 @@ export const Index: Record<string, any> = {
   "input-otp-four-digits": {
     name: "input-otp-four-digits",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-otp.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-otp-four-digits.tsx",
@@ -5779,6 +6605,8 @@ export const Index: Record<string, any> = {
   "input-otp-alphanumeric": {
     name: "input-otp-alphanumeric",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-otp.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-otp-alphanumeric.tsx",
@@ -5793,6 +6621,8 @@ export const Index: Record<string, any> = {
   "input-otp-form": {
     name: "input-otp-form",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input-otp.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-otp-form.tsx",
@@ -5807,6 +6637,8 @@ export const Index: Record<string, any> = {
   "input-otp-rtl": {
     name: "input-otp-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-otp.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/input-otp-rtl.tsx",
@@ -5821,6 +6653,8 @@ export const Index: Record<string, any> = {
   "accordion-demo": {
     name: "accordion-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/accordion.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/accordion-demo.tsx",
@@ -5835,6 +6669,8 @@ export const Index: Record<string, any> = {
   "accordion-basic": {
     name: "accordion-basic",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/accordion.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/accordion-basic.tsx",
@@ -5849,6 +6685,8 @@ export const Index: Record<string, any> = {
   "accordion-multiple": {
     name: "accordion-multiple",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/accordion.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/accordion-multiple.tsx",
@@ -5863,6 +6701,8 @@ export const Index: Record<string, any> = {
   "accordion-disabled": {
     name: "accordion-disabled",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/accordion.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/accordion-disabled.tsx",
@@ -5877,6 +6717,8 @@ export const Index: Record<string, any> = {
   "accordion-borders": {
     name: "accordion-borders",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/accordion.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/accordion-borders.tsx",
@@ -5891,6 +6733,8 @@ export const Index: Record<string, any> = {
   "accordion-card": {
     name: "accordion-card",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/accordion.json","https://herocn.dev/r/card.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/accordion-card.tsx",
@@ -5905,6 +6749,8 @@ export const Index: Record<string, any> = {
   "accordion-surface": {
     name: "accordion-surface",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/accordion.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/accordion-surface.tsx",
@@ -5919,6 +6765,8 @@ export const Index: Record<string, any> = {
   "accordion-rtl": {
     name: "accordion-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/accordion.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/accordion-rtl.tsx",
@@ -5933,6 +6781,8 @@ export const Index: Record<string, any> = {
   "table-demo": {
     name: "table-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/table.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/table-demo.tsx",
@@ -5947,6 +6797,8 @@ export const Index: Record<string, any> = {
   "table-secondary": {
     name: "table-secondary",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/table.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/table-secondary.tsx",
@@ -5961,6 +6813,8 @@ export const Index: Record<string, any> = {
   "table-secondary-footer": {
     name: "table-secondary-footer",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/table.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/table-secondary-footer.tsx",
@@ -5975,6 +6829,8 @@ export const Index: Record<string, any> = {
   "table-footer": {
     name: "table-footer",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/table.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/table-footer.tsx",
@@ -5989,6 +6845,8 @@ export const Index: Record<string, any> = {
   "table-actions": {
     name: "table-actions",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/table.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/table-actions.tsx",
@@ -6003,6 +6861,8 @@ export const Index: Record<string, any> = {
   "table-rtl": {
     name: "table-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/table.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/table-rtl.tsx",
@@ -6017,6 +6877,8 @@ export const Index: Record<string, any> = {
   "resizable-demo": {
     name: "resizable-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/resizable.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/resizable-demo.tsx",
@@ -6031,6 +6893,8 @@ export const Index: Record<string, any> = {
   "resizable-vertical": {
     name: "resizable-vertical",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/resizable.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/resizable-vertical.tsx",
@@ -6045,6 +6909,8 @@ export const Index: Record<string, any> = {
   "resizable-handle": {
     name: "resizable-handle",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/resizable.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/resizable-handle.tsx",
@@ -6059,6 +6925,8 @@ export const Index: Record<string, any> = {
   "resizable-rtl": {
     name: "resizable-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/resizable.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/resizable-rtl.tsx",
@@ -6073,6 +6941,8 @@ export const Index: Record<string, any> = {
   "pagination-demo": {
     name: "pagination-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/pagination.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/pagination-demo.tsx",
@@ -6087,6 +6957,8 @@ export const Index: Record<string, any> = {
   "pagination-simple": {
     name: "pagination-simple",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/pagination.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/pagination-simple.tsx",
@@ -6101,6 +6973,8 @@ export const Index: Record<string, any> = {
   "pagination-icons-only": {
     name: "pagination-icons-only",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/pagination.json","https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/pagination-icons-only.tsx",
@@ -6115,6 +6989,8 @@ export const Index: Record<string, any> = {
   "pagination-sizes": {
     name: "pagination-sizes",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/pagination.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/pagination-sizes.tsx",
@@ -6129,6 +7005,8 @@ export const Index: Record<string, any> = {
   "pagination-ellipsis": {
     name: "pagination-ellipsis",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/pagination.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/pagination-ellipsis.tsx",
@@ -6143,6 +7021,8 @@ export const Index: Record<string, any> = {
   "pagination-rtl": {
     name: "pagination-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/pagination.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/pagination-rtl.tsx",
@@ -6157,6 +7037,8 @@ export const Index: Record<string, any> = {
   "breadcrumb-demo": {
     name: "breadcrumb-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/breadcrumb.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/breadcrumb-demo.tsx",
@@ -6171,6 +7053,8 @@ export const Index: Record<string, any> = {
   "breadcrumb-basic": {
     name: "breadcrumb-basic",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/breadcrumb.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/breadcrumb-basic.tsx",
@@ -6185,6 +7069,8 @@ export const Index: Record<string, any> = {
   "breadcrumb-separator": {
     name: "breadcrumb-separator",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/breadcrumb.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/breadcrumb-separator.tsx",
@@ -6199,6 +7085,8 @@ export const Index: Record<string, any> = {
   "breadcrumb-dropdown": {
     name: "breadcrumb-dropdown",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/breadcrumb.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/breadcrumb-dropdown.tsx",
@@ -6213,6 +7101,8 @@ export const Index: Record<string, any> = {
   "breadcrumb-collapsed": {
     name: "breadcrumb-collapsed",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/breadcrumb.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/breadcrumb-collapsed.tsx",
@@ -6227,6 +7117,8 @@ export const Index: Record<string, any> = {
   "breadcrumb-link": {
     name: "breadcrumb-link",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/breadcrumb.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/breadcrumb-link.tsx",
@@ -6241,6 +7133,8 @@ export const Index: Record<string, any> = {
   "breadcrumb-rtl": {
     name: "breadcrumb-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/breadcrumb.json","https://herocn.dev/r/dropdown-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/breadcrumb-rtl.tsx",
@@ -6255,6 +7149,8 @@ export const Index: Record<string, any> = {
   "menubar-demo": {
     name: "menubar-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/menubar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/menubar-demo.tsx",
@@ -6269,6 +7165,8 @@ export const Index: Record<string, any> = {
   "menubar-checkbox": {
     name: "menubar-checkbox",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/menubar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/menubar-checkbox.tsx",
@@ -6283,6 +7181,8 @@ export const Index: Record<string, any> = {
   "menubar-radio": {
     name: "menubar-radio",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/menubar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/menubar-radio.tsx",
@@ -6297,6 +7197,8 @@ export const Index: Record<string, any> = {
   "menubar-submenu": {
     name: "menubar-submenu",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/menubar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/menubar-submenu.tsx",
@@ -6311,6 +7213,8 @@ export const Index: Record<string, any> = {
   "menubar-icons": {
     name: "menubar-icons",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/menubar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/menubar-icons.tsx",
@@ -6325,6 +7229,8 @@ export const Index: Record<string, any> = {
   "menubar-rtl": {
     name: "menubar-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/menubar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/menubar-rtl.tsx",
@@ -6339,6 +7245,8 @@ export const Index: Record<string, any> = {
   "menubar-variants": {
     name: "menubar-variants",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/menubar.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/menubar-variants.tsx",
@@ -6353,6 +7261,8 @@ export const Index: Record<string, any> = {
   "menubar-in-surface": {
     name: "menubar-in-surface",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/menubar.json","https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/menubar-in-surface.tsx",
@@ -6367,6 +7277,8 @@ export const Index: Record<string, any> = {
   "navigation-menu-demo": {
     name: "navigation-menu-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/navigation-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/navigation-menu-demo.tsx",
@@ -6381,6 +7293,8 @@ export const Index: Record<string, any> = {
   "navigation-menu-link": {
     name: "navigation-menu-link",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/navigation-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/navigation-menu-link.tsx",
@@ -6395,6 +7309,8 @@ export const Index: Record<string, any> = {
   "navigation-menu-rtl": {
     name: "navigation-menu-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/navigation-menu.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/navigation-menu-rtl.tsx",
@@ -6409,6 +7325,8 @@ export const Index: Record<string, any> = {
   "carousel-demo": {
     name: "carousel-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/carousel-demo.tsx",
@@ -6423,6 +7341,8 @@ export const Index: Record<string, any> = {
   "carousel-size": {
     name: "carousel-size",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/carousel-size.tsx",
@@ -6437,6 +7357,8 @@ export const Index: Record<string, any> = {
   "carousel-spacing": {
     name: "carousel-spacing",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/carousel-spacing.tsx",
@@ -6451,6 +7373,8 @@ export const Index: Record<string, any> = {
   "carousel-orientation": {
     name: "carousel-orientation",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/carousel-orientation.tsx",
@@ -6465,6 +7389,8 @@ export const Index: Record<string, any> = {
   "carousel-api": {
     name: "carousel-api",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/carousel-api.tsx",
@@ -6479,6 +7405,8 @@ export const Index: Record<string, any> = {
   "carousel-plugin": {
     name: "carousel-plugin",
     type: "registry:example",
+    dependencies: ["embla-carousel-autoplay"],
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/carousel-plugin.tsx",
@@ -6493,6 +7421,8 @@ export const Index: Record<string, any> = {
   "carousel-rtl": {
     name: "carousel-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/carousel-rtl.tsx",
@@ -6507,6 +7437,8 @@ export const Index: Record<string, any> = {
   "chart-demo": {
     name: "chart-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/card.json","https://herocn.dev/r/chart.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/chart-demo.tsx",
@@ -6521,6 +7453,8 @@ export const Index: Record<string, any> = {
   "chart-bar-demo": {
     name: "chart-bar-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/chart.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/chart-bar-demo.tsx",
@@ -6535,6 +7469,8 @@ export const Index: Record<string, any> = {
   "chart-bar-demo-grid": {
     name: "chart-bar-demo-grid",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/chart.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/chart-bar-demo-grid.tsx",
@@ -6549,6 +7485,8 @@ export const Index: Record<string, any> = {
   "chart-bar-demo-axis": {
     name: "chart-bar-demo-axis",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/chart.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/chart-bar-demo-axis.tsx",
@@ -6563,6 +7501,8 @@ export const Index: Record<string, any> = {
   "chart-bar-demo-tooltip": {
     name: "chart-bar-demo-tooltip",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/chart.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/chart-bar-demo-tooltip.tsx",
@@ -6577,6 +7517,8 @@ export const Index: Record<string, any> = {
   "chart-bar-demo-legend": {
     name: "chart-bar-demo-legend",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/chart.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/chart-bar-demo-legend.tsx",
@@ -6591,6 +7533,8 @@ export const Index: Record<string, any> = {
   "chart-tooltip-demo": {
     name: "chart-tooltip-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/chart.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/chart-tooltip-demo.tsx",
@@ -6605,6 +7549,8 @@ export const Index: Record<string, any> = {
   "chart-rtl": {
     name: "chart-rtl",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/chart.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/chart-rtl.tsx",
@@ -6619,6 +7565,8 @@ export const Index: Record<string, any> = {
   "marker-demo": {
     name: "marker-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/marker.json","https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/marker-demo.tsx",
@@ -6633,6 +7581,8 @@ export const Index: Record<string, any> = {
   "marker-variants": {
     name: "marker-variants",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/marker.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/marker-variants.tsx",
@@ -6647,6 +7597,8 @@ export const Index: Record<string, any> = {
   "marker-status": {
     name: "marker-status",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/marker.json","https://herocn.dev/r/spinner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/marker-status.tsx",
@@ -6661,6 +7613,8 @@ export const Index: Record<string, any> = {
   "marker-shimmer": {
     name: "marker-shimmer",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/marker.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/marker-shimmer.tsx",
@@ -6675,6 +7629,8 @@ export const Index: Record<string, any> = {
   "marker-separator": {
     name: "marker-separator",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/marker.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/marker-separator.tsx",
@@ -6689,6 +7645,8 @@ export const Index: Record<string, any> = {
   "marker-border": {
     name: "marker-border",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/marker.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/marker-border.tsx",
@@ -6703,6 +7661,8 @@ export const Index: Record<string, any> = {
   "marker-icon": {
     name: "marker-icon",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/marker.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/marker-icon.tsx",
@@ -6717,6 +7677,8 @@ export const Index: Record<string, any> = {
   "marker-link-button": {
     name: "marker-link-button",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/marker.json","https://herocn.dev/r/sonner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/marker-link-button.tsx",
@@ -6731,6 +7693,8 @@ export const Index: Record<string, any> = {
   "bubble-demo": {
     name: "bubble-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/bubble.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/bubble-demo.tsx",
@@ -6745,6 +7709,8 @@ export const Index: Record<string, any> = {
   "bubble-variants": {
     name: "bubble-variants",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/bubble.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/bubble-variants.tsx",
@@ -6759,6 +7725,8 @@ export const Index: Record<string, any> = {
   "bubble-alignment": {
     name: "bubble-alignment",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/bubble.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/bubble-alignment.tsx",
@@ -6773,6 +7741,8 @@ export const Index: Record<string, any> = {
   "bubble-group": {
     name: "bubble-group",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/bubble.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/bubble-group.tsx",
@@ -6787,6 +7757,8 @@ export const Index: Record<string, any> = {
   "bubble-link-button": {
     name: "bubble-link-button",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/bubble.json","https://herocn.dev/r/sonner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/bubble-link-button.tsx",
@@ -6801,6 +7773,8 @@ export const Index: Record<string, any> = {
   "bubble-reactions": {
     name: "bubble-reactions",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json","https://herocn.dev/r/sonner.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/bubble-reactions.tsx",
@@ -6815,6 +7789,8 @@ export const Index: Record<string, any> = {
   "bubble-collapsible": {
     name: "bubble-collapsible",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json","https://herocn.dev/r/collapsible.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/bubble-collapsible.tsx",
@@ -6829,6 +7805,8 @@ export const Index: Record<string, any> = {
   "bubble-tooltip": {
     name: "bubble-tooltip",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json","https://herocn.dev/r/tooltip.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/bubble-tooltip.tsx",
@@ -6843,6 +7821,8 @@ export const Index: Record<string, any> = {
   "bubble-popover": {
     name: "bubble-popover",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json","https://herocn.dev/r/popover.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/bubble-popover.tsx",
@@ -6857,6 +7837,8 @@ export const Index: Record<string, any> = {
   "message-demo": {
     name: "message-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message.json","https://herocn.dev/r/avatar.json","https://herocn.dev/r/bubble.json","https://herocn.dev/r/marker.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/message-demo.tsx",
@@ -6871,6 +7853,8 @@ export const Index: Record<string, any> = {
   "message-avatar": {
     name: "message-avatar",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message.json","https://herocn.dev/r/avatar.json","https://herocn.dev/r/bubble.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/message-avatar.tsx",
@@ -6885,6 +7869,8 @@ export const Index: Record<string, any> = {
   "message-group": {
     name: "message-group",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message.json","https://herocn.dev/r/avatar.json","https://herocn.dev/r/bubble.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/message-group.tsx",
@@ -6899,6 +7885,8 @@ export const Index: Record<string, any> = {
   "message-header-footer": {
     name: "message-header-footer",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message.json","https://herocn.dev/r/bubble.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/message-header-footer.tsx",
@@ -6913,6 +7901,8 @@ export const Index: Record<string, any> = {
   "message-actions": {
     name: "message-actions",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message.json","https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/message-actions.tsx",
@@ -6927,6 +7917,8 @@ export const Index: Record<string, any> = {
   "message-attachment": {
     name: "message-attachment",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message.json","https://herocn.dev/r/bubble.json","https://herocn.dev/r/attachment.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/message-attachment.tsx",
@@ -6941,6 +7933,8 @@ export const Index: Record<string, any> = {
   "message-scroller-demo": {
     name: "message-scroller-demo",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/empty.json","https://herocn.dev/r/input-group.json","https://herocn.dev/r/tooltip.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/message-scroller-demo.tsx",
@@ -6955,6 +7949,8 @@ export const Index: Record<string, any> = {
   "message-scroller-anchoring": {
     name: "message-scroller-anchoring",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/empty.json","https://herocn.dev/r/toggle-group.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/message-scroller-anchoring.tsx",
@@ -6969,6 +7965,8 @@ export const Index: Record<string, any> = {
   "message-scroller-group-chat": {
     name: "message-scroller-group-chat",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/marker.json","https://herocn.dev/r/message.json","https://herocn.dev/r/tooltip.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/message-scroller-group-chat.tsx",
@@ -6983,6 +7981,8 @@ export const Index: Record<string, any> = {
   "message-scroller-previous-context": {
     name: "message-scroller-previous-context",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/input-group.json","https://herocn.dev/r/slider.json","https://herocn.dev/r/tooltip.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/message-scroller-previous-context.tsx",
@@ -6997,6 +7997,8 @@ export const Index: Record<string, any> = {
   "message-scroller-streaming": {
     name: "message-scroller-streaming",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/empty.json","https://herocn.dev/r/input-group.json","https://herocn.dev/r/tooltip.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/message-scroller-streaming.tsx",
@@ -7011,6 +8013,8 @@ export const Index: Record<string, any> = {
   "message-scroller-opening-position": {
     name: "message-scroller-opening-position",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/message.json","https://herocn.dev/r/tabs.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/message-scroller-opening-position.tsx",
@@ -7025,6 +8029,8 @@ export const Index: Record<string, any> = {
   "message-scroller-load-history": {
     name: "message-scroller-load-history",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/marker.json","https://herocn.dev/r/message.json","https://herocn.dev/r/tooltip.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/message-scroller-load-history.tsx",
@@ -7039,6 +8045,8 @@ export const Index: Record<string, any> = {
   "message-scroller-animation": {
     name: "message-scroller-animation",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/empty.json","https://herocn.dev/r/select.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/message-scroller-animation.tsx",
@@ -7053,6 +8061,8 @@ export const Index: Record<string, any> = {
   "message-scroller-commands": {
     name: "message-scroller-commands",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/message.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/message-scroller-commands.tsx",
@@ -7067,6 +8077,8 @@ export const Index: Record<string, any> = {
   "message-scroller-visibility": {
     name: "message-scroller-visibility",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/bubble.json","https://herocn.dev/r/card.json","https://herocn.dev/r/hover-card.json","https://herocn.dev/r/message.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/message-scroller-visibility.tsx",
@@ -7081,6 +8093,8 @@ export const Index: Record<string, any> = {
   "message-scroller-scrollable": {
     name: "message-scroller-scrollable",
     type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/card.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/message-scroller-scrollable.tsx",

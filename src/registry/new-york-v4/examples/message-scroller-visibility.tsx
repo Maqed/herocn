@@ -70,7 +70,7 @@ export default function MessageScrollerVisibility() {
 						<CardContent className="flex-1 overflow-hidden p-0">
 							<MessageScroller>
 								<MessageScrollerViewport>
-									<MessageScrollerContent className="p-(--card-spacing)">
+									<MessageScrollerContent>
 										{messages.map((message) => {
 											const isUserMessage = message.role === "user";
 											const text = getMessageText(message);

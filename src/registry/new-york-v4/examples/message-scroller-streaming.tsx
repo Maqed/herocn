@@ -139,10 +139,7 @@ export default function MessageScrollerStreaming() {
 						) : (
 							<MessageScroller>
 								<MessageScrollerViewport>
-									<MessageScrollerContent
-										aria-busy={isBusy}
-										className="p-(--card-spacing)"
-									>
+									<MessageScrollerContent aria-busy={isBusy}>
 										{messages.map((message) => (
 											<MessageAnimated
 												key={message.id}

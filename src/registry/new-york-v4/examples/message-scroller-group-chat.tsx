@@ -146,7 +146,7 @@ export default function MessageScrollerGroupChat() {
 						<MessageScrollerProvider>
 							<MessageScroller key={demoKey}>
 								<MessageScrollerViewport>
-									<MessageScrollerContent className="p-(--card-spacing)">
+									<MessageScrollerContent>
 										{items.map((item) =>
 											item.type === "message" ? (
 												<GroupChatMessage key={item.id} item={item} />

@@ -115,10 +115,7 @@ export default function MessageScrollerAnimation() {
 						<MessageScrollerProvider>
 							<MessageScroller>
 								<MessageScrollerViewport>
-									<MessageScrollerContent
-										aria-busy={isBusy}
-										className="p-(--card-spacing)"
-									>
+									<MessageScrollerContent aria-busy={isBusy}>
 										{messages.map((message) => (
 											<MessageAnimated
 												key={message.id}

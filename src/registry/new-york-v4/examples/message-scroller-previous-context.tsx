@@ -132,10 +132,7 @@ export default function MessageScrollerPreviousContext() {
 					<CardContent className="flex-1 overflow-hidden p-0">
 						<MessageScroller>
 							<MessageScrollerViewport>
-								<MessageScrollerContent
-									aria-busy={isBusy}
-									className="p-(--card-spacing)"
-								>
+								<MessageScrollerContent aria-busy={isBusy}>
 									{messages.map((message) => (
 										<MessageAnimated
 											key={message.id}

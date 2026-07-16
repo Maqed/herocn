@@ -100,7 +100,7 @@ export default function MessageScrollerLoadHistory() {
 					<CardContent className="flex-1 overflow-hidden p-0">
 						<MessageScroller key={demoKey}>
 							<MessageScrollerViewport>
-								<MessageScrollerContent className="p-(--card-spacing)">
+								<MessageScrollerContent>
 									{visibleMessages.map((message) => {
 										const isUserMessage = message.role === "user";
 

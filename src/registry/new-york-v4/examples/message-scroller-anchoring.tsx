@@ -125,7 +125,7 @@ export default function MessageScrollerAnchoring() {
 						<MessageScrollerProvider>
 							<MessageScroller>
 								<MessageScrollerViewport>
-									<MessageScrollerContent className="p-(--card-spacing)">
+									<MessageScrollerContent>
 										{messages.map((message) => (
 											<MessageAnimated
 												key={message.id}

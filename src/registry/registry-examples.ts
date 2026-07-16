@@ -5259,4 +5259,122 @@ export const examples: Registry["items"] = [
 			},
 		],
 	},
+	{
+		name: "bubble-demo",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("bubble")],
+		files: [
+			{
+				path: "examples/bubble-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "bubble-variants",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("bubble")],
+		files: [
+			{
+				path: "examples/bubble-variants.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "bubble-alignment",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("bubble")],
+		files: [
+			{
+				path: "examples/bubble-alignment.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "bubble-group",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("bubble")],
+		files: [
+			{
+				path: "examples/bubble-group.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "bubble-link-button",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("bubble"),
+			getRegistryItemInstallationAlias("sonner"),
+		],
+		files: [
+			{
+				path: "examples/bubble-link-button.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "bubble-reactions",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("bubble"),
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("sonner"),
+		],
+		files: [
+			{
+				path: "examples/bubble-reactions.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "bubble-collapsible",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("bubble"),
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("collapsible"),
+		],
+		files: [
+			{
+				path: "examples/bubble-collapsible.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "bubble-tooltip",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("bubble"),
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("tooltip"),
+		],
+		files: [
+			{
+				path: "examples/bubble-tooltip.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "bubble-popover",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("bubble"),
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("popover"),
+		],
+		files: [
+			{
+				path: "examples/bubble-popover.tsx",
+				type: "registry:example",
+			},
+		],
+	},
 ];

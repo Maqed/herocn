@@ -1,0 +1,279 @@
+---
+title: Bubble
+description: Displays conversational content in a message bubble. Supports variants, alignment, grouping, reactions, and collapsible content.
+---
+
+<ComponentPreview name="bubble-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+<CodeBlockCommand command="npx shadcn@latest add https://herocn.dev/r/bubble.json" />
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+<CodeBlockCommand command="npm install @base-ui/react" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="bubble" title="components/ui/bubble.tsx" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { Bubble, BubbleContent, BubbleReactions } from "@/components/ui/bubble"
+```
+
+```tsx
+<Bubble>
+  <BubbleContent>
+    I checked the registry output and removed the stale route.
+  </BubbleContent>
+  <BubbleReactions>
+    <span>👍</span>
+  </BubbleReactions>
+</Bubble>
+```
+
+## Composition
+
+Use the following composition to build a bubble:
+
+```text
+Bubble
+├── BubbleContent
+└── BubbleReactions
+```
+
+Use `BubbleGroup` to group consecutive bubbles from the same sender:
+
+```text
+BubbleGroup
+├── Bubble
+│   └── BubbleContent
+└── Bubble
+    └── BubbleContent
+```
+
+## Variants
+
+Use `variant` to change the visual treatment of the bubble.
+
+<ComponentPreview name="bubble-variants" />
+
+| Variant       | Description                                            |
+| ------------- | ------------------------------------------------------ |
+| `default`     | A strong primary bubble, usually for the current user. |
+| `secondary`   | The standard neutral bubble for conversation content.  |
+| `muted`       | A lower-emphasis bubble for quiet supporting content.  |
+| `tinted`      | A subtle primary-tinted bubble.                        |
+| `outline`     | A bordered bubble for secondary or rich content.       |
+| `ghost`       | Unframed content for assistant text or rich content.   |
+| `destructive` | A destructive bubble for error or failed actions.      |
+
+A bubble sizes to its content, up to 80% of the container width. The `ghost` variant removes the max-width so assistant text and rich content can span the full row.
+
+## Alignment
+
+Use `align` on `Bubble` to align the bubble to the start or end of the conversation.
+
+<ComponentPreview name="bubble-alignment" />
+
+| align   | Description                                        |
+| ------- | -------------------------------------------------- |
+| `start` | Align the bubble to the start of the conversation. |
+| `end`   | Align the bubble to the end of the conversation.   |
+
+## Bubble Group
+
+Use `BubbleGroup` to group consecutive bubbles from the same sender.
+
+<ComponentPreview name="bubble-group" />
+
+## Links and Buttons
+
+You can turn a bubble into a link or button by using the `render` prop on `BubbleContent`.
+
+<ComponentPreview name="bubble-link-button" />
+
+```tsx
+import { Bubble, BubbleContent } from "@/components/ui/bubble"
+
+export function BubbleLinkDemo() {
+  return (
+    <Bubble variant="muted">
+      <BubbleContent render={<button />}>Click here</BubbleContent>
+    </Bubble>
+  )
+}
+```
+
+## Reactions
+
+Use `BubbleReactions` for bubble reactions. You can use it to display reactions or quick action buttons. Use `side` and `align` to position the row.
+
+<ComponentPreview name="bubble-reactions" />
+
+## Collapsible
+
+Long bubble content can be composed with `Collapsible` to allow for a show more or show less interaction.
+
+<ComponentPreview name="bubble-collapsible" />
+
+## Tooltip
+
+Wrap a bubble in a `Tooltip` to reveal metadata on hover, such as when a message was read.
+
+<ComponentPreview name="bubble-tooltip" />
+
+## Popover
+
+Pair a bubble with a `Popover` to surface more information on demand, such as the full error message for a failed action.
+
+<ComponentPreview name="bubble-popover" />
+
+## Accessibility
+
+`Bubble` renders the presentational message surface. Keep conversation-level semantics on the surrounding container and follow the guidelines below.
+
+### Labeling Reactions
+
+Reactions render as a row of emoji. A screen reader reads each glyph with no context, and counters like `+8` are announced as "plus eight". Group the row as a single image with a descriptive `aria-label` so it announces once. `role="img"` also hides the individual emoji from assistive tech, so no `aria-hidden` is needed.
+
+```tsx showLineNumbers
+<BubbleReactions role="img" aria-label="Reactions: thumbs up, fire, and 8 more">
+  <span>👍</span>
+  <span>🔥</span>
+  <span>+8</span>
+</BubbleReactions>
+```
+
+When reactions are interactive, render buttons instead and give icon-only buttons an `aria-label`.
+
+```tsx showLineNumbers
+<BubbleReactions>
+  <Button aria-label="Thumbs up" variant="secondary" size="icon-xs">
+    <ThumbsUpIcon />
+  </Button>
+</BubbleReactions>
+```
+
+### Interactive Bubbles
+
+When a bubble is clickable, render it as a real `<button>` or `<a>` with the `render` prop so it is focusable and exposes the correct role. `BubbleContent` ships a visible focus ring for interactive elements, and the accessible name comes from the bubble text. No extra label is needed.
+
+```tsx showLineNumbers
+<Bubble variant="muted" align="end">
+  <BubbleContent render={<button type="button" onClick={onReply} />}>
+    I forgot my password
+  </BubbleContent>
+</Bubble>
+```
+
+### Meaning Beyond Color
+
+Bubble variants signal role and tone with color. Pair them with text, alignment, or icons so meaning is not conveyed by color alone. For a `destructive` bubble, keep the error context in the message text rather than relying on the color treatment.
+
+## API Reference
+
+### Bubble
+
+The root bubble wrapper.
+
+<ApiRefTable
+  props={[
+    {
+      name: "variant",
+      type: '"default" | "secondary" | "muted" | "tinted" | "outline" | "ghost" | "destructive"',
+      defaultValue: '"default"',
+    },
+    {
+      name: "align",
+      type: '"start" | "end"',
+      defaultValue: '"start"',
+    },
+    {
+      name: "className",
+      type: "string",
+      description: "Additional classes to apply to the root element.",
+    },
+  ]}
+/>
+
+### BubbleContent
+
+The bubble content wrapper.
+
+<ApiRefTable
+  props={[
+    {
+      name: "render",
+      type: "ReactElement | function",
+      description: "Render the content as a different element such as a link.",
+    },
+    {
+      name: "className",
+      type: "string",
+      description: "Additional classes to apply to the content element.",
+    },
+  ]}
+/>
+
+### BubbleReactions
+
+Displays overlapped reactions for a bubble.
+
+<ApiRefTable
+  props={[
+    {
+      name: "side",
+      type: '"top" | "bottom"',
+      defaultValue: '"bottom"',
+    },
+    {
+      name: "align",
+      type: '"start" | "end"',
+      defaultValue: '"end"',
+    },
+    {
+      name: "className",
+      type: "string",
+      description: "Additional classes to apply to the reaction row.",
+    },
+  ]}
+/>
+
+### BubbleGroup
+
+Groups consecutive bubbles from the same sender.
+
+<ApiRefTable
+  props={[
+    {
+      name: "className",
+      type: "string",
+      description: "Additional classes to apply to the group root.",
+    },
+  ]}
+/>

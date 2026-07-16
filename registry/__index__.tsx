@@ -159,6 +159,20 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "bubble": {
+    name: "bubble",
+    type: "registry:ui",
+    registryDependencies: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/ui/bubble.tsx",
+      type: "registry:ui"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/bubble.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "calendar": {
     name: "calendar",
     type: "registry:ui",
@@ -6584,6 +6598,132 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/marker-link-button.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "bubble-demo": {
+    name: "bubble-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/bubble.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/bubble-demo.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/bubble-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "bubble-variants": {
+    name: "bubble-variants",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/bubble.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/bubble-variants.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/bubble-variants.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "bubble-alignment": {
+    name: "bubble-alignment",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/bubble.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/bubble-alignment.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/bubble-alignment.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "bubble-group": {
+    name: "bubble-group",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/bubble.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/bubble-group.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/bubble-group.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "bubble-link-button": {
+    name: "bubble-link-button",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/bubble.json","https://herocn.dev/r/sonner.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/bubble-link-button.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/bubble-link-button.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "bubble-reactions": {
+    name: "bubble-reactions",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json","https://herocn.dev/r/sonner.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/bubble-reactions.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/bubble-reactions.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "bubble-collapsible": {
+    name: "bubble-collapsible",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json","https://herocn.dev/r/collapsible.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/bubble-collapsible.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/bubble-collapsible.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "bubble-tooltip": {
+    name: "bubble-tooltip",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json","https://herocn.dev/r/tooltip.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/bubble-tooltip.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/bubble-tooltip.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "bubble-popover": {
+    name: "bubble-popover",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json","https://herocn.dev/r/popover.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/bubble-popover.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/bubble-popover.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

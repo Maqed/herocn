@@ -225,6 +225,17 @@ export const ui: Registry["items"] = [
 		],
 	},
 	{
+		name: "bubble",
+		type: "registry:ui",
+		dependencies: ["@base-ui/react", "class-variance-authority"],
+		files: [
+			{
+				path: "ui/bubble.tsx",
+				type: "registry:ui",
+			},
+		],
+	},
+	{
 		name: "calendar",
 		type: "registry:ui",
 		dependencies: ["lucide-react", "react-day-picker"],

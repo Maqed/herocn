@@ -3,6 +3,78 @@ import { getRegistryItemInstallationAlias } from "@/lib/utils";
 
 export const examples: Registry["items"] = [
 	{
+		name: "attachment-demo",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("attachment"),
+			getRegistryItemInstallationAlias("spinner"),
+		],
+		files: [
+			{
+				path: "examples/attachment-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "attachment-image",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("attachment")],
+		files: [
+			{
+				path: "examples/attachment-image.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "attachment-states",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("attachment"),
+			getRegistryItemInstallationAlias("spinner"),
+		],
+		files: [
+			{
+				path: "examples/attachment-states.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "attachment-sizes",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("attachment")],
+		files: [
+			{
+				path: "examples/attachment-sizes.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "attachment-group",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("attachment")],
+		files: [
+			{
+				path: "examples/attachment-group.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "attachment-trigger",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("attachment")],
+		files: [
+			{
+				path: "examples/attachment-trigger.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
 		name: "aspect-ratio-demo",
 		type: "registry:example",
 		registryDependencies: [getRegistryItemInstallationAlias("aspect-ratio")],

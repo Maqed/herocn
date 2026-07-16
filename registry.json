@@ -484,6 +484,42 @@
       ]
     },
     {
+      "name": "attachment",
+      "type": "registry:ui",
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/attachment.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "--surface": "white",
+          "--default": "oklch(94% 0.001 286.375)"
+        },
+        "dark": {
+          "--surface": "oklch(0.2103 0.0059 285.89)",
+          "--default": "oklch(27.4% 0.006 286.033)"
+        },
+        "theme": {
+          "--color-surface": "var(--surface)",
+          "--color-default": "var(--default)"
+        }
+      },
+      "css": {
+        "@utility focus-ring": {
+          "@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none": {}
+        }
+      }
+    },
+    {
       "name": "avatar",
       "type": "registry:ui",
       "dependencies": [
@@ -1880,6 +1916,86 @@
         {
           "path": "src/registry/new-york-v4/ui/resizable.tsx",
           "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "attachment-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/attachment.json",
+        "https://herocn.dev/r/spinner.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/attachment-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "attachment-image",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/attachment.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/attachment-image.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "attachment-states",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/attachment.json",
+        "https://herocn.dev/r/spinner.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/attachment-states.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "attachment-sizes",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/attachment.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/attachment-sizes.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "attachment-group",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/attachment.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/attachment-group.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "attachment-trigger",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/attachment.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/attachment-trigger.tsx",
+          "type": "registry:example"
         }
       ]
     },

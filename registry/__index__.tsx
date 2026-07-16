@@ -75,6 +75,20 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "attachment": {
+    name: "attachment",
+    type: "registry:ui",
+    registryDependencies: ["https://herocn.dev/r/button.json"],
+    files: [{
+      path: "src/registry/new-york-v4/ui/attachment.tsx",
+      type: "registry:ui"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/attachment.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "avatar": {
     name: "avatar",
     type: "registry:ui",
@@ -858,6 +872,90 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/resizable.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "attachment-demo": {
+    name: "attachment-demo",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/attachment.json","https://herocn.dev/r/spinner.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/attachment-demo.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/attachment-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "attachment-image": {
+    name: "attachment-image",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/attachment.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/attachment-image.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/attachment-image.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "attachment-states": {
+    name: "attachment-states",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/attachment.json","https://herocn.dev/r/spinner.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/attachment-states.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/attachment-states.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "attachment-sizes": {
+    name: "attachment-sizes",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/attachment.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/attachment-sizes.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/attachment-sizes.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "attachment-group": {
+    name: "attachment-group",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/attachment.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/attachment-group.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/attachment-group.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "attachment-trigger": {
+    name: "attachment-trigger",
+    type: "registry:example",
+    registryDependencies: ["https://herocn.dev/r/attachment.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/attachment-trigger.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/attachment-trigger.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

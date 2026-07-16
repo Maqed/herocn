@@ -78,6 +78,35 @@ export const ui: Registry["items"] = [
 		],
 	},
 	{
+		name: "attachment",
+		type: "registry:ui",
+		dependencies: ["@base-ui/react", "class-variance-authority"],
+		registryDependencies: [getRegistryItemInstallationAlias("button")],
+		files: [
+			{
+				path: "ui/attachment.tsx",
+				type: "registry:ui",
+			},
+		],
+		cssVars: {
+			light: {
+				"--surface": cssVars.light["--surface"],
+				"--default": cssVars.light["--default"],
+			},
+			dark: {
+				"--surface": cssVars.dark["--surface"],
+				"--default": cssVars.dark["--default"],
+			},
+			theme: {
+				"--color-surface": cssVars.theme["--color-surface"],
+				"--color-default": cssVars.theme["--color-default"],
+			},
+		},
+		css: {
+			"@utility focus-ring": css["@utility focus-ring"],
+		},
+	},
+	{
 		name: "avatar",
 		type: "registry:ui",
 		dependencies: ["@base-ui/react"],

@@ -1,4 +1,4 @@
-import type { Registry } from "shadcn/schema";
+import type { Registry, RegistryItem } from "shadcn/schema";
 import { siteConfig } from "@/lib/config";
 import { getRegistryItemInstallationAlias } from "@/lib/utils";
 import { examples } from "./registry-examples";
@@ -7,14 +7,14 @@ import { css, cssVars } from "./shared";
 
 // Shared between index and style for backward compatibility.
 export const HEROCN_REGISTRY_STYLE = {
-	type: "registry:style" as const,
+	type: "registry:style",
 	dependencies: ["@base-ui/react", "class-variance-authority", "lucide-react"],
 	devDependencies: ["tw-animate-css"],
 	registryDependencies: ["utils", getRegistryItemInstallationAlias("ui")],
 	cssVars,
 	css,
 	files: [],
-};
+} satisfies Omit<RegistryItem, "name">;
 
 export const registry = {
 	name: "herocn",

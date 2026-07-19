@@ -988,15 +988,12 @@ export const ui: Registry["items"] = [
 			getRegistryItemInstallationAlias("sheet"),
 			getRegistryItemInstallationAlias("skeleton"),
 			getRegistryItemInstallationAlias("tooltip"),
+			getRegistryItemInstallationAlias("use-mobile"),
 		],
 		files: [
 			{
 				path: "ui/sidebar.tsx",
 				type: "registry:ui",
-			},
-			{
-				path: "hooks/use-mobile.ts",
-				type: "registry:hook",
 			},
 		],
 		css: {

@@ -1575,16 +1575,13 @@
         "https://herocn.dev/r/separator.json",
         "https://herocn.dev/r/sheet.json",
         "https://herocn.dev/r/skeleton.json",
-        "https://herocn.dev/r/tooltip.json"
+        "https://herocn.dev/r/tooltip.json",
+        "https://herocn.dev/r/use-mobile.json"
       ],
       "files": [
         {
           "path": "src/registry/new-york-v4/ui/sidebar.tsx",
           "type": "registry:ui"
-        },
-        {
-          "path": "src/registry/new-york-v4/hooks/use-mobile.ts",
-          "type": "registry:hook"
         }
       ],
       "css": {
@@ -1924,6 +1921,16 @@
         {
           "path": "src/registry/new-york-v4/ui/resizable.tsx",
           "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "use-mobile",
+      "type": "registry:hook",
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/hooks/use-mobile.ts",
+          "type": "registry:hook"
         }
       ]
     },

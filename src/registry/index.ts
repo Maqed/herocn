@@ -2,6 +2,7 @@ import type { Registry, RegistryItem } from "shadcn/schema";
 import { siteConfig } from "@/lib/config";
 import { getRegistryItemInstallationAlias } from "@/lib/utils";
 import { examples } from "./registry-examples";
+import { hooks } from "./registry-hooks";
 import { ui } from "./registry-ui";
 import { css, cssVars } from "./shared";
 
@@ -29,6 +30,7 @@ export const registry = {
 			...HEROCN_REGISTRY_STYLE,
 		},
 		...ui,
+		...hooks,
 		...examples,
 	] satisfies Registry["items"],
 } satisfies Registry;

@@ -844,13 +844,10 @@ export const Index: Record<string, any> = {
     type: "registry:ui",
     dependencies: ["@base-ui/react","class-variance-authority","lucide-react"],
     devDependencies: undefined,
-    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/input.json","https://herocn.dev/r/separator.json","https://herocn.dev/r/sheet.json","https://herocn.dev/r/skeleton.json","https://herocn.dev/r/tooltip.json"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/input.json","https://herocn.dev/r/separator.json","https://herocn.dev/r/sheet.json","https://herocn.dev/r/skeleton.json","https://herocn.dev/r/tooltip.json","https://herocn.dev/r/use-mobile.json"],
     files: [{
       path: "src/registry/new-york-v4/ui/sidebar.tsx",
       type: "registry:ui"
-    },{
-      path: "src/registry/new-york-v4/hooks/use-mobile.ts",
-      type: "registry:hook"
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/sidebar.tsx")
@@ -1030,6 +1027,22 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/resizable.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "use-mobile": {
+    name: "use-mobile",
+    type: "registry:hook",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/hooks/use-mobile.ts",
+      type: "registry:hook"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/hooks/use-mobile.ts")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

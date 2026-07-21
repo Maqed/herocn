@@ -35,11 +35,11 @@ const Toaster = ({ ...props }: ToasterProps) => {
 					"--border-radius": "var(--radius)",
 					"--info-bg": "var(--surface)",
 					"--success-bg": "var(--surface)",
-					"--success-text": "var(--success)",
+					"--success-text": "var(--success-soft-foreground)",
 					"--warning-bg": "var(--surface)",
-					"--warning-text": "var(--warning)",
+					"--warning-text": "var(--warning-soft-foreground)",
 					"--error-bg": "var(--surface)",
-					"--error-text": "var(--destructive)",
+					"--error-text": "var(--destructive-soft-foreground)",
 				} as React.CSSProperties
 			}
 			richColors

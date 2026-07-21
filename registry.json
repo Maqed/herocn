@@ -1712,21 +1712,25 @@
       "cssVars": {
         "light": {
           "--surface": "white",
-          "--success": "oklch(0.7329 0.1935 150.81)",
-          "--warning": "oklch(0.7819 0.1585 72.33)",
+          "--success-soft-foreground": "color-mix(in oklab, var(--success) 80%, var(--foreground) 60%)",
+          "--warning-soft-foreground": "color-mix(in oklab, var(--warning) 80%, var(--foreground) 70%)",
+          "--destructive-soft-foreground": "color-mix(in oklab, var(--destructive) 70%, var(--foreground) 40%)",
           "--default": "oklch(94% 0.001 286.375)",
           "--default-foreground": "var(--eclipse)"
         },
         "dark": {
           "--surface": "oklch(0.2103 0.0059 285.89)",
-          "--warning": "oklch(0.8203 0.1388 76.34)",
+          "--success-soft-foreground": "color-mix(in oklab, var(--success) 80%, var(--foreground) 60%)",
+          "--warning-soft-foreground": "color-mix(in oklab, var(--warning) 80%, var(--foreground) 70%)",
+          "--destructive-soft-foreground": "color-mix(in oklab, var(--destructive) 70%, var(--foreground) 40%)",
           "--default": "oklch(27.4% 0.006 286.033)",
           "--default-foreground": "var(--snow)"
         },
         "theme": {
           "--color-surface": "var(--surface)",
-          "--color-success": "var(--success)",
-          "--color-warning": "var(--warning)",
+          "--color-success-soft-foreground": "var(--success-soft-foreground)",
+          "--color-warning-soft-foreground": "var(--warning-soft-foreground)",
+          "--color-destructive-soft-foreground": "var(--destructive-soft-foreground)",
           "--color-default": "var(--default)",
           "--color-default-foreground": "var(--default-foreground)"
         }

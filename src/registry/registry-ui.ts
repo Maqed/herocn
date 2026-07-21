@@ -1214,15 +1214,22 @@ export const ui: Registry["items"] = [
 				"--snow": cssVars.light["--snow"],
 				"--default": cssVars.light["--default"],
 				"--default-foreground": cssVars.light["--default-foreground"],
+				"--primary-soft": cssVars.light["--primary-soft"],
+				"--primary-soft-foreground": cssVars.light["--primary-soft-foreground"],
 			},
 			dark: {
 				"--default": cssVars.dark["--default"],
 				"--default-foreground": cssVars.dark["--default-foreground"],
+				"--primary-soft": cssVars.dark["--primary-soft"],
+				"--primary-soft-foreground": cssVars.dark["--primary-soft-foreground"],
 			},
 			theme: {
 				"--color-default": cssVars.theme["--color-default"],
 				"--color-default-foreground":
 					cssVars.theme["--color-default-foreground"],
+				"--color-primary-soft": cssVars.theme["--color-primary-soft"],
+				"--color-primary-soft-foreground":
+					cssVars.theme["--color-primary-soft-foreground"],
 			},
 		},
 		css: {

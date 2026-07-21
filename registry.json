@@ -1886,15 +1886,21 @@
           "--eclipse": "oklch(0.2103 0.0059 285.89)",
           "--snow": "oklch(0.9911 0 0)",
           "--default": "oklch(94% 0.001 286.375)",
-          "--default-foreground": "var(--eclipse)"
+          "--default-foreground": "var(--eclipse)",
+          "--primary-soft": "color-mix(in oklab, var(--primary) 15%, transparent)",
+          "--primary-soft-foreground": "color-mix(in oklab, var(--primary) 70%, var(--foreground) 30%)"
         },
         "dark": {
           "--default": "oklch(27.4% 0.006 286.033)",
-          "--default-foreground": "var(--snow)"
+          "--default-foreground": "var(--snow)",
+          "--primary-soft": "color-mix(in oklab, var(--primary) 15%, transparent)",
+          "--primary-soft-foreground": "color-mix(in oklab, var(--primary) 70%, var(--foreground) 30%)"
         },
         "theme": {
           "--color-default": "var(--default)",
-          "--color-default-foreground": "var(--default-foreground)"
+          "--color-default-foreground": "var(--default-foreground)",
+          "--color-primary-soft": "var(--primary-soft)",
+          "--color-primary-soft-foreground": "var(--primary-soft-foreground)"
         }
       },
       "css": {

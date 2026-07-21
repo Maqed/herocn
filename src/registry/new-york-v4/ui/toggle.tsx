@@ -15,13 +15,13 @@ const toggleVariants = cva(
 				ghost: "hover:bg-muted hover:text-foreground dark:hover:bg-muted/50",
 			},
 			size: {
-				default:
-					"h-9 w-fit has-data-[icon=inline-start]:ps-3 has-data-[icon=inline-end]:pe-3",
-				xs: "h-7 gap-0.5 px-2.5 has-data-[icon=inline-start]:ps-1.5 has-data-[icon=inline-end]:pe-1.5 [&_svg:not([class*='size-'])]:size-3",
-				sm: "h-8 gap-1 px-3 has-data-[icon=inline-start]:ps-2 has-data-[icon=inline-end]:pe-2 [&_svg:not([class*='size-'])]:size-3.5",
-				lg: "h-10 gap-1.5 text-base has-data-[icon=inline-start]:ps-3 has-data-[icon=inline-end]:pe-3 [&_svg:not([class*='size-'])]:size-4",
+				default: "h-9 px-4 py-2",
+				xs: "h-7 gap-0.5 px-2.5 has-data-[icon=inline-start]:ps-2 has-data-[icon=inline-end]:pe-2 [&_svg:not([class*='size-'])]:size-3",
+				sm: "h-8 gap-1 px-3 has-data-[icon=inline-start]:ps-2.5 has-data-[icon=inline-end]:pe-2.5 [&_svg:not([class*='size-'])]:size-3.5",
+				lg: "h-10 gap-1.5 px-4 text-base [&_svg:not([class*='size-'])]:size-4",
 				icon: "size-9 [&_svg:not([class*='size-'])]:size-5",
-				"icon-xs": "size-7 px-3 [&_svg:not([class*='size-'])]:size-3.5",
+				"icon-xs":
+					"size-7 has-data-[icon=inline-start]:ps-2.5 has-data-[icon=inline-end]:pe-2.5 [&_svg:not([class*='size-'])]:size-3.5",
 				"icon-sm": "size-8 [&_svg:not([class*='size-'])]:size-4",
 				"icon-lg": "size-10 [&_svg:not([class*='size-'])]:size-5.5",
 			},

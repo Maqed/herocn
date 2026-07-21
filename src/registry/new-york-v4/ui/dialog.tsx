@@ -58,7 +58,7 @@ function DialogContent({
 			<DialogPrimitive.Popup
 				data-slot="dialog-content"
 				className={cn(
-					"data-open:fade-in-0 data-open:zoom-in-95 data-closed:fade-out-0 data-closed:zoom-out-95 fixed start-1/2 top-1/2 z-50 grid w-full max-w-[calc(100%-2rem)] -translate-x-1/2 -translate-y-1/2 gap-6 rounded-3xl bg-popover p-6 text-popover-foreground text-sm outline-none ring-1 ring-foreground/5 duration-100 data-closed:animate-out data-open:animate-in sm:max-w-md rtl:translate-x-1/2",
+					"data-open:fade-in-0 data-open:zoom-in-95 data-closed:fade-out-0 data-closed:zoom-out-95 fixed start-1/2 top-1/2 z-50 flex w-full max-w-[calc(100%-2rem)] -translate-x-1/2 -translate-y-1/2 flex-col gap-5 rounded-3xl bg-popover p-6 text-popover-foreground text-sm outline-none ring-1 ring-foreground/5 duration-100 data-closed:animate-out data-open:animate-in sm:max-w-md rtl:translate-x-1/2",
 					className,
 				)}
 				{...props}
@@ -88,7 +88,7 @@ function DialogHeader({ className, ...props }: React.ComponentProps<"div">) {
 	return (
 		<div
 			data-slot="dialog-header"
-			className={cn("flex flex-col gap-2", className)}
+			className={cn("flex flex-col gap-3", className)}
 			{...props}
 		/>
 	);
@@ -105,7 +105,7 @@ function DialogFooter({
 	return (
 		<div
 			data-slot="dialog-footer"
-			className={cn("flex flex-row justify-end gap-2", className)}
+			className={cn("flex flex-row items-center justify-end gap-2", className)}
 			{...props}
 		>
 			{children}
@@ -139,7 +139,7 @@ function DialogDescription({
 		<DialogPrimitive.Description
 			data-slot="dialog-description"
 			className={cn(
-				"text-muted-foreground text-sm *:[a]:underline *:[a]:underline-offset-3 *:[a]:hover:text-foreground",
+				"text-muted-foreground text-sm leading-[1.43] *:[a]:underline *:[a]:underline-offset-3 *:[a]:hover:text-foreground",
 				className,
 			)}
 			{...props}

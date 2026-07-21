@@ -9,11 +9,14 @@ const alertVariants = cva(
 		variants: {
 			variant: {
 				default: "",
-				primary: "*:data-[slot=alert-title]:text-primary *:[svg]:text-primary",
-				success: "*:data-[slot=alert-title]:text-success *:[svg]:text-success",
-				warning: "*:data-[slot=alert-title]:text-warning *:[svg]:text-warning",
+				primary:
+					"*:data-[slot=alert-title]:text-primary-soft-foreground *:[svg]:text-primary-soft-foreground",
+				success:
+					"*:data-[slot=alert-title]:text-success-soft-foreground *:[svg]:text-success-soft-foreground",
+				warning:
+					"*:data-[slot=alert-title]:text-warning-soft-foreground *:[svg]:text-warning-soft-foreground",
 				destructive:
-					"*:data-[slot=alert-title]:text-destructive *:[svg]:text-destructive",
+					"*:data-[slot=alert-title]:text-destructive-soft-foreground *:[svg]:text-destructive-soft-foreground",
 			},
 		},
 		defaultVariants: {

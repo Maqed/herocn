@@ -15,15 +15,28 @@ export const ui: Registry["items"] = [
 		],
 		cssVars: {
 			light: {
-				"--success": cssVars.light["--success"],
-				"--warning": cssVars.light["--warning"],
+				"--primary-soft-foreground": cssVars.light["--primary-soft-foreground"],
+				"--success-soft-foreground": cssVars.light["--success-soft-foreground"],
+				"--warning-soft-foreground": cssVars.light["--warning-soft-foreground"],
+				"--destructive-soft-foreground":
+					cssVars.light["--destructive-soft-foreground"],
 			},
 			dark: {
-				"--warning": cssVars.dark["--warning"],
+				"--primary-soft-foreground": cssVars.dark["--primary-soft-foreground"],
+				"--warning-soft-foreground": cssVars.dark["--warning-soft-foreground"],
+				"--destructive-soft-foreground":
+					cssVars.dark["--destructive-soft-foreground"],
+				"--success-soft-foreground": cssVars.dark["--success-soft-foreground"],
 			},
 			theme: {
-				"--color-success": cssVars.theme["--color-success"],
-				"--color-warning": cssVars.theme["--color-warning"],
+				"--color-primary-soft-foreground":
+					cssVars.theme["--color-primary-soft-foreground"],
+				"--color-success-soft-foreground":
+					cssVars.theme["--color-success-soft-foreground"],
+				"--color-warning-soft-foreground":
+					cssVars.theme["--color-warning-soft-foreground"],
+				"--color-destructive-soft-foreground":
+					cssVars.theme["--color-destructive-soft-foreground"],
 			},
 		},
 	},

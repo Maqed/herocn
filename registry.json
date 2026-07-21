@@ -472,15 +472,22 @@
       ],
       "cssVars": {
         "light": {
-          "--success": "oklch(0.7329 0.1935 150.81)",
-          "--warning": "oklch(0.7819 0.1585 72.33)"
+          "--primary-soft-foreground": "color-mix(in oklab, var(--primary) 70%, var(--foreground) 30%)",
+          "--success-soft-foreground": "color-mix(in oklab, var(--success) 80%, var(--foreground) 60%)",
+          "--warning-soft-foreground": "color-mix(in oklab, var(--warning) 80%, var(--foreground) 70%)",
+          "--destructive-soft-foreground": "color-mix(in oklab, var(--destructive) 70%, var(--foreground) 40%)"
         },
         "dark": {
-          "--warning": "oklch(0.8203 0.1388 76.34)"
+          "--primary-soft-foreground": "color-mix(in oklab, var(--primary) 70%, var(--foreground) 30%)",
+          "--warning-soft-foreground": "color-mix(in oklab, var(--warning) 80%, var(--foreground) 70%)",
+          "--destructive-soft-foreground": "color-mix(in oklab, var(--destructive) 70%, var(--foreground) 40%)",
+          "--success-soft-foreground": "color-mix(in oklab, var(--success) 80%, var(--foreground) 60%)"
         },
         "theme": {
-          "--color-success": "var(--success)",
-          "--color-warning": "var(--warning)"
+          "--color-primary-soft-foreground": "var(--primary-soft-foreground)",
+          "--color-success-soft-foreground": "var(--success-soft-foreground)",
+          "--color-warning-soft-foreground": "var(--warning-soft-foreground)",
+          "--color-destructive-soft-foreground": "var(--destructive-soft-foreground)"
         }
       }
     },

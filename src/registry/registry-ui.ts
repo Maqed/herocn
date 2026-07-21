@@ -143,11 +143,17 @@ export const ui: Registry["items"] = [
 				"--default": cssVars.light["--default"],
 				"--default-foreground": cssVars.light["--default-foreground"],
 				"--destructive-foreground": cssVars.light["--destructive-foreground"],
+				"--destructive-soft": cssVars.light["--destructive-soft"],
+				"--destructive-soft-foreground":
+					cssVars.light["--destructive-soft-foreground"],
 			},
 			dark: {
 				"--default": cssVars.dark["--default"],
 				"--default-foreground": cssVars.dark["--default-foreground"],
 				"--destructive-foreground": cssVars.dark["--destructive-foreground"],
+				"--destructive-soft": cssVars.dark["--destructive-soft"],
+				"--destructive-soft-foreground":
+					cssVars.dark["--destructive-soft-foreground"],
 			},
 			theme: {
 				"--color-default": cssVars.theme["--color-default"],
@@ -155,6 +161,9 @@ export const ui: Registry["items"] = [
 					cssVars.theme["--color-default-foreground"],
 				"--color-destructive-foreground":
 					cssVars.theme["--color-destructive-foreground"],
+				"--color-destructive-soft": cssVars.theme["--color-destructive-soft"],
+				"--color-destructive-soft-foreground":
+					cssVars.theme["--color-destructive-soft-foreground"],
 			},
 		},
 		css: {

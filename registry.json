@@ -615,17 +615,23 @@
           "--snow": "oklch(0.9911 0 0)",
           "--default": "oklch(94% 0.001 286.375)",
           "--default-foreground": "var(--eclipse)",
-          "--destructive-foreground": "var(--snow)"
+          "--destructive-foreground": "var(--snow)",
+          "--destructive-soft": "color-mix(in oklab, var(--destructive) 15%, transparent)",
+          "--destructive-soft-foreground": "color-mix(in oklab, var(--destructive) 70%, var(--foreground) 40%)"
         },
         "dark": {
           "--default": "oklch(27.4% 0.006 286.033)",
           "--default-foreground": "var(--snow)",
-          "--destructive-foreground": "var(--snow)"
+          "--destructive-foreground": "var(--snow)",
+          "--destructive-soft": "color-mix(in oklab, var(--destructive) 15%, transparent)",
+          "--destructive-soft-foreground": "color-mix(in oklab, var(--destructive) 70%, var(--foreground) 40%)"
         },
         "theme": {
           "--color-default": "var(--default)",
           "--color-default-foreground": "var(--default-foreground)",
-          "--color-destructive-foreground": "var(--destructive-foreground)"
+          "--color-destructive-foreground": "var(--destructive-foreground)",
+          "--color-destructive-soft": "var(--destructive-soft)",
+          "--color-destructive-soft-foreground": "var(--destructive-soft-foreground)"
         }
       },
       "css": {
@@ -753,7 +759,21 @@
           "path": "src/registry/new-york-v4/ui/calendar.tsx",
           "type": "registry:ui"
         }
-      ]
+      ],
+      "cssVars": {
+        "light": {
+          "--primary-soft": "color-mix(in oklab, var(--primary) 15%, transparent)",
+          "--primary-soft-foreground": "color-mix(in oklab, var(--primary) 70%, var(--foreground) 30%)"
+        },
+        "dark": {
+          "--primary-soft": "color-mix(in oklab, var(--primary) 15%, transparent)",
+          "--primary-soft-foreground": "color-mix(in oklab, var(--primary) 70%, var(--foreground) 30%)"
+        },
+        "theme": {
+          "--color-primary-soft": "var(--primary-soft)",
+          "--color-primary-soft-foreground": "var(--primary-soft-foreground)"
+        }
+      }
     },
     {
       "name": "card",

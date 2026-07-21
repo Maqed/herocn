@@ -60,13 +60,29 @@
 	--default-soft: color-mix(in oklab, var(--default) 50%, transparent);
 	--default-soft-foreground: var(--default-foreground);
 	--primary-soft: color-mix(in oklab, var(--primary) 15%, transparent);
-	--primary-soft-foreground: color-mix(in oklab, var(--primary) 70%, var(--foreground) 30%);
+	--primary-soft-foreground: color-mix(
+		in oklab,
+		var(--primary) 70%,
+		var(--foreground) 30%
+	);
 	--destructive-soft: color-mix(in oklab, var(--destructive) 15%, transparent);
-	--destructive-soft-foreground: color-mix(in oklab, var(--destructive) 70%, var(--foreground) 40%);
+	--destructive-soft-foreground: color-mix(
+		in oklab,
+		var(--destructive) 70%,
+		var(--foreground) 40%
+	);
 	--warning-soft: color-mix(in oklab, var(--warning) 15%, transparent);
-	--warning-soft-foreground: color-mix(in oklab, var(--warning) 80%, var(--foreground) 70%);
+	--warning-soft-foreground: color-mix(
+		in oklab,
+		var(--warning) 80%,
+		var(--foreground) 70%
+	);
 	--success-soft: color-mix(in oklab, var(--success) 15%, transparent);
-	--success-soft-foreground: color-mix(in oklab, var(--success) 80%, var(--foreground) 60%);
+	--success-soft-foreground: color-mix(
+		in oklab,
+		var(--success) 80%,
+		var(--foreground) 60%
+	);
 }
 
 .dark {
@@ -118,13 +134,29 @@
 	--default-soft: color-mix(in oklab, var(--default) 50%, transparent);
 	--default-soft-foreground: var(--default-foreground);
 	--primary-soft: color-mix(in oklab, var(--primary) 15%, transparent);
-	--primary-soft-foreground: color-mix(in oklab, var(--primary) 70%, var(--foreground) 30%);
+	--primary-soft-foreground: color-mix(
+		in oklab,
+		var(--primary) 70%,
+		var(--foreground) 30%
+	);
 	--destructive-soft: color-mix(in oklab, var(--destructive) 15%, transparent);
-	--destructive-soft-foreground: color-mix(in oklab, var(--destructive) 70%, var(--foreground) 40%);
+	--destructive-soft-foreground: color-mix(
+		in oklab,
+		var(--destructive) 70%,
+		var(--foreground) 40%
+	);
 	--warning-soft: color-mix(in oklab, var(--warning) 15%, transparent);
-	--warning-soft-foreground: color-mix(in oklab, var(--warning) 80%, var(--foreground) 70%);
+	--warning-soft-foreground: color-mix(
+		in oklab,
+		var(--warning) 80%,
+		var(--foreground) 70%
+	);
 	--success-soft: color-mix(in oklab, var(--success) 15%, transparent);
-	--success-soft-foreground: color-mix(in oklab, var(--success) 80%, var(--foreground) 60%);
+	--success-soft-foreground: color-mix(
+		in oklab,
+		var(--success) 80%,
+		var(--foreground) 60%
+	);
 }
 
 @theme inline {

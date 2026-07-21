@@ -44,6 +44,22 @@ export const cssVars = {
 		"--surface": "white",
 		"--surface-secondary": "oklch(0.9524 0.0013 286.37)",
 		"--surface-tertiary": "oklch(0.9373 0.0013 286.37)",
+
+		"--default-soft": "color-mix(in oklab, var(--default) 50%, transparent)",
+		"--default-soft-foreground": "var(--default-foreground)",
+		"--primary-soft": "color-mix(in oklab, var(--primary) 15%, transparent)",
+		"--primary-soft-foreground":
+			"color-mix(in oklab, var(--primary) 70%, var(--foreground) 30%)",
+		"--destructive-soft":
+			"color-mix(in oklab, var(--destructive) 15%, transparent)",
+		"--destructive-soft-foreground":
+			"color-mix(in oklab, var(--destructive) 70%, var(--foreground) 40%)",
+		"--warning-soft": "color-mix(in oklab, var(--warning) 15%, transparent)",
+		"--warning-soft-foreground":
+			"color-mix(in oklab, var(--warning) 80%, var(--foreground) 70%)",
+		"--success-soft": "color-mix(in oklab, var(--success) 15%, transparent)",
+		"--success-soft-foreground":
+			"color-mix(in oklab, var(--success) 80%, var(--foreground) 60%)",
 	},
 	dark: {
 		"--background": "oklch(0.1228 0.0029 285.97)",
@@ -85,6 +101,22 @@ export const cssVars = {
 		"--surface": "oklch(0.2103 0.0059 285.89)",
 		"--surface-secondary": "oklch(0.257 0.0037 286.14)",
 		"--surface-tertiary": "oklch(0.2721 0.0024 247.91)",
+
+		"--default-soft": "color-mix(in oklab, var(--default) 50%, transparent)",
+		"--default-soft-foreground": "var(--default-foreground)",
+		"--primary-soft": "color-mix(in oklab, var(--primary) 15%, transparent)",
+		"--primary-soft-foreground":
+			"color-mix(in oklab, var(--primary) 70%, var(--foreground) 30%)",
+		"--destructive-soft":
+			"color-mix(in oklab, var(--destructive) 15%, transparent)",
+		"--destructive-soft-foreground":
+			"color-mix(in oklab, var(--destructive) 70%, var(--foreground) 40%)",
+		"--warning-soft": "color-mix(in oklab, var(--warning) 15%, transparent)",
+		"--warning-soft-foreground":
+			"color-mix(in oklab, var(--warning) 80%, var(--foreground) 70%)",
+		"--success-soft": "color-mix(in oklab, var(--success) 15%, transparent)",
+		"--success-soft-foreground":
+			"color-mix(in oklab, var(--success) 80%, var(--foreground) 60%)",
 	},
 	theme: {
 		"--color-sidebar-ring": "var(--sidebar-ring)",
@@ -128,6 +160,16 @@ export const cssVars = {
 		"--color-surface": "var(--surface)",
 		"--color-surface-secondary": "var(--surface-secondary)",
 		"--color-surface-tertiary": "var(--surface-tertiary)",
+		"--color-default-soft": "var(--default-soft)",
+		"--color-default-soft-foreground": "var(--default-soft-foreground)",
+		"--color-primary-soft": "var(--primary-soft)",
+		"--color-primary-soft-foreground": "var(--primary-soft-foreground)",
+		"--color-destructive-soft": "var(--destructive-soft)",
+		"--color-destructive-soft-foreground": "var(--destructive-soft-foreground)",
+		"--color-warning-soft": "var(--warning-soft)",
+		"--color-warning-soft-foreground": "var(--warning-soft-foreground)",
+		"--color-success-soft": "var(--success-soft)",
+		"--color-success-soft-foreground": "var(--success-soft-foreground)",
 		"--radius-xs": "calc(var(--radius) * 0.25)",
 		"--radius-sm": "calc(var(--radius) * 0.5)",
 		"--radius-md": "calc(var(--radius) * 0.75)",

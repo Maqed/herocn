@@ -12,6 +12,16 @@
 	[data-lang="he"] {
 		font-family: var(--font-he);
 	}
+
+	:root {
+		--ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+		--ease-out: cubic-bezier(0, 0, 0.2, 1);
+	}
+}
+
+@theme inline {
+	--breakpoint-3xl: 120rem;
+	--breakpoint-4xl: 160rem;
 }
 
 @layer components {

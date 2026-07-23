@@ -183,8 +183,6 @@
 	--color-accent: var(--accent);
 	--color-muted-foreground: var(--muted-foreground);
 	--color-muted: var(--muted);
-	--color-complementary: var(--complementary);
-	--color-complementary-foreground: var(--complementary-foreground);
 	--color-secondary-foreground: var(--secondary-foreground);
 	--color-secondary: var(--secondary);
 	--color-primary-foreground: var(--primary-foreground);

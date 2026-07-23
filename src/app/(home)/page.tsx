@@ -9,7 +9,7 @@ import {
 import { PAGES_METADATA } from "@/lib/config";
 import { absoluteUrl } from "@/lib/utils";
 import { Button } from "@/registry/new-york-v4/ui/button";
-import { RootComponents } from "./components";
+import { CardsDemo } from "./cards";
 
 export const metadata: Metadata = {
 	title: PAGES_METADATA.get("/")?.title,
@@ -46,8 +46,8 @@ export default function HomePage() {
 					/>
 				</PageActions>
 			</PageHeader>
-			<section className="container mx-auto w-full px-4">
-				<RootComponents />
+			<section className="mx-auto w-full max-w-[2400px] px-4 xl:px-8">
+				<CardsDemo />
 			</section>
 		</div>
 	);

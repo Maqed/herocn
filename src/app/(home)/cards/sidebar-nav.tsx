@@ -46,7 +46,9 @@ function SidebarSection({
 	className?: string;
 }) {
 	return (
-		<Card className={cn("w-full overflow-hidden rounded-3xl py-0", className)}>
+		<Card
+			className={cn("w-full overflow-hidden rounded-3xl px-0 py-0", className)}
+		>
 			<SidebarProvider className="min-h-0">
 				<Sidebar collapsible="none" className="w-full bg-transparent">
 					<SidebarContent className="gap-0 overflow-hidden">

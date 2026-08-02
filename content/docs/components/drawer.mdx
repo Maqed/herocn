@@ -1,9 +1,18 @@
 ---
 title: Drawer
-description: A drawer component that slides in from any side of the screen, built on top of Vaul.
+description: A panel that slides in from any edge of the screen to reveal supporting content.
+base: base
+component: true
+links:
+  doc: https://base-ui.com/react/components/drawer
+  api: https://base-ui.com/react/components/drawer#api-reference
 ---
 
 <ComponentPreview name="drawer-demo" />
+
+<Callout>
+  The drawer component uses [Base UI](https://base-ui.com/react/components/drawer) instead of Vaul. If you installed the previous version, see the [migration guide](#migrating-from-vaul).
+</Callout>
 
 ## Installation
 
@@ -25,7 +34,7 @@ description: A drawer component that slides in from any side of the screen, buil
 
 <Step>Install the following dependencies:</Step>
 
-<CodeBlockCommand command="npm install vaul" />
+<CodeBlockCommand command="npm install @base-ui/react" />
 
 <Step>Copy and paste the following code into your project.</Step>
 
@@ -38,6 +47,14 @@ description: A drawer component that slides in from any side of the screen, buil
 </TabsContent>
 
 </CodeTabs>
+
+Add the following to your global styles. On iOS Safari, the drawer overlay is absolutely positioned and requires a positioned `body` to cover the viewport after the page is scrolled. See the [Base UI docs](https://base-ui.com/react/overview/quick-start#ios-26-safari) for details.
+
+```css
+body {
+  position: relative;
+}
+```
 
 ## Usage
 
@@ -55,18 +72,17 @@ import {
 ```
 
 ```tsx
-<Drawer>
-  <DrawerTrigger>Open</DrawerTrigger>
+<Drawer swipeDirection="right">
+  <DrawerTrigger render={<Button variant="outline" />}>Open</DrawerTrigger>
   <DrawerContent>
     <DrawerHeader>
       <DrawerTitle>Are you absolutely sure?</DrawerTitle>
       <DrawerDescription>This action cannot be undone.</DrawerDescription>
     </DrawerHeader>
+    <div className="p-4">{/* Content here */}</div>
     <DrawerFooter>
       <Button>Submit</Button>
-      <DrawerClose>
-        <Button variant="outline">Cancel</Button>
-      </DrawerClose>
+      <DrawerClose render={<Button variant="outline" />}>Cancel</DrawerClose>
     </DrawerFooter>
   </DrawerContent>
 </Drawer>
@@ -86,11 +102,13 @@ Drawer
     └── DrawerFooter
 ```
 
+`DrawerContent` composes the portal, overlay, and popup from Base UI. For lower-level control, `DrawerPortal` and `DrawerOverlay` are also exported.
+
 ## Examples
 
-### Direction
+### Directions
 
-Use the `direction` prop on `Drawer` to set the side the drawer slides in from. Available options are `top`, `right`, `bottom`, and `left`.
+Use the `swipeDirection` prop on `Drawer` to set the edge the drawer slides from. Available options are `up`, `right`, `down`, and `left`.
 
 <ComponentPreview name="drawer-direction" />
 
@@ -100,17 +118,157 @@ Use `overlayVariant` on `DrawerContent` to choose an opaque dim (`opaque`), a bl
 
 <ComponentPreview name="drawer-overlay-variant" />
 
-### Scrollable Content
+### Custom sizes
 
-Keep actions visible while the content scrolls.
+A vertical drawer sizes itself to its content and is capped at `calc(100dvh - 6rem)` by default. A side drawer spans `75%` of the viewport width, or `24rem` on larger screens.
+
+Override the height of a vertical drawer with `h-*` and `max-h-*` utilities on `DrawerContent`.
+
+```tsx
+<DrawerContent className="h-[50vh]">
+```
+
+Override the width of a side drawer with `w-*` and `max-w-*` utilities on `DrawerContent`.
+
+```tsx
+<DrawerContent className="w-96">
+```
+
+When the same drawer renders in multiple directions, scope an override to one axis with the `data-[swipe-axis=*]` variants.
+
+```tsx
+<DrawerContent className="data-[swipe-axis=y]:max-h-[50vh] data-[swipe-axis=x]:w-96">
+```
+
+### Scrollable content
+
+To make a region of the drawer scroll, make the scroll container a flex item. Avoid `h-full`, which does not resolve inside a content-sized drawer.
 
 <ComponentPreview name="drawer-scrollable-content" />
 
-### Responsive Dialog
+### Swipe handle
 
-You can combine the `Dialog` and `Drawer` components to create a responsive dialog. This renders a `Dialog` component on desktop and a `Drawer` on mobile.
+Use `showSwipeHandle` on `Drawer` to render a visible swipe handle.
+
+<ComponentPreview name="drawer-swipe-handle" />
+
+### Nested
+
+Open drawers from inside another drawer. Parent drawers stay mounted and stack behind the frontmost drawer.
+
+<ComponentPreview name="drawer-nested" />
+
+### Non modal
+
+Set `modal={false}` to allow interaction with the rest of the page while the drawer is open. Combine with `disablePointerDismissal` to prevent the drawer from closing on outside presses. Use `modal="trap-focus"` to keep focus inside the drawer while leaving scroll and pointer interaction unrestricted.
+
+<ComponentPreview name="drawer-non-modal" />
+
+### Snap points
+
+Use `snapPoints` to snap a drawer to preset heights. Numbers between `0` and `1` represent fractions of the viewport. Numbers greater than `1` are treated as pixel values. String values support `px` and `rem` units. Snap points apply to vertical drawers.
+
+<ComponentPreview name="drawer-snap-points" />
+
+### Responsive
+
+Combine the `Dialog` and `Drawer` components to render a `Dialog` on desktop and a `Drawer` on mobile.
 
 <ComponentPreview name="drawer-responsive-dialog" />
+
+## Migrating from Vaul
+
+The drawer now uses [Base UI](https://base-ui.com/react/components/drawer) instead of Vaul. If you installed the previous drawer, update your usage to the Base UI API.
+
+<Steps>
+
+<Step>Update the dependency.</Step>
+
+```diff
+- npm install vaul
++ npm install @base-ui/react
+```
+
+<Step>Replace `direction` with `swipeDirection`.</Step>
+
+Use `down` instead of `bottom`, and `up` instead of `top`. `left` and `right` stay the same.
+
+```diff
+- <Drawer direction="bottom">
++ <Drawer swipeDirection="down">
+```
+
+<Step>Replace `asChild` with `render`.</Step>
+
+For `DrawerTrigger`, pass the trigger element to the `render` prop.
+
+```diff
+- <DrawerTrigger asChild>
+-   <Button variant="outline">Open</Button>
+- </DrawerTrigger>
++ <DrawerTrigger render={<Button variant="outline" />}>
++   Open
++ </DrawerTrigger>
+```
+
+For `DrawerClose`, pass the close element to the `render` prop.
+
+```diff
+- <DrawerClose asChild>
+-   <Button variant="outline">Cancel</Button>
+- </DrawerClose>
++ <DrawerClose render={<Button variant="outline" />}>
++   Cancel
++ </DrawerClose>
+```
+
+<Step>Update snap point props.</Step>
+
+If you use snap points, rename the controlled snap point props and the sequential snap point prop.
+
+```diff
+<Drawer
+  snapPoints={[0.25, 0.5, 1]}
+- activeSnapPoint={snapPoint}
+- setActiveSnapPoint={setSnapPoint}
+- snapToSequentialPoint
++ snapPoint={snapPoint}
++ onSnapPointChange={setSnapPoint}
++ snapToSequentialPoints
+>
+```
+
+<Step>Update animation and focus props.</Step>
+
+```diff
+- <Drawer onAnimationEnd={(open) => setDone(open)}>
++ <Drawer onOpenChangeComplete={(open) => setDone(open)}>
+```
+
+```diff
+- <DrawerContent onOpenAutoFocus={(event) => event.preventDefault()}>
++ <DrawerContent initialFocus={false}>
+```
+
+<Step>Review Vaul-only props.</Step>
+
+Vaul props like `handleOnly`, `repositionInputs`, and `shouldScaleBackground` do not have one-to-one replacements. Use Base UI props such as `disablePointerDismissal`, `modal`, `snapPoints`, or a controlled `open` state for the behavior you need.
+
+```diff
+- <Drawer dismissible={false}>
++ <Drawer disablePointerDismissal>
+```
+
+<Step>Update custom data attribute selectors.</Step>
+
+Replace Vaul&apos;s `data-vaul-drawer-direction` selectors with Base UI&apos;s `data-swipe-direction` selectors.
+
+```diff
+- <DrawerContent className="data-[vaul-drawer-direction=bottom]:max-h-[50vh]">
++ <DrawerContent className="data-[swipe-direction=down]:max-h-[50vh]">
+```
+
+</Steps>
 
 ## RTL
 
@@ -120,4 +278,4 @@ To enable RTL support in herocn, see the [RTL configuration guide](/docs/rtl).
 
 ## API Reference
 
-See the [Vaul documentation](https://vaul.emilkowal.ski/getting-started) for the full API reference.
+See the [Base UI Drawer documentation](https://base-ui.com/react/components/drawer) for more information.

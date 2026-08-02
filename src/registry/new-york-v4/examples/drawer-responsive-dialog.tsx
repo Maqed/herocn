@@ -1,8 +1,9 @@
 "use client";
 
 import * as React from "react";
-import { useMediaQuery } from "@/hooks/use-media-query";
+
 import { cn } from "@/lib/utils";
+import { useIsMobile } from "@/registry/new-york-v4/hooks/use-mobile";
 import { Button } from "@/registry/new-york-v4/ui/button";
 import {
 	Dialog,
@@ -27,73 +28,70 @@ import { Label } from "@/registry/new-york-v4/ui/label";
 
 export default function DrawerResponsiveDialog() {
 	const [open, setOpen] = React.useState(false);
-	const isDesktop = useMediaQuery("(min-width: 768px)");
+	const isMobile = useIsMobile();
 
-	if (isDesktop) {
+	if (isMobile) {
 		return (
-			<Dialog open={open} onOpenChange={setOpen}>
-				<DialogTrigger render={<Button variant="tertiary" />}>
+			<Drawer open={open} onOpenChange={setOpen}>
+				<DrawerTrigger render={<Button variant="tertiary" />}>
 					Edit Profile
-				</DialogTrigger>
-				<DialogContent className="sm:max-w-[425px]">
-					<DialogHeader>
-						<DialogTitle>Edit profile</DialogTitle>
-						<DialogDescription>
+				</DrawerTrigger>
+				<DrawerContent>
+					<DrawerHeader className="text-left">
+						<DrawerTitle>Edit profile</DrawerTitle>
+						<DrawerDescription>
 							Make changes to your profile here. Click save when you&apos;re
 							done.
-						</DialogDescription>
-					</DialogHeader>
-					<ProfileForm />
-				</DialogContent>
-			</Dialog>
+						</DrawerDescription>
+					</DrawerHeader>
+					<ProfileForm className="px-4" />
+					<DrawerFooter>
+						<DrawerClose render={<Button variant="tertiary" />}>
+							Cancel
+						</DrawerClose>
+					</DrawerFooter>
+				</DrawerContent>
+			</Drawer>
 		);
 	}
 
 	return (
-		<Drawer open={open} onOpenChange={setOpen}>
-			<DrawerTrigger asChild>
-				<Button variant="tertiary">Edit Profile</Button>
-			</DrawerTrigger>
-			<DrawerContent>
-				<DrawerHeader className="text-left">
-					<DrawerTitle>Edit profile</DrawerTitle>
-					<DrawerDescription>
+		<Dialog open={open} onOpenChange={setOpen}>
+			<DialogTrigger render={<Button variant="tertiary" />}>
+				Edit Profile
+			</DialogTrigger>
+			<DialogContent className="sm:max-w-[425px]">
+				<DialogHeader>
+					<DialogTitle>Edit profile</DialogTitle>
+					<DialogDescription>
 						Make changes to your profile here. Click save when you&apos;re done.
-					</DrawerDescription>
-				</DrawerHeader>
+					</DialogDescription>
+				</DialogHeader>
 				<ProfileForm className="px-4" />
-				<DrawerFooter className="pt-2">
-					<DrawerClose asChild>
-						<Button className="w-full" variant="tertiary">
-							Cancel
-						</Button>
-					</DrawerClose>
-				</DrawerFooter>
-			</DrawerContent>
-		</Drawer>
+			</DialogContent>
+		</Dialog>
 	);
 }
 
 function ProfileForm({ className }: React.ComponentProps<"form">) {
 	return (
-		<form
-			onSubmit={(e) => {
-				e.preventDefault();
-			}}
-			className={cn("grid items-start gap-6", className)}
-		>
+		<form className={cn("grid items-start gap-6", className)}>
 			<div className="grid gap-3">
-				<Label htmlFor="email">Email</Label>
+				<Label htmlFor="responsive-email">Email</Label>
 				<Input
 					variant="secondary"
 					type="email"
-					id="email"
-					defaultValue="maqed@example.com"
+					id="responsive-email"
+					defaultValue="Maqed@example.com"
 				/>
 			</div>
 			<div className="grid gap-3">
-				<Label htmlFor="username">Username</Label>
-				<Input variant="secondary" id="username" defaultValue="@0xMaqed" />
+				<Label htmlFor="responsive-username">Username</Label>
+				<Input
+					variant="secondary"
+					id="responsive-username"
+					defaultValue="@0xMaqed"
+				/>
 			</div>
 			<Button type="submit">Save changes</Button>
 		</form>

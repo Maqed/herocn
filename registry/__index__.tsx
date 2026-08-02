@@ -426,7 +426,7 @@ export const Index: Record<string, any> = {
   "drawer": {
     name: "drawer",
     type: "registry:ui",
-    dependencies: ["vaul"],
+    dependencies: ["@base-ui/react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     files: [{
@@ -2435,6 +2435,166 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-complex.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "drawer-demo": {
+    name: "drawer-demo",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/drawer-demo.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/drawer-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "drawer-direction": {
+    name: "drawer-direction",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/drawer-direction.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/drawer-direction.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "drawer-overlay-variant": {
+    name: "drawer-overlay-variant",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/drawer-overlay-variant.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/drawer-overlay-variant.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "drawer-scrollable-content": {
+    name: "drawer-scrollable-content",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/drawer-scrollable-content.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/drawer-scrollable-content.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "drawer-rtl": {
+    name: "drawer-rtl",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/drawer-rtl.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/drawer-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "drawer-responsive-dialog": {
+    name: "drawer-responsive-dialog",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json","https://herocn.dev/r/drawer.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/drawer-responsive-dialog.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/drawer-responsive-dialog.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "drawer-swipe-handle": {
+    name: "drawer-swipe-handle",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/drawer-swipe-handle.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/drawer-swipe-handle.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "drawer-nested": {
+    name: "drawer-nested",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/drawer-nested.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/drawer-nested.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "drawer-non-modal": {
+    name: "drawer-non-modal",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/drawer-non-modal.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/drawer-non-modal.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "drawer-snap-points": {
+    name: "drawer-snap-points",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/drawer-snap-points.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/drawer-snap-points.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),
@@ -5347,102 +5507,6 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/sheet-rtl.tsx")
-      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
-      return { default: mod.default || mod[exportName] }
-    }),
-  },
-  "drawer-demo": {
-    name: "drawer-demo",
-    type: "registry:example",
-    dependencies: undefined,
-    devDependencies: undefined,
-    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
-    files: [{
-      path: "src/registry/new-york-v4/examples/drawer-demo.tsx",
-      type: "registry:example"
-    }],
-    component: React.lazy(async () => {
-      const mod = await import("@/registry/new-york-v4/examples/drawer-demo.tsx")
-      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
-      return { default: mod.default || mod[exportName] }
-    }),
-  },
-  "drawer-direction": {
-    name: "drawer-direction",
-    type: "registry:example",
-    dependencies: undefined,
-    devDependencies: undefined,
-    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json"],
-    files: [{
-      path: "src/registry/new-york-v4/examples/drawer-direction.tsx",
-      type: "registry:example"
-    }],
-    component: React.lazy(async () => {
-      const mod = await import("@/registry/new-york-v4/examples/drawer-direction.tsx")
-      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
-      return { default: mod.default || mod[exportName] }
-    }),
-  },
-  "drawer-overlay-variant": {
-    name: "drawer-overlay-variant",
-    type: "registry:example",
-    dependencies: undefined,
-    devDependencies: undefined,
-    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json"],
-    files: [{
-      path: "src/registry/new-york-v4/examples/drawer-overlay-variant.tsx",
-      type: "registry:example"
-    }],
-    component: React.lazy(async () => {
-      const mod = await import("@/registry/new-york-v4/examples/drawer-overlay-variant.tsx")
-      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
-      return { default: mod.default || mod[exportName] }
-    }),
-  },
-  "drawer-scrollable-content": {
-    name: "drawer-scrollable-content",
-    type: "registry:example",
-    dependencies: undefined,
-    devDependencies: undefined,
-    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json"],
-    files: [{
-      path: "src/registry/new-york-v4/examples/drawer-scrollable-content.tsx",
-      type: "registry:example"
-    }],
-    component: React.lazy(async () => {
-      const mod = await import("@/registry/new-york-v4/examples/drawer-scrollable-content.tsx")
-      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
-      return { default: mod.default || mod[exportName] }
-    }),
-  },
-  "drawer-rtl": {
-    name: "drawer-rtl",
-    type: "registry:example",
-    dependencies: undefined,
-    devDependencies: undefined,
-    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
-    files: [{
-      path: "src/registry/new-york-v4/examples/drawer-rtl.tsx",
-      type: "registry:example"
-    }],
-    component: React.lazy(async () => {
-      const mod = await import("@/registry/new-york-v4/examples/drawer-rtl.tsx")
-      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
-      return { default: mod.default || mod[exportName] }
-    }),
-  },
-  "drawer-responsive-dialog": {
-    name: "drawer-responsive-dialog",
-    type: "registry:example",
-    dependencies: undefined,
-    devDependencies: undefined,
-    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json","https://herocn.dev/r/drawer.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
-    files: [{
-      path: "src/registry/new-york-v4/examples/drawer-responsive-dialog.tsx",
-      type: "registry:example"
-    }],
-    component: React.lazy(async () => {
-      const mod = await import("@/registry/new-york-v4/examples/drawer-responsive-dialog.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

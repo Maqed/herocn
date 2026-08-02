@@ -15,94 +15,93 @@ import {
 	DrawerTitle,
 	DrawerTrigger,
 } from "@/registry/new-york-v4/ui/drawer";
-import { Field, FieldGroup } from "@/registry/new-york-v4/ui/field";
+import { Field, FieldGroup, FieldLabel } from "@/registry/new-york-v4/ui/field";
 import { Input } from "@/registry/new-york-v4/ui/input";
-import { Label } from "@/registry/new-york-v4/ui/label";
 
 const translations: Translations = {
 	en: {
 		dir: "ltr",
 		values: {
-			openDrawer: "Open Drawer",
+			open: "Edit Profile",
 			editProfile: "Edit profile",
 			description:
 				"Make changes to your profile here. Click save when you're done.",
-			name: "Name",
+			email: "Email",
 			username: "Username",
+			save: "Save changes",
 			cancel: "Cancel",
-			saveChanges: "Save changes",
 		},
 	},
 	ar: {
 		dir: "rtl",
 		values: {
-			openDrawer: "فتح الدرج",
+			open: "تعديل الملف الشخصي",
 			editProfile: "تعديل الملف الشخصي",
 			description:
-				"قم بإجراء تغييرات على ملفك الشخصي هنا. انقر فوق حفظ عند الانتهاء.",
-			name: "الاسم",
+				"قم بإجراء تغييرات على ملفك الشخصي هنا. انقر حفظ عند الانتهاء.",
+			email: "البريد الإلكتروني",
 			username: "اسم المستخدم",
+			save: "حفظ التغييرات",
 			cancel: "إلغاء",
-			saveChanges: "حفظ التغييرات",
 		},
 	},
 	he: {
 		dir: "rtl",
 		values: {
-			openDrawer: "פתח מגירה",
-			editProfile: "ערוך פרופיל",
-			description: "בצע שינויים בפרופיל שלך כאן. לחץ על שמור כשתסיים.",
-			name: "שם",
+			open: "עריכת פרופיל",
+			editProfile: "עריכת פרופיל",
+			description: "בצע שינויים בפרופיל שלך כאן. לחץ שמור כשתסיים.",
+			email: "אימייל",
 			username: "שם משתמש",
-			cancel: "בטל",
-			saveChanges: "שמור שינויים",
+			save: "שמור שינויים",
+			cancel: "ביטול",
 		},
 	},
 };
 
-export function DrawerRtl() {
-	const { dir, language, t } = useTranslation(translations, "ar");
+export default function DrawerRtl() {
+	const { dir, t, language } = useTranslation(translations, "ar");
 
 	return (
-		<div lang={language} dir={dir}>
-			<Drawer>
-				<DrawerTrigger asChild>
-					<Button variant="tertiary">{t.openDrawer}</Button>
-				</DrawerTrigger>
-				<DrawerContent
-					dir={dir}
-					data-lang={dir === "rtl" ? language : undefined}
-				>
-					<DrawerHeader>
-						<DrawerTitle>{t.editProfile}</DrawerTitle>
-						<DrawerDescription>{t.description}</DrawerDescription>
-					</DrawerHeader>
-					<FieldGroup className="px-4">
-						<Field>
-							<Label htmlFor="drawer-rtl-name">{t.name}</Label>
-							<Input
-								variant="secondary"
-								id="drawer-rtl-name"
-								defaultValue="Maged Ibrahim"
-							/>
-						</Field>
-						<Field>
-							<Label htmlFor="drawer-rtl-username">{t.username}</Label>
-							<Input
-								variant="secondary"
-								id="drawer-rtl-username"
-								defaultValue="@0xMaqed"
-							/>
-						</Field>
-					</FieldGroup>
-					<DrawerFooter>
-						<DrawerClose asChild>
-							<Button variant="tertiary">{t.cancel}</Button>
-						</DrawerClose>
-						<Button type="submit">{t.saveChanges}</Button>
-					</DrawerFooter>
-				</DrawerContent>
-			</Drawer>
-		</div>
+		<Drawer
+			swipeDirection={dir === "rtl" ? "down" : "right"}
+			data-lang={dir === "rtl" ? language : undefined}
+		>
+			<DrawerTrigger
+				data-lang={language}
+				render={<Button variant="tertiary">{t.open}</Button>}
+			/>
+			<DrawerContent dir={dir}>
+				<DrawerHeader>
+					<DrawerTitle>{t.editProfile}</DrawerTitle>
+					<DrawerDescription>{t.description}</DrawerDescription>
+				</DrawerHeader>
+				<FieldGroup className="px-4">
+					<Field>
+						<FieldLabel htmlFor="drawer-rtl-email">{t.email}</FieldLabel>
+						<Input
+							variant="secondary"
+							id="drawer-rtl-email"
+							type="email"
+							defaultValue="Maqed@example.com"
+						/>
+					</Field>
+					<Field>
+						<FieldLabel htmlFor="drawer-rtl-username">{t.username}</FieldLabel>
+						<Input
+							variant="secondary"
+							id="drawer-rtl-username"
+							defaultValue="@0xMaqed"
+						/>
+					</Field>
+				</FieldGroup>
+				<DrawerFooter>
+					<Button type="submit">{t.save}</Button>
+					<DrawerClose render={<Button variant="tertiary" />}>
+						{t.cancel}
+					</DrawerClose>
+				</DrawerFooter>
+			</DrawerContent>
+		</Drawer>
 	);
 }

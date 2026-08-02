@@ -531,7 +531,7 @@ export const ui: Registry["items"] = [
 	{
 		name: "drawer",
 		type: "registry:ui",
-		dependencies: ["vaul"],
+		dependencies: ["@base-ui/react"],
 		files: [
 			{
 				path: "ui/drawer.tsx",

@@ -1,5 +1,7 @@
 "use client";
 
+import * as React from "react";
+
 import { Button } from "@/registry/new-york-v4/ui/button";
 import {
 	Drawer,
@@ -11,15 +13,16 @@ import {
 	DrawerTitle,
 	DrawerTrigger,
 } from "@/registry/new-york-v4/ui/drawer";
-import { Field, FieldGroup } from "@/registry/new-york-v4/ui/field";
+import { Field, FieldGroup, FieldLabel } from "@/registry/new-york-v4/ui/field";
 import { Input } from "@/registry/new-york-v4/ui/input";
-import { Label } from "@/registry/new-york-v4/ui/label";
 
 export default function DrawerDemo() {
+	const [open, setOpen] = React.useState(false);
+
 	return (
-		<Drawer>
-			<DrawerTrigger asChild>
-				<Button variant="tertiary">Open Drawer</Button>
+		<Drawer open={open} onOpenChange={setOpen}>
+			<DrawerTrigger render={<Button variant="tertiary" />}>
+				Edit Profile
 			</DrawerTrigger>
 			<DrawerContent>
 				<DrawerHeader>
@@ -30,27 +33,28 @@ export default function DrawerDemo() {
 				</DrawerHeader>
 				<FieldGroup className="px-4">
 					<Field>
-						<Label htmlFor="drawer-name">Name</Label>
+						<FieldLabel htmlFor="drawer-demo-email">Email</FieldLabel>
 						<Input
 							variant="secondary"
-							id="drawer-name"
-							defaultValue="Maged Ibrahim"
+							id="drawer-demo-email"
+							type="email"
+							defaultValue="Maqed@example.com"
 						/>
 					</Field>
 					<Field>
-						<Label htmlFor="drawer-username">Username</Label>
+						<FieldLabel htmlFor="drawer-demo-username">Username</FieldLabel>
 						<Input
 							variant="secondary"
-							id="drawer-username"
+							id="drawer-demo-username"
 							defaultValue="@0xMaqed"
 						/>
 					</Field>
 				</FieldGroup>
 				<DrawerFooter>
-					<DrawerClose asChild>
-						<Button variant="tertiary">Cancel</Button>
-					</DrawerClose>
 					<Button type="submit">Save changes</Button>
+					<DrawerClose render={<Button variant="tertiary" />}>
+						Cancel
+					</DrawerClose>
 				</DrawerFooter>
 			</DrawerContent>
 		</Drawer>

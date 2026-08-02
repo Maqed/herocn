@@ -12,49 +12,46 @@ import {
 	DrawerTrigger,
 } from "@/registry/new-york-v4/ui/drawer";
 
-const DRAWER_SIDES = ["top", "right", "bottom", "left"] as const;
+const sides = [
+	{
+		direction: "right",
+		label: "Right",
+	},
+	{
+		direction: "left",
+		label: "Left",
+	},
+	{
+		direction: "down",
+		label: "Bottom",
+	},
+	{
+		direction: "up",
+		label: "Top",
+	},
+] as const;
 
 export default function DrawerDirection() {
 	return (
 		<div className="flex flex-wrap gap-2">
-			{DRAWER_SIDES.map((side) => (
-				<Drawer
-					key={side}
-					direction={
-						side === "bottom" ? undefined : (side as "top" | "right" | "left")
-					}
-				>
-					<DrawerTrigger asChild>
-						<Button variant="tertiary" className="capitalize">
-							{side}
-						</Button>
+			{sides.map((side) => (
+				<Drawer key={side.direction} swipeDirection={side.direction}>
+					<DrawerTrigger render={<Button variant="tertiary" />}>
+						{side.label}
 					</DrawerTrigger>
-					<DrawerContent className="data-[vaul-drawer-direction=bottom]:max-h-[50vh] data-[vaul-drawer-direction=top]:max-h-[50vh]">
+					<DrawerContent>
 						<DrawerHeader>
-							<DrawerTitle>Terms of Service</DrawerTitle>
+							<DrawerTitle>{side.label} drawer</DrawerTitle>
 							<DrawerDescription>
-								Make sure to read them carefully.
+								Slides in from the {side.label.toLowerCase()} edge of the
+								screen.
 							</DrawerDescription>
 						</DrawerHeader>
-						<div className="no-scrollbar overflow-y-auto px-4">
-							{Array.from({ length: 10 }).map((_, index) => (
-								<p key={index} className="mb-4 leading-relaxed">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-									do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-									Ut enim ad minim veniam, quis nostrud exercitation ullamco
-									laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-									irure dolor in reprehenderit in voluptate velit esse cillum
-									dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-									cupidatat non proident, sunt in culpa qui officia deserunt
-									mollit anim id est laborum.
-								</p>
-							))}
+						<div className="flex-1 p-4">
+							<div className="size-full rounded-2xl bg-muted group-data-[swipe-axis=x]/drawer-content:size-full group-data-[swipe-axis=y]/drawer-content:h-64 group-data-[swipe-axis=y]/drawer-content:w-full" />
 						</div>
 						<DrawerFooter>
-							<DrawerClose asChild>
-								<Button variant="tertiary">Cancel</Button>
-							</DrawerClose>
-							<Button type="submit">Accept</Button>
+							<DrawerClose render={<Button />}>Close</DrawerClose>
 						</DrawerFooter>
 					</DrawerContent>
 				</Drawer>

@@ -2,8 +2,6 @@
 
 import { RotateCwIcon } from "lucide-react";
 import * as React from "react";
-import { toast } from "sonner";
-
 import { createChat, getMessageText } from "@/lib/ai";
 import { Bubble, BubbleContent } from "@/registry/new-york-v4/ui/bubble";
 import { Button } from "@/registry/new-york-v4/ui/button";
@@ -26,6 +24,7 @@ import {
 	MessageScrollerProvider,
 	MessageScrollerViewport,
 } from "@/registry/new-york-v4/ui/message-scroller";
+import { toast } from "@/registry/new-york-v4/ui/toast";
 import {
 	Tooltip,
 	TooltipContent,
@@ -148,7 +147,8 @@ export default function MessageScrollerLoadHistory() {
 							disabled={!canLoadHistory}
 							onClick={() => {
 								setVisibleCount(history.length);
-								toast("History loaded", {
+								toast.add({
+									title: "History Loaded",
 									description: "Scroll up to see earlier messages.",
 								});
 							}}

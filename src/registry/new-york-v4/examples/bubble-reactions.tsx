@@ -1,13 +1,12 @@
 "use client";
 
-import { toast } from "sonner";
-
 import {
 	Bubble,
 	BubbleContent,
 	BubbleReactions,
 } from "@/registry/new-york-v4/ui/bubble";
 import { Button } from "@/registry/new-york-v4/ui/button";
+import { toast } from "@/registry/new-york-v4/ui/toast";
 
 export default function BubbleReactionsDemo() {
 	return (
@@ -59,7 +58,12 @@ export default function BubbleReactionsDemo() {
 					<Button
 						variant="ghost"
 						size="xs"
-						onClick={() => toast.success("You clicked yes, running command...")}
+						onClick={() =>
+							toast.add({
+								title: "You clicked yes, running command...",
+								type: "success",
+							})
+						}
 					>
 						Yes, run it
 					</Button>

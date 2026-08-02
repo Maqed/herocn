@@ -1,13 +1,12 @@
 "use client";
 
 import { GitBranchIcon, RotateCcwIcon } from "lucide-react";
-import { toast } from "sonner";
-
 import {
 	Marker,
 	MarkerContent,
 	MarkerIcon,
 } from "@/registry/new-york-v4/ui/marker";
+import { toast } from "@/registry/new-york-v4/ui/toast";
 
 export default function MarkerLinkButton() {
 	return (
@@ -23,7 +22,9 @@ export default function MarkerLinkButton() {
 					<button
 						type="button"
 						className="transition-colors hover:text-foreground"
-						onClick={() => toast("You clicked the revert button")}
+						onClick={() =>
+							toast.add({ title: "You clicked the revert button" })
+						}
 					/>
 				}
 			>

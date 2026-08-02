@@ -1052,52 +1052,6 @@ export const ui: Registry["items"] = [
 		},
 	},
 	{
-		name: "sonner",
-		type: "registry:ui",
-		dependencies: ["lucide-react", "next-themes", "sonner"],
-		files: [
-			{
-				path: "ui/sonner.tsx",
-				type: "registry:ui",
-			},
-		],
-		cssVars: {
-			light: {
-				"--surface": cssVars.light["--surface"],
-				"--success-soft-foreground": cssVars.light["--success-soft-foreground"],
-				"--warning-soft-foreground": cssVars.light["--warning-soft-foreground"],
-				"--destructive-soft-foreground":
-					cssVars.light["--destructive-soft-foreground"],
-				"--default": cssVars.light["--default"],
-				"--default-foreground": cssVars.light["--default-foreground"],
-			},
-			dark: {
-				"--surface": cssVars.dark["--surface"],
-				"--success-soft-foreground": cssVars.dark["--success-soft-foreground"],
-				"--warning-soft-foreground": cssVars.dark["--warning-soft-foreground"],
-				"--destructive-soft-foreground":
-					cssVars.dark["--destructive-soft-foreground"],
-				"--default": cssVars.dark["--default"],
-				"--default-foreground": cssVars.dark["--default-foreground"],
-			},
-			theme: {
-				"--color-surface": cssVars.theme["--color-surface"],
-				"--color-success-soft-foreground":
-					cssVars.theme["--color-success-soft-foreground"],
-				"--color-warning-soft-foreground":
-					cssVars.theme["--color-warning-soft-foreground"],
-				"--color-destructive-soft-foreground":
-					cssVars.theme["--color-destructive-soft-foreground"],
-				"--color-default": cssVars.theme["--color-default"],
-				"--color-default-foreground":
-					cssVars.theme["--color-default-foreground"],
-			},
-		},
-		css: {
-			"@utility pressible": css["@utility pressible"],
-		},
-	},
-	{
 		name: "skeleton",
 		type: "registry:ui",
 		dependencies: ["class-variance-authority"],
@@ -1257,6 +1211,47 @@ export const ui: Registry["items"] = [
 				type: "registry:ui",
 			},
 		],
+	},
+	{
+		name: "toast",
+		type: "registry:ui",
+		dependencies: ["@base-ui/react", "lucide-react"],
+		registryDependencies: [getRegistryItemInstallationAlias("button")],
+		files: [
+			{
+				path: "ui/toast.tsx",
+				type: "registry:ui",
+			},
+		],
+		cssVars: {
+			light: {
+				"--surface": cssVars.light["--surface"],
+				"--primary-soft-foreground": cssVars.light["--primary-soft-foreground"],
+				"--success-soft-foreground": cssVars.light["--success-soft-foreground"],
+				"--warning-soft-foreground": cssVars.light["--warning-soft-foreground"],
+				"--destructive-soft-foreground":
+					cssVars.light["--destructive-soft-foreground"],
+			},
+			dark: {
+				"--surface": cssVars.dark["--surface"],
+				"--primary-soft-foreground": cssVars.dark["--primary-soft-foreground"],
+				"--success-soft-foreground": cssVars.dark["--success-soft-foreground"],
+				"--warning-soft-foreground": cssVars.dark["--warning-soft-foreground"],
+				"--destructive-soft-foreground":
+					cssVars.dark["--destructive-soft-foreground"],
+			},
+			theme: {
+				"--color-surface": cssVars.theme["--color-surface"],
+				"--color-primary-soft-foreground":
+					cssVars.theme["--color-primary-soft-foreground"],
+				"--color-success-soft-foreground":
+					cssVars.theme["--color-success-soft-foreground"],
+				"--color-warning-soft-foreground":
+					cssVars.theme["--color-warning-soft-foreground"],
+				"--color-destructive-soft-foreground":
+					cssVars.theme["--color-destructive-soft-foreground"],
+			},
+		},
 	},
 	{
 		name: "textarea",

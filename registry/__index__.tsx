@@ -871,22 +871,6 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
-  "sonner": {
-    name: "sonner",
-    type: "registry:ui",
-    dependencies: ["lucide-react","next-themes","sonner"],
-    devDependencies: undefined,
-    registryDependencies: undefined,
-    files: [{
-      path: "src/registry/new-york-v4/ui/sonner.tsx",
-      type: "registry:ui"
-    }],
-    component: React.lazy(async () => {
-      const mod = await import("@/registry/new-york-v4/ui/sonner.tsx")
-      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
-      return { default: mod.default || mod[exportName] }
-    }),
-  },
   "skeleton": {
     name: "skeleton",
     type: "registry:ui",
@@ -979,6 +963,22 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/toggle-group.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "toast": {
+    name: "toast",
+    type: "registry:ui",
+    dependencies: ["@base-ui/react","lucide-react"],
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json"],
+    files: [{
+      path: "src/registry/new-york-v4/ui/toast.tsx",
+      type: "registry:ui"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/toast.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),
@@ -5511,70 +5511,6 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
-  "sonner-demo": {
-    name: "sonner-demo",
-    type: "registry:example",
-    dependencies: undefined,
-    devDependencies: undefined,
-    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/sonner.json"],
-    files: [{
-      path: "src/registry/new-york-v4/examples/sonner-demo.tsx",
-      type: "registry:example"
-    }],
-    component: React.lazy(async () => {
-      const mod = await import("@/registry/new-york-v4/examples/sonner-demo.tsx")
-      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
-      return { default: mod.default || mod[exportName] }
-    }),
-  },
-  "sonner-types": {
-    name: "sonner-types",
-    type: "registry:example",
-    dependencies: undefined,
-    devDependencies: undefined,
-    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/sonner.json"],
-    files: [{
-      path: "src/registry/new-york-v4/examples/sonner-types.tsx",
-      type: "registry:example"
-    }],
-    component: React.lazy(async () => {
-      const mod = await import("@/registry/new-york-v4/examples/sonner-types.tsx")
-      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
-      return { default: mod.default || mod[exportName] }
-    }),
-  },
-  "sonner-description": {
-    name: "sonner-description",
-    type: "registry:example",
-    dependencies: undefined,
-    devDependencies: undefined,
-    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/sonner.json"],
-    files: [{
-      path: "src/registry/new-york-v4/examples/sonner-description.tsx",
-      type: "registry:example"
-    }],
-    component: React.lazy(async () => {
-      const mod = await import("@/registry/new-york-v4/examples/sonner-description.tsx")
-      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
-      return { default: mod.default || mod[exportName] }
-    }),
-  },
-  "sonner-position": {
-    name: "sonner-position",
-    type: "registry:example",
-    dependencies: undefined,
-    devDependencies: undefined,
-    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/sonner.json"],
-    files: [{
-      path: "src/registry/new-york-v4/examples/sonner-position.tsx",
-      type: "registry:example"
-    }],
-    component: React.lazy(async () => {
-      const mod = await import("@/registry/new-york-v4/examples/sonner-position.tsx")
-      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
-      return { default: mod.default || mod[exportName] }
-    }),
-  },
   "scroll-area-demo": {
     name: "scroll-area-demo",
     type: "registry:example",
@@ -7756,7 +7692,7 @@ export const Index: Record<string, any> = {
     type: "registry:example",
     dependencies: undefined,
     devDependencies: undefined,
-    registryDependencies: ["https://herocn.dev/r/marker.json","https://herocn.dev/r/sonner.json"],
+    registryDependencies: ["https://herocn.dev/r/marker.json","https://herocn.dev/r/toast.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/marker-link-button.tsx",
       type: "registry:example"
@@ -7836,7 +7772,7 @@ export const Index: Record<string, any> = {
     type: "registry:example",
     dependencies: undefined,
     devDependencies: undefined,
-    registryDependencies: ["https://herocn.dev/r/bubble.json","https://herocn.dev/r/sonner.json"],
+    registryDependencies: ["https://herocn.dev/r/bubble.json","https://herocn.dev/r/toast.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/bubble-link-button.tsx",
       type: "registry:example"
@@ -7852,7 +7788,7 @@ export const Index: Record<string, any> = {
     type: "registry:example",
     dependencies: undefined,
     devDependencies: undefined,
-    registryDependencies: ["https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json","https://herocn.dev/r/sonner.json"],
+    registryDependencies: ["https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json","https://herocn.dev/r/toast.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/bubble-reactions.tsx",
       type: "registry:example"
@@ -8179,6 +8115,70 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/message-scroller-scrollable.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "toast-demo": {
+    name: "toast-demo",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/toast.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/toast-demo.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/toast-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "toast-types": {
+    name: "toast-types",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/toast.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/toast-types.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/toast-types.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "toast-action": {
+    name: "toast-action",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/toast.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/toast-action.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/toast-action.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "toast-promise": {
+    name: "toast-promise",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/toast.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/toast-promise.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/toast-promise.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

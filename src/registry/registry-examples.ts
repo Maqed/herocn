@@ -3645,62 +3645,6 @@ export const examples: Registry["items"] = [
 		],
 	},
 	{
-		name: "sonner-demo",
-		type: "registry:example",
-		registryDependencies: [
-			getRegistryItemInstallationAlias("button"),
-			getRegistryItemInstallationAlias("sonner"),
-		],
-		files: [
-			{
-				path: "examples/sonner-demo.tsx",
-				type: "registry:example",
-			},
-		],
-	},
-	{
-		name: "sonner-types",
-		type: "registry:example",
-		registryDependencies: [
-			getRegistryItemInstallationAlias("button"),
-			getRegistryItemInstallationAlias("sonner"),
-		],
-		files: [
-			{
-				path: "examples/sonner-types.tsx",
-				type: "registry:example",
-			},
-		],
-	},
-	{
-		name: "sonner-description",
-		type: "registry:example",
-		registryDependencies: [
-			getRegistryItemInstallationAlias("button"),
-			getRegistryItemInstallationAlias("sonner"),
-		],
-		files: [
-			{
-				path: "examples/sonner-description.tsx",
-				type: "registry:example",
-			},
-		],
-	},
-	{
-		name: "sonner-position",
-		type: "registry:example",
-		registryDependencies: [
-			getRegistryItemInstallationAlias("button"),
-			getRegistryItemInstallationAlias("sonner"),
-		],
-		files: [
-			{
-				path: "examples/sonner-position.tsx",
-				type: "registry:example",
-			},
-		],
-	},
-	{
 		name: "scroll-area-demo",
 		type: "registry:example",
 		registryDependencies: [
@@ -5376,7 +5320,7 @@ export const examples: Registry["items"] = [
 		type: "registry:example",
 		registryDependencies: [
 			getRegistryItemInstallationAlias("marker"),
-			getRegistryItemInstallationAlias("sonner"),
+			getRegistryItemInstallationAlias("toast"),
 		],
 		files: [
 			{
@@ -5434,7 +5378,7 @@ export const examples: Registry["items"] = [
 		type: "registry:example",
 		registryDependencies: [
 			getRegistryItemInstallationAlias("bubble"),
-			getRegistryItemInstallationAlias("sonner"),
+			getRegistryItemInstallationAlias("toast"),
 		],
 		files: [
 			{
@@ -5449,7 +5393,7 @@ export const examples: Registry["items"] = [
 		registryDependencies: [
 			getRegistryItemInstallationAlias("bubble"),
 			getRegistryItemInstallationAlias("button"),
-			getRegistryItemInstallationAlias("sonner"),
+			getRegistryItemInstallationAlias("toast"),
 		],
 		files: [
 			{
@@ -5785,6 +5729,62 @@ export const examples: Registry["items"] = [
 		files: [
 			{
 				path: "examples/message-scroller-scrollable.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "toast-demo",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("toast"),
+		],
+		files: [
+			{
+				path: "examples/toast-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "toast-types",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("toast"),
+		],
+		files: [
+			{
+				path: "examples/toast-types.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "toast-action",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("toast"),
+		],
+		files: [
+			{
+				path: "examples/toast-action.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "toast-promise",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("toast"),
+		],
+		files: [
+			{
+				path: "examples/toast-promise.tsx",
 				type: "registry:example",
 			},
 		],

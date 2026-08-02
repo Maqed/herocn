@@ -1,12 +1,11 @@
 "use client";
 
-import { toast } from "sonner";
-
 import {
 	Bubble,
 	BubbleContent,
 	BubbleGroup,
 } from "@/registry/new-york-v4/ui/bubble";
+import { toast } from "@/registry/new-york-v4/ui/toast";
 
 export default function BubbleLinkButtonDemo() {
 	return (
@@ -20,7 +19,9 @@ export default function BubbleLinkButtonDemo() {
 						render={
 							<button
 								type="button"
-								onClick={() => toast("You clicked forgot password")}
+								onClick={() =>
+									toast.add({ title: "You clicked forgot password" })
+								}
 							/>
 						}
 					>
@@ -32,7 +33,9 @@ export default function BubbleLinkButtonDemo() {
 						render={
 							<button
 								type="button"
-								onClick={() => toast("You clicked help with subscription")}
+								onClick={() =>
+									toast.add({ title: "You clicked help with subscription" })
+								}
 							/>
 						}
 					>
@@ -45,7 +48,9 @@ export default function BubbleLinkButtonDemo() {
 							<button
 								type="button"
 								onClick={() =>
-									toast("You clicked something else. Talk to a human.")
+									toast.add({
+										title: "You clicked something else. Talk to a human.",
+									})
 								}
 							/>
 						}

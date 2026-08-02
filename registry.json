@@ -1696,53 +1696,6 @@
       }
     },
     {
-      "name": "sonner",
-      "type": "registry:ui",
-      "dependencies": [
-        "lucide-react",
-        "next-themes",
-        "sonner"
-      ],
-      "files": [
-        {
-          "path": "src/registry/new-york-v4/ui/sonner.tsx",
-          "type": "registry:ui"
-        }
-      ],
-      "cssVars": {
-        "light": {
-          "--surface": "white",
-          "--success-soft-foreground": "color-mix(in oklab, var(--success) 80%, var(--foreground) 60%)",
-          "--warning-soft-foreground": "color-mix(in oklab, var(--warning) 80%, var(--foreground) 70%)",
-          "--destructive-soft-foreground": "color-mix(in oklab, var(--destructive) 70%, var(--foreground) 40%)",
-          "--default": "oklch(94% 0.001 286.375)",
-          "--default-foreground": "var(--eclipse)"
-        },
-        "dark": {
-          "--surface": "oklch(0.2103 0.0059 285.89)",
-          "--success-soft-foreground": "color-mix(in oklab, var(--success) 80%, var(--foreground) 60%)",
-          "--warning-soft-foreground": "color-mix(in oklab, var(--warning) 80%, var(--foreground) 70%)",
-          "--destructive-soft-foreground": "color-mix(in oklab, var(--destructive) 70%, var(--foreground) 40%)",
-          "--default": "oklch(27.4% 0.006 286.033)",
-          "--default-foreground": "var(--snow)"
-        },
-        "theme": {
-          "--color-surface": "var(--surface)",
-          "--color-success-soft-foreground": "var(--success-soft-foreground)",
-          "--color-warning-soft-foreground": "var(--warning-soft-foreground)",
-          "--color-destructive-soft-foreground": "var(--destructive-soft-foreground)",
-          "--color-default": "var(--default)",
-          "--color-default-foreground": "var(--default-foreground)"
-        }
-      },
-      "css": {
-        "@utility pressible": {
-          "transition": "transform 250ms var(--ease-smooth), background-color 100ms var(--ease-out), box-shadow 100ms var(--ease-out)",
-          "@apply transform-gpu motion-reduce:transition-none active:scale-[0.97] aria-expanded:scale-[0.97]": {}
-        }
-      }
-    },
-    {
       "name": "skeleton",
       "type": "registry:ui",
       "dependencies": [
@@ -1932,6 +1885,46 @@
           "type": "registry:ui"
         }
       ]
+    },
+    {
+      "name": "toast",
+      "type": "registry:ui",
+      "dependencies": [
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/toast.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "--surface": "white",
+          "--primary-soft-foreground": "color-mix(in oklab, var(--primary) 70%, var(--foreground) 30%)",
+          "--success-soft-foreground": "color-mix(in oklab, var(--success) 80%, var(--foreground) 60%)",
+          "--warning-soft-foreground": "color-mix(in oklab, var(--warning) 80%, var(--foreground) 70%)",
+          "--destructive-soft-foreground": "color-mix(in oklab, var(--destructive) 70%, var(--foreground) 40%)"
+        },
+        "dark": {
+          "--surface": "oklch(0.2103 0.0059 285.89)",
+          "--primary-soft-foreground": "color-mix(in oklab, var(--primary) 70%, var(--foreground) 30%)",
+          "--success-soft-foreground": "color-mix(in oklab, var(--success) 80%, var(--foreground) 60%)",
+          "--warning-soft-foreground": "color-mix(in oklab, var(--warning) 80%, var(--foreground) 70%)",
+          "--destructive-soft-foreground": "color-mix(in oklab, var(--destructive) 70%, var(--foreground) 40%)"
+        },
+        "theme": {
+          "--color-surface": "var(--surface)",
+          "--color-primary-soft-foreground": "var(--primary-soft-foreground)",
+          "--color-success-soft-foreground": "var(--success-soft-foreground)",
+          "--color-warning-soft-foreground": "var(--warning-soft-foreground)",
+          "--color-destructive-soft-foreground": "var(--destructive-soft-foreground)"
+        }
+      }
     },
     {
       "name": "textarea",
@@ -5904,62 +5897,6 @@
       ]
     },
     {
-      "name": "sonner-demo",
-      "type": "registry:example",
-      "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/sonner.json"
-      ],
-      "files": [
-        {
-          "path": "src/registry/new-york-v4/examples/sonner-demo.tsx",
-          "type": "registry:example"
-        }
-      ]
-    },
-    {
-      "name": "sonner-types",
-      "type": "registry:example",
-      "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/sonner.json"
-      ],
-      "files": [
-        {
-          "path": "src/registry/new-york-v4/examples/sonner-types.tsx",
-          "type": "registry:example"
-        }
-      ]
-    },
-    {
-      "name": "sonner-description",
-      "type": "registry:example",
-      "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/sonner.json"
-      ],
-      "files": [
-        {
-          "path": "src/registry/new-york-v4/examples/sonner-description.tsx",
-          "type": "registry:example"
-        }
-      ]
-    },
-    {
-      "name": "sonner-position",
-      "type": "registry:example",
-      "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/sonner.json"
-      ],
-      "files": [
-        {
-          "path": "src/registry/new-york-v4/examples/sonner-position.tsx",
-          "type": "registry:example"
-        }
-      ]
-    },
-    {
       "name": "scroll-area-demo",
       "type": "registry:example",
       "registryDependencies": [
@@ -7809,7 +7746,7 @@
       "type": "registry:example",
       "registryDependencies": [
         "https://herocn.dev/r/marker.json",
-        "https://herocn.dev/r/sonner.json"
+        "https://herocn.dev/r/toast.json"
       ],
       "files": [
         {
@@ -7875,7 +7812,7 @@
       "type": "registry:example",
       "registryDependencies": [
         "https://herocn.dev/r/bubble.json",
-        "https://herocn.dev/r/sonner.json"
+        "https://herocn.dev/r/toast.json"
       ],
       "files": [
         {
@@ -7890,7 +7827,7 @@
       "registryDependencies": [
         "https://herocn.dev/r/bubble.json",
         "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/sonner.json"
+        "https://herocn.dev/r/toast.json"
       ],
       "files": [
         {
@@ -8226,6 +8163,62 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/message-scroller-scrollable.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "toast-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/toast.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/toast-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "toast-types",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/toast.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/toast-types.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "toast-action",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/toast.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/toast-action.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "toast-promise",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/toast.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/toast-promise.tsx",
           "type": "registry:example"
         }
       ]

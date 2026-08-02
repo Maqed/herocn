@@ -202,7 +202,7 @@ function GroupChatMessage({
 		? "muted"
 		: item.role === "assistant"
 			? "ghost"
-			: "tinted";
+			: "soft";
 
 	return (
 		<MessageScrollerItem messageId={item.id} scrollAnchor={item.scrollAnchor}>

@@ -268,6 +268,24 @@ export const ui: Registry["items"] = [
 				type: "registry:ui",
 			},
 		],
+		cssVars: {
+			light: {
+				"--primary-soft": cssVars.light["--primary-soft"],
+				"--primary-soft-foreground": cssVars.light["--primary-soft-foreground"],
+			},
+			dark: {
+				"--primary-soft": cssVars.dark["--primary-soft"],
+				"--primary-soft-foreground": cssVars.dark["--primary-soft-foreground"],
+			},
+			theme: {
+				"--color-primary-soft": cssVars.theme["--color-primary-soft"],
+				"--color-primary-soft-foreground":
+					cssVars.theme["--color-primary-soft-foreground"],
+			},
+		},
+		css: {
+			"@utility focus-ring": css["@utility focus-ring"],
+		},
 	},
 	{
 		name: "calendar",

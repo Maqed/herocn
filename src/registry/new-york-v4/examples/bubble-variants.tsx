@@ -21,10 +21,9 @@ export default function BubbleVariants() {
 					<span>👍</span>
 				</BubbleReactions>
 			</Bubble>
-			<Bubble variant="tinted" align="end">
+			<Bubble variant="soft" align="end">
 				<BubbleContent>
-					This one is tinted. The tint is a softer color derived from the
-					primary color.
+					This one is soft. It is a softer color derived from the primary color.
 				</BubbleContent>
 			</Bubble>
 			<Bubble variant="outline">

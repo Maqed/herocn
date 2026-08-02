@@ -14,7 +14,7 @@ export default function BubbleLinkButtonDemo() {
 				<BubbleContent>How can I help you today?</BubbleContent>
 			</Bubble>
 			<BubbleGroup>
-				<Bubble variant="tinted" align="end">
+				<Bubble variant="soft" align="end">
 					<BubbleContent
 						render={
 							<button
@@ -28,7 +28,7 @@ export default function BubbleLinkButtonDemo() {
 						I forgot my password
 					</BubbleContent>
 				</Bubble>
-				<Bubble variant="tinted" align="end">
+				<Bubble variant="soft" align="end">
 					<BubbleContent
 						render={
 							<button
@@ -42,7 +42,7 @@ export default function BubbleLinkButtonDemo() {
 						I need help with my subscription
 					</BubbleContent>
 				</Bubble>
-				<Bubble variant="tinted" align="end">
+				<Bubble variant="soft" align="end">
 					<BubbleContent
 						render={
 							<button

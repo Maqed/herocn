@@ -31,6 +31,14 @@ description: Displays conversational content in a message bubble. Supports varia
 
 <ComponentSource name="bubble" title="components/ui/bubble.tsx" />
 
+<Step>Add the following css colors & utilities</Step>
+<RenderCSSShared
+  light={["--primary-soft", "--primary-soft-foreground"]}
+  dark={["--primary-soft", "--primary-soft-foreground"]}
+  theme={["--color-primary-soft", "--color-primary-soft-foreground"]}
+  css={["@utility focus-ring"]}
+/>
+
 <Step>Update the import paths to match your project setup.</Step>
 
 </Steps>
@@ -87,7 +95,7 @@ Use `variant` to change the visual treatment of the bubble.
 | `default`     | A strong primary bubble, usually for the current user. |
 | `secondary`   | The standard neutral bubble for conversation content.  |
 | `muted`       | A lower-emphasis bubble for quiet supporting content.  |
-| `tinted`      | A subtle primary-tinted bubble.                        |
+| `soft`      | A subtle primary-soft bubble.                        |
 | `outline`     | A bordered bubble for secondary or rich content.       |
 | `ghost`       | Unframed content for assistant text or rich content.   |
 | `destructive` | A destructive bubble for error or failed actions.      |
@@ -205,7 +213,7 @@ The root bubble wrapper.
   props={[
     {
       name: "variant",
-      type: '"default" | "secondary" | "muted" | "tinted" | "outline" | "ghost" | "destructive"',
+      type: '"default" | "secondary" | "muted" | "soft" | "outline" | "ghost" | "destructive"',
       defaultValue: '"default"',
     },
     {

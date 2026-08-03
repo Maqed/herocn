@@ -16,7 +16,7 @@ import { Button } from "@/registry/new-york-v4/ui/button";
 export default function AlertDialogDemo() {
 	return (
 		<AlertDialog>
-			<AlertDialogTrigger render={<Button variant="tertiary" />}>
+			<AlertDialogTrigger render={<Button variant="secondary" />}>
 				Show Dialog
 			</AlertDialogTrigger>
 			<AlertDialogContent>

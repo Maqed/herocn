@@ -19,7 +19,7 @@ export default function AlertDialogWithMedia() {
 	return (
 		<AlertDialog>
 			<AlertDialogTrigger
-				render={<Button variant="tertiary">Share Project</Button>}
+				render={<Button variant="secondary">Share Project</Button>}
 			/>
 			<AlertDialogContent>
 				<AlertDialogHeader>

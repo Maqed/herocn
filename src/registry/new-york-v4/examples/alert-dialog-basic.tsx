@@ -17,7 +17,7 @@ export default function AlertDialogBasic() {
 	return (
 		<AlertDialog>
 			<AlertDialogTrigger
-				render={<Button variant="tertiary">Show Dialog</Button>}
+				render={<Button variant="secondary">Show Dialog</Button>}
 			/>
 			<AlertDialogContent>
 				<AlertDialogHeader>

@@ -78,7 +78,7 @@ export default function AlertDialogRtl() {
 	return (
 		<div className="flex gap-4" lang={language} dir={dir}>
 			<AlertDialog>
-				<AlertDialogTrigger render={<Button variant="tertiary" />}>
+				<AlertDialogTrigger render={<Button variant="secondary" />}>
 					{t.showDialog}
 				</AlertDialogTrigger>
 				<AlertDialogContent
@@ -96,7 +96,7 @@ export default function AlertDialogRtl() {
 				</AlertDialogContent>
 			</AlertDialog>
 			<AlertDialog>
-				<AlertDialogTrigger render={<Button variant="tertiary" />}>
+				<AlertDialogTrigger render={<Button variant="secondary" />}>
 					{t.showDialogSm}
 				</AlertDialogTrigger>
 				<AlertDialogContent

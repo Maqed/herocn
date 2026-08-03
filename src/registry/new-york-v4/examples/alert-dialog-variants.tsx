@@ -41,13 +41,10 @@ export default function AlertDialogOverlayVariant() {
 		<div className="flex flex-wrap gap-2">
 			{variants.map((v) => (
 				<AlertDialog key={v.variant}>
-					<AlertDialogTrigger render={<Button variant="tertiary" />}>
+					<AlertDialogTrigger render={<Button variant="secondary" />}>
 						{v.label}
 					</AlertDialogTrigger>
-					<AlertDialogContent
-						overlayVariant={v.variant}
-						className="sm:max-w-sm"
-					>
+					<AlertDialogContent overlayVariant={v.variant}>
 						<AlertDialogHeader>
 							<AlertDialogTitle>{v.title}</AlertDialogTitle>
 							<AlertDialogDescription>{v.description}</AlertDialogDescription>

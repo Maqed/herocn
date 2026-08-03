@@ -21,7 +21,7 @@ export default function DrawerDemo() {
 
 	return (
 		<Drawer open={open} onOpenChange={setOpen}>
-			<DrawerTrigger render={<Button variant="tertiary" />}>
+			<DrawerTrigger render={<Button variant="secondary" />}>
 				Edit Profile
 			</DrawerTrigger>
 			<DrawerContent>
@@ -52,7 +52,7 @@ export default function DrawerDemo() {
 				</FieldGroup>
 				<DrawerFooter>
 					<Button type="submit">Save changes</Button>
-					<DrawerClose render={<Button variant="tertiary" />}>
+					<DrawerClose render={<Button variant="secondary" />}>
 						Cancel
 					</DrawerClose>
 				</DrawerFooter>

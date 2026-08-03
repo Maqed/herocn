@@ -69,7 +69,7 @@ export default function DrawerRtl() {
 		>
 			<DrawerTrigger
 				data-lang={language}
-				render={<Button variant="tertiary">{t.open}</Button>}
+				render={<Button variant="secondary">{t.open}</Button>}
 			/>
 			<DrawerContent dir={dir}>
 				<DrawerHeader>
@@ -97,7 +97,7 @@ export default function DrawerRtl() {
 				</FieldGroup>
 				<DrawerFooter>
 					<Button type="submit">{t.save}</Button>
-					<DrawerClose render={<Button variant="tertiary" />}>
+					<DrawerClose render={<Button variant="secondary" />}>
 						{t.cancel}
 					</DrawerClose>
 				</DrawerFooter>

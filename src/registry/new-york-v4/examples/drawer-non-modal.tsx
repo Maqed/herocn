@@ -14,7 +14,7 @@ import {
 export default function DrawerNonModal() {
 	return (
 		<Drawer modal={false} disablePointerDismissal swipeDirection="right">
-			<DrawerTrigger render={<Button variant="tertiary" />}>
+			<DrawerTrigger render={<Button variant="secondary" />}>
 				Non Modal
 			</DrawerTrigger>
 			<DrawerContent>

@@ -2492,7 +2492,7 @@ export const Index: Record<string, any> = {
     type: "registry:example",
     dependencies: undefined,
     devDependencies: undefined,
-    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json"],
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json","https://herocn.dev/r/surface.json"],
     files: [{
       path: "src/registry/new-york-v4/examples/drawer-scrollable-content.tsx",
       type: "registry:example"

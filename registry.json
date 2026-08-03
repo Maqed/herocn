@@ -750,6 +750,20 @@
           "type": "registry:ui"
         }
       ],
+      "cssVars": {
+        "light": {
+          "--primary-soft": "color-mix(in oklab, var(--primary) 15%, transparent)",
+          "--primary-soft-foreground": "color-mix(in oklab, var(--primary) 70%, var(--foreground) 30%)"
+        },
+        "dark": {
+          "--primary-soft": "color-mix(in oklab, var(--primary) 15%, transparent)",
+          "--primary-soft-foreground": "color-mix(in oklab, var(--primary) 70%, var(--foreground) 30%)"
+        },
+        "theme": {
+          "--color-primary-soft": "var(--primary-soft)",
+          "--color-primary-soft-foreground": "var(--primary-soft-foreground)"
+        }
+      },
       "css": {
         "@utility focus-ring": {
           "@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none": {}
@@ -3282,7 +3296,8 @@
       "type": "registry:example",
       "registryDependencies": [
         "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/drawer.json"
+        "https://herocn.dev/r/drawer.json",
+        "https://herocn.dev/r/surface.json"
       ],
       "files": [
         {

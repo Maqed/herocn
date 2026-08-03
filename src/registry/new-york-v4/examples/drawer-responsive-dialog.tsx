@@ -15,10 +15,8 @@ import {
 } from "@/registry/new-york-v4/ui/dialog";
 import {
 	Drawer,
-	DrawerClose,
 	DrawerContent,
 	DrawerDescription,
-	DrawerFooter,
 	DrawerHeader,
 	DrawerTitle,
 	DrawerTrigger,
@@ -33,10 +31,10 @@ export default function DrawerResponsiveDialog() {
 	if (isMobile) {
 		return (
 			<Drawer open={open} onOpenChange={setOpen}>
-				<DrawerTrigger render={<Button variant="tertiary" />}>
+				<DrawerTrigger render={<Button variant="secondary" />}>
 					Edit Profile
 				</DrawerTrigger>
-				<DrawerContent>
+				<DrawerContent className="p-4">
 					<DrawerHeader className="text-left">
 						<DrawerTitle>Edit profile</DrawerTitle>
 						<DrawerDescription>
@@ -44,12 +42,7 @@ export default function DrawerResponsiveDialog() {
 							done.
 						</DrawerDescription>
 					</DrawerHeader>
-					<ProfileForm className="px-4" />
-					<DrawerFooter>
-						<DrawerClose render={<Button variant="tertiary" />}>
-							Cancel
-						</DrawerClose>
-					</DrawerFooter>
+					<ProfileForm />
 				</DrawerContent>
 			</Drawer>
 		);
@@ -57,17 +50,17 @@ export default function DrawerResponsiveDialog() {
 
 	return (
 		<Dialog open={open} onOpenChange={setOpen}>
-			<DialogTrigger render={<Button variant="tertiary" />}>
+			<DialogTrigger render={<Button variant="secondary" />}>
 				Edit Profile
 			</DialogTrigger>
-			<DialogContent className="sm:max-w-[425px]">
+			<DialogContent>
 				<DialogHeader>
 					<DialogTitle>Edit profile</DialogTitle>
 					<DialogDescription>
 						Make changes to your profile here. Click save when you&apos;re done.
 					</DialogDescription>
 				</DialogHeader>
-				<ProfileForm className="px-4" />
+				<ProfileForm />
 			</DialogContent>
 		</Dialog>
 	);
@@ -75,7 +68,10 @@ export default function DrawerResponsiveDialog() {
 
 function ProfileForm({ className }: React.ComponentProps<"form">) {
 	return (
-		<form className={cn("grid items-start gap-6", className)}>
+		<form
+			onSubmit={(e) => e.preventDefault()}
+			className={cn("grid items-start gap-6", className)}
+		>
 			<div className="grid gap-3">
 				<Label htmlFor="responsive-email">Email</Label>
 				<Input
@@ -93,7 +89,9 @@ function ProfileForm({ className }: React.ComponentProps<"form">) {
 					defaultValue="@0xMaqed"
 				/>
 			</div>
-			<Button type="submit">Save changes</Button>
+			<Button className="w-fit justify-self-end" type="submit">
+				Save changes
+			</Button>
 		</form>
 	);
 }

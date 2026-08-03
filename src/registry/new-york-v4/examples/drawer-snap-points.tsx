@@ -17,7 +17,7 @@ const SNAP_POINTS = ["31rem", 1];
 export default function DrawerSnapPoints() {
 	return (
 		<Drawer snapPoints={SNAP_POINTS} showSwipeHandle>
-			<DrawerTrigger render={<Button variant="tertiary" />}>
+			<DrawerTrigger render={<Button variant="secondary" />}>
 				Open Snap Drawer
 			</DrawerTrigger>
 			<DrawerContent>

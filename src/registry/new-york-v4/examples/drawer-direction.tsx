@@ -36,7 +36,7 @@ export default function DrawerDirection() {
 		<div className="flex flex-wrap gap-2">
 			{sides.map((side) => (
 				<Drawer key={side.direction} swipeDirection={side.direction}>
-					<DrawerTrigger render={<Button variant="tertiary" />}>
+					<DrawerTrigger render={<Button variant="secondary" />}>
 						{side.label}
 					</DrawerTrigger>
 					<DrawerContent>
@@ -51,7 +51,9 @@ export default function DrawerDirection() {
 							<div className="size-full rounded-2xl bg-muted group-data-[swipe-axis=x]/drawer-content:size-full group-data-[swipe-axis=y]/drawer-content:h-64 group-data-[swipe-axis=y]/drawer-content:w-full" />
 						</div>
 						<DrawerFooter>
-							<DrawerClose render={<Button />}>Close</DrawerClose>
+							<DrawerClose render={<Button className="secondary" />}>
+								Close
+							</DrawerClose>
 						</DrawerFooter>
 					</DrawerContent>
 				</Drawer>

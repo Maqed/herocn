@@ -1186,6 +1186,7 @@ export const examples: Registry["items"] = [
 		registryDependencies: [
 			getRegistryItemInstallationAlias("button"),
 			getRegistryItemInstallationAlias("drawer"),
+			getRegistryItemInstallationAlias("surface"),
 		],
 		files: [
 			{

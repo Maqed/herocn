@@ -16,7 +16,7 @@ export default function DrawerOverlayVariant() {
 	return (
 		<div className="flex flex-wrap gap-2">
 			<Drawer>
-				<DrawerTrigger render={<Button variant="tertiary" />}>
+				<DrawerTrigger render={<Button variant="secondary" />}>
 					Opaque
 				</DrawerTrigger>
 				<DrawerContent overlayVariant="opaque">
@@ -28,14 +28,14 @@ export default function DrawerOverlayVariant() {
 						</DrawerDescription>
 					</DrawerHeader>
 					<DrawerFooter>
-						<DrawerClose render={<Button variant="tertiary" />}>
+						<DrawerClose render={<Button variant="secondary" />}>
 							Close
 						</DrawerClose>
 					</DrawerFooter>
 				</DrawerContent>
 			</Drawer>
 			<Drawer>
-				<DrawerTrigger render={<Button variant="tertiary" />}>
+				<DrawerTrigger render={<Button variant="secondary" />}>
 					Blur
 				</DrawerTrigger>
 				<DrawerContent overlayVariant="blur">
@@ -46,14 +46,14 @@ export default function DrawerOverlayVariant() {
 						</DrawerDescription>
 					</DrawerHeader>
 					<DrawerFooter>
-						<DrawerClose render={<Button variant="tertiary" />}>
+						<DrawerClose render={<Button variant="secondary" />}>
 							Close
 						</DrawerClose>
 					</DrawerFooter>
 				</DrawerContent>
 			</Drawer>
 			<Drawer>
-				<DrawerTrigger render={<Button variant="tertiary" />}>
+				<DrawerTrigger render={<Button variant="secondary" />}>
 					Transparent
 				</DrawerTrigger>
 				<DrawerContent overlayVariant="transparent">
@@ -65,7 +65,7 @@ export default function DrawerOverlayVariant() {
 						</DrawerDescription>
 					</DrawerHeader>
 					<DrawerFooter>
-						<DrawerClose render={<Button variant="tertiary" />}>
+						<DrawerClose render={<Button variant="secondary" />}>
 							Close
 						</DrawerClose>
 					</DrawerFooter>

@@ -15,7 +15,7 @@ import {
 export default function DrawerSwipeHandle() {
 	return (
 		<Drawer showSwipeHandle>
-			<DrawerTrigger render={<Button variant="tertiary" />}>
+			<DrawerTrigger render={<Button variant="secondary" />}>
 				Open Drawer
 			</DrawerTrigger>
 			<DrawerContent>

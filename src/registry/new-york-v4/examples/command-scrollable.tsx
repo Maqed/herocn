@@ -45,11 +45,7 @@ export default function CommandManyItems() {
 
 	return (
 		<div className="flex flex-col gap-4">
-			<Button
-				onClick={() => setOpen(true)}
-				variant="tertiary"
-				className="w-fit"
-			>
+			<Button onClick={() => setOpen(true)} variant="outline" className="w-fit">
 				Open Menu
 			</Button>
 			<CommandDialog open={open} onOpenChange={setOpen}>

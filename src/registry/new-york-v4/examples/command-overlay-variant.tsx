@@ -22,21 +22,21 @@ export default function CommandOverlayVariant() {
 		<div className="flex flex-wrap gap-2">
 			<Button
 				onClick={() => setOpenOpaque(true)}
-				variant="tertiary"
+				variant="outline"
 				className="w-fit"
 			>
 				Opaque
 			</Button>
 			<Button
 				onClick={() => setOpenBlur(true)}
-				variant="tertiary"
+				variant="outline"
 				className="w-fit"
 			>
 				Blur
 			</Button>
 			<Button
 				onClick={() => setOpenTransparent(true)}
-				variant="tertiary"
+				variant="outline"
 				className="w-fit"
 			>
 				Transparent

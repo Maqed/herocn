@@ -19,10 +19,10 @@ export default function DialogDemo() {
 	return (
 		<Dialog>
 			<form>
-				<DialogTrigger render={<Button variant="tertiary" />}>
+				<DialogTrigger render={<Button variant="secondary" />}>
 					Open Dialog
 				</DialogTrigger>
-				<DialogContent className="sm:max-w-sm">
+				<DialogContent>
 					<DialogHeader>
 						<DialogTitle>Edit profile</DialogTitle>
 						<DialogDescription>
@@ -51,7 +51,7 @@ export default function DialogDemo() {
 						</Field>
 					</FieldGroup>
 					<DialogFooter>
-						<DialogClose render={<Button variant="tertiary" />}>
+						<DialogClose render={<Button variant="secondary" />}>
 							Cancel
 						</DialogClose>
 						<Button type="submit">Save changes</Button>

@@ -17,10 +17,10 @@ import { Label } from "@/registry/new-york-v4/ui/label";
 export default function DialogCloseButton() {
 	return (
 		<Dialog>
-			<DialogTrigger render={<Button variant="tertiary" />}>
+			<DialogTrigger render={<Button variant="secondary" />}>
 				Share
 			</DialogTrigger>
-			<DialogContent className="sm:max-w-md">
+			<DialogContent>
 				<DialogHeader>
 					<DialogTitle>Share link</DialogTitle>
 					<DialogDescription>
@@ -40,8 +40,10 @@ export default function DialogCloseButton() {
 						/>
 					</div>
 				</div>
-				<DialogFooter className="sm:justify-start">
-					<DialogClose render={<Button type="button" />}>Close</DialogClose>
+				<DialogFooter>
+					<DialogClose render={<Button variant="secondary" type="button" />}>
+						Close
+					</DialogClose>
 				</DialogFooter>
 			</DialogContent>
 		</Dialog>

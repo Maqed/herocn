@@ -14,10 +14,10 @@ export default function DialogOverlayVariant() {
 	return (
 		<div className="flex flex-wrap gap-2">
 			<Dialog>
-				<DialogTrigger render={<Button variant="tertiary" />}>
+				<DialogTrigger render={<Button variant="secondary" />}>
 					Opaque
 				</DialogTrigger>
-				<DialogContent overlayVariant="opaque" className="sm:max-w-sm">
+				<DialogContent overlayVariant="opaque">
 					<DialogHeader>
 						<DialogTitle>Opaque overlay</DialogTitle>
 						<DialogDescription>
@@ -28,10 +28,10 @@ export default function DialogOverlayVariant() {
 				</DialogContent>
 			</Dialog>
 			<Dialog>
-				<DialogTrigger render={<Button variant="tertiary" />}>
+				<DialogTrigger render={<Button variant="secondary" />}>
 					Blur
 				</DialogTrigger>
-				<DialogContent overlayVariant="blur" className="sm:max-w-sm">
+				<DialogContent overlayVariant="blur">
 					<DialogHeader>
 						<DialogTitle>Blurred overlay</DialogTitle>
 						<DialogDescription>
@@ -41,10 +41,10 @@ export default function DialogOverlayVariant() {
 				</DialogContent>
 			</Dialog>
 			<Dialog>
-				<DialogTrigger render={<Button variant="tertiary" />}>
+				<DialogTrigger render={<Button variant="secondary" />}>
 					Transparent
 				</DialogTrigger>
-				<DialogContent overlayVariant="transparent" className="sm:max-w-sm">
+				<DialogContent overlayVariant="transparent">
 					<DialogHeader>
 						<DialogTitle>Transparent overlay</DialogTitle>
 						<DialogDescription>

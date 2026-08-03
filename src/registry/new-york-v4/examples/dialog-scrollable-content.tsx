@@ -13,7 +13,7 @@ import {
 export default function DialogScrollableContent() {
 	return (
 		<Dialog>
-			<DialogTrigger render={<Button variant="tertiary" />}>
+			<DialogTrigger render={<Button variant="secondary" />}>
 				Scrollable Content
 			</DialogTrigger>
 			<DialogContent>

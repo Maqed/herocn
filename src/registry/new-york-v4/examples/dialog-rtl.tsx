@@ -67,13 +67,12 @@ export default function DialogRtl() {
 		<div lang={language} dir={dir}>
 			<Dialog>
 				<form>
-					<DialogTrigger render={<Button variant="tertiary" />}>
+					<DialogTrigger render={<Button variant="secondary" />}>
 						{t.openDialog}
 					</DialogTrigger>
 					<DialogContent
 						dir={dir}
 						data-lang={dir === "rtl" ? language : undefined}
-						className="sm:max-w-sm"
 					>
 						<DialogHeader>
 							<DialogTitle>{t.editProfile}</DialogTitle>
@@ -100,7 +99,7 @@ export default function DialogRtl() {
 							</Field>
 						</FieldGroup>
 						<DialogFooter>
-							<DialogClose render={<Button variant="tertiary" />}>
+							<DialogClose render={<Button variant="secondary" />}>
 								{t.cancel}
 							</DialogClose>
 							<Button type="submit">{t.saveChanges}</Button>

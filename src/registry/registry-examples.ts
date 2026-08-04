@@ -3540,6 +3540,20 @@ export const examples: Registry["items"] = [
 		],
 	},
 	{
+		name: "dialog-nested",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("dialog"),
+		],
+		files: [
+			{
+				path: "examples/dialog-nested.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
 		name: "dialog-overlay-variant",
 		type: "registry:example",
 		registryDependencies: [

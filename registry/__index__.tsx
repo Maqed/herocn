@@ -5399,6 +5399,22 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "dialog-nested": {
+    name: "dialog-nested",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/dialog-nested.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/dialog-nested.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "dialog-overlay-variant": {
     name: "dialog-overlay-variant",
     type: "registry:example",

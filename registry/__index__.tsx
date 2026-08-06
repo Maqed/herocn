@@ -391,6 +391,22 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "questionnaire": {
+    name: "questionnaire",
+    type: "registry:ui",
+    dependencies: ["@shadcn/react","lucide-react"],
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json"],
+    files: [{
+      path: "src/registry/new-york-v4/ui/questionnaire.tsx",
+      type: "registry:ui"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/questionnaire.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "tooltip": {
     name: "tooltip",
     type: "registry:ui",
@@ -8195,6 +8211,230 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toast-promise.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "questionnaire-demo": {
+    name: "questionnaire-demo",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/questionnaire-demo.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/questionnaire-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "questionnaire-multiple": {
+    name: "questionnaire-multiple",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/questionnaire-multiple.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/questionnaire-multiple.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "questionnaire-freeform": {
+    name: "questionnaire-freeform",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/questionnaire-freeform.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/questionnaire-freeform.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "questionnaire-skip": {
+    name: "questionnaire-skip",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/questionnaire-skip.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/questionnaire-skip.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "questionnaire-shortcuts": {
+    name: "questionnaire-shortcuts",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/native-select.json","https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/questionnaire-shortcuts.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/questionnaire-shortcuts.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "questionnaire-validation": {
+    name: "questionnaire-validation",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/card.json","https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/questionnaire-validation.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/questionnaire-validation.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "questionnaire-controlled": {
+    name: "questionnaire-controlled",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/questionnaire-controlled.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/questionnaire-controlled.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "questionnaire-resume": {
+    name: "questionnaire-resume",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/questionnaire-resume.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/questionnaire-resume.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "questionnaire-conditional": {
+    name: "questionnaire-conditional",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/questionnaire-conditional.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/questionnaire-conditional.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "questionnaire-navigation-state": {
+    name: "questionnaire-navigation-state",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/questionnaire-navigation-state.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/questionnaire-navigation-state.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "questionnaire-progress": {
+    name: "questionnaire-progress",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/questionnaire-progress.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/questionnaire-progress.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "questionnaire-animated": {
+    name: "questionnaire-animated",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/questionnaire-animated.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/questionnaire-animated.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "questionnaire-card": {
+    name: "questionnaire-card",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/card.json","https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/questionnaire-card.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/questionnaire-card.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "questionnaire-dialog": {
+    name: "questionnaire-dialog",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json","https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
+    files: [{
+      path: "src/registry/new-york-v4/examples/questionnaire-dialog.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/questionnaire-dialog.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

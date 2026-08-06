@@ -1044,6 +1044,49 @@
       }
     },
     {
+      "name": "questionnaire",
+      "type": "registry:ui",
+      "dependencies": [
+        "@shadcn/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/questionnaire.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "--default": "oklch(94% 0.001 286.375)",
+          "--primary-soft": "color-mix(in oklab, var(--primary) 15%, transparent)"
+        },
+        "dark": {
+          "--default": "oklch(27.4% 0.006 286.033)",
+          "--primary-soft": "color-mix(in oklab, var(--primary) 15%, transparent)"
+        },
+        "theme": {
+          "--color-default": "var(--default)",
+          "--color-destructive": "var(--destructive)",
+          "--color-primary-soft": "var(--primary-soft)"
+        }
+      },
+      "css": {
+        "@utility focus-field-ring": {
+          "@apply ring-2 ring-ring ring-offset-0 outline-none": {}
+        },
+        "@utility invalid-field-ring": {
+          "@apply outline-1 outline-destructive outline-solid": {}
+        },
+        "@utility invalid-field-ring-focus": {
+          "@apply ring-2 outline-none ring-destructive ring-offset-0": {}
+        }
+      }
+    },
+    {
       "name": "tooltip",
       "type": "registry:ui",
       "dependencies": [
@@ -8253,6 +8296,208 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/toast-promise.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "questionnaire-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/questionnaire.json",
+        "https://herocn.dev/r/toast.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/questionnaire-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "questionnaire-multiple",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/questionnaire.json",
+        "https://herocn.dev/r/toast.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/questionnaire-multiple.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "questionnaire-freeform",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/questionnaire.json",
+        "https://herocn.dev/r/toast.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/questionnaire-freeform.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "questionnaire-skip",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/questionnaire.json",
+        "https://herocn.dev/r/toast.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/questionnaire-skip.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "questionnaire-shortcuts",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/native-select.json",
+        "https://herocn.dev/r/questionnaire.json",
+        "https://herocn.dev/r/toast.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/questionnaire-shortcuts.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "questionnaire-validation",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/card.json",
+        "https://herocn.dev/r/questionnaire.json",
+        "https://herocn.dev/r/toast.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/questionnaire-validation.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "questionnaire-controlled",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/questionnaire.json",
+        "https://herocn.dev/r/toast.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/questionnaire-controlled.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "questionnaire-resume",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/questionnaire.json",
+        "https://herocn.dev/r/toast.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/questionnaire-resume.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "questionnaire-conditional",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/questionnaire.json",
+        "https://herocn.dev/r/toast.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/questionnaire-conditional.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "questionnaire-navigation-state",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/questionnaire.json",
+        "https://herocn.dev/r/toast.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/questionnaire-navigation-state.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "questionnaire-progress",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/questionnaire.json",
+        "https://herocn.dev/r/toast.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/questionnaire-progress.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "questionnaire-animated",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/questionnaire.json",
+        "https://herocn.dev/r/toast.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/questionnaire-animated.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "questionnaire-card",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/card.json",
+        "https://herocn.dev/r/questionnaire.json",
+        "https://herocn.dev/r/toast.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/questionnaire-card.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "questionnaire-dialog",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/button.json",
+        "https://herocn.dev/r/dialog.json",
+        "https://herocn.dev/r/questionnaire.json",
+        "https://herocn.dev/r/toast.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/questionnaire-dialog.tsx",
           "type": "registry:example"
         }
       ]

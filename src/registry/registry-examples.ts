@@ -5804,4 +5804,206 @@ export const examples: Registry["items"] = [
 			},
 		],
 	},
+	{
+		name: "questionnaire-demo",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("questionnaire"),
+			getRegistryItemInstallationAlias("toast"),
+		],
+		files: [
+			{
+				path: "examples/questionnaire-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "questionnaire-multiple",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("questionnaire"),
+			getRegistryItemInstallationAlias("toast"),
+		],
+		files: [
+			{
+				path: "examples/questionnaire-multiple.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "questionnaire-freeform",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("questionnaire"),
+			getRegistryItemInstallationAlias("toast"),
+		],
+		files: [
+			{
+				path: "examples/questionnaire-freeform.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "questionnaire-skip",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("questionnaire"),
+			getRegistryItemInstallationAlias("toast"),
+		],
+		files: [
+			{
+				path: "examples/questionnaire-skip.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "questionnaire-shortcuts",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("native-select"),
+			getRegistryItemInstallationAlias("questionnaire"),
+			getRegistryItemInstallationAlias("toast"),
+		],
+		files: [
+			{
+				path: "examples/questionnaire-shortcuts.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "questionnaire-validation",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("card"),
+			getRegistryItemInstallationAlias("questionnaire"),
+			getRegistryItemInstallationAlias("toast"),
+		],
+		files: [
+			{
+				path: "examples/questionnaire-validation.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "questionnaire-controlled",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("questionnaire"),
+			getRegistryItemInstallationAlias("toast"),
+		],
+		files: [
+			{
+				path: "examples/questionnaire-controlled.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "questionnaire-resume",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("questionnaire"),
+			getRegistryItemInstallationAlias("toast"),
+		],
+		files: [
+			{
+				path: "examples/questionnaire-resume.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "questionnaire-conditional",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("questionnaire"),
+			getRegistryItemInstallationAlias("toast"),
+		],
+		files: [
+			{
+				path: "examples/questionnaire-conditional.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "questionnaire-navigation-state",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("questionnaire"),
+			getRegistryItemInstallationAlias("toast"),
+		],
+		files: [
+			{
+				path: "examples/questionnaire-navigation-state.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "questionnaire-progress",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("questionnaire"),
+			getRegistryItemInstallationAlias("toast"),
+		],
+		files: [
+			{
+				path: "examples/questionnaire-progress.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "questionnaire-animated",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("questionnaire"),
+			getRegistryItemInstallationAlias("toast"),
+		],
+		files: [
+			{
+				path: "examples/questionnaire-animated.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "questionnaire-card",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("card"),
+			getRegistryItemInstallationAlias("questionnaire"),
+			getRegistryItemInstallationAlias("toast"),
+		],
+		files: [
+			{
+				path: "examples/questionnaire-card.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "questionnaire-dialog",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("dialog"),
+			getRegistryItemInstallationAlias("questionnaire"),
+			getRegistryItemInstallationAlias("toast"),
+		],
+		files: [
+			{
+				path: "examples/questionnaire-dialog.tsx",
+				type: "registry:example",
+			},
+		],
+	},
 ];

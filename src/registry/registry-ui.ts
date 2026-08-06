@@ -522,6 +522,39 @@ export const ui: Registry["items"] = [
 		},
 	},
 	{
+		name: "questionnaire",
+		type: "registry:ui",
+		dependencies: ["@shadcn/react", "lucide-react"],
+		registryDependencies: [getRegistryItemInstallationAlias("button")],
+		files: [
+			{
+				path: "ui/questionnaire.tsx",
+				type: "registry:ui",
+			},
+		],
+		cssVars: {
+			light: {
+				"--default": cssVars.light["--default"],
+				"--primary-soft": cssVars.light["--primary-soft"],
+			},
+			dark: {
+				"--default": cssVars.dark["--default"],
+				"--primary-soft": cssVars.dark["--primary-soft"],
+			},
+			theme: {
+				"--color-default": cssVars.theme["--color-default"],
+				"--color-destructive": cssVars.theme["--color-destructive"],
+				"--color-primary-soft": cssVars.theme["--color-primary-soft"],
+			},
+		},
+		css: {
+			"@utility focus-field-ring": css["@utility focus-field-ring"],
+			"@utility invalid-field-ring": css["@utility invalid-field-ring"],
+			"@utility invalid-field-ring-focus":
+				css["@utility invalid-field-ring-focus"],
+		},
+	},
+	{
 		name: "tooltip",
 		type: "registry:ui",
 		dependencies: ["@base-ui/react"],

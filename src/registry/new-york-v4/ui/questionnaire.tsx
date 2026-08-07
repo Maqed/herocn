@@ -199,7 +199,7 @@ function QuestionnaireActions({
 		<div
 			data-slot="questionnaire-actions"
 			className={cn(
-				"grid min-h-11 w-full grid-cols-[minmax(0,1fr)_auto_auto] items-center gap-2 sm:min-h-9",
+				"flex min-h-11 w-full flex-wrap items-center justify-end gap-2 sm:min-h-9",
 				className,
 			)}
 			{...props}
@@ -222,7 +222,7 @@ function QuestionnairePrevious({
 			data-variant={variant}
 			className={cn(
 				buttonVariants({ size, variant }),
-				"col-start-1 row-start-1 min-h-11 justify-self-start sm:min-h-0",
+				"me-auto min-h-11 sm:min-h-0",
 				className,
 			)}
 			{...props}
@@ -247,7 +247,7 @@ function QuestionnaireSkip({
 			data-variant={variant}
 			className={cn(
 				buttonVariants({ size, variant }),
-				"col-start-2 row-start-1 min-h-11 justify-self-end sm:min-h-0",
+				"min-h-11 sm:min-h-0",
 				className,
 			)}
 			{...props}
@@ -272,7 +272,7 @@ function QuestionnaireNext({
 			data-variant={variant}
 			className={cn(
 				buttonVariants({ size, variant }),
-				"col-start-3 row-start-1 min-h-11 justify-self-end sm:min-h-0",
+				"min-h-11 sm:min-h-0",
 				className,
 			)}
 			{...props}
@@ -297,7 +297,7 @@ function QuestionnaireSubmit({
 			data-variant={variant}
 			className={cn(
 				buttonVariants({ size, variant }),
-				"col-start-3 row-start-1 min-h-11 justify-self-end sm:min-h-0",
+				"min-h-11 sm:min-h-0",
 				className,
 			)}
 			{...props}

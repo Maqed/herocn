@@ -107,7 +107,6 @@ export default function QuestionnaireNavigationState() {
 				<QuestionnaireNext
 					className="data-[status=unanswered]:opacity-50"
 					disabled={unanswered}
-					variant="secondary"
 				>
 					Next
 				</QuestionnaireNext>

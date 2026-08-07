@@ -51,7 +51,7 @@ export default function QuestionnaireDialog() {
 
 	return (
 		<Dialog open={open} onOpenChange={setOpen}>
-			<DialogTrigger render={<Button variant="outline" />}>
+			<DialogTrigger render={<Button variant="secondary" />}>
 				Open clarification
 			</DialogTrigger>
 			<DialogContent>

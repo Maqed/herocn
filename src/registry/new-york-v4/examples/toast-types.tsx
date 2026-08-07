@@ -7,7 +7,7 @@ export default function ToastTypes() {
 	return (
 		<div className="flex flex-wrap gap-2">
 			<Button
-				variant="tertiary"
+				variant="secondary"
 				onClick={() => toast.add({ title: "Event has been created." })}
 			>
 				Default

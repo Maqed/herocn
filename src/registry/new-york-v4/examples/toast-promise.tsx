@@ -18,7 +18,7 @@ export default function ToastPromise() {
 	}
 
 	return (
-		<Button variant="tertiary" onClick={showToast}>
+		<Button variant="secondary" onClick={showToast}>
 			Create Event
 		</Button>
 	);

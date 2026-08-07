@@ -18,7 +18,7 @@ export default function ToastAction() {
 	}
 
 	return (
-		<Button variant="tertiary" onClick={showToast}>
+		<Button variant="secondary" onClick={showToast}>
 			Show Toast
 		</Button>
 	);

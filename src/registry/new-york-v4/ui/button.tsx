@@ -13,7 +13,7 @@ const buttonVariants = cva(
 				outline:
 					"border border-border hover:bg-muted hover:text-foreground active:bg-muted active:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground group-data-[variant=secondary]/input-group:text-foreground dark:active:bg-muted/50 dark:hover:bg-muted/50",
 				secondary:
-					"bg-default text-primary hover:bg-default/80 active:bg-default/80 aria-expanded:bg-default/80",
+					"bg-default text-primary-soft-foreground hover:bg-default/80 active:bg-default/80 aria-expanded:bg-default/80",
 				tertiary:
 					"bg-default text-default-foreground hover:bg-default/80 active:bg-default/80 aria-expanded:bg-default/80",
 				ghost:

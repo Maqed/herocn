@@ -27,11 +27,11 @@ export const cssVars = {
 		"--chart-3": "oklch(0.546 0.245 262.881)",
 		"--chart-4": "oklch(0.488 0.243 264.376)",
 		"--chart-5": "oklch(0.424 0.199 265.638)",
-		"--sidebar": "var(--surface)",
+		"--sidebar": "oklch(0.9702 0 0)",
 		"--sidebar-foreground": "oklch(0.141 0.005 285.823)",
 		"--sidebar-primary": "oklch(0.6204 0.195 253.83)",
 		"--sidebar-primary-foreground": "oklch(0.97 0.014 254.604)",
-		"--sidebar-accent": "oklch(0.93 0.001 286.375);",
+		"--sidebar-accent": "oklch(0.93 0.001 286.375)",
 		"--sidebar-accent-foreground": "oklch(0.21 0.006 285.885)",
 		"--sidebar-border": "oklch(0.92 0.004 286.32)",
 		"--sidebar-ring": "var(--foreground)",
@@ -86,7 +86,7 @@ export const cssVars = {
 		"--chart-3": "oklch(0.546 0.245 262.881)",
 		"--chart-4": "oklch(0.488 0.243 264.376)",
 		"--chart-5": "oklch(0.424 0.199 265.638)",
-		"--sidebar": "var(--surface)",
+		"--sidebar": "oklch(0.1228 0.0029 285.97)",
 		"--sidebar-foreground": "oklch(0.985 0 0)",
 		"--sidebar-primary": "oklch(0.6204 0.195 253.83)",
 		"--sidebar-primary-foreground": "oklch(0.97 0.014 254.604)",
@@ -104,21 +104,22 @@ export const cssVars = {
 
 		"--default-soft": "color-mix(in oklab, var(--default) 50%, transparent)",
 		"--default-soft-foreground": "var(--default-foreground)",
-		"--primary-soft": "color-mix(in oklab, var(--primary) 15%, transparent)",
+		"--primary-soft": "color-mix(in oklab, var(--primary) 12%, transparent)",
 		"--primary-soft-foreground":
-			"color-mix(in oklab, var(--primary) 70%, var(--foreground) 30%)",
+			"color-mix(in oklab, var(--primary) 80%, var(--foreground) 30%)",
 		"--destructive-soft":
 			"color-mix(in oklab, var(--destructive) 15%, transparent)",
 		"--destructive-soft-foreground":
-			"color-mix(in oklab, var(--destructive) 70%, var(--foreground) 40%)",
-		"--warning-soft": "color-mix(in oklab, var(--warning) 15%, transparent)",
+			"color-mix(in oklab, var(--destructive) 80%, var(--foreground) 30%)",
+		"--warning-soft": "color-mix(in oklab, var(--warning) 12%, transparent)",
 		"--warning-soft-foreground":
-			"color-mix(in oklab, var(--warning) 80%, var(--foreground) 70%)",
-		"--success-soft": "color-mix(in oklab, var(--success) 15%, transparent)",
+			"color-mix(in oklab, var(--warning) 80%, var(--foreground) 30%)",
+		"--success-soft": "color-mix(in oklab, var(--success) 12%, transparent)",
 		"--success-soft-foreground":
-			"color-mix(in oklab, var(--success) 80%, var(--foreground) 60%)",
+			"color-mix(in oklab, var(--success) 80%, var(--foreground) 30%)",
 	},
 	theme: {
+		"--font-sans": '"Inter", sans-serif',
 		"--color-sidebar-ring": "var(--sidebar-ring)",
 		"--color-sidebar-border": "var(--sidebar-border)",
 		"--color-sidebar-accent-foreground": "var(--sidebar-accent-foreground)",

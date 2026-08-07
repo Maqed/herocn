@@ -133,29 +133,29 @@
 	/* herocn soft colors */
 	--default-soft: color-mix(in oklab, var(--default) 50%, transparent);
 	--default-soft-foreground: var(--default-foreground);
-	--primary-soft: color-mix(in oklab, var(--primary) 15%, transparent);
+	--primary-soft: color-mix(in oklab, var(--primary) 12%, transparent);
 	--primary-soft-foreground: color-mix(
 		in oklab,
-		var(--primary) 70%,
+		var(--primary) 80%,
 		var(--foreground) 30%
 	);
 	--destructive-soft: color-mix(in oklab, var(--destructive) 15%, transparent);
 	--destructive-soft-foreground: color-mix(
 		in oklab,
-		var(--destructive) 70%,
-		var(--foreground) 40%
+		var(--destructive) 80%,
+		var(--foreground) 30%
 	);
-	--warning-soft: color-mix(in oklab, var(--warning) 15%, transparent);
+	--warning-soft: color-mix(in oklab, var(--warning) 12%, transparent);
 	--warning-soft-foreground: color-mix(
 		in oklab,
 		var(--warning) 80%,
-		var(--foreground) 70%
+		var(--foreground) 30%
 	);
-	--success-soft: color-mix(in oklab, var(--success) 15%, transparent);
+	--success-soft: color-mix(in oklab, var(--success) 12%, transparent);
 	--success-soft-foreground: color-mix(
 		in oklab,
 		var(--success) 80%,
-		var(--foreground) 60%
+		var(--foreground) 30%
 	);
 }
 

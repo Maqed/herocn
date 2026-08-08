@@ -41,6 +41,7 @@ function ToastViewport({
 	gap = 8,
 	scaleFactor = 0.05,
 	style,
+	onMouseLeave,
 	...props
 }: ToastPrimitive.Viewport.Props & {
 	placement?: ToastPlacement;
@@ -56,6 +57,16 @@ function ToastViewport({
 				viewportPlacements[placement],
 				className,
 			)}
+			onMouseLeave={(event) => {
+				onMouseLeave?.(event);
+				// On touch devices the browser fires a stray `mouseleave` on the
+				// viewport right after a tap completes, collapsing the stack the
+				// tap just expanded. Block the default collapse on hover-less
+				// devices; tapping outside the viewport still collapses it.
+				if (window.matchMedia("(hover: none)").matches) {
+					event.preventBaseUIHandler?.();
+				}
+			}}
 			style={
 				{
 					"--toast-width": typeof width === "number" ? `${width}px` : width,

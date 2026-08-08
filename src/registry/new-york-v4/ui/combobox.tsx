@@ -261,7 +261,7 @@ function ComboboxChips({
 			data-slot="combobox-chips"
 			data-variant={variant}
 			className={cn(
-				"flex min-h-9 flex-wrap items-center gap-1.5 rounded-xl border border-input bg-input bg-clip-padding px-2.5 py-1.5 text-sm shadow-xs outline-none transition-all placeholder:text-muted-foreground md:px-3 md:py-2",
+				"flex min-h-9 flex-wrap items-center gap-1.5 rounded-xl border border-input bg-input bg-clip-padding px-2.5 py-1.5 text-sm shadow-xs outline-none transition-[background-color,box-shadow,opacity,filter] placeholder:text-muted-foreground md:px-3 md:py-2",
 				"dark:brightness-100",
 				"hover:not-focus-within:brightness-97 dark:hover:not-focus-within:brightness-110",
 				"focus-within:focus-field-ring",

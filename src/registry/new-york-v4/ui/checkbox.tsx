@@ -12,7 +12,7 @@ function Checkbox({
 		<CheckboxPrimitive.Root
 			data-slot="checkbox"
 			className={cn(
-				"group peer focus-visible:focus-ring aria-invalid:not-data-checked:invalid-field-ring relative flex size-4 shrink-0 items-center justify-center rounded-md border border-none bg-input text-primary-foreground shadow-xs outline-none transition-all duration-200 after:absolute after:-inset-x-3 after:-inset-y-2 disabled:cursor-not-allowed disabled:opacity-50 group-has-disabled/field:opacity-50 aria-invalid:text-destructive-foreground data-checked:bg-primary aria-invalid:data-checked:bg-destructive dark:data-checked:bg-primary",
+				"group peer focus-visible:focus-ring aria-invalid:not-data-checked:invalid-field-ring relative flex size-4 shrink-0 items-center justify-center rounded-md border border-none bg-input text-primary-foreground shadow-xs outline-none transition-[color,background-color,box-shadow,opacity] duration-200 after:absolute after:-inset-x-3 after:-inset-y-2 disabled:cursor-not-allowed disabled:opacity-50 group-has-disabled/field:opacity-50 aria-invalid:text-destructive-foreground data-checked:bg-primary aria-invalid:data-checked:bg-destructive dark:data-checked:bg-primary",
 				variant === "secondary" && "bg-default shadow-none",
 				className,
 			)}

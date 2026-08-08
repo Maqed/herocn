@@ -34,7 +34,7 @@ function AlertDialogOverlay({
 			data-slot="alert-dialog-overlay"
 			data-variant={variant}
 			className={cn(
-				"data-open:fade-in-0 data-closed:fade-out-0 fixed inset-0 isolate z-50 duration-100 data-closed:animate-out data-open:animate-in data-[variant=blur]:bg-black/50 data-[variant=opaque]:bg-black/50 data-[variant=blur]:backdrop-blur-md dark:data-[variant=blur]:bg-black/60 dark:data-[variant=opaque]:bg-black/60",
+				"fixed inset-0 isolate z-50 opacity-100 transition-opacity duration-150 ease-[cubic-bezier(0.22,1,0.36,1)] data-[variant=blur]:bg-black/50 data-[variant=opaque]:bg-black/50 data-ending-style:opacity-0 data-starting-style:opacity-0 data-[variant=blur]:backdrop-blur-md data-ending-style:duration-100 dark:data-[variant=blur]:bg-black/60 dark:data-[variant=opaque]:bg-black/60",
 				className,
 			)}
 			{...props}
@@ -58,7 +58,7 @@ function AlertDialogContent({
 				data-slot="alert-dialog-content"
 				data-size={size}
 				className={cn(
-					"group/alert-dialog-content data-open:fade-in-0 data-open:zoom-in-95 data-closed:fade-out-0 data-closed:zoom-out-95 fixed start-1/2 top-1/2 z-50 flex w-full -translate-x-1/2 -translate-y-1/2 flex-col rounded-3xl bg-popover p-6 text-popover-foreground outline-none ring-1 ring-foreground/5 duration-100 data-[size=default]:max-w-xs data-[size=sm]:max-w-xs data-closed:animate-out data-open:animate-in data-[size=default]:sm:max-w-md rtl:translate-x-1/2",
+					"group/alert-dialog-content fixed start-1/2 top-1/2 z-50 flex w-full -translate-x-1/2 -translate-y-1/2 flex-col rounded-3xl bg-popover p-6 text-popover-foreground outline-none ring-1 ring-foreground/5 transition-[opacity,scale,translate] duration-250 ease-[cubic-bezier(0.22,1,0.36,1)] data-[size=default]:max-w-xs data-[size=sm]:max-w-xs data-starting-style:translate-y-[calc(-50%+0.25rem)] data-ending-style:scale-[0.95] data-starting-style:scale-[1.05] data-ending-style:opacity-0 data-starting-style:opacity-0 data-ending-style:duration-100 data-[size=default]:sm:max-w-md rtl:translate-x-1/2",
 					className,
 				)}
 				{...props}

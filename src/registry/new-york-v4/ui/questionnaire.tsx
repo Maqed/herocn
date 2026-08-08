@@ -164,7 +164,7 @@ function QuestionnaireInput({
 			data-slot="questionnaire-input"
 			data-variant={variant}
 			className={cn(
-				"w-full min-w-0 rounded-xl bg-input px-2.5 py-1.5 text-sm shadow-xs outline-none transition-all placeholder:text-muted-foreground md:px-3 md:py-2 dark:brightness-100",
+				"w-full min-w-0 rounded-xl bg-input px-2.5 py-1.5 text-sm shadow-xs outline-none transition-[background-color,box-shadow,opacity,filter] placeholder:text-muted-foreground md:px-3 md:py-2 dark:brightness-100",
 				"data-[variant=secondary]:bg-default data-[variant=secondary]:shadow-none not-dark:data-[variant=secondary]:brightness-100",
 				"hover:not-focus-visible:brightness-97 hover:not-focus-visible:data-[variant=secondary]:bg-default not-dark:hover:not-focus-visible:data-[variant=secondary]:brightness-96 dark:hover:not-focus-visible:brightness-110",
 				"not-aria-invalid:focus-visible:focus-field-ring not-aria-invalid:focus-visible:ring-ring",

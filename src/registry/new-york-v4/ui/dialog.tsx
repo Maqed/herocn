@@ -34,7 +34,7 @@ function DialogOverlay({
 			data-slot="dialog-overlay"
 			data-variant={variant}
 			className={cn(
-				"data-open:fade-in-0 data-closed:fade-out-0 fixed inset-0 isolate z-50 duration-100 data-closed:animate-out data-open:animate-in data-[variant=blur]:bg-black/50 data-[variant=opaque]:bg-black/50 data-[variant=blur]:backdrop-blur-md dark:data-[variant=blur]:bg-black/60 dark:data-[variant=opaque]:bg-black/60",
+				"fixed inset-0 isolate z-50 opacity-100 transition-opacity duration-150 ease-[cubic-bezier(0.22,1,0.36,1)] data-[variant=blur]:bg-black/50 data-[variant=opaque]:bg-black/50 data-ending-style:opacity-0 data-starting-style:opacity-0 data-[variant=blur]:backdrop-blur-md data-ending-style:duration-100 dark:data-[variant=blur]:bg-black/60 dark:data-[variant=opaque]:bg-black/60",
 				className,
 			)}
 			{...props}
@@ -58,7 +58,7 @@ function DialogContent({
 			<DialogPrimitive.Popup
 				data-slot="dialog-content"
 				className={cn(
-					"data-open:fade-in-0 data-open:zoom-in-95 data-closed:fade-out-0 data-closed:zoom-out-95 fixed start-1/2 top-[calc(50%-0.75rem*var(--nested-dialogs,0))] z-50 flex w-full max-w-[calc(100%-2rem)] -translate-x-1/2 -translate-y-1/2 scale-[calc(1-0.04*var(--nested-dialogs,0))] flex-col gap-5 rounded-3xl bg-popover p-6 text-popover-foreground text-sm outline-none ring-1 ring-foreground/5 duration-100 after:pointer-events-none after:absolute after:inset-0 after:rounded-[inherit] after:bg-black/5 after:opacity-0 data-closed:animate-out data-open:animate-in data-nested-dialog-open:after:opacity-100 sm:max-w-md rtl:translate-x-1/2 dark:after:bg-white/10",
+					"fixed start-1/2 top-[calc(50%-0.75rem*var(--nested-dialogs,0))] z-50 flex w-full max-w-[calc(100%-2rem)] -translate-x-1/2 -translate-y-1/2 scale-[calc(1-0.04*var(--nested-dialogs,0))] flex-col gap-5 rounded-3xl bg-popover p-6 text-popover-foreground text-sm outline-none ring-1 ring-foreground/5 transition-[opacity,scale,translate] duration-250 ease-[cubic-bezier(0.22,1,0.36,1)] after:pointer-events-none after:absolute after:inset-0 after:rounded-[inherit] after:bg-black/5 after:opacity-0 data-starting-style:translate-y-[calc(-50%+0.25rem)] data-ending-style:scale-[calc(0.95-0.04*var(--nested-dialogs,0))] data-starting-style:scale-[calc(1.05-0.04*var(--nested-dialogs,0))] data-ending-style:opacity-0 data-starting-style:opacity-0 data-ending-style:duration-100 data-nested-dialog-open:after:opacity-100 sm:max-w-md rtl:translate-x-1/2 dark:after:bg-white/10",
 					className,
 				)}
 				{...props}

@@ -2058,6 +2058,39 @@ export const examples: Registry["items"] = [
 		],
 	},
 	{
+		name: "sidebar-floating",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("sidebar")],
+		files: [
+			{
+				path: "examples/sidebar-floating.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "sidebar-inset",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("sidebar")],
+		files: [
+			{
+				path: "examples/sidebar-inset.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "sidebar-collapsible",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("sidebar")],
+		files: [
+			{
+				path: "examples/sidebar-collapsible.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
 		name: "popover-demo",
 		type: "registry:example",
 		registryDependencies: [

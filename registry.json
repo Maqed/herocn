@@ -4287,6 +4287,45 @@
       ]
     },
     {
+      "name": "sidebar-floating",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/sidebar.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/sidebar-floating.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-inset",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/sidebar.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/sidebar-inset.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-collapsible",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/sidebar.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/sidebar-collapsible.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "popover-demo",
       "type": "registry:example",
       "registryDependencies": [

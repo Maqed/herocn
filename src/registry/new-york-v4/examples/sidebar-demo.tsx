@@ -13,7 +13,6 @@ import {
 	Folder,
 	Forward,
 	Frame,
-	GalleryVerticalEnd,
 	LogOut,
 	MapIcon,
 	MoreHorizontal,
@@ -75,8 +74,8 @@ const data = {
 	},
 	teams: [
 		{
-			name: "Acme Inc",
-			logo: GalleryVerticalEnd,
+			name: "herocn",
+			logo: HeroLogo,
 			plan: "Enterprise",
 		},
 		{
@@ -141,6 +140,31 @@ const data = {
 		{ name: "Travel", url: "#", icon: MapIcon },
 	],
 };
+
+function HeroLogo(props: React.SVGProps<SVGSVGElement>) {
+	return (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 144 144"
+			width={144}
+			height={144}
+			fill="none"
+			{...props}
+		>
+			<title>herocn Logo</title>
+			<g
+				stroke="currentColor"
+				strokeWidth={16}
+				strokeLinecap="round"
+				strokeLinejoin="round"
+			>
+				<path d="M25 45 L25 80 L55 100 V65 L80 50 V135 L120 120 V35 L80 50 V10 L25 45 Z" />
+				<line x1={120} y1={80} x2={80} y2={125} />
+				<line x1={120} y1={45} x2={80} y2={90} />
+			</g>
+		</svg>
+	);
+}
 
 function TeamSwitcher({
 	teams,

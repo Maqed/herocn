@@ -6,7 +6,6 @@ import {
 	Calendar,
 	ChevronsUpDown,
 	CreditCard,
-	Frame,
 	History,
 	Home,
 	LogOut,
@@ -147,10 +146,29 @@ export default function SidebarInset() {
 								className="data-popup-open:bg-sidebar-accent data-popup-open:text-sidebar-accent-foreground"
 							>
 								<div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
-									<Frame className="size-4" />
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 144 144"
+										width={144}
+										height={144}
+										fill="none"
+										className="size-4"
+									>
+										<title>herocn Logo</title>
+										<g
+											stroke="currentColor"
+											strokeWidth={16}
+											strokeLinecap="round"
+											strokeLinejoin="round"
+										>
+											<path d="M25 45 L25 80 L55 100 V65 L80 50 V135 L120 120 V35 L80 50 V10 L25 45 Z" />
+											<line x1={120} y1={80} x2={80} y2={125} />
+											<line x1={120} y1={45} x2={80} y2={90} />
+										</g>
+									</svg>
 								</div>
 								<div className="grid flex-1 text-left text-sm leading-tight">
-									<span className="truncate font-medium">Acme Inc</span>
+									<span className="truncate font-medium">herocn</span>
 									<span className="truncate text-xs">Enterprise</span>
 								</div>
 							</SidebarMenuButton>

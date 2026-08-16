@@ -36,16 +36,21 @@ const deliveryTimes = [
 	{
 		value: "asap",
 		id: "delivery-rtl-asap",
-		badge: "Fastest",
 		en: {
 			label: "Standard delivery",
 			description: "25–35 min · Driver assigned now",
+			badge: "Fastest",
 		},
 		ar: {
 			label: "توصيل عادي",
 			description: "25–35 دقيقة · تم تعيين السائق الآن",
+			badge: "الأسرع",
 		},
-		he: { label: "משלוח רגיל", description: "25–35 דקות · הנהג שובץ כעת" },
+		he: {
+			label: "משלוח רגיל",
+			description: "25–35 דקות · הנהג שובץ כעת",
+			badge: "המהיר ביותר",
+		},
 	},
 	{
 		value: "5-00",
@@ -179,8 +184,8 @@ export default function DrawerRtl() {
 									<FieldContent>
 										<FieldTitle className="flex items-center gap-2">
 											{time[language]?.label ?? time.en.label}
-											{time.badge ? (
-												<Badge variant="primary">{time.badge}</Badge>
+											{time[language].badge ? (
+												<Badge variant="primary">{time[language].badge}</Badge>
 											) : null}
 										</FieldTitle>
 										<FieldDescription>

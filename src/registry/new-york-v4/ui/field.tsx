@@ -106,7 +106,7 @@ function FieldLabel({
 		<Label
 			data-slot="field-label"
 			className={cn(
-				"group/field-label peer/field-label flex w-fit gap-2 leading-snug has-[>[data-slot=field]]:has-data-checked:border-primary has-[>[data-slot=field]]:has-data-checked:bg-primary/15 has-[>[data-slot=field]]:rounded-2xl has-[>[data-slot=field]]:border has-[>[data-slot=field]]:border-surface has-[>[data-slot=field]]:bg-surface *:data-[slot=field]:px-5 *:data-[slot=field]:py-4 group-data-[disabled=true]/field:opacity-50 dark:has-[>[data-slot=field]]:has-data-checked:bg-primary/10",
+				"group/field-label peer/field-label flex w-fit gap-2 leading-snug has-[>[data-slot=field]]:has-data-checked:border-primary has-[>[data-slot=field]]:has-data-checked:bg-primary/15 has-[>[data-slot=field]]:rounded-2xl has-[>[data-slot=field]]:border has-[>[data-slot=field]]:border-surface has-[>[data-slot=field]]:bg-surface has-[>[data-slot=field]]:transition-[background-color,border-color,opacity,transform] has-[>[data-slot=field]]:duration-200 *:data-[slot=field]:px-5 *:data-[slot=field]:py-4 group-data-[disabled=true]/field:opacity-50 motion-reduce:has-[>[data-slot=field]]:transition-none dark:has-[>[data-slot=field]]:has-data-checked:bg-primary/10",
 				"has-[>[data-slot=field]]:w-full has-[>[data-slot=field]]:flex-col",
 				className,
 			)}

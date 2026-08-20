@@ -253,14 +253,14 @@ When adding new examples for a component, two things must be done:
 Place the example `.tsx` file in:
 
 ```
-src/registry/new-york-v4/examples/{component-name}-{example-name}.tsx
+apps/docs/src/registry/new-york-v4/examples/{component-name}-{example-name}.tsx
 ```
 
-For example: `src/registry/new-york-v4/examples/button-variants.tsx`
+For example: `apps/docs/src/registry/new-york-v4/examples/button-variants.tsx`
 
 ### 2. Register the example
 
-Add an entry to the `examples` array in `src/registry/registry-examples.ts`:
+Add an entry to the `examples` array in `apps/docs/src/registry/registry-examples.ts`:
 
 ```ts
 {
@@ -278,7 +278,7 @@ Add an entry to the `examples` array in `src/registry/registry-examples.ts`:
 
 - `name` must match the `name` prop passed to `<ComponentPreview name="..." />` in the `.mdx` file.
 - `registryDependencies` should list all registry components the example depends on (e.g. `["@herocn/button", "@herocn/avatar"]`).
-- The `path` is relative to `src/registry/new-york-v4/`.
+- The `path` is relative to `apps/docs/src/registry/new-york-v4/`.
 
 ---
 
@@ -303,7 +303,7 @@ The `direction="rtl"` prop activates a language selector toolbar (English / Arab
 Place the file at:
 
 ```
-src/registry/new-york-v4/examples/{component-name}-rtl.tsx
+apps/docs/src/registry/new-york-v4/examples/{component-name}-rtl.tsx
 ```
 
 #### Required pattern
@@ -357,7 +357,7 @@ Key rules:
 
 ### 3. Register the RTL example
 
-Add an entry to `src/registry/registry-examples.ts` with `registryDependencies` that includes all registry components used:
+Add an entry to `apps/docs/src/registry/registry-examples.ts` with `registryDependencies` that includes all registry components used:
 
 ```ts
 {

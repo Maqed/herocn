@@ -1,7 +1,6 @@
 {
-    "tailwindCSS.classFunctions": ["cva", "cn"],
-    "search.exclude": {
-    "public/r/*": true,
-    }
+  "tailwindCSS.classFunctions": ["cva", "cn"],
+  "search.exclude": {
+    "public/r/*": true
   }
-  
+}

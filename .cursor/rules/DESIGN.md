@@ -1,6 +1,6 @@
 # herocn Design System
 
-Design tokens are defined in `theme.css`.
+Design tokens are defined in `apps/docs/src/app/theme.css`.
 
 ---
 
@@ -58,7 +58,7 @@ placeholder:text-muted-foreground transition-all outline-none
 
 ---
 
-## Utilities (defined in `theme.css`)
+## Utilities (defined in `apps/docs/src/app/theme.css`)
 
 | Utility                    | Usage                                        |
 | -------------------------- | -------------------------------------------- |

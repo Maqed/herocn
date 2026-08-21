@@ -6,7 +6,12 @@ type SiteConfigType = {
 		twitter: string;
 		github: string;
 	};
-	navItems: { href: string; label: string; isExternal?: boolean }[];
+	navItems: {
+		href: string;
+		label: string;
+		isExternal?: boolean;
+		notShownInHeader?: boolean;
+	}[];
 };
 
 export const siteConfig: SiteConfigType = {
@@ -25,6 +30,11 @@ export const siteConfig: SiteConfigType = {
 		{
 			href: "/docs/components",
 			label: "Components",
+		},
+		{
+			href: "/docs/mcp",
+			label: "MCP Server",
+			notShownInHeader: true,
 		},
 		{
 			href: "https://herocn.featurebase.app/roadmap",

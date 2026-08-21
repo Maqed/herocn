@@ -35,7 +35,9 @@ export function SiteHeader() {
 						}
 					/>
 					<MainNav
-						items={siteConfig.navItems.filter((item) => !item.isExternal)}
+						items={siteConfig.navItems.filter(
+							(item) => !item.isExternal && !item.notShownInHeader,
+						)}
 						className="hidden lg:flex"
 					/>
 					<div className="ml-auto flex items-center gap-2 md:flex-1 md:justify-end">

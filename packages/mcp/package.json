@@ -1,0 +1,53 @@
+{
+  "name": "@herocn/mcp",
+  "version": "0.1.0",
+  "description": "MCP server for the herocn docs site. Fetches documentation and registry data live from herocn.dev.",
+  "type": "module",
+  "bin": {
+    "herocn-mcp": "dist/index.js"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "herocn",
+    "components",
+    "docs"
+  ],
+  "license": "MIT",
+  "author": "Maqed",
+  "homepage": "https://github.com/Maqed/herocn",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maqed/herocn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Maqed/herocn/issues"
+  },
+  "scripts": {
+    "build": "rm -rf dist && bun build ./src/index.ts --outdir dist --target node --banner '#!/usr/bin/env node' --minify",
+    "dev": "bun --watch ./src/index.ts",
+    "start": "bun ./src/index.ts",
+    "check-types": "tsc --noEmit",
+    "prepublishOnly": "bun run build"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.9",
+    "@herocn/config": "workspace:*",
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "@types/node": "^26.2.0",
+    "typescript": "^7.0.2",
+    "zod": "^4.4.3"
+  }
+}

@@ -10,6 +10,11 @@
       "type": "local",
       "command": ["npx", "lucide-icons-mcp", "--stdio"],
       "enabled": true
+    },
+    "herocn": {
+      "type": "local",
+      "command": ["npx", "-y", "@herocn/mcp@latest"],
+      "enabled": true
     }
   }
 }

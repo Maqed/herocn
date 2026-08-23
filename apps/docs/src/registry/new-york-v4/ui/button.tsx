@@ -13,9 +13,9 @@ const buttonVariants = cva(
 				outline:
 					"border border-border hover:bg-muted hover:text-foreground active:bg-muted active:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground group-data-[variant=secondary]/input-group:text-foreground dark:active:bg-muted/50 dark:hover:bg-muted/50",
 				secondary:
-					"bg-default text-primary-soft-foreground hover:bg-default/80 active:bg-default/80 aria-expanded:bg-default/80",
+					"bg-default text-primary-soft-foreground hover:brightness-95 active:brightness-95 aria-expanded:brightness-95 dark:active:brightness-110 dark:hover:brightness-110",
 				tertiary:
-					"bg-default text-default-foreground hover:bg-default/80 active:bg-default/80 aria-expanded:bg-default/80",
+					"bg-default text-default-foreground hover:brightness-95 active:brightness-95 aria-expanded:brightness-95 dark:active:brightness-110 dark:hover:brightness-110",
 				ghost:
 					"hover:bg-muted hover:text-foreground active:bg-muted active:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground group-data-[variant=secondary]/input-group:text-foreground dark:hover:bg-muted/50",
 				link: "text-primary underline-offset-4 hover:underline",

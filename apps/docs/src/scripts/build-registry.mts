@@ -30,6 +30,8 @@ export const Index: Record<string, any> = {`;
     dependencies: ${JSON.stringify(item.dependencies)},
     devDependencies: ${JSON.stringify(item.devDependencies)},
     registryDependencies: ${JSON.stringify(item.registryDependencies)},
+    css: ${JSON.stringify(item.css)},
+    cssVars: ${JSON.stringify(item.cssVars)},
     files: [${item.files?.map((file) => {
 			const filePath = `src/registry/new-york-v4/${typeof file === "string" ? file : file.path}`;
 			const resolvedFilePath = path.resolve(filePath);

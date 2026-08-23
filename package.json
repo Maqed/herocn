@@ -20,7 +20,7 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.9",
+    "@biomejs/biome": "^2.5.10",
     "@herocn/config": "workspace:*",
     "@types/node": "^26.2.0",
     "husky": "^9.1.7",

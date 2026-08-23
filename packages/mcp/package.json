@@ -43,7 +43,7 @@
     "prepublishOnly": "bun run build"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.9",
+    "@biomejs/biome": "^2.5.10",
     "@herocn/config": "workspace:*",
     "@modelcontextprotocol/sdk": "^1.30.0",
     "@types/node": "^26.2.0",

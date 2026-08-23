@@ -77,7 +77,7 @@ function TabsTrigger({ className, ...props }: TabsPrimitive.Tab.Props) {
 				// Base
 				"relative z-1 flex h-8 w-full cursor-pointer select-none items-center justify-center gap-1.5 whitespace-nowrap px-4 text-center font-medium text-muted-foreground text-sm outline-none",
 				"[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0",
-				"transition-[color] duration-150 ease-out motion-reduce:transition-none",
+				"transition-[color,box-shadow] duration-150 ease-out motion-reduce:transition-none",
 				// Default variant: pill shape + vertical min-width
 				"group-data-[variant=default]/tabs-list:rounded-3xl",
 				"group-data-[variant=default]/tabs-list:group-data-[orientation=vertical]/tabs:min-w-20",

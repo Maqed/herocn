@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/registry/new-york-v4/ui/button";
 
 const attachmentVariants = cva(
-	"group/attachment relative flex w-fit min-w-0 max-w-full shrink-0 flex-wrap rounded-2xl border bg-card text-card-foreground transition-colors focus-within:ring-1 focus-within:ring-ring/50 has-[>a,>button]:hover:bg-muted/50 data-[state=error]:border-destructive/30 data-[state=idle]:border-dashed",
+	"group/attachment relative flex w-fit min-w-0 max-w-full shrink-0 flex-wrap rounded-2xl border bg-card text-card-foreground transition-[color,background-color,border-color,box-shadow] focus-within:ring-1 focus-within:ring-ring/50 has-[>a,>button]:hover:bg-muted/50 data-[state=error]:border-destructive/30 data-[state=idle]:border-dashed",
 	{
 		variants: {
 			size: {

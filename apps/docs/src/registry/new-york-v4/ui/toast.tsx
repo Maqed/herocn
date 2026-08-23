@@ -41,7 +41,7 @@ function getToastRootClasses() {
 		"group/toast pointer-events-auto absolute inset-inline-0 z-[calc(1000-var(--toast-index))] flex w-full origin-bottom select-none flex-row items-start justify-start gap-1.5 rounded-3xl bg-surface px-4 py-3 text-foreground shadow-xl outline-none will-change-transform focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
 		"[--gap:var(--toast-gap,8px)] [--height:var(--toast-frontmost-height,var(--toast-height))] [--offset-y:calc((var(--toast-dir)*(var(--toast-offset-y)+var(--toast-index)*var(--gap)))+var(--toast-swipe-movement-y))] [--peek:0.5rem] [--scale:calc(max(0,1-(var(--toast-index)*var(--toast-scale-factor,0.05))))] [--shrink:calc(1-var(--scale))]",
 		"bottom-0 origin-bottom [--toast-dir:-1] after:top-full",
-		"transform-[translateX(var(--toast-swipe-movement-x))_translateY(calc(var(--toast-swipe-movement-y)+(var(--toast-dir)*(var(--toast-index)*var(--peek)+(var(--shrink)*var(--height))))))_scale(var(--scale))] h-(--height) [transition:transform_500ms_cubic-bezier(0.22,1,0.36,1),opacity_500ms,height_150ms]",
+		"transform-[translateX(var(--toast-swipe-movement-x))_translateY(calc(var(--toast-swipe-movement-y)+(var(--toast-dir)*(var(--toast-index)*var(--peek)+(var(--shrink)*var(--height))))))_scale(var(--scale))] h-(--height) [transition:transform_500ms_cubic-bezier(0.22,1,0.36,1),opacity_500ms,height_150ms,box-shadow_150ms]",
 		"after:absolute after:start-0 after:h-[calc(var(--gap)+1px)] after:w-full after:content-['']",
 		"data-expanded:transform-[translateX(var(--toast-swipe-movement-x))_translateY(var(--offset-y))] data-expanded:h-(--toast-height)",
 		"data-starting-style:transform-[translateY(calc(var(--toast-dir)*-150%))] data-limited:pointer-events-none data-limited:opacity-0",

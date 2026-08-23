@@ -56,6 +56,7 @@ function AccordionTrigger({
 					"group/accordion-trigger",
 					"flex flex-1 items-center justify-between px-4 py-4 text-start font-medium text-sm",
 					"cursor-pointer select-none",
+					"transition-[box-shadow]",
 					"group-data-[variant=secondary]:first:rounded-t-3xltransition-none",
 					"hover:bg-foreground/3 aria-expanded:hover:bg-transparent",
 					"focus-visible:focus-ring",

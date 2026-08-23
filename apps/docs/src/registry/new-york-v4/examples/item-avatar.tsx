@@ -2,6 +2,7 @@ import { PlusIcon } from "lucide-react";
 import {
 	Avatar,
 	AvatarFallback,
+	AvatarGroup,
 	AvatarImage,
 } from "@/registry/new-york-v4/ui/avatar";
 import { Button } from "@/registry/new-york-v4/ui/button";
@@ -17,9 +18,9 @@ import {
 export default function ItemAvatar() {
 	return (
 		<div className="flex w-full max-w-lg flex-col gap-6">
-			<Item variant="outline">
+			<Item>
 				<ItemMedia>
-					<Avatar className="size-10">
+					<Avatar>
 						<AvatarImage src="https://github.com/evilrabbit.png" alt="" />
 						<AvatarFallback>ER</AvatarFallback>
 					</Avatar>
@@ -29,19 +30,14 @@ export default function ItemAvatar() {
 					<ItemDescription>Last seen 5 months ago</ItemDescription>
 				</ItemContent>
 				<ItemActions>
-					<Button
-						size="icon-sm"
-						variant="outline"
-						className="rounded-full"
-						aria-label="Invite"
-					>
+					<Button size="icon-sm" className="rounded-full" aria-label="Invite">
 						<PlusIcon />
 					</Button>
 				</ItemActions>
 			</Item>
-			<Item variant="outline">
+			<Item>
 				<ItemMedia>
-					<div className="flex -space-x-2 *:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:ring-background">
+					<AvatarGroup>
 						<Avatar className="hidden sm:flex">
 							<AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
 							<AvatarFallback>CN</AvatarFallback>
@@ -57,7 +53,7 @@ export default function ItemAvatar() {
 							<AvatarImage src="https://github.com/Maqed.png" alt="@0xMaqed" />
 							<AvatarFallback>Mqd</AvatarFallback>
 						</Avatar>
-					</div>
+					</AvatarGroup>
 				</ItemMedia>
 				<ItemContent>
 					<ItemTitle>No team members</ItemTitle>
@@ -66,9 +62,7 @@ export default function ItemAvatar() {
 					</ItemDescription>
 				</ItemContent>
 				<ItemActions>
-					<Button size="sm" variant="outline">
-						Invite
-					</Button>
+					<Button size="sm">Invite</Button>
 				</ItemActions>
 			</Item>
 		</div>

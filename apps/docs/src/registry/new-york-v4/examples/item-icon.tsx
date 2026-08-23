@@ -12,7 +12,7 @@ import {
 export default function ItemIcon() {
 	return (
 		<div className="flex w-full max-w-lg flex-col gap-6">
-			<Item variant="outline">
+			<Item>
 				<ItemMedia variant="icon">
 					<ShieldAlertIcon />
 				</ItemMedia>
@@ -23,9 +23,7 @@ export default function ItemIcon() {
 					</ItemDescription>
 				</ItemContent>
 				<ItemActions>
-					<Button size="sm" variant="outline">
-						Review
-					</Button>
+					<Button size="sm">Review</Button>
 				</ItemActions>
 			</Item>
 		</div>

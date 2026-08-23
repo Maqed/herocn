@@ -35,7 +35,6 @@ export default function ItemImage() {
 				{music.map((song) => (
 					<Item
 						key={song.title}
-						variant="outline"
 						render={<a href="#" aria-label={`Play ${song.title}`} />}
 						role="listitem"
 					>

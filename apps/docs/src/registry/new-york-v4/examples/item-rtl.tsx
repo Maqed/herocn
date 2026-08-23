@@ -54,22 +54,16 @@ export default function ItemRtl() {
 			lang={language}
 			dir={dir}
 		>
-			<Item variant="outline">
+			<Item>
 				<ItemContent>
 					<ItemTitle>{t.basicItem}</ItemTitle>
 					<ItemDescription>{t.basicItemDesc}</ItemDescription>
 				</ItemContent>
 				<ItemActions>
-					<Button variant="outline" size="sm">
-						{t.action}
-					</Button>
+					<Button size="xs">{t.action}</Button>
 				</ItemActions>
 			</Item>
-			<Item
-				variant="outline"
-				size="sm"
-				render={<a href="#" aria-label={t.verifiedTitle} />}
-			>
+			<Item render={<a href="#" aria-label={t.verifiedTitle} />}>
 				<ItemMedia>
 					<BadgeCheckIcon className="size-5" />
 				</ItemMedia>

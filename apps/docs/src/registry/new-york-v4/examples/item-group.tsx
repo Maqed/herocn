@@ -37,7 +37,7 @@ export default function ItemGroupExample() {
 	return (
 		<ItemGroup className="max-w-sm">
 			{people.map((person) => (
-				<Item key={person.username} variant="outline">
+				<Item key={person.username}>
 					<ItemMedia>
 						<Avatar>
 							<AvatarImage src={person.avatar} alt="" />
@@ -49,7 +49,7 @@ export default function ItemGroupExample() {
 						<ItemDescription>{person.role}</ItemDescription>
 					</ItemContent>
 					<ItemActions>
-						<Button variant="ghost" size="icon" className="rounded-full">
+						<Button variant="ghost" size="icon-sm" className="rounded-full">
 							<PlusIcon />
 						</Button>
 					</ItemActions>

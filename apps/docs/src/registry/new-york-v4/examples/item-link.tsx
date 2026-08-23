@@ -22,7 +22,6 @@ export default function ItemLink() {
 				</ItemActions>
 			</Item>
 			<Item
-				variant="outline"
 				render={
 					<a
 						href="#"

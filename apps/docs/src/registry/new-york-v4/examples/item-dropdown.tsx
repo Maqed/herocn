@@ -17,6 +17,7 @@ import {
 import {
 	Item,
 	ItemContent,
+	ItemDescription,
 	ItemMedia,
 	ItemTitle,
 } from "@/registry/new-york-v4/ui/item";
@@ -25,14 +26,17 @@ const people = [
 	{
 		username: "0xMaqed",
 		avatar: "https://github.com/Maqed.png",
+		email: "maged@example.com",
 	},
 	{
 		username: "shadcn",
 		avatar: "https://github.com/shadcn.png",
+		email: "shadcn@example.com",
 	},
 	{
 		username: "evilrabbit",
 		avatar: "https://github.com/evilrabbit.png",
+		email: "evilrabbit@example.com",
 	},
 ];
 
@@ -46,7 +50,10 @@ export default function ItemDropdown() {
 				<DropdownMenuGroup>
 					{people.map((person) => (
 						<DropdownMenuItem key={person.username}>
-							<Item size="xs" className="w-full p-2">
+							<Item
+								size="xs"
+								className="w-full p-2 shadow-none group-hover/dropdown-menu-item:bg-accent"
+							>
 								<ItemMedia>
 									<Avatar className="size-8">
 										<AvatarImage src={person.avatar} alt="" />
@@ -55,6 +62,7 @@ export default function ItemDropdown() {
 								</ItemMedia>
 								<ItemContent className="gap-0">
 									<ItemTitle>{person.username}</ItemTitle>
+									<ItemDescription>{person.email}</ItemDescription>
 								</ItemContent>
 							</Item>
 						</DropdownMenuItem>

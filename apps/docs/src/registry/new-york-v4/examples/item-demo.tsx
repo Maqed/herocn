@@ -12,7 +12,7 @@ import {
 export default function ItemDemo() {
 	return (
 		<div className="flex w-full max-w-md flex-col gap-6">
-			<Item variant="outline">
+			<Item>
 				<ItemContent>
 					<ItemTitle>Basic Item</ItemTitle>
 					<ItemDescription>
@@ -20,16 +20,10 @@ export default function ItemDemo() {
 					</ItemDescription>
 				</ItemContent>
 				<ItemActions>
-					<Button variant="outline" size="sm">
-						Action
-					</Button>
+					<Button size="xs">Action</Button>
 				</ItemActions>
 			</Item>
-			<Item
-				variant="outline"
-				size="sm"
-				render={<a href="#" aria-label="Verified profile details" />}
-			>
+			<Item render={<a href="#" aria-label="Verified profile details" />}>
 				<ItemMedia>
 					<BadgeCheckIcon className="size-5" />
 				</ItemMedia>

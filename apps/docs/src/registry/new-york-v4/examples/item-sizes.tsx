@@ -10,7 +10,7 @@ import {
 export default function ItemSizes() {
 	return (
 		<div className="flex w-full max-w-md flex-col gap-6">
-			<Item variant="outline">
+			<Item>
 				<ItemMedia variant="icon">
 					<InboxIcon />
 				</ItemMedia>
@@ -21,7 +21,7 @@ export default function ItemSizes() {
 					</ItemDescription>
 				</ItemContent>
 			</Item>
-			<Item variant="outline" size="sm">
+			<Item size="sm">
 				<ItemMedia variant="icon">
 					<InboxIcon />
 				</ItemMedia>
@@ -30,7 +30,7 @@ export default function ItemSizes() {
 					<ItemDescription>A compact size for dense layouts.</ItemDescription>
 				</ItemContent>
 			</Item>
-			<Item variant="outline" size="xs">
+			<Item size="xs">
 				<ItemMedia variant="icon">
 					<InboxIcon />
 				</ItemMedia>

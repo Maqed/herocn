@@ -1,4 +1,5 @@
 import { ScrollArea, ScrollBar } from "@/registry/new-york-v4/ui/scroll-area";
+import { Surface } from "@/registry/new-york-v4/ui/surface";
 
 export interface Artwork {
 	artist: string;
@@ -22,8 +23,8 @@ export const works: Artwork[] = [
 
 export function ScrollAreaHorizontalDemo() {
 	return (
-		<ScrollArea className="whitespace-nowrap rounded-md border">
-			<div className="flex w-max space-x-4 p-4">
+		<ScrollArea className="whitespace-nowrap rounded-xl">
+			<Surface className="flex w-max space-x-4 p-6">
 				{works.map((artwork) => (
 					<figure key={artwork.artist} className="shrink-0">
 						<div className="overflow-hidden rounded-md">
@@ -41,7 +42,7 @@ export function ScrollAreaHorizontalDemo() {
 						</figcaption>
 					</figure>
 				))}
-			</div>
+			</Surface>
 			<ScrollBar orientation="horizontal" />
 		</ScrollArea>
 	);

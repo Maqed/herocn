@@ -691,6 +691,9 @@ export const ui: Registry["items"] = [
 				type: "registry:ui",
 			},
 		],
+		css: {
+			"@utility focus-ring": css["@utility focus-ring"],
+		},
 	},
 	{
 		name: "sheet",

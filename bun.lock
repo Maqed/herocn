@@ -78,7 +78,7 @@
     },
     "packages/mcp": {
       "name": "@herocn/mcp",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "bin": {
         "herocn-mcp": "dist/index.js",
       },

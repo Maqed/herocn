@@ -84,9 +84,9 @@ function TabsTrigger({ className, ...props }: TabsPrimitive.Tab.Props) {
 				// Line variant: no rounding
 				"group-data-[variant=line]/tabs-list:rounded-none",
 				// Selected state
-				"data-active:text-foreground",
+				"data-active:text-segment-foreground",
 				// Hover
-				"hover:text-foreground/80 data-active:hover:text-foreground",
+				"hover:text-foreground/80 data-active:hover:text-segment-foreground",
 				// Disabled
 				"disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50",
 				// Focus visible
@@ -110,7 +110,7 @@ function TabsIndicator({ className, ...props }: TabsPrimitive.Indicator.Props) {
 				"transition-[translate,width,height] duration-200 ease-out motion-reduce:transition-none",
 				// Default variant: animated pill
 				"group-data-[variant=default]/tabs-list:rounded-3xl",
-				"group-data-[variant=default]/tabs-list:bg-surface",
+				"group-data-[variant=default]/tabs-list:bg-segment",
 				"group-data-[variant=default]/tabs-list:shadow-sm",
 				// Line variant: flat, accent coloured, no shadow
 				"group-data-[variant=line]/tabs-list:rounded-none",

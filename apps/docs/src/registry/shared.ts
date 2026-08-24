@@ -44,6 +44,8 @@ export const cssVars = {
 		"--surface": "white",
 		"--surface-secondary": "oklch(0.9524 0.0013 286.37)",
 		"--surface-tertiary": "oklch(0.9373 0.0013 286.37)",
+		"--segment": "var(--snow)",
+		"--segment-foreground": "var(--eclipse)",
 
 		"--default-soft": "color-mix(in oklab, var(--default) 50%, transparent)",
 		"--default-soft-foreground": "var(--default-foreground)",
@@ -101,6 +103,8 @@ export const cssVars = {
 		"--surface": "oklch(0.2103 0.0059 285.89)",
 		"--surface-secondary": "oklch(0.257 0.0037 286.14)",
 		"--surface-tertiary": "oklch(0.2721 0.0024 247.91)",
+		"--segment": "oklch(0.3964 0.01 285.93)",
+		"--segment-foreground": "var(--foreground)",
 
 		"--default-soft": "color-mix(in oklab, var(--default) 50%, transparent)",
 		"--default-soft-foreground": "var(--default-foreground)",
@@ -161,6 +165,8 @@ export const cssVars = {
 		"--color-surface": "var(--surface)",
 		"--color-surface-secondary": "var(--surface-secondary)",
 		"--color-surface-tertiary": "var(--surface-tertiary)",
+		"--color-segment": "var(--segment)",
+		"--color-segment-foreground": "var(--segment-foreground)",
 		"--color-default-soft": "var(--default-soft)",
 		"--color-default-soft-foreground": "var(--default-soft-foreground)",
 		"--color-primary-soft": "var(--primary-soft)",

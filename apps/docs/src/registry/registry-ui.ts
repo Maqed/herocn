@@ -1181,14 +1181,21 @@ export const ui: Registry["items"] = [
 			light: {
 				"--default": cssVars.light["--default"],
 				"--surface": cssVars.light["--surface"],
+				"--segment": cssVars.light["--segment"],
+				"--segment-foreground": cssVars.light["--segment-foreground"],
 			},
 			dark: {
 				"--default": cssVars.dark["--default"],
 				"--surface": cssVars.dark["--surface"],
+				"--segment": cssVars.dark["--segment"],
+				"--segment-foreground": cssVars.dark["--segment-foreground"],
 			},
 			theme: {
 				"--color-default": cssVars.theme["--color-default"],
 				"--color-surface": cssVars.theme["--color-surface"],
+				"--color-segment": cssVars.theme["--color-segment"],
+				"--color-segment-foreground":
+					cssVars.theme["--color-segment-foreground"],
 			},
 		},
 		css: {

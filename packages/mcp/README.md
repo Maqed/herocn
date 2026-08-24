@@ -1,66 +1,192 @@
 # @herocn/mcp
 
-MCP (Model Context Protocol) server for the herocn docs site. It fetches documentation
-and registry data live from [herocn.dev](https://herocn.dev) and exposes them as tools for
-any MCP-compatible client.
+The herocn MCP Server gives AI assistants direct access to the herocn documentation and component registry, making it easier to build with herocn in AI-powered development environments.
 
-## Features
+## Quick Setup
 
-- Lists all doc pages (`list_docs`)
-- Fetches full page markdown (`get_doc`)
-- Keyword search over docs with snippets (`search_docs`)
-- Lists registry components (`list_components`)
-- Fetches component packages: source, deps, css vars, install command (`get_component`)
-- Install command helper (`get_install_command`)
+### OpenCode
 
-## Run
+Add the herocn server to your project's `opencode.json` configuration file:
 
-```bash
-bun install
-bun run --cwd packages/mcp start
-```
-
-### Environment variables
-
-| Variable | Default | Description |
-| --- | --- | --- |
-| `HEROCN_BASE_URL` | `https://herocn.dev` | Base URL of the docs site. |
-| `HEROCN_CACHE_TTL` | `3600` | Cache TTL in seconds for fetched content. |
-
-## Registering in clients
-
-The package is published to npm as `@herocn/mcp`, so any MCP client can consume it
-directly with npx (no local checkout or Bun required):
-
-### opencode
-
-```json
+```json title="opencode.json"
 {
-  "mcp": {
-    "herocn": {
-      "type": "local",
-      "command": ["npx", "-y", "@herocn/mcp@latest"],
-      "enabled": true
-    }
-  }
+	"$schema": "https://opencode.ai/config.json",
+	"mcp": {
+		"herocn": {
+			"type": "local",
+			"command": ["npx", "-y", "@herocn/mcp@latest"]
+		}
+	}
 }
 ```
+
+After adding the configuration, restart OpenCode to activate the MCP server.
+
+See the [OpenCode MCP documentation](https://opencode.ai/docs/mcp-servers) for more details.
+
+### Claude Code
+
+Run this command in your terminal:
+
+```bash
+claude mcp add herocn -- npx -y @herocn/mcp@latest
+```
+
+Or manually add to your project's `.mcp.json` file:
+
+```json title=".mcp.json"
+{
+	"mcpServers": {
+		"herocn": {
+			"command": "npx",
+			"args": ["-y", "@herocn/mcp@latest"]
+		}
+	}
+}
+```
+
+After adding the configuration, restart Claude Code and run `/mcp` to see the herocn MCP server in the list. If you see **Connected**, you're ready to use it.
+
+See the [Claude Code MCP documentation](https://docs.claude.com/en/docs/claude-code/mcp) for more details.
+
+### Codex
+
+Add the herocn server to your `~/.codex/config.toml` (or a project-scoped `.codex/config.toml`):
+
+```toml title="config.toml"
+[mcp_servers.herocn]
+command = "npx"
+args = ["-y", "@herocn/mcp@latest"]
+```
+
+After adding the configuration, restart Codex and run `/mcp` in the TUI to verify the server is active.
+
+See the [Codex MCP documentation](https://developers.openai.com/codex/mcp) for more details.
+
+### Cursor
+
+Add the herocn server to your project's `.cursor/mcp.json` configuration file:
+
+```json title=".cursor/mcp.json"
+{
+	"mcpServers": {
+		"herocn": {
+			"command": "npx",
+			"args": ["-y", "@herocn/mcp@latest"]
+		}
+	}
+}
+```
+
+Alternatively, add it through **Cursor Settings** → **Tools** → **MCP Servers**. After adding the configuration, restart Cursor to activate the MCP server.
+
+See the [Cursor MCP documentation](https://cursor.com/docs/context/mcp) for more details.
 
 ### Claude Desktop
 
-Add to `claude_desktop_config.json`:
+Add the herocn server to your `claude_desktop_config.json` configuration file:
 
-```json
+```json title="claude_desktop_config.json"
 {
-  "mcpServers": {
-    "herocn": {
-      "command": "npx",
-      "args": ["-y", "@herocn/mcp@latest"]
-    }
-  }
+	"mcpServers": {
+		"herocn": {
+			"command": "npx",
+			"args": ["-y", "@herocn/mcp@latest"]
+		}
+	}
 }
 ```
 
-### Cursor / VS Code
+After adding the configuration, restart Claude Desktop to activate the MCP server.
 
-Point the MCP client at `npx -y @herocn/mcp@latest` (stdio).
+See the [Claude Desktop MCP documentation](https://docs.claude.com/en/docs/claude-desktop/mcp) for more details.
+
+### VS Code
+
+To configure MCP in VS Code with GitHub Copilot, add the herocn server to your project's `.vscode/mcp.json` configuration file:
+
+```json title=".vscode/mcp.json"
+{
+	"servers": {
+		"herocn": {
+			"type": "stdio",
+			"command": "npx",
+			"args": ["-y", "@herocn/mcp@latest"]
+		}
+	}
+}
+```
+
+After adding the configuration, open `.vscode/mcp.json` and click **Start** next to the herocn server.
+
+See the [VS Code MCP documentation](https://code.visualstudio.com/docs/copilot/customization/mcp-servers) for more details.
+
+### Windsurf
+
+Add the herocn server to your project's `.windsurf/mcp.json` configuration file:
+
+```json title=".windsurf/mcp.json"
+{
+	"mcpServers": {
+		"herocn": {
+			"command": "npx",
+			"args": ["-y", "@herocn/mcp@latest"]
+		}
+	}
+}
+```
+
+After adding the configuration, restart Windsurf to activate the MCP server.
+
+See the [Windsurf MCP documentation](https://docs.windsurf.com/windsurf/cascade/mcp) for more details.
+
+### Zed
+
+Add the herocn server to your `settings.json` configuration file. Open settings via Command Palette (`zed: open settings`) or use `Cmd-,` (Mac) / `Ctrl-,` (Linux):
+
+```json title="settings.json"
+{
+	"context_servers": {
+		"herocn": {
+			"command": "npx",
+			"args": ["-y", "@herocn/mcp@latest"],
+			"env": {}
+		}
+	}
+}
+```
+
+After adding the configuration, restart Zed and open the Agent Panel settings view. Check that the indicator dot next to the herocn server is green with "Server is active" tooltip.
+
+See the [Zed MCP documentation](https://zed.dev/docs/ai/mcp) for more details.
+
+## Usage
+
+Once configured, ask your AI assistant questions like:
+
+- "Show me all herocn components"
+- "Get the complete documentation for the Button component"
+- "Give me an example of using the Card component"
+- "Get the source code for the Button component"
+- "What's the install command for the Dialog component?"
+- "Show me the herocn installation guide"
+- "Search the docs for RTL support"
+
+## Available Tools
+
+The MCP server provides these tools to AI assistants:
+
+| Tool | Description |
+|------|-------------|
+| `list_docs` | List all available herocn documentation pages |
+| `get_doc` | Fetch the full markdown content of a documentation page |
+| `search_docs` | Keyword search over the documentation with ranked results and snippets |
+| `list_components` | List all available herocn registry components |
+| `get_component` | Fetch a component package including source, dependencies, CSS variables, and the install command |
+| `get_install_command` | Get the install command for a registry component |
+
+## Troubleshooting
+
+**Requirements:** Node.js 22 or higher. The package will be automatically downloaded when using `npx`.
+
+**Need help?** Open an issue on [GitHub](https://github.com/Maqed/herocn/issues).

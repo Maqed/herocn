@@ -36,8 +36,8 @@ function ProgressTrack({ className, ...props }: ProgressPrimitive.Track.Props) {
 	return (
 		<ProgressPrimitive.Track
 			className={cn(
-				"relative flex w-full items-center overflow-x-hidden rounded-lg bg-default",
-				"group-data-[size=default]/progress:h-2 group-data-[size=lg]/progress:h-3 group-data-[size=sm]/progress:h-1",
+				"relative flex w-full items-center overflow-x-hidden rounded-sm bg-default",
+				"group-data-[size=default]/progress:h-2 group-data-[size=lg]/progress:h-3 group-data-[size=sm]/progress:h-1 group-data-[size=lg]/progress:rounded-md group-data-[size=sm]/progress:rounded-xs",
 				className,
 			)}
 			data-slot="progress-track"
@@ -54,12 +54,13 @@ function ProgressIndicator({
 		<ProgressPrimitive.Indicator
 			data-slot="progress-indicator"
 			className={cn(
-				"h-full rounded-smg transition-[width] duration-300 ease-out motion-reduce:transition-none",
+				"h-full rounded-sm transition-[width] duration-300 ease-out motion-reduce:transition-none",
 				"group-data-[variant=default]/progress:bg-default-foreground",
 				"group-data-[variant=primary]/progress:bg-primary",
 				"group-data-[variant=success]/progress:bg-success",
 				"group-data-[variant=warning]/progress:bg-warning",
 				"group-data-[variant=destructive]/progress:bg-destructive",
+				"group-data-[size=lg]/progress:rounded-md group-data-[size=sm]/progress:rounded-xs",
 				className,
 			)}
 			{...props}

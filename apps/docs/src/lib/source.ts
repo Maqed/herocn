@@ -1,11 +1,21 @@
 import { docs } from "fumadocs-mdx:collections/server";
-import { type InferPageType, loader } from "fumadocs-core/source";
+import {
+	type InferPageType,
+	loader,
+	type StaticSource,
+} from "fumadocs-core/source";
 import { absoluteUrl } from "@/lib/utils";
+
+type Docs = Awaited<typeof docs>;
+type SourceConfig = {
+	pageData: Docs["docs"][number];
+	metaData: Docs["meta"][number];
+};
 
 // See https://fumadocs.dev/docs/headless/source-api for more info
 export const source = loader({
 	baseUrl: "/docs",
-	source: docs.toFumadocsSource(),
+	source: docs.toFumadocsSource() as StaticSource<SourceConfig>,
 	plugins: [],
 });
 

@@ -6,24 +6,51 @@ import {
 	PageHeaderDescription,
 	PageHeaderHeading,
 } from "@/components/page-header";
-import { PAGES_METADATA } from "@/lib/config";
+import { PAGES_METADATA, siteConfig } from "@/lib/config";
 import { absoluteUrl } from "@/lib/utils";
 import { Button } from "@/registry/new-york-v4/ui/button";
 import { CardsDemo } from "./cards";
 
 export const metadata: Metadata = {
-	title: PAGES_METADATA.get("/")?.title,
+	title: { absolute: PAGES_METADATA.get("/")?.title ?? siteConfig.name },
 	description: PAGES_METADATA.get("/")?.description,
+	alternates: {
+		canonical: absoluteUrl("/"),
+	},
 	openGraph: {
+		type: "website",
+		url: absoluteUrl("/"),
+		siteName: siteConfig.name,
+		locale: "en_US",
 		title: PAGES_METADATA.get("/")?.title,
 		description: PAGES_METADATA.get("/")?.description,
 		images: absoluteUrl("/og/image.webp"),
 	},
+	twitter: {
+		card: "summary_large_image",
+		title: PAGES_METADATA.get("/")?.title,
+		description: PAGES_METADATA.get("/")?.description,
+		images: [absoluteUrl("/og/image.webp")],
+	},
 };
 
 export default function HomePage() {
+	const jsonLd = {
+		"@context": "https://schema.org",
+		"@type": "WebSite",
+		name: siteConfig.name,
+		url: absoluteUrl("/"),
+		description: siteConfig.description,
+	};
+
 	return (
 		<div className="flex flex-1 flex-col">
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+				}}
+			/>
 			<PageHeader>
 				<PageHeaderHeading className="max-w-4xl">
 					<span>HeroUI's design system.</span>

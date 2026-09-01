@@ -6,6 +6,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { DocsCopyPage } from "@/components/docs-copy-page";
 import { DocsTableOfContents } from "@/components/docs-toc";
+import { siteConfig } from "@/lib/config";
 import { getPageImage, source } from "@/lib/source";
 import { absoluteUrl } from "@/lib/utils";
 import { getMDXComponents } from "@/mdx-components";
@@ -29,11 +30,27 @@ export default async function Page(props: {
 			? `/llms.mdx/docs/${[...page.slugs, "index.mdx"].join("/")}`
 			: `${page.url}.md`;
 
+	const jsonLd = {
+		"@context": "https://schema.org",
+		"@type": "TechArticle",
+		headline: doc.title,
+		description: doc.description,
+		url: absoluteUrl(page.url),
+		image: getPageImage(page).url,
+		inLanguage: "en",
+	};
+
 	return (
 		<div
 			data-slot="docs"
 			className="flex scroll-mt-24 items-stretch pb-8 text-[1.05rem] sm:text-[15px] xl:w-full"
 		>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+				}}
+			/>
 			<div className="flex min-w-0 flex-1 flex-col">
 				<div className="h-(--top-spacing) shrink-0" />
 				<div className="mx-auto flex w-full min-w-0 max-w-3xl flex-1 flex-col gap-6 px-4 py-6 md:px-0 lg:py-8">
@@ -137,10 +154,23 @@ export async function generateMetadata(
 	return {
 		title: page.data.title,
 		description: page.data.description,
+		alternates: {
+			canonical: absoluteUrl(page.url),
+		},
 		openGraph: {
+			type: "article",
+			url: absoluteUrl(page.url),
+			siteName: siteConfig.name,
+			locale: "en_US",
 			title: page.data.title,
 			description: page.data.description,
 			images: getPageImage(page).url,
+		},
+		twitter: {
+			card: "summary_large_image",
+			title: page.data.title,
+			description: page.data.description,
+			images: [getPageImage(page).url],
 		},
 	};
 }

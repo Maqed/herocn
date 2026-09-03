@@ -32,6 +32,11 @@ export const siteConfig: SiteConfigType = {
 			label: "Components",
 		},
 		{
+			href: "/docs/rtl",
+			label: "RTL",
+			notShownInHeader: true,
+		},
+		{
 			href: "/docs/mcp",
 			label: "MCP Server",
 			notShownInHeader: true,

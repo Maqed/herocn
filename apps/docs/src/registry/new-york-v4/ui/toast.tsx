@@ -1,6 +1,7 @@
 "use client";
 
 import { Toast as ToastPrimitive } from "@base-ui/react/toast";
+import { cn } from "cn";
 import {
 	CircleCheckIcon,
 	InfoIcon,
@@ -10,7 +11,6 @@ import {
 	XIcon,
 } from "lucide-react";
 import type * as React from "react";
-import { cn } from "@/lib/utils";
 import { Button } from "@/registry/new-york-v4/ui/button";
 
 const toast = ToastPrimitive.createToastManager();

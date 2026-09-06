@@ -1,10 +1,9 @@
 "use client";
 
 import { code } from "@streamdown/code";
+import { cn } from "cn";
 import type * as React from "react";
 import { Streamdown } from "streamdown";
-
-import { cn } from "@/lib/utils";
 
 const DEFAULT_PLUGINS = { code };
 

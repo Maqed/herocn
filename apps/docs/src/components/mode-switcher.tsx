@@ -1,9 +1,9 @@
 "use client";
 
+import { cn } from "cn";
 import Script from "next/script";
 import type * as React from "react";
 import { useThemeToggle } from "@/hooks/use-theme";
-import { cn } from "@/lib/utils";
 import { Button } from "@/registry/new-york-v4/ui/button";
 import { Kbd } from "@/registry/new-york-v4/ui/kbd";
 import {

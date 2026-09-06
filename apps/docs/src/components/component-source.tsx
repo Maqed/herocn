@@ -1,10 +1,10 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import { cn } from "cn";
 import { highlight } from "fumadocs-core/highlight";
 import { CodeBlock, Pre } from "fumadocs-ui/components/codeblock";
 import type * as React from "react";
 import { getRegistryItem } from "@/lib/registry";
-import { cn } from "@/lib/utils";
 import { CodeCollapsibleWrapper } from "./code-collapsible-wrapper";
 
 export async function ComponentSource({

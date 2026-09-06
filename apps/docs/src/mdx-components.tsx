@@ -1,3 +1,4 @@
+import { cn } from "cn";
 import defaultMdxComponents from "fumadocs-ui/mdx";
 import type { MDXComponents } from "mdx/types";
 import Link from "next/link";
@@ -15,7 +16,6 @@ import {
 } from "@/registry/new-york-v4/ui/tabs";
 import { ComponentPreviewTabs } from "./components/component-preview-tabs";
 import { RenderCSSShared } from "./components/render-css-shared";
-import { cn } from "./lib/utils";
 
 export function getMDXComponents(components?: MDXComponents): MDXComponents {
 	return {

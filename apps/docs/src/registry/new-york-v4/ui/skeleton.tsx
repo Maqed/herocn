@@ -1,5 +1,5 @@
 import { cva, type VariantProps } from "class-variance-authority";
-import { cn } from "@/lib/utils";
+import { cn } from "cn";
 
 const skeletonAnimationTypes = cva(
 	"skeleton pointer-events-none relative overflow-hidden rounded-sm bg-surface-tertiary/70",

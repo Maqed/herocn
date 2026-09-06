@@ -1,8 +1,7 @@
 "use client";
 
+import { cn } from "cn";
 import * as React from "react";
-
-import { cn } from "@/lib/utils";
 import { useIsMobile } from "@/registry/new-york-v4/hooks/use-mobile";
 import { Button } from "@/registry/new-york-v4/ui/button";
 import {

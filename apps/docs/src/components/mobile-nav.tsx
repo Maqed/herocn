@@ -1,12 +1,12 @@
 "use client";
 
+import { cn } from "cn";
 import { ExternalLinkIcon } from "lucide-react";
 import Link, { type LinkProps } from "next/link";
 import { useRouter } from "next/navigation";
 import * as React from "react";
 import { getPagesFromFolder } from "@/lib/page-tree";
 import type { source } from "@/lib/source";
-import { cn } from "@/lib/utils";
 import { Button } from "@/registry/new-york-v4/ui/button";
 import {
 	Popover,

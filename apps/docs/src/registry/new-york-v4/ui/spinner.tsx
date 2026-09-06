@@ -1,6 +1,6 @@
 import { cva, type VariantProps } from "class-variance-authority";
+import { cn } from "cn";
 import { useId } from "react";
-import { cn } from "@/lib/utils";
 
 function SpinnerIcon({ ...props }: React.ComponentProps<"svg">) {
 	const id = useId();

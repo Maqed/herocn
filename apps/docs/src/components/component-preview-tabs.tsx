@@ -1,4 +1,5 @@
 "use client";
+import { cn } from "cn";
 import { AlertCircleIcon } from "lucide-react";
 import * as React from "react";
 import {
@@ -8,7 +9,6 @@ import {
 	useLanguageContext,
 	useTranslation,
 } from "@/components/language-selector";
-import { cn } from "@/lib/utils";
 import { Button } from "@/registry/new-york-v4/ui/button";
 import { DirectionProvider } from "@/registry/new-york-v4/ui/direction";
 import {

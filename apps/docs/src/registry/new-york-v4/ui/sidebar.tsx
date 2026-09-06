@@ -3,9 +3,9 @@
 import { mergeProps } from "@base-ui/react/merge-props";
 import { useRender } from "@base-ui/react/use-render";
 import { cva, type VariantProps } from "class-variance-authority";
+import { cn } from "cn";
 import { PanelLeftIcon } from "lucide-react";
 import * as React from "react";
-import { cn } from "@/lib/utils";
 import { useIsMobile } from "@/registry/new-york-v4/hooks/use-mobile";
 import { Button } from "@/registry/new-york-v4/ui/button";
 import { Input } from "@/registry/new-york-v4/ui/input";

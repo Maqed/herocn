@@ -1,3 +1,4 @@
+import { cn } from "cn";
 import {
 	ActivityIcon,
 	ArrowLeftRightIcon,
@@ -21,8 +22,6 @@ import {
 	WalletIcon,
 } from "lucide-react";
 import type * as React from "react";
-
-import { cn } from "@/lib/utils";
 import { Card } from "@/registry/new-york-v4/ui/card";
 import {
 	Sidebar,

@@ -1,5 +1,5 @@
 import { cva, type VariantProps } from "class-variance-authority";
-import { cn } from "@/lib/utils";
+import { cn } from "cn";
 
 export const surfaceVariants = cva(
 	"group/surface relative border-none text-foreground",

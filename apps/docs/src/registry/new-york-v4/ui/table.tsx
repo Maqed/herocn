@@ -36,7 +36,7 @@ function TableHeader({ className, ...props }: React.ComponentProps<"thead">) {
 		<thead
 			data-slot="table-header"
 			className={cn(
-				"group-data-[variant=primary]/table:bg-surface-secondary",
+				"group-data-[variant=primary]/table:bg-surface-secondary [&_tr]:border-b-0",
 				className,
 			)}
 			{...props}

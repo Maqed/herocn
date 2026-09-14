@@ -2836,6 +2836,17 @@ export const examples: Registry["items"] = [
 		],
 	},
 	{
+		name: "toggle-group-ghost",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("toggle-group")],
+		files: [
+			{
+				path: "examples/toggle-group-ghost.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
 		name: "toggle-group-sizes",
 		type: "registry:example",
 		registryDependencies: [getRegistryItemInstallationAlias("toggle-group")],

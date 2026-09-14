@@ -5139,6 +5139,24 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "toggle-group-ghost": {
+    name: "toggle-group-ghost",
+    type: "registry:example",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/toggle-group.json"],
+    css: undefined,
+    cssVars: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/toggle-group-ghost.tsx",
+      type: "registry:example"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/toggle-group-ghost.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "toggle-group-sizes": {
     name: "toggle-group-sizes",
     type: "registry:example",

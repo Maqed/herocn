@@ -5146,6 +5146,19 @@
       ]
     },
     {
+      "name": "toggle-group-ghost",
+      "type": "registry:example",
+      "registryDependencies": [
+        "https://herocn.dev/r/toggle-group.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/toggle-group-ghost.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "toggle-group-sizes",
       "type": "registry:example",
       "registryDependencies": [

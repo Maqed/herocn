@@ -11693,6 +11693,58 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "login-01": {
+    name: "login-01",
+    type: "registry:block",
+    description: "A simple login form.",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json","https://herocn.dev/r/field.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["authentication","login"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/blocks/login-01/page.tsx",
+      type: "registry:page",
+      target: "app/login/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/login-01/components/login-form.tsx",
+      type: "registry:component",
+      target: "components/login-form.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/login-01/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "login-02": {
+    name: "login-02",
+    type: "registry:block",
+    description: "A two column login page with a cover image.",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json","https://herocn.dev/r/field.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["authentication","login"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/blocks/login-02/page.tsx",
+      type: "registry:page",
+      target: "app/login/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/login-02/components/login-form.tsx",
+      type: "registry:component",
+      target: "components/login-form.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/login-02/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "login-03": {
     name: "login-03",
     type: "registry:block",
@@ -11741,6 +11793,162 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/blocks/login-04/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "login-05": {
+    name: "login-05",
+    type: "registry:block",
+    description: "A simple email-only login page.",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json","https://herocn.dev/r/field.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["authentication","login"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/blocks/login-05/page.tsx",
+      type: "registry:page",
+      target: "app/login/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/login-05/components/login-form.tsx",
+      type: "registry:component",
+      target: "components/login-form.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/login-05/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "signup-01": {
+    name: "signup-01",
+    type: "registry:block",
+    description: "A simple signup form.",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json","https://herocn.dev/r/field.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["authentication","signup"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/blocks/signup-01/page.tsx",
+      type: "registry:page",
+      target: "app/signup/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/signup-01/components/signup-form.tsx",
+      type: "registry:component",
+      target: "components/signup-form.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/signup-01/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "signup-02": {
+    name: "signup-02",
+    type: "registry:block",
+    description: "A two column signup page with a cover image.",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json","https://herocn.dev/r/field.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["authentication","signup"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/blocks/signup-02/page.tsx",
+      type: "registry:page",
+      target: "app/signup/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/signup-02/components/signup-form.tsx",
+      type: "registry:component",
+      target: "components/signup-form.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/signup-02/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "signup-03": {
+    name: "signup-03",
+    type: "registry:block",
+    description: "A signup page with a muted background color.",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json","https://herocn.dev/r/field.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["authentication","signup"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/blocks/signup-03/page.tsx",
+      type: "registry:page",
+      target: "app/signup/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/signup-03/components/signup-form.tsx",
+      type: "registry:component",
+      target: "components/signup-form.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/signup-03/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "signup-04": {
+    name: "signup-04",
+    type: "registry:block",
+    description: "A signup page with form and image.",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json","https://herocn.dev/r/field.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["authentication","signup"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/blocks/signup-04/page.tsx",
+      type: "registry:page",
+      target: "app/signup/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/signup-04/components/signup-form.tsx",
+      type: "registry:component",
+      target: "components/signup-form.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/signup-04/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "signup-05": {
+    name: "signup-05",
+    type: "registry:block",
+    description: "A simple signup form with social providers.",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json","https://herocn.dev/r/field.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["authentication","signup"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/blocks/signup-05/page.tsx",
+      type: "registry:page",
+      target: "app/signup/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/signup-05/components/signup-form.tsx",
+      type: "registry:component",
+      target: "components/signup-form.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/signup-05/page.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

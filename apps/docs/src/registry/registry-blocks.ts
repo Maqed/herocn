@@ -3,6 +3,55 @@ import { getRegistryItemInstallationAlias } from "@/lib/utils";
 
 export const blocks: Registry["items"] = [
 	{
+		name: "login-01",
+		type: "registry:block",
+		description: "A simple login form.",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("card"),
+			getRegistryItemInstallationAlias("input"),
+			getRegistryItemInstallationAlias("label"),
+			getRegistryItemInstallationAlias("field"),
+		],
+		files: [
+			{
+				path: "blocks/login-01/page.tsx",
+				type: "registry:page",
+				target: "app/login/page.tsx",
+			},
+			{
+				path: "blocks/login-01/components/login-form.tsx",
+				type: "registry:component",
+				target: "components/login-form.tsx",
+			},
+		],
+		categories: ["authentication", "login"],
+	},
+	{
+		name: "login-02",
+		type: "registry:block",
+		description: "A two column login page with a cover image.",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("input"),
+			getRegistryItemInstallationAlias("label"),
+			getRegistryItemInstallationAlias("field"),
+		],
+		files: [
+			{
+				path: "blocks/login-02/page.tsx",
+				type: "registry:page",
+				target: "app/login/page.tsx",
+			},
+			{
+				path: "blocks/login-02/components/login-form.tsx",
+				type: "registry:component",
+				target: "components/login-form.tsx",
+			},
+		],
+		categories: ["authentication", "login"],
+	},
+	{
 		name: "login-03",
 		type: "registry:block",
 		description: "A login page with a muted background color.",
@@ -51,6 +100,153 @@ export const blocks: Registry["items"] = [
 			},
 		],
 		categories: ["authentication", "login"],
+	},
+	{
+		name: "login-05",
+		type: "registry:block",
+		description: "A simple email-only login page.",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("input"),
+			getRegistryItemInstallationAlias("label"),
+			getRegistryItemInstallationAlias("field"),
+		],
+		files: [
+			{
+				path: "blocks/login-05/page.tsx",
+				type: "registry:page",
+				target: "app/login/page.tsx",
+			},
+			{
+				path: "blocks/login-05/components/login-form.tsx",
+				type: "registry:component",
+				target: "components/login-form.tsx",
+			},
+		],
+		categories: ["authentication", "login"],
+	},
+	{
+		name: "signup-01",
+		type: "registry:block",
+		description: "A simple signup form.",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("card"),
+			getRegistryItemInstallationAlias("input"),
+			getRegistryItemInstallationAlias("label"),
+			getRegistryItemInstallationAlias("field"),
+		],
+		files: [
+			{
+				path: "blocks/signup-01/page.tsx",
+				type: "registry:page",
+				target: "app/signup/page.tsx",
+			},
+			{
+				path: "blocks/signup-01/components/signup-form.tsx",
+				type: "registry:component",
+				target: "components/signup-form.tsx",
+			},
+		],
+		categories: ["authentication", "signup"],
+	},
+	{
+		name: "signup-02",
+		type: "registry:block",
+		description: "A two column signup page with a cover image.",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("input"),
+			getRegistryItemInstallationAlias("label"),
+			getRegistryItemInstallationAlias("field"),
+		],
+		files: [
+			{
+				path: "blocks/signup-02/page.tsx",
+				type: "registry:page",
+				target: "app/signup/page.tsx",
+			},
+			{
+				path: "blocks/signup-02/components/signup-form.tsx",
+				type: "registry:component",
+				target: "components/signup-form.tsx",
+			},
+		],
+		categories: ["authentication", "signup"],
+	},
+	{
+		name: "signup-03",
+		type: "registry:block",
+		description: "A signup page with a muted background color.",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("card"),
+			getRegistryItemInstallationAlias("input"),
+			getRegistryItemInstallationAlias("label"),
+			getRegistryItemInstallationAlias("field"),
+		],
+		files: [
+			{
+				path: "blocks/signup-03/page.tsx",
+				type: "registry:page",
+				target: "app/signup/page.tsx",
+			},
+			{
+				path: "blocks/signup-03/components/signup-form.tsx",
+				type: "registry:component",
+				target: "components/signup-form.tsx",
+			},
+		],
+		categories: ["authentication", "signup"],
+	},
+	{
+		name: "signup-04",
+		type: "registry:block",
+		description: "A signup page with form and image.",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("card"),
+			getRegistryItemInstallationAlias("input"),
+			getRegistryItemInstallationAlias("label"),
+			getRegistryItemInstallationAlias("field"),
+		],
+		files: [
+			{
+				path: "blocks/signup-04/page.tsx",
+				type: "registry:page",
+				target: "app/signup/page.tsx",
+			},
+			{
+				path: "blocks/signup-04/components/signup-form.tsx",
+				type: "registry:component",
+				target: "components/signup-form.tsx",
+			},
+		],
+		categories: ["authentication", "signup"],
+	},
+	{
+		name: "signup-05",
+		type: "registry:block",
+		description: "A simple signup form with social providers.",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("input"),
+			getRegistryItemInstallationAlias("label"),
+			getRegistryItemInstallationAlias("field"),
+		],
+		files: [
+			{
+				path: "blocks/signup-05/page.tsx",
+				type: "registry:page",
+				target: "app/signup/page.tsx",
+			},
+			{
+				path: "blocks/signup-05/components/signup-form.tsx",
+				type: "registry:component",
+				target: "components/signup-form.tsx",
+			},
+		],
+		categories: ["authentication", "signup"],
 	},
 	{
 		name: "sidebar-03",

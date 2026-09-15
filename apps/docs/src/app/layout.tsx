@@ -7,7 +7,6 @@ import { siteConfig } from "@/lib/config";
 
 import "./global.css";
 import { DarkModeScript } from "@/components/mode-switcher";
-import { SiteHeader } from "@/components/site-header";
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -76,10 +75,7 @@ export default function Layout({ children }: LayoutProps<"/">) {
 				<DarkModeScript />
 			</head>
 			<body className="flex min-h-screen flex-col [--header-height:calc(var(--spacing)*13)]">
-				<Provider>
-					<SiteHeader />
-					{children}
-				</Provider>
+				<Provider>{children}</Provider>
 			</body>
 		</html>
 	);

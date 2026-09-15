@@ -32,6 +32,10 @@ export const siteConfig: SiteConfigType = {
 			label: "Components",
 		},
 		{
+			href: "/blocks",
+			label: "Blocks",
+		},
+		{
 			href: "/docs/rtl",
 			label: "RTL",
 			notShownInHeader: true,

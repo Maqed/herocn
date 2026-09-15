@@ -8,36 +8,46 @@ export const Index: Record<string, any> = {
   "index": {
     name: "index",
     type: "registry:style",
+    description: undefined,
     dependencies: ["@base-ui/react","class-variance-authority","lucide-react"],
     devDependencies: ["tw-animate-css"],
     registryDependencies: ["utils","https://herocn.dev/r/ui.json"],
     css: {"@utility pressible":{"transition":"transform 250ms var(--ease-smooth), background-color 100ms var(--ease-out), box-shadow 100ms var(--ease-out)","@apply transform-gpu motion-reduce:transition-none active:scale-[0.97] aria-expanded:scale-[0.97]":{}},"@utility focus-ring":{"@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none":{}},"@utility focus-field-ring":{"@apply ring-2 ring-ring ring-offset-0 outline-none":{}},"@utility invalid-field-ring":{"@apply outline-1 outline-destructive outline-solid":{}},"@utility invalid-field-ring-focus":{"@apply ring-2 outline-none ring-destructive ring-offset-0":{}},"@keyframes skeleton":{"100%":{"transform":"translateX(200%)"}},".skeleton--shimmer":{"@apply relative overflow-hidden rtl:[--skeleton-animation-dir:reverse]":{}},".skeleton--shimmer::after":{"@apply absolute inset-0 -translate-x-full animate-skeleton bg-linear-to-r from-transparent via-surface-tertiary to-transparent content-['']":{},"animation-direction":"var(--skeleton-animation-dir, normal)"},".skeleton--shimmer:has(.skeleton)::after":{"content":"none"},".skeleton--shimmer:has(.skeleton)::before":{"@apply absolute inset-0 z-10 pointer-events-none mix-blend-overlay -translate-x-full bg-linear-to-r from-transparent via-white/50 to-transparent animate-skeleton content-['']":{},"animation-direction":"var(--skeleton-animation-dir, normal)"},".skeleton--shimmer:has(.skeleton) .skeleton::after":{"content":"none"}},
     cssVars: {"light":{"--snow":"oklch(0.9911 0 0)","--eclipse":"oklch(0.2103 0.0059 285.89)","--radius":"0.5rem","--background":"oklch(0.9702 0 0)","--foreground":"oklch(0.141 0.005 285.823)","--card":"var(--surface)","--card-foreground":"oklch(0.141 0.005 285.823)","--popover":"var(--surface)","--popover-foreground":"oklch(0.141 0.005 285.823)","--primary":"oklch(0.6204 0.195 253.83)","--primary-foreground":"oklch(0.97 0.014 254.604)","--secondary":"oklch(0.967 0.001 286.375)","--secondary-foreground":"oklch(0.21 0.006 285.885)","--muted":"oklch(0.94 0.001 286.375)","--muted-foreground":"oklch(0.552 0.016 285.938)","--accent":"oklch(0.94 0.001 286.375)","--accent-foreground":"oklch(0.21 0.006 285.885)","--destructive":"oklch(0.6532 0.2328 25.74)","--destructive-foreground":"var(--snow)","--border":"oklch(90% 0.004 286.32)","--input":"white","--ring":"var(--primary)","--chart-1":"oklch(0.809 0.105 251.813)","--chart-2":"oklch(0.623 0.214 259.815)","--chart-3":"oklch(0.546 0.245 262.881)","--chart-4":"oklch(0.488 0.243 264.376)","--chart-5":"oklch(0.424 0.199 265.638)","--sidebar":"oklch(0.9702 0 0)","--sidebar-foreground":"oklch(0.141 0.005 285.823)","--sidebar-primary":"oklch(0.6204 0.195 253.83)","--sidebar-primary-foreground":"oklch(0.97 0.014 254.604)","--sidebar-accent":"oklch(0.93 0.001 286.375)","--sidebar-accent-foreground":"oklch(0.21 0.006 285.885)","--sidebar-border":"oklch(90% 0.004 286.32)","--sidebar-ring":"var(--foreground)","--default":"oklch(94% 0.001 286.375)","--default-foreground":"var(--eclipse)","--success":"oklch(0.7329 0.1935 150.81)","--success-foreground":"var(--eclipse)","--warning":"oklch(0.7819 0.1585 72.33)","--warning-foreground":"var(--eclipse)","--surface":"white","--surface-secondary":"oklch(0.9524 0.0013 286.37)","--surface-tertiary":"oklch(0.9373 0.0013 286.37)","--segment":"var(--snow)","--segment-foreground":"var(--eclipse)","--default-soft":"color-mix(in oklab, var(--default) 50%, transparent)","--default-soft-foreground":"var(--default-foreground)","--primary-soft":"color-mix(in oklab, var(--primary) 15%, transparent)","--primary-soft-foreground":"color-mix(in oklab, var(--primary) 70%, var(--foreground) 30%)","--destructive-soft":"color-mix(in oklab, var(--destructive) 15%, transparent)","--destructive-soft-foreground":"color-mix(in oklab, var(--destructive) 70%, var(--foreground) 40%)","--warning-soft":"color-mix(in oklab, var(--warning) 15%, transparent)","--warning-soft-foreground":"color-mix(in oklab, var(--warning) 80%, var(--foreground) 70%)","--success-soft":"color-mix(in oklab, var(--success) 15%, transparent)","--success-soft-foreground":"color-mix(in oklab, var(--success) 80%, var(--foreground) 60%)"},"dark":{"--background":"oklch(0.1228 0.0029 285.97)","--foreground":"oklch(0.985 0 0)","--card":"var(--surface)","--card-foreground":"oklch(0.985 0 0)","--popover":"var(--surface)","--popover-foreground":"oklch(0.985 0 0)","--primary":"oklch(0.6204 0.195 253.83)","--primary-foreground":"oklch(0.97 0.014 254.604)","--secondary":"oklch(0.274 0.006 286.033)","--secondary-foreground":"oklch(0.985 0 0)","--muted":"oklch(0.274 0.006 286.033)","--muted-foreground":"oklch(0.705 0.015 286.067)","--accent":"oklch(0.274 0.006 286.033)","--accent-foreground":"oklch(0.985 0 0)","--destructive":"oklch(0.594 0.1967 24.63)","--destructive-foreground":"var(--snow)","--border":"oklch(28% 0.006 286.033)","--input":"oklch(0.2103 0.0059 285.89)","--ring":"var(--primary)","--chart-1":"oklch(0.809 0.105 251.813)","--chart-2":"oklch(0.623 0.214 259.815)","--chart-3":"oklch(0.546 0.245 262.881)","--chart-4":"oklch(0.488 0.243 264.376)","--chart-5":"oklch(0.424 0.199 265.638)","--sidebar":"oklch(0.1228 0.0029 285.97)","--sidebar-foreground":"oklch(0.985 0 0)","--sidebar-primary":"oklch(0.6204 0.195 253.83)","--sidebar-primary-foreground":"oklch(0.97 0.014 254.604)","--sidebar-accent":"oklch(0.274 0.006 286.033)","--sidebar-accent-foreground":"oklch(0.985 0 0)","--sidebar-border":"oklch(28% 0.006 286.033)","--sidebar-ring":"var(--foreground)","--default":"oklch(27.4% 0.006 286.033)","--default-foreground":"var(--snow)","--warning":"oklch(0.8203 0.1388 76.34)","--warning-foreground":"var(--eclipse)","--surface":"oklch(0.2103 0.0059 285.89)","--surface-secondary":"oklch(0.257 0.0037 286.14)","--surface-tertiary":"oklch(0.2721 0.0024 247.91)","--segment":"oklch(0.3964 0.01 285.93)","--segment-foreground":"var(--foreground)","--default-soft":"color-mix(in oklab, var(--default) 50%, transparent)","--default-soft-foreground":"var(--default-foreground)","--primary-soft":"color-mix(in oklab, var(--primary) 12%, transparent)","--primary-soft-foreground":"color-mix(in oklab, var(--primary) 80%, var(--foreground) 30%)","--destructive-soft":"color-mix(in oklab, var(--destructive) 15%, transparent)","--destructive-soft-foreground":"color-mix(in oklab, var(--destructive) 80%, var(--foreground) 30%)","--warning-soft":"color-mix(in oklab, var(--warning) 12%, transparent)","--warning-soft-foreground":"color-mix(in oklab, var(--warning) 80%, var(--foreground) 30%)","--success-soft":"color-mix(in oklab, var(--success) 12%, transparent)","--success-soft-foreground":"color-mix(in oklab, var(--success) 80%, var(--foreground) 30%)"},"theme":{"--font-sans":"\"Inter\", sans-serif","--color-sidebar-ring":"var(--sidebar-ring)","--color-sidebar-border":"var(--sidebar-border)","--color-sidebar-accent-foreground":"var(--sidebar-accent-foreground)","--color-sidebar-accent":"var(--sidebar-accent)","--color-sidebar-primary-foreground":"var(--sidebar-primary-foreground)","--color-sidebar-primary":"var(--sidebar-primary)","--color-sidebar-foreground":"var(--sidebar-foreground)","--color-sidebar":"var(--sidebar)","--color-chart-5":"var(--chart-5)","--color-chart-4":"var(--chart-4)","--color-chart-3":"var(--chart-3)","--color-chart-2":"var(--chart-2)","--color-chart-1":"var(--chart-1)","--color-ring":"var(--ring)","--color-input":"var(--input)","--color-border":"var(--border)","--color-destructive":"var(--destructive)","--color-default":"var(--default)","--color-default-foreground":"var(--default-foreground)","--color-secondary-foreground":"var(--secondary-foreground)","--color-secondary":"var(--secondary)","--color-primary-foreground":"var(--primary-foreground)","--color-primary":"var(--primary)","--color-popover-foreground":"var(--popover-foreground)","--color-popover":"var(--popover)","--color-card-foreground":"var(--card-foreground)","--color-card":"var(--card)","--color-foreground":"var(--foreground)","--color-background":"var(--background)","--color-destructive-foreground":"var(--destructive-foreground)","--color-accent-foreground":"var(--accent-foreground)","--color-accent":"var(--accent)","--color-muted-foreground":"var(--muted-foreground)","--color-muted":"var(--muted)","--color-success":"var(--success)","--color-success-foreground":"var(--success-foreground)","--color-warning":"var(--warning)","--color-warning-foreground":"var(--warning-foreground)","--color-surface":"var(--surface)","--color-surface-secondary":"var(--surface-secondary)","--color-surface-tertiary":"var(--surface-tertiary)","--color-segment":"var(--segment)","--color-segment-foreground":"var(--segment-foreground)","--color-default-soft":"var(--default-soft)","--color-default-soft-foreground":"var(--default-soft-foreground)","--color-primary-soft":"var(--primary-soft)","--color-primary-soft-foreground":"var(--primary-soft-foreground)","--color-destructive-soft":"var(--destructive-soft)","--color-destructive-soft-foreground":"var(--destructive-soft-foreground)","--color-warning-soft":"var(--warning-soft)","--color-warning-soft-foreground":"var(--warning-soft-foreground)","--color-success-soft":"var(--success-soft)","--color-success-soft-foreground":"var(--success-soft-foreground)","--radius-xs":"calc(var(--radius) * 0.25)","--radius-sm":"calc(var(--radius) * 0.5)","--radius-md":"calc(var(--radius) * 0.75)","--radius-lg":"calc(var(--radius) * 1)","--radius-xl":"calc(var(--radius) * 1.5)","--radius-2xl":"calc(var(--radius) * 2)","--radius-3xl":"calc(var(--radius) * 3)","--radius-4xl":"calc(var(--radius) * 4)","--animate-skeleton":"skeleton 2s linear infinite"}},
+    categories: undefined,
+    meta: undefined,
     files: [],
     component: null,
   },
   "style": {
     name: "style",
     type: "registry:style",
+    description: undefined,
     dependencies: ["@base-ui/react","class-variance-authority","lucide-react"],
     devDependencies: ["tw-animate-css"],
     registryDependencies: ["utils","https://herocn.dev/r/ui.json"],
     css: {"@utility pressible":{"transition":"transform 250ms var(--ease-smooth), background-color 100ms var(--ease-out), box-shadow 100ms var(--ease-out)","@apply transform-gpu motion-reduce:transition-none active:scale-[0.97] aria-expanded:scale-[0.97]":{}},"@utility focus-ring":{"@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none":{}},"@utility focus-field-ring":{"@apply ring-2 ring-ring ring-offset-0 outline-none":{}},"@utility invalid-field-ring":{"@apply outline-1 outline-destructive outline-solid":{}},"@utility invalid-field-ring-focus":{"@apply ring-2 outline-none ring-destructive ring-offset-0":{}},"@keyframes skeleton":{"100%":{"transform":"translateX(200%)"}},".skeleton--shimmer":{"@apply relative overflow-hidden rtl:[--skeleton-animation-dir:reverse]":{}},".skeleton--shimmer::after":{"@apply absolute inset-0 -translate-x-full animate-skeleton bg-linear-to-r from-transparent via-surface-tertiary to-transparent content-['']":{},"animation-direction":"var(--skeleton-animation-dir, normal)"},".skeleton--shimmer:has(.skeleton)::after":{"content":"none"},".skeleton--shimmer:has(.skeleton)::before":{"@apply absolute inset-0 z-10 pointer-events-none mix-blend-overlay -translate-x-full bg-linear-to-r from-transparent via-white/50 to-transparent animate-skeleton content-['']":{},"animation-direction":"var(--skeleton-animation-dir, normal)"},".skeleton--shimmer:has(.skeleton) .skeleton::after":{"content":"none"}},
     cssVars: {"light":{"--snow":"oklch(0.9911 0 0)","--eclipse":"oklch(0.2103 0.0059 285.89)","--radius":"0.5rem","--background":"oklch(0.9702 0 0)","--foreground":"oklch(0.141 0.005 285.823)","--card":"var(--surface)","--card-foreground":"oklch(0.141 0.005 285.823)","--popover":"var(--surface)","--popover-foreground":"oklch(0.141 0.005 285.823)","--primary":"oklch(0.6204 0.195 253.83)","--primary-foreground":"oklch(0.97 0.014 254.604)","--secondary":"oklch(0.967 0.001 286.375)","--secondary-foreground":"oklch(0.21 0.006 285.885)","--muted":"oklch(0.94 0.001 286.375)","--muted-foreground":"oklch(0.552 0.016 285.938)","--accent":"oklch(0.94 0.001 286.375)","--accent-foreground":"oklch(0.21 0.006 285.885)","--destructive":"oklch(0.6532 0.2328 25.74)","--destructive-foreground":"var(--snow)","--border":"oklch(90% 0.004 286.32)","--input":"white","--ring":"var(--primary)","--chart-1":"oklch(0.809 0.105 251.813)","--chart-2":"oklch(0.623 0.214 259.815)","--chart-3":"oklch(0.546 0.245 262.881)","--chart-4":"oklch(0.488 0.243 264.376)","--chart-5":"oklch(0.424 0.199 265.638)","--sidebar":"oklch(0.9702 0 0)","--sidebar-foreground":"oklch(0.141 0.005 285.823)","--sidebar-primary":"oklch(0.6204 0.195 253.83)","--sidebar-primary-foreground":"oklch(0.97 0.014 254.604)","--sidebar-accent":"oklch(0.93 0.001 286.375)","--sidebar-accent-foreground":"oklch(0.21 0.006 285.885)","--sidebar-border":"oklch(90% 0.004 286.32)","--sidebar-ring":"var(--foreground)","--default":"oklch(94% 0.001 286.375)","--default-foreground":"var(--eclipse)","--success":"oklch(0.7329 0.1935 150.81)","--success-foreground":"var(--eclipse)","--warning":"oklch(0.7819 0.1585 72.33)","--warning-foreground":"var(--eclipse)","--surface":"white","--surface-secondary":"oklch(0.9524 0.0013 286.37)","--surface-tertiary":"oklch(0.9373 0.0013 286.37)","--segment":"var(--snow)","--segment-foreground":"var(--eclipse)","--default-soft":"color-mix(in oklab, var(--default) 50%, transparent)","--default-soft-foreground":"var(--default-foreground)","--primary-soft":"color-mix(in oklab, var(--primary) 15%, transparent)","--primary-soft-foreground":"color-mix(in oklab, var(--primary) 70%, var(--foreground) 30%)","--destructive-soft":"color-mix(in oklab, var(--destructive) 15%, transparent)","--destructive-soft-foreground":"color-mix(in oklab, var(--destructive) 70%, var(--foreground) 40%)","--warning-soft":"color-mix(in oklab, var(--warning) 15%, transparent)","--warning-soft-foreground":"color-mix(in oklab, var(--warning) 80%, var(--foreground) 70%)","--success-soft":"color-mix(in oklab, var(--success) 15%, transparent)","--success-soft-foreground":"color-mix(in oklab, var(--success) 80%, var(--foreground) 60%)"},"dark":{"--background":"oklch(0.1228 0.0029 285.97)","--foreground":"oklch(0.985 0 0)","--card":"var(--surface)","--card-foreground":"oklch(0.985 0 0)","--popover":"var(--surface)","--popover-foreground":"oklch(0.985 0 0)","--primary":"oklch(0.6204 0.195 253.83)","--primary-foreground":"oklch(0.97 0.014 254.604)","--secondary":"oklch(0.274 0.006 286.033)","--secondary-foreground":"oklch(0.985 0 0)","--muted":"oklch(0.274 0.006 286.033)","--muted-foreground":"oklch(0.705 0.015 286.067)","--accent":"oklch(0.274 0.006 286.033)","--accent-foreground":"oklch(0.985 0 0)","--destructive":"oklch(0.594 0.1967 24.63)","--destructive-foreground":"var(--snow)","--border":"oklch(28% 0.006 286.033)","--input":"oklch(0.2103 0.0059 285.89)","--ring":"var(--primary)","--chart-1":"oklch(0.809 0.105 251.813)","--chart-2":"oklch(0.623 0.214 259.815)","--chart-3":"oklch(0.546 0.245 262.881)","--chart-4":"oklch(0.488 0.243 264.376)","--chart-5":"oklch(0.424 0.199 265.638)","--sidebar":"oklch(0.1228 0.0029 285.97)","--sidebar-foreground":"oklch(0.985 0 0)","--sidebar-primary":"oklch(0.6204 0.195 253.83)","--sidebar-primary-foreground":"oklch(0.97 0.014 254.604)","--sidebar-accent":"oklch(0.274 0.006 286.033)","--sidebar-accent-foreground":"oklch(0.985 0 0)","--sidebar-border":"oklch(28% 0.006 286.033)","--sidebar-ring":"var(--foreground)","--default":"oklch(27.4% 0.006 286.033)","--default-foreground":"var(--snow)","--warning":"oklch(0.8203 0.1388 76.34)","--warning-foreground":"var(--eclipse)","--surface":"oklch(0.2103 0.0059 285.89)","--surface-secondary":"oklch(0.257 0.0037 286.14)","--surface-tertiary":"oklch(0.2721 0.0024 247.91)","--segment":"oklch(0.3964 0.01 285.93)","--segment-foreground":"var(--foreground)","--default-soft":"color-mix(in oklab, var(--default) 50%, transparent)","--default-soft-foreground":"var(--default-foreground)","--primary-soft":"color-mix(in oklab, var(--primary) 12%, transparent)","--primary-soft-foreground":"color-mix(in oklab, var(--primary) 80%, var(--foreground) 30%)","--destructive-soft":"color-mix(in oklab, var(--destructive) 15%, transparent)","--destructive-soft-foreground":"color-mix(in oklab, var(--destructive) 80%, var(--foreground) 30%)","--warning-soft":"color-mix(in oklab, var(--warning) 12%, transparent)","--warning-soft-foreground":"color-mix(in oklab, var(--warning) 80%, var(--foreground) 30%)","--success-soft":"color-mix(in oklab, var(--success) 12%, transparent)","--success-soft-foreground":"color-mix(in oklab, var(--success) 80%, var(--foreground) 30%)"},"theme":{"--font-sans":"\"Inter\", sans-serif","--color-sidebar-ring":"var(--sidebar-ring)","--color-sidebar-border":"var(--sidebar-border)","--color-sidebar-accent-foreground":"var(--sidebar-accent-foreground)","--color-sidebar-accent":"var(--sidebar-accent)","--color-sidebar-primary-foreground":"var(--sidebar-primary-foreground)","--color-sidebar-primary":"var(--sidebar-primary)","--color-sidebar-foreground":"var(--sidebar-foreground)","--color-sidebar":"var(--sidebar)","--color-chart-5":"var(--chart-5)","--color-chart-4":"var(--chart-4)","--color-chart-3":"var(--chart-3)","--color-chart-2":"var(--chart-2)","--color-chart-1":"var(--chart-1)","--color-ring":"var(--ring)","--color-input":"var(--input)","--color-border":"var(--border)","--color-destructive":"var(--destructive)","--color-default":"var(--default)","--color-default-foreground":"var(--default-foreground)","--color-secondary-foreground":"var(--secondary-foreground)","--color-secondary":"var(--secondary)","--color-primary-foreground":"var(--primary-foreground)","--color-primary":"var(--primary)","--color-popover-foreground":"var(--popover-foreground)","--color-popover":"var(--popover)","--color-card-foreground":"var(--card-foreground)","--color-card":"var(--card)","--color-foreground":"var(--foreground)","--color-background":"var(--background)","--color-destructive-foreground":"var(--destructive-foreground)","--color-accent-foreground":"var(--accent-foreground)","--color-accent":"var(--accent)","--color-muted-foreground":"var(--muted-foreground)","--color-muted":"var(--muted)","--color-success":"var(--success)","--color-success-foreground":"var(--success-foreground)","--color-warning":"var(--warning)","--color-warning-foreground":"var(--warning-foreground)","--color-surface":"var(--surface)","--color-surface-secondary":"var(--surface-secondary)","--color-surface-tertiary":"var(--surface-tertiary)","--color-segment":"var(--segment)","--color-segment-foreground":"var(--segment-foreground)","--color-default-soft":"var(--default-soft)","--color-default-soft-foreground":"var(--default-soft-foreground)","--color-primary-soft":"var(--primary-soft)","--color-primary-soft-foreground":"var(--primary-soft-foreground)","--color-destructive-soft":"var(--destructive-soft)","--color-destructive-soft-foreground":"var(--destructive-soft-foreground)","--color-warning-soft":"var(--warning-soft)","--color-warning-soft-foreground":"var(--warning-soft-foreground)","--color-success-soft":"var(--success-soft)","--color-success-soft-foreground":"var(--success-soft-foreground)","--radius-xs":"calc(var(--radius) * 0.25)","--radius-sm":"calc(var(--radius) * 0.5)","--radius-md":"calc(var(--radius) * 0.75)","--radius-lg":"calc(var(--radius) * 1)","--radius-xl":"calc(var(--radius) * 1.5)","--radius-2xl":"calc(var(--radius) * 2)","--radius-3xl":"calc(var(--radius) * 3)","--radius-4xl":"calc(var(--radius) * 4)","--animate-skeleton":"skeleton 2s linear infinite"}},
+    categories: undefined,
+    meta: undefined,
     files: [],
     component: null,
   },
   "alert": {
     name: "alert",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["class-variance-authority"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: undefined,
     cssVars: {"light":{"--primary-soft-foreground":"color-mix(in oklab, var(--primary) 70%, var(--foreground) 30%)","--success-soft-foreground":"color-mix(in oklab, var(--success) 80%, var(--foreground) 60%)","--warning-soft-foreground":"color-mix(in oklab, var(--warning) 80%, var(--foreground) 70%)","--destructive-soft-foreground":"color-mix(in oklab, var(--destructive) 70%, var(--foreground) 40%)"},"dark":{"--primary-soft-foreground":"color-mix(in oklab, var(--primary) 80%, var(--foreground) 30%)","--warning-soft-foreground":"color-mix(in oklab, var(--warning) 80%, var(--foreground) 30%)","--destructive-soft-foreground":"color-mix(in oklab, var(--destructive) 80%, var(--foreground) 30%)","--success-soft-foreground":"color-mix(in oklab, var(--success) 80%, var(--foreground) 30%)"},"theme":{"--color-primary-soft-foreground":"var(--primary-soft-foreground)","--color-success-soft-foreground":"var(--success-soft-foreground)","--color-warning-soft-foreground":"var(--warning-soft-foreground)","--color-destructive-soft-foreground":"var(--destructive-soft-foreground)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/alert.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/alert.tsx")
@@ -48,14 +58,18 @@ export const Index: Record<string, any> = {
   "alert-dialog": {
     name: "alert-dialog",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react"],
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/alert-dialog.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/alert-dialog.tsx")
@@ -66,14 +80,18 @@ export const Index: Record<string, any> = {
   "accordion": {
     name: "accordion",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react","lucide-react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: {"@utility focus-ring":{"@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none":{}}},
     cssVars: {"light":{"--default":"oklch(94% 0.001 286.375)","--surface":"white"},"dark":{"--default":"oklch(27.4% 0.006 286.033)","--surface":"oklch(0.2103 0.0059 285.89)"},"theme":{"--color-default":"var(--default)","--color-surface":"var(--surface)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/accordion.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/accordion.tsx")
@@ -84,14 +102,18 @@ export const Index: Record<string, any> = {
   "aspect-ratio": {
     name: "aspect-ratio",
     type: "registry:ui",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: undefined,
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/aspect-ratio.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/aspect-ratio.tsx")
@@ -102,14 +124,18 @@ export const Index: Record<string, any> = {
   "attachment": {
     name: "attachment",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react","class-variance-authority"],
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/attachment.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/attachment.tsx")
@@ -120,14 +146,18 @@ export const Index: Record<string, any> = {
   "avatar": {
     name: "avatar",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: undefined,
     cssVars: {"light":{"--eclipse":"oklch(0.2103 0.0059 285.89)","--snow":"oklch(0.9911 0 0)","--default":"oklch(94% 0.001 286.375)","--default-foreground":"var(--eclipse)","--destructive-foreground":"var(--snow)","--success":"oklch(0.7329 0.1935 150.81)","--warning":"oklch(0.7819 0.1585 72.33)"},"dark":{"--default":"oklch(27.4% 0.006 286.033)","--default-foreground":"var(--snow)","--destructive-foreground":"var(--snow)","--warning":"oklch(0.8203 0.1388 76.34)"},"theme":{"--color-default":"var(--default)","--color-default-foreground":"var(--default-foreground)","--color-destructive-foreground":"var(--destructive-foreground)","--color-success":"var(--success)","--color-warning":"var(--warning)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/avatar.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/avatar.tsx")
@@ -138,14 +168,18 @@ export const Index: Record<string, any> = {
   "button": {
     name: "button",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: {"@utility pressible":{"transition":"transform 250ms var(--ease-smooth), background-color 100ms var(--ease-out), box-shadow 100ms var(--ease-out)","@apply transform-gpu motion-reduce:transition-none active:scale-[0.97] aria-expanded:scale-[0.97]":{}},"@utility focus-ring":{"@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none":{}}},
     cssVars: {"light":{"--eclipse":"oklch(0.2103 0.0059 285.89)","--snow":"oklch(0.9911 0 0)","--default":"oklch(94% 0.001 286.375)","--default-foreground":"var(--eclipse)","--primary-soft-foreground":"color-mix(in oklab, var(--primary) 70%, var(--foreground) 30%)","--destructive-foreground":"var(--snow)","--destructive-soft":"color-mix(in oklab, var(--destructive) 15%, transparent)","--destructive-soft-foreground":"color-mix(in oklab, var(--destructive) 70%, var(--foreground) 40%)"},"dark":{"--default":"oklch(27.4% 0.006 286.033)","--default-foreground":"var(--snow)","--primary-soft-foreground":"color-mix(in oklab, var(--primary) 80%, var(--foreground) 30%)","--destructive-foreground":"var(--snow)","--destructive-soft":"color-mix(in oklab, var(--destructive) 15%, transparent)","--destructive-soft-foreground":"color-mix(in oklab, var(--destructive) 80%, var(--foreground) 30%)"},"theme":{"--color-default":"var(--default)","--color-default-foreground":"var(--default-foreground)","--color-primary-soft-foreground":"var(--primary-soft-foreground)","--color-destructive-foreground":"var(--destructive-foreground)","--color-destructive-soft":"var(--destructive-soft)","--color-destructive-soft-foreground":"var(--destructive-soft-foreground)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/button.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/button.tsx")
@@ -156,14 +190,18 @@ export const Index: Record<string, any> = {
   "button-group": {
     name: "button-group",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react"],
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/separator.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/button-group.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/button-group.tsx")
@@ -174,14 +212,18 @@ export const Index: Record<string, any> = {
   "breadcrumb": {
     name: "breadcrumb",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react","lucide-react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: {"@utility focus-ring":{"@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none":{}}},
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/breadcrumb.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/breadcrumb.tsx")
@@ -192,14 +234,18 @@ export const Index: Record<string, any> = {
   "badge": {
     name: "badge",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: undefined,
     cssVars: {"light":{"--eclipse":"oklch(0.2103 0.0059 285.89)","--snow":"oklch(0.9911 0 0)","--default":"oklch(94% 0.001 286.375)","--default-foreground":"var(--eclipse)","--destructive-foreground":"var(--snow)","--success":"oklch(0.7329 0.1935 150.81)","--warning":"oklch(0.7819 0.1585 72.33)"},"dark":{"--default":"oklch(27.4% 0.006 286.033)","--default-foreground":"var(--snow)","--destructive-foreground":"var(--snow)","--warning":"oklch(0.8203 0.1388 76.34)"},"theme":{"--color-default":"var(--default)","--color-default-foreground":"var(--default-foreground)","--color-destructive-foreground":"var(--destructive-foreground)","--color-success":"var(--success)","--color-warning":"var(--warning)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/badge.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/badge.tsx")
@@ -210,14 +256,18 @@ export const Index: Record<string, any> = {
   "breadcrumb": {
     name: "breadcrumb",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react","lucide-react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/breadcrumb.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/breadcrumb.tsx")
@@ -228,14 +278,18 @@ export const Index: Record<string, any> = {
   "bubble": {
     name: "bubble",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react","class-variance-authority"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: {"@utility focus-ring":{"@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none":{}}},
     cssVars: {"light":{"--primary-soft":"color-mix(in oklab, var(--primary) 15%, transparent)","--primary-soft-foreground":"color-mix(in oklab, var(--primary) 70%, var(--foreground) 30%)"},"dark":{"--primary-soft":"color-mix(in oklab, var(--primary) 12%, transparent)","--primary-soft-foreground":"color-mix(in oklab, var(--primary) 80%, var(--foreground) 30%)"},"theme":{"--color-primary-soft":"var(--primary-soft)","--color-primary-soft-foreground":"var(--primary-soft-foreground)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/bubble.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/bubble.tsx")
@@ -246,14 +300,18 @@ export const Index: Record<string, any> = {
   "calendar": {
     name: "calendar",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["lucide-react","react-day-picker"],
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     css: undefined,
     cssVars: {"light":{"--primary-soft":"color-mix(in oklab, var(--primary) 15%, transparent)","--primary-soft-foreground":"color-mix(in oklab, var(--primary) 70%, var(--foreground) 30%)"},"dark":{"--primary-soft":"color-mix(in oklab, var(--primary) 12%, transparent)","--primary-soft-foreground":"color-mix(in oklab, var(--primary) 80%, var(--foreground) 30%)"},"theme":{"--color-primary-soft":"var(--primary-soft)","--color-primary-soft-foreground":"var(--primary-soft-foreground)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/calendar.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/calendar.tsx")
@@ -264,14 +322,18 @@ export const Index: Record<string, any> = {
   "card": {
     name: "card",
     type: "registry:ui",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: undefined,
     css: undefined,
     cssVars: {"light":{"--surface":"white","--surface-secondary":"oklch(0.9524 0.0013 286.37)","--surface-tertiary":"oklch(0.9373 0.0013 286.37)"},"dark":{"--surface":"oklch(0.2103 0.0059 285.89)","--surface-secondary":"oklch(0.257 0.0037 286.14)","--surface-tertiary":"oklch(0.2721 0.0024 247.91)"},"theme":{"--color-surface":"var(--surface)","--color-surface-secondary":"var(--surface-secondary)","--color-surface-tertiary":"var(--surface-tertiary)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/card.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/card.tsx")
@@ -282,14 +344,18 @@ export const Index: Record<string, any> = {
   "chart": {
     name: "chart",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["recharts"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/chart.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/chart.tsx")
@@ -300,14 +366,18 @@ export const Index: Record<string, any> = {
   "carousel": {
     name: "carousel",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["embla-carousel-react","lucide-react"],
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/carousel.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/carousel.tsx")
@@ -318,14 +388,18 @@ export const Index: Record<string, any> = {
   "checkbox": {
     name: "checkbox",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: {"@utility focus-ring":{"@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none":{}},"@utility invalid-field-ring":{"@apply outline-1 outline-destructive outline-solid":{}},"@utility invalid-field-ring-focus":{"@apply ring-2 outline-none ring-destructive ring-offset-0":{}}},
     cssVars: {"light":{"--default":"oklch(94% 0.001 286.375)","--destructive":"oklch(0.6532 0.2328 25.74)","--destructive-foreground":"var(--snow)"},"dark":{"--default":"oklch(27.4% 0.006 286.033)","--destructive":"oklch(0.594 0.1967 24.63)","--destructive-foreground":"var(--snow)"},"theme":{"--color-default":"var(--default)","--color-destructive":"var(--destructive)","--color-destructive-foreground":"var(--destructive-foreground)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/checkbox.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/checkbox.tsx")
@@ -336,14 +410,18 @@ export const Index: Record<string, any> = {
   "collapsible": {
     name: "collapsible",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/collapsible.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/collapsible.tsx")
@@ -354,14 +432,18 @@ export const Index: Record<string, any> = {
   "command": {
     name: "command",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["cmdk","lucide-react"],
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/dialog.json","https://herocn.dev/r/input-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/command.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/command.tsx")
@@ -372,14 +454,18 @@ export const Index: Record<string, any> = {
   "combobox": {
     name: "combobox",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react","lucide-react"],
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/input-group.json"],
     css: {"@utility focus-field-ring":{"@apply ring-2 ring-ring ring-offset-0 outline-none":{}},"@utility invalid-field-ring":{"@apply outline-1 outline-destructive outline-solid":{}},"@utility invalid-field-ring-focus":{"@apply ring-2 outline-none ring-destructive ring-offset-0":{}}},
     cssVars: {"light":{"--default":"oklch(94% 0.001 286.375)"},"dark":{"--default":"oklch(27.4% 0.006 286.033)"},"theme":{"--color-default":"var(--default)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/combobox.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/combobox.tsx")
@@ -390,14 +476,18 @@ export const Index: Record<string, any> = {
   "context-menu": {
     name: "context-menu",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react","lucide-react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: {"@utility focus-ring":{"@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none":{}}},
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/context-menu.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/context-menu.tsx")
@@ -408,14 +498,18 @@ export const Index: Record<string, any> = {
   "popover": {
     name: "popover",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react","lucide-react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/popover.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/popover.tsx")
@@ -426,14 +520,18 @@ export const Index: Record<string, any> = {
   "progress": {
     name: "progress",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: undefined,
     cssVars: {"light":{"--eclipse":"oklch(0.2103 0.0059 285.89)","--snow":"oklch(0.9911 0 0)","--default":"oklch(94% 0.001 286.375)","--default-foreground":"var(--eclipse)","--success":"oklch(0.7329 0.1935 150.81)","--warning":"oklch(0.7819 0.1585 72.33)","--destructive":"oklch(0.6532 0.2328 25.74)","--muted-foreground":"oklch(0.552 0.016 285.938)"},"dark":{"--default":"oklch(27.4% 0.006 286.033)","--default-foreground":"var(--snow)","--warning":"oklch(0.8203 0.1388 76.34)","--destructive":"oklch(0.594 0.1967 24.63)","--muted-foreground":"oklch(0.705 0.015 286.067)"},"theme":{"--color-default":"var(--default)","--color-default-foreground":"var(--default-foreground)","--color-success":"var(--success)","--color-warning":"var(--warning)","--color-destructive":"var(--destructive)","--color-muted-foreground":"var(--muted-foreground)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/progress.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/progress.tsx")
@@ -444,14 +542,18 @@ export const Index: Record<string, any> = {
   "questionnaire": {
     name: "questionnaire",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@shadcn/react","lucide-react"],
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     css: {"@utility focus-field-ring":{"@apply ring-2 ring-ring ring-offset-0 outline-none":{}},"@utility invalid-field-ring":{"@apply outline-1 outline-destructive outline-solid":{}},"@utility invalid-field-ring-focus":{"@apply ring-2 outline-none ring-destructive ring-offset-0":{}}},
     cssVars: {"light":{"--default":"oklch(94% 0.001 286.375)","--primary-soft":"color-mix(in oklab, var(--primary) 15%, transparent)"},"dark":{"--default":"oklch(27.4% 0.006 286.033)","--primary-soft":"color-mix(in oklab, var(--primary) 12%, transparent)"},"theme":{"--color-default":"var(--default)","--color-destructive":"var(--destructive)","--color-primary-soft":"var(--primary-soft)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/questionnaire.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/questionnaire.tsx")
@@ -462,14 +564,18 @@ export const Index: Record<string, any> = {
   "tooltip": {
     name: "tooltip",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/tooltip.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/tooltip.tsx")
@@ -480,14 +586,18 @@ export const Index: Record<string, any> = {
   "dropdown-menu": {
     name: "dropdown-menu",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react","lucide-react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: {"@utility focus-ring":{"@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none":{}}},
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/dropdown-menu.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/dropdown-menu.tsx")
@@ -498,14 +608,18 @@ export const Index: Record<string, any> = {
   "drawer": {
     name: "drawer",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/drawer.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/drawer.tsx")
@@ -516,14 +630,18 @@ export const Index: Record<string, any> = {
   "empty": {
     name: "empty",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["class-variance-authority"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/empty.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/empty.tsx")
@@ -534,14 +652,18 @@ export const Index: Record<string, any> = {
   "dialog": {
     name: "dialog",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react","lucide-react"],
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/dialog.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/dialog.tsx")
@@ -552,14 +674,18 @@ export const Index: Record<string, any> = {
   "sheet": {
     name: "sheet",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react","lucide-react"],
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/sheet.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/sheet.tsx")
@@ -570,14 +696,18 @@ export const Index: Record<string, any> = {
   "field": {
     name: "field",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["class-variance-authority"],
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/label.json","https://herocn.dev/r/separator.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/field.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/field.tsx")
@@ -588,14 +718,18 @@ export const Index: Record<string, any> = {
   "hover-card": {
     name: "hover-card",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react","lucide-react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/hover-card.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/hover-card.tsx")
@@ -606,14 +740,18 @@ export const Index: Record<string, any> = {
   "surface": {
     name: "surface",
     type: "registry:ui",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: undefined,
     css: undefined,
     cssVars: {"light":{"--surface":"white","--surface-secondary":"oklch(0.9524 0.0013 286.37)","--surface-tertiary":"oklch(0.9373 0.0013 286.37)"},"dark":{"--surface":"oklch(0.2103 0.0059 285.89)","--surface-secondary":"oklch(0.257 0.0037 286.14)","--surface-tertiary":"oklch(0.2721 0.0024 247.91)"},"theme":{"--color-surface":"var(--surface)","--color-surface-secondary":"var(--surface-secondary)","--color-surface-tertiary":"var(--surface-tertiary)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/surface.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/surface.tsx")
@@ -624,14 +762,18 @@ export const Index: Record<string, any> = {
   "scroll-area": {
     name: "scroll-area",
     type: "registry:ui",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: undefined,
     css: {"@utility focus-ring":{"@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none":{}}},
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/scroll-area.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/scroll-area.tsx")
@@ -642,14 +784,18 @@ export const Index: Record<string, any> = {
   "sheet": {
     name: "sheet",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react","lucide-react"],
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/sheet.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/sheet.tsx")
@@ -660,14 +806,18 @@ export const Index: Record<string, any> = {
   "input": {
     name: "input",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: {"@utility focus-field-ring":{"@apply ring-2 ring-ring ring-offset-0 outline-none":{}},"@utility invalid-field-ring":{"@apply outline-1 outline-destructive outline-solid":{}},"@utility invalid-field-ring-focus":{"@apply ring-2 outline-none ring-destructive ring-offset-0":{}}},
     cssVars: {"light":{"--eclipse":"oklch(0.2103 0.0059 285.89)","--snow":"oklch(0.9911 0 0)","--default":"oklch(94% 0.001 286.375)","--default-foreground":"var(--eclipse)","--destructive-foreground":"var(--snow)","--surface-secondary":"oklch(0.9524 0.0013 286.37)","--surface-tertiary":"oklch(0.9373 0.0013 286.37)"},"dark":{"--default":"oklch(27.4% 0.006 286.033)","--default-foreground":"var(--snow)","--destructive-foreground":"var(--snow)","--surface-secondary":"oklch(0.257 0.0037 286.14)","--surface-tertiary":"oklch(0.2721 0.0024 247.91)"},"theme":{"--color-default":"var(--default)","--color-default-foreground":"var(--default-foreground)","--color-destructive-foreground":"var(--destructive-foreground)","--color-surface-secondary":"var(--surface-secondary)","--color-surface-tertiary":"var(--surface-tertiary)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/input.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/input.tsx")
@@ -678,14 +828,18 @@ export const Index: Record<string, any> = {
   "input-group": {
     name: "input-group",
     type: "registry:ui",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/input.json","https://herocn.dev/r/textarea.json"],
     css: {"@utility focus-field-ring":{"@apply ring-2 ring-ring ring-offset-0 outline-none":{}},"@utility invalid-field-ring":{"@apply outline-1 outline-destructive outline-solid":{}},"@utility invalid-field-ring-focus":{"@apply ring-2 outline-none ring-destructive ring-offset-0":{}}},
     cssVars: {"light":{"--default":"oklch(94% 0.001 286.375)"},"dark":{"--default":"oklch(27.4% 0.006 286.033)"},"theme":{"--color-default":"var(--default)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/input-group.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/input-group.tsx")
@@ -696,14 +850,18 @@ export const Index: Record<string, any> = {
   "input-otp": {
     name: "input-otp",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["input-otp","lucide-react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: {"@utility focus-field-ring":{"@apply ring-2 ring-ring ring-offset-0 outline-none":{}},"@utility invalid-field-ring":{"@apply outline-1 outline-destructive outline-solid":{}},"@utility invalid-field-ring-focus":{"@apply ring-2 outline-none ring-destructive ring-offset-0":{}}},
     cssVars: {"light":{"--default":"oklch(94% 0.001 286.375)"},"dark":{"--default":"oklch(27.4% 0.006 286.033)"},"theme":{"--color-default":"var(--default)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/input-otp.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/input-otp.tsx")
@@ -714,14 +872,18 @@ export const Index: Record<string, any> = {
   "item": {
     name: "item",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react","class-variance-authority"],
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/separator.json"],
     css: {"@utility focus-ring":{"@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none":{}}},
     cssVars: {"light":{"--surface":"white","--surface-secondary":"oklch(0.9524 0.0013 286.37)","--surface-tertiary":"oklch(0.9373 0.0013 286.37)"},"dark":{"--surface":"oklch(0.2103 0.0059 285.89)","--surface-secondary":"oklch(0.257 0.0037 286.14)","--surface-tertiary":"oklch(0.2721 0.0024 247.91)"},"theme":{"--color-surface":"var(--surface)","--color-surface-secondary":"var(--surface-secondary)","--color-surface-tertiary":"var(--surface-tertiary)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/item.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/item.tsx")
@@ -732,14 +894,18 @@ export const Index: Record<string, any> = {
   "kbd": {
     name: "kbd",
     type: "registry:ui",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: undefined,
     css: undefined,
     cssVars: {"light":{"--default":"oklch(94% 0.001 286.375)"},"dark":{"--default":"oklch(27.4% 0.006 286.033)"},"theme":{"--color-default":"var(--default)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/kbd.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/kbd.tsx")
@@ -750,14 +916,18 @@ export const Index: Record<string, any> = {
   "label": {
     name: "label",
     type: "registry:ui",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: undefined,
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/label.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/label.tsx")
@@ -768,14 +938,18 @@ export const Index: Record<string, any> = {
   "menubar": {
     name: "menubar",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react","lucide-react"],
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/dropdown-menu.json"],
     css: {"@utility pressible":{"transition":"transform 250ms var(--ease-smooth), background-color 100ms var(--ease-out), box-shadow 100ms var(--ease-out)","@apply transform-gpu motion-reduce:transition-none active:scale-[0.97] aria-expanded:scale-[0.97]":{}},"@utility focus-ring":{"@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none":{}}},
     cssVars: {"light":{"--surface":"white","--surface-secondary":"oklch(0.9524 0.0013 286.37)","--surface-tertiary":"oklch(0.9373 0.0013 286.37)"},"dark":{"--surface":"oklch(0.2103 0.0059 285.89)","--surface-secondary":"oklch(0.257 0.0037 286.14)","--surface-tertiary":"oklch(0.2721 0.0024 247.91)"},"theme":{"--color-surface":"var(--surface)","--color-surface-secondary":"var(--surface-secondary)","--color-surface-tertiary":"var(--surface-tertiary)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/menubar.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/menubar.tsx")
@@ -786,14 +960,18 @@ export const Index: Record<string, any> = {
   "marker": {
     name: "marker",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react","class-variance-authority"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/marker.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/marker.tsx")
@@ -804,14 +982,18 @@ export const Index: Record<string, any> = {
   "message": {
     name: "message",
     type: "registry:ui",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: undefined,
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/message.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/message.tsx")
@@ -822,14 +1004,18 @@ export const Index: Record<string, any> = {
   "message-scroller": {
     name: "message-scroller",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@shadcn/react","lucide-react"],
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/message-scroller.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/message-scroller.tsx")
@@ -840,14 +1026,18 @@ export const Index: Record<string, any> = {
   "navigation-menu": {
     name: "navigation-menu",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react","lucide-react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: {"@utility focus-ring":{"@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none":{}}},
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/navigation-menu.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/navigation-menu.tsx")
@@ -858,14 +1048,18 @@ export const Index: Record<string, any> = {
   "native-select": {
     name: "native-select",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["lucide-react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: {"@utility focus-field-ring":{"@apply ring-2 ring-ring ring-offset-0 outline-none":{}},"@utility invalid-field-ring":{"@apply outline-1 outline-destructive outline-solid":{}},"@utility invalid-field-ring-focus":{"@apply ring-2 outline-none ring-destructive ring-offset-0":{}}},
     cssVars: {"light":{"--default":"oklch(94% 0.001 286.375)"},"dark":{"--default":"oklch(27.4% 0.006 286.033)"},"theme":{"--color-default":"var(--default)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/native-select.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/native-select.tsx")
@@ -876,14 +1070,18 @@ export const Index: Record<string, any> = {
   "pagination": {
     name: "pagination",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["lucide-react"],
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/pagination.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/pagination.tsx")
@@ -894,14 +1092,18 @@ export const Index: Record<string, any> = {
   "select": {
     name: "select",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react","lucide-react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: {"@utility pressible":{"transition":"transform 250ms var(--ease-smooth), background-color 100ms var(--ease-out), box-shadow 100ms var(--ease-out)","@apply transform-gpu motion-reduce:transition-none active:scale-[0.97] aria-expanded:scale-[0.97]":{}},"@utility focus-ring":{"@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none":{}},"@utility invalid-field-ring":{"@apply outline-1 outline-destructive outline-solid":{}},"@utility invalid-field-ring-focus":{"@apply ring-2 outline-none ring-destructive ring-offset-0":{}}},
     cssVars: {"light":{"--default":"oklch(94% 0.001 286.375)"},"dark":{"--default":"oklch(27.4% 0.006 286.033)"},"theme":{"--color-default":"var(--default)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/select.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/select.tsx")
@@ -912,14 +1114,18 @@ export const Index: Record<string, any> = {
   "separator": {
     name: "separator",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/separator.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/separator.tsx")
@@ -930,14 +1136,18 @@ export const Index: Record<string, any> = {
   "switch": {
     name: "switch",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: {"@utility focus-ring":{"@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none":{}},"@utility invalid-field-ring":{"@apply outline-1 outline-destructive outline-solid":{}},"@utility invalid-field-ring-focus":{"@apply ring-2 outline-none ring-destructive ring-offset-0":{}}},
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/switch.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/switch.tsx")
@@ -948,14 +1158,18 @@ export const Index: Record<string, any> = {
   "checkbox": {
     name: "checkbox",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: {"@utility focus-ring":{"@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none":{}},"@utility invalid-field-ring":{"@apply outline-1 outline-destructive outline-solid":{}},"@utility invalid-field-ring-focus":{"@apply ring-2 outline-none ring-destructive ring-offset-0":{}}},
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/checkbox.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/checkbox.tsx")
@@ -966,14 +1180,18 @@ export const Index: Record<string, any> = {
   "sidebar": {
     name: "sidebar",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react","class-variance-authority","lucide-react"],
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/input.json","https://herocn.dev/r/separator.json","https://herocn.dev/r/sheet.json","https://herocn.dev/r/skeleton.json","https://herocn.dev/r/tooltip.json","https://herocn.dev/r/use-mobile.json"],
     css: {"@utility focus-ring":{"@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none":{}}},
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/sidebar.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/sidebar.tsx")
@@ -984,14 +1202,18 @@ export const Index: Record<string, any> = {
   "slider": {
     name: "slider",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: {"@utility focus-ring":{"@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none":{}}},
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/slider.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/slider.tsx")
@@ -1002,14 +1224,18 @@ export const Index: Record<string, any> = {
   "skeleton": {
     name: "skeleton",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["class-variance-authority"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: {"@keyframes skeleton":{"100%":{"transform":"translateX(200%)"}},".skeleton--shimmer":{"@apply relative overflow-hidden rtl:[--skeleton-animation-dir:reverse]":{}},".skeleton--shimmer::after":{"@apply absolute inset-0 -translate-x-full animate-skeleton bg-linear-to-r from-transparent via-surface-tertiary to-transparent content-['']":{},"animation-direction":"var(--skeleton-animation-dir, normal)"},".skeleton--shimmer:has(.skeleton)::after":{"content":"none"},".skeleton--shimmer:has(.skeleton)::before":{"@apply absolute inset-0 z-10 pointer-events-none mix-blend-overlay -translate-x-full bg-linear-to-r from-transparent via-white/50 to-transparent animate-skeleton content-['']":{},"animation-direction":"var(--skeleton-animation-dir, normal)"},".skeleton--shimmer:has(.skeleton) .skeleton::after":{"content":"none"}},
     cssVars: {"light":{"--surface-tertiary":"oklch(0.9373 0.0013 286.37)"},"dark":{"--surface-tertiary":"oklch(0.2721 0.0024 247.91)"},"theme":{"--color-surface-tertiary":"var(--surface-tertiary)","--animate-skeleton":"skeleton 2s linear infinite"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/skeleton.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/skeleton.tsx")
@@ -1020,14 +1246,18 @@ export const Index: Record<string, any> = {
   "spinner": {
     name: "spinner",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["class-variance-authority"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: undefined,
     cssVars: {"light":{"--success":"oklch(0.7329 0.1935 150.81)","--warning":"oklch(0.7819 0.1585 72.33)"},"dark":{"--warning":"oklch(0.8203 0.1388 76.34)"},"theme":{"--color-success":"var(--success)","--color-warning":"var(--warning)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/spinner.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/spinner.tsx")
@@ -1038,14 +1268,18 @@ export const Index: Record<string, any> = {
   "tabs": {
     name: "tabs",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: {"@utility focus-ring":{"@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none":{}}},
     cssVars: {"light":{"--default":"oklch(94% 0.001 286.375)","--surface":"white","--segment":"var(--snow)","--segment-foreground":"var(--eclipse)"},"dark":{"--default":"oklch(27.4% 0.006 286.033)","--surface":"oklch(0.2103 0.0059 285.89)","--segment":"oklch(0.3964 0.01 285.93)","--segment-foreground":"var(--foreground)"},"theme":{"--color-default":"var(--default)","--color-surface":"var(--surface)","--color-segment":"var(--segment)","--color-segment-foreground":"var(--segment-foreground)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/tabs.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/tabs.tsx")
@@ -1056,14 +1290,18 @@ export const Index: Record<string, any> = {
   "table": {
     name: "table",
     type: "registry:ui",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: undefined,
     css: undefined,
     cssVars: {"light":{"--surface":"white","--surface-secondary":"oklch(0.9524 0.0013 286.37)"},"dark":{"--surface":"oklch(0.2103 0.0059 285.89)","--surface-secondary":"oklch(0.257 0.0037 286.14)"},"theme":{"--color-surface":"var(--surface)","--color-surface-secondary":"var(--surface-secondary)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/table.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/table.tsx")
@@ -1074,14 +1312,18 @@ export const Index: Record<string, any> = {
   "toggle": {
     name: "toggle",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: {"@utility pressible":{"transition":"transform 250ms var(--ease-smooth), background-color 100ms var(--ease-out), box-shadow 100ms var(--ease-out)","@apply transform-gpu motion-reduce:transition-none active:scale-[0.97] aria-expanded:scale-[0.97]":{}},"@utility focus-field-ring":{"@apply ring-2 ring-ring ring-offset-0 outline-none":{}}},
     cssVars: {"light":{"--eclipse":"oklch(0.2103 0.0059 285.89)","--snow":"oklch(0.9911 0 0)","--default":"oklch(94% 0.001 286.375)","--default-foreground":"var(--eclipse)","--primary-soft":"color-mix(in oklab, var(--primary) 15%, transparent)","--primary-soft-foreground":"color-mix(in oklab, var(--primary) 70%, var(--foreground) 30%)"},"dark":{"--default":"oklch(27.4% 0.006 286.033)","--default-foreground":"var(--snow)","--primary-soft":"color-mix(in oklab, var(--primary) 12%, transparent)","--primary-soft-foreground":"color-mix(in oklab, var(--primary) 80%, var(--foreground) 30%)"},"theme":{"--color-default":"var(--default)","--color-default-foreground":"var(--default-foreground)","--color-primary-soft":"var(--primary-soft)","--color-primary-soft-foreground":"var(--primary-soft-foreground)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/toggle.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/toggle.tsx")
@@ -1092,14 +1334,18 @@ export const Index: Record<string, any> = {
   "toggle-group": {
     name: "toggle-group",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react"],
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/toggle-group.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/toggle-group.tsx")
@@ -1110,14 +1356,18 @@ export const Index: Record<string, any> = {
   "toast": {
     name: "toast",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react","lucide-react"],
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     css: undefined,
     cssVars: {"light":{"--surface":"white","--primary-soft-foreground":"color-mix(in oklab, var(--primary) 70%, var(--foreground) 30%)","--success-soft-foreground":"color-mix(in oklab, var(--success) 80%, var(--foreground) 60%)","--warning-soft-foreground":"color-mix(in oklab, var(--warning) 80%, var(--foreground) 70%)","--destructive-soft-foreground":"color-mix(in oklab, var(--destructive) 70%, var(--foreground) 40%)"},"dark":{"--surface":"oklch(0.2103 0.0059 285.89)","--primary-soft-foreground":"color-mix(in oklab, var(--primary) 80%, var(--foreground) 30%)","--success-soft-foreground":"color-mix(in oklab, var(--success) 80%, var(--foreground) 30%)","--warning-soft-foreground":"color-mix(in oklab, var(--warning) 80%, var(--foreground) 30%)","--destructive-soft-foreground":"color-mix(in oklab, var(--destructive) 80%, var(--foreground) 30%)"},"theme":{"--color-surface":"var(--surface)","--color-primary-soft-foreground":"var(--primary-soft-foreground)","--color-success-soft-foreground":"var(--success-soft-foreground)","--color-warning-soft-foreground":"var(--warning-soft-foreground)","--color-destructive-soft-foreground":"var(--destructive-soft-foreground)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/toast.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/toast.tsx")
@@ -1128,14 +1378,18 @@ export const Index: Record<string, any> = {
   "textarea": {
     name: "textarea",
     type: "registry:ui",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: undefined,
     css: {"@utility focus-field-ring":{"@apply ring-2 ring-ring ring-offset-0 outline-none":{}},"@utility invalid-field-ring":{"@apply outline-1 outline-destructive outline-solid":{}},"@utility invalid-field-ring-focus":{"@apply ring-2 outline-none ring-destructive ring-offset-0":{}}},
     cssVars: {"light":{"--eclipse":"oklch(0.2103 0.0059 285.89)","--snow":"oklch(0.9911 0 0)","--default":"oklch(94% 0.001 286.375)","--default-foreground":"var(--eclipse)","--destructive-foreground":"var(--snow)"},"dark":{"--default":"oklch(27.4% 0.006 286.033)","--default-foreground":"var(--snow)","--destructive-foreground":"var(--snow)"},"theme":{"--color-default":"var(--default)","--color-default-foreground":"var(--default-foreground)","--color-destructive-foreground":"var(--destructive-foreground)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/textarea.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/textarea.tsx")
@@ -1146,14 +1400,18 @@ export const Index: Record<string, any> = {
   "radio-group": {
     name: "radio-group",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["@base-ui/react"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: {"@utility focus-ring":{"@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none":{}},"@utility invalid-field-ring":{"@apply outline-1 outline-destructive outline-solid":{}},"@utility invalid-field-ring-focus":{"@apply ring-2 outline-none ring-destructive ring-offset-0":{}}},
     cssVars: {"light":{"--default":"oklch(94% 0.001 286.375)"},"dark":{"--default":"oklch(27.4% 0.006 286.033)"},"theme":{"--color-default":"var(--default)"}},
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/radio-group.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/radio-group.tsx")
@@ -1164,14 +1422,18 @@ export const Index: Record<string, any> = {
   "resizable": {
     name: "resizable",
     type: "registry:ui",
+    description: undefined,
     dependencies: ["react-resizable-panels"],
     devDependencies: undefined,
     registryDependencies: undefined,
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/ui/resizable.tsx",
-      type: "registry:ui"
+      type: "registry:ui",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/ui/resizable.tsx")
@@ -1182,14 +1444,18 @@ export const Index: Record<string, any> = {
   "use-mobile": {
     name: "use-mobile",
     type: "registry:hook",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: undefined,
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/hooks/use-mobile.ts",
-      type: "registry:hook"
+      type: "registry:hook",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/hooks/use-mobile.ts")
@@ -1200,14 +1466,18 @@ export const Index: Record<string, any> = {
   "attachment-demo": {
     name: "attachment-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/attachment.json","https://herocn.dev/r/spinner.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/attachment-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/attachment-demo.tsx")
@@ -1218,14 +1488,18 @@ export const Index: Record<string, any> = {
   "attachment-image": {
     name: "attachment-image",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/attachment.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/attachment-image.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/attachment-image.tsx")
@@ -1236,14 +1510,18 @@ export const Index: Record<string, any> = {
   "attachment-states": {
     name: "attachment-states",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/attachment.json","https://herocn.dev/r/spinner.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/attachment-states.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/attachment-states.tsx")
@@ -1254,14 +1532,18 @@ export const Index: Record<string, any> = {
   "attachment-sizes": {
     name: "attachment-sizes",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/attachment.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/attachment-sizes.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/attachment-sizes.tsx")
@@ -1272,14 +1554,18 @@ export const Index: Record<string, any> = {
   "attachment-group": {
     name: "attachment-group",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/attachment.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/attachment-group.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/attachment-group.tsx")
@@ -1290,14 +1576,18 @@ export const Index: Record<string, any> = {
   "attachment-trigger": {
     name: "attachment-trigger",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/attachment.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/attachment-trigger.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/attachment-trigger.tsx")
@@ -1308,14 +1598,18 @@ export const Index: Record<string, any> = {
   "aspect-ratio-demo": {
     name: "aspect-ratio-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/aspect-ratio.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/aspect-ratio-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/aspect-ratio-demo.tsx")
@@ -1326,14 +1620,18 @@ export const Index: Record<string, any> = {
   "aspect-ratio-portrait": {
     name: "aspect-ratio-portrait",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/aspect-ratio.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/aspect-ratio-portrait.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/aspect-ratio-portrait.tsx")
@@ -1344,14 +1642,18 @@ export const Index: Record<string, any> = {
   "aspect-ratio-rtl": {
     name: "aspect-ratio-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/aspect-ratio.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/aspect-ratio-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/aspect-ratio-rtl.tsx")
@@ -1362,14 +1664,18 @@ export const Index: Record<string, any> = {
   "aspect-ratio-square": {
     name: "aspect-ratio-square",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/aspect-ratio.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/aspect-ratio-square.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/aspect-ratio-square.tsx")
@@ -1380,14 +1686,18 @@ export const Index: Record<string, any> = {
   "aspect-ratio-rtl": {
     name: "aspect-ratio-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/aspect-ratio.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/aspect-ratio-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/aspect-ratio-rtl.tsx")
@@ -1398,14 +1708,18 @@ export const Index: Record<string, any> = {
   "card-demo": {
     name: "card-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/card-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/card-demo.tsx")
@@ -1416,14 +1730,18 @@ export const Index: Record<string, any> = {
   "card-variants": {
     name: "card-variants",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/card.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/card-variants.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/card-variants.tsx")
@@ -1434,14 +1752,18 @@ export const Index: Record<string, any> = {
   "card-small": {
     name: "card-small",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/card.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/card-small.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/card-small.tsx")
@@ -1452,14 +1774,18 @@ export const Index: Record<string, any> = {
   "card-image": {
     name: "card-image",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/badge.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/card-image.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/card-image.tsx")
@@ -1470,14 +1796,18 @@ export const Index: Record<string, any> = {
   "card-rtl": {
     name: "card-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/card-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/card-rtl.tsx")
@@ -1488,14 +1818,18 @@ export const Index: Record<string, any> = {
   "button-demo": {
     name: "button-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/button-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-demo.tsx")
@@ -1506,14 +1840,18 @@ export const Index: Record<string, any> = {
   "button-variants": {
     name: "button-variants",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/button-variants.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-variants.tsx")
@@ -1524,14 +1862,18 @@ export const Index: Record<string, any> = {
   "button-sizes": {
     name: "button-sizes",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/button-sizes.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-sizes.tsx")
@@ -1542,14 +1884,18 @@ export const Index: Record<string, any> = {
   "button-icons": {
     name: "button-icons",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/button-icons.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-icons.tsx")
@@ -1560,14 +1906,18 @@ export const Index: Record<string, any> = {
   "button-render": {
     name: "button-render",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/button-render.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-render.tsx")
@@ -1578,14 +1928,18 @@ export const Index: Record<string, any> = {
   "button-rtl": {
     name: "button-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/button-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-rtl.tsx")
@@ -1596,14 +1950,18 @@ export const Index: Record<string, any> = {
   "skeleton-demo": {
     name: "skeleton-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/skeleton-demo.tsx")
@@ -1614,14 +1972,18 @@ export const Index: Record<string, any> = {
   "skeleton-avatar": {
     name: "skeleton-avatar",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-avatar.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/skeleton-avatar.tsx")
@@ -1632,14 +1994,18 @@ export const Index: Record<string, any> = {
   "skeleton-card": {
     name: "skeleton-card",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/card.json","https://herocn.dev/r/skeleton.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-card.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/skeleton-card.tsx")
@@ -1650,14 +2016,18 @@ export const Index: Record<string, any> = {
   "skeleton-text": {
     name: "skeleton-text",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-text.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/skeleton-text.tsx")
@@ -1668,14 +2038,18 @@ export const Index: Record<string, any> = {
   "skeleton-form": {
     name: "skeleton-form",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-form.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/skeleton-form.tsx")
@@ -1686,14 +2060,18 @@ export const Index: Record<string, any> = {
   "skeleton-table": {
     name: "skeleton-table",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-table.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/skeleton-table.tsx")
@@ -1704,14 +2082,18 @@ export const Index: Record<string, any> = {
   "skeleton-animation-types": {
     name: "skeleton-animation-types",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-animation-types.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/skeleton-animation-types.tsx")
@@ -1722,14 +2104,18 @@ export const Index: Record<string, any> = {
   "skeleton-single-shimmer": {
     name: "skeleton-single-shimmer",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-single-shimmer.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/skeleton-single-shimmer.tsx")
@@ -1740,14 +2126,18 @@ export const Index: Record<string, any> = {
   "skeleton-rtl": {
     name: "skeleton-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/skeleton.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/skeleton-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/skeleton-rtl.tsx")
@@ -1758,14 +2148,18 @@ export const Index: Record<string, any> = {
   "badge-rtl": {
     name: "badge-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/badge.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/badge-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/badge-rtl.tsx")
@@ -1776,14 +2170,18 @@ export const Index: Record<string, any> = {
   "input-rtl": {
     name: "input-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-rtl.tsx")
@@ -1794,14 +2192,18 @@ export const Index: Record<string, any> = {
   "field-demo": {
     name: "field-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/select.json","https://herocn.dev/r/textarea.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/field-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/field-demo.tsx")
@@ -1812,14 +2214,18 @@ export const Index: Record<string, any> = {
   "field-input": {
     name: "field-input",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/field-input.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/field-input.tsx")
@@ -1830,14 +2236,18 @@ export const Index: Record<string, any> = {
   "field-textarea": {
     name: "field-textarea",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/textarea.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/field-textarea.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/field-textarea.tsx")
@@ -1848,14 +2258,18 @@ export const Index: Record<string, any> = {
   "field-select": {
     name: "field-select",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/select.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/field-select.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/field-select.tsx")
@@ -1866,14 +2280,18 @@ export const Index: Record<string, any> = {
   "field-slider": {
     name: "field-slider",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/slider.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/field-slider.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/field-slider.tsx")
@@ -1884,14 +2302,18 @@ export const Index: Record<string, any> = {
   "field-fieldset": {
     name: "field-fieldset",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/field-fieldset.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/field-fieldset.tsx")
@@ -1902,14 +2324,18 @@ export const Index: Record<string, any> = {
   "field-checkbox": {
     name: "field-checkbox",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/field-checkbox.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/field-checkbox.tsx")
@@ -1920,14 +2346,18 @@ export const Index: Record<string, any> = {
   "checkbox-demo": {
     name: "checkbox-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json","https://herocn.dev/r/label.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/checkbox-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/checkbox-demo.tsx")
@@ -1938,14 +2368,18 @@ export const Index: Record<string, any> = {
   "checkbox-basic": {
     name: "checkbox-basic",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/checkbox-basic.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/checkbox-basic.tsx")
@@ -1956,14 +2390,18 @@ export const Index: Record<string, any> = {
   "checkbox-variants": {
     name: "checkbox-variants",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/checkbox-variants.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/checkbox-variants.tsx")
@@ -1974,14 +2412,18 @@ export const Index: Record<string, any> = {
   "checkbox-description": {
     name: "checkbox-description",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/checkbox-description.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/checkbox-description.tsx")
@@ -1992,14 +2434,18 @@ export const Index: Record<string, any> = {
   "checkbox-disabled": {
     name: "checkbox-disabled",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/checkbox-disabled.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/checkbox-disabled.tsx")
@@ -2010,14 +2456,18 @@ export const Index: Record<string, any> = {
   "checkbox-invalid": {
     name: "checkbox-invalid",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/checkbox-invalid.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/checkbox-invalid.tsx")
@@ -2028,14 +2478,18 @@ export const Index: Record<string, any> = {
   "checkbox-in-surface": {
     name: "checkbox-in-surface",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json","https://herocn.dev/r/surface.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/checkbox-in-surface.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/checkbox-in-surface.tsx")
@@ -2046,14 +2500,18 @@ export const Index: Record<string, any> = {
   "checkbox-rtl": {
     name: "checkbox-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json","https://herocn.dev/r/label.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/checkbox-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/checkbox-rtl.tsx")
@@ -2064,14 +2522,18 @@ export const Index: Record<string, any> = {
   "field-radio": {
     name: "field-radio",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/radio-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/field-radio.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/field-radio.tsx")
@@ -2082,14 +2544,18 @@ export const Index: Record<string, any> = {
   "radio-group-demo": {
     name: "radio-group-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/label.json","https://herocn.dev/r/radio-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/radio-group-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/radio-group-demo.tsx")
@@ -2100,14 +2566,18 @@ export const Index: Record<string, any> = {
   "radio-group-variants": {
     name: "radio-group-variants",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/radio-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/radio-group-variants.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/radio-group-variants.tsx")
@@ -2118,14 +2588,18 @@ export const Index: Record<string, any> = {
   "radio-group-description": {
     name: "radio-group-description",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/radio-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/radio-group-description.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/radio-group-description.tsx")
@@ -2136,14 +2610,18 @@ export const Index: Record<string, any> = {
   "radio-group-disabled": {
     name: "radio-group-disabled",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/radio-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/radio-group-disabled.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/radio-group-disabled.tsx")
@@ -2154,14 +2632,18 @@ export const Index: Record<string, any> = {
   "radio-group-invalid": {
     name: "radio-group-invalid",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/radio-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/radio-group-invalid.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/radio-group-invalid.tsx")
@@ -2172,14 +2654,18 @@ export const Index: Record<string, any> = {
   "radio-group-in-surface": {
     name: "radio-group-in-surface",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/radio-group.json","https://herocn.dev/r/surface.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/radio-group-in-surface.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/radio-group-in-surface.tsx")
@@ -2190,14 +2676,18 @@ export const Index: Record<string, any> = {
   "radio-group-rtl": {
     name: "radio-group-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/radio-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/radio-group-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/radio-group-rtl.tsx")
@@ -2208,14 +2698,18 @@ export const Index: Record<string, any> = {
   "field-switch": {
     name: "field-switch",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/field-switch.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/field-switch.tsx")
@@ -2226,14 +2720,18 @@ export const Index: Record<string, any> = {
   "field-choice-card": {
     name: "field-choice-card",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/radio-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/field-choice-card.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/field-choice-card.tsx")
@@ -2244,14 +2742,18 @@ export const Index: Record<string, any> = {
   "field-group": {
     name: "field-group",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/field-group.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/field-group.tsx")
@@ -2262,14 +2764,18 @@ export const Index: Record<string, any> = {
   "field-rtl": {
     name: "field-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/checkbox.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/select.json","https://herocn.dev/r/textarea.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/field-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/field-rtl.tsx")
@@ -2280,14 +2786,18 @@ export const Index: Record<string, any> = {
   "textarea-demo": {
     name: "textarea-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/textarea.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/textarea-demo.tsx")
@@ -2298,14 +2808,18 @@ export const Index: Record<string, any> = {
   "textarea-variants": {
     name: "textarea-variants",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/textarea.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-variants.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/textarea-variants.tsx")
@@ -2316,14 +2830,18 @@ export const Index: Record<string, any> = {
   "textarea-states": {
     name: "textarea-states",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/textarea.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-states.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/textarea-states.tsx")
@@ -2334,14 +2852,18 @@ export const Index: Record<string, any> = {
   "textarea-field": {
     name: "textarea-field",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/textarea.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-field.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/textarea-field.tsx")
@@ -2352,14 +2874,18 @@ export const Index: Record<string, any> = {
   "textarea-button": {
     name: "textarea-button",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/textarea.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-button.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/textarea-button.tsx")
@@ -2370,14 +2896,18 @@ export const Index: Record<string, any> = {
   "textarea-rtl": {
     name: "textarea-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/textarea.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/textarea-rtl.tsx")
@@ -2388,14 +2918,18 @@ export const Index: Record<string, any> = {
   "textarea-in-surface": {
     name: "textarea-in-surface",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/field.json","https://herocn.dev/r/textarea.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/textarea-in-surface.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/textarea-in-surface.tsx")
@@ -2406,14 +2940,18 @@ export const Index: Record<string, any> = {
   "avatar-rtl": {
     name: "avatar-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/avatar-rtl.tsx")
@@ -2424,14 +2962,18 @@ export const Index: Record<string, any> = {
   "collapsible-rtl": {
     name: "collapsible-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/collapsible.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/collapsible-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/collapsible-rtl.tsx")
@@ -2442,14 +2984,18 @@ export const Index: Record<string, any> = {
   "dropdown-menu-rtl": {
     name: "dropdown-menu-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-rtl.tsx")
@@ -2460,14 +3006,18 @@ export const Index: Record<string, any> = {
   "surface-rtl": {
     name: "surface-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/surface.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/surface-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/surface-rtl.tsx")
@@ -2478,14 +3028,18 @@ export const Index: Record<string, any> = {
   "collapsible-demo": {
     name: "collapsible-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/collapsible.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/collapsible-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/collapsible-demo.tsx")
@@ -2496,14 +3050,18 @@ export const Index: Record<string, any> = {
   "collapsible-basic": {
     name: "collapsible-basic",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/collapsible.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/collapsible-basic.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/collapsible-basic.tsx")
@@ -2514,14 +3072,18 @@ export const Index: Record<string, any> = {
   "collapsible-settings": {
     name: "collapsible-settings",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/collapsible.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/collapsible-settings.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/collapsible-settings.tsx")
@@ -2532,14 +3094,18 @@ export const Index: Record<string, any> = {
   "collapsible-file-tree": {
     name: "collapsible-file-tree",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/collapsible.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/collapsible-file-tree.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/collapsible-file-tree.tsx")
@@ -2550,14 +3116,18 @@ export const Index: Record<string, any> = {
   "dropdown-menu-demo": {
     name: "dropdown-menu-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-demo.tsx")
@@ -2568,14 +3138,18 @@ export const Index: Record<string, any> = {
   "dropdown-menu-basic": {
     name: "dropdown-menu-basic",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-basic.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-basic.tsx")
@@ -2586,14 +3160,18 @@ export const Index: Record<string, any> = {
   "dropdown-menu-submenu": {
     name: "dropdown-menu-submenu",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-submenu.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-submenu.tsx")
@@ -2604,14 +3182,18 @@ export const Index: Record<string, any> = {
   "dropdown-menu-shortcuts": {
     name: "dropdown-menu-shortcuts",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-shortcuts.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-shortcuts.tsx")
@@ -2622,14 +3204,18 @@ export const Index: Record<string, any> = {
   "dropdown-menu-icons": {
     name: "dropdown-menu-icons",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-icons.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-icons.tsx")
@@ -2640,14 +3226,18 @@ export const Index: Record<string, any> = {
   "dropdown-menu-checkboxes": {
     name: "dropdown-menu-checkboxes",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-checkboxes.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-checkboxes.tsx")
@@ -2658,14 +3248,18 @@ export const Index: Record<string, any> = {
   "dropdown-menu-checkboxes-icons": {
     name: "dropdown-menu-checkboxes-icons",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-checkboxes-icons.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-checkboxes-icons.tsx")
@@ -2676,14 +3270,18 @@ export const Index: Record<string, any> = {
   "dropdown-menu-radio-group": {
     name: "dropdown-menu-radio-group",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-radio-group.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-radio-group.tsx")
@@ -2694,14 +3292,18 @@ export const Index: Record<string, any> = {
   "dropdown-menu-radio-icons": {
     name: "dropdown-menu-radio-icons",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-radio-icons.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-radio-icons.tsx")
@@ -2712,14 +3314,18 @@ export const Index: Record<string, any> = {
   "dropdown-menu-destructive": {
     name: "dropdown-menu-destructive",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-destructive.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-destructive.tsx")
@@ -2730,14 +3336,18 @@ export const Index: Record<string, any> = {
   "dropdown-menu-avatar": {
     name: "dropdown-menu-avatar",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-avatar.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-avatar.tsx")
@@ -2748,14 +3358,18 @@ export const Index: Record<string, any> = {
   "dropdown-menu-complex": {
     name: "dropdown-menu-complex",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/dropdown-menu-complex.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-complex.tsx")
@@ -2766,14 +3380,18 @@ export const Index: Record<string, any> = {
   "drawer-demo": {
     name: "drawer-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/drawer-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/drawer-demo.tsx")
@@ -2784,14 +3402,18 @@ export const Index: Record<string, any> = {
   "drawer-direction": {
     name: "drawer-direction",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/drawer-direction.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/drawer-direction.tsx")
@@ -2802,14 +3424,18 @@ export const Index: Record<string, any> = {
   "drawer-overlay-variant": {
     name: "drawer-overlay-variant",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/drawer-overlay-variant.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/drawer-overlay-variant.tsx")
@@ -2820,14 +3446,18 @@ export const Index: Record<string, any> = {
   "drawer-scrollable-content": {
     name: "drawer-scrollable-content",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json","https://herocn.dev/r/surface.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/drawer-scrollable-content.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/drawer-scrollable-content.tsx")
@@ -2838,14 +3468,18 @@ export const Index: Record<string, any> = {
   "drawer-rtl": {
     name: "drawer-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/drawer-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/drawer-rtl.tsx")
@@ -2856,14 +3490,18 @@ export const Index: Record<string, any> = {
   "drawer-responsive-dialog": {
     name: "drawer-responsive-dialog",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json","https://herocn.dev/r/drawer.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/drawer-responsive-dialog.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/drawer-responsive-dialog.tsx")
@@ -2874,14 +3512,18 @@ export const Index: Record<string, any> = {
   "drawer-swipe-handle": {
     name: "drawer-swipe-handle",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/drawer-swipe-handle.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/drawer-swipe-handle.tsx")
@@ -2892,14 +3534,18 @@ export const Index: Record<string, any> = {
   "drawer-nested": {
     name: "drawer-nested",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/drawer-nested.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/drawer-nested.tsx")
@@ -2910,14 +3556,18 @@ export const Index: Record<string, any> = {
   "drawer-non-modal": {
     name: "drawer-non-modal",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/drawer-non-modal.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/drawer-non-modal.tsx")
@@ -2928,14 +3578,18 @@ export const Index: Record<string, any> = {
   "drawer-snap-points": {
     name: "drawer-snap-points",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/drawer.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/drawer-snap-points.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/drawer-snap-points.tsx")
@@ -2946,14 +3600,18 @@ export const Index: Record<string, any> = {
   "avatar-demo": {
     name: "avatar-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/avatar-demo.tsx")
@@ -2964,14 +3622,18 @@ export const Index: Record<string, any> = {
   "avatar-basic": {
     name: "avatar-basic",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-basic.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/avatar-basic.tsx")
@@ -2982,14 +3644,18 @@ export const Index: Record<string, any> = {
   "avatar-badge": {
     name: "avatar-badge",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-badge.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/avatar-badge.tsx")
@@ -3000,14 +3666,18 @@ export const Index: Record<string, any> = {
   "avatar-badge-icon": {
     name: "avatar-badge-icon",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-badge-icon.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/avatar-badge-icon.tsx")
@@ -3018,14 +3688,18 @@ export const Index: Record<string, any> = {
   "avatar-group": {
     name: "avatar-group",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-group.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/avatar-group.tsx")
@@ -3036,14 +3710,18 @@ export const Index: Record<string, any> = {
   "avatar-group-count": {
     name: "avatar-group-count",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-group-count.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/avatar-group-count.tsx")
@@ -3054,14 +3732,18 @@ export const Index: Record<string, any> = {
   "avatar-group-count-icon": {
     name: "avatar-group-count-icon",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-group-count-icon.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/avatar-group-count-icon.tsx")
@@ -3072,14 +3754,18 @@ export const Index: Record<string, any> = {
   "avatar-size": {
     name: "avatar-size",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-size.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/avatar-size.tsx")
@@ -3090,14 +3776,18 @@ export const Index: Record<string, any> = {
   "avatar-dropdown": {
     name: "avatar-dropdown",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/avatar-dropdown.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/avatar-dropdown.tsx")
@@ -3108,14 +3798,18 @@ export const Index: Record<string, any> = {
   "badge-demo": {
     name: "badge-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/badge.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/badge-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/badge-demo.tsx")
@@ -3126,14 +3820,18 @@ export const Index: Record<string, any> = {
   "badge-variants": {
     name: "badge-variants",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/badge.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/badge-variants.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/badge-variants.tsx")
@@ -3144,14 +3842,18 @@ export const Index: Record<string, any> = {
   "badge-sizes": {
     name: "badge-sizes",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/badge.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/badge-sizes.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/badge-sizes.tsx")
@@ -3162,14 +3864,18 @@ export const Index: Record<string, any> = {
   "badge-icon": {
     name: "badge-icon",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/badge.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/badge-icon.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/badge-icon.tsx")
@@ -3180,14 +3886,18 @@ export const Index: Record<string, any> = {
   "badge-colors": {
     name: "badge-colors",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/badge.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/badge-colors.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/badge-colors.tsx")
@@ -3198,14 +3908,18 @@ export const Index: Record<string, any> = {
   "surface-demo": {
     name: "surface-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/surface.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/surface-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/surface-demo.tsx")
@@ -3216,14 +3930,18 @@ export const Index: Record<string, any> = {
   "surface-variants": {
     name: "surface-variants",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/surface.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/surface-variants.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/surface-variants.tsx")
@@ -3234,14 +3952,18 @@ export const Index: Record<string, any> = {
   "input-demo": {
     name: "input-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-demo.tsx")
@@ -3252,14 +3974,18 @@ export const Index: Record<string, any> = {
   "input-variants": {
     name: "input-variants",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-variants.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-variants.tsx")
@@ -3270,14 +3996,18 @@ export const Index: Record<string, any> = {
   "input-states": {
     name: "input-states",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-states.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-states.tsx")
@@ -3288,14 +4018,18 @@ export const Index: Record<string, any> = {
   "input-field": {
     name: "input-field",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-field.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-field.tsx")
@@ -3306,14 +4040,18 @@ export const Index: Record<string, any> = {
   "input-fieldgroup": {
     name: "input-fieldgroup",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-fieldgroup.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-fieldgroup.tsx")
@@ -3324,14 +4062,18 @@ export const Index: Record<string, any> = {
   "input-badge": {
     name: "input-badge",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/badge.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-badge.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-badge.tsx")
@@ -3342,14 +4084,18 @@ export const Index: Record<string, any> = {
   "input-input-group": {
     name: "input-input-group",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/input-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-input-group.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-input-group.tsx")
@@ -3360,14 +4106,18 @@ export const Index: Record<string, any> = {
   "input-button-group": {
     name: "input-button-group",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-button-group.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-button-group.tsx")
@@ -3378,14 +4128,18 @@ export const Index: Record<string, any> = {
   "input-in-surface": {
     name: "input-in-surface",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/surface.json","https://herocn.dev/r/button.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-in-surface.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-in-surface.tsx")
@@ -3396,14 +4150,18 @@ export const Index: Record<string, any> = {
   "button-group-demo": {
     name: "button-group-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/dropdown-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-group-demo.tsx")
@@ -3414,14 +4172,18 @@ export const Index: Record<string, any> = {
   "button-group-orientation": {
     name: "button-group-orientation",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-orientation.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-group-orientation.tsx")
@@ -3432,14 +4194,18 @@ export const Index: Record<string, any> = {
   "button-group-size": {
     name: "button-group-size",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-size.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-group-size.tsx")
@@ -3450,14 +4216,18 @@ export const Index: Record<string, any> = {
   "button-group-separator": {
     name: "button-group-separator",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-separator.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-group-separator.tsx")
@@ -3468,14 +4238,18 @@ export const Index: Record<string, any> = {
   "button-group-split": {
     name: "button-group-split",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-split.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-group-split.tsx")
@@ -3486,14 +4260,18 @@ export const Index: Record<string, any> = {
   "button-group-input": {
     name: "button-group-input",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/input.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-input.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-group-input.tsx")
@@ -3504,14 +4282,18 @@ export const Index: Record<string, any> = {
   "button-group-input-group": {
     name: "button-group-input-group",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/input-group.json","https://herocn.dev/r/tooltip.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-input-group.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-group-input-group.tsx")
@@ -3522,14 +4304,18 @@ export const Index: Record<string, any> = {
   "button-group-dropdown": {
     name: "button-group-dropdown",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/dropdown-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-dropdown.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-group-dropdown.tsx")
@@ -3540,14 +4326,18 @@ export const Index: Record<string, any> = {
   "button-group-select": {
     name: "button-group-select",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/input.json","https://herocn.dev/r/select.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-select.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-group-select.tsx")
@@ -3558,14 +4348,18 @@ export const Index: Record<string, any> = {
   "button-group-popover": {
     name: "button-group-popover",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/field.json","https://herocn.dev/r/popover.json","https://herocn.dev/r/textarea.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-popover.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-group-popover.tsx")
@@ -3576,14 +4370,18 @@ export const Index: Record<string, any> = {
   "button-group-rtl": {
     name: "button-group-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/dropdown-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-group-rtl.tsx")
@@ -3594,14 +4392,18 @@ export const Index: Record<string, any> = {
   "button-group-text": {
     name: "button-group-text",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button-group.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/button-group-text.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/button-group-text.tsx")
@@ -3612,14 +4414,18 @@ export const Index: Record<string, any> = {
   "tabs-demo": {
     name: "tabs-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/card.json","https://herocn.dev/r/tabs.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/tabs-demo.tsx")
@@ -3630,14 +4436,18 @@ export const Index: Record<string, any> = {
   "tabs-line": {
     name: "tabs-line",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/tabs.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-line.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/tabs-line.tsx")
@@ -3648,14 +4458,18 @@ export const Index: Record<string, any> = {
   "tabs-vertical": {
     name: "tabs-vertical",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/tabs.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-vertical.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/tabs-vertical.tsx")
@@ -3666,14 +4480,18 @@ export const Index: Record<string, any> = {
   "tabs-vertical-line": {
     name: "tabs-vertical-line",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/tabs.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-vertical-line.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/tabs-vertical-line.tsx")
@@ -3684,14 +4502,18 @@ export const Index: Record<string, any> = {
   "tabs-disabled": {
     name: "tabs-disabled",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/tabs.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-disabled.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/tabs-disabled.tsx")
@@ -3702,14 +4524,18 @@ export const Index: Record<string, any> = {
   "tabs-icons": {
     name: "tabs-icons",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/tabs.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-icons.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/tabs-icons.tsx")
@@ -3720,14 +4546,18 @@ export const Index: Record<string, any> = {
   "tabs-rtl": {
     name: "tabs-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/card.json","https://herocn.dev/r/tabs.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/tabs-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/tabs-rtl.tsx")
@@ -3738,14 +4568,18 @@ export const Index: Record<string, any> = {
   "select-demo": {
     name: "select-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/select.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/select-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/select-demo.tsx")
@@ -3756,14 +4590,18 @@ export const Index: Record<string, any> = {
   "select-variants": {
     name: "select-variants",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/select.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/select-variants.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/select-variants.tsx")
@@ -3774,14 +4612,18 @@ export const Index: Record<string, any> = {
   "select-surface": {
     name: "select-surface",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/select.json","https://herocn.dev/r/surface.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/select-surface.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/select-surface.tsx")
@@ -3792,14 +4634,18 @@ export const Index: Record<string, any> = {
   "select-groups": {
     name: "select-groups",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/select.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/select-groups.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/select-groups.tsx")
@@ -3810,14 +4656,18 @@ export const Index: Record<string, any> = {
   "select-multiple": {
     name: "select-multiple",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/select.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/select-multiple.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/select-multiple.tsx")
@@ -3828,14 +4678,18 @@ export const Index: Record<string, any> = {
   "select-scrollable": {
     name: "select-scrollable",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/select.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/select-scrollable.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/select-scrollable.tsx")
@@ -3846,14 +4700,18 @@ export const Index: Record<string, any> = {
   "select-disabled": {
     name: "select-disabled",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/select.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/select-disabled.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/select-disabled.tsx")
@@ -3864,14 +4722,18 @@ export const Index: Record<string, any> = {
   "select-invalid": {
     name: "select-invalid",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/select.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/select-invalid.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/select-invalid.tsx")
@@ -3882,14 +4744,18 @@ export const Index: Record<string, any> = {
   "select-rtl": {
     name: "select-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/select.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/select-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/select-rtl.tsx")
@@ -3900,14 +4766,18 @@ export const Index: Record<string, any> = {
   "separator-demo": {
     name: "separator-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/separator.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/separator-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/separator-demo.tsx")
@@ -3918,14 +4788,18 @@ export const Index: Record<string, any> = {
   "separator-vertical": {
     name: "separator-vertical",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/separator.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/separator-vertical.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/separator-vertical.tsx")
@@ -3936,14 +4810,18 @@ export const Index: Record<string, any> = {
   "separator-menu": {
     name: "separator-menu",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/separator.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/separator-menu.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/separator-menu.tsx")
@@ -3954,14 +4832,18 @@ export const Index: Record<string, any> = {
   "separator-list": {
     name: "separator-list",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/separator.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/separator-list.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/separator-list.tsx")
@@ -3972,14 +4854,18 @@ export const Index: Record<string, any> = {
   "separator-surface": {
     name: "separator-surface",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/separator.json","https://herocn.dev/r/surface.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/separator-surface.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/separator-surface.tsx")
@@ -3990,14 +4876,18 @@ export const Index: Record<string, any> = {
   "separator-rtl": {
     name: "separator-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/separator.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/separator-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/separator-rtl.tsx")
@@ -4008,14 +4898,18 @@ export const Index: Record<string, any> = {
   "sidebar-demo": {
     name: "sidebar-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/sidebar.json","https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/collapsible.json","https://herocn.dev/r/dropdown-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/sidebar-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/sidebar-demo.tsx")
@@ -4026,14 +4920,18 @@ export const Index: Record<string, any> = {
   "sidebar-rtl": {
     name: "sidebar-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/sidebar.json","https://herocn.dev/r/avatar.json","https://herocn.dev/r/dropdown-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/sidebar-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/sidebar-rtl.tsx")
@@ -4044,14 +4942,18 @@ export const Index: Record<string, any> = {
   "sidebar-floating": {
     name: "sidebar-floating",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/sidebar.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/sidebar-floating.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/sidebar-floating.tsx")
@@ -4062,14 +4964,18 @@ export const Index: Record<string, any> = {
   "sidebar-inset": {
     name: "sidebar-inset",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/sidebar.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/sidebar-inset.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/sidebar-inset.tsx")
@@ -4080,14 +4986,18 @@ export const Index: Record<string, any> = {
   "sidebar-collapsible": {
     name: "sidebar-collapsible",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/sidebar.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/sidebar-collapsible.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/sidebar-collapsible.tsx")
@@ -4098,14 +5008,18 @@ export const Index: Record<string, any> = {
   "popover-demo": {
     name: "popover-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json","https://herocn.dev/r/popover.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/popover-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/popover-demo.tsx")
@@ -4116,14 +5030,18 @@ export const Index: Record<string, any> = {
   "popover-basic": {
     name: "popover-basic",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/popover.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/popover-basic.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/popover-basic.tsx")
@@ -4134,14 +5052,18 @@ export const Index: Record<string, any> = {
   "popover-align": {
     name: "popover-align",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/popover.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/popover-align.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/popover-align.tsx")
@@ -4152,14 +5074,18 @@ export const Index: Record<string, any> = {
   "popover-form": {
     name: "popover-form",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/popover.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/popover-form.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/popover-form.tsx")
@@ -4170,14 +5096,18 @@ export const Index: Record<string, any> = {
   "popover-with-arrow": {
     name: "popover-with-arrow",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/popover.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/popover-with-arrow.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/popover-with-arrow.tsx")
@@ -4188,14 +5118,18 @@ export const Index: Record<string, any> = {
   "popover-rtl": {
     name: "popover-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/popover.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/popover-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/popover-rtl.tsx")
@@ -4206,14 +5140,18 @@ export const Index: Record<string, any> = {
   "progress-demo": {
     name: "progress-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/progress.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/progress-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/progress-demo.tsx")
@@ -4224,14 +5162,18 @@ export const Index: Record<string, any> = {
   "progress-label": {
     name: "progress-label",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/progress.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/progress-label.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/progress-label.tsx")
@@ -4242,14 +5184,18 @@ export const Index: Record<string, any> = {
   "progress-controlled": {
     name: "progress-controlled",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/progress.json","https://herocn.dev/r/slider.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/progress-controlled.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/progress-controlled.tsx")
@@ -4260,14 +5206,18 @@ export const Index: Record<string, any> = {
   "progress-sizes": {
     name: "progress-sizes",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/progress.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/progress-sizes.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/progress-sizes.tsx")
@@ -4278,14 +5228,18 @@ export const Index: Record<string, any> = {
   "progress-variants": {
     name: "progress-variants",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/progress.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/progress-variants.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/progress-variants.tsx")
@@ -4296,14 +5250,18 @@ export const Index: Record<string, any> = {
   "progress-rtl": {
     name: "progress-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/progress.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/progress-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/progress-rtl.tsx")
@@ -4314,14 +5272,18 @@ export const Index: Record<string, any> = {
   "tooltip-demo": {
     name: "tooltip-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/tooltip.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/tooltip-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/tooltip-demo.tsx")
@@ -4332,14 +5294,18 @@ export const Index: Record<string, any> = {
   "tooltip-sides": {
     name: "tooltip-sides",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/tooltip.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/tooltip-sides.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/tooltip-sides.tsx")
@@ -4350,14 +5316,18 @@ export const Index: Record<string, any> = {
   "tooltip-arrow": {
     name: "tooltip-arrow",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/tooltip.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/tooltip-arrow.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/tooltip-arrow.tsx")
@@ -4368,14 +5338,18 @@ export const Index: Record<string, any> = {
   "tooltip-keyboard": {
     name: "tooltip-keyboard",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/tooltip.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/tooltip-keyboard.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/tooltip-keyboard.tsx")
@@ -4386,14 +5360,18 @@ export const Index: Record<string, any> = {
   "tooltip-disabled": {
     name: "tooltip-disabled",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/tooltip.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/tooltip-disabled.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/tooltip-disabled.tsx")
@@ -4404,14 +5382,18 @@ export const Index: Record<string, any> = {
   "tooltip-rtl": {
     name: "tooltip-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/tooltip.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/tooltip-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/tooltip-rtl.tsx")
@@ -4422,14 +5404,18 @@ export const Index: Record<string, any> = {
   "input-group-demo": {
     name: "input-group-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-demo.tsx")
@@ -4440,14 +5426,18 @@ export const Index: Record<string, any> = {
   "input-group-variants": {
     name: "input-group-variants",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-variants.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-variants.tsx")
@@ -4458,14 +5448,18 @@ export const Index: Record<string, any> = {
   "input-group-invalid": {
     name: "input-group-invalid",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-invalid.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-invalid.tsx")
@@ -4476,14 +5470,18 @@ export const Index: Record<string, any> = {
   "input-group-disabled": {
     name: "input-group-disabled",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-disabled.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-disabled.tsx")
@@ -4494,14 +5492,18 @@ export const Index: Record<string, any> = {
   "input-group-inline-start": {
     name: "input-group-inline-start",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-inline-start.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-inline-start.tsx")
@@ -4512,14 +5514,18 @@ export const Index: Record<string, any> = {
   "input-group-inline-end": {
     name: "input-group-inline-end",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-inline-end.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-inline-end.tsx")
@@ -4530,14 +5536,18 @@ export const Index: Record<string, any> = {
   "input-group-block-start": {
     name: "input-group-block-start",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-block-start.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-block-start.tsx")
@@ -4548,14 +5558,18 @@ export const Index: Record<string, any> = {
   "input-group-block-end": {
     name: "input-group-block-end",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-block-end.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-block-end.tsx")
@@ -4566,14 +5580,18 @@ export const Index: Record<string, any> = {
   "input-group-icon": {
     name: "input-group-icon",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-icon.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-icon.tsx")
@@ -4584,14 +5602,18 @@ export const Index: Record<string, any> = {
   "input-group-text": {
     name: "input-group-text",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-text.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-text.tsx")
@@ -4602,14 +5624,18 @@ export const Index: Record<string, any> = {
   "input-group-button": {
     name: "input-group-button",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-button.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-button.tsx")
@@ -4620,14 +5646,18 @@ export const Index: Record<string, any> = {
   "input-group-spinner": {
     name: "input-group-spinner",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-group.json","https://herocn.dev/r/spinner.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-spinner.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-spinner.tsx")
@@ -4638,14 +5668,18 @@ export const Index: Record<string, any> = {
   "input-group-textarea": {
     name: "input-group-textarea",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-textarea.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-textarea.tsx")
@@ -4656,14 +5690,18 @@ export const Index: Record<string, any> = {
   "input-group-dropdown": {
     name: "input-group-dropdown",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/input-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-dropdown.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-dropdown.tsx")
@@ -4674,14 +5712,18 @@ export const Index: Record<string, any> = {
   "input-group-rtl": {
     name: "input-group-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json","https://herocn.dev/r/spinner.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-rtl.tsx")
@@ -4692,14 +5734,18 @@ export const Index: Record<string, any> = {
   "input-group-in-surface": {
     name: "input-group-in-surface",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/card.json","https://herocn.dev/r/input-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-group-in-surface.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-group-in-surface.tsx")
@@ -4710,14 +5756,18 @@ export const Index: Record<string, any> = {
   "item-demo": {
     name: "item-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/item.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/item-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/item-demo.tsx")
@@ -4728,14 +5778,18 @@ export const Index: Record<string, any> = {
   "item-variants": {
     name: "item-variants",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/item.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/item-variants.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/item-variants.tsx")
@@ -4746,14 +5800,18 @@ export const Index: Record<string, any> = {
   "item-sizes": {
     name: "item-sizes",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/item.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/item-sizes.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/item-sizes.tsx")
@@ -4764,14 +5822,18 @@ export const Index: Record<string, any> = {
   "item-icon": {
     name: "item-icon",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/item.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/item-icon.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/item-icon.tsx")
@@ -4782,14 +5844,18 @@ export const Index: Record<string, any> = {
   "item-avatar": {
     name: "item-avatar",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/item.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/item-avatar.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/item-avatar.tsx")
@@ -4800,14 +5866,18 @@ export const Index: Record<string, any> = {
   "item-image": {
     name: "item-image",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/item.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/item-image.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/item-image.tsx")
@@ -4818,14 +5888,18 @@ export const Index: Record<string, any> = {
   "item-group": {
     name: "item-group",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/item.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/item-group.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/item-group.tsx")
@@ -4836,14 +5910,18 @@ export const Index: Record<string, any> = {
   "item-header": {
     name: "item-header",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/item.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/item-header.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/item-header.tsx")
@@ -4854,14 +5932,18 @@ export const Index: Record<string, any> = {
   "item-link": {
     name: "item-link",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/item.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/item-link.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/item-link.tsx")
@@ -4872,14 +5954,18 @@ export const Index: Record<string, any> = {
   "item-dropdown": {
     name: "item-dropdown",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/item.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/item-dropdown.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/item-dropdown.tsx")
@@ -4890,14 +5976,18 @@ export const Index: Record<string, any> = {
   "item-rtl": {
     name: "item-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/item.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/item-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/item-rtl.tsx")
@@ -4908,14 +5998,18 @@ export const Index: Record<string, any> = {
   "kbd-demo": {
     name: "kbd-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/kbd.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/kbd-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/kbd-demo.tsx")
@@ -4926,14 +6020,18 @@ export const Index: Record<string, any> = {
   "kbd-variants": {
     name: "kbd-variants",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/kbd.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/kbd-variants.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/kbd-variants.tsx")
@@ -4944,14 +6042,18 @@ export const Index: Record<string, any> = {
   "kbd-group": {
     name: "kbd-group",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/kbd.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/kbd-group.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/kbd-group.tsx")
@@ -4962,14 +6064,18 @@ export const Index: Record<string, any> = {
   "kbd-button": {
     name: "kbd-button",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/kbd.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/kbd-button.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/kbd-button.tsx")
@@ -4980,14 +6086,18 @@ export const Index: Record<string, any> = {
   "kbd-tooltip": {
     name: "kbd-tooltip",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/button-group.json","https://herocn.dev/r/tooltip.json","https://herocn.dev/r/kbd.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/kbd-tooltip.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/kbd-tooltip.tsx")
@@ -4998,14 +6108,18 @@ export const Index: Record<string, any> = {
   "kbd-input-group": {
     name: "kbd-input-group",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-group.json","https://herocn.dev/r/kbd.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/kbd-input-group.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/kbd-input-group.tsx")
@@ -5016,14 +6130,18 @@ export const Index: Record<string, any> = {
   "kbd-rtl": {
     name: "kbd-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/kbd.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/kbd-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/kbd-rtl.tsx")
@@ -5034,14 +6152,18 @@ export const Index: Record<string, any> = {
   "toggle-demo": {
     name: "toggle-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toggle-demo.tsx")
@@ -5052,14 +6174,18 @@ export const Index: Record<string, any> = {
   "toggle-ghost": {
     name: "toggle-ghost",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-ghost.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toggle-ghost.tsx")
@@ -5070,14 +6196,18 @@ export const Index: Record<string, any> = {
   "toggle-sizes": {
     name: "toggle-sizes",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-sizes.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toggle-sizes.tsx")
@@ -5088,14 +6218,18 @@ export const Index: Record<string, any> = {
   "toggle-disabled": {
     name: "toggle-disabled",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-disabled.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toggle-disabled.tsx")
@@ -5106,14 +6240,18 @@ export const Index: Record<string, any> = {
   "toggle-rtl": {
     name: "toggle-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toggle-rtl.tsx")
@@ -5124,14 +6262,18 @@ export const Index: Record<string, any> = {
   "toggle-group-demo": {
     name: "toggle-group-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toggle-group-demo.tsx")
@@ -5142,14 +6284,18 @@ export const Index: Record<string, any> = {
   "toggle-group-ghost": {
     name: "toggle-group-ghost",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-ghost.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toggle-group-ghost.tsx")
@@ -5160,14 +6306,18 @@ export const Index: Record<string, any> = {
   "toggle-group-sizes": {
     name: "toggle-group-sizes",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-sizes.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toggle-group-sizes.tsx")
@@ -5178,14 +6328,18 @@ export const Index: Record<string, any> = {
   "toggle-group-spacing": {
     name: "toggle-group-spacing",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-spacing.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toggle-group-spacing.tsx")
@@ -5196,14 +6350,18 @@ export const Index: Record<string, any> = {
   "toggle-group-vertical": {
     name: "toggle-group-vertical",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-vertical.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toggle-group-vertical.tsx")
@@ -5214,14 +6372,18 @@ export const Index: Record<string, any> = {
   "toggle-group-disabled": {
     name: "toggle-group-disabled",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-disabled.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toggle-group-disabled.tsx")
@@ -5232,14 +6394,18 @@ export const Index: Record<string, any> = {
   "toggle-group-custom": {
     name: "toggle-group-custom",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle-group.json","https://herocn.dev/r/field.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-custom.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toggle-group-custom.tsx")
@@ -5250,14 +6416,18 @@ export const Index: Record<string, any> = {
   "toggle-group-rtl": {
     name: "toggle-group-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/toggle-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/toggle-group-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toggle-group-rtl.tsx")
@@ -5268,14 +6438,18 @@ export const Index: Record<string, any> = {
   "label-demo": {
     name: "label-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/label-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/label-demo.tsx")
@@ -5286,14 +6460,18 @@ export const Index: Record<string, any> = {
   "label-in-field": {
     name: "label-in-field",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/label-in-field.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/label-in-field.tsx")
@@ -5304,14 +6482,18 @@ export const Index: Record<string, any> = {
   "label-rtl": {
     name: "label-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/label.json","https://herocn.dev/r/switch.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/label-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/label-rtl.tsx")
@@ -5322,14 +6504,18 @@ export const Index: Record<string, any> = {
   "switch-demo": {
     name: "switch-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/label.json","https://herocn.dev/r/switch.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/switch-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/switch-demo.tsx")
@@ -5340,14 +6526,18 @@ export const Index: Record<string, any> = {
   "switch-description": {
     name: "switch-description",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/switch-description.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/switch-description.tsx")
@@ -5358,14 +6548,18 @@ export const Index: Record<string, any> = {
   "switch-choice-card": {
     name: "switch-choice-card",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/switch-choice-card.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/switch-choice-card.tsx")
@@ -5376,14 +6570,18 @@ export const Index: Record<string, any> = {
   "switch-disabled": {
     name: "switch-disabled",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/switch-disabled.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/switch-disabled.tsx")
@@ -5394,14 +6592,18 @@ export const Index: Record<string, any> = {
   "switch-invalid": {
     name: "switch-invalid",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/switch-invalid.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/switch-invalid.tsx")
@@ -5412,14 +6614,18 @@ export const Index: Record<string, any> = {
   "switch-sizes": {
     name: "switch-sizes",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/switch-sizes.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/switch-sizes.tsx")
@@ -5430,14 +6636,18 @@ export const Index: Record<string, any> = {
   "switch-rtl": {
     name: "switch-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/switch.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/switch-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/switch-rtl.tsx")
@@ -5448,14 +6658,18 @@ export const Index: Record<string, any> = {
   "spinner-demo": {
     name: "spinner-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/spinner.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/spinner-demo.tsx")
@@ -5466,14 +6680,18 @@ export const Index: Record<string, any> = {
   "spinner-variants": {
     name: "spinner-variants",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/spinner.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-variants.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/spinner-variants.tsx")
@@ -5484,14 +6702,18 @@ export const Index: Record<string, any> = {
   "spinner-sizes": {
     name: "spinner-sizes",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/spinner.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-sizes.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/spinner-sizes.tsx")
@@ -5502,14 +6724,18 @@ export const Index: Record<string, any> = {
   "spinner-button": {
     name: "spinner-button",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/spinner.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-button.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/spinner-button.tsx")
@@ -5520,14 +6746,18 @@ export const Index: Record<string, any> = {
   "spinner-badge": {
     name: "spinner-badge",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/badge.json","https://herocn.dev/r/spinner.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-badge.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/spinner-badge.tsx")
@@ -5538,14 +6768,18 @@ export const Index: Record<string, any> = {
   "spinner-input-group": {
     name: "spinner-input-group",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-group.json","https://herocn.dev/r/spinner.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-input-group.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/spinner-input-group.tsx")
@@ -5556,14 +6790,18 @@ export const Index: Record<string, any> = {
   "spinner-empty": {
     name: "spinner-empty",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/empty.json","https://herocn.dev/r/spinner.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-empty.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/spinner-empty.tsx")
@@ -5574,14 +6812,18 @@ export const Index: Record<string, any> = {
   "empty-demo": {
     name: "empty-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/empty.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/empty-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/empty-demo.tsx")
@@ -5592,14 +6834,18 @@ export const Index: Record<string, any> = {
   "empty-outline": {
     name: "empty-outline",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/empty.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/empty-outline.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/empty-outline.tsx")
@@ -5610,14 +6856,18 @@ export const Index: Record<string, any> = {
   "empty-background": {
     name: "empty-background",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/empty.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/empty-background.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/empty-background.tsx")
@@ -5628,14 +6878,18 @@ export const Index: Record<string, any> = {
   "empty-avatar": {
     name: "empty-avatar",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/empty.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/empty-avatar.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/empty-avatar.tsx")
@@ -5646,14 +6900,18 @@ export const Index: Record<string, any> = {
   "empty-avatar-group": {
     name: "empty-avatar-group",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/empty.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/empty-avatar-group.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/empty-avatar-group.tsx")
@@ -5664,14 +6922,18 @@ export const Index: Record<string, any> = {
   "empty-input-group": {
     name: "empty-input-group",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/empty.json","https://herocn.dev/r/input-group.json","https://herocn.dev/r/kbd.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/empty-input-group.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/empty-input-group.tsx")
@@ -5682,14 +6944,18 @@ export const Index: Record<string, any> = {
   "empty-rtl": {
     name: "empty-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/empty.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/empty-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/empty-rtl.tsx")
@@ -5700,14 +6966,18 @@ export const Index: Record<string, any> = {
   "spinner-rtl": {
     name: "spinner-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/spinner.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/spinner-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/spinner-rtl.tsx")
@@ -5718,14 +6988,18 @@ export const Index: Record<string, any> = {
   "slider-demo": {
     name: "slider-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/slider.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/slider-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/slider-demo.tsx")
@@ -5736,14 +7010,18 @@ export const Index: Record<string, any> = {
   "slider-range": {
     name: "slider-range",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/slider.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/slider-range.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/slider-range.tsx")
@@ -5754,14 +7032,18 @@ export const Index: Record<string, any> = {
   "slider-multiple": {
     name: "slider-multiple",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/slider.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/slider-multiple.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/slider-multiple.tsx")
@@ -5772,14 +7054,18 @@ export const Index: Record<string, any> = {
   "slider-vertical": {
     name: "slider-vertical",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/slider.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/slider-vertical.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/slider-vertical.tsx")
@@ -5790,14 +7076,18 @@ export const Index: Record<string, any> = {
   "slider-controlled": {
     name: "slider-controlled",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/label.json","https://herocn.dev/r/slider.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/slider-controlled.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/slider-controlled.tsx")
@@ -5808,14 +7098,18 @@ export const Index: Record<string, any> = {
   "slider-disabled": {
     name: "slider-disabled",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/slider.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/slider-disabled.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/slider-disabled.tsx")
@@ -5826,14 +7120,18 @@ export const Index: Record<string, any> = {
   "slider-rtl": {
     name: "slider-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/slider.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/slider-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/slider-rtl.tsx")
@@ -5844,14 +7142,18 @@ export const Index: Record<string, any> = {
   "alert-demo": {
     name: "alert-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/alert.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/alert-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/alert-demo.tsx")
@@ -5862,14 +7164,18 @@ export const Index: Record<string, any> = {
   "alert-variants": {
     name: "alert-variants",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/alert.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/alert-variants.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/alert-variants.tsx")
@@ -5880,14 +7186,18 @@ export const Index: Record<string, any> = {
   "alert-action": {
     name: "alert-action",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/alert.json","https://herocn.dev/r/button.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/alert-action.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/alert-action.tsx")
@@ -5898,14 +7208,18 @@ export const Index: Record<string, any> = {
   "alert-colors": {
     name: "alert-colors",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/alert.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/alert-colors.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/alert-colors.tsx")
@@ -5916,14 +7230,18 @@ export const Index: Record<string, any> = {
   "alert-rtl": {
     name: "alert-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/alert.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/alert-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/alert-rtl.tsx")
@@ -5934,14 +7252,18 @@ export const Index: Record<string, any> = {
   "alert-dialog-demo": {
     name: "alert-dialog-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/alert-dialog-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/alert-dialog-demo.tsx")
@@ -5952,14 +7274,18 @@ export const Index: Record<string, any> = {
   "alert-dialog-basic": {
     name: "alert-dialog-basic",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/alert-dialog-basic.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/alert-dialog-basic.tsx")
@@ -5970,14 +7296,18 @@ export const Index: Record<string, any> = {
   "alert-dialog-variants": {
     name: "alert-dialog-variants",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/alert-dialog.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/alert-dialog-variants.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/alert-dialog-variants.tsx")
@@ -5988,14 +7318,18 @@ export const Index: Record<string, any> = {
   "alert-dialog-small": {
     name: "alert-dialog-small",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/alert-dialog-small.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/alert-dialog-small.tsx")
@@ -6006,14 +7340,18 @@ export const Index: Record<string, any> = {
   "alert-dialog-with-media": {
     name: "alert-dialog-with-media",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/alert-dialog-with-media.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/alert-dialog-with-media.tsx")
@@ -6024,14 +7362,18 @@ export const Index: Record<string, any> = {
   "alert-dialog-small-with-media": {
     name: "alert-dialog-small-with-media",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/alert-dialog-small-with-media.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/alert-dialog-small-with-media.tsx")
@@ -6042,14 +7384,18 @@ export const Index: Record<string, any> = {
   "alert-dialog-destructive": {
     name: "alert-dialog-destructive",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/alert-dialog-destructive.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/alert-dialog-destructive.tsx")
@@ -6060,14 +7406,18 @@ export const Index: Record<string, any> = {
   "alert-dialog-rtl": {
     name: "alert-dialog-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/alert-dialog.json","https://herocn.dev/r/button.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/alert-dialog-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/alert-dialog-rtl.tsx")
@@ -6078,14 +7428,18 @@ export const Index: Record<string, any> = {
   "dialog-demo": {
     name: "dialog-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/dialog-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dialog-demo.tsx")
@@ -6096,14 +7450,18 @@ export const Index: Record<string, any> = {
   "dialog-close-button": {
     name: "dialog-close-button",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/dialog-close-button.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dialog-close-button.tsx")
@@ -6114,14 +7472,18 @@ export const Index: Record<string, any> = {
   "dialog-no-close-button": {
     name: "dialog-no-close-button",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/dialog-no-close-button.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dialog-no-close-button.tsx")
@@ -6132,14 +7494,18 @@ export const Index: Record<string, any> = {
   "dialog-sticky-footer": {
     name: "dialog-sticky-footer",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/dialog-sticky-footer.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dialog-sticky-footer.tsx")
@@ -6150,14 +7516,18 @@ export const Index: Record<string, any> = {
   "dialog-scrollable-content": {
     name: "dialog-scrollable-content",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/dialog-scrollable-content.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dialog-scrollable-content.tsx")
@@ -6168,14 +7538,18 @@ export const Index: Record<string, any> = {
   "dialog-nested": {
     name: "dialog-nested",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/dialog-nested.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dialog-nested.tsx")
@@ -6186,14 +7560,18 @@ export const Index: Record<string, any> = {
   "dialog-overlay-variant": {
     name: "dialog-overlay-variant",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/dialog-overlay-variant.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dialog-overlay-variant.tsx")
@@ -6204,14 +7582,18 @@ export const Index: Record<string, any> = {
   "dialog-rtl": {
     name: "dialog-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/dialog-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/dialog-rtl.tsx")
@@ -6222,14 +7604,18 @@ export const Index: Record<string, any> = {
   "sheet-demo": {
     name: "sheet-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json","https://herocn.dev/r/sheet.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/sheet-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/sheet-demo.tsx")
@@ -6240,14 +7626,18 @@ export const Index: Record<string, any> = {
   "sheet-side": {
     name: "sheet-side",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/sheet.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/sheet-side.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/sheet-side.tsx")
@@ -6258,14 +7648,18 @@ export const Index: Record<string, any> = {
   "sheet-overlay-variant": {
     name: "sheet-overlay-variant",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/sheet.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/sheet-overlay-variant.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/sheet-overlay-variant.tsx")
@@ -6276,14 +7670,18 @@ export const Index: Record<string, any> = {
   "sheet-no-close-button": {
     name: "sheet-no-close-button",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/sheet.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/sheet-no-close-button.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/sheet-no-close-button.tsx")
@@ -6294,14 +7692,18 @@ export const Index: Record<string, any> = {
   "sheet-rtl": {
     name: "sheet-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/sheet.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/sheet-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/sheet-rtl.tsx")
@@ -6312,14 +7714,18 @@ export const Index: Record<string, any> = {
   "scroll-area-demo": {
     name: "scroll-area-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/scroll-area.json","https://herocn.dev/r/separator.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/scroll-area-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/scroll-area-demo.tsx")
@@ -6330,14 +7736,18 @@ export const Index: Record<string, any> = {
   "scroll-area-horizontal": {
     name: "scroll-area-horizontal",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/scroll-area.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/scroll-area-horizontal.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/scroll-area-horizontal.tsx")
@@ -6348,14 +7758,18 @@ export const Index: Record<string, any> = {
   "scroll-area-rtl": {
     name: "scroll-area-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/scroll-area.json","https://herocn.dev/r/separator.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/scroll-area-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/scroll-area-rtl.tsx")
@@ -6366,14 +7780,18 @@ export const Index: Record<string, any> = {
   "combobox-demo": {
     name: "combobox-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/combobox.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/combobox-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/combobox-demo.tsx")
@@ -6384,14 +7802,18 @@ export const Index: Record<string, any> = {
   "combobox-variants": {
     name: "combobox-variants",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/combobox.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/combobox-variants.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/combobox-variants.tsx")
@@ -6402,14 +7824,18 @@ export const Index: Record<string, any> = {
   "combobox-surface": {
     name: "combobox-surface",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/combobox.json","https://herocn.dev/r/surface.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/combobox-surface.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/combobox-surface.tsx")
@@ -6420,14 +7846,18 @@ export const Index: Record<string, any> = {
   "combobox-multiple": {
     name: "combobox-multiple",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/combobox.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/combobox-multiple.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/combobox-multiple.tsx")
@@ -6438,14 +7868,18 @@ export const Index: Record<string, any> = {
   "combobox-groups": {
     name: "combobox-groups",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/combobox.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/combobox-groups.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/combobox-groups.tsx")
@@ -6456,14 +7890,18 @@ export const Index: Record<string, any> = {
   "combobox-clear": {
     name: "combobox-clear",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/combobox.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/combobox-clear.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/combobox-clear.tsx")
@@ -6474,14 +7912,18 @@ export const Index: Record<string, any> = {
   "combobox-invalid": {
     name: "combobox-invalid",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/combobox.json","https://herocn.dev/r/field.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/combobox-invalid.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/combobox-invalid.tsx")
@@ -6492,14 +7934,18 @@ export const Index: Record<string, any> = {
   "combobox-disabled": {
     name: "combobox-disabled",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/combobox.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/combobox-disabled.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/combobox-disabled.tsx")
@@ -6510,14 +7956,18 @@ export const Index: Record<string, any> = {
   "combobox-auto-highlight": {
     name: "combobox-auto-highlight",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/combobox.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/combobox-auto-highlight.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/combobox-auto-highlight.tsx")
@@ -6528,14 +7978,18 @@ export const Index: Record<string, any> = {
   "combobox-popup": {
     name: "combobox-popup",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/combobox.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/combobox-popup.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/combobox-popup.tsx")
@@ -6546,14 +8000,18 @@ export const Index: Record<string, any> = {
   "combobox-rtl": {
     name: "combobox-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/combobox.json","https://herocn.dev/r/field.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/combobox-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/combobox-rtl.tsx")
@@ -6564,14 +8022,18 @@ export const Index: Record<string, any> = {
   "hover-card-demo": {
     name: "hover-card-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/hover-card.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/hover-card-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/hover-card-demo.tsx")
@@ -6582,14 +8044,18 @@ export const Index: Record<string, any> = {
   "hover-card-with-arrow": {
     name: "hover-card-with-arrow",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/hover-card.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/hover-card-with-arrow.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/hover-card-with-arrow.tsx")
@@ -6600,14 +8066,18 @@ export const Index: Record<string, any> = {
   "hover-card-sides": {
     name: "hover-card-sides",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/hover-card.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/hover-card-sides.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/hover-card-sides.tsx")
@@ -6618,14 +8088,18 @@ export const Index: Record<string, any> = {
   "hover-card-rtl": {
     name: "hover-card-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/hover-card.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/hover-card-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/hover-card-rtl.tsx")
@@ -6636,14 +8110,18 @@ export const Index: Record<string, any> = {
   "context-menu-demo": {
     name: "context-menu-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/context-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/context-menu-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/context-menu-demo.tsx")
@@ -6654,14 +8132,18 @@ export const Index: Record<string, any> = {
   "context-menu-basic": {
     name: "context-menu-basic",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/context-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/context-menu-basic.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/context-menu-basic.tsx")
@@ -6672,14 +8154,18 @@ export const Index: Record<string, any> = {
   "context-menu-submenu": {
     name: "context-menu-submenu",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/context-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/context-menu-submenu.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/context-menu-submenu.tsx")
@@ -6690,14 +8176,18 @@ export const Index: Record<string, any> = {
   "context-menu-shortcuts": {
     name: "context-menu-shortcuts",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/context-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/context-menu-shortcuts.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/context-menu-shortcuts.tsx")
@@ -6708,14 +8198,18 @@ export const Index: Record<string, any> = {
   "context-menu-groups": {
     name: "context-menu-groups",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/context-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/context-menu-groups.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/context-menu-groups.tsx")
@@ -6726,14 +8220,18 @@ export const Index: Record<string, any> = {
   "context-menu-icons": {
     name: "context-menu-icons",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/context-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/context-menu-icons.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/context-menu-icons.tsx")
@@ -6744,14 +8242,18 @@ export const Index: Record<string, any> = {
   "context-menu-checkboxes": {
     name: "context-menu-checkboxes",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/context-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/context-menu-checkboxes.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/context-menu-checkboxes.tsx")
@@ -6762,14 +8264,18 @@ export const Index: Record<string, any> = {
   "context-menu-radio": {
     name: "context-menu-radio",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/context-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/context-menu-radio.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/context-menu-radio.tsx")
@@ -6780,14 +8286,18 @@ export const Index: Record<string, any> = {
   "context-menu-destructive": {
     name: "context-menu-destructive",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/context-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/context-menu-destructive.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/context-menu-destructive.tsx")
@@ -6798,14 +8308,18 @@ export const Index: Record<string, any> = {
   "context-menu-sides": {
     name: "context-menu-sides",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/context-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/context-menu-sides.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/context-menu-sides.tsx")
@@ -6816,14 +8330,18 @@ export const Index: Record<string, any> = {
   "context-menu-rtl": {
     name: "context-menu-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/context-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/context-menu-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/context-menu-rtl.tsx")
@@ -6834,14 +8352,18 @@ export const Index: Record<string, any> = {
   "native-select-demo": {
     name: "native-select-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/native-select.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/native-select-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/native-select-demo.tsx")
@@ -6852,14 +8374,18 @@ export const Index: Record<string, any> = {
   "native-select-variants": {
     name: "native-select-variants",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/native-select.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/native-select-variants.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/native-select-variants.tsx")
@@ -6870,14 +8396,18 @@ export const Index: Record<string, any> = {
   "native-select-in-surface": {
     name: "native-select-in-surface",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/native-select.json","https://herocn.dev/r/surface.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/native-select-in-surface.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/native-select-in-surface.tsx")
@@ -6888,14 +8418,18 @@ export const Index: Record<string, any> = {
   "native-select-disabled": {
     name: "native-select-disabled",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/native-select.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/native-select-disabled.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/native-select-disabled.tsx")
@@ -6906,14 +8440,18 @@ export const Index: Record<string, any> = {
   "native-select-invalid": {
     name: "native-select-invalid",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/native-select.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/native-select-invalid.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/native-select-invalid.tsx")
@@ -6924,14 +8462,18 @@ export const Index: Record<string, any> = {
   "native-select-groups": {
     name: "native-select-groups",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/native-select.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/native-select-groups.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/native-select-groups.tsx")
@@ -6942,14 +8484,18 @@ export const Index: Record<string, any> = {
   "native-select-rtl": {
     name: "native-select-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/native-select.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/native-select-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/native-select-rtl.tsx")
@@ -6960,14 +8506,18 @@ export const Index: Record<string, any> = {
   "command-demo": {
     name: "command-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/command.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/command-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/command-demo.tsx")
@@ -6978,14 +8528,18 @@ export const Index: Record<string, any> = {
   "command-basic": {
     name: "command-basic",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/command.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/command-basic.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/command-basic.tsx")
@@ -6996,14 +8550,18 @@ export const Index: Record<string, any> = {
   "command-shortcuts": {
     name: "command-shortcuts",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/command.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/command-shortcuts.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/command-shortcuts.tsx")
@@ -7014,14 +8572,18 @@ export const Index: Record<string, any> = {
   "command-groups": {
     name: "command-groups",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/command.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/command-groups.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/command-groups.tsx")
@@ -7032,14 +8594,18 @@ export const Index: Record<string, any> = {
   "command-scrollable": {
     name: "command-scrollable",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/command.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/command-scrollable.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/command-scrollable.tsx")
@@ -7050,14 +8616,18 @@ export const Index: Record<string, any> = {
   "command-rtl": {
     name: "command-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/command.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/command-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/command-rtl.tsx")
@@ -7068,14 +8638,18 @@ export const Index: Record<string, any> = {
   "command-overlay-variant": {
     name: "command-overlay-variant",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/command.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/command-overlay-variant.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/command-overlay-variant.tsx")
@@ -7086,14 +8660,18 @@ export const Index: Record<string, any> = {
   "calendar-demo": {
     name: "calendar-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/calendar.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/calendar-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/calendar-demo.tsx")
@@ -7104,14 +8682,18 @@ export const Index: Record<string, any> = {
   "calendar-basic": {
     name: "calendar-basic",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/calendar.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/calendar-basic.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/calendar-basic.tsx")
@@ -7122,14 +8704,18 @@ export const Index: Record<string, any> = {
   "calendar-range": {
     name: "calendar-range",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/calendar.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/calendar-range.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/calendar-range.tsx")
@@ -7140,14 +8726,18 @@ export const Index: Record<string, any> = {
   "calendar-caption": {
     name: "calendar-caption",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/calendar.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/calendar-caption.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/calendar-caption.tsx")
@@ -7158,14 +8748,18 @@ export const Index: Record<string, any> = {
   "calendar-with-presets": {
     name: "calendar-with-presets",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/calendar.json","https://herocn.dev/r/card.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/calendar-with-presets.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/calendar-with-presets.tsx")
@@ -7176,14 +8770,18 @@ export const Index: Record<string, any> = {
   "calendar-with-time": {
     name: "calendar-with-time",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/calendar.json","https://herocn.dev/r/card.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/calendar-with-time.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/calendar-with-time.tsx")
@@ -7194,14 +8792,18 @@ export const Index: Record<string, any> = {
   "calendar-booked-dates": {
     name: "calendar-booked-dates",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/calendar.json","https://herocn.dev/r/card.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/calendar-booked-dates.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/calendar-booked-dates.tsx")
@@ -7212,14 +8814,18 @@ export const Index: Record<string, any> = {
   "calendar-custom-days": {
     name: "calendar-custom-days",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/calendar.json","https://herocn.dev/r/card.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/calendar-custom-days.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/calendar-custom-days.tsx")
@@ -7230,14 +8836,18 @@ export const Index: Record<string, any> = {
   "calendar-week-numbers": {
     name: "calendar-week-numbers",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/calendar.json","https://herocn.dev/r/card.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/calendar-week-numbers.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/calendar-week-numbers.tsx")
@@ -7248,14 +8858,18 @@ export const Index: Record<string, any> = {
   "calendar-rtl": {
     name: "calendar-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/calendar.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/calendar-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/calendar-rtl.tsx")
@@ -7266,14 +8880,18 @@ export const Index: Record<string, any> = {
   "date-picker-demo": {
     name: "date-picker-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/calendar.json","https://herocn.dev/r/popover.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/date-picker-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/date-picker-demo.tsx")
@@ -7284,14 +8902,18 @@ export const Index: Record<string, any> = {
   "date-picker-simple": {
     name: "date-picker-simple",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/calendar.json","https://herocn.dev/r/field.json","https://herocn.dev/r/popover.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/date-picker-simple.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/date-picker-simple.tsx")
@@ -7302,14 +8924,18 @@ export const Index: Record<string, any> = {
   "date-picker-with-range": {
     name: "date-picker-with-range",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/calendar.json","https://herocn.dev/r/field.json","https://herocn.dev/r/popover.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/date-picker-with-range.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/date-picker-with-range.tsx")
@@ -7320,14 +8946,18 @@ export const Index: Record<string, any> = {
   "date-picker-dob": {
     name: "date-picker-dob",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/calendar.json","https://herocn.dev/r/field.json","https://herocn.dev/r/popover.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/date-picker-dob.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/date-picker-dob.tsx")
@@ -7338,14 +8968,18 @@ export const Index: Record<string, any> = {
   "date-picker-input": {
     name: "date-picker-input",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/calendar.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json","https://herocn.dev/r/popover.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/date-picker-input.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/date-picker-input.tsx")
@@ -7356,14 +8990,18 @@ export const Index: Record<string, any> = {
   "date-picker-time": {
     name: "date-picker-time",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/calendar.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input.json","https://herocn.dev/r/popover.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/date-picker-time.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/date-picker-time.tsx")
@@ -7374,14 +9012,18 @@ export const Index: Record<string, any> = {
   "date-picker-natural-language": {
     name: "date-picker-natural-language",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/calendar.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input-group.json","https://herocn.dev/r/popover.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/date-picker-natural-language.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/date-picker-natural-language.tsx")
@@ -7392,14 +9034,18 @@ export const Index: Record<string, any> = {
   "date-picker-rtl": {
     name: "date-picker-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/calendar.json","https://herocn.dev/r/popover.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/date-picker-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/date-picker-rtl.tsx")
@@ -7410,14 +9056,18 @@ export const Index: Record<string, any> = {
   "input-otp-demo": {
     name: "input-otp-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-otp.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-otp-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-otp-demo.tsx")
@@ -7428,14 +9078,18 @@ export const Index: Record<string, any> = {
   "input-otp-variants": {
     name: "input-otp-variants",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-otp.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-otp-variants.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-otp-variants.tsx")
@@ -7446,14 +9100,18 @@ export const Index: Record<string, any> = {
   "input-otp-in-surface": {
     name: "input-otp-in-surface",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-otp.json","https://herocn.dev/r/surface.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-otp-in-surface.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-otp-in-surface.tsx")
@@ -7464,14 +9122,18 @@ export const Index: Record<string, any> = {
   "input-otp-separator": {
     name: "input-otp-separator",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-otp.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-otp-separator.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-otp-separator.tsx")
@@ -7482,14 +9144,18 @@ export const Index: Record<string, any> = {
   "input-otp-disabled": {
     name: "input-otp-disabled",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-otp.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-otp-disabled.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-otp-disabled.tsx")
@@ -7500,14 +9166,18 @@ export const Index: Record<string, any> = {
   "input-otp-controlled": {
     name: "input-otp-controlled",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-otp.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-otp-controlled.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-otp-controlled.tsx")
@@ -7518,14 +9188,18 @@ export const Index: Record<string, any> = {
   "input-otp-invalid": {
     name: "input-otp-invalid",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-otp.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-otp-invalid.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-otp-invalid.tsx")
@@ -7536,14 +9210,18 @@ export const Index: Record<string, any> = {
   "input-otp-four-digits": {
     name: "input-otp-four-digits",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-otp.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-otp-four-digits.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-otp-four-digits.tsx")
@@ -7554,14 +9232,18 @@ export const Index: Record<string, any> = {
   "input-otp-alphanumeric": {
     name: "input-otp-alphanumeric",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/input-otp.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-otp-alphanumeric.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-otp-alphanumeric.tsx")
@@ -7572,14 +9254,18 @@ export const Index: Record<string, any> = {
   "input-otp-form": {
     name: "input-otp-form",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/field.json","https://herocn.dev/r/input-otp.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-otp-form.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-otp-form.tsx")
@@ -7590,14 +9276,18 @@ export const Index: Record<string, any> = {
   "input-otp-rtl": {
     name: "input-otp-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/input-otp.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/input-otp-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/input-otp-rtl.tsx")
@@ -7608,14 +9298,18 @@ export const Index: Record<string, any> = {
   "accordion-demo": {
     name: "accordion-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/accordion.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/accordion-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/accordion-demo.tsx")
@@ -7626,14 +9320,18 @@ export const Index: Record<string, any> = {
   "accordion-basic": {
     name: "accordion-basic",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/accordion.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/accordion-basic.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/accordion-basic.tsx")
@@ -7644,14 +9342,18 @@ export const Index: Record<string, any> = {
   "accordion-multiple": {
     name: "accordion-multiple",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/accordion.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/accordion-multiple.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/accordion-multiple.tsx")
@@ -7662,14 +9364,18 @@ export const Index: Record<string, any> = {
   "accordion-disabled": {
     name: "accordion-disabled",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/accordion.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/accordion-disabled.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/accordion-disabled.tsx")
@@ -7680,14 +9386,18 @@ export const Index: Record<string, any> = {
   "accordion-borders": {
     name: "accordion-borders",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/accordion.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/accordion-borders.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/accordion-borders.tsx")
@@ -7698,14 +9408,18 @@ export const Index: Record<string, any> = {
   "accordion-card": {
     name: "accordion-card",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/accordion.json","https://herocn.dev/r/card.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/accordion-card.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/accordion-card.tsx")
@@ -7716,14 +9430,18 @@ export const Index: Record<string, any> = {
   "accordion-surface": {
     name: "accordion-surface",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/accordion.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/accordion-surface.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/accordion-surface.tsx")
@@ -7734,14 +9452,18 @@ export const Index: Record<string, any> = {
   "accordion-rtl": {
     name: "accordion-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/accordion.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/accordion-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/accordion-rtl.tsx")
@@ -7752,14 +9474,18 @@ export const Index: Record<string, any> = {
   "table-demo": {
     name: "table-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/table.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/table-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/table-demo.tsx")
@@ -7770,14 +9496,18 @@ export const Index: Record<string, any> = {
   "table-secondary": {
     name: "table-secondary",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/table.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/table-secondary.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/table-secondary.tsx")
@@ -7788,14 +9518,18 @@ export const Index: Record<string, any> = {
   "table-secondary-footer": {
     name: "table-secondary-footer",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/table.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/table-secondary-footer.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/table-secondary-footer.tsx")
@@ -7806,14 +9540,18 @@ export const Index: Record<string, any> = {
   "table-footer": {
     name: "table-footer",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/table.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/table-footer.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/table-footer.tsx")
@@ -7824,14 +9562,18 @@ export const Index: Record<string, any> = {
   "table-actions": {
     name: "table-actions",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/table.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/table-actions.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/table-actions.tsx")
@@ -7842,14 +9584,18 @@ export const Index: Record<string, any> = {
   "table-rtl": {
     name: "table-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/table.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/table-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/table-rtl.tsx")
@@ -7860,14 +9606,18 @@ export const Index: Record<string, any> = {
   "resizable-demo": {
     name: "resizable-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/resizable.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/resizable-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/resizable-demo.tsx")
@@ -7878,14 +9628,18 @@ export const Index: Record<string, any> = {
   "resizable-vertical": {
     name: "resizable-vertical",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/resizable.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/resizable-vertical.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/resizable-vertical.tsx")
@@ -7896,14 +9650,18 @@ export const Index: Record<string, any> = {
   "resizable-handle": {
     name: "resizable-handle",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/resizable.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/resizable-handle.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/resizable-handle.tsx")
@@ -7914,14 +9672,18 @@ export const Index: Record<string, any> = {
   "resizable-rtl": {
     name: "resizable-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/resizable.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/resizable-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/resizable-rtl.tsx")
@@ -7932,14 +9694,18 @@ export const Index: Record<string, any> = {
   "pagination-demo": {
     name: "pagination-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/pagination.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/pagination-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/pagination-demo.tsx")
@@ -7950,14 +9716,18 @@ export const Index: Record<string, any> = {
   "pagination-simple": {
     name: "pagination-simple",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/pagination.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/pagination-simple.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/pagination-simple.tsx")
@@ -7968,14 +9738,18 @@ export const Index: Record<string, any> = {
   "pagination-icons-only": {
     name: "pagination-icons-only",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/field.json","https://herocn.dev/r/pagination.json","https://herocn.dev/r/select.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/pagination-icons-only.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/pagination-icons-only.tsx")
@@ -7986,14 +9760,18 @@ export const Index: Record<string, any> = {
   "pagination-sizes": {
     name: "pagination-sizes",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/pagination.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/pagination-sizes.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/pagination-sizes.tsx")
@@ -8004,14 +9782,18 @@ export const Index: Record<string, any> = {
   "pagination-ellipsis": {
     name: "pagination-ellipsis",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/pagination.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/pagination-ellipsis.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/pagination-ellipsis.tsx")
@@ -8022,14 +9804,18 @@ export const Index: Record<string, any> = {
   "pagination-rtl": {
     name: "pagination-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/pagination.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/pagination-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/pagination-rtl.tsx")
@@ -8040,14 +9826,18 @@ export const Index: Record<string, any> = {
   "breadcrumb-demo": {
     name: "breadcrumb-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/breadcrumb.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/breadcrumb-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/breadcrumb-demo.tsx")
@@ -8058,14 +9848,18 @@ export const Index: Record<string, any> = {
   "breadcrumb-basic": {
     name: "breadcrumb-basic",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/breadcrumb.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/breadcrumb-basic.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/breadcrumb-basic.tsx")
@@ -8076,14 +9870,18 @@ export const Index: Record<string, any> = {
   "breadcrumb-separator": {
     name: "breadcrumb-separator",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/breadcrumb.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/breadcrumb-separator.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/breadcrumb-separator.tsx")
@@ -8094,14 +9892,18 @@ export const Index: Record<string, any> = {
   "breadcrumb-dropdown": {
     name: "breadcrumb-dropdown",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/breadcrumb.json","https://herocn.dev/r/dropdown-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/breadcrumb-dropdown.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/breadcrumb-dropdown.tsx")
@@ -8112,14 +9914,18 @@ export const Index: Record<string, any> = {
   "breadcrumb-collapsed": {
     name: "breadcrumb-collapsed",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/breadcrumb.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/breadcrumb-collapsed.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/breadcrumb-collapsed.tsx")
@@ -8130,14 +9936,18 @@ export const Index: Record<string, any> = {
   "breadcrumb-link": {
     name: "breadcrumb-link",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/breadcrumb.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/breadcrumb-link.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/breadcrumb-link.tsx")
@@ -8148,14 +9958,18 @@ export const Index: Record<string, any> = {
   "breadcrumb-rtl": {
     name: "breadcrumb-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/breadcrumb.json","https://herocn.dev/r/dropdown-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/breadcrumb-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/breadcrumb-rtl.tsx")
@@ -8166,14 +9980,18 @@ export const Index: Record<string, any> = {
   "menubar-demo": {
     name: "menubar-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/menubar.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/menubar-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/menubar-demo.tsx")
@@ -8184,14 +10002,18 @@ export const Index: Record<string, any> = {
   "menubar-checkbox": {
     name: "menubar-checkbox",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/menubar.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/menubar-checkbox.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/menubar-checkbox.tsx")
@@ -8202,14 +10024,18 @@ export const Index: Record<string, any> = {
   "menubar-radio": {
     name: "menubar-radio",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/menubar.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/menubar-radio.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/menubar-radio.tsx")
@@ -8220,14 +10046,18 @@ export const Index: Record<string, any> = {
   "menubar-submenu": {
     name: "menubar-submenu",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/menubar.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/menubar-submenu.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/menubar-submenu.tsx")
@@ -8238,14 +10068,18 @@ export const Index: Record<string, any> = {
   "menubar-icons": {
     name: "menubar-icons",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/menubar.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/menubar-icons.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/menubar-icons.tsx")
@@ -8256,14 +10090,18 @@ export const Index: Record<string, any> = {
   "menubar-rtl": {
     name: "menubar-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/menubar.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/menubar-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/menubar-rtl.tsx")
@@ -8274,14 +10112,18 @@ export const Index: Record<string, any> = {
   "menubar-variants": {
     name: "menubar-variants",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/menubar.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/menubar-variants.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/menubar-variants.tsx")
@@ -8292,14 +10134,18 @@ export const Index: Record<string, any> = {
   "menubar-in-surface": {
     name: "menubar-in-surface",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/menubar.json","https://herocn.dev/r/surface.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/menubar-in-surface.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/menubar-in-surface.tsx")
@@ -8310,14 +10156,18 @@ export const Index: Record<string, any> = {
   "navigation-menu-demo": {
     name: "navigation-menu-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/navigation-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/navigation-menu-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/navigation-menu-demo.tsx")
@@ -8328,14 +10178,18 @@ export const Index: Record<string, any> = {
   "navigation-menu-link": {
     name: "navigation-menu-link",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/navigation-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/navigation-menu-link.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/navigation-menu-link.tsx")
@@ -8346,14 +10200,18 @@ export const Index: Record<string, any> = {
   "navigation-menu-rtl": {
     name: "navigation-menu-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/navigation-menu.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/navigation-menu-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/navigation-menu-rtl.tsx")
@@ -8364,14 +10222,18 @@ export const Index: Record<string, any> = {
   "carousel-demo": {
     name: "carousel-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/carousel-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/carousel-demo.tsx")
@@ -8382,14 +10244,18 @@ export const Index: Record<string, any> = {
   "carousel-size": {
     name: "carousel-size",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/carousel-size.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/carousel-size.tsx")
@@ -8400,14 +10266,18 @@ export const Index: Record<string, any> = {
   "carousel-spacing": {
     name: "carousel-spacing",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/carousel-spacing.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/carousel-spacing.tsx")
@@ -8418,14 +10288,18 @@ export const Index: Record<string, any> = {
   "carousel-orientation": {
     name: "carousel-orientation",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/carousel-orientation.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/carousel-orientation.tsx")
@@ -8436,14 +10310,18 @@ export const Index: Record<string, any> = {
   "carousel-api": {
     name: "carousel-api",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/carousel-api.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/carousel-api.tsx")
@@ -8454,14 +10332,18 @@ export const Index: Record<string, any> = {
   "carousel-plugin": {
     name: "carousel-plugin",
     type: "registry:example",
+    description: undefined,
     dependencies: ["embla-carousel-autoplay"],
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/carousel-plugin.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/carousel-plugin.tsx")
@@ -8472,14 +10354,18 @@ export const Index: Record<string, any> = {
   "carousel-rtl": {
     name: "carousel-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/carousel.json","https://herocn.dev/r/card.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/carousel-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/carousel-rtl.tsx")
@@ -8490,14 +10376,18 @@ export const Index: Record<string, any> = {
   "chart-demo": {
     name: "chart-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/card.json","https://herocn.dev/r/chart.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/chart-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/chart-demo.tsx")
@@ -8508,14 +10398,18 @@ export const Index: Record<string, any> = {
   "chart-bar-demo": {
     name: "chart-bar-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/chart.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/chart-bar-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/chart-bar-demo.tsx")
@@ -8526,14 +10420,18 @@ export const Index: Record<string, any> = {
   "chart-bar-demo-grid": {
     name: "chart-bar-demo-grid",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/chart.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/chart-bar-demo-grid.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/chart-bar-demo-grid.tsx")
@@ -8544,14 +10442,18 @@ export const Index: Record<string, any> = {
   "chart-bar-demo-axis": {
     name: "chart-bar-demo-axis",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/chart.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/chart-bar-demo-axis.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/chart-bar-demo-axis.tsx")
@@ -8562,14 +10464,18 @@ export const Index: Record<string, any> = {
   "chart-bar-demo-tooltip": {
     name: "chart-bar-demo-tooltip",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/chart.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/chart-bar-demo-tooltip.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/chart-bar-demo-tooltip.tsx")
@@ -8580,14 +10486,18 @@ export const Index: Record<string, any> = {
   "chart-bar-demo-legend": {
     name: "chart-bar-demo-legend",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/chart.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/chart-bar-demo-legend.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/chart-bar-demo-legend.tsx")
@@ -8598,14 +10508,18 @@ export const Index: Record<string, any> = {
   "chart-tooltip-demo": {
     name: "chart-tooltip-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/chart.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/chart-tooltip-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/chart-tooltip-demo.tsx")
@@ -8616,14 +10530,18 @@ export const Index: Record<string, any> = {
   "chart-rtl": {
     name: "chart-rtl",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/chart.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/chart-rtl.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/chart-rtl.tsx")
@@ -8634,14 +10552,18 @@ export const Index: Record<string, any> = {
   "marker-demo": {
     name: "marker-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/marker.json","https://herocn.dev/r/spinner.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/marker-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/marker-demo.tsx")
@@ -8652,14 +10574,18 @@ export const Index: Record<string, any> = {
   "marker-variants": {
     name: "marker-variants",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/marker.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/marker-variants.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/marker-variants.tsx")
@@ -8670,14 +10596,18 @@ export const Index: Record<string, any> = {
   "marker-status": {
     name: "marker-status",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/marker.json","https://herocn.dev/r/spinner.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/marker-status.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/marker-status.tsx")
@@ -8688,14 +10618,18 @@ export const Index: Record<string, any> = {
   "marker-shimmer": {
     name: "marker-shimmer",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/marker.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/marker-shimmer.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/marker-shimmer.tsx")
@@ -8706,14 +10640,18 @@ export const Index: Record<string, any> = {
   "marker-separator": {
     name: "marker-separator",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/marker.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/marker-separator.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/marker-separator.tsx")
@@ -8724,14 +10662,18 @@ export const Index: Record<string, any> = {
   "marker-border": {
     name: "marker-border",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/marker.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/marker-border.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/marker-border.tsx")
@@ -8742,14 +10684,18 @@ export const Index: Record<string, any> = {
   "marker-icon": {
     name: "marker-icon",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/marker.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/marker-icon.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/marker-icon.tsx")
@@ -8760,14 +10706,18 @@ export const Index: Record<string, any> = {
   "marker-link-button": {
     name: "marker-link-button",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/marker.json","https://herocn.dev/r/toast.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/marker-link-button.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/marker-link-button.tsx")
@@ -8778,14 +10728,18 @@ export const Index: Record<string, any> = {
   "bubble-demo": {
     name: "bubble-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/bubble.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/bubble-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/bubble-demo.tsx")
@@ -8796,14 +10750,18 @@ export const Index: Record<string, any> = {
   "bubble-variants": {
     name: "bubble-variants",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/bubble.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/bubble-variants.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/bubble-variants.tsx")
@@ -8814,14 +10772,18 @@ export const Index: Record<string, any> = {
   "bubble-alignment": {
     name: "bubble-alignment",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/bubble.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/bubble-alignment.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/bubble-alignment.tsx")
@@ -8832,14 +10794,18 @@ export const Index: Record<string, any> = {
   "bubble-group": {
     name: "bubble-group",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/bubble.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/bubble-group.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/bubble-group.tsx")
@@ -8850,14 +10816,18 @@ export const Index: Record<string, any> = {
   "bubble-link-button": {
     name: "bubble-link-button",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/bubble.json","https://herocn.dev/r/toast.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/bubble-link-button.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/bubble-link-button.tsx")
@@ -8868,14 +10838,18 @@ export const Index: Record<string, any> = {
   "bubble-reactions": {
     name: "bubble-reactions",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json","https://herocn.dev/r/toast.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/bubble-reactions.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/bubble-reactions.tsx")
@@ -8886,14 +10860,18 @@ export const Index: Record<string, any> = {
   "bubble-collapsible": {
     name: "bubble-collapsible",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json","https://herocn.dev/r/collapsible.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/bubble-collapsible.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/bubble-collapsible.tsx")
@@ -8904,14 +10882,18 @@ export const Index: Record<string, any> = {
   "bubble-tooltip": {
     name: "bubble-tooltip",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json","https://herocn.dev/r/tooltip.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/bubble-tooltip.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/bubble-tooltip.tsx")
@@ -8922,14 +10904,18 @@ export const Index: Record<string, any> = {
   "bubble-popover": {
     name: "bubble-popover",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json","https://herocn.dev/r/popover.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/bubble-popover.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/bubble-popover.tsx")
@@ -8940,14 +10926,18 @@ export const Index: Record<string, any> = {
   "message-demo": {
     name: "message-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message.json","https://herocn.dev/r/avatar.json","https://herocn.dev/r/bubble.json","https://herocn.dev/r/marker.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/message-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/message-demo.tsx")
@@ -8958,14 +10948,18 @@ export const Index: Record<string, any> = {
   "message-avatar": {
     name: "message-avatar",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message.json","https://herocn.dev/r/avatar.json","https://herocn.dev/r/bubble.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/message-avatar.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/message-avatar.tsx")
@@ -8976,14 +10970,18 @@ export const Index: Record<string, any> = {
   "message-group": {
     name: "message-group",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message.json","https://herocn.dev/r/avatar.json","https://herocn.dev/r/bubble.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/message-group.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/message-group.tsx")
@@ -8994,14 +10992,18 @@ export const Index: Record<string, any> = {
   "message-header-footer": {
     name: "message-header-footer",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message.json","https://herocn.dev/r/bubble.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/message-header-footer.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/message-header-footer.tsx")
@@ -9012,14 +11014,18 @@ export const Index: Record<string, any> = {
   "message-actions": {
     name: "message-actions",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message.json","https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/message-actions.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/message-actions.tsx")
@@ -9030,14 +11036,18 @@ export const Index: Record<string, any> = {
   "message-attachment": {
     name: "message-attachment",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message.json","https://herocn.dev/r/bubble.json","https://herocn.dev/r/attachment.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/message-attachment.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/message-attachment.tsx")
@@ -9048,14 +11058,18 @@ export const Index: Record<string, any> = {
   "message-scroller-demo": {
     name: "message-scroller-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/empty.json","https://herocn.dev/r/input-group.json","https://herocn.dev/r/tooltip.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/message-scroller-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/message-scroller-demo.tsx")
@@ -9066,14 +11080,18 @@ export const Index: Record<string, any> = {
   "message-scroller-anchoring": {
     name: "message-scroller-anchoring",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/empty.json","https://herocn.dev/r/toggle-group.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/message-scroller-anchoring.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/message-scroller-anchoring.tsx")
@@ -9084,14 +11102,18 @@ export const Index: Record<string, any> = {
   "message-scroller-group-chat": {
     name: "message-scroller-group-chat",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/marker.json","https://herocn.dev/r/message.json","https://herocn.dev/r/tooltip.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/message-scroller-group-chat.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/message-scroller-group-chat.tsx")
@@ -9102,14 +11124,18 @@ export const Index: Record<string, any> = {
   "message-scroller-previous-context": {
     name: "message-scroller-previous-context",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/input-group.json","https://herocn.dev/r/slider.json","https://herocn.dev/r/tooltip.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/message-scroller-previous-context.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/message-scroller-previous-context.tsx")
@@ -9120,14 +11146,18 @@ export const Index: Record<string, any> = {
   "message-scroller-streaming": {
     name: "message-scroller-streaming",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/empty.json","https://herocn.dev/r/input-group.json","https://herocn.dev/r/tooltip.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/message-scroller-streaming.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/message-scroller-streaming.tsx")
@@ -9138,14 +11168,18 @@ export const Index: Record<string, any> = {
   "message-scroller-opening-position": {
     name: "message-scroller-opening-position",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/message.json","https://herocn.dev/r/tabs.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/message-scroller-opening-position.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/message-scroller-opening-position.tsx")
@@ -9156,14 +11190,18 @@ export const Index: Record<string, any> = {
   "message-scroller-load-history": {
     name: "message-scroller-load-history",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/marker.json","https://herocn.dev/r/message.json","https://herocn.dev/r/tooltip.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/message-scroller-load-history.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/message-scroller-load-history.tsx")
@@ -9174,14 +11212,18 @@ export const Index: Record<string, any> = {
   "message-scroller-animation": {
     name: "message-scroller-animation",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/empty.json","https://herocn.dev/r/select.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/message-scroller-animation.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/message-scroller-animation.tsx")
@@ -9192,14 +11234,18 @@ export const Index: Record<string, any> = {
   "message-scroller-commands": {
     name: "message-scroller-commands",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/bubble.json","https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/message.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/message-scroller-commands.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/message-scroller-commands.tsx")
@@ -9210,14 +11256,18 @@ export const Index: Record<string, any> = {
   "message-scroller-visibility": {
     name: "message-scroller-visibility",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/bubble.json","https://herocn.dev/r/card.json","https://herocn.dev/r/hover-card.json","https://herocn.dev/r/message.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/message-scroller-visibility.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/message-scroller-visibility.tsx")
@@ -9228,14 +11278,18 @@ export const Index: Record<string, any> = {
   "message-scroller-scrollable": {
     name: "message-scroller-scrollable",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/message-scroller.json","https://herocn.dev/r/card.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/message-scroller-scrollable.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/message-scroller-scrollable.tsx")
@@ -9246,14 +11300,18 @@ export const Index: Record<string, any> = {
   "toast-demo": {
     name: "toast-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/toast.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/toast-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toast-demo.tsx")
@@ -9264,14 +11322,18 @@ export const Index: Record<string, any> = {
   "toast-types": {
     name: "toast-types",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/toast.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/toast-types.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toast-types.tsx")
@@ -9282,14 +11344,18 @@ export const Index: Record<string, any> = {
   "toast-action": {
     name: "toast-action",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/toast.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/toast-action.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toast-action.tsx")
@@ -9300,14 +11366,18 @@ export const Index: Record<string, any> = {
   "toast-promise": {
     name: "toast-promise",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/toast.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/toast-promise.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/toast-promise.tsx")
@@ -9318,14 +11388,18 @@ export const Index: Record<string, any> = {
   "questionnaire-demo": {
     name: "questionnaire-demo",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/questionnaire-demo.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/questionnaire-demo.tsx")
@@ -9336,14 +11410,18 @@ export const Index: Record<string, any> = {
   "questionnaire-multiple": {
     name: "questionnaire-multiple",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/questionnaire-multiple.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/questionnaire-multiple.tsx")
@@ -9354,14 +11432,18 @@ export const Index: Record<string, any> = {
   "questionnaire-freeform": {
     name: "questionnaire-freeform",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/questionnaire-freeform.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/questionnaire-freeform.tsx")
@@ -9372,14 +11454,18 @@ export const Index: Record<string, any> = {
   "questionnaire-skip": {
     name: "questionnaire-skip",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/questionnaire-skip.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/questionnaire-skip.tsx")
@@ -9390,14 +11476,18 @@ export const Index: Record<string, any> = {
   "questionnaire-shortcuts": {
     name: "questionnaire-shortcuts",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/native-select.json","https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/questionnaire-shortcuts.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/questionnaire-shortcuts.tsx")
@@ -9408,14 +11498,18 @@ export const Index: Record<string, any> = {
   "questionnaire-validation": {
     name: "questionnaire-validation",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/card.json","https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/questionnaire-validation.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/questionnaire-validation.tsx")
@@ -9426,14 +11520,18 @@ export const Index: Record<string, any> = {
   "questionnaire-controlled": {
     name: "questionnaire-controlled",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/questionnaire-controlled.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/questionnaire-controlled.tsx")
@@ -9444,14 +11542,18 @@ export const Index: Record<string, any> = {
   "questionnaire-resume": {
     name: "questionnaire-resume",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/questionnaire-resume.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/questionnaire-resume.tsx")
@@ -9462,14 +11564,18 @@ export const Index: Record<string, any> = {
   "questionnaire-conditional": {
     name: "questionnaire-conditional",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/questionnaire-conditional.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/questionnaire-conditional.tsx")
@@ -9480,14 +11586,18 @@ export const Index: Record<string, any> = {
   "questionnaire-navigation-state": {
     name: "questionnaire-navigation-state",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/questionnaire-navigation-state.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/questionnaire-navigation-state.tsx")
@@ -9498,14 +11608,18 @@ export const Index: Record<string, any> = {
   "questionnaire-progress": {
     name: "questionnaire-progress",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/questionnaire-progress.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/questionnaire-progress.tsx")
@@ -9516,14 +11630,18 @@ export const Index: Record<string, any> = {
   "questionnaire-animated": {
     name: "questionnaire-animated",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/questionnaire-animated.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/questionnaire-animated.tsx")
@@ -9534,14 +11652,18 @@ export const Index: Record<string, any> = {
   "questionnaire-card": {
     name: "questionnaire-card",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/card.json","https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/questionnaire-card.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/questionnaire-card.tsx")
@@ -9552,17 +11674,203 @@ export const Index: Record<string, any> = {
   "questionnaire-dialog": {
     name: "questionnaire-dialog",
     type: "registry:example",
+    description: undefined,
     dependencies: undefined,
     devDependencies: undefined,
     registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json","https://herocn.dev/r/questionnaire.json","https://herocn.dev/r/toast.json"],
     css: undefined,
     cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
     files: [{
       path: "src/registry/new-york-v4/examples/questionnaire-dialog.tsx",
-      type: "registry:example"
+      type: "registry:example",
+      target: undefined
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/questionnaire-dialog.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "login-03": {
+    name: "login-03",
+    type: "registry:block",
+    description: "A login page with a muted background color.",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json","https://herocn.dev/r/field.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["authentication","login"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/blocks/login-03/page.tsx",
+      type: "registry:page",
+      target: "app/login/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/login-03/components/login-form.tsx",
+      type: "registry:component",
+      target: "components/login-form.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/login-03/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "login-04": {
+    name: "login-04",
+    type: "registry:block",
+    description: "A login page with form and image.",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/button.json","https://herocn.dev/r/card.json","https://herocn.dev/r/input.json","https://herocn.dev/r/label.json","https://herocn.dev/r/field.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["authentication","login"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/blocks/login-04/page.tsx",
+      type: "registry:page",
+      target: "app/login/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/login-04/components/login-form.tsx",
+      type: "registry:component",
+      target: "components/login-form.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/login-04/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "sidebar-03": {
+    name: "sidebar-03",
+    type: "registry:block",
+    description: "A sidebar with submenus.",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/sidebar.json","https://herocn.dev/r/breadcrumb.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["sidebar","dashboard"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/blocks/sidebar-03/page.tsx",
+      type: "registry:page",
+      target: "app/dashboard/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-03/components/app-sidebar.tsx",
+      type: "registry:component",
+      target: "components/app-sidebar.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/sidebar-03/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "sidebar-07": {
+    name: "sidebar-07",
+    type: "registry:block",
+    description: "A sidebar that collapses to icons.",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/sidebar.json","https://herocn.dev/r/breadcrumb.json","https://herocn.dev/r/separator.json","https://herocn.dev/r/collapsible.json","https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/avatar.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["sidebar","dashboard"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/blocks/sidebar-07/page.tsx",
+      type: "registry:page",
+      target: "app/dashboard/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-07/components/app-sidebar.tsx",
+      type: "registry:component",
+      target: "components/app-sidebar.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-07/components/nav-main.tsx",
+      type: "registry:component",
+      target: "components/nav-main.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-07/components/nav-projects.tsx",
+      type: "registry:component",
+      target: "components/nav-projects.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-07/components/nav-user.tsx",
+      type: "registry:component",
+      target: "components/nav-user.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-07/components/team-switcher.tsx",
+      type: "registry:component",
+      target: "components/team-switcher.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/sidebar-07/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "dashboard-01": {
+    name: "dashboard-01",
+    type: "registry:block",
+    description: "A dashboard with sidebar, charts and data table.",
+    dependencies: ["@dnd-kit/core","@dnd-kit/modifiers","@dnd-kit/sortable","@dnd-kit/utilities","@tanstack/react-table","zod"],
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/sidebar.json","https://herocn.dev/r/breadcrumb.json","https://herocn.dev/r/separator.json","https://herocn.dev/r/label.json","https://herocn.dev/r/chart.json","https://herocn.dev/r/card.json","https://herocn.dev/r/select.json","https://herocn.dev/r/tabs.json","https://herocn.dev/r/table.json","https://herocn.dev/r/toggle-group.json","https://herocn.dev/r/badge.json","https://herocn.dev/r/button.json","https://herocn.dev/r/checkbox.json","https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/drawer.json","https://herocn.dev/r/input.json","https://herocn.dev/r/avatar.json","https://herocn.dev/r/sheet.json","https://herocn.dev/r/toast.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["dashboard"],
+    meta: {"iframeHeight":"1000px"},
+    files: [{
+      path: "src/registry/new-york-v4/blocks/dashboard-01/page.tsx",
+      type: "registry:page",
+      target: "app/dashboard/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/dashboard-01/data.json",
+      type: "registry:file",
+      target: "app/dashboard/data.json"
+    },{
+      path: "src/registry/new-york-v4/blocks/dashboard-01/components/app-sidebar.tsx",
+      type: "registry:component",
+      target: "components/app-sidebar.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/dashboard-01/components/chart-area-interactive.tsx",
+      type: "registry:component",
+      target: "components/chart-area-interactive.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/dashboard-01/components/data-table.tsx",
+      type: "registry:component",
+      target: "components/data-table.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/dashboard-01/components/nav-documents.tsx",
+      type: "registry:component",
+      target: "components/nav-documents.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/dashboard-01/components/nav-main.tsx",
+      type: "registry:component",
+      target: "components/nav-main.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/dashboard-01/components/nav-secondary.tsx",
+      type: "registry:component",
+      target: "components/nav-secondary.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/dashboard-01/components/nav-user.tsx",
+      type: "registry:component",
+      target: "components/nav-user.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/dashboard-01/components/section-cards.tsx",
+      type: "registry:component",
+      target: "components/section-cards.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/dashboard-01/components/site-header.tsx",
+      type: "registry:component",
+      target: "components/site-header.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/dashboard-01/page.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

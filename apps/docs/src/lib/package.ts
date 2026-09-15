@@ -1,3 +1,4 @@
+import { blocks } from "@/registry/registry-blocks";
 import { hooks } from "@/registry/registry-hooks";
 import { ui } from "@/registry/registry-ui";
 import { getRegistryItem } from "./registry";
@@ -13,5 +14,5 @@ export async function getPackage(name: string) {
 }
 
 export async function getAllPackageNames(): Promise<string[]> {
-	return [...ui, ...hooks].map((item) => item.name);
+	return [...ui, ...hooks, ...blocks].map((item) => item.name);
 }

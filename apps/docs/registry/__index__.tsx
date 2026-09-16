@@ -11953,6 +11953,74 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "sidebar-01": {
+    name: "sidebar-01",
+    type: "registry:block",
+    description: "A simple sidebar with navigation grouped by section.",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/sidebar.json","https://herocn.dev/r/breadcrumb.json","https://herocn.dev/r/separator.json","https://herocn.dev/r/label.json","https://herocn.dev/r/dropdown-menu.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["sidebar","dashboard"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/blocks/sidebar-01/page.tsx",
+      type: "registry:page",
+      target: "app/dashboard/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-01/components/app-sidebar.tsx",
+      type: "registry:component",
+      target: "components/app-sidebar.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-01/components/search-form.tsx",
+      type: "registry:component",
+      target: "components/search-form.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-01/components/version-switcher.tsx",
+      type: "registry:component",
+      target: "components/version-switcher.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/sidebar-01/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "sidebar-02": {
+    name: "sidebar-02",
+    type: "registry:block",
+    description: "A sidebar with collapsible sections.",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/sidebar.json","https://herocn.dev/r/breadcrumb.json","https://herocn.dev/r/separator.json","https://herocn.dev/r/label.json","https://herocn.dev/r/dropdown-menu.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["sidebar","dashboard"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/blocks/sidebar-02/page.tsx",
+      type: "registry:page",
+      target: "app/dashboard/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-02/components/app-sidebar.tsx",
+      type: "registry:component",
+      target: "components/app-sidebar.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-02/components/search-form.tsx",
+      type: "registry:component",
+      target: "components/search-form.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-02/components/version-switcher.tsx",
+      type: "registry:component",
+      target: "components/version-switcher.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/sidebar-02/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "sidebar-03": {
     name: "sidebar-03",
     type: "registry:block",
@@ -12017,6 +12085,446 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/blocks/sidebar-07/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "sidebar-04": {
+    name: "sidebar-04",
+    type: "registry:block",
+    description: "A floating sidebar with submenus.",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/sidebar.json","https://herocn.dev/r/breadcrumb.json","https://herocn.dev/r/separator.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["sidebar","dashboard"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/blocks/sidebar-04/page.tsx",
+      type: "registry:page",
+      target: "app/dashboard/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-04/components/app-sidebar.tsx",
+      type: "registry:component",
+      target: "components/app-sidebar.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/sidebar-04/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "sidebar-05": {
+    name: "sidebar-05",
+    type: "registry:block",
+    description: "A sidebar with collapsible submenus.",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/sidebar.json","https://herocn.dev/r/breadcrumb.json","https://herocn.dev/r/separator.json","https://herocn.dev/r/label.json","https://herocn.dev/r/collapsible.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["sidebar","dashboard"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/blocks/sidebar-05/page.tsx",
+      type: "registry:page",
+      target: "app/dashboard/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-05/components/app-sidebar.tsx",
+      type: "registry:component",
+      target: "components/app-sidebar.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-05/components/search-form.tsx",
+      type: "registry:component",
+      target: "components/search-form.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/sidebar-05/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "sidebar-06": {
+    name: "sidebar-06",
+    type: "registry:block",
+    description: "A sidebar with submenus as dropdowns.",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/sidebar.json","https://herocn.dev/r/breadcrumb.json","https://herocn.dev/r/separator.json","https://herocn.dev/r/card.json","https://herocn.dev/r/dropdown-menu.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["sidebar","dashboard"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/blocks/sidebar-06/page.tsx",
+      type: "registry:page",
+      target: "app/dashboard/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-06/components/app-sidebar.tsx",
+      type: "registry:component",
+      target: "components/app-sidebar.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-06/components/nav-main.tsx",
+      type: "registry:component",
+      target: "components/nav-main.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-06/components/sidebar-opt-in-form.tsx",
+      type: "registry:component",
+      target: "components/sidebar-opt-in-form.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/sidebar-06/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "sidebar-08": {
+    name: "sidebar-08",
+    type: "registry:block",
+    description: "An inset sidebar with secondary navigation.",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/sidebar.json","https://herocn.dev/r/breadcrumb.json","https://herocn.dev/r/separator.json","https://herocn.dev/r/collapsible.json","https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/avatar.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["sidebar","dashboard"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/blocks/sidebar-08/page.tsx",
+      type: "registry:page",
+      target: "app/dashboard/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-08/components/app-sidebar.tsx",
+      type: "registry:component",
+      target: "components/app-sidebar.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-08/components/nav-main.tsx",
+      type: "registry:component",
+      target: "components/nav-main.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-08/components/nav-projects.tsx",
+      type: "registry:component",
+      target: "components/nav-projects.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-08/components/nav-secondary.tsx",
+      type: "registry:component",
+      target: "components/nav-secondary.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-08/components/nav-user.tsx",
+      type: "registry:component",
+      target: "components/nav-user.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/sidebar-08/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "sidebar-09": {
+    name: "sidebar-09",
+    type: "registry:block",
+    description: "Collapsible nested sidebars.",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/sidebar.json","https://herocn.dev/r/breadcrumb.json","https://herocn.dev/r/separator.json","https://herocn.dev/r/collapsible.json","https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/avatar.json","https://herocn.dev/r/switch.json","https://herocn.dev/r/label.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["sidebar","dashboard"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/blocks/sidebar-09/page.tsx",
+      type: "registry:page",
+      target: "app/dashboard/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-09/components/app-sidebar.tsx",
+      type: "registry:component",
+      target: "components/app-sidebar.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-09/components/nav-user.tsx",
+      type: "registry:component",
+      target: "components/nav-user.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/sidebar-09/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "sidebar-10": {
+    name: "sidebar-10",
+    type: "registry:block",
+    description: "A sidebar in a popover.",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/sidebar.json","https://herocn.dev/r/breadcrumb.json","https://herocn.dev/r/separator.json","https://herocn.dev/r/popover.json","https://herocn.dev/r/collapsible.json","https://herocn.dev/r/dropdown-menu.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["sidebar","dashboard"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/blocks/sidebar-10/page.tsx",
+      type: "registry:page",
+      target: "app/dashboard/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-10/components/app-sidebar.tsx",
+      type: "registry:component",
+      target: "components/app-sidebar.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-10/components/nav-actions.tsx",
+      type: "registry:component",
+      target: "components/nav-actions.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-10/components/nav-favorites.tsx",
+      type: "registry:component",
+      target: "components/nav-favorites.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-10/components/nav-main.tsx",
+      type: "registry:component",
+      target: "components/nav-main.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-10/components/nav-secondary.tsx",
+      type: "registry:component",
+      target: "components/nav-secondary.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-10/components/nav-workspaces.tsx",
+      type: "registry:component",
+      target: "components/nav-workspaces.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-10/components/team-switcher.tsx",
+      type: "registry:component",
+      target: "components/team-switcher.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/sidebar-10/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "sidebar-11": {
+    name: "sidebar-11",
+    type: "registry:block",
+    description: "A sidebar with a collapsible file tree.",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/sidebar.json","https://herocn.dev/r/breadcrumb.json","https://herocn.dev/r/separator.json","https://herocn.dev/r/collapsible.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["sidebar","dashboard"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/blocks/sidebar-11/page.tsx",
+      type: "registry:page",
+      target: "app/dashboard/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-11/components/app-sidebar.tsx",
+      type: "registry:component",
+      target: "components/app-sidebar.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/sidebar-11/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "sidebar-12": {
+    name: "sidebar-12",
+    type: "registry:block",
+    description: "A sidebar with a calendar.",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/sidebar.json","https://herocn.dev/r/breadcrumb.json","https://herocn.dev/r/separator.json","https://herocn.dev/r/collapsible.json","https://herocn.dev/r/calendar.json","https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/avatar.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["sidebar","dashboard"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/blocks/sidebar-12/page.tsx",
+      type: "registry:page",
+      target: "app/dashboard/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-12/components/app-sidebar.tsx",
+      type: "registry:component",
+      target: "components/app-sidebar.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-12/components/calendars.tsx",
+      type: "registry:component",
+      target: "components/calendars.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-12/components/date-picker.tsx",
+      type: "registry:component",
+      target: "components/date-picker.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-12/components/nav-user.tsx",
+      type: "registry:component",
+      target: "components/nav-user.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/sidebar-12/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "sidebar-13": {
+    name: "sidebar-13",
+    type: "registry:block",
+    description: "A sidebar in a dialog.",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/sidebar.json","https://herocn.dev/r/breadcrumb.json","https://herocn.dev/r/button.json","https://herocn.dev/r/dialog.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["sidebar","dashboard"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/blocks/sidebar-13/page.tsx",
+      type: "registry:page",
+      target: "app/dashboard/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-13/components/settings-dialog.tsx",
+      type: "registry:component",
+      target: "components/settings-dialog.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/sidebar-13/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "sidebar-14": {
+    name: "sidebar-14",
+    type: "registry:block",
+    description: "A sidebar on the right.",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/sidebar.json","https://herocn.dev/r/breadcrumb.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["sidebar","dashboard"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/blocks/sidebar-14/page.tsx",
+      type: "registry:page",
+      target: "app/dashboard/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-14/components/app-sidebar.tsx",
+      type: "registry:component",
+      target: "components/app-sidebar.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/sidebar-14/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "sidebar-15": {
+    name: "sidebar-15",
+    type: "registry:block",
+    description: "A left and right sidebar.",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/sidebar.json","https://herocn.dev/r/breadcrumb.json","https://herocn.dev/r/separator.json","https://herocn.dev/r/popover.json","https://herocn.dev/r/collapsible.json","https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/calendar.json","https://herocn.dev/r/avatar.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["sidebar","dashboard"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/blocks/sidebar-15/page.tsx",
+      type: "registry:page",
+      target: "app/dashboard/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-15/components/calendars.tsx",
+      type: "registry:component",
+      target: "components/calendars.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-15/components/date-picker.tsx",
+      type: "registry:component",
+      target: "components/date-picker.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-15/components/nav-favorites.tsx",
+      type: "registry:component",
+      target: "components/nav-favorites.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-15/components/nav-main.tsx",
+      type: "registry:component",
+      target: "components/nav-main.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-15/components/nav-secondary.tsx",
+      type: "registry:component",
+      target: "components/nav-secondary.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-15/components/nav-user.tsx",
+      type: "registry:component",
+      target: "components/nav-user.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-15/components/nav-workspaces.tsx",
+      type: "registry:component",
+      target: "components/nav-workspaces.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-15/components/sidebar-left.tsx",
+      type: "registry:component",
+      target: "components/sidebar-left.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-15/components/sidebar-right.tsx",
+      type: "registry:component",
+      target: "components/sidebar-right.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-15/components/team-switcher.tsx",
+      type: "registry:component",
+      target: "components/team-switcher.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/sidebar-15/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "sidebar-16": {
+    name: "sidebar-16",
+    type: "registry:block",
+    description: "A sidebar with a sticky site header.",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["https://herocn.dev/r/sidebar.json","https://herocn.dev/r/breadcrumb.json","https://herocn.dev/r/separator.json","https://herocn.dev/r/collapsible.json","https://herocn.dev/r/dropdown-menu.json","https://herocn.dev/r/avatar.json","https://herocn.dev/r/button.json","https://herocn.dev/r/label.json"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["sidebar","dashboard"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/blocks/sidebar-16/page.tsx",
+      type: "registry:page",
+      target: "app/dashboard/page.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-16/components/app-sidebar.tsx",
+      type: "registry:component",
+      target: "components/app-sidebar.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-16/components/nav-main.tsx",
+      type: "registry:component",
+      target: "components/nav-main.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-16/components/nav-projects.tsx",
+      type: "registry:component",
+      target: "components/nav-projects.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-16/components/nav-secondary.tsx",
+      type: "registry:component",
+      target: "components/nav-secondary.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-16/components/nav-user.tsx",
+      type: "registry:component",
+      target: "components/nav-user.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-16/components/search-form.tsx",
+      type: "registry:component",
+      target: "components/search-form.tsx"
+    },{
+      path: "src/registry/new-york-v4/blocks/sidebar-16/components/site-header.tsx",
+      type: "registry:component",
+      target: "components/site-header.tsx"
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/blocks/sidebar-16/page.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

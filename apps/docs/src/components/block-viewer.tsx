@@ -152,7 +152,7 @@ function BlockViewerToolbar() {
 					<TabsTrigger value="code">Code</TabsTrigger>
 				</TabsList>
 			</Tabs>
-			<Separator orientation="vertical" className="mx-2 h-4!" />
+			<Separator orientation="vertical" className="self-center! h-4!" />
 			<a
 				href={`#${item.name}`}
 				className="flex-1 text-center font-medium text-sm underline-offset-2 hover:underline md:flex-auto md:text-left"
@@ -183,7 +183,7 @@ function BlockViewerToolbar() {
 						<ToggleGroupItem value="30%" title="Mobile">
 							<Smartphone />
 						</ToggleGroupItem>
-						<Separator orientation="vertical" className="h-4!" />
+						<Separator orientation="vertical" className="self-center! h-4!" />
 						<Button
 							size="icon"
 							variant="ghost"
@@ -201,7 +201,7 @@ function BlockViewerToolbar() {
 								</Link>
 							}
 						/>
-						<Separator orientation="vertical" className="h-4!" />
+						<Separator orientation="vertical" className="self-center! h-4!" />
 						<Button
 							size="icon"
 							variant="ghost"
@@ -214,7 +214,7 @@ function BlockViewerToolbar() {
 						</Button>
 					</ToggleGroup>
 				</div>
-				<Separator orientation="vertical" className="mx-1 h-4!" />
+				<Separator orientation="vertical" className="self-center! mx-1 h-4!" />
 				<Button
 					variant="outline"
 					className="w-fit gap-1 px-2 shadow-none"

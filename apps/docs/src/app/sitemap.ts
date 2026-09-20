@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { registryCategories } from "@/lib/categories";
 import { source } from "@/lib/source";
 import { absoluteUrl } from "@/lib/utils";
 
@@ -9,10 +10,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		url: absoluteUrl(page.url),
 	}));
 
+	const blockPages = [
+		"/blocks",
+		...registryCategories.map((category) => `/blocks/${category.slug}`),
+	].map((path) => ({
+		url: absoluteUrl(path),
+	}));
+
 	return [
 		{
 			url: absoluteUrl("/"),
 		},
 		...docsPages,
+		...blockPages,
 	];
 }

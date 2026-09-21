@@ -1,6 +1,6 @@
 {
   "name": "herocn",
-  "homepage": "https://herocn.pages.dev/",
+  "homepage": "https://herocn.dev/",
   "items": [
     {
       "name": "index",
@@ -15,7 +15,7 @@
       ],
       "registryDependencies": [
         "utils",
-        "https://herocn.dev/r/ui.json"
+        "@herocn/ui"
       ],
       "cssVars": {
         "light": {
@@ -250,7 +250,7 @@
       ],
       "registryDependencies": [
         "utils",
-        "https://herocn.dev/r/ui.json"
+        "@herocn/ui"
       ],
       "cssVars": {
         "light": {
@@ -512,7 +512,7 @@
         "@base-ui/react"
       ],
       "registryDependencies": [
-        "https://herocn.dev/r/button.json"
+        "@herocn/button"
       ],
       "files": [
         {
@@ -572,7 +572,7 @@
         "class-variance-authority"
       ],
       "registryDependencies": [
-        "https://herocn.dev/r/button.json"
+        "@herocn/button"
       ],
       "files": [
         {
@@ -675,7 +675,7 @@
         "@base-ui/react"
       ],
       "registryDependencies": [
-        "https://herocn.dev/r/separator.json"
+        "@herocn/separator"
       ],
       "files": [
         {
@@ -795,7 +795,7 @@
         "react-day-picker"
       ],
       "registryDependencies": [
-        "https://herocn.dev/r/button.json"
+        "@herocn/button"
       ],
       "files": [
         {
@@ -866,7 +866,7 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "https://herocn.dev/r/button.json"
+        "@herocn/button"
       ],
       "files": [
         {
@@ -937,8 +937,8 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "https://herocn.dev/r/dialog.json",
-        "https://herocn.dev/r/input-group.json"
+        "@herocn/dialog",
+        "@herocn/input-group"
       ],
       "files": [
         {
@@ -955,8 +955,8 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/input-group.json"
+        "@herocn/button",
+        "@herocn/input-group"
       ],
       "files": [
         {
@@ -1068,7 +1068,7 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "https://herocn.dev/r/button.json"
+        "@herocn/button"
       ],
       "files": [
         {
@@ -1169,7 +1169,7 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "https://herocn.dev/r/button.json"
+        "@herocn/button"
       ],
       "files": [
         {
@@ -1186,7 +1186,7 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "https://herocn.dev/r/button.json"
+        "@herocn/button"
       ],
       "files": [
         {
@@ -1202,8 +1202,8 @@
         "class-variance-authority"
       ],
       "registryDependencies": [
-        "https://herocn.dev/r/label.json",
-        "https://herocn.dev/r/separator.json"
+        "@herocn/label",
+        "@herocn/separator"
       ],
       "files": [
         {
@@ -1276,7 +1276,7 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "https://herocn.dev/r/button.json"
+        "@herocn/button"
       ],
       "files": [
         {
@@ -1338,9 +1338,9 @@
       "name": "input-group",
       "type": "registry:ui",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/textarea.json"
+        "@herocn/button",
+        "@herocn/input",
+        "@herocn/textarea"
       ],
       "files": [
         {
@@ -1415,7 +1415,7 @@
         "class-variance-authority"
       ],
       "registryDependencies": [
-        "https://herocn.dev/r/separator.json"
+        "@herocn/separator"
       ],
       "files": [
         {
@@ -1485,7 +1485,7 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "https://herocn.dev/r/dropdown-menu.json"
+        "@herocn/dropdown-menu"
       ],
       "files": [
         {
@@ -1552,7 +1552,7 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "https://herocn.dev/r/button.json"
+        "@herocn/button"
       ],
       "files": [
         {
@@ -1622,7 +1622,7 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "https://herocn.dev/r/button.json"
+        "@herocn/button"
       ],
       "files": [
         {
@@ -1741,13 +1741,13 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/separator.json",
-        "https://herocn.dev/r/sheet.json",
-        "https://herocn.dev/r/skeleton.json",
-        "https://herocn.dev/r/tooltip.json",
-        "https://herocn.dev/r/use-mobile.json"
+        "@herocn/button",
+        "@herocn/input",
+        "@herocn/separator",
+        "@herocn/sheet",
+        "@herocn/skeleton",
+        "@herocn/tooltip",
+        "@herocn/use-mobile"
       ],
       "files": [
         {
@@ -1967,7 +1967,7 @@
         "@base-ui/react"
       ],
       "registryDependencies": [
-        "https://herocn.dev/r/toggle.json"
+        "@herocn/toggle"
       ],
       "files": [
         {
@@ -1984,7 +1984,7 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "https://herocn.dev/r/button.json"
+        "@herocn/button"
       ],
       "files": [
         {
@@ -2118,8 +2118,8 @@
       "name": "attachment-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/attachment.json",
-        "https://herocn.dev/r/spinner.json"
+        "@herocn/attachment",
+        "@herocn/spinner"
       ],
       "files": [
         {
@@ -2132,7 +2132,7 @@
       "name": "attachment-image",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/attachment.json"
+        "@herocn/attachment"
       ],
       "files": [
         {
@@ -2145,8 +2145,8 @@
       "name": "attachment-states",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/attachment.json",
-        "https://herocn.dev/r/spinner.json"
+        "@herocn/attachment",
+        "@herocn/spinner"
       ],
       "files": [
         {
@@ -2159,7 +2159,7 @@
       "name": "attachment-sizes",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/attachment.json"
+        "@herocn/attachment"
       ],
       "files": [
         {
@@ -2172,7 +2172,7 @@
       "name": "attachment-group",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/attachment.json"
+        "@herocn/attachment"
       ],
       "files": [
         {
@@ -2185,7 +2185,7 @@
       "name": "attachment-trigger",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/attachment.json"
+        "@herocn/attachment"
       ],
       "files": [
         {
@@ -2198,7 +2198,7 @@
       "name": "aspect-ratio-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/aspect-ratio.json"
+        "@herocn/aspect-ratio"
       ],
       "files": [
         {
@@ -2211,7 +2211,7 @@
       "name": "aspect-ratio-portrait",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/aspect-ratio.json"
+        "@herocn/aspect-ratio"
       ],
       "files": [
         {
@@ -2224,7 +2224,7 @@
       "name": "aspect-ratio-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/aspect-ratio.json"
+        "@herocn/aspect-ratio"
       ],
       "files": [
         {
@@ -2237,7 +2237,7 @@
       "name": "aspect-ratio-square",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/aspect-ratio.json"
+        "@herocn/aspect-ratio"
       ],
       "files": [
         {
@@ -2250,7 +2250,7 @@
       "name": "aspect-ratio-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/aspect-ratio.json"
+        "@herocn/aspect-ratio"
       ],
       "files": [
         {
@@ -2263,10 +2263,10 @@
       "name": "card-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/label.json"
+        "@herocn/button",
+        "@herocn/card",
+        "@herocn/input",
+        "@herocn/label"
       ],
       "files": [
         {
@@ -2279,7 +2279,7 @@
       "name": "card-variants",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/card.json"
+        "@herocn/card"
       ],
       "files": [
         {
@@ -2292,7 +2292,7 @@
       "name": "card-small",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/card.json"
+        "@herocn/card"
       ],
       "files": [
         {
@@ -2305,9 +2305,9 @@
       "name": "card-image",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/badge.json",
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/card.json"
+        "@herocn/badge",
+        "@herocn/button",
+        "@herocn/card"
       ],
       "files": [
         {
@@ -2320,10 +2320,10 @@
       "name": "card-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/label.json"
+        "@herocn/button",
+        "@herocn/card",
+        "@herocn/input",
+        "@herocn/label"
       ],
       "files": [
         {
@@ -2336,7 +2336,7 @@
       "name": "button-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json"
+        "@herocn/button"
       ],
       "files": [
         {
@@ -2349,7 +2349,7 @@
       "name": "button-variants",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json"
+        "@herocn/button"
       ],
       "files": [
         {
@@ -2362,7 +2362,7 @@
       "name": "button-sizes",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json"
+        "@herocn/button"
       ],
       "files": [
         {
@@ -2375,7 +2375,7 @@
       "name": "button-icons",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json"
+        "@herocn/button"
       ],
       "files": [
         {
@@ -2388,7 +2388,7 @@
       "name": "button-render",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json"
+        "@herocn/button"
       ],
       "files": [
         {
@@ -2401,7 +2401,7 @@
       "name": "button-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json"
+        "@herocn/button"
       ],
       "files": [
         {
@@ -2414,7 +2414,7 @@
       "name": "skeleton-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/skeleton.json"
+        "@herocn/skeleton"
       ],
       "files": [
         {
@@ -2427,7 +2427,7 @@
       "name": "skeleton-avatar",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/skeleton.json"
+        "@herocn/skeleton"
       ],
       "files": [
         {
@@ -2440,8 +2440,8 @@
       "name": "skeleton-card",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/skeleton.json"
+        "@herocn/card",
+        "@herocn/skeleton"
       ],
       "files": [
         {
@@ -2454,7 +2454,7 @@
       "name": "skeleton-text",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/skeleton.json"
+        "@herocn/skeleton"
       ],
       "files": [
         {
@@ -2467,7 +2467,7 @@
       "name": "skeleton-form",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/skeleton.json"
+        "@herocn/skeleton"
       ],
       "files": [
         {
@@ -2480,7 +2480,7 @@
       "name": "skeleton-table",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/skeleton.json"
+        "@herocn/skeleton"
       ],
       "files": [
         {
@@ -2493,7 +2493,7 @@
       "name": "skeleton-animation-types",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/skeleton.json"
+        "@herocn/skeleton"
       ],
       "files": [
         {
@@ -2506,7 +2506,7 @@
       "name": "skeleton-single-shimmer",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/skeleton.json"
+        "@herocn/skeleton"
       ],
       "files": [
         {
@@ -2519,7 +2519,7 @@
       "name": "skeleton-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/skeleton.json"
+        "@herocn/skeleton"
       ],
       "files": [
         {
@@ -2532,7 +2532,7 @@
       "name": "badge-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/badge.json"
+        "@herocn/badge"
       ],
       "files": [
         {
@@ -2545,8 +2545,8 @@
       "name": "input-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input.json"
+        "@herocn/field",
+        "@herocn/input"
       ],
       "files": [
         {
@@ -2559,12 +2559,12 @@
       "name": "field-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/checkbox.json",
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/select.json",
-        "https://herocn.dev/r/textarea.json"
+        "@herocn/button",
+        "@herocn/checkbox",
+        "@herocn/field",
+        "@herocn/input",
+        "@herocn/select",
+        "@herocn/textarea"
       ],
       "files": [
         {
@@ -2577,8 +2577,8 @@
       "name": "field-input",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input.json"
+        "@herocn/field",
+        "@herocn/input"
       ],
       "files": [
         {
@@ -2591,8 +2591,8 @@
       "name": "field-textarea",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/textarea.json"
+        "@herocn/field",
+        "@herocn/textarea"
       ],
       "files": [
         {
@@ -2605,8 +2605,8 @@
       "name": "field-select",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/select.json"
+        "@herocn/field",
+        "@herocn/select"
       ],
       "files": [
         {
@@ -2619,8 +2619,8 @@
       "name": "field-slider",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/slider.json"
+        "@herocn/field",
+        "@herocn/slider"
       ],
       "files": [
         {
@@ -2633,8 +2633,8 @@
       "name": "field-fieldset",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input.json"
+        "@herocn/field",
+        "@herocn/input"
       ],
       "files": [
         {
@@ -2647,8 +2647,8 @@
       "name": "field-checkbox",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/checkbox.json",
-        "https://herocn.dev/r/field.json"
+        "@herocn/checkbox",
+        "@herocn/field"
       ],
       "files": [
         {
@@ -2661,9 +2661,9 @@
       "name": "checkbox-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/checkbox.json",
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/label.json"
+        "@herocn/checkbox",
+        "@herocn/field",
+        "@herocn/label"
       ],
       "files": [
         {
@@ -2676,8 +2676,8 @@
       "name": "checkbox-basic",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/checkbox.json",
-        "https://herocn.dev/r/field.json"
+        "@herocn/checkbox",
+        "@herocn/field"
       ],
       "files": [
         {
@@ -2690,8 +2690,8 @@
       "name": "checkbox-variants",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/checkbox.json",
-        "https://herocn.dev/r/field.json"
+        "@herocn/checkbox",
+        "@herocn/field"
       ],
       "files": [
         {
@@ -2704,8 +2704,8 @@
       "name": "checkbox-description",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/checkbox.json",
-        "https://herocn.dev/r/field.json"
+        "@herocn/checkbox",
+        "@herocn/field"
       ],
       "files": [
         {
@@ -2718,8 +2718,8 @@
       "name": "checkbox-disabled",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/checkbox.json",
-        "https://herocn.dev/r/field.json"
+        "@herocn/checkbox",
+        "@herocn/field"
       ],
       "files": [
         {
@@ -2732,8 +2732,8 @@
       "name": "checkbox-invalid",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/checkbox.json",
-        "https://herocn.dev/r/field.json"
+        "@herocn/checkbox",
+        "@herocn/field"
       ],
       "files": [
         {
@@ -2746,9 +2746,9 @@
       "name": "checkbox-in-surface",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/checkbox.json",
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/surface.json"
+        "@herocn/checkbox",
+        "@herocn/field",
+        "@herocn/surface"
       ],
       "files": [
         {
@@ -2761,9 +2761,9 @@
       "name": "checkbox-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/checkbox.json",
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/label.json"
+        "@herocn/checkbox",
+        "@herocn/field",
+        "@herocn/label"
       ],
       "files": [
         {
@@ -2776,8 +2776,8 @@
       "name": "field-radio",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/radio-group.json"
+        "@herocn/field",
+        "@herocn/radio-group"
       ],
       "files": [
         {
@@ -2790,8 +2790,8 @@
       "name": "radio-group-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/label.json",
-        "https://herocn.dev/r/radio-group.json"
+        "@herocn/label",
+        "@herocn/radio-group"
       ],
       "files": [
         {
@@ -2804,8 +2804,8 @@
       "name": "radio-group-variants",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/radio-group.json"
+        "@herocn/field",
+        "@herocn/radio-group"
       ],
       "files": [
         {
@@ -2818,8 +2818,8 @@
       "name": "radio-group-description",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/radio-group.json"
+        "@herocn/field",
+        "@herocn/radio-group"
       ],
       "files": [
         {
@@ -2832,8 +2832,8 @@
       "name": "radio-group-disabled",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/radio-group.json"
+        "@herocn/field",
+        "@herocn/radio-group"
       ],
       "files": [
         {
@@ -2846,8 +2846,8 @@
       "name": "radio-group-invalid",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/radio-group.json"
+        "@herocn/field",
+        "@herocn/radio-group"
       ],
       "files": [
         {
@@ -2860,9 +2860,9 @@
       "name": "radio-group-in-surface",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/radio-group.json",
-        "https://herocn.dev/r/surface.json"
+        "@herocn/field",
+        "@herocn/radio-group",
+        "@herocn/surface"
       ],
       "files": [
         {
@@ -2875,8 +2875,8 @@
       "name": "radio-group-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/radio-group.json"
+        "@herocn/field",
+        "@herocn/radio-group"
       ],
       "files": [
         {
@@ -2889,8 +2889,8 @@
       "name": "field-switch",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/switch.json"
+        "@herocn/field",
+        "@herocn/switch"
       ],
       "files": [
         {
@@ -2903,8 +2903,8 @@
       "name": "field-choice-card",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/radio-group.json"
+        "@herocn/field",
+        "@herocn/radio-group"
       ],
       "files": [
         {
@@ -2917,8 +2917,8 @@
       "name": "field-group",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/checkbox.json",
-        "https://herocn.dev/r/field.json"
+        "@herocn/checkbox",
+        "@herocn/field"
       ],
       "files": [
         {
@@ -2931,12 +2931,12 @@
       "name": "field-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/checkbox.json",
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/select.json",
-        "https://herocn.dev/r/textarea.json"
+        "@herocn/button",
+        "@herocn/checkbox",
+        "@herocn/field",
+        "@herocn/input",
+        "@herocn/select",
+        "@herocn/textarea"
       ],
       "files": [
         {
@@ -2949,7 +2949,7 @@
       "name": "textarea-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/textarea.json"
+        "@herocn/textarea"
       ],
       "files": [
         {
@@ -2962,7 +2962,7 @@
       "name": "textarea-variants",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/textarea.json"
+        "@herocn/textarea"
       ],
       "files": [
         {
@@ -2975,7 +2975,7 @@
       "name": "textarea-states",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/textarea.json"
+        "@herocn/textarea"
       ],
       "files": [
         {
@@ -2988,8 +2988,8 @@
       "name": "textarea-field",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/textarea.json"
+        "@herocn/field",
+        "@herocn/textarea"
       ],
       "files": [
         {
@@ -3002,8 +3002,8 @@
       "name": "textarea-button",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/textarea.json"
+        "@herocn/button",
+        "@herocn/textarea"
       ],
       "files": [
         {
@@ -3016,8 +3016,8 @@
       "name": "textarea-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/textarea.json"
+        "@herocn/field",
+        "@herocn/textarea"
       ],
       "files": [
         {
@@ -3030,10 +3030,10 @@
       "name": "textarea-in-surface",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/textarea.json"
+        "@herocn/button",
+        "@herocn/card",
+        "@herocn/field",
+        "@herocn/textarea"
       ],
       "files": [
         {
@@ -3046,7 +3046,7 @@
       "name": "avatar-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/avatar.json"
+        "@herocn/avatar"
       ],
       "files": [
         {
@@ -3059,9 +3059,9 @@
       "name": "collapsible-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/collapsible.json"
+        "@herocn/button",
+        "@herocn/card",
+        "@herocn/collapsible"
       ],
       "files": [
         {
@@ -3074,8 +3074,8 @@
       "name": "dropdown-menu-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dropdown-menu.json"
+        "@herocn/button",
+        "@herocn/dropdown-menu"
       ],
       "files": [
         {
@@ -3088,7 +3088,7 @@
       "name": "surface-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/surface.json"
+        "@herocn/surface"
       ],
       "files": [
         {
@@ -3101,7 +3101,7 @@
       "name": "collapsible-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/collapsible.json"
+        "@herocn/collapsible"
       ],
       "files": [
         {
@@ -3114,7 +3114,7 @@
       "name": "collapsible-basic",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/collapsible.json"
+        "@herocn/collapsible"
       ],
       "files": [
         {
@@ -3127,7 +3127,7 @@
       "name": "collapsible-settings",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/collapsible.json"
+        "@herocn/collapsible"
       ],
       "files": [
         {
@@ -3140,7 +3140,7 @@
       "name": "collapsible-file-tree",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/collapsible.json"
+        "@herocn/collapsible"
       ],
       "files": [
         {
@@ -3153,8 +3153,8 @@
       "name": "dropdown-menu-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dropdown-menu.json"
+        "@herocn/button",
+        "@herocn/dropdown-menu"
       ],
       "files": [
         {
@@ -3167,8 +3167,8 @@
       "name": "dropdown-menu-basic",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dropdown-menu.json"
+        "@herocn/button",
+        "@herocn/dropdown-menu"
       ],
       "files": [
         {
@@ -3181,8 +3181,8 @@
       "name": "dropdown-menu-submenu",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dropdown-menu.json"
+        "@herocn/button",
+        "@herocn/dropdown-menu"
       ],
       "files": [
         {
@@ -3195,8 +3195,8 @@
       "name": "dropdown-menu-shortcuts",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dropdown-menu.json"
+        "@herocn/button",
+        "@herocn/dropdown-menu"
       ],
       "files": [
         {
@@ -3209,8 +3209,8 @@
       "name": "dropdown-menu-icons",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dropdown-menu.json"
+        "@herocn/button",
+        "@herocn/dropdown-menu"
       ],
       "files": [
         {
@@ -3223,8 +3223,8 @@
       "name": "dropdown-menu-checkboxes",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dropdown-menu.json"
+        "@herocn/button",
+        "@herocn/dropdown-menu"
       ],
       "files": [
         {
@@ -3237,8 +3237,8 @@
       "name": "dropdown-menu-checkboxes-icons",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dropdown-menu.json"
+        "@herocn/button",
+        "@herocn/dropdown-menu"
       ],
       "files": [
         {
@@ -3251,8 +3251,8 @@
       "name": "dropdown-menu-radio-group",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dropdown-menu.json"
+        "@herocn/button",
+        "@herocn/dropdown-menu"
       ],
       "files": [
         {
@@ -3265,8 +3265,8 @@
       "name": "dropdown-menu-radio-icons",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dropdown-menu.json"
+        "@herocn/button",
+        "@herocn/dropdown-menu"
       ],
       "files": [
         {
@@ -3279,8 +3279,8 @@
       "name": "dropdown-menu-destructive",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dropdown-menu.json"
+        "@herocn/button",
+        "@herocn/dropdown-menu"
       ],
       "files": [
         {
@@ -3293,9 +3293,9 @@
       "name": "dropdown-menu-avatar",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/avatar.json",
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dropdown-menu.json"
+        "@herocn/avatar",
+        "@herocn/button",
+        "@herocn/dropdown-menu"
       ],
       "files": [
         {
@@ -3308,8 +3308,8 @@
       "name": "dropdown-menu-complex",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dropdown-menu.json"
+        "@herocn/button",
+        "@herocn/dropdown-menu"
       ],
       "files": [
         {
@@ -3322,10 +3322,10 @@
       "name": "drawer-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/drawer.json",
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input.json"
+        "@herocn/button",
+        "@herocn/drawer",
+        "@herocn/field",
+        "@herocn/input"
       ],
       "files": [
         {
@@ -3338,8 +3338,8 @@
       "name": "drawer-direction",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/drawer.json"
+        "@herocn/button",
+        "@herocn/drawer"
       ],
       "files": [
         {
@@ -3352,8 +3352,8 @@
       "name": "drawer-overlay-variant",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/drawer.json"
+        "@herocn/button",
+        "@herocn/drawer"
       ],
       "files": [
         {
@@ -3366,9 +3366,9 @@
       "name": "drawer-scrollable-content",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/drawer.json",
-        "https://herocn.dev/r/surface.json"
+        "@herocn/button",
+        "@herocn/drawer",
+        "@herocn/surface"
       ],
       "files": [
         {
@@ -3381,10 +3381,10 @@
       "name": "drawer-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/drawer.json",
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input.json"
+        "@herocn/button",
+        "@herocn/drawer",
+        "@herocn/field",
+        "@herocn/input"
       ],
       "files": [
         {
@@ -3397,11 +3397,11 @@
       "name": "drawer-responsive-dialog",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dialog.json",
-        "https://herocn.dev/r/drawer.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/label.json"
+        "@herocn/button",
+        "@herocn/dialog",
+        "@herocn/drawer",
+        "@herocn/input",
+        "@herocn/label"
       ],
       "files": [
         {
@@ -3414,8 +3414,8 @@
       "name": "drawer-swipe-handle",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/drawer.json"
+        "@herocn/button",
+        "@herocn/drawer"
       ],
       "files": [
         {
@@ -3428,8 +3428,8 @@
       "name": "drawer-nested",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/drawer.json"
+        "@herocn/button",
+        "@herocn/drawer"
       ],
       "files": [
         {
@@ -3442,8 +3442,8 @@
       "name": "drawer-non-modal",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/drawer.json"
+        "@herocn/button",
+        "@herocn/drawer"
       ],
       "files": [
         {
@@ -3456,8 +3456,8 @@
       "name": "drawer-snap-points",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/drawer.json"
+        "@herocn/button",
+        "@herocn/drawer"
       ],
       "files": [
         {
@@ -3470,7 +3470,7 @@
       "name": "avatar-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/avatar.json"
+        "@herocn/avatar"
       ],
       "files": [
         {
@@ -3483,7 +3483,7 @@
       "name": "avatar-basic",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/avatar.json"
+        "@herocn/avatar"
       ],
       "files": [
         {
@@ -3496,7 +3496,7 @@
       "name": "avatar-badge",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/avatar.json"
+        "@herocn/avatar"
       ],
       "files": [
         {
@@ -3509,7 +3509,7 @@
       "name": "avatar-badge-icon",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/avatar.json"
+        "@herocn/avatar"
       ],
       "files": [
         {
@@ -3522,7 +3522,7 @@
       "name": "avatar-group",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/avatar.json"
+        "@herocn/avatar"
       ],
       "files": [
         {
@@ -3535,7 +3535,7 @@
       "name": "avatar-group-count",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/avatar.json"
+        "@herocn/avatar"
       ],
       "files": [
         {
@@ -3548,7 +3548,7 @@
       "name": "avatar-group-count-icon",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/avatar.json"
+        "@herocn/avatar"
       ],
       "files": [
         {
@@ -3561,7 +3561,7 @@
       "name": "avatar-size",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/avatar.json"
+        "@herocn/avatar"
       ],
       "files": [
         {
@@ -3574,9 +3574,9 @@
       "name": "avatar-dropdown",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/avatar.json",
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dropdown-menu.json"
+        "@herocn/avatar",
+        "@herocn/button",
+        "@herocn/dropdown-menu"
       ],
       "files": [
         {
@@ -3589,7 +3589,7 @@
       "name": "badge-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/badge.json"
+        "@herocn/badge"
       ],
       "files": [
         {
@@ -3602,7 +3602,7 @@
       "name": "badge-variants",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/badge.json"
+        "@herocn/badge"
       ],
       "files": [
         {
@@ -3615,7 +3615,7 @@
       "name": "badge-sizes",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/badge.json"
+        "@herocn/badge"
       ],
       "files": [
         {
@@ -3628,7 +3628,7 @@
       "name": "badge-icon",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/badge.json"
+        "@herocn/badge"
       ],
       "files": [
         {
@@ -3641,7 +3641,7 @@
       "name": "badge-colors",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/badge.json"
+        "@herocn/badge"
       ],
       "files": [
         {
@@ -3654,7 +3654,7 @@
       "name": "surface-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/surface.json"
+        "@herocn/surface"
       ],
       "files": [
         {
@@ -3667,7 +3667,7 @@
       "name": "surface-variants",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/surface.json"
+        "@herocn/surface"
       ],
       "files": [
         {
@@ -3680,7 +3680,7 @@
       "name": "input-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/input.json"
+        "@herocn/input"
       ],
       "files": [
         {
@@ -3693,7 +3693,7 @@
       "name": "input-variants",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/input.json"
+        "@herocn/input"
       ],
       "files": [
         {
@@ -3706,7 +3706,7 @@
       "name": "input-states",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/input.json"
+        "@herocn/input"
       ],
       "files": [
         {
@@ -3719,8 +3719,8 @@
       "name": "input-field",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input.json"
+        "@herocn/field",
+        "@herocn/input"
       ],
       "files": [
         {
@@ -3733,9 +3733,9 @@
       "name": "input-fieldgroup",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input.json"
+        "@herocn/button",
+        "@herocn/field",
+        "@herocn/input"
       ],
       "files": [
         {
@@ -3748,9 +3748,9 @@
       "name": "input-badge",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/badge.json",
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input.json"
+        "@herocn/badge",
+        "@herocn/field",
+        "@herocn/input"
       ],
       "files": [
         {
@@ -3763,9 +3763,9 @@
       "name": "input-input-group",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/input-group.json"
+        "@herocn/field",
+        "@herocn/input",
+        "@herocn/input-group"
       ],
       "files": [
         {
@@ -3778,10 +3778,10 @@
       "name": "input-button-group",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/button-group.json",
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input.json"
+        "@herocn/button",
+        "@herocn/button-group",
+        "@herocn/field",
+        "@herocn/input"
       ],
       "files": [
         {
@@ -3794,10 +3794,10 @@
       "name": "input-in-surface",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/surface.json",
-        "https://herocn.dev/r/button.json"
+        "@herocn/field",
+        "@herocn/input",
+        "@herocn/surface",
+        "@herocn/button"
       ],
       "files": [
         {
@@ -3810,9 +3810,9 @@
       "name": "button-group-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/button-group.json",
-        "https://herocn.dev/r/dropdown-menu.json"
+        "@herocn/button",
+        "@herocn/button-group",
+        "@herocn/dropdown-menu"
       ],
       "files": [
         {
@@ -3825,8 +3825,8 @@
       "name": "button-group-orientation",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/button-group.json"
+        "@herocn/button",
+        "@herocn/button-group"
       ],
       "files": [
         {
@@ -3839,8 +3839,8 @@
       "name": "button-group-size",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/button-group.json"
+        "@herocn/button",
+        "@herocn/button-group"
       ],
       "files": [
         {
@@ -3853,8 +3853,8 @@
       "name": "button-group-separator",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/button-group.json"
+        "@herocn/button",
+        "@herocn/button-group"
       ],
       "files": [
         {
@@ -3867,8 +3867,8 @@
       "name": "button-group-split",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/button-group.json"
+        "@herocn/button",
+        "@herocn/button-group"
       ],
       "files": [
         {
@@ -3881,9 +3881,9 @@
       "name": "button-group-input",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/button-group.json",
-        "https://herocn.dev/r/input.json"
+        "@herocn/button",
+        "@herocn/button-group",
+        "@herocn/input"
       ],
       "files": [
         {
@@ -3896,10 +3896,10 @@
       "name": "button-group-input-group",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/button-group.json",
-        "https://herocn.dev/r/input-group.json",
-        "https://herocn.dev/r/tooltip.json"
+        "@herocn/button",
+        "@herocn/button-group",
+        "@herocn/input-group",
+        "@herocn/tooltip"
       ],
       "files": [
         {
@@ -3912,9 +3912,9 @@
       "name": "button-group-dropdown",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/button-group.json",
-        "https://herocn.dev/r/dropdown-menu.json"
+        "@herocn/button",
+        "@herocn/button-group",
+        "@herocn/dropdown-menu"
       ],
       "files": [
         {
@@ -3927,10 +3927,10 @@
       "name": "button-group-select",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/button-group.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/select.json"
+        "@herocn/button",
+        "@herocn/button-group",
+        "@herocn/input",
+        "@herocn/select"
       ],
       "files": [
         {
@@ -3943,11 +3943,11 @@
       "name": "button-group-popover",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/button-group.json",
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/popover.json",
-        "https://herocn.dev/r/textarea.json"
+        "@herocn/button",
+        "@herocn/button-group",
+        "@herocn/field",
+        "@herocn/popover",
+        "@herocn/textarea"
       ],
       "files": [
         {
@@ -3960,9 +3960,9 @@
       "name": "button-group-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/button-group.json",
-        "https://herocn.dev/r/dropdown-menu.json"
+        "@herocn/button",
+        "@herocn/button-group",
+        "@herocn/dropdown-menu"
       ],
       "files": [
         {
@@ -3975,9 +3975,9 @@
       "name": "button-group-text",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button-group.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/label.json"
+        "@herocn/button-group",
+        "@herocn/input",
+        "@herocn/label"
       ],
       "files": [
         {
@@ -3990,8 +3990,8 @@
       "name": "tabs-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/tabs.json"
+        "@herocn/card",
+        "@herocn/tabs"
       ],
       "files": [
         {
@@ -4004,7 +4004,7 @@
       "name": "tabs-line",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/tabs.json"
+        "@herocn/tabs"
       ],
       "files": [
         {
@@ -4017,7 +4017,7 @@
       "name": "tabs-vertical",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/tabs.json"
+        "@herocn/tabs"
       ],
       "files": [
         {
@@ -4030,7 +4030,7 @@
       "name": "tabs-vertical-line",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/tabs.json"
+        "@herocn/tabs"
       ],
       "files": [
         {
@@ -4043,7 +4043,7 @@
       "name": "tabs-disabled",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/tabs.json"
+        "@herocn/tabs"
       ],
       "files": [
         {
@@ -4056,7 +4056,7 @@
       "name": "tabs-icons",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/tabs.json"
+        "@herocn/tabs"
       ],
       "files": [
         {
@@ -4069,8 +4069,8 @@
       "name": "tabs-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/tabs.json"
+        "@herocn/card",
+        "@herocn/tabs"
       ],
       "files": [
         {
@@ -4083,7 +4083,7 @@
       "name": "select-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/select.json"
+        "@herocn/select"
       ],
       "files": [
         {
@@ -4096,7 +4096,7 @@
       "name": "select-variants",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/select.json"
+        "@herocn/select"
       ],
       "files": [
         {
@@ -4109,8 +4109,8 @@
       "name": "select-surface",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/select.json",
-        "https://herocn.dev/r/surface.json"
+        "@herocn/select",
+        "@herocn/surface"
       ],
       "files": [
         {
@@ -4123,7 +4123,7 @@
       "name": "select-groups",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/select.json"
+        "@herocn/select"
       ],
       "files": [
         {
@@ -4136,7 +4136,7 @@
       "name": "select-multiple",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/select.json"
+        "@herocn/select"
       ],
       "files": [
         {
@@ -4149,7 +4149,7 @@
       "name": "select-scrollable",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/select.json"
+        "@herocn/select"
       ],
       "files": [
         {
@@ -4162,7 +4162,7 @@
       "name": "select-disabled",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/select.json"
+        "@herocn/select"
       ],
       "files": [
         {
@@ -4175,8 +4175,8 @@
       "name": "select-invalid",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/select.json"
+        "@herocn/field",
+        "@herocn/select"
       ],
       "files": [
         {
@@ -4189,7 +4189,7 @@
       "name": "select-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/select.json"
+        "@herocn/select"
       ],
       "files": [
         {
@@ -4202,7 +4202,7 @@
       "name": "separator-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/separator.json"
+        "@herocn/separator"
       ],
       "files": [
         {
@@ -4215,7 +4215,7 @@
       "name": "separator-vertical",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/separator.json"
+        "@herocn/separator"
       ],
       "files": [
         {
@@ -4228,7 +4228,7 @@
       "name": "separator-menu",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/separator.json"
+        "@herocn/separator"
       ],
       "files": [
         {
@@ -4241,7 +4241,7 @@
       "name": "separator-list",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/separator.json"
+        "@herocn/separator"
       ],
       "files": [
         {
@@ -4254,8 +4254,8 @@
       "name": "separator-surface",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/separator.json",
-        "https://herocn.dev/r/surface.json"
+        "@herocn/separator",
+        "@herocn/surface"
       ],
       "files": [
         {
@@ -4268,7 +4268,7 @@
       "name": "separator-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/separator.json"
+        "@herocn/separator"
       ],
       "files": [
         {
@@ -4281,11 +4281,11 @@
       "name": "sidebar-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/sidebar.json",
-        "https://herocn.dev/r/avatar.json",
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/collapsible.json",
-        "https://herocn.dev/r/dropdown-menu.json"
+        "@herocn/sidebar",
+        "@herocn/avatar",
+        "@herocn/button",
+        "@herocn/collapsible",
+        "@herocn/dropdown-menu"
       ],
       "files": [
         {
@@ -4298,9 +4298,9 @@
       "name": "sidebar-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/sidebar.json",
-        "https://herocn.dev/r/avatar.json",
-        "https://herocn.dev/r/dropdown-menu.json"
+        "@herocn/sidebar",
+        "@herocn/avatar",
+        "@herocn/dropdown-menu"
       ],
       "files": [
         {
@@ -4313,7 +4313,7 @@
       "name": "sidebar-floating",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/sidebar.json"
+        "@herocn/sidebar"
       ],
       "files": [
         {
@@ -4326,7 +4326,7 @@
       "name": "sidebar-inset",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/sidebar.json"
+        "@herocn/sidebar"
       ],
       "files": [
         {
@@ -4339,7 +4339,7 @@
       "name": "sidebar-collapsible",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/sidebar.json"
+        "@herocn/sidebar"
       ],
       "files": [
         {
@@ -4352,10 +4352,10 @@
       "name": "popover-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/label.json",
-        "https://herocn.dev/r/popover.json"
+        "@herocn/button",
+        "@herocn/input",
+        "@herocn/label",
+        "@herocn/popover"
       ],
       "files": [
         {
@@ -4368,8 +4368,8 @@
       "name": "popover-basic",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/popover.json"
+        "@herocn/button",
+        "@herocn/popover"
       ],
       "files": [
         {
@@ -4382,8 +4382,8 @@
       "name": "popover-align",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/popover.json"
+        "@herocn/button",
+        "@herocn/popover"
       ],
       "files": [
         {
@@ -4396,10 +4396,10 @@
       "name": "popover-form",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/popover.json"
+        "@herocn/button",
+        "@herocn/field",
+        "@herocn/input",
+        "@herocn/popover"
       ],
       "files": [
         {
@@ -4412,8 +4412,8 @@
       "name": "popover-with-arrow",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/popover.json"
+        "@herocn/button",
+        "@herocn/popover"
       ],
       "files": [
         {
@@ -4426,8 +4426,8 @@
       "name": "popover-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/popover.json"
+        "@herocn/button",
+        "@herocn/popover"
       ],
       "files": [
         {
@@ -4440,7 +4440,7 @@
       "name": "progress-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/progress.json"
+        "@herocn/progress"
       ],
       "files": [
         {
@@ -4453,7 +4453,7 @@
       "name": "progress-label",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/progress.json"
+        "@herocn/progress"
       ],
       "files": [
         {
@@ -4466,8 +4466,8 @@
       "name": "progress-controlled",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/progress.json",
-        "https://herocn.dev/r/slider.json"
+        "@herocn/progress",
+        "@herocn/slider"
       ],
       "files": [
         {
@@ -4480,7 +4480,7 @@
       "name": "progress-sizes",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/progress.json"
+        "@herocn/progress"
       ],
       "files": [
         {
@@ -4493,7 +4493,7 @@
       "name": "progress-variants",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/progress.json"
+        "@herocn/progress"
       ],
       "files": [
         {
@@ -4506,7 +4506,7 @@
       "name": "progress-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/progress.json"
+        "@herocn/progress"
       ],
       "files": [
         {
@@ -4519,8 +4519,8 @@
       "name": "tooltip-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/tooltip.json"
+        "@herocn/button",
+        "@herocn/tooltip"
       ],
       "files": [
         {
@@ -4533,8 +4533,8 @@
       "name": "tooltip-sides",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/tooltip.json"
+        "@herocn/button",
+        "@herocn/tooltip"
       ],
       "files": [
         {
@@ -4547,8 +4547,8 @@
       "name": "tooltip-arrow",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/tooltip.json"
+        "@herocn/button",
+        "@herocn/tooltip"
       ],
       "files": [
         {
@@ -4561,8 +4561,8 @@
       "name": "tooltip-keyboard",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/tooltip.json"
+        "@herocn/button",
+        "@herocn/tooltip"
       ],
       "files": [
         {
@@ -4575,8 +4575,8 @@
       "name": "tooltip-disabled",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/tooltip.json"
+        "@herocn/button",
+        "@herocn/tooltip"
       ],
       "files": [
         {
@@ -4589,8 +4589,8 @@
       "name": "tooltip-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/tooltip.json"
+        "@herocn/button",
+        "@herocn/tooltip"
       ],
       "files": [
         {
@@ -4603,7 +4603,7 @@
       "name": "input-group-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/input-group.json"
+        "@herocn/input-group"
       ],
       "files": [
         {
@@ -4616,7 +4616,7 @@
       "name": "input-group-variants",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/input-group.json"
+        "@herocn/input-group"
       ],
       "files": [
         {
@@ -4629,8 +4629,8 @@
       "name": "input-group-invalid",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input-group.json"
+        "@herocn/field",
+        "@herocn/input-group"
       ],
       "files": [
         {
@@ -4643,8 +4643,8 @@
       "name": "input-group-disabled",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input-group.json"
+        "@herocn/field",
+        "@herocn/input-group"
       ],
       "files": [
         {
@@ -4657,8 +4657,8 @@
       "name": "input-group-inline-start",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input-group.json"
+        "@herocn/field",
+        "@herocn/input-group"
       ],
       "files": [
         {
@@ -4671,8 +4671,8 @@
       "name": "input-group-inline-end",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input-group.json"
+        "@herocn/field",
+        "@herocn/input-group"
       ],
       "files": [
         {
@@ -4685,8 +4685,8 @@
       "name": "input-group-block-start",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input-group.json"
+        "@herocn/field",
+        "@herocn/input-group"
       ],
       "files": [
         {
@@ -4699,8 +4699,8 @@
       "name": "input-group-block-end",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input-group.json"
+        "@herocn/field",
+        "@herocn/input-group"
       ],
       "files": [
         {
@@ -4713,7 +4713,7 @@
       "name": "input-group-icon",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/input-group.json"
+        "@herocn/input-group"
       ],
       "files": [
         {
@@ -4726,7 +4726,7 @@
       "name": "input-group-text",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/input-group.json"
+        "@herocn/input-group"
       ],
       "files": [
         {
@@ -4739,7 +4739,7 @@
       "name": "input-group-button",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/input-group.json"
+        "@herocn/input-group"
       ],
       "files": [
         {
@@ -4752,8 +4752,8 @@
       "name": "input-group-spinner",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/input-group.json",
-        "https://herocn.dev/r/spinner.json"
+        "@herocn/input-group",
+        "@herocn/spinner"
       ],
       "files": [
         {
@@ -4766,7 +4766,7 @@
       "name": "input-group-textarea",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/input-group.json"
+        "@herocn/input-group"
       ],
       "files": [
         {
@@ -4779,8 +4779,8 @@
       "name": "input-group-dropdown",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/dropdown-menu.json",
-        "https://herocn.dev/r/input-group.json"
+        "@herocn/dropdown-menu",
+        "@herocn/input-group"
       ],
       "files": [
         {
@@ -4793,9 +4793,9 @@
       "name": "input-group-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input-group.json",
-        "https://herocn.dev/r/spinner.json"
+        "@herocn/field",
+        "@herocn/input-group",
+        "@herocn/spinner"
       ],
       "files": [
         {
@@ -4808,8 +4808,8 @@
       "name": "input-group-in-surface",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/input-group.json"
+        "@herocn/card",
+        "@herocn/input-group"
       ],
       "files": [
         {
@@ -4822,8 +4822,8 @@
       "name": "item-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/item.json"
+        "@herocn/button",
+        "@herocn/item"
       ],
       "files": [
         {
@@ -4836,7 +4836,7 @@
       "name": "item-variants",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/item.json"
+        "@herocn/item"
       ],
       "files": [
         {
@@ -4849,7 +4849,7 @@
       "name": "item-sizes",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/item.json"
+        "@herocn/item"
       ],
       "files": [
         {
@@ -4862,8 +4862,8 @@
       "name": "item-icon",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/item.json"
+        "@herocn/button",
+        "@herocn/item"
       ],
       "files": [
         {
@@ -4876,9 +4876,9 @@
       "name": "item-avatar",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/avatar.json",
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/item.json"
+        "@herocn/avatar",
+        "@herocn/button",
+        "@herocn/item"
       ],
       "files": [
         {
@@ -4891,7 +4891,7 @@
       "name": "item-image",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/item.json"
+        "@herocn/item"
       ],
       "files": [
         {
@@ -4904,9 +4904,9 @@
       "name": "item-group",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/avatar.json",
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/item.json"
+        "@herocn/avatar",
+        "@herocn/button",
+        "@herocn/item"
       ],
       "files": [
         {
@@ -4919,7 +4919,7 @@
       "name": "item-header",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/item.json"
+        "@herocn/item"
       ],
       "files": [
         {
@@ -4932,7 +4932,7 @@
       "name": "item-link",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/item.json"
+        "@herocn/item"
       ],
       "files": [
         {
@@ -4945,10 +4945,10 @@
       "name": "item-dropdown",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/avatar.json",
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dropdown-menu.json",
-        "https://herocn.dev/r/item.json"
+        "@herocn/avatar",
+        "@herocn/button",
+        "@herocn/dropdown-menu",
+        "@herocn/item"
       ],
       "files": [
         {
@@ -4961,8 +4961,8 @@
       "name": "item-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/item.json"
+        "@herocn/button",
+        "@herocn/item"
       ],
       "files": [
         {
@@ -4975,7 +4975,7 @@
       "name": "kbd-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/kbd.json"
+        "@herocn/kbd"
       ],
       "files": [
         {
@@ -4988,7 +4988,7 @@
       "name": "kbd-variants",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/kbd.json"
+        "@herocn/kbd"
       ],
       "files": [
         {
@@ -5001,7 +5001,7 @@
       "name": "kbd-group",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/kbd.json"
+        "@herocn/kbd"
       ],
       "files": [
         {
@@ -5014,8 +5014,8 @@
       "name": "kbd-button",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/kbd.json"
+        "@herocn/button",
+        "@herocn/kbd"
       ],
       "files": [
         {
@@ -5028,10 +5028,10 @@
       "name": "kbd-tooltip",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/button-group.json",
-        "https://herocn.dev/r/tooltip.json",
-        "https://herocn.dev/r/kbd.json"
+        "@herocn/button",
+        "@herocn/button-group",
+        "@herocn/tooltip",
+        "@herocn/kbd"
       ],
       "files": [
         {
@@ -5044,8 +5044,8 @@
       "name": "kbd-input-group",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/input-group.json",
-        "https://herocn.dev/r/kbd.json"
+        "@herocn/input-group",
+        "@herocn/kbd"
       ],
       "files": [
         {
@@ -5058,7 +5058,7 @@
       "name": "kbd-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/kbd.json"
+        "@herocn/kbd"
       ],
       "files": [
         {
@@ -5071,7 +5071,7 @@
       "name": "toggle-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/toggle.json"
+        "@herocn/toggle"
       ],
       "files": [
         {
@@ -5084,7 +5084,7 @@
       "name": "toggle-ghost",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/toggle.json"
+        "@herocn/toggle"
       ],
       "files": [
         {
@@ -5097,7 +5097,7 @@
       "name": "toggle-sizes",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/toggle.json"
+        "@herocn/toggle"
       ],
       "files": [
         {
@@ -5110,7 +5110,7 @@
       "name": "toggle-disabled",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/toggle.json"
+        "@herocn/toggle"
       ],
       "files": [
         {
@@ -5123,7 +5123,7 @@
       "name": "toggle-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/toggle.json"
+        "@herocn/toggle"
       ],
       "files": [
         {
@@ -5136,7 +5136,7 @@
       "name": "toggle-group-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/toggle-group.json"
+        "@herocn/toggle-group"
       ],
       "files": [
         {
@@ -5149,7 +5149,7 @@
       "name": "toggle-group-ghost",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/toggle-group.json"
+        "@herocn/toggle-group"
       ],
       "files": [
         {
@@ -5162,7 +5162,7 @@
       "name": "toggle-group-sizes",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/toggle-group.json"
+        "@herocn/toggle-group"
       ],
       "files": [
         {
@@ -5175,7 +5175,7 @@
       "name": "toggle-group-spacing",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/toggle-group.json"
+        "@herocn/toggle-group"
       ],
       "files": [
         {
@@ -5188,7 +5188,7 @@
       "name": "toggle-group-vertical",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/toggle-group.json"
+        "@herocn/toggle-group"
       ],
       "files": [
         {
@@ -5201,7 +5201,7 @@
       "name": "toggle-group-disabled",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/toggle-group.json"
+        "@herocn/toggle-group"
       ],
       "files": [
         {
@@ -5214,8 +5214,8 @@
       "name": "toggle-group-custom",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/toggle-group.json",
-        "https://herocn.dev/r/field.json"
+        "@herocn/toggle-group",
+        "@herocn/field"
       ],
       "files": [
         {
@@ -5228,7 +5228,7 @@
       "name": "toggle-group-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/toggle-group.json"
+        "@herocn/toggle-group"
       ],
       "files": [
         {
@@ -5241,8 +5241,8 @@
       "name": "label-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/label.json"
+        "@herocn/input",
+        "@herocn/label"
       ],
       "files": [
         {
@@ -5255,9 +5255,9 @@
       "name": "label-in-field",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/label.json"
+        "@herocn/field",
+        "@herocn/input",
+        "@herocn/label"
       ],
       "files": [
         {
@@ -5270,8 +5270,8 @@
       "name": "label-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/label.json",
-        "https://herocn.dev/r/switch.json"
+        "@herocn/label",
+        "@herocn/switch"
       ],
       "files": [
         {
@@ -5284,8 +5284,8 @@
       "name": "switch-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/label.json",
-        "https://herocn.dev/r/switch.json"
+        "@herocn/label",
+        "@herocn/switch"
       ],
       "files": [
         {
@@ -5298,8 +5298,8 @@
       "name": "switch-description",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/switch.json"
+        "@herocn/field",
+        "@herocn/switch"
       ],
       "files": [
         {
@@ -5312,8 +5312,8 @@
       "name": "switch-choice-card",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/switch.json"
+        "@herocn/field",
+        "@herocn/switch"
       ],
       "files": [
         {
@@ -5326,8 +5326,8 @@
       "name": "switch-disabled",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/switch.json"
+        "@herocn/field",
+        "@herocn/switch"
       ],
       "files": [
         {
@@ -5340,8 +5340,8 @@
       "name": "switch-invalid",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/switch.json"
+        "@herocn/field",
+        "@herocn/switch"
       ],
       "files": [
         {
@@ -5354,8 +5354,8 @@
       "name": "switch-sizes",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/switch.json"
+        "@herocn/field",
+        "@herocn/switch"
       ],
       "files": [
         {
@@ -5368,8 +5368,8 @@
       "name": "switch-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/switch.json"
+        "@herocn/field",
+        "@herocn/switch"
       ],
       "files": [
         {
@@ -5382,7 +5382,7 @@
       "name": "spinner-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/spinner.json"
+        "@herocn/spinner"
       ],
       "files": [
         {
@@ -5395,7 +5395,7 @@
       "name": "spinner-variants",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/spinner.json"
+        "@herocn/spinner"
       ],
       "files": [
         {
@@ -5408,7 +5408,7 @@
       "name": "spinner-sizes",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/spinner.json"
+        "@herocn/spinner"
       ],
       "files": [
         {
@@ -5421,8 +5421,8 @@
       "name": "spinner-button",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/spinner.json"
+        "@herocn/button",
+        "@herocn/spinner"
       ],
       "files": [
         {
@@ -5435,8 +5435,8 @@
       "name": "spinner-badge",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/badge.json",
-        "https://herocn.dev/r/spinner.json"
+        "@herocn/badge",
+        "@herocn/spinner"
       ],
       "files": [
         {
@@ -5449,8 +5449,8 @@
       "name": "spinner-input-group",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/input-group.json",
-        "https://herocn.dev/r/spinner.json"
+        "@herocn/input-group",
+        "@herocn/spinner"
       ],
       "files": [
         {
@@ -5463,9 +5463,9 @@
       "name": "spinner-empty",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/empty.json",
-        "https://herocn.dev/r/spinner.json"
+        "@herocn/button",
+        "@herocn/empty",
+        "@herocn/spinner"
       ],
       "files": [
         {
@@ -5478,8 +5478,8 @@
       "name": "empty-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/empty.json"
+        "@herocn/button",
+        "@herocn/empty"
       ],
       "files": [
         {
@@ -5492,8 +5492,8 @@
       "name": "empty-outline",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/empty.json"
+        "@herocn/button",
+        "@herocn/empty"
       ],
       "files": [
         {
@@ -5506,8 +5506,8 @@
       "name": "empty-background",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/empty.json"
+        "@herocn/button",
+        "@herocn/empty"
       ],
       "files": [
         {
@@ -5520,9 +5520,9 @@
       "name": "empty-avatar",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/avatar.json",
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/empty.json"
+        "@herocn/avatar",
+        "@herocn/button",
+        "@herocn/empty"
       ],
       "files": [
         {
@@ -5535,9 +5535,9 @@
       "name": "empty-avatar-group",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/avatar.json",
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/empty.json"
+        "@herocn/avatar",
+        "@herocn/button",
+        "@herocn/empty"
       ],
       "files": [
         {
@@ -5550,9 +5550,9 @@
       "name": "empty-input-group",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/empty.json",
-        "https://herocn.dev/r/input-group.json",
-        "https://herocn.dev/r/kbd.json"
+        "@herocn/empty",
+        "@herocn/input-group",
+        "@herocn/kbd"
       ],
       "files": [
         {
@@ -5565,8 +5565,8 @@
       "name": "empty-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/empty.json"
+        "@herocn/button",
+        "@herocn/empty"
       ],
       "files": [
         {
@@ -5579,7 +5579,7 @@
       "name": "spinner-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/spinner.json"
+        "@herocn/spinner"
       ],
       "files": [
         {
@@ -5592,7 +5592,7 @@
       "name": "slider-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/slider.json"
+        "@herocn/slider"
       ],
       "files": [
         {
@@ -5605,7 +5605,7 @@
       "name": "slider-range",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/slider.json"
+        "@herocn/slider"
       ],
       "files": [
         {
@@ -5618,7 +5618,7 @@
       "name": "slider-multiple",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/slider.json"
+        "@herocn/slider"
       ],
       "files": [
         {
@@ -5631,7 +5631,7 @@
       "name": "slider-vertical",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/slider.json"
+        "@herocn/slider"
       ],
       "files": [
         {
@@ -5644,8 +5644,8 @@
       "name": "slider-controlled",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/label.json",
-        "https://herocn.dev/r/slider.json"
+        "@herocn/label",
+        "@herocn/slider"
       ],
       "files": [
         {
@@ -5658,7 +5658,7 @@
       "name": "slider-disabled",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/slider.json"
+        "@herocn/slider"
       ],
       "files": [
         {
@@ -5671,7 +5671,7 @@
       "name": "slider-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/slider.json"
+        "@herocn/slider"
       ],
       "files": [
         {
@@ -5684,7 +5684,7 @@
       "name": "alert-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/alert.json"
+        "@herocn/alert"
       ],
       "files": [
         {
@@ -5697,7 +5697,7 @@
       "name": "alert-variants",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/alert.json"
+        "@herocn/alert"
       ],
       "files": [
         {
@@ -5710,8 +5710,8 @@
       "name": "alert-action",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/alert.json",
-        "https://herocn.dev/r/button.json"
+        "@herocn/alert",
+        "@herocn/button"
       ],
       "files": [
         {
@@ -5724,7 +5724,7 @@
       "name": "alert-colors",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/alert.json"
+        "@herocn/alert"
       ],
       "files": [
         {
@@ -5737,7 +5737,7 @@
       "name": "alert-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/alert.json"
+        "@herocn/alert"
       ],
       "files": [
         {
@@ -5750,8 +5750,8 @@
       "name": "alert-dialog-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/alert-dialog.json",
-        "https://herocn.dev/r/button.json"
+        "@herocn/alert-dialog",
+        "@herocn/button"
       ],
       "files": [
         {
@@ -5764,8 +5764,8 @@
       "name": "alert-dialog-basic",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/alert-dialog.json",
-        "https://herocn.dev/r/button.json"
+        "@herocn/alert-dialog",
+        "@herocn/button"
       ],
       "files": [
         {
@@ -5778,8 +5778,8 @@
       "name": "alert-dialog-variants",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/alert-dialog.json"
+        "@herocn/button",
+        "@herocn/alert-dialog"
       ],
       "files": [
         {
@@ -5792,8 +5792,8 @@
       "name": "alert-dialog-small",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/alert-dialog.json",
-        "https://herocn.dev/r/button.json"
+        "@herocn/alert-dialog",
+        "@herocn/button"
       ],
       "files": [
         {
@@ -5806,8 +5806,8 @@
       "name": "alert-dialog-with-media",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/alert-dialog.json",
-        "https://herocn.dev/r/button.json"
+        "@herocn/alert-dialog",
+        "@herocn/button"
       ],
       "files": [
         {
@@ -5820,8 +5820,8 @@
       "name": "alert-dialog-small-with-media",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/alert-dialog.json",
-        "https://herocn.dev/r/button.json"
+        "@herocn/alert-dialog",
+        "@herocn/button"
       ],
       "files": [
         {
@@ -5834,8 +5834,8 @@
       "name": "alert-dialog-destructive",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/alert-dialog.json",
-        "https://herocn.dev/r/button.json"
+        "@herocn/alert-dialog",
+        "@herocn/button"
       ],
       "files": [
         {
@@ -5848,8 +5848,8 @@
       "name": "alert-dialog-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/alert-dialog.json",
-        "https://herocn.dev/r/button.json"
+        "@herocn/alert-dialog",
+        "@herocn/button"
       ],
       "files": [
         {
@@ -5862,11 +5862,11 @@
       "name": "dialog-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dialog.json",
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/label.json"
+        "@herocn/button",
+        "@herocn/dialog",
+        "@herocn/field",
+        "@herocn/input",
+        "@herocn/label"
       ],
       "files": [
         {
@@ -5879,10 +5879,10 @@
       "name": "dialog-close-button",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dialog.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/label.json"
+        "@herocn/button",
+        "@herocn/dialog",
+        "@herocn/input",
+        "@herocn/label"
       ],
       "files": [
         {
@@ -5895,8 +5895,8 @@
       "name": "dialog-no-close-button",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dialog.json"
+        "@herocn/button",
+        "@herocn/dialog"
       ],
       "files": [
         {
@@ -5909,8 +5909,8 @@
       "name": "dialog-sticky-footer",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dialog.json"
+        "@herocn/button",
+        "@herocn/dialog"
       ],
       "files": [
         {
@@ -5923,8 +5923,8 @@
       "name": "dialog-scrollable-content",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dialog.json"
+        "@herocn/button",
+        "@herocn/dialog"
       ],
       "files": [
         {
@@ -5937,8 +5937,8 @@
       "name": "dialog-nested",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dialog.json"
+        "@herocn/button",
+        "@herocn/dialog"
       ],
       "files": [
         {
@@ -5951,8 +5951,8 @@
       "name": "dialog-overlay-variant",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dialog.json"
+        "@herocn/button",
+        "@herocn/dialog"
       ],
       "files": [
         {
@@ -5965,11 +5965,11 @@
       "name": "dialog-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dialog.json",
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/label.json"
+        "@herocn/button",
+        "@herocn/dialog",
+        "@herocn/field",
+        "@herocn/input",
+        "@herocn/label"
       ],
       "files": [
         {
@@ -5982,11 +5982,11 @@
       "name": "sheet-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/label.json",
-        "https://herocn.dev/r/sheet.json"
+        "@herocn/button",
+        "@herocn/field",
+        "@herocn/input",
+        "@herocn/label",
+        "@herocn/sheet"
       ],
       "files": [
         {
@@ -5999,8 +5999,8 @@
       "name": "sheet-side",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/sheet.json"
+        "@herocn/button",
+        "@herocn/sheet"
       ],
       "files": [
         {
@@ -6013,8 +6013,8 @@
       "name": "sheet-overlay-variant",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/sheet.json"
+        "@herocn/button",
+        "@herocn/sheet"
       ],
       "files": [
         {
@@ -6027,8 +6027,8 @@
       "name": "sheet-no-close-button",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/sheet.json"
+        "@herocn/button",
+        "@herocn/sheet"
       ],
       "files": [
         {
@@ -6041,10 +6041,10 @@
       "name": "sheet-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/sheet.json"
+        "@herocn/button",
+        "@herocn/field",
+        "@herocn/input",
+        "@herocn/sheet"
       ],
       "files": [
         {
@@ -6057,8 +6057,8 @@
       "name": "scroll-area-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/scroll-area.json",
-        "https://herocn.dev/r/separator.json"
+        "@herocn/scroll-area",
+        "@herocn/separator"
       ],
       "files": [
         {
@@ -6071,7 +6071,7 @@
       "name": "scroll-area-horizontal",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/scroll-area.json"
+        "@herocn/scroll-area"
       ],
       "files": [
         {
@@ -6084,8 +6084,8 @@
       "name": "scroll-area-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/scroll-area.json",
-        "https://herocn.dev/r/separator.json"
+        "@herocn/scroll-area",
+        "@herocn/separator"
       ],
       "files": [
         {
@@ -6098,7 +6098,7 @@
       "name": "combobox-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/combobox.json"
+        "@herocn/combobox"
       ],
       "files": [
         {
@@ -6111,7 +6111,7 @@
       "name": "combobox-variants",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/combobox.json"
+        "@herocn/combobox"
       ],
       "files": [
         {
@@ -6124,8 +6124,8 @@
       "name": "combobox-surface",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/combobox.json",
-        "https://herocn.dev/r/surface.json"
+        "@herocn/combobox",
+        "@herocn/surface"
       ],
       "files": [
         {
@@ -6138,7 +6138,7 @@
       "name": "combobox-multiple",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/combobox.json"
+        "@herocn/combobox"
       ],
       "files": [
         {
@@ -6151,7 +6151,7 @@
       "name": "combobox-groups",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/combobox.json"
+        "@herocn/combobox"
       ],
       "files": [
         {
@@ -6164,7 +6164,7 @@
       "name": "combobox-clear",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/combobox.json"
+        "@herocn/combobox"
       ],
       "files": [
         {
@@ -6177,8 +6177,8 @@
       "name": "combobox-invalid",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/combobox.json",
-        "https://herocn.dev/r/field.json"
+        "@herocn/combobox",
+        "@herocn/field"
       ],
       "files": [
         {
@@ -6191,7 +6191,7 @@
       "name": "combobox-disabled",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/combobox.json"
+        "@herocn/combobox"
       ],
       "files": [
         {
@@ -6204,7 +6204,7 @@
       "name": "combobox-auto-highlight",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/combobox.json"
+        "@herocn/combobox"
       ],
       "files": [
         {
@@ -6217,8 +6217,8 @@
       "name": "combobox-popup",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/combobox.json"
+        "@herocn/button",
+        "@herocn/combobox"
       ],
       "files": [
         {
@@ -6231,8 +6231,8 @@
       "name": "combobox-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/combobox.json",
-        "https://herocn.dev/r/field.json"
+        "@herocn/combobox",
+        "@herocn/field"
       ],
       "files": [
         {
@@ -6245,9 +6245,9 @@
       "name": "hover-card-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/avatar.json",
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/hover-card.json"
+        "@herocn/avatar",
+        "@herocn/button",
+        "@herocn/hover-card"
       ],
       "files": [
         {
@@ -6260,8 +6260,8 @@
       "name": "hover-card-with-arrow",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/hover-card.json"
+        "@herocn/button",
+        "@herocn/hover-card"
       ],
       "files": [
         {
@@ -6274,8 +6274,8 @@
       "name": "hover-card-sides",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/hover-card.json"
+        "@herocn/button",
+        "@herocn/hover-card"
       ],
       "files": [
         {
@@ -6288,8 +6288,8 @@
       "name": "hover-card-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/hover-card.json"
+        "@herocn/button",
+        "@herocn/hover-card"
       ],
       "files": [
         {
@@ -6302,7 +6302,7 @@
       "name": "context-menu-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/context-menu.json"
+        "@herocn/context-menu"
       ],
       "files": [
         {
@@ -6315,7 +6315,7 @@
       "name": "context-menu-basic",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/context-menu.json"
+        "@herocn/context-menu"
       ],
       "files": [
         {
@@ -6328,7 +6328,7 @@
       "name": "context-menu-submenu",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/context-menu.json"
+        "@herocn/context-menu"
       ],
       "files": [
         {
@@ -6341,7 +6341,7 @@
       "name": "context-menu-shortcuts",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/context-menu.json"
+        "@herocn/context-menu"
       ],
       "files": [
         {
@@ -6354,7 +6354,7 @@
       "name": "context-menu-groups",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/context-menu.json"
+        "@herocn/context-menu"
       ],
       "files": [
         {
@@ -6367,7 +6367,7 @@
       "name": "context-menu-icons",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/context-menu.json"
+        "@herocn/context-menu"
       ],
       "files": [
         {
@@ -6380,7 +6380,7 @@
       "name": "context-menu-checkboxes",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/context-menu.json"
+        "@herocn/context-menu"
       ],
       "files": [
         {
@@ -6393,7 +6393,7 @@
       "name": "context-menu-radio",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/context-menu.json"
+        "@herocn/context-menu"
       ],
       "files": [
         {
@@ -6406,7 +6406,7 @@
       "name": "context-menu-destructive",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/context-menu.json"
+        "@herocn/context-menu"
       ],
       "files": [
         {
@@ -6419,7 +6419,7 @@
       "name": "context-menu-sides",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/context-menu.json"
+        "@herocn/context-menu"
       ],
       "files": [
         {
@@ -6432,7 +6432,7 @@
       "name": "context-menu-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/context-menu.json"
+        "@herocn/context-menu"
       ],
       "files": [
         {
@@ -6445,7 +6445,7 @@
       "name": "native-select-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/native-select.json"
+        "@herocn/native-select"
       ],
       "files": [
         {
@@ -6458,7 +6458,7 @@
       "name": "native-select-variants",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/native-select.json"
+        "@herocn/native-select"
       ],
       "files": [
         {
@@ -6471,8 +6471,8 @@
       "name": "native-select-in-surface",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/native-select.json",
-        "https://herocn.dev/r/surface.json"
+        "@herocn/native-select",
+        "@herocn/surface"
       ],
       "files": [
         {
@@ -6485,7 +6485,7 @@
       "name": "native-select-disabled",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/native-select.json"
+        "@herocn/native-select"
       ],
       "files": [
         {
@@ -6498,7 +6498,7 @@
       "name": "native-select-invalid",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/native-select.json"
+        "@herocn/native-select"
       ],
       "files": [
         {
@@ -6511,7 +6511,7 @@
       "name": "native-select-groups",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/native-select.json"
+        "@herocn/native-select"
       ],
       "files": [
         {
@@ -6524,7 +6524,7 @@
       "name": "native-select-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/native-select.json"
+        "@herocn/native-select"
       ],
       "files": [
         {
@@ -6537,8 +6537,8 @@
       "name": "command-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/command.json"
+        "@herocn/button",
+        "@herocn/command"
       ],
       "files": [
         {
@@ -6551,8 +6551,8 @@
       "name": "command-basic",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/command.json"
+        "@herocn/button",
+        "@herocn/command"
       ],
       "files": [
         {
@@ -6565,8 +6565,8 @@
       "name": "command-shortcuts",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/command.json"
+        "@herocn/button",
+        "@herocn/command"
       ],
       "files": [
         {
@@ -6579,8 +6579,8 @@
       "name": "command-groups",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/command.json"
+        "@herocn/button",
+        "@herocn/command"
       ],
       "files": [
         {
@@ -6593,8 +6593,8 @@
       "name": "command-scrollable",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/command.json"
+        "@herocn/button",
+        "@herocn/command"
       ],
       "files": [
         {
@@ -6607,8 +6607,8 @@
       "name": "command-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/command.json"
+        "@herocn/button",
+        "@herocn/command"
       ],
       "files": [
         {
@@ -6621,8 +6621,8 @@
       "name": "command-overlay-variant",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/command.json"
+        "@herocn/button",
+        "@herocn/command"
       ],
       "files": [
         {
@@ -6635,7 +6635,7 @@
       "name": "calendar-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/calendar.json"
+        "@herocn/calendar"
       ],
       "files": [
         {
@@ -6648,7 +6648,7 @@
       "name": "calendar-basic",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/calendar.json"
+        "@herocn/calendar"
       ],
       "files": [
         {
@@ -6661,7 +6661,7 @@
       "name": "calendar-range",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/calendar.json"
+        "@herocn/calendar"
       ],
       "files": [
         {
@@ -6674,7 +6674,7 @@
       "name": "calendar-caption",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/calendar.json"
+        "@herocn/calendar"
       ],
       "files": [
         {
@@ -6687,9 +6687,9 @@
       "name": "calendar-with-presets",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/calendar.json",
-        "https://herocn.dev/r/card.json"
+        "@herocn/button",
+        "@herocn/calendar",
+        "@herocn/card"
       ],
       "files": [
         {
@@ -6702,10 +6702,10 @@
       "name": "calendar-with-time",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/calendar.json",
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input-group.json"
+        "@herocn/calendar",
+        "@herocn/card",
+        "@herocn/field",
+        "@herocn/input-group"
       ],
       "files": [
         {
@@ -6718,8 +6718,8 @@
       "name": "calendar-booked-dates",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/calendar.json",
-        "https://herocn.dev/r/card.json"
+        "@herocn/calendar",
+        "@herocn/card"
       ],
       "files": [
         {
@@ -6732,8 +6732,8 @@
       "name": "calendar-custom-days",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/calendar.json",
-        "https://herocn.dev/r/card.json"
+        "@herocn/calendar",
+        "@herocn/card"
       ],
       "files": [
         {
@@ -6746,8 +6746,8 @@
       "name": "calendar-week-numbers",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/calendar.json",
-        "https://herocn.dev/r/card.json"
+        "@herocn/calendar",
+        "@herocn/card"
       ],
       "files": [
         {
@@ -6760,7 +6760,7 @@
       "name": "calendar-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/calendar.json"
+        "@herocn/calendar"
       ],
       "files": [
         {
@@ -6773,9 +6773,9 @@
       "name": "date-picker-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/calendar.json",
-        "https://herocn.dev/r/popover.json"
+        "@herocn/button",
+        "@herocn/calendar",
+        "@herocn/popover"
       ],
       "files": [
         {
@@ -6788,10 +6788,10 @@
       "name": "date-picker-simple",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/calendar.json",
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/popover.json"
+        "@herocn/button",
+        "@herocn/calendar",
+        "@herocn/field",
+        "@herocn/popover"
       ],
       "files": [
         {
@@ -6804,10 +6804,10 @@
       "name": "date-picker-with-range",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/calendar.json",
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/popover.json"
+        "@herocn/button",
+        "@herocn/calendar",
+        "@herocn/field",
+        "@herocn/popover"
       ],
       "files": [
         {
@@ -6820,10 +6820,10 @@
       "name": "date-picker-dob",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/calendar.json",
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/popover.json"
+        "@herocn/button",
+        "@herocn/calendar",
+        "@herocn/field",
+        "@herocn/popover"
       ],
       "files": [
         {
@@ -6836,10 +6836,10 @@
       "name": "date-picker-input",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/calendar.json",
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input-group.json",
-        "https://herocn.dev/r/popover.json"
+        "@herocn/calendar",
+        "@herocn/field",
+        "@herocn/input-group",
+        "@herocn/popover"
       ],
       "files": [
         {
@@ -6852,11 +6852,11 @@
       "name": "date-picker-time",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/calendar.json",
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/popover.json"
+        "@herocn/button",
+        "@herocn/calendar",
+        "@herocn/field",
+        "@herocn/input",
+        "@herocn/popover"
       ],
       "files": [
         {
@@ -6869,10 +6869,10 @@
       "name": "date-picker-natural-language",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/calendar.json",
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input-group.json",
-        "https://herocn.dev/r/popover.json"
+        "@herocn/calendar",
+        "@herocn/field",
+        "@herocn/input-group",
+        "@herocn/popover"
       ],
       "files": [
         {
@@ -6885,9 +6885,9 @@
       "name": "date-picker-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/calendar.json",
-        "https://herocn.dev/r/popover.json"
+        "@herocn/button",
+        "@herocn/calendar",
+        "@herocn/popover"
       ],
       "files": [
         {
@@ -6900,7 +6900,7 @@
       "name": "input-otp-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/input-otp.json"
+        "@herocn/input-otp"
       ],
       "files": [
         {
@@ -6913,7 +6913,7 @@
       "name": "input-otp-variants",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/input-otp.json"
+        "@herocn/input-otp"
       ],
       "files": [
         {
@@ -6926,9 +6926,9 @@
       "name": "input-otp-in-surface",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input-otp.json",
-        "https://herocn.dev/r/surface.json"
+        "@herocn/field",
+        "@herocn/input-otp",
+        "@herocn/surface"
       ],
       "files": [
         {
@@ -6941,7 +6941,7 @@
       "name": "input-otp-separator",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/input-otp.json"
+        "@herocn/input-otp"
       ],
       "files": [
         {
@@ -6954,7 +6954,7 @@
       "name": "input-otp-disabled",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/input-otp.json"
+        "@herocn/input-otp"
       ],
       "files": [
         {
@@ -6967,7 +6967,7 @@
       "name": "input-otp-controlled",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/input-otp.json"
+        "@herocn/input-otp"
       ],
       "files": [
         {
@@ -6980,7 +6980,7 @@
       "name": "input-otp-invalid",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/input-otp.json"
+        "@herocn/input-otp"
       ],
       "files": [
         {
@@ -6993,7 +6993,7 @@
       "name": "input-otp-four-digits",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/input-otp.json"
+        "@herocn/input-otp"
       ],
       "files": [
         {
@@ -7006,7 +7006,7 @@
       "name": "input-otp-alphanumeric",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/input-otp.json"
+        "@herocn/input-otp"
       ],
       "files": [
         {
@@ -7019,10 +7019,10 @@
       "name": "input-otp-form",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input-otp.json"
+        "@herocn/button",
+        "@herocn/card",
+        "@herocn/field",
+        "@herocn/input-otp"
       ],
       "files": [
         {
@@ -7035,8 +7035,8 @@
       "name": "input-otp-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/input-otp.json"
+        "@herocn/field",
+        "@herocn/input-otp"
       ],
       "files": [
         {
@@ -7049,7 +7049,7 @@
       "name": "accordion-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/accordion.json"
+        "@herocn/accordion"
       ],
       "files": [
         {
@@ -7062,7 +7062,7 @@
       "name": "accordion-basic",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/accordion.json"
+        "@herocn/accordion"
       ],
       "files": [
         {
@@ -7075,7 +7075,7 @@
       "name": "accordion-multiple",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/accordion.json"
+        "@herocn/accordion"
       ],
       "files": [
         {
@@ -7088,7 +7088,7 @@
       "name": "accordion-disabled",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/accordion.json"
+        "@herocn/accordion"
       ],
       "files": [
         {
@@ -7101,7 +7101,7 @@
       "name": "accordion-borders",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/accordion.json"
+        "@herocn/accordion"
       ],
       "files": [
         {
@@ -7114,8 +7114,8 @@
       "name": "accordion-card",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/accordion.json",
-        "https://herocn.dev/r/card.json"
+        "@herocn/accordion",
+        "@herocn/card"
       ],
       "files": [
         {
@@ -7128,7 +7128,7 @@
       "name": "accordion-surface",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/accordion.json"
+        "@herocn/accordion"
       ],
       "files": [
         {
@@ -7141,7 +7141,7 @@
       "name": "accordion-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/accordion.json"
+        "@herocn/accordion"
       ],
       "files": [
         {
@@ -7154,7 +7154,7 @@
       "name": "table-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/table.json"
+        "@herocn/table"
       ],
       "files": [
         {
@@ -7167,7 +7167,7 @@
       "name": "table-secondary",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/table.json"
+        "@herocn/table"
       ],
       "files": [
         {
@@ -7180,7 +7180,7 @@
       "name": "table-secondary-footer",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/table.json"
+        "@herocn/table"
       ],
       "files": [
         {
@@ -7193,7 +7193,7 @@
       "name": "table-footer",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/table.json"
+        "@herocn/table"
       ],
       "files": [
         {
@@ -7206,9 +7206,9 @@
       "name": "table-actions",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dropdown-menu.json",
-        "https://herocn.dev/r/table.json"
+        "@herocn/button",
+        "@herocn/dropdown-menu",
+        "@herocn/table"
       ],
       "files": [
         {
@@ -7221,7 +7221,7 @@
       "name": "table-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/table.json"
+        "@herocn/table"
       ],
       "files": [
         {
@@ -7234,7 +7234,7 @@
       "name": "resizable-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/resizable.json"
+        "@herocn/resizable"
       ],
       "files": [
         {
@@ -7247,7 +7247,7 @@
       "name": "resizable-vertical",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/resizable.json"
+        "@herocn/resizable"
       ],
       "files": [
         {
@@ -7260,7 +7260,7 @@
       "name": "resizable-handle",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/resizable.json"
+        "@herocn/resizable"
       ],
       "files": [
         {
@@ -7273,7 +7273,7 @@
       "name": "resizable-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/resizable.json"
+        "@herocn/resizable"
       ],
       "files": [
         {
@@ -7286,7 +7286,7 @@
       "name": "pagination-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/pagination.json"
+        "@herocn/pagination"
       ],
       "files": [
         {
@@ -7299,7 +7299,7 @@
       "name": "pagination-simple",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/pagination.json"
+        "@herocn/pagination"
       ],
       "files": [
         {
@@ -7312,9 +7312,9 @@
       "name": "pagination-icons-only",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/field.json",
-        "https://herocn.dev/r/pagination.json",
-        "https://herocn.dev/r/select.json"
+        "@herocn/field",
+        "@herocn/pagination",
+        "@herocn/select"
       ],
       "files": [
         {
@@ -7327,7 +7327,7 @@
       "name": "pagination-sizes",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/pagination.json"
+        "@herocn/pagination"
       ],
       "files": [
         {
@@ -7340,7 +7340,7 @@
       "name": "pagination-ellipsis",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/pagination.json"
+        "@herocn/pagination"
       ],
       "files": [
         {
@@ -7353,7 +7353,7 @@
       "name": "pagination-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/pagination.json"
+        "@herocn/pagination"
       ],
       "files": [
         {
@@ -7366,7 +7366,7 @@
       "name": "breadcrumb-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/breadcrumb.json"
+        "@herocn/breadcrumb"
       ],
       "files": [
         {
@@ -7379,7 +7379,7 @@
       "name": "breadcrumb-basic",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/breadcrumb.json"
+        "@herocn/breadcrumb"
       ],
       "files": [
         {
@@ -7392,7 +7392,7 @@
       "name": "breadcrumb-separator",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/breadcrumb.json"
+        "@herocn/breadcrumb"
       ],
       "files": [
         {
@@ -7405,8 +7405,8 @@
       "name": "breadcrumb-dropdown",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/breadcrumb.json",
-        "https://herocn.dev/r/dropdown-menu.json"
+        "@herocn/breadcrumb",
+        "@herocn/dropdown-menu"
       ],
       "files": [
         {
@@ -7419,7 +7419,7 @@
       "name": "breadcrumb-collapsed",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/breadcrumb.json"
+        "@herocn/breadcrumb"
       ],
       "files": [
         {
@@ -7432,7 +7432,7 @@
       "name": "breadcrumb-link",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/breadcrumb.json"
+        "@herocn/breadcrumb"
       ],
       "files": [
         {
@@ -7445,8 +7445,8 @@
       "name": "breadcrumb-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/breadcrumb.json",
-        "https://herocn.dev/r/dropdown-menu.json"
+        "@herocn/breadcrumb",
+        "@herocn/dropdown-menu"
       ],
       "files": [
         {
@@ -7459,7 +7459,7 @@
       "name": "menubar-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/menubar.json"
+        "@herocn/menubar"
       ],
       "files": [
         {
@@ -7472,7 +7472,7 @@
       "name": "menubar-checkbox",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/menubar.json"
+        "@herocn/menubar"
       ],
       "files": [
         {
@@ -7485,7 +7485,7 @@
       "name": "menubar-radio",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/menubar.json"
+        "@herocn/menubar"
       ],
       "files": [
         {
@@ -7498,7 +7498,7 @@
       "name": "menubar-submenu",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/menubar.json"
+        "@herocn/menubar"
       ],
       "files": [
         {
@@ -7511,7 +7511,7 @@
       "name": "menubar-icons",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/menubar.json"
+        "@herocn/menubar"
       ],
       "files": [
         {
@@ -7524,7 +7524,7 @@
       "name": "menubar-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/menubar.json"
+        "@herocn/menubar"
       ],
       "files": [
         {
@@ -7537,7 +7537,7 @@
       "name": "menubar-variants",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/menubar.json"
+        "@herocn/menubar"
       ],
       "files": [
         {
@@ -7550,8 +7550,8 @@
       "name": "menubar-in-surface",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/menubar.json",
-        "https://herocn.dev/r/surface.json"
+        "@herocn/menubar",
+        "@herocn/surface"
       ],
       "files": [
         {
@@ -7564,7 +7564,7 @@
       "name": "navigation-menu-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/navigation-menu.json"
+        "@herocn/navigation-menu"
       ],
       "files": [
         {
@@ -7577,7 +7577,7 @@
       "name": "navigation-menu-link",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/navigation-menu.json"
+        "@herocn/navigation-menu"
       ],
       "files": [
         {
@@ -7590,7 +7590,7 @@
       "name": "navigation-menu-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/navigation-menu.json"
+        "@herocn/navigation-menu"
       ],
       "files": [
         {
@@ -7603,8 +7603,8 @@
       "name": "carousel-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/carousel.json",
-        "https://herocn.dev/r/card.json"
+        "@herocn/carousel",
+        "@herocn/card"
       ],
       "files": [
         {
@@ -7617,8 +7617,8 @@
       "name": "carousel-size",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/carousel.json",
-        "https://herocn.dev/r/card.json"
+        "@herocn/carousel",
+        "@herocn/card"
       ],
       "files": [
         {
@@ -7631,8 +7631,8 @@
       "name": "carousel-spacing",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/carousel.json",
-        "https://herocn.dev/r/card.json"
+        "@herocn/carousel",
+        "@herocn/card"
       ],
       "files": [
         {
@@ -7645,8 +7645,8 @@
       "name": "carousel-orientation",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/carousel.json",
-        "https://herocn.dev/r/card.json"
+        "@herocn/carousel",
+        "@herocn/card"
       ],
       "files": [
         {
@@ -7659,8 +7659,8 @@
       "name": "carousel-api",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/carousel.json",
-        "https://herocn.dev/r/card.json"
+        "@herocn/carousel",
+        "@herocn/card"
       ],
       "files": [
         {
@@ -7673,8 +7673,8 @@
       "name": "carousel-plugin",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/carousel.json",
-        "https://herocn.dev/r/card.json"
+        "@herocn/carousel",
+        "@herocn/card"
       ],
       "dependencies": [
         "embla-carousel-autoplay"
@@ -7690,8 +7690,8 @@
       "name": "carousel-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/carousel.json",
-        "https://herocn.dev/r/card.json"
+        "@herocn/carousel",
+        "@herocn/card"
       ],
       "files": [
         {
@@ -7704,8 +7704,8 @@
       "name": "chart-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/chart.json"
+        "@herocn/card",
+        "@herocn/chart"
       ],
       "files": [
         {
@@ -7718,7 +7718,7 @@
       "name": "chart-bar-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/chart.json"
+        "@herocn/chart"
       ],
       "files": [
         {
@@ -7731,7 +7731,7 @@
       "name": "chart-bar-demo-grid",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/chart.json"
+        "@herocn/chart"
       ],
       "files": [
         {
@@ -7744,7 +7744,7 @@
       "name": "chart-bar-demo-axis",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/chart.json"
+        "@herocn/chart"
       ],
       "files": [
         {
@@ -7757,7 +7757,7 @@
       "name": "chart-bar-demo-tooltip",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/chart.json"
+        "@herocn/chart"
       ],
       "files": [
         {
@@ -7770,7 +7770,7 @@
       "name": "chart-bar-demo-legend",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/chart.json"
+        "@herocn/chart"
       ],
       "files": [
         {
@@ -7783,7 +7783,7 @@
       "name": "chart-tooltip-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/chart.json"
+        "@herocn/chart"
       ],
       "files": [
         {
@@ -7796,7 +7796,7 @@
       "name": "chart-rtl",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/chart.json"
+        "@herocn/chart"
       ],
       "files": [
         {
@@ -7809,8 +7809,8 @@
       "name": "marker-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/marker.json",
-        "https://herocn.dev/r/spinner.json"
+        "@herocn/marker",
+        "@herocn/spinner"
       ],
       "files": [
         {
@@ -7823,7 +7823,7 @@
       "name": "marker-variants",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/marker.json"
+        "@herocn/marker"
       ],
       "files": [
         {
@@ -7836,8 +7836,8 @@
       "name": "marker-status",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/marker.json",
-        "https://herocn.dev/r/spinner.json"
+        "@herocn/marker",
+        "@herocn/spinner"
       ],
       "files": [
         {
@@ -7850,7 +7850,7 @@
       "name": "marker-shimmer",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/marker.json"
+        "@herocn/marker"
       ],
       "files": [
         {
@@ -7863,7 +7863,7 @@
       "name": "marker-separator",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/marker.json"
+        "@herocn/marker"
       ],
       "files": [
         {
@@ -7876,7 +7876,7 @@
       "name": "marker-border",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/marker.json"
+        "@herocn/marker"
       ],
       "files": [
         {
@@ -7889,7 +7889,7 @@
       "name": "marker-icon",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/marker.json"
+        "@herocn/marker"
       ],
       "files": [
         {
@@ -7902,8 +7902,8 @@
       "name": "marker-link-button",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/marker.json",
-        "https://herocn.dev/r/toast.json"
+        "@herocn/marker",
+        "@herocn/toast"
       ],
       "files": [
         {
@@ -7916,7 +7916,7 @@
       "name": "bubble-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/bubble.json"
+        "@herocn/bubble"
       ],
       "files": [
         {
@@ -7929,7 +7929,7 @@
       "name": "bubble-variants",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/bubble.json"
+        "@herocn/bubble"
       ],
       "files": [
         {
@@ -7942,7 +7942,7 @@
       "name": "bubble-alignment",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/bubble.json"
+        "@herocn/bubble"
       ],
       "files": [
         {
@@ -7955,7 +7955,7 @@
       "name": "bubble-group",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/bubble.json"
+        "@herocn/bubble"
       ],
       "files": [
         {
@@ -7968,8 +7968,8 @@
       "name": "bubble-link-button",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/bubble.json",
-        "https://herocn.dev/r/toast.json"
+        "@herocn/bubble",
+        "@herocn/toast"
       ],
       "files": [
         {
@@ -7982,9 +7982,9 @@
       "name": "bubble-reactions",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/bubble.json",
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/toast.json"
+        "@herocn/bubble",
+        "@herocn/button",
+        "@herocn/toast"
       ],
       "files": [
         {
@@ -7997,9 +7997,9 @@
       "name": "bubble-collapsible",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/bubble.json",
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/collapsible.json"
+        "@herocn/bubble",
+        "@herocn/button",
+        "@herocn/collapsible"
       ],
       "files": [
         {
@@ -8012,9 +8012,9 @@
       "name": "bubble-tooltip",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/bubble.json",
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/tooltip.json"
+        "@herocn/bubble",
+        "@herocn/button",
+        "@herocn/tooltip"
       ],
       "files": [
         {
@@ -8027,9 +8027,9 @@
       "name": "bubble-popover",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/bubble.json",
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/popover.json"
+        "@herocn/bubble",
+        "@herocn/button",
+        "@herocn/popover"
       ],
       "files": [
         {
@@ -8042,10 +8042,10 @@
       "name": "message-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/message.json",
-        "https://herocn.dev/r/avatar.json",
-        "https://herocn.dev/r/bubble.json",
-        "https://herocn.dev/r/marker.json"
+        "@herocn/message",
+        "@herocn/avatar",
+        "@herocn/bubble",
+        "@herocn/marker"
       ],
       "files": [
         {
@@ -8058,9 +8058,9 @@
       "name": "message-avatar",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/message.json",
-        "https://herocn.dev/r/avatar.json",
-        "https://herocn.dev/r/bubble.json"
+        "@herocn/message",
+        "@herocn/avatar",
+        "@herocn/bubble"
       ],
       "files": [
         {
@@ -8073,9 +8073,9 @@
       "name": "message-group",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/message.json",
-        "https://herocn.dev/r/avatar.json",
-        "https://herocn.dev/r/bubble.json"
+        "@herocn/message",
+        "@herocn/avatar",
+        "@herocn/bubble"
       ],
       "files": [
         {
@@ -8088,8 +8088,8 @@
       "name": "message-header-footer",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/message.json",
-        "https://herocn.dev/r/bubble.json"
+        "@herocn/message",
+        "@herocn/bubble"
       ],
       "files": [
         {
@@ -8102,9 +8102,9 @@
       "name": "message-actions",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/message.json",
-        "https://herocn.dev/r/bubble.json",
-        "https://herocn.dev/r/button.json"
+        "@herocn/message",
+        "@herocn/bubble",
+        "@herocn/button"
       ],
       "files": [
         {
@@ -8117,9 +8117,9 @@
       "name": "message-attachment",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/message.json",
-        "https://herocn.dev/r/bubble.json",
-        "https://herocn.dev/r/attachment.json"
+        "@herocn/message",
+        "@herocn/bubble",
+        "@herocn/attachment"
       ],
       "files": [
         {
@@ -8132,13 +8132,13 @@
       "name": "message-scroller-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/message-scroller.json",
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/dropdown-menu.json",
-        "https://herocn.dev/r/empty.json",
-        "https://herocn.dev/r/input-group.json",
-        "https://herocn.dev/r/tooltip.json"
+        "@herocn/message-scroller",
+        "@herocn/button",
+        "@herocn/card",
+        "@herocn/dropdown-menu",
+        "@herocn/empty",
+        "@herocn/input-group",
+        "@herocn/tooltip"
       ],
       "files": [
         {
@@ -8151,11 +8151,11 @@
       "name": "message-scroller-anchoring",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/message-scroller.json",
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/empty.json",
-        "https://herocn.dev/r/toggle-group.json"
+        "@herocn/message-scroller",
+        "@herocn/button",
+        "@herocn/card",
+        "@herocn/empty",
+        "@herocn/toggle-group"
       ],
       "files": [
         {
@@ -8168,13 +8168,13 @@
       "name": "message-scroller-group-chat",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/message-scroller.json",
-        "https://herocn.dev/r/bubble.json",
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/marker.json",
-        "https://herocn.dev/r/message.json",
-        "https://herocn.dev/r/tooltip.json"
+        "@herocn/message-scroller",
+        "@herocn/bubble",
+        "@herocn/button",
+        "@herocn/card",
+        "@herocn/marker",
+        "@herocn/message",
+        "@herocn/tooltip"
       ],
       "files": [
         {
@@ -8187,13 +8187,13 @@
       "name": "message-scroller-previous-context",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/message-scroller.json",
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/dropdown-menu.json",
-        "https://herocn.dev/r/input-group.json",
-        "https://herocn.dev/r/slider.json",
-        "https://herocn.dev/r/tooltip.json"
+        "@herocn/message-scroller",
+        "@herocn/button",
+        "@herocn/card",
+        "@herocn/dropdown-menu",
+        "@herocn/input-group",
+        "@herocn/slider",
+        "@herocn/tooltip"
       ],
       "files": [
         {
@@ -8206,13 +8206,13 @@
       "name": "message-scroller-streaming",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/message-scroller.json",
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/dropdown-menu.json",
-        "https://herocn.dev/r/empty.json",
-        "https://herocn.dev/r/input-group.json",
-        "https://herocn.dev/r/tooltip.json"
+        "@herocn/message-scroller",
+        "@herocn/button",
+        "@herocn/card",
+        "@herocn/dropdown-menu",
+        "@herocn/empty",
+        "@herocn/input-group",
+        "@herocn/tooltip"
       ],
       "files": [
         {
@@ -8225,12 +8225,12 @@
       "name": "message-scroller-opening-position",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/message-scroller.json",
-        "https://herocn.dev/r/bubble.json",
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/message.json",
-        "https://herocn.dev/r/tabs.json"
+        "@herocn/message-scroller",
+        "@herocn/bubble",
+        "@herocn/button",
+        "@herocn/card",
+        "@herocn/message",
+        "@herocn/tabs"
       ],
       "files": [
         {
@@ -8243,13 +8243,13 @@
       "name": "message-scroller-load-history",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/message-scroller.json",
-        "https://herocn.dev/r/bubble.json",
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/marker.json",
-        "https://herocn.dev/r/message.json",
-        "https://herocn.dev/r/tooltip.json"
+        "@herocn/message-scroller",
+        "@herocn/bubble",
+        "@herocn/button",
+        "@herocn/card",
+        "@herocn/marker",
+        "@herocn/message",
+        "@herocn/tooltip"
       ],
       "files": [
         {
@@ -8262,11 +8262,11 @@
       "name": "message-scroller-animation",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/message-scroller.json",
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/empty.json",
-        "https://herocn.dev/r/select.json"
+        "@herocn/message-scroller",
+        "@herocn/button",
+        "@herocn/card",
+        "@herocn/empty",
+        "@herocn/select"
       ],
       "files": [
         {
@@ -8279,12 +8279,12 @@
       "name": "message-scroller-commands",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/message-scroller.json",
-        "https://herocn.dev/r/bubble.json",
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/dropdown-menu.json",
-        "https://herocn.dev/r/message.json"
+        "@herocn/message-scroller",
+        "@herocn/bubble",
+        "@herocn/button",
+        "@herocn/card",
+        "@herocn/dropdown-menu",
+        "@herocn/message"
       ],
       "files": [
         {
@@ -8297,11 +8297,11 @@
       "name": "message-scroller-visibility",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/message-scroller.json",
-        "https://herocn.dev/r/bubble.json",
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/hover-card.json",
-        "https://herocn.dev/r/message.json"
+        "@herocn/message-scroller",
+        "@herocn/bubble",
+        "@herocn/card",
+        "@herocn/hover-card",
+        "@herocn/message"
       ],
       "files": [
         {
@@ -8314,8 +8314,8 @@
       "name": "message-scroller-scrollable",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/message-scroller.json",
-        "https://herocn.dev/r/card.json"
+        "@herocn/message-scroller",
+        "@herocn/card"
       ],
       "files": [
         {
@@ -8328,8 +8328,8 @@
       "name": "toast-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/toast.json"
+        "@herocn/button",
+        "@herocn/toast"
       ],
       "files": [
         {
@@ -8342,8 +8342,8 @@
       "name": "toast-types",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/toast.json"
+        "@herocn/button",
+        "@herocn/toast"
       ],
       "files": [
         {
@@ -8356,8 +8356,8 @@
       "name": "toast-action",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/toast.json"
+        "@herocn/button",
+        "@herocn/toast"
       ],
       "files": [
         {
@@ -8370,8 +8370,8 @@
       "name": "toast-promise",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/toast.json"
+        "@herocn/button",
+        "@herocn/toast"
       ],
       "files": [
         {
@@ -8384,8 +8384,8 @@
       "name": "questionnaire-demo",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/questionnaire.json",
-        "https://herocn.dev/r/toast.json"
+        "@herocn/questionnaire",
+        "@herocn/toast"
       ],
       "files": [
         {
@@ -8398,8 +8398,8 @@
       "name": "questionnaire-multiple",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/questionnaire.json",
-        "https://herocn.dev/r/toast.json"
+        "@herocn/questionnaire",
+        "@herocn/toast"
       ],
       "files": [
         {
@@ -8412,8 +8412,8 @@
       "name": "questionnaire-freeform",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/questionnaire.json",
-        "https://herocn.dev/r/toast.json"
+        "@herocn/questionnaire",
+        "@herocn/toast"
       ],
       "files": [
         {
@@ -8426,8 +8426,8 @@
       "name": "questionnaire-skip",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/questionnaire.json",
-        "https://herocn.dev/r/toast.json"
+        "@herocn/questionnaire",
+        "@herocn/toast"
       ],
       "files": [
         {
@@ -8440,9 +8440,9 @@
       "name": "questionnaire-shortcuts",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/native-select.json",
-        "https://herocn.dev/r/questionnaire.json",
-        "https://herocn.dev/r/toast.json"
+        "@herocn/native-select",
+        "@herocn/questionnaire",
+        "@herocn/toast"
       ],
       "files": [
         {
@@ -8455,9 +8455,9 @@
       "name": "questionnaire-validation",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/questionnaire.json",
-        "https://herocn.dev/r/toast.json"
+        "@herocn/card",
+        "@herocn/questionnaire",
+        "@herocn/toast"
       ],
       "files": [
         {
@@ -8470,8 +8470,8 @@
       "name": "questionnaire-controlled",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/questionnaire.json",
-        "https://herocn.dev/r/toast.json"
+        "@herocn/questionnaire",
+        "@herocn/toast"
       ],
       "files": [
         {
@@ -8484,9 +8484,9 @@
       "name": "questionnaire-resume",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/questionnaire.json",
-        "https://herocn.dev/r/toast.json"
+        "@herocn/button",
+        "@herocn/questionnaire",
+        "@herocn/toast"
       ],
       "files": [
         {
@@ -8499,8 +8499,8 @@
       "name": "questionnaire-conditional",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/questionnaire.json",
-        "https://herocn.dev/r/toast.json"
+        "@herocn/questionnaire",
+        "@herocn/toast"
       ],
       "files": [
         {
@@ -8513,8 +8513,8 @@
       "name": "questionnaire-navigation-state",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/questionnaire.json",
-        "https://herocn.dev/r/toast.json"
+        "@herocn/questionnaire",
+        "@herocn/toast"
       ],
       "files": [
         {
@@ -8527,8 +8527,8 @@
       "name": "questionnaire-progress",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/questionnaire.json",
-        "https://herocn.dev/r/toast.json"
+        "@herocn/questionnaire",
+        "@herocn/toast"
       ],
       "files": [
         {
@@ -8541,8 +8541,8 @@
       "name": "questionnaire-animated",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/questionnaire.json",
-        "https://herocn.dev/r/toast.json"
+        "@herocn/questionnaire",
+        "@herocn/toast"
       ],
       "files": [
         {
@@ -8555,9 +8555,9 @@
       "name": "questionnaire-card",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/questionnaire.json",
-        "https://herocn.dev/r/toast.json"
+        "@herocn/card",
+        "@herocn/questionnaire",
+        "@herocn/toast"
       ],
       "files": [
         {
@@ -8570,10 +8570,10 @@
       "name": "questionnaire-dialog",
       "type": "registry:example",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dialog.json",
-        "https://herocn.dev/r/questionnaire.json",
-        "https://herocn.dev/r/toast.json"
+        "@herocn/button",
+        "@herocn/dialog",
+        "@herocn/questionnaire",
+        "@herocn/toast"
       ],
       "files": [
         {
@@ -8587,11 +8587,11 @@
       "type": "registry:block",
       "description": "A simple login form.",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/label.json",
-        "https://herocn.dev/r/field.json"
+        "@herocn/button",
+        "@herocn/card",
+        "@herocn/input",
+        "@herocn/label",
+        "@herocn/field"
       ],
       "files": [
         {
@@ -8615,10 +8615,10 @@
       "type": "registry:block",
       "description": "A two column login page with a cover image.",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/label.json",
-        "https://herocn.dev/r/field.json"
+        "@herocn/button",
+        "@herocn/input",
+        "@herocn/label",
+        "@herocn/field"
       ],
       "files": [
         {
@@ -8642,11 +8642,11 @@
       "type": "registry:block",
       "description": "A login page with a muted background color.",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/label.json",
-        "https://herocn.dev/r/field.json"
+        "@herocn/button",
+        "@herocn/card",
+        "@herocn/input",
+        "@herocn/label",
+        "@herocn/field"
       ],
       "files": [
         {
@@ -8670,11 +8670,11 @@
       "type": "registry:block",
       "description": "A login page with form and image.",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/label.json",
-        "https://herocn.dev/r/field.json"
+        "@herocn/button",
+        "@herocn/card",
+        "@herocn/input",
+        "@herocn/label",
+        "@herocn/field"
       ],
       "files": [
         {
@@ -8698,10 +8698,10 @@
       "type": "registry:block",
       "description": "A simple email-only login page.",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/label.json",
-        "https://herocn.dev/r/field.json"
+        "@herocn/button",
+        "@herocn/input",
+        "@herocn/label",
+        "@herocn/field"
       ],
       "files": [
         {
@@ -8725,11 +8725,11 @@
       "type": "registry:block",
       "description": "A simple signup form.",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/label.json",
-        "https://herocn.dev/r/field.json"
+        "@herocn/button",
+        "@herocn/card",
+        "@herocn/input",
+        "@herocn/label",
+        "@herocn/field"
       ],
       "files": [
         {
@@ -8753,10 +8753,10 @@
       "type": "registry:block",
       "description": "A two column signup page with a cover image.",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/label.json",
-        "https://herocn.dev/r/field.json"
+        "@herocn/button",
+        "@herocn/input",
+        "@herocn/label",
+        "@herocn/field"
       ],
       "files": [
         {
@@ -8780,11 +8780,11 @@
       "type": "registry:block",
       "description": "A signup page with a muted background color.",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/label.json",
-        "https://herocn.dev/r/field.json"
+        "@herocn/button",
+        "@herocn/card",
+        "@herocn/input",
+        "@herocn/label",
+        "@herocn/field"
       ],
       "files": [
         {
@@ -8808,11 +8808,11 @@
       "type": "registry:block",
       "description": "A signup page with form and image.",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/label.json",
-        "https://herocn.dev/r/field.json"
+        "@herocn/button",
+        "@herocn/card",
+        "@herocn/input",
+        "@herocn/label",
+        "@herocn/field"
       ],
       "files": [
         {
@@ -8836,10 +8836,10 @@
       "type": "registry:block",
       "description": "A simple signup form with social providers.",
       "registryDependencies": [
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/label.json",
-        "https://herocn.dev/r/field.json"
+        "@herocn/button",
+        "@herocn/input",
+        "@herocn/label",
+        "@herocn/field"
       ],
       "files": [
         {
@@ -8863,11 +8863,11 @@
       "type": "registry:block",
       "description": "A simple sidebar with navigation grouped by section.",
       "registryDependencies": [
-        "https://herocn.dev/r/sidebar.json",
-        "https://herocn.dev/r/breadcrumb.json",
-        "https://herocn.dev/r/separator.json",
-        "https://herocn.dev/r/label.json",
-        "https://herocn.dev/r/dropdown-menu.json"
+        "@herocn/sidebar",
+        "@herocn/breadcrumb",
+        "@herocn/separator",
+        "@herocn/label",
+        "@herocn/dropdown-menu"
       ],
       "files": [
         {
@@ -8901,11 +8901,11 @@
       "type": "registry:block",
       "description": "A sidebar with collapsible sections.",
       "registryDependencies": [
-        "https://herocn.dev/r/sidebar.json",
-        "https://herocn.dev/r/breadcrumb.json",
-        "https://herocn.dev/r/separator.json",
-        "https://herocn.dev/r/label.json",
-        "https://herocn.dev/r/dropdown-menu.json"
+        "@herocn/sidebar",
+        "@herocn/breadcrumb",
+        "@herocn/separator",
+        "@herocn/label",
+        "@herocn/dropdown-menu"
       ],
       "files": [
         {
@@ -8939,8 +8939,8 @@
       "type": "registry:block",
       "description": "A sidebar with submenus.",
       "registryDependencies": [
-        "https://herocn.dev/r/sidebar.json",
-        "https://herocn.dev/r/breadcrumb.json"
+        "@herocn/sidebar",
+        "@herocn/breadcrumb"
       ],
       "files": [
         {
@@ -8964,12 +8964,12 @@
       "type": "registry:block",
       "description": "A sidebar that collapses to icons.",
       "registryDependencies": [
-        "https://herocn.dev/r/sidebar.json",
-        "https://herocn.dev/r/breadcrumb.json",
-        "https://herocn.dev/r/separator.json",
-        "https://herocn.dev/r/collapsible.json",
-        "https://herocn.dev/r/dropdown-menu.json",
-        "https://herocn.dev/r/avatar.json"
+        "@herocn/sidebar",
+        "@herocn/breadcrumb",
+        "@herocn/separator",
+        "@herocn/collapsible",
+        "@herocn/dropdown-menu",
+        "@herocn/avatar"
       ],
       "files": [
         {
@@ -9013,9 +9013,9 @@
       "type": "registry:block",
       "description": "A floating sidebar with submenus.",
       "registryDependencies": [
-        "https://herocn.dev/r/sidebar.json",
-        "https://herocn.dev/r/breadcrumb.json",
-        "https://herocn.dev/r/separator.json"
+        "@herocn/sidebar",
+        "@herocn/breadcrumb",
+        "@herocn/separator"
       ],
       "files": [
         {
@@ -9039,11 +9039,11 @@
       "type": "registry:block",
       "description": "A sidebar with collapsible submenus.",
       "registryDependencies": [
-        "https://herocn.dev/r/sidebar.json",
-        "https://herocn.dev/r/breadcrumb.json",
-        "https://herocn.dev/r/separator.json",
-        "https://herocn.dev/r/label.json",
-        "https://herocn.dev/r/collapsible.json"
+        "@herocn/sidebar",
+        "@herocn/breadcrumb",
+        "@herocn/separator",
+        "@herocn/label",
+        "@herocn/collapsible"
       ],
       "files": [
         {
@@ -9072,11 +9072,11 @@
       "type": "registry:block",
       "description": "A sidebar with submenus as dropdowns.",
       "registryDependencies": [
-        "https://herocn.dev/r/sidebar.json",
-        "https://herocn.dev/r/breadcrumb.json",
-        "https://herocn.dev/r/separator.json",
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/dropdown-menu.json"
+        "@herocn/sidebar",
+        "@herocn/breadcrumb",
+        "@herocn/separator",
+        "@herocn/card",
+        "@herocn/dropdown-menu"
       ],
       "files": [
         {
@@ -9110,12 +9110,12 @@
       "type": "registry:block",
       "description": "An inset sidebar with secondary navigation.",
       "registryDependencies": [
-        "https://herocn.dev/r/sidebar.json",
-        "https://herocn.dev/r/breadcrumb.json",
-        "https://herocn.dev/r/separator.json",
-        "https://herocn.dev/r/collapsible.json",
-        "https://herocn.dev/r/dropdown-menu.json",
-        "https://herocn.dev/r/avatar.json"
+        "@herocn/sidebar",
+        "@herocn/breadcrumb",
+        "@herocn/separator",
+        "@herocn/collapsible",
+        "@herocn/dropdown-menu",
+        "@herocn/avatar"
       ],
       "files": [
         {
@@ -9159,14 +9159,14 @@
       "type": "registry:block",
       "description": "Collapsible nested sidebars.",
       "registryDependencies": [
-        "https://herocn.dev/r/sidebar.json",
-        "https://herocn.dev/r/breadcrumb.json",
-        "https://herocn.dev/r/separator.json",
-        "https://herocn.dev/r/collapsible.json",
-        "https://herocn.dev/r/dropdown-menu.json",
-        "https://herocn.dev/r/avatar.json",
-        "https://herocn.dev/r/switch.json",
-        "https://herocn.dev/r/label.json"
+        "@herocn/sidebar",
+        "@herocn/breadcrumb",
+        "@herocn/separator",
+        "@herocn/collapsible",
+        "@herocn/dropdown-menu",
+        "@herocn/avatar",
+        "@herocn/switch",
+        "@herocn/label"
       ],
       "files": [
         {
@@ -9195,12 +9195,12 @@
       "type": "registry:block",
       "description": "A sidebar in a popover.",
       "registryDependencies": [
-        "https://herocn.dev/r/sidebar.json",
-        "https://herocn.dev/r/breadcrumb.json",
-        "https://herocn.dev/r/separator.json",
-        "https://herocn.dev/r/popover.json",
-        "https://herocn.dev/r/collapsible.json",
-        "https://herocn.dev/r/dropdown-menu.json"
+        "@herocn/sidebar",
+        "@herocn/breadcrumb",
+        "@herocn/separator",
+        "@herocn/popover",
+        "@herocn/collapsible",
+        "@herocn/dropdown-menu"
       ],
       "files": [
         {
@@ -9254,10 +9254,10 @@
       "type": "registry:block",
       "description": "A sidebar with a collapsible file tree.",
       "registryDependencies": [
-        "https://herocn.dev/r/sidebar.json",
-        "https://herocn.dev/r/breadcrumb.json",
-        "https://herocn.dev/r/separator.json",
-        "https://herocn.dev/r/collapsible.json"
+        "@herocn/sidebar",
+        "@herocn/breadcrumb",
+        "@herocn/separator",
+        "@herocn/collapsible"
       ],
       "files": [
         {
@@ -9281,13 +9281,13 @@
       "type": "registry:block",
       "description": "A sidebar with a calendar.",
       "registryDependencies": [
-        "https://herocn.dev/r/sidebar.json",
-        "https://herocn.dev/r/breadcrumb.json",
-        "https://herocn.dev/r/separator.json",
-        "https://herocn.dev/r/collapsible.json",
-        "https://herocn.dev/r/calendar.json",
-        "https://herocn.dev/r/dropdown-menu.json",
-        "https://herocn.dev/r/avatar.json"
+        "@herocn/sidebar",
+        "@herocn/breadcrumb",
+        "@herocn/separator",
+        "@herocn/collapsible",
+        "@herocn/calendar",
+        "@herocn/dropdown-menu",
+        "@herocn/avatar"
       ],
       "files": [
         {
@@ -9326,10 +9326,10 @@
       "type": "registry:block",
       "description": "A sidebar in a dialog.",
       "registryDependencies": [
-        "https://herocn.dev/r/sidebar.json",
-        "https://herocn.dev/r/breadcrumb.json",
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/dialog.json"
+        "@herocn/sidebar",
+        "@herocn/breadcrumb",
+        "@herocn/button",
+        "@herocn/dialog"
       ],
       "files": [
         {
@@ -9353,8 +9353,8 @@
       "type": "registry:block",
       "description": "A sidebar on the right.",
       "registryDependencies": [
-        "https://herocn.dev/r/sidebar.json",
-        "https://herocn.dev/r/breadcrumb.json"
+        "@herocn/sidebar",
+        "@herocn/breadcrumb"
       ],
       "files": [
         {
@@ -9378,14 +9378,14 @@
       "type": "registry:block",
       "description": "A left and right sidebar.",
       "registryDependencies": [
-        "https://herocn.dev/r/sidebar.json",
-        "https://herocn.dev/r/breadcrumb.json",
-        "https://herocn.dev/r/separator.json",
-        "https://herocn.dev/r/popover.json",
-        "https://herocn.dev/r/collapsible.json",
-        "https://herocn.dev/r/dropdown-menu.json",
-        "https://herocn.dev/r/calendar.json",
-        "https://herocn.dev/r/avatar.json"
+        "@herocn/sidebar",
+        "@herocn/breadcrumb",
+        "@herocn/separator",
+        "@herocn/popover",
+        "@herocn/collapsible",
+        "@herocn/dropdown-menu",
+        "@herocn/calendar",
+        "@herocn/avatar"
       ],
       "files": [
         {
@@ -9454,14 +9454,14 @@
       "type": "registry:block",
       "description": "A sidebar with a sticky site header.",
       "registryDependencies": [
-        "https://herocn.dev/r/sidebar.json",
-        "https://herocn.dev/r/breadcrumb.json",
-        "https://herocn.dev/r/separator.json",
-        "https://herocn.dev/r/collapsible.json",
-        "https://herocn.dev/r/dropdown-menu.json",
-        "https://herocn.dev/r/avatar.json",
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/label.json"
+        "@herocn/sidebar",
+        "@herocn/breadcrumb",
+        "@herocn/separator",
+        "@herocn/collapsible",
+        "@herocn/dropdown-menu",
+        "@herocn/avatar",
+        "@herocn/button",
+        "@herocn/label"
       ],
       "files": [
         {
@@ -9523,25 +9523,25 @@
         "zod"
       ],
       "registryDependencies": [
-        "https://herocn.dev/r/sidebar.json",
-        "https://herocn.dev/r/breadcrumb.json",
-        "https://herocn.dev/r/separator.json",
-        "https://herocn.dev/r/label.json",
-        "https://herocn.dev/r/chart.json",
-        "https://herocn.dev/r/card.json",
-        "https://herocn.dev/r/select.json",
-        "https://herocn.dev/r/tabs.json",
-        "https://herocn.dev/r/table.json",
-        "https://herocn.dev/r/toggle-group.json",
-        "https://herocn.dev/r/badge.json",
-        "https://herocn.dev/r/button.json",
-        "https://herocn.dev/r/checkbox.json",
-        "https://herocn.dev/r/dropdown-menu.json",
-        "https://herocn.dev/r/drawer.json",
-        "https://herocn.dev/r/input.json",
-        "https://herocn.dev/r/avatar.json",
-        "https://herocn.dev/r/sheet.json",
-        "https://herocn.dev/r/toast.json"
+        "@herocn/sidebar",
+        "@herocn/breadcrumb",
+        "@herocn/separator",
+        "@herocn/label",
+        "@herocn/chart",
+        "@herocn/card",
+        "@herocn/select",
+        "@herocn/tabs",
+        "@herocn/table",
+        "@herocn/toggle-group",
+        "@herocn/badge",
+        "@herocn/button",
+        "@herocn/checkbox",
+        "@herocn/dropdown-menu",
+        "@herocn/drawer",
+        "@herocn/input",
+        "@herocn/avatar",
+        "@herocn/sheet",
+        "@herocn/toast"
       ],
       "files": [
         {

@@ -5,5 +5,5 @@ export function absoluteUrl(path: string) {
 }
 
 export function getRegistryItemInstallationAlias(itemName: string) {
-	return `https://herocn.dev/r/${itemName}.json`;
+	return `@herocn/${itemName}`;
 }

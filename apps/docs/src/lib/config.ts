@@ -16,7 +16,7 @@ type SiteConfigType = {
 
 export const siteConfig: SiteConfigType = {
 	name: "herocn",
-	url: "https://herocn.pages.dev/",
+	url: "https://herocn.dev/",
 	description: "shadcn/ui abstract, heroui beautiful styles.",
 	links: {
 		twitter: "https://twitter.com/0xMaqed",

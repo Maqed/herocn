@@ -52,7 +52,7 @@ export default function HomePage() {
 				}}
 			/>
 			<PageHeader>
-				<PageHeaderHeading className="max-w-4xl">
+				<PageHeaderHeading>
 					<span>HeroUI's design system.</span>
 					<br />
 					<span className="text-muted-foreground">shadcn's abstraction.</span>

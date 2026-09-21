@@ -7,13 +7,14 @@ function PageHeader({
 }: React.ComponentProps<"section">) {
 	return (
 		<section
-			className={cn(
-				"flex flex-col items-center justify-center gap-2 px-6 py-8 text-center md:py-16 lg:py-20 xl:gap-4",
-				className,
-			)}
+			className={cn("border-border/50 dark:border-border", className)}
 			{...props}
 		>
-			{children}
+			<div className="mx-auto flex w-full 3xl:fixed:max-w-[calc(var(--breakpoint-2xl)+2rem)] items-center justify-center">
+				<div className="container flex flex-col items-center gap-2 px-6 py-8 text-center md:py-16 lg:py-20 xl:gap-4">
+					{children}
+				</div>
+			</div>
 		</section>
 	);
 }
@@ -24,7 +25,10 @@ function PageHeaderHeading({
 }: React.ComponentProps<"h1">) {
 	return (
 		<h1
-			className={cn("font-bold text-4xl md:text-5xl", className)}
+			className={cn(
+				"max-w-3xl text-balance font-bold text-[1.7rem] leading-tight tracking-tighter lg:text-5xl",
+				className,
+			)}
 			{...props}
 		/>
 	);
@@ -35,7 +39,13 @@ function PageHeaderDescription({
 	...props
 }: React.ComponentProps<"p">) {
 	return (
-		<p className={cn("max-w-4xl text-base sm:text-lg", className)} {...props} />
+		<p
+			className={cn(
+				"max-w-4xl text-pretty text-base text-foreground sm:text-lg",
+				className,
+			)}
+			{...props}
+		/>
 	);
 }
 

@@ -10,7 +10,7 @@ import { siteConfig } from "@/lib/config";
 import { getPageImage, source } from "@/lib/source";
 import { absoluteUrl } from "@/lib/utils";
 import { getMDXComponents } from "@/mdx-components";
-import { Button } from "@/registry/new-york-v4/ui/button";
+import { buttonVariants } from "@/registry/new-york-v4/ui/button";
 
 export default async function Page(props: {
 	params: Promise<{ slug: string[] }>;
@@ -66,28 +66,30 @@ export default async function Page(props: {
 									</div>
 									<div className="ml-auto flex gap-2">
 										{neighbours.previous && (
-											<Button
-												variant="tertiary"
-												size="icon-sm"
-												className="extend-touch-target"
-												render={<Link href={neighbours.previous.url} />}
-												nativeButton={false}
+											<Link
+												href={neighbours.previous.url}
+												className={buttonVariants({
+													variant: "tertiary",
+													size: "icon-sm",
+													className: "extend-touch-target",
+												})}
 											>
 												<ArrowLeftIcon />
 												<span className="sr-only">Previous</span>
-											</Button>
+											</Link>
 										)}
 										{neighbours.next && (
-											<Button
-												variant="tertiary"
-												size="icon-sm"
-												className="extend-touch-target"
-												render={<Link href={neighbours.next.url} />}
-												nativeButton={false}
+											<Link
+												href={neighbours.next.url}
+												className={buttonVariants({
+													variant: "tertiary",
+													size: "icon-sm",
+													className: "extend-touch-target",
+												})}
 											>
 												<span className="sr-only">Next</span>
 												<ArrowRightIcon />
-											</Button>
+											</Link>
 										)}
 									</div>
 								</div>
@@ -104,26 +106,28 @@ export default async function Page(props: {
 					</DocsBody>
 					<div className="hidden h-16 w-full items-center gap-2 px-4 sm:flex sm:px-0">
 						{neighbours.previous && (
-							<Button
-								variant="tertiary"
-								size="sm"
-								className="shadow-none"
-								render={<Link href={neighbours.previous.url} />}
-								nativeButton={false}
+							<Link
+								href={neighbours.previous.url}
+								className={buttonVariants({
+									variant: "tertiary",
+									size: "sm",
+									className: "shadow-none",
+								})}
 							>
 								<ArrowLeftIcon /> {neighbours.previous.name}
-							</Button>
+							</Link>
 						)}
 						{neighbours.next && (
-							<Button
-								variant="tertiary"
-								size="sm"
-								className="ml-auto shadow-none"
-								render={<Link href={neighbours.next.url} />}
-								nativeButton={false}
+							<Link
+								href={neighbours.next.url}
+								className={buttonVariants({
+									variant: "tertiary",
+									size: "sm",
+									className: "ml-auto shadow-none",
+								})}
 							>
 								{neighbours.next.name} <ArrowRightIcon />
-							</Button>
+							</Link>
 						)}
 					</div>
 				</div>

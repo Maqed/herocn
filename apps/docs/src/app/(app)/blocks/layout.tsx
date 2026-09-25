@@ -10,7 +10,7 @@ import {
 } from "@/components/page-header";
 import { siteConfig } from "@/lib/config";
 import { absoluteUrl } from "@/lib/utils";
-import { Button } from "@/registry/new-york-v4/ui/button";
+import { buttonVariants } from "@/registry/new-york-v4/ui/button";
 
 const title = "Building Blocks for the Web";
 const description =
@@ -48,15 +48,15 @@ export default function BlocksLayout({
 					{description}
 				</PageHeaderDescription>
 				<PageActions>
-					<Button
-						nativeButton={false}
-						render={<Link href="#blocks">Browse Blocks</Link>}
-					/>
-					<Button
-						nativeButton={false}
-						variant="secondary"
-						render={<Link href="/docs/components">View Components</Link>}
-					/>
+					<Link href="#blocks" className={buttonVariants()}>
+						Browse Blocks
+					</Link>
+					<Link
+						href="/docs/components"
+						className={buttonVariants({ variant: "secondary" })}
+					>
+						View Components
+					</Link>
 				</PageActions>
 			</PageHeader>
 			<div
@@ -65,13 +65,16 @@ export default function BlocksLayout({
 			>
 				<div className="flex items-center justify-between gap-4 py-4">
 					<BlocksNav />
-					<Button
-						nativeButton={false}
-						variant="secondary"
-						size="sm"
-						className="me-7 hidden lg:flex"
-						render={<Link href="/blocks/sidebar">Browse all blocks</Link>}
-					/>
+					<Link
+						href="/blocks/sidebar"
+						className={buttonVariants({
+							variant: "secondary",
+							size: "sm",
+							className: "me-7 hidden lg:flex",
+						})}
+					>
+						Browse all blocks
+					</Link>
 				</div>
 			</div>
 			<div className="mx-auto w-full max-w-[2400px] flex-1 px-4 xl:px-8">

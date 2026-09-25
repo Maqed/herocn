@@ -8,7 +8,7 @@ import {
 } from "@/components/page-header";
 import { PAGES_METADATA, siteConfig } from "@/lib/config";
 import { absoluteUrl } from "@/lib/utils";
-import { Button } from "@/registry/new-york-v4/ui/button";
+import { buttonVariants } from "@/registry/new-york-v4/ui/button";
 import { CardsDemo } from "./cards";
 
 export const metadata: Metadata = {
@@ -62,15 +62,15 @@ export default function HomePage() {
 					HeroUI.
 				</PageHeaderDescription>
 				<PageActions>
-					<Button
-						nativeButton={false}
-						render={<Link href="/docs/installation">Install</Link>}
-					/>
-					<Button
-						nativeButton={false}
-						variant="secondary"
-						render={<Link href="/docs/components">View components</Link>}
-					/>
+					<Link href="/docs/installation" className={buttonVariants()}>
+						Install
+					</Link>
+					<Link
+						href="/docs/components"
+						className={buttonVariants({ variant: "secondary" })}
+					>
+						View components
+					</Link>
 				</PageActions>
 			</PageHeader>
 			<section className="mx-auto w-full max-w-[2400px] px-4 xl:px-8">

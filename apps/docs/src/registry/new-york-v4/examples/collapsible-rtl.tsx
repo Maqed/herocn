@@ -56,8 +56,8 @@ export function CollapsibleRtl() {
 						{t.trigger}
 						<ChevronDownIcon className="ms-auto group-data-panel-open/button:rotate-180" />
 					</CollapsibleTrigger>
-					<CollapsibleContent className="flex flex-col items-start gap-2 p-2.5 pt-1 text-sm">
-						<div>{t.answer}</div>
+					<CollapsibleContent className="flex flex-col items-start gap-2 text-sm">
+						{t.answer}
 						<Button size="sm">{t.learnMore}</Button>
 					</CollapsibleContent>
 				</Collapsible>

@@ -7,12 +7,14 @@ type AccordionVariant = "default" | "surface";
 function Accordion({
 	className,
 	variant = "default",
+	hiddenUntilFound = true,
 	...props
 }: AccordionPrimitive.Root.Props & { variant?: AccordionVariant }) {
 	return (
 		<AccordionPrimitive.Root
 			data-slot="accordion"
 			data-variant={variant}
+			hiddenUntilFound={hiddenUntilFound}
 			className={cn(
 				"group/accordion w-full",
 				"[contain:layout_style]",

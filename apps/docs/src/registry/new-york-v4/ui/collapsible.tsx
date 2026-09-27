@@ -12,9 +12,16 @@ function CollapsibleTrigger({ ...props }: CollapsiblePrimitive.Trigger.Props) {
 	);
 }
 
-function CollapsibleContent({ ...props }: CollapsiblePrimitive.Panel.Props) {
+function CollapsibleContent({
+	hiddenUntilFound = true,
+	...props
+}: CollapsiblePrimitive.Panel.Props) {
 	return (
-		<CollapsiblePrimitive.Panel data-slot="collapsible-content" {...props} />
+		<CollapsiblePrimitive.Panel
+			hiddenUntilFound={hiddenUntilFound}
+			data-slot="collapsible-content"
+			{...props}
+		/>
 	);
 }
 

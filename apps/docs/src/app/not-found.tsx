@@ -24,10 +24,10 @@ export default function NotFound() {
 	return (
 		<>
 			<SiteHeader />
-			<main className="flex flex-1 flex-col items-center justify-center p-6 text-center">
-				<Empty>
+			<main className="flex flex-1 flex-col items-center justify-center text-center">
+				<Empty className="p-0">
 					<EmptyHeader className="max-w-none items-center gap-0">
-						<EmptyMedia className="relative mb-0 h-63 w-full max-w-165">
+						<EmptyMedia className="relative mb-0 h-63 w-full md:max-w-165">
 							<img
 								src="/404.png"
 								alt="404 Not Found"

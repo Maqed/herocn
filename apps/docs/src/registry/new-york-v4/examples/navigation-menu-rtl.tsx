@@ -31,8 +31,6 @@ const translations: Translations = {
 			introductionDesc: "Re-usable components built with Tailwind CSS.",
 			installation: "Installation",
 			installationDesc: "How to install dependencies and structure your app.",
-			typography: "Typography",
-			typographyDesc: "Styles for headings, paragraphs, lists...etc",
 			withIcon: "With Icon",
 			backlog: "Backlog",
 			toDo: "To Do",
@@ -49,8 +47,6 @@ const translations: Translations = {
 				"مكونات قابلة لإعادة الاستخدام مبنية باستخدام Tailwind CSS.",
 			installation: "التثبيت",
 			installationDesc: "كيفية تثبيت التبعيات وتنظيم تطبيقك.",
-			typography: "الطباعة",
-			typographyDesc: "أنماط للعناوين والفقرات والقوائم...إلخ",
 			withIcon: "مع أيقونة",
 			backlog: "قائمة الانتظار",
 			toDo: "المهام",
@@ -66,8 +62,6 @@ const translations: Translations = {
 			introductionDesc: "רכיבים לשימוש חוזר שנבנו עם Tailwind CSS.",
 			installation: "התקנה",
 			installationDesc: "כיצד להתקין תלויות ולבנות את האפליקציה שלך.",
-			typography: "טיפוגרפיה",
-			typographyDesc: "סגנונות לכותרות, פסקאות, רשימות...וכו'",
 			withIcon: "עם אייקון",
 			backlog: "רשימת המתנה",
 			toDo: "לעשות",
@@ -95,9 +89,6 @@ export default function NavigationMenuRtl() {
 							</ListItem>
 							<ListItem href="/docs/installation" title={t.installation}>
 								{t.installationDesc}
-							</ListItem>
-							<ListItem href="/docs/components/typography" title={t.typography}>
-								{t.typographyDesc}
 							</ListItem>
 						</ul>
 					</NavigationMenuContent>

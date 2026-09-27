@@ -68,9 +68,6 @@ export default function NavigationMenuDemo() {
 							<ListItem href="/docs/installation" title="Installation">
 								How to install dependencies and structure your app.
 							</ListItem>
-							<ListItem href="/docs/components/typography" title="Typography">
-								Styles for headings, paragraphs, lists...etc
-							</ListItem>
 						</ul>
 					</NavigationMenuContent>
 				</NavigationMenuItem>

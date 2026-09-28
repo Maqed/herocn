@@ -81,11 +81,15 @@ function ApiRefRow({ prop }: { prop: ApiProp }) {
 				>
 					{cells}
 				</CollapsibleTrigger>
-				<CollapsibleContent render={(props) => <TableRow {...props} />}>
-					<TableCell colSpan={3} className="text-muted-foreground text-xs">
-						{prop.description}
+				<TableRow className={cn(!open && "border-0")}>
+					<TableCell colSpan={3} className={cn("p-0", !open && "border-0")}>
+						<CollapsibleContent>
+							<div className="px-4 py-3 text-muted-foreground text-xs">
+								{prop.description}
+							</div>
+						</CollapsibleContent>
 					</TableCell>
-				</CollapsibleContent>
+				</TableRow>
 			</Collapsible>
 		);
 	}

@@ -2,6 +2,7 @@ import type { Registry, RegistryItem } from "shadcn/schema";
 import { siteConfig } from "@/lib/config";
 import { getRegistryItemInstallationAlias } from "@/lib/utils";
 import { blocks } from "./registry-blocks";
+import { charts } from "./registry-charts";
 import { examples } from "./registry-examples";
 import { hooks } from "./registry-hooks";
 import { ui } from "./registry-ui";
@@ -34,5 +35,6 @@ export const registry = {
 		...hooks,
 		...examples,
 		...blocks,
+		...charts,
 	] satisfies Registry["items"],
 } satisfies Registry;

@@ -17,11 +17,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		url: absoluteUrl(path),
 	}));
 
+	const chartTypes = [
+		"area",
+		"bar",
+		"line",
+		"pie",
+		"radar",
+		"radial",
+		"tooltip",
+	];
+
+	const chartPages = chartTypes.map((type) => ({
+		url: absoluteUrl(`/charts/${type}`),
+	}));
+
 	return [
 		{
 			url: absoluteUrl("/"),
 		},
 		...docsPages,
 		...blockPages,
+		...chartPages,
 	];
 }

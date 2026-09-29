@@ -12591,4 +12591,1544 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "chart-area-axes": {
+    name: "chart-area-axes",
+    type: "registry:block",
+    description: "An area chart with axes",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-area"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-area-axes.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-area-axes.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-area-default": {
+    name: "chart-area-default",
+    type: "registry:block",
+    description: "A simple area chart",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-area"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-area-default.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-area-default.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-area-gradient": {
+    name: "chart-area-gradient",
+    type: "registry:block",
+    description: "An area chart with gradient fill",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-area"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-area-gradient.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-area-gradient.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-area-icons": {
+    name: "chart-area-icons",
+    type: "registry:block",
+    description: "An area chart with icons",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-area"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-area-icons.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-area-icons.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-area-interactive": {
+    name: "chart-area-interactive",
+    type: "registry:block",
+    description: "An interactive area chart",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart","@herocn/select"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-area"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-area-interactive.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-area-interactive.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-area-legend": {
+    name: "chart-area-legend",
+    type: "registry:block",
+    description: "An area chart with a legend",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-area"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-area-legend.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-area-legend.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-area-linear": {
+    name: "chart-area-linear",
+    type: "registry:block",
+    description: "A linear area chart",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-area"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-area-linear.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-area-linear.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-area-stacked": {
+    name: "chart-area-stacked",
+    type: "registry:block",
+    description: "A stacked area chart",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-area"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-area-stacked.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-area-stacked.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-area-stacked-expand": {
+    name: "chart-area-stacked-expand",
+    type: "registry:block",
+    description: "A stacked area chart with expand stacking",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-area"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-area-stacked-expand.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-area-stacked-expand.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-area-step": {
+    name: "chart-area-step",
+    type: "registry:block",
+    description: "A step area chart",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-area"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-area-step.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-area-step.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-bar-active": {
+    name: "chart-bar-active",
+    type: "registry:block",
+    description: "A bar chart with an active bar",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-bar"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-bar-active.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-bar-active.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-bar-default": {
+    name: "chart-bar-default",
+    type: "registry:block",
+    description: "A bar chart",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-bar"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-bar-default.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-bar-default.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-bar-horizontal": {
+    name: "chart-bar-horizontal",
+    type: "registry:block",
+    description: "A horizontal bar chart",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-bar"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-bar-horizontal.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-bar-horizontal.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-bar-interactive": {
+    name: "chart-bar-interactive",
+    type: "registry:block",
+    description: "An interactive bar chart",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-bar"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-bar-interactive.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-bar-interactive.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-bar-label": {
+    name: "chart-bar-label",
+    type: "registry:block",
+    description: "A bar chart with a label",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-bar"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-bar-label.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-bar-label.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-bar-label-custom": {
+    name: "chart-bar-label-custom",
+    type: "registry:block",
+    description: "A bar chart with a custom label",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-bar"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-bar-label-custom.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-bar-label-custom.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-bar-mixed": {
+    name: "chart-bar-mixed",
+    type: "registry:block",
+    description: "A mixed bar chart",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-bar"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-bar-mixed.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-bar-mixed.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-bar-multiple": {
+    name: "chart-bar-multiple",
+    type: "registry:block",
+    description: "A multiple bar chart",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-bar"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-bar-multiple.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-bar-multiple.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-bar-negative": {
+    name: "chart-bar-negative",
+    type: "registry:block",
+    description: "A bar chart with negative values",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-bar"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-bar-negative.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-bar-negative.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-bar-stacked": {
+    name: "chart-bar-stacked",
+    type: "registry:block",
+    description: "A stacked bar chart with a legend",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-bar"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-bar-stacked.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-bar-stacked.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-line-default": {
+    name: "chart-line-default",
+    type: "registry:block",
+    description: "A line chart",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-line"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-line-default.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-line-default.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-line-dots": {
+    name: "chart-line-dots",
+    type: "registry:block",
+    description: "A line chart with dots",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-line"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-line-dots.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-line-dots.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-line-dots-colors": {
+    name: "chart-line-dots-colors",
+    type: "registry:block",
+    description: "A line chart with dots and colors",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-line"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-line-dots-colors.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-line-dots-colors.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-line-dots-custom": {
+    name: "chart-line-dots-custom",
+    type: "registry:block",
+    description: "A line chart with custom dots",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-line"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-line-dots-custom.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-line-dots-custom.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-line-interactive": {
+    name: "chart-line-interactive",
+    type: "registry:block",
+    description: "An interactive line chart",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-line"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-line-interactive.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-line-interactive.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-line-label": {
+    name: "chart-line-label",
+    type: "registry:block",
+    description: "A line chart with a label",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-line"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-line-label.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-line-label.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-line-label-custom": {
+    name: "chart-line-label-custom",
+    type: "registry:block",
+    description: "A line chart with a custom label",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-line"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-line-label-custom.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-line-label-custom.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-line-linear": {
+    name: "chart-line-linear",
+    type: "registry:block",
+    description: "A linear line chart",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-line"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-line-linear.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-line-linear.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-line-multiple": {
+    name: "chart-line-multiple",
+    type: "registry:block",
+    description: "A multiple line chart",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-line"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-line-multiple.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-line-multiple.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-line-step": {
+    name: "chart-line-step",
+    type: "registry:block",
+    description: "A line chart with step",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-line"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-line-step.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-line-step.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-pie-donut": {
+    name: "chart-pie-donut",
+    type: "registry:block",
+    description: "A donut chart",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-pie"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-pie-donut.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-pie-donut.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-pie-donut-active": {
+    name: "chart-pie-donut-active",
+    type: "registry:block",
+    description: "A donut chart with an active sector",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-pie"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-pie-donut-active.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-pie-donut-active.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-pie-donut-text": {
+    name: "chart-pie-donut-text",
+    type: "registry:block",
+    description: "A donut chart with text",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-pie"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-pie-donut-text.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-pie-donut-text.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-pie-interactive": {
+    name: "chart-pie-interactive",
+    type: "registry:block",
+    description: "An interactive pie chart",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart","@herocn/select"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-pie"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-pie-interactive.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-pie-interactive.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-pie-label": {
+    name: "chart-pie-label",
+    type: "registry:block",
+    description: "A pie chart with a label",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-pie"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-pie-label.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-pie-label.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-pie-label-custom": {
+    name: "chart-pie-label-custom",
+    type: "registry:block",
+    description: "A pie chart with a custom label",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-pie"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-pie-label-custom.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-pie-label-custom.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-pie-label-list": {
+    name: "chart-pie-label-list",
+    type: "registry:block",
+    description: "A pie chart with a label list",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-pie"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-pie-label-list.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-pie-label-list.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-pie-legend": {
+    name: "chart-pie-legend",
+    type: "registry:block",
+    description: "A pie chart with a legend",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-pie"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-pie-legend.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-pie-legend.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-pie-separator-none": {
+    name: "chart-pie-separator-none",
+    type: "registry:block",
+    description: "A pie chart with no separator",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-pie"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-pie-separator-none.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-pie-separator-none.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-pie-simple": {
+    name: "chart-pie-simple",
+    type: "registry:block",
+    description: "A simple pie chart",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-pie"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-pie-simple.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-pie-simple.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-pie-stacked": {
+    name: "chart-pie-stacked",
+    type: "registry:block",
+    description: "A pie chart with stacked sections",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-pie"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-pie-stacked.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-pie-stacked.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-radar-default": {
+    name: "chart-radar-default",
+    type: "registry:block",
+    description: "A radar chart",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-radar"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-radar-default.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-radar-default.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-radar-dots": {
+    name: "chart-radar-dots",
+    type: "registry:block",
+    description: "A radar chart with dots",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-radar"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-radar-dots.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-radar-dots.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-radar-grid-circle": {
+    name: "chart-radar-grid-circle",
+    type: "registry:block",
+    description: "A radar chart with a grid and circle",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-radar"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-radar-grid-circle.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-radar-grid-circle.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-radar-grid-circle-fill": {
+    name: "chart-radar-grid-circle-fill",
+    type: "registry:block",
+    description: "A radar chart with a grid and circle fill",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-radar"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-radar-grid-circle-fill.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-radar-grid-circle-fill.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-radar-grid-circle-no-lines": {
+    name: "chart-radar-grid-circle-no-lines",
+    type: "registry:block",
+    description: "A radar chart with a grid and circle fill",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-radar"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-radar-grid-circle-no-lines.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-radar-grid-circle-no-lines.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-radar-grid-custom": {
+    name: "chart-radar-grid-custom",
+    type: "registry:block",
+    description: "A radar chart with a custom grid",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-radar"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-radar-grid-custom.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-radar-grid-custom.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-radar-grid-fill": {
+    name: "chart-radar-grid-fill",
+    type: "registry:block",
+    description: "A radar chart with a grid filled",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-radar"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-radar-grid-fill.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-radar-grid-fill.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-radar-grid-none": {
+    name: "chart-radar-grid-none",
+    type: "registry:block",
+    description: "A radar chart with no grid",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-radar"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-radar-grid-none.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-radar-grid-none.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-radar-icons": {
+    name: "chart-radar-icons",
+    type: "registry:block",
+    description: "A radar chart with icons",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-radar"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-radar-icons.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-radar-icons.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-radar-label-custom": {
+    name: "chart-radar-label-custom",
+    type: "registry:block",
+    description: "A radar chart with a custom label",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-radar"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-radar-label-custom.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-radar-label-custom.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-radar-legend": {
+    name: "chart-radar-legend",
+    type: "registry:block",
+    description: "A radar chart with a legend",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-radar"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-radar-legend.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-radar-legend.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-radar-lines-only": {
+    name: "chart-radar-lines-only",
+    type: "registry:block",
+    description: "A radar chart with lines only",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-radar"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-radar-lines-only.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-radar-lines-only.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-radar-multiple": {
+    name: "chart-radar-multiple",
+    type: "registry:block",
+    description: "A radar chart with multiple data",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-radar"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-radar-multiple.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-radar-multiple.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-radar-radius": {
+    name: "chart-radar-radius",
+    type: "registry:block",
+    description: "A radar chart with a radius axis",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-radar"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-radar-radius.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-radar-radius.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-radial-grid": {
+    name: "chart-radial-grid",
+    type: "registry:block",
+    description: "A radial chart with a grid",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-radial"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-radial-grid.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-radial-grid.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-radial-label": {
+    name: "chart-radial-label",
+    type: "registry:block",
+    description: "A radial chart with a label",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-radial"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-radial-label.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-radial-label.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-radial-shape": {
+    name: "chart-radial-shape",
+    type: "registry:block",
+    description: "A radial chart with a custom shape",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-radial"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-radial-shape.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-radial-shape.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-radial-simple": {
+    name: "chart-radial-simple",
+    type: "registry:block",
+    description: "A radial chart",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-radial"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-radial-simple.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-radial-simple.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-radial-stacked": {
+    name: "chart-radial-stacked",
+    type: "registry:block",
+    description: "A radial chart with stacked sections",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-radial"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-radial-stacked.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-radial-stacked.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-radial-text": {
+    name: "chart-radial-text",
+    type: "registry:block",
+    description: "A radial chart with text",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-radial"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-radial-text.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-radial-text.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-tooltip-advanced": {
+    name: "chart-tooltip-advanced",
+    type: "registry:block",
+    description: "A stacked bar chart with a legend",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-tooltip"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-tooltip-advanced.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-tooltip-advanced.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-tooltip-default": {
+    name: "chart-tooltip-default",
+    type: "registry:block",
+    description: "A stacked bar chart with a legend",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-tooltip"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-tooltip-default.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-tooltip-default.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-tooltip-formatter": {
+    name: "chart-tooltip-formatter",
+    type: "registry:block",
+    description: "A stacked bar chart with a legend",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-tooltip"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-tooltip-formatter.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-tooltip-formatter.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-tooltip-icons": {
+    name: "chart-tooltip-icons",
+    type: "registry:block",
+    description: "A stacked bar chart with a legend",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-tooltip"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-tooltip-icons.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-tooltip-icons.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-tooltip-indicator-line": {
+    name: "chart-tooltip-indicator-line",
+    type: "registry:block",
+    description: "A stacked bar chart with a legend",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-tooltip"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-tooltip-indicator-line.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-tooltip-indicator-line.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-tooltip-indicator-none": {
+    name: "chart-tooltip-indicator-none",
+    type: "registry:block",
+    description: "A stacked bar chart with a legend",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-tooltip"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-tooltip-indicator-none.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-tooltip-indicator-none.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-tooltip-label-custom": {
+    name: "chart-tooltip-label-custom",
+    type: "registry:block",
+    description: "A stacked bar chart with a legend",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-tooltip"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-tooltip-label-custom.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-tooltip-label-custom.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-tooltip-label-formatter": {
+    name: "chart-tooltip-label-formatter",
+    type: "registry:block",
+    description: "A stacked bar chart with a legend",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-tooltip"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-tooltip-label-formatter.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-tooltip-label-formatter.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "chart-tooltip-label-none": {
+    name: "chart-tooltip-label-none",
+    type: "registry:block",
+    description: "A stacked bar chart with a legend",
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/card","@herocn/chart"],
+    css: undefined,
+    cssVars: undefined,
+    categories: ["charts","charts-tooltip"],
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/charts/chart-tooltip-label-none.tsx",
+      type: "registry:block",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/charts/chart-tooltip-label-none.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   }

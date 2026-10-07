@@ -3,7 +3,15 @@
 import { cn } from "cn";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Button } from "@/registry/new-york-v4/ui/button";
+import { siteConfig } from "@/lib/config";
+import {
+	NavigationMenu,
+	NavigationMenuItem,
+	NavigationMenuLink,
+	NavigationMenuList,
+	navigationMenuTriggerStyle,
+} from "@/registry/new-york-v4/ui/navigation-menu";
+import { Icons } from "./icons";
 
 export function MainNav({
 	items,
@@ -16,24 +24,33 @@ export function MainNav({
 
 	return (
 		<nav className={cn("items-center gap-0", className)} {...props}>
-			{items.map((item) => (
-				<Button
-					key={item.href}
-					variant="ghost"
-					size="sm"
-					className="px-2.5"
-					nativeButton={false}
-					render={
-						<Link
-							href={item.href}
-							data-active={pathname === item.href}
-							className="relative items-center"
-						>
-							{item.label}
-						</Link>
-					}
-				/>
-			))}
+			<NavigationMenu>
+				<NavigationMenuList>
+					<NavigationMenuItem>
+						<NavigationMenuLink
+							className={cn(navigationMenuTriggerStyle(), "px-1.5")}
+							data-active={pathname === "/"}
+							render={
+								<Link href="/">
+									<Icons.logo className="size-5" />
+									<span className="sr-only">{siteConfig.name}</span>
+								</Link>
+							}
+						/>
+					</NavigationMenuItem>
+					{items.map((item) => (
+						<NavigationMenuItem key={item.href}>
+							<NavigationMenuLink
+								className={cn(navigationMenuTriggerStyle())}
+								data-active={pathname.startsWith(item.href)}
+								render={<Link href={item.href} />}
+							>
+								{item.label}
+							</NavigationMenuLink>
+						</NavigationMenuItem>
+					))}
+				</NavigationMenuList>
+			</NavigationMenu>
 		</nav>
 	);
 }

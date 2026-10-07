@@ -1,13 +1,10 @@
-import Link from "next/link";
 import { CommandMenu } from "@/components/command-menu";
 import { GitHubLink } from "@/components/github-link";
-import { Icons } from "@/components/icons";
 import { MainNav } from "@/components/main-nav";
 import { MobileNav } from "@/components/mobile-nav";
 import { ModeSwitcher } from "@/components/mode-switcher";
 import { siteConfig } from "@/lib/config";
 import { source } from "@/lib/source";
-import { Button } from "@/registry/new-york-v4/ui/button";
 import { Separator } from "@/registry/new-york-v4/ui/separator";
 
 export function SiteHeader() {
@@ -21,18 +18,6 @@ export function SiteHeader() {
 						tree={pageTree}
 						items={siteConfig.navItems}
 						className="flex lg:hidden"
-					/>
-					<Button
-						nativeButton={false}
-						variant="ghost"
-						size="icon"
-						className="hidden size-8 lg:flex"
-						render={
-							<Link href="/">
-								<Icons.logo className="size-5" />
-								<span className="sr-only">{siteConfig.name}</span>
-							</Link>
-						}
 					/>
 					<MainNav
 						items={siteConfig.navItems.filter(

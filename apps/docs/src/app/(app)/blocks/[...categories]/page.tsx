@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { BlockDisplay } from "@/components/block-display";
 import { getAllBlockIds } from "@/lib/blocks";
 import { registryCategories } from "@/lib/categories";
+import { absoluteUrl } from "@/lib/utils";
 
 export const revalidate = false;
 export const dynamic = "force-static";
@@ -28,6 +29,13 @@ export async function generateMetadata({
 		title: category ? `${category.name} Blocks` : undefined,
 		alternates: {
 			canonical: `/blocks/${categories.join("/")}`,
+		},
+		openGraph: {
+			images: absoluteUrl("/og/blocks/image.webp"),
+		},
+		twitter: {
+			card: "summary_large_image",
+			images: [absoluteUrl("/og/blocks/image.webp")],
 		},
 	};
 }

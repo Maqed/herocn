@@ -63,11 +63,13 @@ export async function generateMetadata({
 			description,
 			url: absoluteUrl(`/charts/${type}`),
 			siteName: siteConfig.name,
+			images: absoluteUrl("/og/charts/image.webp"),
 		},
 		twitter: {
 			card: "summary_large_image",
 			title,
 			description,
+			images: [absoluteUrl("/og/charts/image.webp")],
 		},
 	};
 }

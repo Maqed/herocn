@@ -27,11 +27,13 @@ export const metadata: Metadata = {
 		description,
 		url: absoluteUrl("/blocks"),
 		siteName: siteConfig.name,
+		images: absoluteUrl("/og/blocks/image.webp"),
 	},
 	twitter: {
 		card: "summary_large_image",
 		title,
 		description,
+		images: [absoluteUrl("/og/blocks/image.webp")],
 	},
 };
 

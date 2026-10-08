@@ -12,7 +12,7 @@ import {
 } from "@/registry/new-york-v4/ui/empty";
 
 export const metadata: Metadata = {
-	title: "404 — Page Not Found",
+	title: "404 - Page Not Found",
 	description: "Sorry, the page you're looking for could not be found.",
 	robots: {
 		index: false,

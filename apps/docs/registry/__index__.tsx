@@ -3377,6 +3377,28 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "dropdown-menu-filterable": {
+    name: "dropdown-menu-filterable",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/button","@herocn/dropdown-menu"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/dropdown-menu-filterable.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-filterable.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "drawer-demo": {
     name: "drawer-demo",
     type: "registry:example",

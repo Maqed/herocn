@@ -1137,6 +1137,20 @@ export const examples: Registry["items"] = [
 		],
 	},
 	{
+		name: "dropdown-menu-filterable",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("dropdown-menu"),
+		],
+		files: [
+			{
+				path: "examples/dropdown-menu-filterable.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
 		name: "drawer-demo",
 		type: "registry:example",
 		registryDependencies: [

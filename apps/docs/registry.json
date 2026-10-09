@@ -3319,6 +3319,20 @@
       ]
     },
     {
+      "name": "dropdown-menu-filterable",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/button",
+        "@herocn/dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/dropdown-menu-filterable.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
       "name": "drawer-demo",
       "type": "registry:example",
       "registryDependencies": [

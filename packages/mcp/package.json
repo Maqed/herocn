@@ -46,8 +46,8 @@
     "@biomejs/biome": "^2.5.15",
     "@herocn/config": "workspace:*",
     "@modelcontextprotocol/sdk": "^1.32.1",
-    "@types/node": "^26.6.4",
+    "@types/node": "^26.6.5",
     "typescript": "^7.0.2",
-    "zod": "^4.6.5"
+    "zod": "^4.6.7"
   }
 }

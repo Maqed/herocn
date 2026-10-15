@@ -1,8 +1,6 @@
-import { registryItemSchema } from "shadcn/schema";
-import type { z } from "zod";
+import { type RegistryItem, registryItemSchema } from "shadcn/schema";
 import { Index } from "../../registry/__index__";
 
-type RegistryItem = z.infer<typeof registryItemSchema>;
 type RegistryItemType = RegistryItem["type"];
 
 export async function getAllBlockIds(

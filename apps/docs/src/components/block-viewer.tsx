@@ -16,8 +16,7 @@ import {
 import Link from "next/link";
 import * as React from "react";
 import type { PanelImperativeHandle } from "react-resizable-panels";
-import type { registryItemFileSchema, registryItemSchema } from "shadcn/schema";
-import type { z } from "zod";
+import type { RegistryItem } from "shadcn/schema";
 
 import { getIconForLanguageExtension } from "@/components/icons";
 import { useCopyToClipboard } from "@/hooks/use-copy-to-clipboard";
@@ -52,9 +51,9 @@ import {
 	ToggleGroupItem,
 } from "@/registry/new-york-v4/ui/toggle-group";
 
-type RegistryItem = z.infer<typeof registryItemSchema>;
+type RegistryItemFile = NonNullable<RegistryItem["files"]>[number];
 
-type HighlightedFile = z.infer<typeof registryItemFileSchema> & {
+type HighlightedFile = RegistryItemFile & {
 	highlightedContent: React.ReactNode;
 	language: string;
 };

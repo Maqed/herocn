@@ -1,14 +1,13 @@
 import { cn } from "cn";
 import { highlight } from "fumadocs-core/highlight";
 import * as React from "react";
-import type { registryItemSchema } from "shadcn/schema";
-import type { z } from "zod";
+import type { RegistryItem } from "shadcn/schema";
 
 import { ChartIframe } from "@/components/chart-iframe";
 import { ChartToolbar } from "@/components/chart-toolbar";
 import { getRegistryItem } from "@/lib/registry";
 
-export type Chart = z.infer<typeof registryItemSchema> & {
+export type Chart = RegistryItem & {
 	highlightedCode: React.ReactNode;
 };
 

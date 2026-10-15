@@ -61,7 +61,8 @@
 				"useKeyWithClickEvents": "off",
 				"useValidAnchor": "off",
 				"useAnchorContent": "off",
-				"noAmbiguousAnchorText": "off"
+				"noAmbiguousAnchorText": "off",
+				"noNoninteractiveTabindex": "off"
 			},
 			"correctness": {
 				"useExhaustiveDependencies": "off"

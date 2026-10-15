@@ -12,7 +12,7 @@ function Trace({ className, ...props }: React.ComponentProps<"div">) {
 		<div
 			data-slot="trace"
 			className={cn(
-				"flex w-full min-w-0 flex-col gap-3 *:has-[>[data-slot=trace-line]]:flex *:has-[>[data-slot=trace-line]]:w-fit *:has-[>[data-slot=trace-line]]:min-w-0 *:has-[>[data-slot=trace-line]]:max-w-full *:has-[>[data-slot=trace-line]]:rounded-lg *:has-[>[data-slot=trace-line]]:text-start *:has-[>[data-slot=trace-line]]:outline-none *:has-[>[data-slot=trace-line]]:focus-visible:ring-[3px] *:has-[>[data-slot=trace-line]]:focus-visible:ring-ring/50",
+				"*:has-[>[data-slot=trace-line]]:focus-visible:focus-ring flex w-full min-w-0 flex-col gap-2 *:has-[>[data-slot=trace-line]]:-mx-1 *:has-[>[data-slot=trace-line]]:flex *:has-[>[data-slot=trace-line]]:w-fit *:has-[>[data-slot=trace-line]]:min-w-0 *:has-[>[data-slot=trace-line]]:max-w-full *:has-[>[data-slot=trace-line]]:rounded-lg *:has-[>[data-slot=trace-line]]:px-1 *:has-[>[data-slot=trace-line]]:py-0.5 *:has-[>[data-slot=trace-line]]:text-start *:has-[>[data-slot=trace-line]]:outline-none",
 				className,
 			)}
 			{...props}
@@ -32,7 +32,7 @@ function TraceLine({
 			data-slot="trace-line"
 			data-status={status}
 			className={cn(
-				"data-[status=running]:*:data-[slot=trace-title]:shimmer flex w-fit min-w-0 max-w-full in-[a,button]:cursor-pointer items-center gap-2 in-[a:hover,button:hover]:text-foreground text-muted-foreground text-sm transition-colors data-[status=error]:in-[a:hover,button:hover]:text-destructive data-[status=error]:text-destructive data-[status=pending]:opacity-60",
+				"data-[status=running]:*:data-[slot=trace-title]:shimmer in-[a,button]:m-0 -mx-1 flex w-fit min-w-0 max-w-full in-[a,button]:cursor-pointer items-center gap-2 rounded-md in-[a,button]:p-0 px-1 py-0.5 in-[a:hover,button:hover]:text-foreground text-muted-foreground text-sm transition-colors data-[status=error]:in-[a:hover,button:hover]:text-destructive data-[status=error]:text-destructive data-[status=pending]:opacity-60",
 				className,
 			)}
 			{...props}
@@ -111,7 +111,7 @@ function TraceCollapsibleTrigger({
 		<CollapsibleTrigger
 			data-slot="trace-collapsible-trigger"
 			className={cn(
-				"group/trace-collapsible-trigger flex w-fit min-w-0 max-w-full cursor-pointer items-center gap-1 rounded-lg text-start text-muted-foreground outline-none transition-colors hover:text-foreground focus-visible:ring-[3px] focus-visible:ring-ring/50 has-[[data-status=error]]:text-destructive",
+				"group/trace-collapsible-trigger focus-visible:focus-ring -mx-1 flex w-fit min-w-0 max-w-full cursor-pointer items-center gap-1 rounded-lg px-1 py-0.5 text-start text-muted-foreground outline-none transition-colors hover:text-foreground has-data-[status=error]:text-destructive",
 				className,
 			)}
 			{...props}
@@ -138,7 +138,7 @@ function TraceCollapsibleContent({
 			<div
 				data-slot="trace-collapsible-content-inner"
 				className={cn(
-					"wrap-break-word ms-[calc(--spacing(2)-1px)] mt-2.5 mb-1 min-w-0 border-s ps-4 pe-1 text-muted-foreground leading-relaxed",
+					"wrap-break-word ms-[calc(--spacing(2)-1px)] mt-2 mb-2 min-w-0 border-s ps-4 pe-2 text-muted-foreground leading-relaxed",
 					className,
 				)}
 			>

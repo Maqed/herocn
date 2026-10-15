@@ -292,6 +292,35 @@ export const ui: Registry["items"] = [
 		},
 	},
 	{
+		name: "code-block",
+		type: "registry:ui",
+		dependencies: ["class-variance-authority", "lucide-react"],
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("use-highlighted-code"),
+		],
+		files: [
+			{
+				path: "ui/code-block.tsx",
+				type: "registry:ui",
+			},
+		],
+		cssVars: {
+			light: {
+				"--surface-secondary": cssVars.light["--surface-secondary"],
+			},
+			dark: {
+				"--surface-secondary": cssVars.dark["--surface-secondary"],
+			},
+			theme: {
+				"--color-surface-secondary": cssVars.theme["--color-surface-secondary"],
+			},
+		},
+		css: {
+			"@utility focus-ring": css["@utility focus-ring"],
+		},
+	},
+	{
 		name: "calendar",
 		type: "registry:ui",
 		dependencies: ["lucide-react", "react-day-picker"],
@@ -1393,5 +1422,20 @@ export const ui: Registry["items"] = [
 				type: "registry:ui",
 			},
 		],
+	},
+	{
+		name: "trace",
+		type: "registry:ui",
+		dependencies: ["@base-ui/react", "lucide-react"],
+		registryDependencies: [getRegistryItemInstallationAlias("collapsible")],
+		files: [
+			{
+				path: "ui/trace.tsx",
+				type: "registry:ui",
+			},
+		],
+		css: {
+			"@utility focus-ring": css["@utility focus-ring"],
+		},
 	},
 ];

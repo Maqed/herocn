@@ -297,6 +297,28 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "code-block": {
+    name: "code-block",
+    type: "registry:ui",
+    description: undefined,
+    dependencies: ["class-variance-authority","lucide-react"],
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/button","@herocn/use-highlighted-code"],
+    css: {"@utility focus-ring":{"@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none":{}}},
+    cssVars: {"light":{"--surface-secondary":"oklch(0.9524 0.0013 286.37)"},"dark":{"--surface-secondary":"oklch(0.257 0.0037 286.14)"},"theme":{"--color-surface-secondary":"var(--surface-secondary)"}},
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/ui/code-block.tsx",
+      type: "registry:ui",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/code-block.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "calendar": {
     name: "calendar",
     type: "registry:ui",
@@ -1441,6 +1463,28 @@ export const Index: Record<string, any> = {
       return { default: mod.default || mod[exportName] }
     }),
   },
+  "trace": {
+    name: "trace",
+    type: "registry:ui",
+    description: undefined,
+    dependencies: ["@base-ui/react","lucide-react"],
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/collapsible"],
+    css: {"@utility focus-ring":{"@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none":{}}},
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/ui/trace.tsx",
+      type: "registry:ui",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/ui/trace.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
   "use-mobile": {
     name: "use-mobile",
     type: "registry:hook",
@@ -1459,6 +1503,32 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/hooks/use-mobile.ts")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "use-highlighted-code": {
+    name: "use-highlighted-code",
+    type: "registry:hook",
+    description: undefined,
+    dependencies: ["shiki"],
+    devDependencies: undefined,
+    registryDependencies: undefined,
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/hooks/use-highlighted-code.ts",
+      type: "registry:hook",
+      target: undefined
+    },{
+      path: "src/registry/new-york-v4/lib/highlighter.tsx",
+      type: "registry:lib",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/hooks/use-highlighted-code.ts")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),
@@ -11711,6 +11781,820 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/new-york-v4/examples/questionnaire-dialog.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "code-block-demo": {
+    name: "code-block-demo",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/button","@herocn/code-block","@herocn/use-highlighted-code"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/code-block-demo.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/code-block-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "code-block-basic": {
+    name: "code-block-basic",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/code-block"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/code-block-basic.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/code-block-basic.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "code-block-header": {
+    name: "code-block-header",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/code-block"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/code-block-header.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/code-block-header.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "code-block-actions": {
+    name: "code-block-actions",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/button","@herocn/code-block"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/code-block-actions.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/code-block-actions.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "code-block-floating": {
+    name: "code-block-floating",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/code-block"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/code-block-floating.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/code-block-floating.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "code-block-line-numbers": {
+    name: "code-block-line-numbers",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/code-block"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/code-block-line-numbers.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/code-block-line-numbers.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "code-block-start-line": {
+    name: "code-block-start-line",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/code-block","@herocn/use-highlighted-code"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/code-block-start-line.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/code-block-start-line.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "code-block-wrap": {
+    name: "code-block-wrap",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/code-block"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/code-block-wrap.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/code-block-wrap.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "code-block-highlighted": {
+    name: "code-block-highlighted",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/code-block"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/code-block-highlighted.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/code-block-highlighted.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "code-block-diff": {
+    name: "code-block-diff",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/code-block"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/code-block-diff.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/code-block-diff.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "code-block-height": {
+    name: "code-block-height",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/code-block"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/code-block-height.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/code-block-height.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "code-block-show-more": {
+    name: "code-block-show-more",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/button","@herocn/code-block","@herocn/use-highlighted-code"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/code-block-show-more.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/code-block-show-more.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "code-block-size": {
+    name: "code-block-size",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/code-block"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/code-block-size.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/code-block-size.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "code-block-destructive": {
+    name: "code-block-destructive",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/code-block"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/code-block-destructive.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/code-block-destructive.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "code-block-rtl": {
+    name: "code-block-rtl",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/code-block","@herocn/use-highlighted-code"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/code-block-rtl.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/code-block-rtl.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "code-block-trace": {
+    name: "code-block-trace",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/code-block","@herocn/trace"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/code-block-trace.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/code-block-trace.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "code-block-tabs": {
+    name: "code-block-tabs",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/code-block","@herocn/tabs","@herocn/use-highlighted-code"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/code-block-tabs.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/code-block-tabs.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "code-block-message": {
+    name: "code-block-message",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/bubble","@herocn/code-block","@herocn/message","@herocn/use-highlighted-code"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/code-block-message.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/code-block-message.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "code-block-highlighting": {
+    name: "code-block-highlighting",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/code-block","@herocn/use-highlighted-code"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/code-block-highlighting.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/code-block-highlighting.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "code-block-languages": {
+    name: "code-block-languages",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/code-block","@herocn/use-highlighted-code"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/code-block-languages.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/code-block-languages.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "code-block-ansi": {
+    name: "code-block-ansi",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/code-block","@herocn/use-highlighted-code"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/code-block-ansi.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/code-block-ansi.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "trace-demo": {
+    name: "trace-demo",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/trace","@herocn/bubble","@herocn/button","@herocn/code-block","@herocn/message"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/trace-demo.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/trace-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "trace-static": {
+    name: "trace-static",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/trace"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/trace-static.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/trace-static.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "trace-group": {
+    name: "trace-group",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/trace"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/trace-group.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/trace-group.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "trace-status": {
+    name: "trace-status",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/trace"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/trace-status.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/trace-status.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "trace-description": {
+    name: "trace-description",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/trace"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/trace-description.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/trace-description.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "trace-collapsible": {
+    name: "trace-collapsible",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/trace","@herocn/code-block"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/trace-collapsible.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/trace-collapsible.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "trace-open": {
+    name: "trace-open",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/trace","@herocn/button","@herocn/code-block"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/trace-open.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/trace-open.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "trace-link": {
+    name: "trace-link",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/trace"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/trace-link.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/trace-link.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "trace-dialog": {
+    name: "trace-dialog",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/trace","@herocn/dialog"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/trace-dialog.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/trace-dialog.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "trace-sheet": {
+    name: "trace-sheet",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/trace","@herocn/sheet"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/trace-sheet.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/trace-sheet.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "trace-sources": {
+    name: "trace-sources",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/trace"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/trace-sources.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/trace-sources.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "trace-steps": {
+    name: "trace-steps",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/trace","@herocn/badge","@herocn/code-block"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/trace-steps.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/trace-steps.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "trace-commit": {
+    name: "trace-commit",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/trace","@herocn/code-block","@herocn/sheet"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/trace-commit.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/trace-commit.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "trace-turn": {
+    name: "trace-turn",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/trace","@herocn/code-block"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/trace-turn.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/trace-turn.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "trace-thinking": {
+    name: "trace-thinking",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/trace","@herocn/bubble","@herocn/button","@herocn/message"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/trace-thinking.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/trace-thinking.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+  },
+  "trace-tool-calls": {
+    name: "trace-tool-calls",
+    type: "registry:example",
+    description: undefined,
+    dependencies: undefined,
+    devDependencies: undefined,
+    registryDependencies: ["@herocn/trace","@herocn/bubble","@herocn/button","@herocn/code-block","@herocn/message"],
+    css: undefined,
+    cssVars: undefined,
+    categories: undefined,
+    meta: undefined,
+    files: [{
+      path: "src/registry/new-york-v4/examples/trace-tool-calls.tsx",
+      type: "registry:example",
+      target: undefined
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/new-york-v4/examples/trace-tool-calls.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

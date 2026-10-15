@@ -6064,4 +6064,490 @@ export const examples: Registry["items"] = [
 			},
 		],
 	},
+	{
+		name: "code-block-demo",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("code-block"),
+			getRegistryItemInstallationAlias("use-highlighted-code"),
+		],
+		files: [
+			{
+				path: "examples/code-block-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "code-block-basic",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("code-block")],
+		files: [
+			{
+				path: "examples/code-block-basic.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "code-block-header",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("code-block")],
+		files: [
+			{
+				path: "examples/code-block-header.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "code-block-actions",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("code-block"),
+		],
+		files: [
+			{
+				path: "examples/code-block-actions.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "code-block-floating",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("code-block")],
+		files: [
+			{
+				path: "examples/code-block-floating.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "code-block-line-numbers",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("code-block")],
+		files: [
+			{
+				path: "examples/code-block-line-numbers.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "code-block-start-line",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("code-block"),
+			getRegistryItemInstallationAlias("use-highlighted-code"),
+		],
+		files: [
+			{
+				path: "examples/code-block-start-line.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "code-block-wrap",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("code-block")],
+		files: [
+			{
+				path: "examples/code-block-wrap.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "code-block-highlighted",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("code-block")],
+		files: [
+			{
+				path: "examples/code-block-highlighted.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "code-block-diff",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("code-block")],
+		files: [
+			{
+				path: "examples/code-block-diff.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "code-block-height",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("code-block")],
+		files: [
+			{
+				path: "examples/code-block-height.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "code-block-show-more",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("code-block"),
+			getRegistryItemInstallationAlias("use-highlighted-code"),
+		],
+		files: [
+			{
+				path: "examples/code-block-show-more.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "code-block-size",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("code-block")],
+		files: [
+			{
+				path: "examples/code-block-size.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "code-block-destructive",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("code-block")],
+		files: [
+			{
+				path: "examples/code-block-destructive.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "code-block-rtl",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("code-block"),
+			getRegistryItemInstallationAlias("use-highlighted-code"),
+		],
+		files: [
+			{
+				path: "examples/code-block-rtl.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "code-block-trace",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("code-block"),
+			getRegistryItemInstallationAlias("trace"),
+		],
+		files: [
+			{
+				path: "examples/code-block-trace.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "code-block-tabs",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("code-block"),
+			getRegistryItemInstallationAlias("tabs"),
+			getRegistryItemInstallationAlias("use-highlighted-code"),
+		],
+		files: [
+			{
+				path: "examples/code-block-tabs.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "code-block-message",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("bubble"),
+			getRegistryItemInstallationAlias("code-block"),
+			getRegistryItemInstallationAlias("message"),
+			getRegistryItemInstallationAlias("use-highlighted-code"),
+		],
+		files: [
+			{
+				path: "examples/code-block-message.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "code-block-highlighting",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("code-block"),
+			getRegistryItemInstallationAlias("use-highlighted-code"),
+		],
+		files: [
+			{
+				path: "examples/code-block-highlighting.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "code-block-languages",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("code-block"),
+			getRegistryItemInstallationAlias("use-highlighted-code"),
+		],
+		files: [
+			{
+				path: "examples/code-block-languages.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "code-block-ansi",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("code-block"),
+			getRegistryItemInstallationAlias("use-highlighted-code"),
+		],
+		files: [
+			{
+				path: "examples/code-block-ansi.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "trace-demo",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("trace"),
+			getRegistryItemInstallationAlias("bubble"),
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("code-block"),
+			getRegistryItemInstallationAlias("message"),
+		],
+		files: [
+			{
+				path: "examples/trace-demo.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "trace-static",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("trace")],
+		files: [
+			{
+				path: "examples/trace-static.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "trace-group",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("trace")],
+		files: [
+			{
+				path: "examples/trace-group.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "trace-status",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("trace")],
+		files: [
+			{
+				path: "examples/trace-status.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "trace-description",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("trace")],
+		files: [
+			{
+				path: "examples/trace-description.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "trace-collapsible",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("trace"),
+			getRegistryItemInstallationAlias("code-block"),
+		],
+		files: [
+			{
+				path: "examples/trace-collapsible.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "trace-open",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("trace"),
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("code-block"),
+		],
+		files: [
+			{
+				path: "examples/trace-open.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "trace-link",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("trace")],
+		files: [
+			{
+				path: "examples/trace-link.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "trace-dialog",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("trace"),
+			getRegistryItemInstallationAlias("dialog"),
+		],
+		files: [
+			{
+				path: "examples/trace-dialog.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "trace-sheet",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("trace"),
+			getRegistryItemInstallationAlias("sheet"),
+		],
+		files: [
+			{
+				path: "examples/trace-sheet.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "trace-sources",
+		type: "registry:example",
+		registryDependencies: [getRegistryItemInstallationAlias("trace")],
+		files: [
+			{
+				path: "examples/trace-sources.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "trace-steps",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("trace"),
+			getRegistryItemInstallationAlias("badge"),
+			getRegistryItemInstallationAlias("code-block"),
+		],
+		files: [
+			{
+				path: "examples/trace-steps.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "trace-commit",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("trace"),
+			getRegistryItemInstallationAlias("code-block"),
+			getRegistryItemInstallationAlias("sheet"),
+		],
+		files: [
+			{
+				path: "examples/trace-commit.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "trace-turn",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("trace"),
+			getRegistryItemInstallationAlias("code-block"),
+		],
+		files: [
+			{
+				path: "examples/trace-turn.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "trace-thinking",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("trace"),
+			getRegistryItemInstallationAlias("bubble"),
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("message"),
+		],
+		files: [
+			{
+				path: "examples/trace-thinking.tsx",
+				type: "registry:example",
+			},
+		],
+	},
+	{
+		name: "trace-tool-calls",
+		type: "registry:example",
+		registryDependencies: [
+			getRegistryItemInstallationAlias("trace"),
+			getRegistryItemInstallationAlias("bubble"),
+			getRegistryItemInstallationAlias("button"),
+			getRegistryItemInstallationAlias("code-block"),
+			getRegistryItemInstallationAlias("message"),
+		],
+		files: [
+			{
+				path: "examples/trace-tool-calls.tsx",
+				type: "registry:example",
+			},
+		],
+	},
 ];

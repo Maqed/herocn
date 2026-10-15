@@ -788,6 +788,40 @@
       }
     },
     {
+      "name": "code-block",
+      "type": "registry:ui",
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@herocn/button",
+        "@herocn/use-highlighted-code"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/code-block.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "cssVars": {
+        "light": {
+          "--surface-secondary": "oklch(0.9524 0.0013 286.37)"
+        },
+        "dark": {
+          "--surface-secondary": "oklch(0.257 0.0037 286.14)"
+        },
+        "theme": {
+          "--color-surface-secondary": "var(--surface-secondary)"
+        }
+      },
+      "css": {
+        "@utility focus-ring": {
+          "@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none": {}
+        }
+      }
+    },
+    {
       "name": "calendar",
       "type": "registry:ui",
       "dependencies": [
@@ -2105,12 +2139,51 @@
       ]
     },
     {
+      "name": "trace",
+      "type": "registry:ui",
+      "dependencies": [
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@herocn/collapsible"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/trace.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "css": {
+        "@utility focus-ring": {
+          "@apply ring-2 ring-ring ring-offset-2 ring-offset-background outline-none": {}
+        }
+      }
+    },
+    {
       "name": "use-mobile",
       "type": "registry:hook",
       "files": [
         {
           "path": "src/registry/new-york-v4/hooks/use-mobile.ts",
           "type": "registry:hook"
+        }
+      ]
+    },
+    {
+      "name": "use-highlighted-code",
+      "type": "registry:hook",
+      "dependencies": [
+        "shiki"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/hooks/use-highlighted-code.ts",
+          "type": "registry:hook"
+        },
+        {
+          "path": "src/registry/new-york-v4/lib/highlighter.tsx",
+          "type": "registry:lib"
         }
       ]
     },
@@ -8592,6 +8665,524 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/questionnaire-dialog.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "code-block-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/button",
+        "@herocn/code-block",
+        "@herocn/use-highlighted-code"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/code-block-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "code-block-basic",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/code-block"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/code-block-basic.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "code-block-header",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/code-block"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/code-block-header.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "code-block-actions",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/button",
+        "@herocn/code-block"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/code-block-actions.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "code-block-floating",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/code-block"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/code-block-floating.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "code-block-line-numbers",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/code-block"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/code-block-line-numbers.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "code-block-start-line",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/code-block",
+        "@herocn/use-highlighted-code"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/code-block-start-line.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "code-block-wrap",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/code-block"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/code-block-wrap.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "code-block-highlighted",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/code-block"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/code-block-highlighted.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "code-block-diff",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/code-block"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/code-block-diff.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "code-block-height",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/code-block"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/code-block-height.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "code-block-show-more",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/button",
+        "@herocn/code-block",
+        "@herocn/use-highlighted-code"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/code-block-show-more.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "code-block-size",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/code-block"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/code-block-size.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "code-block-destructive",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/code-block"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/code-block-destructive.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "code-block-rtl",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/code-block",
+        "@herocn/use-highlighted-code"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/code-block-rtl.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "code-block-trace",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/code-block",
+        "@herocn/trace"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/code-block-trace.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "code-block-tabs",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/code-block",
+        "@herocn/tabs",
+        "@herocn/use-highlighted-code"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/code-block-tabs.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "code-block-message",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/bubble",
+        "@herocn/code-block",
+        "@herocn/message",
+        "@herocn/use-highlighted-code"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/code-block-message.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "code-block-highlighting",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/code-block",
+        "@herocn/use-highlighted-code"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/code-block-highlighting.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "code-block-languages",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/code-block",
+        "@herocn/use-highlighted-code"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/code-block-languages.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "code-block-ansi",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/code-block",
+        "@herocn/use-highlighted-code"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/code-block-ansi.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "trace-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/trace",
+        "@herocn/bubble",
+        "@herocn/button",
+        "@herocn/code-block",
+        "@herocn/message"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/trace-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "trace-static",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/trace"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/trace-static.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "trace-group",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/trace"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/trace-group.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "trace-status",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/trace"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/trace-status.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "trace-description",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/trace"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/trace-description.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "trace-collapsible",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/trace",
+        "@herocn/code-block"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/trace-collapsible.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "trace-open",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/trace",
+        "@herocn/button",
+        "@herocn/code-block"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/trace-open.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "trace-link",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/trace"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/trace-link.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "trace-dialog",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/trace",
+        "@herocn/dialog"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/trace-dialog.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "trace-sheet",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/trace",
+        "@herocn/sheet"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/trace-sheet.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "trace-sources",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/trace"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/trace-sources.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "trace-steps",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/trace",
+        "@herocn/badge",
+        "@herocn/code-block"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/trace-steps.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "trace-commit",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/trace",
+        "@herocn/code-block",
+        "@herocn/sheet"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/trace-commit.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "trace-turn",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/trace",
+        "@herocn/code-block"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/trace-turn.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "trace-thinking",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/trace",
+        "@herocn/bubble",
+        "@herocn/button",
+        "@herocn/message"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/trace-thinking.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "trace-tool-calls",
+      "type": "registry:example",
+      "registryDependencies": [
+        "@herocn/trace",
+        "@herocn/bubble",
+        "@herocn/button",
+        "@herocn/code-block",
+        "@herocn/message"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/trace-tool-calls.tsx",
           "type": "registry:example"
         }
       ]

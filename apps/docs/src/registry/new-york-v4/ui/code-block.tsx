@@ -7,12 +7,11 @@ import * as React from "react";
 import { Button } from "@/registry/new-york-v4/ui/button";
 
 const codeBlockVariants = cva(
-	"group/code-block relative flex w-full min-w-0 flex-col overflow-hidden rounded-xl text-sm has-[>[data-slot=code-block-content]:focus-visible]:ring-[3px] has-[>[data-slot=code-block-content]:focus-visible]:ring-ring/50 data-[size=sm]:rounded-lg data-[size=sm]:text-xs",
+	"group/code-block has-[>[data-slot=code-block-content]:focus-visible]:focus-ring relative flex w-full min-w-0 flex-col overflow-hidden rounded-xl bg-surface-secondary text-sm data-[size=sm]:rounded-lg data-[size=sm]:text-xs",
 	{
 		variants: {
 			variant: {
-				default:
-					"border border-input text-foreground has-[>[data-slot=code-block-content]:focus-visible]:border-ring dark:bg-input/30",
+				default: "border border-input text-foreground",
 				destructive:
 					"border border-destructive/30 text-destructive dark:border-destructive/40",
 			},
@@ -46,7 +45,7 @@ function CodeBlockHeader({ className, ...props }: React.ComponentProps<"div">) {
 		<div
 			data-slot="code-block-header"
 			className={cn(
-				"flex min-w-0 shrink-0 items-center gap-2 px-4 pt-4 text-muted-foreground *:has-[>[data-slot=code-block-title]]:min-w-0 group-data-[size=sm]/code-block:px-3 group-data-[size=sm]/code-block:pt-3 group-data-[variant=destructive]/code-block:text-destructive",
+				"flex min-w-0 shrink-0 items-center gap-2 px-3 pt-3 text-muted-foreground *:has-[>[data-slot=code-block-title]]:min-w-0 group-data-[size=sm]/code-block:px-2 group-data-[size=sm]/code-block:pt-2 group-data-[variant=destructive]/code-block:text-destructive",
 				className,
 			)}
 			{...props}
@@ -59,7 +58,7 @@ function CodeBlockTitle({ className, ...props }: React.ComponentProps<"div">) {
 		<div
 			data-slot="code-block-title"
 			className={cn(
-				"min-w-0 truncate font-medium font-sans text-foreground text-sm group-data-[size=sm]/code-block:text-xs group-data-[variant=destructive]/code-block:text-destructive [&_svg:not([class*='size-'])]:size-4 group-data-[size=sm]/code-block:[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:inline-block [&_svg]:align-middle *:[svg]:me-1.5",
+				"min-w-0 truncate font-medium font-sans text-sm group-data-[size=sm]/code-block:text-xs group-data-[variant=destructive]/code-block:text-destructive [&_svg:not([class*='size-'])]:size-4 group-data-[size=sm]/code-block:[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:inline-block [&_svg]:align-middle *:[svg]:me-1.5",
 				className,
 			)}
 			{...props}
@@ -151,7 +150,7 @@ function CodeBlockContent({
 			tabIndex={0}
 			style={{ counterReset: `line ${startLine - 1}`, ...style }}
 			className={cn(
-				"scroll-fade-x scrollbar-thin data-wrap:scroll-fade-y data-wrap:wrap-break-word min-h-0 min-w-0 overflow-auto px-4 py-4 text-start font-mono leading-relaxed outline-none group-has-data-[slot=code-block-header]/code-block:pt-2 group-has-data-[slot=code-block-footer]/code-block:pb-2 data-wrap:whitespace-pre-wrap group-data-[size=sm]/code-block:px-3 group-data-[size=sm]/code-block:py-3 group-data-[size=sm]/code-block:group-has-data-[slot=code-block-header]/code-block:pt-1.5",
+				"scroll-fade-x scrollbar-thin data-wrap:scroll-fade-y data-wrap:wrap-break-word min-h-0 min-w-0 overflow-auto p-3 text-start font-mono leading-relaxed outline-none group-has-data-[slot=code-block-header]/code-block:pt-2 group-has-data-[slot=code-block-footer]/code-block:pb-2 data-wrap:whitespace-pre-wrap group-data-[size=sm]/code-block:px-2 group-data-[size=sm]/code-block:py-2 group-data-[size=sm]/code-block:group-has-data-[slot=code-block-header]/code-block:pt-1.5 group-data-[size=sm]/code-block:group-has-data-[slot=code-block-footer]/code-block:pb-1.5",
 				className,
 			)}
 			{...props}
@@ -174,13 +173,13 @@ function CodeBlockContent({
 }
 
 const codeBlockLineVariants = cva(
-	"relative in-data-numbered:col-span-2 -mx-4 block in-data-numbered:grid min-h-lh in-data-numbered:grid-cols-subgrid in-data-numbered:gap-x-3 px-4 in-data-numbered:[counter-increment:line] before:min-w-6 in-data-numbered:before:select-none before:text-end before:text-muted-foreground in-data-numbered:before:content-[counter(line)] after:absolute after:start-1 after:top-0 after:select-none after:text-muted-foreground group-data-[size=sm]/code-block:-mx-3 group-data-[size=sm]/code-block:px-3 in-data-numbered:supports-[content:counter(line)_/_'']:before:content-[counter(line)_/_'']",
+	"relative in-data-numbered:col-span-2 -mx-3 block in-data-numbered:grid min-h-lh in-data-numbered:grid-cols-subgrid in-data-numbered:gap-x-3 px-3 in-data-numbered:[counter-increment:line] before:min-w-6 in-data-numbered:before:select-none before:text-end before:text-muted-foreground in-data-numbered:before:content-[counter(line)] after:absolute after:start-1 after:top-0 after:select-none after:text-muted-foreground group-data-[size=sm]/code-block:-mx-2 group-data-[size=sm]/code-block:px-2 in-data-numbered:supports-[content:counter(line)_/_'']:before:content-[counter(line)_/_'']",
 	{
 		variants: {
 			variant: {
 				default: "",
 				added: "bg-muted after:content-['+']",
-				removed: "bg-destructive/10 after:text-destructive after:content-['−']",
+				removed: "bg-destructive/20 after:text-destructive after:content-['−']",
 				highlighted: "bg-muted",
 			},
 		},
@@ -222,7 +221,7 @@ function CodeBlockFooter({ className, ...props }: React.ComponentProps<"div">) {
 		<div
 			data-slot="code-block-footer"
 			className={cn(
-				"flex min-w-0 shrink-0 items-center gap-2 px-4 pb-4 text-muted-foreground group-data-[size=sm]/code-block:px-3 group-data-[size=sm]/code-block:pb-3",
+				"flex min-w-0 shrink-0 items-center gap-2 px-3 pb-3 text-muted-foreground group-data-[size=sm]/code-block:px-2 group-data-[size=sm]/code-block:pb-2",
 				className,
 			)}
 			{...props}

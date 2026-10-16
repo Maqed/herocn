@@ -1,8 +1,5 @@
-import { highlight } from "fumadocs-core/highlight";
-import { CodeBlock, Pre } from "fumadocs-ui/components/codeblock";
-import type * as React from "react";
 import { css as sharedCss, cssVars as sharedCssVars } from "@/registry/shared";
-import { CodeCollapsibleWrapper } from "./code-collapsible-wrapper";
+import { CodeBlockServer } from "./code-block-server";
 
 interface RenderCSSSharedProps {
 	light?: (keyof typeof sharedCssVars.light)[];
@@ -110,20 +107,14 @@ export async function RenderCSSShared({
 
 	if (!cssString) return null;
 
-	const rendered = await highlight(cssString, {
-		lang: "css",
-		components: {
-			pre: (props: React.ComponentProps<"pre">) => (
-				<Pre {...props} className="max-h-96 text-sm" />
-			),
-		},
-	});
-
 	const block = (
-		<CodeBlock title={title} className="my-0">
-			{rendered}
-		</CodeBlock>
+		<CodeBlockServer
+			code={cssString}
+			language="css"
+			title={title}
+			collapsible
+		/>
 	);
 
-	return <CodeCollapsibleWrapper>{block}</CodeCollapsibleWrapper>;
+	return block;
 }

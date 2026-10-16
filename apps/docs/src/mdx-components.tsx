@@ -8,6 +8,7 @@ import { CodeTabs } from "@/components/code-tabs";
 import { ComponentPreview } from "@/components/component-preview";
 import { ComponentSource } from "@/components/component-source";
 import { ComponentsList } from "@/components/components-list";
+import { MdxCodeBlock } from "@/components/mdx-code-block";
 import {
 	Tabs,
 	TabsContent,
@@ -20,6 +21,10 @@ import { RenderCSSShared } from "./components/render-css-shared";
 export function getMDXComponents(components?: MDXComponents): MDXComponents {
 	return {
 		...defaultMdxComponents,
+		pre: ({ ref: _ref, ...props }: React.ComponentProps<"pre">) => (
+			// @ts-expect-error - fumadocs passes pre props (title, icon) that map to MdxCodeBlock
+			<MdxCodeBlock {...props} />
+		),
 		...components,
 		ComponentsList,
 		ComponentPreview,

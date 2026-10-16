@@ -80,8 +80,14 @@ export function ComponentPreview({
 			direction={direction}
 			hideCode={hideCode}
 			component={React.createElement(Component)}
-			source={<ComponentSource name={name} collapsible={false} />}
-			sourcePreview={<ComponentSource name={name} collapsible={false} />}
+			source={
+				<ComponentSource
+					name={name}
+					collapsible
+					collapsedLabel="Show Code"
+					expandedLabel="Hide Code"
+				/>
+			}
 			{...props}
 		/>
 	);

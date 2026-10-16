@@ -1,11 +1,9 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { cn } from "cn";
-import { highlight } from "fumadocs-core/highlight";
-import { CodeBlock, Pre } from "fumadocs-ui/components/codeblock";
 import type * as React from "react";
 import { getRegistryItem } from "@/lib/registry";
-import { CodeCollapsibleWrapper } from "./code-collapsible-wrapper";
+import { CodeBlockServer } from "./code-block-server";
 
 export async function ComponentSource({
 	name,
@@ -13,6 +11,8 @@ export async function ComponentSource({
 	title,
 	language,
 	collapsible = true,
+	collapsedLabel,
+	expandedLabel,
 	className,
 }: React.ComponentProps<"div"> & {
 	name?: string;
@@ -20,6 +20,8 @@ export async function ComponentSource({
 	title?: string;
 	language?: string;
 	collapsible?: boolean;
+	collapsedLabel?: string;
+	expandedLabel?: string;
 }) {
 	if (!name && !src) {
 		return null;
@@ -43,28 +45,16 @@ export async function ComponentSource({
 
 	const lang = language ?? title?.split(".").pop() ?? "tsx";
 
-	const rendered = await highlight(code, {
-		lang,
-		components: {
-			pre: (props) => (
-				<Pre {...props} className={cn(props.className, "max-h-96 text-sm")} />
-			),
-		},
-	});
-
-	const block = (
-		<CodeBlock title={title} className="my-0">
-			{rendered}
-		</CodeBlock>
-	);
-
-	if (!collapsible) {
-		return <div className={cn("relative", className)}>{block}</div>;
-	}
-
 	return (
-		<CodeCollapsibleWrapper className={className}>
-			{block}
-		</CodeCollapsibleWrapper>
+		<div className={cn("relative", className)}>
+			<CodeBlockServer
+				code={code}
+				language={lang}
+				title={title}
+				collapsible={collapsible}
+				collapsedLabel={collapsedLabel}
+				expandedLabel={expandedLabel}
+			/>
+		</div>
 	);
 }

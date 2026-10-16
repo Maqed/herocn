@@ -1,9 +1,16 @@
 "use client";
 
-import { CodeBlock, Pre } from "fumadocs-ui/components/codeblock";
 import { Terminal } from "lucide-react";
 import * as React from "react";
 import { useConfig } from "@/hooks/use-config";
+import {
+	CodeBlock,
+	CodeBlockActions,
+	CodeBlockContent,
+	CodeBlockCopyButton,
+	CodeBlockHeader,
+	CodeBlockTitle,
+} from "@/registry/new-york-v4/ui/code-block";
 import {
 	Tabs,
 	TabsContent,
@@ -25,14 +32,6 @@ export function CodeBlockCommandWrapper({
 	__bun__?: string;
 }) {
 	const [config, setConfig] = useConfig();
-	const [hasCopied, setHasCopied] = React.useState(false);
-
-	React.useEffect(() => {
-		if (hasCopied) {
-			const timer = setTimeout(() => setHasCopied(false), 2000);
-			return () => clearTimeout(timer);
-		}
-	}, [hasCopied]);
 
 	const packageManager: PackageManager = config.packageManager || "pnpm";
 
@@ -46,8 +45,10 @@ export function CodeBlockCommandWrapper({
 		[__npm__, __pnpm__, __yarn__, __bun__],
 	);
 
+	const activeValue = tabs[packageManager] ?? "";
+
 	return (
-		<div className="relative overflow-x-auto">
+		<CodeBlock>
 			<Tabs
 				value={packageManager}
 				className="gap-0"
@@ -58,40 +59,41 @@ export function CodeBlockCommandWrapper({
 					});
 				}}
 			>
-				<div className="flex items-center gap-2 px-3">
-					<div className="flex size-4 items-center justify-center rounded-[1px] bg-foreground opacity-70">
-						<Terminal className="size-3 text-background" />
+				<CodeBlockHeader className="gap-0">
+					<CodeBlockTitle>
+						<Terminal />
+					</CodeBlockTitle>
+					<div className="flex items-center">
+						<TabsList variant="line">
+							{Object.entries(tabs).map(([key]) => {
+								return (
+									<TabsTrigger key={key} value={key}>
+										{key}
+									</TabsTrigger>
+								);
+							})}
+						</TabsList>
 					</div>
-					<TabsList variant="line">
-						{Object.entries(tabs).map(([key]) => {
-							return (
-								<TabsTrigger key={key} value={key}>
-									{key}
-								</TabsTrigger>
-							);
-						})}
-					</TabsList>
-				</div>
-				<div className="no-scrollbar overflow-x-auto">
-					{Object.entries(tabs).map(([key, value]) => {
-						return (
-							<TabsContent key={key} value={key} className="m-0 p-0 px-3">
-								<CodeBlock className="rounded-sm px-3">
-									<Pre className="max-h-96 text-sm">
-										<code
-											className="relative font-mono leading-none"
-											data-language="bash"
-										>
-											{value}
-										</code>
-									</Pre>
-								</CodeBlock>
-							</TabsContent>
-						);
-					})}
-				</div>
+					<CodeBlockActions>
+						<CodeBlockCopyButton value={activeValue} />
+					</CodeBlockActions>
+				</CodeBlockHeader>
+				{Object.entries(tabs).map(([key, value]) => {
+					return (
+						<TabsContent
+							key={key}
+							value={key}
+							className="m-0 p-0"
+							data-slot="code-block-command-content"
+						>
+							<CodeBlockContent className="group-has-data-[slot=code-block-header]/code-block:pt-0">
+								{value}
+							</CodeBlockContent>
+						</TabsContent>
+					);
+				})}
 			</Tabs>
-		</div>
+		</CodeBlock>
 	);
 }
 

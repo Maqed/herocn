@@ -61,3 +61,13 @@
 		display: none;
 	}
 }
+
+/* The custom CodeBlock owns the surface. Neutralize the background that
+Shiki / fumadocs bakes into highlighted <pre> / <code> (e.g. terminal
+output), so it matches <CodeBlock background and border instead. */
+[data-slot="code-block"] pre,
+[data-slot="code-block"] code,
+[data-slot="code-block"] .shiki {
+	background-color: transparent;
+	border: none;
+}

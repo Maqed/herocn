@@ -15,7 +15,7 @@ export function CodeCollapsibleWrapper({
 	return (
 		<div
 			className={cn(
-				"group relative md:-mx-1 [&>figure]:mt-0 [&>figure]:md:mx-0!",
+				"group relative md:-mx-1 [&>[data-slot=code-block]]:mt-0 [&>[data-slot=code-block]]:md:mx-0! [&>figure]:mt-0 [&>figure]:md:mx-0!",
 				className,
 			)}
 			{...props}

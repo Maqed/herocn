@@ -1,7 +1,7 @@
 "use client";
 import { cn } from "cn";
 import { AlertCircleIcon } from "lucide-react";
-import * as React from "react";
+import type * as React from "react";
 import {
 	LanguageProvider,
 	LanguageSelector,
@@ -26,7 +26,6 @@ export function ComponentPreviewTabs({
 	hideCode = false,
 	component,
 	source,
-	sourcePreview,
 	...props
 }: React.ComponentProps<"div"> & {
 	previewClassName?: string;
@@ -35,10 +34,7 @@ export function ComponentPreviewTabs({
 	hideCode?: boolean;
 	component: React.ReactNode;
 	source: React.ReactNode;
-	sourcePreview?: React.ReactNode;
 }) {
-	const [isMobileCodeVisible, setIsMobileCodeVisible] = React.useState(false);
-
 	return (
 		<div
 			data-slot="component-preview"
@@ -99,35 +95,9 @@ export function ComponentPreviewTabs({
 			{!hideCode && (
 				<div
 					data-slot="code"
-					data-mobile-code-visible={isMobileCodeVisible}
-					className="relative"
+					className="relative border-t [&_[data-slot=code-block]]:rounded-none [&_[data-slot=code-block]]:border-0"
 				>
-					{isMobileCodeVisible ? (
-						source
-					) : (
-						<div className="relative h-32 overflow-hidden">
-							{sourcePreview}
-							<div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-								<div
-									className="absolute inset-0"
-									style={{
-										background:
-											"linear-gradient(to top, var(--color-background), color-mix(in oklab, var(--color-background) 60%, transparent), transparent)",
-									}}
-								/>
-								<Button
-									type="button"
-									size="sm"
-									className="pointer-events-auto relative z-10"
-									onClick={() => {
-										setIsMobileCodeVisible(true);
-									}}
-								>
-									View Code
-								</Button>
-							</div>
-						</div>
-					)}
+					{source}
 				</div>
 			)}
 		</div>

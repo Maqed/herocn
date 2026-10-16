@@ -7,13 +7,12 @@ import * as React from "react";
 import { Button } from "@/registry/new-york-v4/ui/button";
 
 const codeBlockVariants = cva(
-	"group/code-block has-[>[data-slot=code-block-content]:focus-visible]:focus-ring relative flex w-full min-w-0 flex-col overflow-hidden rounded-xl bg-surface-secondary text-sm data-[size=sm]:rounded-lg data-[size=sm]:text-xs",
+	"group/code-block has-[>[data-slot=code-block-content]:focus-visible]:focus-ring relative flex w-full min-w-0 flex-col overflow-hidden rounded-lg bg-surface-secondary text-sm data-[size=sm]:rounded-md data-[size=sm]:text-xs",
 	{
 		variants: {
 			variant: {
-				default: "border border-input text-foreground",
-				destructive:
-					"border border-destructive/30 text-destructive dark:border-destructive/40",
+				default: "border border-surface-secondary text-foreground",
+				destructive: "border border-destructive/70 text-destructive",
 			},
 		},
 		defaultVariants: {
@@ -45,7 +44,7 @@ function CodeBlockHeader({ className, ...props }: React.ComponentProps<"div">) {
 		<div
 			data-slot="code-block-header"
 			className={cn(
-				"flex min-w-0 shrink-0 items-center gap-2 px-3 pt-3 text-muted-foreground *:has-[>[data-slot=code-block-title]]:min-w-0 group-data-[size=sm]/code-block:px-2 group-data-[size=sm]/code-block:pt-2 group-data-[variant=destructive]/code-block:text-destructive",
+				"flex min-w-0 shrink-0 items-center gap-1 px-2 pt-2 text-muted-foreground *:has-[>[data-slot=code-block-title]]:min-w-0 group-data-[size=sm]/code-block:px-1.5 group-data-[size=sm]/code-block:pt-1.5 group-data-[variant=destructive]/code-block:text-destructive",
 				className,
 			)}
 			{...props}
@@ -58,7 +57,7 @@ function CodeBlockTitle({ className, ...props }: React.ComponentProps<"div">) {
 		<div
 			data-slot="code-block-title"
 			className={cn(
-				"min-w-0 truncate font-medium font-sans text-sm group-data-[size=sm]/code-block:text-xs group-data-[variant=destructive]/code-block:text-destructive [&_svg:not([class*='size-'])]:size-4 group-data-[size=sm]/code-block:[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:inline-block [&_svg]:align-middle *:[svg]:me-1.5",
+				"min-w-0 truncate font-medium font-sans text-sm group-data-[size=sm]/code-block:text-xs group-data-[variant=destructive]/code-block:text-destructive [&_svg:not([class*='size-'])]:size-4 group-data-[size=sm]/code-block:[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:inline-block [&_svg]:align-middle *:[svg]:me-1",
 				className,
 			)}
 			{...props}
@@ -74,7 +73,7 @@ function CodeBlockActions({
 		<div
 			data-slot="code-block-actions"
 			className={cn(
-				"-my-1 ms-auto -me-1.5 flex shrink-0 items-center gap-1 [[data-slot=code-block]>&]:absolute [[data-slot=code-block]>&]:end-3 [[data-slot=code-block]>&]:top-3 [[data-slot=code-block]>&]:z-10 [[data-slot=code-block]>&]:m-0 [[data-slot=code-block]>&]:opacity-0 [[data-slot=code-block]>&]:pointer-coarse:opacity-100 [[data-slot=code-block]>&]:transition-opacity [[data-slot=code-block]>&]:group-focus-within/code-block:opacity-100 [[data-slot=code-block]>&]:group-hover/code-block:opacity-100 group-data-[size=sm]/code-block:[[data-slot=code-block]>&]:end-2 group-data-[size=sm]/code-block:[[data-slot=code-block]>&]:top-2 [[data-slot=code-block]>&]:*:[button]:bg-background [[data-slot=code-block]>&]:*:[button]:ring-1 [[data-slot=code-block]>&]:*:[button]:ring-foreground/10",
+				"-my-1 ms-auto -me-1 flex shrink-0 items-center gap-0.5 [[data-slot=code-block]>&]:absolute [[data-slot=code-block]>&]:end-2 [[data-slot=code-block]>&]:top-2 [[data-slot=code-block]>&]:z-10 [[data-slot=code-block]>&]:m-0 [[data-slot=code-block]>&]:opacity-0 [[data-slot=code-block]>&]:pointer-coarse:opacity-100 [[data-slot=code-block]>&]:transition-opacity [[data-slot=code-block]>&]:group-focus-within/code-block:opacity-100 [[data-slot=code-block]>&]:group-hover/code-block:opacity-100 group-data-[size=sm]/code-block:[[data-slot=code-block]>&]:end-1.5 group-data-[size=sm]/code-block:[[data-slot=code-block]>&]:top-1.5 [[data-slot=code-block]>&]:*:[button]:bg-background [[data-slot=code-block]>&]:*:[button]:ring-1 [[data-slot=code-block]>&]:*:[button]:ring-foreground/10",
 				className,
 			)}
 			{...props}
@@ -150,7 +149,7 @@ function CodeBlockContent({
 			tabIndex={0}
 			style={{ counterReset: `line ${startLine - 1}`, ...style }}
 			className={cn(
-				"scroll-fade-x scrollbar-thin data-wrap:scroll-fade-y data-wrap:wrap-break-word min-h-0 min-w-0 overflow-auto p-3 text-start font-mono leading-relaxed outline-none group-has-data-[slot=code-block-header]/code-block:pt-2 group-has-data-[slot=code-block-footer]/code-block:pb-2 data-wrap:whitespace-pre-wrap group-data-[size=sm]/code-block:px-2 group-data-[size=sm]/code-block:py-2 group-data-[size=sm]/code-block:group-has-data-[slot=code-block-header]/code-block:pt-1.5 group-data-[size=sm]/code-block:group-has-data-[slot=code-block-footer]/code-block:pb-1.5",
+				"scroll-fade-x scrollbar-thin data-wrap:scroll-fade-y data-wrap:wrap-break-word min-h-0 min-w-0 overflow-auto p-2 text-start font-mono leading-relaxed outline-none group-has-data-[slot=code-block-header]/code-block:pt-1.5 group-has-data-[slot=code-block-footer]/code-block:pb-1.5 data-wrap:whitespace-pre-wrap group-data-[size=sm]/code-block:px-1.5 group-data-[size=sm]/code-block:py-1.5 group-data-[size=sm]/code-block:group-has-data-[slot=code-block-header]/code-block:pt-1 group-data-[size=sm]/code-block:group-has-data-[slot=code-block-footer]/code-block:pb-1",
 				className,
 			)}
 			{...props}
@@ -173,7 +172,7 @@ function CodeBlockContent({
 }
 
 const codeBlockLineVariants = cva(
-	"relative in-data-numbered:col-span-2 -mx-3 block in-data-numbered:grid min-h-lh in-data-numbered:grid-cols-subgrid in-data-numbered:gap-x-3 px-3 in-data-numbered:[counter-increment:line] before:min-w-6 in-data-numbered:before:select-none before:text-end before:text-muted-foreground in-data-numbered:before:content-[counter(line)] after:absolute after:start-1 after:top-0 after:select-none after:text-muted-foreground group-data-[size=sm]/code-block:-mx-2 group-data-[size=sm]/code-block:px-2 in-data-numbered:supports-[content:counter(line)_/_'']:before:content-[counter(line)_/_'']",
+	"relative in-data-numbered:col-span-2 -mx-2 block in-data-numbered:grid min-h-lh in-data-numbered:grid-cols-subgrid in-data-numbered:gap-x-2 px-2 in-data-numbered:[counter-increment:line] before:min-w-6 in-data-numbered:before:select-none before:text-end before:text-muted-foreground in-data-numbered:before:content-[counter(line)] after:absolute after:start-1 after:top-0 after:select-none after:text-muted-foreground group-data-[size=sm]/code-block:-mx-1.5 group-data-[size=sm]/code-block:px-1.5 in-data-numbered:supports-[content:counter(line)_/_'']:before:content-[counter(line)_/_'']",
 	{
 		variants: {
 			variant: {
@@ -221,7 +220,7 @@ function CodeBlockFooter({ className, ...props }: React.ComponentProps<"div">) {
 		<div
 			data-slot="code-block-footer"
 			className={cn(
-				"flex min-w-0 shrink-0 items-center gap-2 px-3 pb-3 text-muted-foreground group-data-[size=sm]/code-block:px-2 group-data-[size=sm]/code-block:pb-2",
+				"flex min-w-0 shrink-0 items-center gap-1 px-2 pb-1 text-muted-foreground group-data-[size=sm]/code-block:px-1.5 group-data-[size=sm]/code-block:pb-0.5",
 				className,
 			)}
 			{...props}

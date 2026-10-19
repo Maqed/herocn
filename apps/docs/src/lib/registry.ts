@@ -125,16 +125,36 @@ function fixFilePaths(files: RegistryItem["files"]) {
 		return [];
 	}
 
-	// Resolve all paths relative to the first file's directory.
-	const firstFilePath = files[0].path;
-	const firstFilePathDir = path.dirname(firstFilePath);
+	// Resolve all paths relative to the common ancestor of every file. Using
+	// the first file's directory would produce paths like
+	// "../lib/highlighter.tsx" for items with files in sibling directories,
+	// which the CLI rejects as unsafe file paths.
+	const commonDir = getCommonDir(files.map((file) => file.path));
 
 	return files.map((file) => {
 		return {
 			...file,
-			path: path.relative(firstFilePathDir, file.path),
+			path: path.relative(commonDir, file.path),
 		};
 	});
+}
+
+function getCommonDir(paths: string[]) {
+	const segments = paths.map((filePath) =>
+		filePath.split(/[\\/]/).slice(0, -1),
+	);
+
+	let common = segments[0] ?? [];
+
+	for (const dir of segments.slice(1)) {
+		let i = 0;
+		while (i < common.length && i < dir.length && common[i] === dir[i]) {
+			i++;
+		}
+		common = common.slice(0, i);
+	}
+
+	return common.join("/");
 }
 
 export function fixImport(content: string, pathMappings: Map<string, string>) {

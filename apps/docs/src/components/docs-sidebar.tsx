@@ -33,8 +33,7 @@ export function DocsSidebar({
 			collapsible="none"
 			{...props}
 		>
-			<SidebarContent className="no-scrollbar mx-auto w-(--sidebar-menu-width) gap-0.5 overflow-x-hidden px-2">
-				<div className="sticky top-0 z-10 h-16 shrink-0 bg-linear-to-b from-background via-background/80 to-background/50 blur-xs" />
+			<SidebarContent className="no-scrollbar mx-auto w-(--sidebar-menu-width) gap-0.5 overflow-x-hidden px-2 py-17">
 				<SidebarGroup className="mb-5 py-0">
 					<SidebarGroupLabel>Externals</SidebarGroupLabel>
 					<SidebarGroupContent>
@@ -100,7 +99,6 @@ export function DocsSidebar({
 						</SidebarGroup>
 					);
 				})}
-				<div className="sticky -bottom-1 z-10 h-16 shrink-0 bg-linear-to-t from-background via-background/80 to-background/50 blur-xs" />
 			</SidebarContent>
 		</Sidebar>
 	);

@@ -123,10 +123,7 @@ export function NavActions() {
 				>
 					<MoreHorizontalIcon />
 				</PopoverTrigger>
-				<PopoverContent
-					className="w-56 overflow-hidden rounded-lg p-0"
-					align="end"
-				>
+				<PopoverContent className="w-56 overflow-hidden p-0" align="end">
 					<Sidebar collapsible="none" className="bg-transparent">
 						<SidebarContent>
 							{data.map((group, index) => (

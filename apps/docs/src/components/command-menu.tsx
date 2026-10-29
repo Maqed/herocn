@@ -1,4 +1,6 @@
 "use client";
+import { useDocsSearch } from "fumadocs-core/search/client";
+import { staticClient } from "fumadocs-core/search/client/orama-static";
 import { SearchIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
 import * as React from "react";
@@ -27,6 +29,20 @@ interface PageGroup {
 	items: PageItem[];
 }
 
+function plainText(value: string) {
+	return value
+		.replace(/<\/?mark>/gi, "")
+		.replace(/\*\*(.*?)\*\*/g, "$1")
+		.replace(/__(.*?)__/g, "$1")
+		.replace(/[`*]/g, "")
+		.replace(/\s+/g, " ")
+		.trim();
+}
+
+const searchClient = staticClient();
+
+type DocsSearchQuery = Awaited<ReturnType<typeof useDocsSearch>>["query"];
+
 export function CommandMenu({
 	tree,
 	navItems,
@@ -37,6 +53,36 @@ export function CommandMenu({
 }) {
 	const [open, setOpen] = React.useState(false);
 	const router = useRouter();
+	const { search, setSearch, query } = useDocsSearch({
+		client: searchClient,
+	});
+
+	const searchTimeoutRef =
+		React.useRef<ReturnType<typeof setTimeout>>(undefined);
+
+	const handleSearchChange = React.useCallback(
+		(value: string) => {
+			if (searchTimeoutRef.current) {
+				clearTimeout(searchTimeoutRef.current);
+			}
+
+			searchTimeoutRef.current = setTimeout(() => {
+				setSearch(value);
+			}, 300);
+		},
+		[setSearch],
+	);
+
+	const commandFilter = React.useCallback(
+		(value: string, searchValue: string, keywords?: string[]) => {
+			const extendValue = `${value} ${keywords?.join(" ") ?? ""}`;
+			if (extendValue.toLowerCase().includes(searchValue.toLowerCase())) {
+				return 1;
+			}
+			return 0;
+		},
+		[],
+	);
 
 	const groupedItems = React.useMemo<PageGroup[]>(() => {
 		const groups: PageGroup[] = [];
@@ -83,10 +129,30 @@ export function CommandMenu({
 		return groups;
 	}, [tree, navItems]);
 
+	const listedPageUrls = React.useMemo(
+		() =>
+			new Set(
+				groupedItems.flatMap((group) => group.items.map((item) => item.url)),
+			),
+		[groupedItems],
+	);
+
 	const runCommand = (command: () => unknown) => {
 		setOpen(false);
 		command();
 	};
+
+	React.useEffect(() => {
+		if (!open) setSearch("");
+	}, [open, setSearch]);
+
+	React.useEffect(() => {
+		return () => {
+			if (searchTimeoutRef.current) {
+				clearTimeout(searchTimeoutRef.current);
+			}
+		};
+	}, []);
 
 	React.useEffect(() => {
 		const down = (e: KeyboardEvent) => {
@@ -123,16 +189,27 @@ export function CommandMenu({
 				</span>
 			</Button>
 			<CommandDialog open={open} onOpenChange={setOpen} {...props}>
-				<Command>
-					<CommandInput placeholder="Search documentation…" />
+				<Command filter={commandFilter}>
+					<CommandInput
+						placeholder="Search documentation…"
+						onValueChange={handleSearchChange}
+					/>
 					<CommandList>
-						<CommandEmpty>No results found.</CommandEmpty>
+						<CommandEmpty>
+							{query.error
+								? "Search index unavailable."
+								: query.isLoading
+									? "Searching…"
+									: "No results found."}
+						</CommandEmpty>
 						{groupedItems.map((group) => (
 							<CommandGroup key={group.value} heading={group.value}>
 								{group.items.map((item) => (
 									<CommandItem
 										key={item.value}
 										className="flex w-full items-center"
+										keywords={item.keywords}
+										value={item.value}
 										onSelect={() => runCommand(() => router.push(item.url))}
 									>
 										{item.label}
@@ -140,9 +217,82 @@ export function CommandMenu({
 								))}
 							</CommandGroup>
 						))}
+						<SearchResults
+							listedPageUrls={listedPageUrls}
+							query={query}
+							runCommand={runCommand}
+							search={search}
+						/>
 					</CommandList>
 				</Command>
 			</CommandDialog>
 		</>
+	);
+}
+
+function SearchResults({
+	search,
+	query,
+	listedPageUrls,
+	runCommand,
+}: {
+	search: string;
+	query: DocsSearchQuery;
+	listedPageUrls: Set<string>;
+	runCommand: (command: () => unknown) => void;
+}) {
+	const router = useRouter();
+
+	const uniqueResults = React.useMemo(() => {
+		if (!query.data || !Array.isArray(query.data)) {
+			return [];
+		}
+
+		return query.data
+			.filter((item) => item.type !== "page" || !listedPageUrls.has(item.url))
+			.filter(
+				(item, index, self) =>
+					!(
+						item.type === "text" &&
+						plainText(item.content).trim().split(/\s+/).length <= 1
+					) &&
+					index ===
+						self.findIndex(
+							(other) => plainText(other.content) === plainText(item.content),
+						),
+			);
+	}, [listedPageUrls, query.data]);
+
+	if (!search.trim()) {
+		return null;
+	}
+
+	if (!query.data || query.data === "empty") {
+		return null;
+	}
+
+	if (uniqueResults.length === 0) {
+		return null;
+	}
+
+	return (
+		<CommandGroup heading="Search Results">
+			{uniqueResults.map((item) => {
+				const content = plainText(item.content);
+
+				return (
+					<CommandItem
+						key={item.id}
+						className="flex w-full items-center"
+						data-type={item.type}
+						keywords={[content]}
+						value={`${content} ${item.type}`}
+						onSelect={() => runCommand(() => router.push(item.url))}
+					>
+						<span className="line-clamp-2 min-w-0 text-sm">{content}</span>
+					</CommandItem>
+				);
+			})}
+		</CommandGroup>
 	);
 }

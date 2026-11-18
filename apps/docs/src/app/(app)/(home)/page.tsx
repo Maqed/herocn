@@ -11,8 +11,10 @@ import { absoluteUrl } from "@/lib/utils";
 import { buttonVariants } from "@/registry/new-york-v4/ui/button";
 import { CardsDemo } from "./cards";
 
+const title = `${siteConfig.name} - shadcn/ui components with HeroUI's design system`;
+
 export const metadata: Metadata = {
-	title: { absolute: PAGES_METADATA.get("/")?.title ?? siteConfig.name },
+	title: { absolute: title },
 	description: PAGES_METADATA.get("/")?.description,
 	alternates: {
 		canonical: absoluteUrl("/"),
@@ -22,13 +24,13 @@ export const metadata: Metadata = {
 		url: absoluteUrl("/"),
 		siteName: siteConfig.name,
 		locale: "en_US",
-		title: PAGES_METADATA.get("/")?.title,
+		title,
 		description: PAGES_METADATA.get("/")?.description,
 		images: absoluteUrl("/og/image.webp"),
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: PAGES_METADATA.get("/")?.title,
+		title,
 		description: PAGES_METADATA.get("/")?.description,
 		images: [absoluteUrl("/og/image.webp")],
 	},
@@ -39,8 +41,10 @@ export default function HomePage() {
 		"@context": "https://schema.org",
 		"@type": "WebSite",
 		name: siteConfig.name,
+		alternateName: ["herocn ui", "hero cn"],
 		url: absoluteUrl("/"),
 		description: siteConfig.description,
+		sameAs: [siteConfig.links.github],
 	};
 
 	return (
@@ -53,6 +57,7 @@ export default function HomePage() {
 			/>
 			<PageHeader>
 				<PageHeaderHeading>
+					<span className="sr-only">{siteConfig.name}: </span>
 					<span>HeroUI's design system.</span>
 					<br />
 					<span className="text-muted-foreground">shadcn's abstraction.</span>
